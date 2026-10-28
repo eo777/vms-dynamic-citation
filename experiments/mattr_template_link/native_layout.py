@@ -137,7 +137,7 @@ def analyse(ms, lines, geometry):
 
 def main():
     ms = D.manuscript()
-    app = json.load(gzip.open(CC.APP, 'rt', encoding='utf8'))
+    app = CC.load_study_app('legacy')
     frames = CC.line_frames(app, ms)
     page_sizes = [sum(len(ms['lines'][l]['words']) for l in range(p['start_line'], p['end_line'])) for p in ms['pages']]
     lines = native_lines(GART)

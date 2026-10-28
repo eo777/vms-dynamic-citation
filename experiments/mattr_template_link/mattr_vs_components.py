@@ -18,6 +18,7 @@ HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
 import data as D
 import component_check as CC
+from geometry_inputs import validate_variant
 from timing import shuffled_within
 
 OUT = HERE / 'heatmap_variants'
@@ -41,12 +42,14 @@ def main():
     print("MATTR colour (backward 100-token distinct share) against the diversity of the words in view")
     print(f"{'variant':24s} | {'tokens':>6s} | token-level Spearman: components, word diversity, H2 | within page: components, word diversity, H2 | page means (n): components, word diversity, H2 | sd of page-mean MATTR")
     texts = []
+    app = CC.load_study_app('legacy')
     for key in VARIANTS:
         b = json.load(gzip.open(OUT / key / 'data/mattr_heatmap/words.json.gz', 'rt', encoding='utf8'))
+        validate_variant(b, app)
         texts.append((key, dict(words=b['words'], lines=b['lines'], geometry=b['geometry'], components=b['components'])))
     # manuscript controls, built as in mechanism_check.py (same helper, same call order): words permuted inside paragraphs / pages, recorded boxes kept
     ms = D.manuscript()
-    app = json.load(gzip.open(CC.APP, 'rt', encoding='utf8'))
+    app = CC.load_study_app('legacy')
     tok = D.tokenize(ms)
     par_id = np.cumsum(tok['since_par'] == 0)
     texts.append(('manuscript_shuffled_paragraphs', CC.make_input(ms, shuffled_within(ms, tok, par_id), app['geometry'], CC.zattera)))

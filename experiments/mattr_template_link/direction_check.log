@@ -1,0 +1,72 @@
+Direction test: within-bifolium quintile contrast of word impact (lowest minus highest diversity quintile) on the cone ABOVE N
+(the study selector: left 3, depth 8, 45 degrees, earlier tokens) and on its MIRROR below N (right 3, depth 8 below, later tokens),
+cohort = tokens with both cones valid and the 100 containing windows inside the bifolium. Manuscript rows: 95% bifolium-resampling
+intervals (the difference above minus below is paired). Copier rows: mean over seeds [min, max].
+
+== region all
+  text                                      n  pool up/dn            components above            components below           above minus below    H2 above   H2 below  word div above word div below
+  manuscript (recorded boxes)           19573    27/26         +0.036 [+0.015,+0.061]      +0.032 [+0.013,+0.051]      +0.004 [-0.019,+0.026]      +0.027     +0.021          +0.025         +0.039
+  manuscript (synthetic boxes)          19605    26/26         +0.045 [+0.022,+0.068]      +0.037 [+0.015,+0.060]      +0.007 [-0.019,+0.032]      +0.030     +0.027          +0.046         +0.031
+  manuscript shuffled in paragraphs     19567    27/26         +0.009 [-0.015,+0.030]      +0.017 [-0.003,+0.038]      -0.008 [-0.035,+0.021]      +0.012     +0.016          -0.003         +0.013
+  Original Timm, page draw              22454    29/28         +0.121 [+0.117,+0.126]      +0.052 [+0.047,+0.059]      +0.068 [+0.060,+0.074]      +0.103     +0.037          +0.142         +0.074
+  no-innovator far 0, page draw         22888    29/28         +0.121 [+0.121,+0.123]      +0.046 [+0.042,+0.048]      +0.076 [+0.073,+0.079]      +0.090     +0.029          +0.098         +0.041
+  Original Timm, words in view          21917    28/28         +0.114 [+0.108,+0.117]      +0.072 [+0.069,+0.074]      +0.042 [+0.039,+0.045]      +0.094     +0.039          +0.136         +0.078
+  no-innovator far 0, words in view     24205    30/30         +0.099 [+0.092,+0.108]      +0.088 [+0.080,+0.097]      +0.010 [-0.001,+0.020]      +0.075     +0.062          +0.087         +0.079
+  far 0 + innovator, words in view      21975    29/28         +0.094 [+0.086,+0.107]      +0.067 [+0.053,+0.077]      +0.027 [+0.009,+0.036]      +0.073     +0.046          +0.073         +0.060
+
+== region Herbal A
+  text                                      n  pool up/dn            components above            components below           above minus below    H2 above   H2 below  word div above word div below
+  manuscript (recorded boxes)            2800    18/19         +0.017 [-0.047,+0.085]      +0.064 [+0.019,+0.108]      -0.047 [-0.113,+0.020]      -0.017     +0.014          +0.036         +0.070
+  manuscript (synthetic boxes)           2813    19/19         +0.046 [-0.004,+0.102]      +0.054 [+0.005,+0.099]      -0.007 [-0.073,+0.061]      +0.045     +0.007          +0.058         +0.061
+  manuscript shuffled in paragraphs      2797    18/19         +0.014 [-0.020,+0.051]      +0.026 [-0.020,+0.073]      -0.012 [-0.069,+0.048]      -0.020     -0.005          -0.014         +0.022
+  Original Timm, page draw               3333    19/20         +0.099 [+0.073,+0.127]      +0.016 [+0.008,+0.027]      +0.083 [+0.046,+0.119]      +0.077     +0.009          +0.083         +0.018
+  no-innovator far 0, page draw          3771    21/21         +0.078 [+0.076,+0.079]      +0.026 [+0.013,+0.038]      +0.052 [+0.040,+0.063]      +0.046     +0.027          +0.088         +0.050
+  Original Timm, words in view           3238    19/20         +0.131 [+0.112,+0.162]      +0.047 [+0.032,+0.060]      +0.084 [+0.058,+0.130]      +0.091     +0.029          +0.129         +0.025
+  no-innovator far 0, words in view      3951    22/22         +0.088 [+0.064,+0.109]      +0.084 [+0.059,+0.098]      +0.004 [-0.007,+0.014]      +0.073     +0.050          +0.082         +0.105
+  far 0 + innovator, words in view       3284    20/20         +0.082 [+0.072,+0.096]      +0.084 [+0.070,+0.106]      -0.002 [-0.034,+0.021]      +0.064     +0.051          +0.055         +0.065
+
+== region Herbal B
+  text                                      n  pool up/dn            components above            components below           above minus below    H2 above   H2 below  word div above word div below
+  manuscript (recorded boxes)            1328    20/20         +0.039 [-0.053,+0.121]      -0.012 [-0.074,+0.056]      +0.051 [-0.087,+0.174]      +0.014     -0.026          +0.085         +0.016
+  manuscript (synthetic boxes)           1333    20/20         +0.025 [-0.065,+0.106]      -0.020 [-0.074,+0.026]      +0.045 [-0.086,+0.164]      +0.037     -0.008          +0.075         -0.002
+  manuscript shuffled in paragraphs      1330    20/20         +0.044 [-0.036,+0.110]      -0.042 [-0.115,+0.026]      +0.086 [-0.031,+0.196]      +0.043     -0.036          +0.014         -0.029
+  Original Timm, page draw               1536    22/22         +0.164 [+0.149,+0.186]      +0.019 [-0.016,+0.048]      +0.145 [+0.109,+0.201]      +0.145     +0.020          +0.202         +0.052
+  no-innovator far 0, page draw          1610    22/23         +0.141 [+0.119,+0.175]      +0.050 [-0.015,+0.102]      +0.092 [+0.017,+0.190]      +0.104     -0.001          +0.136         +0.055
+  Original Timm, words in view           1508    22/22         +0.150 [+0.115,+0.181]      +0.075 [+0.070,+0.077]      +0.075 [+0.045,+0.104]      +0.130     +0.033          +0.192         +0.062
+  no-innovator far 0, words in view      1741    23/24         +0.139 [+0.090,+0.182]      +0.081 [+0.071,+0.090]      +0.058 [-0.000,+0.098]      +0.086     +0.070          +0.089         +0.082
+  far 0 + innovator, words in view       1541    22/23         +0.093 [+0.085,+0.106]      +0.113 [+0.096,+0.135]      -0.020 [-0.029,-0.006]      +0.068     +0.067          +0.059         +0.093
+
+== region Stars
+  text                                      n  pool up/dn            components above            components below           above minus below    H2 above   H2 below  word div above word div below
+  manuscript (recorded boxes)            9984    29/29         +0.045 [+0.016,+0.087]      +0.045 [+0.022,+0.070]      +0.000 [-0.031,+0.030]      +0.034     +0.019          +0.008         +0.046
+  manuscript (synthetic boxes)           9989    29/29         +0.047 [+0.014,+0.088]      +0.056 [+0.026,+0.086]      -0.009 [-0.039,+0.022]      +0.022     +0.036          +0.039         +0.038
+  manuscript shuffled in paragraphs      9982    29/29         +0.008 [-0.007,+0.024]      +0.015 [-0.012,+0.038]      -0.007 [-0.032,+0.023]      +0.025     +0.018          -0.009         +0.005
+  Original Timm, page draw              11486    32/32         +0.107 [+0.103,+0.110]      +0.054 [+0.046,+0.067]      +0.053 [+0.043,+0.061]      +0.095     +0.038          +0.142         +0.086
+  no-innovator far 0, page draw         11299    32/31         +0.121 [+0.120,+0.122]      +0.040 [+0.032,+0.050]      +0.081 [+0.071,+0.090]      +0.095     +0.023          +0.090         +0.026
+  Original Timm, words in view          11270    32/31         +0.104 [+0.084,+0.120]      +0.080 [+0.072,+0.085]      +0.024 [+0.012,+0.037]      +0.096     +0.048          +0.133         +0.096
+  no-innovator far 0, words in view     12024    34/33         +0.101 [+0.077,+0.125]      +0.085 [+0.064,+0.115]      +0.016 [+0.010,+0.027]      +0.077     +0.059          +0.094         +0.075
+  far 0 + innovator, words in view      11110    32/31         +0.100 [+0.093,+0.114]      +0.050 [+0.038,+0.056]      +0.051 [+0.039,+0.059]      +0.085     +0.030          +0.092         +0.041
+
+== region Bio
+  text                                      n  pool up/dn            components above            components below           above minus below    H2 above   H2 below  word div above word div below
+  manuscript (recorded boxes)            4905    27/27         +0.020 [-0.010,+0.057]      -0.011 [-0.033,+0.006]      +0.030 [+0.005,+0.057]      +0.038     +0.031          +0.023         +0.008
+  manuscript (synthetic boxes)           4914    27/27         +0.038 [+0.008,+0.065]      -0.001 [-0.032,+0.025]      +0.039 [+0.016,+0.066]      +0.032     +0.025          +0.035         +0.009
+  manuscript shuffled in paragraphs      4899    27/27         -0.007 [-0.084,+0.053]      +0.027 [-0.020,+0.089]      -0.034 [-0.118,+0.033]      -0.016     +0.022          +0.002         +0.025
+  Original Timm, page draw               5488    29/28         +0.149 [+0.130,+0.166]      +0.084 [+0.074,+0.089]      +0.065 [+0.056,+0.077]      +0.124     +0.061          +0.159         +0.086
+  no-innovator far 0, page draw          5545    29/29         +0.124 [+0.104,+0.137]      +0.065 [+0.059,+0.073]      +0.059 [+0.041,+0.073]      +0.096     +0.048          +0.110         +0.069
+  Original Timm, words in view           5300    28/28         +0.110 [+0.100,+0.116]      +0.067 [+0.048,+0.090]      +0.043 [+0.026,+0.065]      +0.079     +0.031          +0.126         +0.070
+  no-innovator far 0, words in view      5802    31/30         +0.078 [+0.055,+0.104]      +0.092 [+0.080,+0.102]      -0.014 [-0.026,+0.003]      +0.064     +0.069          +0.069         +0.066
+  far 0 + innovator, words in view       5432    29/29         +0.085 [+0.067,+0.105]      +0.068 [+0.050,+0.080]      +0.017 [-0.006,+0.033]      +0.053     +0.058          +0.048         +0.076
+
+== region all, controls (mean over seeds): pool-size-stratified contrasts (tertiles of each cone's own size); line-position controls
+  text                                    comp. pool-strat up/dn   word div pool-strat up/dn    comp. interior targets up/dn    comp. in line thirds up/dn   word div in line thirds up/dn
+  manuscript (recorded boxes)                +0.066 /     +0.069        +0.079 /      +0.103          +0.066 /        +0.056         +0.044 /       +0.041          +0.037 /        +0.039 [+0.042,+0.090] / [+0.027,+0.083]
+  manuscript (synthetic boxes)               +0.082 /     +0.071        +0.114 /      +0.100          +0.069 /        +0.065         +0.042 /       +0.042          +0.056 /        +0.034 [+0.040,+0.098] / [+0.039,+0.094]
+  manuscript shuffled in paragraphs          +0.021 /     +0.015        +0.018 /      +0.010          +0.027 /        +0.019         +0.011 /       +0.009          +0.002 /        +0.019 [+0.004,+0.047] / [-0.007,+0.045]
+  Original Timm, page draw                   +0.105 /     +0.079        +0.147 /      +0.132          +0.122 /        +0.058         +0.119 /       +0.052          +0.146 /        +0.076
+  no-innovator far 0, page draw              +0.112 /     +0.072        +0.098 /      +0.090          +0.128 /        +0.056         +0.115 /       +0.045          +0.100 /        +0.038
+  Original Timm, words in view               +0.116 /     +0.090        +0.157 /      +0.137          +0.126 /        +0.077         +0.112 /       +0.072          +0.141 /        +0.086
+  no-innovator far 0, words in view          +0.127 /     +0.116        +0.140 /      +0.141          +0.119 /        +0.108         +0.101 /       +0.084          +0.095 /        +0.078
+  far 0 + innovator, words in view           +0.119 /     +0.093        +0.113 /      +0.115          +0.110 /        +0.084         +0.090 /       +0.067          +0.078 /        +0.064
+
+cohorts (region all): manuscript (recorded boxes) 19573 of 19573 with the cone above valid; manuscript (synthetic boxes) 19605 of 19605 with the cone above valid; manuscript shuffled in paragraphs 19567 of 19567 with the cone above valid; Original Timm, page draw 22454 of 22454 with the cone above valid; no-innovator far 0, page draw 22888 of 22888 with the cone above valid; Original Timm, words in view 21917 of 21917 with the cone above valid; no-innovator far 0, words in view 24205 of 24205 with the cone above valid; far 0 + innovator, words in view 21975 of 21975 with the cone above valid

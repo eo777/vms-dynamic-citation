@@ -1,0 +1,146 @@
+{
+ "passed": true,
+ "canonical_tokens": 34977,
+ "located_strict": 31127,
+ "runtime": {
+  "python": "3.9.2",
+  "numpy": "2.0.2",
+  "node": "v24.15.0"
+ },
+ "assignment_only_changed_rectangles": 29,
+ "assignment_only_changed_ids": [
+  "f2r.13@39:45",
+  "f14v.2@25:26",
+  "f44v.9@31:32",
+  "f44v.9@33:34",
+  "f44v.9@35:41",
+  "f45v.7@37:38",
+  "f51v.8@49:65",
+  "f43r.13@87:88",
+  "f39v.6@31:35",
+  "f85r2.17@33:36",
+  "f85r2.18@25:30",
+  "f86v5.28@54:57",
+  "f105v.27@68:70",
+  "f105v.27@71:76",
+  "f104r.8@84:87",
+  "f115r.27@42:46",
+  "f106r.29@72:76",
+  "f106r.29@77:82",
+  "f108r.15@71:72",
+  "f108r.24@21:28",
+  "f108r.24@29:37",
+  "f103r.3@91:99",
+  "f76r.1@21:30",
+  "f78v.4@59:60",
+  "f75r.1@46:50",
+  "f75r.1@51:56",
+  "f75v.1@21:28",
+  "f75v.1@29:36",
+  "f75v.1@37:43"
+ ],
+ "validated_legacy_caches": 13,
+ "detached_reproduction": {
+  "arms": 7,
+  "exact": true
+ },
+ "unused_unvalidated_legacy_caches": [
+  "bigram_by_group",
+  "far0_page_window"
+ ],
+ "paired_differences": {
+  "assignment_repairs": {
+   "actual": {
+    "diff": 6.621505439417807e-05,
+    "ci95": [
+     -0.0028091051011592326,
+     0.0028472656681780865
+    ]
+   },
+   "matched": {
+    "diff": -0.003944998107699271,
+    "ci95": [
+     -0.00999227534289827,
+     0.003258675171457258
+    ]
+   }
+  },
+  "cleaned_assignment_repairs": {
+   "actual": {
+    "diff": 0.0017802443328555073,
+    "ci95": [
+     -0.0003617312888966006,
+     0.003942437257108129
+    ]
+   },
+   "matched": {
+    "diff": 0.0015953867426750507,
+    "ci95": [
+     -0.00018546064583697115,
+     0.0034080838256685154
+    ]
+   }
+  },
+  "strict_policy": {
+   "actual": {
+    "diff": 0.013190299262347535,
+    "ci95": [
+     -0.0027577240541559996,
+     0.030920078482183012
+    ]
+   },
+   "matched": {
+    "diff": 0.009875177541015981,
+    "ci95": [
+     -0.004654365434522848,
+     0.02521557907274642
+    ]
+   }
+  },
+  "app_pitch": {
+   "actual": {
+    "diff": 0.001634593186234018,
+    "ci95": [
+     -0.0056235404602949695,
+     0.009321992367871217
+    ]
+   },
+   "matched": {
+    "diff": 0.00020731612525352883,
+    "ci95": [
+     -0.007025993706962623,
+     0.007690008746295415
+    ]
+   }
+  }
+ },
+ "sha256": {
+  "apps\\selfcitation_governor\\data\\mattr_heatmap\\words.json.gz": "8531104fd8fabd17befaeee5361fcc39f984a90c23c3791850530a80a6a00455",
+  "solve\\botanical_enrichment\\echo7\\preservation_model_20261014\\data\\tokens.json": "557e9fc6dedd3678633fec9ab50359a181c14fe6a0ba3d1917aece31cdc04afe",
+  "solve\\botanical_enrichment\\team_golf\\data\\physical_map.csv": "2d5e3ba18fc16f1c1cad6a7904d7edfdc0dd6b282f9b746da032c61a84a4fd96",
+  "packages\\voynich_gradients\\src\\voynich_gradients\\assets\\positional_path1.json.gz": "977c5676670d79ffa8fac2f0b5a354278877a45513ba35da489b801158cbfffc",
+  "research\\timm_geometry_audit_20261026\\component_impact_20261027\\derived.json.gz": "6967ccb24ec09ca15e486ab8b27847fcf4eca44da625f5a00888c6724a0e22c0",
+  "research\\mattr_template_link_20261026\\mechanism_check.json": "98cff037da32b13cfeda1a1d0cd95f9bd28031910de451aed55d59105192df36",
+  "research\\mattr_template_link_20261026\\component_source_math.js": "5316eb36e13274bbed239dbb37636210da2b7ae776fcd72acf538b764cf9b658",
+  "apps\\selfcitation_governor\\heatmap_sources.js": "4aa9f1151a6de1bc2ef72ff74a86663a0eff80394727092fdfc41900ee4a2892",
+  "research\\mattr_template_link_20261026\\geometry_inputs.py": "96c0538918efbafe7f66fff078219df3ec0f133b12888494d1cb171ef6d66581",
+  "research\\mattr_template_link_20261026\\component_check.py": "cdeede0335ed87c56a44a5aac25b67d2a4189d18f6cc25878061d08aaf0637e8",
+  "research\\mattr_template_link_20261026\\data.py": "9877ede83128a22bbded9afe11ae284a0d5712237fe098b8534d4ca8522fe917",
+  "research\\mattr_template_link_20261026\\timing.py": "cb5464d93b1fe002d9d802306a772ebae406af2a93626b3c5edc15383aabc232",
+  "research\\mattr_template_link_20261026\\mattr_vs_components.py": "8728abe725bc48e7b782db598b86ff9b4cb6fb073067c903e394d48a12968f86",
+  "research\\mattr_template_link_20261026\\alignment_rerun_20261028\\measure.js": "a17dbfb0f340f173b46add87dfe3e7d134e3c8ad3465db53cabb28f454882848",
+  "research\\mattr_template_link_20261026\\alignment_rerun_20261028\\run.py": "24494e101483458a017c248bdcc811d0cbc937c7291c1d1580df13648bd94367",
+  "research\\mattr_template_link_20261026\\alignment_rerun_20261028\\calibration.py": "a478d72d21b2203e5c6f43e62d51db9dd15a2e917360b67bd992d69e294f215f",
+  "research\\mattr_template_link_20261026\\alignment_rerun_20261028\\heldout.py": "3a91e9122ba1671e861c291a68a823611216e6fa87c98c698a6acd03b2adb186",
+  "research\\mattr_template_link_20261026\\alignment_rerun_20261028\\verify.py": "ac4380eb14b41908e4a7224b0d933999b905ced2a72d21bde6ddcdce0a584f9a",
+  "research\\mattr_template_link_20261026\\alignment_rerun_20261028\\metrics.json": "05e488039db0cdcc587d2bbfe588e8ca4a4e7ff96bdf8042b990e607843acf25",
+  "research\\mattr_template_link_20261026\\alignment_rerun_20261028\\calibration.json": "ac4b5c34ee65387d57afa2c7bc2efb494ce30789ca43edbc575ee1e89d3d1a2f",
+  "research\\mattr_template_link_20261026\\alignment_rerun_20261028\\heldout.json": "2c5a45a83e73fae7824b47940d4a04540709b79914a2f0a5399ea40b57a68c48",
+  "research\\mattr_template_link_20261026\\heatmap_variants.py": "6873fd02da98273dcb7d175e21cc3d281977c62effabd3b56e5625222b908f41",
+  "research\\mattr_template_link_20261026\\mechanism_check.py": "84e731a55ba8e518f458f40362b5eb2f2c0aaff496dd8491201f9d5694516118",
+  "research\\mattr_template_link_20261026\\compare_site.py": "ed17ad23f073e6df6b33c541938b24d95251502ec1c9287053046f5ea53e3bee",
+  "research\\timm_geometry_audit_20261026\\component_impact_20261027\\analyze.py": "217326ee3ea2dd775239218a4a21bf3f9424a4ecd4c22760f5f545a5666e3703",
+  "research\\timm_geometry_audit_20261026\\component_impact_20261027\\unadjusted_metrics.json": "ce26520ee2858a31f60c44adfddb93a1a8db15ad1ed72ec670f3f81f48f4f734",
+  "research\\dynamic_selfcitation_20261024\\governed\\page_geometry.py": "2b2c9c1fc9d37d6eab11bf903470b4b3e7a6b77e75f8ea890719a8be23d60a5f"
+ }
+}

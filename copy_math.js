@@ -46,6 +46,18 @@ const SG_COPY=(()=>{
   if(!isCurrent())return null;onProgress(out.length,out.length);return out;
  }
  function distanceColor(d){return !Number.isFinite(d)?'var(--line2)':['#397d69','#70aa8c','#d1b05f','#ce8058','#ad5251','#84586e'][Math.max(0,Math.min(5,Math.round(d)))];}
- return {distance,prepare,measure,series,distanceColor};
+ // Separate zero, one and two alternatives; compress the sparse upper tail.
+ // Fixed bands keep pages, edit cutoffs and source-count modes comparable.
+ const candidateBands=[
+  {max:0,label:'0',color:'#c05c50'},
+  {max:1,label:'1',color:'#d9a84a'},
+  {max:2,label:'2',color:'#b5c887'},
+  {max:4,label:'3–4',color:'#6eada1'},
+  {max:8,label:'5–8',color:'#6094b5'},
+  {max:16,label:'9–16',color:'#6f7fb4'},
+  {max:Infinity,label:'17+',color:'#83649f'},
+ ];
+ function candidateColor(n){return !Number.isFinite(n)?'var(--line2)':candidateBands.find(b=>n<=b.max).color;}
+ return {distance,prepare,measure,series,distanceColor,candidateColor,candidateBands};
 })();
 if(typeof module!=='undefined')module.exports=SG_COPY;

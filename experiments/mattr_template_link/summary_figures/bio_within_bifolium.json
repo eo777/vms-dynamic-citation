@@ -1,0 +1,579 @@
+{
+  "metric": "Number of distinct forms in each page\u2019s first and last 100 words.",
+  "page_order": "First leaf recto, first leaf verso, second leaf recto, second leaf verso.",
+  "mean_method": "Equal weight for each complete four-page bifolium; no transitions between bifolia.",
+  "source_sha256": "557e9fc6dedd3678633fec9ab50359a181c14fe6a0ba3d1917aece31cdc04afe",
+  "bifolia": {
+    "Bio": [
+      {
+        "bifolium": "75|84",
+        "pages": [
+          {
+            "folio": "f75r",
+            "words": 418,
+            "first100": 76,
+            "last100": 62,
+            "mattr100": 0.6444200626959248,
+            "samples_overlap": false
+          },
+          {
+            "folio": "f75v",
+            "words": 323,
+            "first100": 71,
+            "last100": 74,
+            "mattr100": 0.6962946428571428,
+            "samples_overlap": false
+          },
+          {
+            "folio": "f84r",
+            "words": 354,
+            "first100": 66,
+            "last100": 73,
+            "mattr100": 0.6881960784313725,
+            "samples_overlap": false
+          },
+          {
+            "folio": "f84v",
+            "words": 341,
+            "first100": 64,
+            "last100": 78,
+            "mattr100": 0.649090909090909,
+            "samples_overlap": false
+          }
+        ],
+        "profile": [
+          76,
+          62,
+          71,
+          74,
+          66,
+          73,
+          64,
+          78
+        ],
+        "complete": true
+      },
+      {
+        "bifolium": "76|83",
+        "pages": [
+          {
+            "folio": "f76r",
+            "words": 561,
+            "first100": 78,
+            "last100": 76,
+            "mattr100": 0.7121861471861471,
+            "samples_overlap": false
+          },
+          {
+            "folio": "f76v",
+            "words": 399,
+            "first100": 79,
+            "last100": 68,
+            "mattr100": 0.7598666666666667,
+            "samples_overlap": false
+          },
+          {
+            "folio": "f83r",
+            "words": 340,
+            "first100": 76,
+            "last100": 75,
+            "mattr100": 0.7395850622406639,
+            "samples_overlap": false
+          },
+          {
+            "folio": "f83v",
+            "words": 255,
+            "first100": 70,
+            "last100": 67,
+            "mattr100": 0.6730769230769231,
+            "samples_overlap": false
+          }
+        ],
+        "profile": [
+          78,
+          76,
+          79,
+          68,
+          76,
+          75,
+          70,
+          67
+        ],
+        "complete": true
+      },
+      {
+        "bifolium": "77|82",
+        "pages": [
+          {
+            "folio": "f77r",
+            "words": 321,
+            "first100": 66,
+            "last100": 75,
+            "mattr100": 0.681036036036036,
+            "samples_overlap": false
+          },
+          {
+            "folio": "f77v",
+            "words": 321,
+            "first100": 64,
+            "last100": 67,
+            "mattr100": 0.6485135135135135,
+            "samples_overlap": false
+          },
+          {
+            "folio": "f82r",
+            "words": 278,
+            "first100": 77,
+            "last100": 71,
+            "mattr100": 0.7023463687150838,
+            "samples_overlap": false
+          },
+          {
+            "folio": "f82v",
+            "words": 306,
+            "first100": 69,
+            "last100": 74,
+            "mattr100": 0.734927536231884,
+            "samples_overlap": false
+          }
+        ],
+        "profile": [
+          66,
+          75,
+          64,
+          67,
+          77,
+          71,
+          69,
+          74
+        ],
+        "complete": true
+      },
+      {
+        "bifolium": "78|81",
+        "pages": [
+          {
+            "folio": "f78r",
+            "words": 290,
+            "first100": 61,
+            "last100": 72,
+            "mattr100": 0.7430366492146597,
+            "samples_overlap": false
+          },
+          {
+            "folio": "f78v",
+            "words": 295,
+            "first100": 64,
+            "last100": 68,
+            "mattr100": 0.6636224489795919,
+            "samples_overlap": false
+          },
+          {
+            "folio": "f81r",
+            "words": 210,
+            "first100": 73,
+            "last100": 70,
+            "mattr100": 0.7261261261261261,
+            "samples_overlap": false
+          },
+          {
+            "folio": "f81v",
+            "words": 252,
+            "first100": 76,
+            "last100": 72,
+            "mattr100": 0.7263398692810458,
+            "samples_overlap": false
+          }
+        ],
+        "profile": [
+          61,
+          72,
+          64,
+          68,
+          73,
+          70,
+          76,
+          72
+        ],
+        "complete": true
+      },
+      {
+        "bifolium": "79|80",
+        "pages": [
+          {
+            "folio": "f79r",
+            "words": 382,
+            "first100": 79,
+            "last100": 67,
+            "mattr100": 0.773851590106007,
+            "samples_overlap": false
+          },
+          {
+            "folio": "f79v",
+            "words": 355,
+            "first100": 74,
+            "last100": 74,
+            "mattr100": 0.7471875,
+            "samples_overlap": false
+          },
+          {
+            "folio": "f80r",
+            "words": 435,
+            "first100": 73,
+            "last100": 75,
+            "mattr100": 0.7280357142857142,
+            "samples_overlap": false
+          },
+          {
+            "folio": "f80v",
+            "words": 376,
+            "first100": 73,
+            "last100": 79,
+            "mattr100": 0.7114079422382672,
+            "samples_overlap": false
+          }
+        ],
+        "profile": [
+          79,
+          67,
+          74,
+          74,
+          73,
+          75,
+          73,
+          79
+        ],
+        "complete": true
+      }
+    ],
+    "Stars": [
+      {
+        "bifolium": "103|116",
+        "pages": [
+          {
+            "folio": "f103r",
+            "words": 523,
+            "first100": 84,
+            "last100": 74,
+            "mattr100": 0.7718867924528302,
+            "samples_overlap": false
+          },
+          {
+            "folio": "f103v",
+            "words": 453,
+            "first100": 71,
+            "last100": 74,
+            "mattr100": 0.7752824858757063,
+            "samples_overlap": false
+          },
+          {
+            "folio": "f116r",
+            "words": 545,
+            "first100": 77,
+            "last100": 78,
+            "mattr100": 0.7631838565022422,
+            "samples_overlap": false
+          },
+          {
+            "folio": "f116v",
+            "words": 0,
+            "first100": null,
+            "last100": null
+          }
+        ],
+        "profile": [
+          84,
+          74,
+          71,
+          74,
+          77,
+          78,
+          null,
+          null
+        ],
+        "complete": false
+      },
+      {
+        "bifolium": "104|115",
+        "pages": [
+          {
+            "folio": "f104r",
+            "words": 448,
+            "first100": 81,
+            "last100": 84,
+            "mattr100": 0.8727507163323782,
+            "samples_overlap": false
+          },
+          {
+            "folio": "f104v",
+            "words": 475,
+            "first100": 85,
+            "last100": 82,
+            "mattr100": 0.8438297872340426,
+            "samples_overlap": false
+          },
+          {
+            "folio": "f115r",
+            "words": 461,
+            "first100": 82,
+            "last100": 86,
+            "mattr100": 0.859060773480663,
+            "samples_overlap": false
+          },
+          {
+            "folio": "f115v",
+            "words": 408,
+            "first100": 95,
+            "last100": 89,
+            "mattr100": 0.9229449838187702,
+            "samples_overlap": false
+          }
+        ],
+        "profile": [
+          81,
+          84,
+          85,
+          82,
+          82,
+          86,
+          95,
+          89
+        ],
+        "complete": true
+      },
+      {
+        "bifolium": "105|114",
+        "pages": [
+          {
+            "folio": "f105r",
+            "words": 378,
+            "first100": 88,
+            "last100": 83,
+            "mattr100": 0.8791039426523297,
+            "samples_overlap": false
+          },
+          {
+            "folio": "f105v",
+            "words": 399,
+            "first100": 91,
+            "last100": 84,
+            "mattr100": 0.8527333333333333,
+            "samples_overlap": false
+          },
+          {
+            "folio": "f114r",
+            "words": 456,
+            "first100": 88,
+            "last100": 87,
+            "mattr100": 0.8845658263305323,
+            "samples_overlap": false
+          },
+          {
+            "folio": "f114v",
+            "words": 374,
+            "first100": 83,
+            "last100": 80,
+            "mattr100": 0.8691272727272727,
+            "samples_overlap": false
+          }
+        ],
+        "profile": [
+          88,
+          83,
+          91,
+          84,
+          88,
+          87,
+          83,
+          80
+        ],
+        "complete": true
+      },
+      {
+        "bifolium": "106|113",
+        "pages": [
+          {
+            "folio": "f106r",
+            "words": 431,
+            "first100": 89,
+            "last100": 86,
+            "mattr100": 0.8718072289156626,
+            "samples_overlap": false
+          },
+          {
+            "folio": "f106v",
+            "words": 444,
+            "first100": 87,
+            "last100": 83,
+            "mattr100": 0.8763768115942029,
+            "samples_overlap": false
+          },
+          {
+            "folio": "f113r",
+            "words": 529,
+            "first100": 85,
+            "last100": 81,
+            "mattr100": 0.8880697674418605,
+            "samples_overlap": false
+          },
+          {
+            "folio": "f113v",
+            "words": 501,
+            "first100": 84,
+            "last100": 80,
+            "mattr100": 0.826318407960199,
+            "samples_overlap": false
+          }
+        ],
+        "profile": [
+          89,
+          86,
+          87,
+          83,
+          85,
+          81,
+          84,
+          80
+        ],
+        "complete": true
+      },
+      {
+        "bifolium": "107|112",
+        "pages": [
+          {
+            "folio": "f107r",
+            "words": 487,
+            "first100": 85,
+            "last100": 78,
+            "mattr100": 0.8328865979381443,
+            "samples_overlap": false
+          },
+          {
+            "folio": "f107v",
+            "words": 462,
+            "first100": 81,
+            "last100": 74,
+            "mattr100": 0.7838842975206611,
+            "samples_overlap": false
+          },
+          {
+            "folio": "f112r",
+            "words": 398,
+            "first100": 77,
+            "last100": 81,
+            "mattr100": 0.8151170568561873,
+            "samples_overlap": false
+          },
+          {
+            "folio": "f112v",
+            "words": 419,
+            "first100": 79,
+            "last100": 90,
+            "mattr100": 0.8050625,
+            "samples_overlap": false
+          }
+        ],
+        "profile": [
+          85,
+          78,
+          81,
+          74,
+          77,
+          81,
+          79,
+          90
+        ],
+        "complete": true
+      },
+      {
+        "bifolium": "108|111",
+        "pages": [
+          {
+            "folio": "f108r",
+            "words": 493,
+            "first100": 85,
+            "last100": 67,
+            "mattr100": 0.7913959390862945,
+            "samples_overlap": false
+          },
+          {
+            "folio": "f108v",
+            "words": 580,
+            "first100": 81,
+            "last100": 66,
+            "mattr100": 0.7576715176715176,
+            "samples_overlap": false
+          },
+          {
+            "folio": "f111r",
+            "words": 622,
+            "first100": 77,
+            "last100": 72,
+            "mattr100": 0.7982600382409177,
+            "samples_overlap": false
+          },
+          {
+            "folio": "f111v",
+            "words": 565,
+            "first100": 82,
+            "last100": 81,
+            "mattr100": 0.7676824034334764,
+            "samples_overlap": false
+          }
+        ],
+        "profile": [
+          85,
+          67,
+          81,
+          66,
+          77,
+          72,
+          82,
+          81
+        ],
+        "complete": true
+      }
+    ]
+  },
+  "summary": {
+    "Bio": {
+      "complete_bifolia": 5,
+      "mean_profile": [
+        72.0,
+        70.4,
+        70.4,
+        70.2,
+        73.0,
+        72.8,
+        70.4,
+        74.0
+      ],
+      "boundary_change_mean_distinct_forms": 0.13333333333333333,
+      "rising_boundaries": 7,
+      "boundaries": 15,
+      "first_to_last_change": 2.0
+    },
+    "Stars": {
+      "complete_bifolia": 5,
+      "mean_profile": [
+        85.6,
+        79.6,
+        85.0,
+        77.8,
+        81.8,
+        81.4,
+        84.6,
+        84.0
+      ],
+      "boundary_change_mean_distinct_forms": 4.2,
+      "rising_boundaries": 12,
+      "boundaries": 15,
+      "first_to_last_change": -1.6
+    }
+  },
+  "validation": {
+    "scored_pages": 43,
+    "endpoint_counts_verified": true,
+    "endpoint_windows_do_not_overlap": true
+  }
+}

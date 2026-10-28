@@ -1,5 +1,36 @@
 # Template availability test: reproduction kit
 
+**28 October alignment recheck:** see [the rerun results](alignment_rerun_20261028/RESULTS.md).
+The original scripts below now explicitly select `legacyGeometry` through `geometry_inputs.py`, so they
+reproduce the 27 October numbers even when the app's default geometry changes. Historical heatmap caches
+carry an input geometry hash; consumers reject stale or unversioned caches. Rebuild them with
+`heatmap_variants.py`. The alignment rerun rebuilds every source pool directly and needs no cached variants.
+
+From this study folder, run:
+
+```text
+python alignment_rerun_20261028/run.py --permutations 99
+python alignment_rerun_20261028/calibration.py
+python alignment_rerun_20261028/heldout.py
+python alignment_rerun_20261028/verify.py
+```
+
+The held-out check additionally needs `pandas` and `scikit-learn`. The rerun uses the reviewed schema-3
+app bundle, including historical boxes, canonical token IDs, original XML parts, explicit uncertainty flags,
+and strict/sensitivity masks. It separates assignment repairs, exclusions, and the current app's line-pitch
+calibration. It writes compact JSON only and does not download manuscript images. Saved generator texts
+are rescored after rebuilding their layouts; generator trajectories themselves are not regenerated.
+
+For a concise illustrated explanation, open [Spatial diversity, repetition, and MATTR (HTML)](SUMMARY.html) in a browser. It has compact figures that expand when selected, and all images are embedded so the file can be sent on its own. A [Markdown version](SUMMARY.md) is also available.
+
+Rebuild the HTML from the Markdown and saved app captures with `python build_summary_html.py` (requires `markdown-it-py`).
+
+The exploratory Bio figures are retained for reference but are not included in the current summary. Rebuild the opening-profile charts with `python summary_figures/build_bio_exploration.py`. The two static figures show saved paragraph-depth and page-start results. Plotted values and input hashes are saved in `summary_figures/bio_exploration.json`; no model is regenerated.
+
+The within-bifolium Bio/Stars figures are built with `python summary_figures/build_bio_bifolium.py`. Two static charts compare distinct-form counts in the first and last 100 words of each page: one average profile across four pages, and one view of every individual bifolium. Five complete bifolia per section contribute equally to the average. The incomplete Stars bifolium 103|116 remains in the individual view. `summary_figures/bio_within_bifolium.json` retains the counts and within-bifolium boundary comparisons. No ordering between bifolia is used.
+
+Run `python summary_figures/build_bio_historical.py` to build the five historical comparisons, each with the manuscript reference and both reflows. This reproduces deterministic placement, checks all 610 saved group/bifolium MATTR values against `layout_controls.json`, and retains compact endpoint counts in `summary_figures/bio_historical_controls.json`. It does not run generators or spatial scoring. Four Latin character-budget versions of f81r have overlapping first/last 100-word samples; these are marked explicitly.
+
 Are the manuscript's MATTR drops the collapses that copying from the page produces in the self-citation
 generators? This folder holds everything needed to rerun that study and check its numbers: the scripts, the
 inputs they read (or pointers to the copies elsewhere in this repository), and the outputs they wrote (logs, JSON,
@@ -65,6 +96,7 @@ python experiments/mattr_template_link/figures_layout.py
 python experiments/mattr_template_link/figures_pages.py       # node
 python experiments/mattr_template_link/heatmap_variants.py    # node; writes heatmap_variants/ (the verification pages)
 python experiments/mattr_template_link/mechanism_check.py     # node; the pool-size-stratified contrast, by length class, section and Golf group
+python experiments/mattr_template_link/direction_check.py     # node; the mirror-cone direction test (the cone above N against the same cone below), every copier seed
 python experiments/mattr_template_link/mattr_vs_components.py # node; MATTR coupling
 python experiments/mattr_template_link/figures_small.py
 python experiments/mattr_template_link/prose_route.py           # each historical text's own MATTR route (route_mattr_prose.png)
@@ -84,6 +116,8 @@ numbers for the figures. The whole chain takes about 25 minutes on one core; the
 `mechanism_check.py`, `mattr_vs_components.py`, `compare_site.py` and `figures_pages2.py` read, so it must run before
 them. To check the pool-diversity result alone (is the next word more often a repeat when the words in view are less
 diverse?), run `component_check.py`, `heatmap_variants.py` and `mechanism_check.py` in that order, about seven minutes.
+`direction_check.py` (about 2 minutes, independent of the others) asks whether that association has the direction copying
+from the page would give it: the cone above N against the same cone mirrored below N.
 
 To look at the verification pages, serve the folder they were written to:
 
@@ -106,6 +140,8 @@ page f78r) or <http://127.0.0.1:8766/compare.html> (any bifolium, every text ver
 | f29r: synthetic words inside the plant's stem column (lines 3 to 8), before / with the vertical-gap rule | `figures_f29r.py` output | 7 / 0 |
 | historical texts rising into Stars / falling into Bio, of 10 series | `prose_route.log` | 6 / 3 (manuscript +0.049 / −0.128) |
 | pool-size-stratified contrast, word diversity, manuscript / shuffled in paragraphs / shuffled in pages | `mechanism_check.log` | +0.077 / +0.011 / −0.006 |
+| mirror-cone test, components, manuscript: cone above / cone below / paired difference | `direction_check.log`, region all | +0.036 / +0.032 / +0.004 (−0.019 to +0.026) |
+| the same for Original Timm (page draw) and for the no-innovator copier of the words in view | same table | +0.121 / +0.052 / +0.068; +0.099 / +0.088 / +0.010 |
 | MATTR100 fall 3c → 4a, manuscript = bag + clustering | `layout_controls.log` | −0.128 = −0.118 − 0.011 |
 | the same for Original Timm and the no-innovator far 0 run | `layout_controls.log` | −0.069 = −0.015 − 0.054; −0.099 = −0.050 − 0.049 |
 | coupling of the MATTR colour with component diversity, manuscript, token level / page means | `mattr_vs_components.log` | +0.26 / +0.48 |

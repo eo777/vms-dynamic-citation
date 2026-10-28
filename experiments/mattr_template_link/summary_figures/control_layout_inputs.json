@@ -1,0 +1,97 @@
+{
+  "page": "f75r",
+  "app_files": {
+    "common.js": "7ac91728ee2e88c0a8c3d25d78c36dd8478e1e46564b5e45ad73ed2d3c36eb66",
+    "heatmap.js": "a84921023114f2aa2f9bfbaffa194286afd0ef21f56620b23ea785159ae138e4",
+    "heatmap_math.js": "7f4e0c792aa610f437a5c59f1f5a652dc1de24fa52393fcceabc021d3ce8c720",
+    "heatmap_sources.js": "4aa9f1151a6de1bc2ef72ff74a86663a0eff80394727092fdfc41900ee4a2892",
+    "copy_math.js": "717a2772d4897c784d00dda22b8331a10d2ffc155046ac6247da8ca950993325",
+    "spatial_review.js": "ae0f0b96729f785d2854f9cc4086f4915714bdd58e118ff417c2d26d1c27ee83",
+    "heatmap_page.js": "c59a0371a67b001cf52ac4f4ec1c18caa1e0ae0f1790b2b39a2f1a09031a679b",
+    "heatmap.css": "2c34c11bf22c8a9e12dda31a937aa8191b14dc8b54aa6be0c278e8101fbf8af6",
+    "style.css": "c5d23a58e541c666a8895c70aab92a52618932037c76ad113e3893d579678589"
+  },
+  "cases": [
+    {
+      "key": "manuscript",
+      "title": "Voynich manuscript",
+      "subtitle": "Recorded word positions",
+      "page": "f75r",
+      "tokens": 418,
+      "boxes": 418,
+      "bundle_sha256": "e66f291195747fb431629838764a4a48bf3f1f733fa34e2f93fd32e4b4e21ddd",
+      "input_geometry_provenance": {
+        "policy": "legacy",
+        "words_sha256": "b1e1e3cb9c17b9b3f436c8459c0514344f99ba435ad9c144a5062157d9ca02f4",
+        "geometry_sha256": "61522be8f565c4c610beb138238cfeb892678a2c7be153e026ed7331ff65c6ef",
+        "review_version": "2026-10-28.1"
+      },
+      "url": "http://127.0.0.1:8767/summary_figures/control_layout_viewer/manuscript/heatmap.html#scope=all&expanded=f75r&words=1&boxes=hidden&colors=mattr"
+    },
+    {
+      "key": "gart_one_word_per_box",
+      "title": "Gart 1487",
+      "subtitle": "One word per manuscript box",
+      "page": "f75r",
+      "tokens": 418,
+      "boxes": 418,
+      "bundle_sha256": "8a40fe6983dd8e4b6d0ed0026a00dc7da7f50e14b9e70bc664ff7c528823bdca",
+      "input_geometry_provenance": {
+        "policy": "legacy",
+        "words_sha256": "b1e1e3cb9c17b9b3f436c8459c0514344f99ba435ad9c144a5062157d9ca02f4",
+        "geometry_sha256": "61522be8f565c4c610beb138238cfeb892678a2c7be153e026ed7331ff65c6ef",
+        "review_version": "2026-10-28.1"
+      },
+      "url": "http://127.0.0.1:8767/summary_figures/control_layout_viewer/gart_one_word_per_box/heatmap.html#scope=all&expanded=f75r&words=1&boxes=hidden&colors=mattr"
+    },
+    {
+      "key": "gart_character_budget",
+      "title": "Gart 1487",
+      "subtitle": "Fill each line\u2019s character budget",
+      "page": "f75r",
+      "tokens": 419,
+      "boxes": 419,
+      "bundle_sha256": "736314b117f06d8fadb60bbcfa48446ca190acc9e077d2a58579fe7a3929e3bf",
+      "input_geometry_provenance": {
+        "policy": "legacy",
+        "words_sha256": "b1e1e3cb9c17b9b3f436c8459c0514344f99ba435ad9c144a5062157d9ca02f4",
+        "geometry_sha256": "61522be8f565c4c610beb138238cfeb892678a2c7be153e026ed7331ff65c6ef",
+        "review_version": "2026-10-28.1"
+      },
+      "url": "http://127.0.0.1:8767/summary_figures/control_layout_viewer/gart_character_budget/heatmap.html#scope=all&expanded=f75r&words=1&boxes=hidden&colors=mattr"
+    },
+    {
+      "key": "gart_own_lines",
+      "title": "Gart 1487",
+      "subtitle": "Keep the printed text\u2019s own lines",
+      "page": "f75r",
+      "tokens": 248,
+      "boxes": 248,
+      "bundle_sha256": "783c4401b89b457502ffb99195711d837a11e81f64a99190c0cb3e2ec67679f9",
+      "input_geometry_provenance": {
+        "policy": "legacy",
+        "words_sha256": "b1e1e3cb9c17b9b3f436c8459c0514344f99ba435ad9c144a5062157d9ca02f4",
+        "geometry_sha256": "61522be8f565c4c610beb138238cfeb892678a2c7be153e026ed7331ff65c6ef",
+        "review_version": "2026-10-28.1"
+      },
+      "url": "http://127.0.0.1:8767/summary_figures/control_layout_viewer/gart_own_lines/heatmap.html#scope=all&expanded=f75r&words=1&boxes=hidden&colors=mattr"
+    },
+    {
+      "key": "bigram_whole",
+      "title": "Markov control",
+      "subtitle": "Whole-manuscript word bigrams",
+      "page": "f75r",
+      "tokens": 418,
+      "boxes": 418,
+      "bundle_sha256": "e3e8f7c8947bdd4178ed3063d56bfe3e3e82e03bb100de3f45b72fc80328a38a",
+      "input_geometry_provenance": {
+        "policy": "legacy",
+        "words_sha256": "b1e1e3cb9c17b9b3f436c8459c0514344f99ba435ad9c144a5062157d9ca02f4",
+        "geometry_sha256": "61522be8f565c4c610beb138238cfeb892678a2c7be153e026ed7331ff65c6ef",
+        "review_version": "2026-10-28.1"
+      },
+      "url": "http://127.0.0.1:8767/summary_figures/control_layout_viewer/bigram_whole/heatmap.html#scope=all&expanded=f75r&words=1&boxes=hidden&colors=mattr"
+    }
+  ],
+  "note": "Frozen words and coordinates displayed by unchanged current heatmap app scripts; image overlay off."
+}

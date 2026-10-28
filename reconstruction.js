@@ -55,14 +55,16 @@
  }
  function move(delta,pause=true){const rr=sheetRows(),i=record().step,next=rr[i+delta];if(next)choose(next.position,pause);else stop();}
  function pageSvg(page,rows,pool,parents){
-  const mapped=rows.filter(r=>geo.geometry[r.position]);if(!mapped.length)return '<p class="chart-note">No usable word rectangles.</p>';
-  const boxes=mapped.map(r=>geo.geometry[r.position]),x0=Math.min(...boxes.map(b=>b[0]))-8,y0=Math.min(...boxes.map(b=>b[1]))-8,x1=Math.max(...boxes.map(b=>b[2]))+8,y1=Math.max(...boxes.map(b=>b[3]))+8;
+  const groups=SG_REVIEW.groups(data,rows.map(r=>r.position));if(!groups.length)return '<p class="chart-note">No resolved display groups.</p>';
+  const boxes=groups.flatMap(g=>g.parts),x0=Math.min(...boxes.map(b=>b[0]))-8,y0=Math.min(...boxes.map(b=>b[1]))-8,x1=Math.max(...boxes.map(b=>b[2]))+8,y1=Math.max(...boxes.map(b=>b[3]))+8;
   const selectedRow=record(),source=new Set(pool.indices),point=inspecting&&selectedRow.page===page?geo.centers[selected]:null;
   let cone='';
   if(point){const g=geo.pages.get(page),h=8*g.pitch,w=h;cone='M '+point.x+' '+point.y+' L '+(point.x-w)+' '+(point.y-h)+' L '+(point.x+w)+' '+(point.y-h)+' Z M '+point.x+' '+point.y+' L '+(point.x-3*g.wordWidth)+' '+point.y;}
-  return '<svg viewBox="'+[x0,y0,x1-x0,y1-y0].join(' ')+'" aria-label="'+esc(page)+' recorded word layout">'+(cone?'<path class="recon-cone-fill" d="'+cone+'"/>':'')+mapped.map(r=>{
-   const p=r.position,b=geo.geometry[p],w=b[2]-b[0],h=b[3]-b[1],cls=['recon-word',inspecting&&p===selected?'selected':'',parents.has(p)?'parent':'',source.has(p)?'source':'',matches(r)?'':'filtered',controls.written.checked&&r.step>selectedRow.step?'future':''].join(' ');
-   return '<g class="'+cls+'" data-position="'+p+'" role="button" tabindex="'+(p===selected||r===mapped[0]?'0':'-1')+'" aria-label="'+esc(data.words[p]+' · '+page+':'+r.locus+' · '+routeNames[m(r).chosen.kind])+'"><title>'+esc(data.words[p]+' · '+routeNames[m(r).chosen.kind]+' · page distance '+number(r.pageDistance))+'</title><rect x="'+b[0]+'" y="'+b[1]+'" width="'+w+'" height="'+h+'" rx="2" fill="'+fill(r)+'"/><text x="'+(b[0]+2)+'" y="'+(b[1]+h*.72)+'" font-size="'+Math.min(18,h*.67)+'" textLength="'+Math.max(2,w-4)+'" lengthAdjust="spacingAndGlyphs">'+esc(data.words[p])+'</text></g>';
+  return '<svg viewBox="'+[x0,y0,x1-x0,y1-y0].join(' ')+'" aria-label="'+esc(page)+' recorded word layout">'+(cone?'<path class="recon-cone-fill" d="'+cone+'"/>':'')+groups.map((g,k)=>{
+   const positions=g.positions.filter(p=>byId.has(p)),p=positions.includes(selected)?selected:positions[0],r=byId.get(p),b=g.parts[0],w=b[2]-b[0],h=b[3]-b[1];
+   const cls=['recon-word',inspecting&&positions.includes(selected)?'selected':'',positions.some(p=>parents.has(p))?'parent':'',positions.some(p=>source.has(p))?'source':'',positions.some(p=>matches(byId.get(p)))?'':'filtered',controls.written.checked&&positions.every(p=>byId.get(p).step>selectedRow.step)?'future':'',g.positions.length>1?'shared-box':'',g.flags.length?'alignment-flag':''].join(' ');
+   const color=positions.length>1?'#c8bccd':fill(r);
+   return '<g class="'+cls+'" data-position="'+p+'" data-group="'+esc(g.id)+'" role="button" tabindex="'+(positions.includes(selected)||k===0?'0':'-1')+'" aria-label="'+esc(g.label+' · '+page+':'+r.locus+' · '+(positions.length>1?'shared box':routeNames[m(r).chosen.kind]))+'"><title>'+esc(g.label+' · '+SG_REVIEW.note(data,p))+'</title>'+g.parts.map(b=>'<rect x="'+b[0]+'" y="'+b[1]+'" width="'+(b[2]-b[0])+'" height="'+(b[3]-b[1])+'" rx="2" fill="'+color+'"/>').join('')+'<text x="'+(b[0]+2)+'" y="'+(b[1]+h*.72)+'" font-size="'+Math.min(18,h*.67)+'" textLength="'+Math.max(2,w-4)+'" lengthAdjust="spacingAndGlyphs">'+esc(g.label)+'</text></g>';
   }).join('')+(cone?'<path class="recon-cone" d="'+cone+'"/>':'')+'</svg>';
  }
  function operation(r){
@@ -85,7 +87,10 @@
    return '<div>'+(canJump?'<button type="button" data-parent="'+p+'">'+esc(label)+'</button>':'<b>'+esc(label)+'</b>')+'<span class="recon-chip">'+(same?(data.lines[geo.lineOf[p]].page===r.page?'Same page':'Earlier page'):'External startup priming')+'</span>'+(c.parent_distance?' <span class="chart-note">distance '+c.parent_distance[i]+'</span>':'')+'</div>';
   }).join('');
   $('reconDetails').innerHTML='<h2>'+esc(data.words[selected])+'</h2><p class="chart-note">'+esc(where(selected))+' · word '+(r.step+1)+' on '+esc(r.sheet)+'</p><span class="recon-chip">'+routeNames[c.kind]+'</span><span class="recon-chip">'+(r.first?'First appearance on sheet':'Previously seen on sheet')+'</span>'+(r.pf?'<span class="recon-chip">p/f family</span>':'')+(r.rare.length?'<span class="recon-chip">Rare: '+esc(r.rare.join(', '))+'</span>':'')+'<p class="recon-note">'+esc(operation(r))+'</p><h3>Proposed parents</h3><div class="parents">'+(parentList||'<p class="chart-note">'+(r.seed?'Supplied seed; no parent needed.':'No supported parent.')+'</p>')+'</div><h3>Sources and alternatives</h3><table>'+facts.map(([a,b])=>'<tr><th>'+a+'</th><td>'+esc(b)+'</td></tr>').join('')+'</table><p class="chart-note">Counts refer to the construction pool, including its page reserve. Different operation families overlap; these are not probabilities.</p><h3>Inside the selected cone</h3><p class="chart-note">'+pool.indices.length+' earlier words · '+local.distinct+' spellings · minimum distance '+number(local.minedit)+'. Sources below are ordered by distance, then geometry weight.</p><div class="recon-sources">'+local.sources.map(x=>'<button type="button" data-parent="'+x.positions[0]+'">'+esc(x.word)+' · d='+x.distance+' · ×'+x.positions.length+'</button> ').join('')+'</div>';
-  if(!geo.centers[selected])$('reconDetails').insertAdjacentHTML('beforeend','<p class="recon-note">This word has no usable recorded rectangle. Its local cone is empty; the word remains in the text and page history.</p>');
+  if(!geo.centers[selected])$('reconDetails').insertAdjacentHTML('beforeend','<p class="recon-note">This word has no resolved individual location under the conservative policy. Its local cone is unscored; the word remains in the text and page history.</p>');
+  const t=data.spatialReview?.tokens[selected],g=data.spatialReview?.groups[t?.group];
+  if(t)$('reconDetails').insertAdjacentHTML('afterbegin','<div class="recon-note"><b>Spatial alignment</b><p>'+esc(SG_REVIEW.note(data,selected))+'</p><a href="alignment.html#page='+encodeURIComponent(r.page)+'&token='+encodeURIComponent(t.id)+'">Review this assignment</a>'+(g?.positions.length>1?'<p>Inspect a word in this shared box: '+g.positions.map(p=>'<button type="button" data-parent="'+p+'">'+esc(data.words[p])+'</button>').join(' ')+'</p>':'')+'</div>');
+  $('reconDetails').insertAdjacentHTML('afterbegin','<p class="recon-note">Saved construction pools, routes and cone scores use the earlier alignment and require re-analysis. The live cone uses reviewed geometry. Page-history and grammar checks are unchanged.</p>');
  }
  function render(){
   const rr=sheetRows(),r=record(),sheet=study.sheets.find(x=>x.id===r.sheet),pool=inspecting?SG_SOURCES.sourcePool(geo,selected,100):{indices:[],weights:[]},parents=new Set(inspecting?m(r).chosen.parents:[]);
@@ -95,12 +100,13 @@
   controls.focus.disabled=!inspecting;
   $('reconPages').classList.toggle('recon-focus',inspecting&&controls.focus.checked);
   $('reconPages').innerHTML=pages.map(p=>{const rows=rr.filter(x=>x.page===p);return '<figure><figcaption>'+p+' · '+rows.length+' words</figcaption>'+pageSvg(p,rows,pool,parents)+'</figure>';}).join('');
-  const missing=visibleRows.filter(x=>!geo.geometry[x.position]);
-  $('reconMissing').innerHTML=missing.length?'Words without usable rectangles: '+missing.map(x=>'<button type="button" data-parent="'+x.position+'">'+esc(data.words[x.position]+' · '+where(x.position))+'</button>').join(' '):'';
+  const displayed=new Set(SG_REVIEW.groups(data,visibleRows.map(r=>r.position)).flatMap(g=>g.positions));
+  const missing=visibleRows.filter(x=>!displayed.has(x.position));
+  $('reconMissing').innerHTML=missing.length?'Words awaiting a resolved display assignment: '+missing.map(x=>'<button type="button" data-parent="'+x.position+'">'+esc(data.words[x.position]+' · '+where(x.position))+'</button>').join(' '):'';
   controls.step.max=rr.length-1;controls.step.value=r.step;
   $('reconProgress').textContent=(r.step+1)+' / '+rr.length+' · '+r.page+':'+r.locus;
   const scored=rr.filter(x=>!x.seed),unknown=scored.filter(x=>m(x).chosen.kind==='introduction').length;
-  $('reconSummary').textContent=rr.length+' words in singulion order · '+unknown+' / '+scored.length+' unexplained after seed lines · '+visibleRows.filter(matches).length+' highlighted in this view. '+(controls.mode.value==='primed'?'Startup reserve: '+study.priming[r.sheet].page+'.':'No external startup reserve.');
+  $('reconSummary').textContent=rr.length+' words in singulion order · '+unknown+' / '+scored.length+' unexplained in the saved legacy analysis · '+visibleRows.filter(matches).length+' highlighted. Shared boxes show all ZL words together; commas preserve uncertain spaces. Live cones use reviewed word-level assignments.';
   legend();
   if(inspecting)details(r,pool);
   else $('reconDetails').innerHTML='<h2>No word selected</h2><p class="chart-note">Select a word to inspect its source window, proposed parents and edit alternatives.</p>';
@@ -117,7 +123,7 @@
   controls.page.value=record().page;render();
  }
  try{
-  [data,study]=await Promise.all([SG.load('data/mattr_heatmap/words.json.gz?v=270f5d56c6'),SG.load('data/reconstruction.json.gz?v=ff21803488')]);
+  [data,study]=await Promise.all([SG.load('data/mattr_heatmap/words.json.gz?v=2d8f0c10c5'),SG.load('data/reconstruction.json.gz?v=ff21803488')]);
   geo=SG_SOURCES.prepare(data);copy=SG_COPY.prepare(data);byId=new Map(study.rows.map(r=>[r.position,r]));bySheet=new Map(study.sheets.map(s=>[s.id,study.rows.filter(r=>r.sheet===s.id)]));
   controls.sheet.replaceChildren(...study.sheets.map(s=>new Option(s.id+' · '+s.pages.join(' '),s.id)));
   restoreHash();root.removeAttribute('aria-busy');

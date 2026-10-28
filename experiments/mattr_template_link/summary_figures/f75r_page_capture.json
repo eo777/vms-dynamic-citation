@@ -1,0 +1,69 @@
+{
+  "crop": {
+    "bottom": 968.90625,
+    "height": 898.71875,
+    "left": 39,
+    "right": 842,
+    "top": 70.1875,
+    "width": 803,
+    "x": 39,
+    "y": 70.1875
+  },
+  "image": {
+    "bottom": 968.90625,
+    "height": 898.71875,
+    "left": 122.95270538330078,
+    "right": 758.0473098754883,
+    "top": 70.1875,
+    "width": 635.0946044921875,
+    "x": 122.95270538330078,
+    "y": 70.1875
+  },
+  "sources": 0,
+  "viewBox": "0 0 636 900",
+  "viewport": {
+    "height": 1096,
+    "width": 896
+  },
+  "fullPageView": true,
+  "summary": "f75r · 418 / 418 words shown · 383 conservative word-level assignments",
+  "url": "http://127.0.0.1:8765/alignment.html#page=f75r&filter=all&colors=components",
+  "colorDomain": {
+    "high": 27.29939859640385,
+    "low": 9.53444309485078
+  },
+  "examples": [
+    {
+      "id": "f75r.28@73:80",
+      "score": 22.09994495997548
+    },
+    {
+      "id": "f75r.41@26:33",
+      "score": 13.628010146614931
+    }
+  ],
+  "originalBoxColors": [
+    {
+      "box": [
+        507,
+        432,
+        45,
+        15
+      ],
+      "fill": "rgb(225, 146, 92)",
+      "opacity": "0.58",
+      "score": 14.32218855172244
+    },
+    {
+      "box": [
+        552,
+        426,
+        51,
+        24
+      ],
+      "fill": "rgb(233, 183, 124)",
+      "opacity": "0.58",
+      "score": 16.37657164257371
+    }
+  ]
+}

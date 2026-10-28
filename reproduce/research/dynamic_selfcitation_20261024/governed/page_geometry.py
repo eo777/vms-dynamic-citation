@@ -77,6 +77,10 @@ def app_words():
 def oversized_flags(app, ms, width_factor=6.0, height_factor=2.5):
     """Per token: True when the recorded rectangle is wider than width_factor or taller than height_factor times the
     median box of its page (a defect of the source geometry)."""
+    # Schema 3 geometry already applies the provenance-bearing alignment policy.
+    # A tall original gallows box is not, by itself, an invalid rectangle.
+    if app.get('spatialReview'):
+        return [not t['strict'] for t in app['spatialReview']['tokens']]
     flags = [False] * len(app['geometry'])
     for p in ms['pages']:
         idx = [i for l in range(p['start_line'], p['end_line']) for i in range(app['lines'][l]['start'], app['lines'][l]['end']) if app['geometry'][i]]

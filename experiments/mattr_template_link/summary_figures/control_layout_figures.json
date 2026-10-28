@@ -1,0 +1,79 @@
+{
+  "page": "f75r",
+  "screenshot_source": "Actual heatmap app, Show words on, Boxes hidden, page image off",
+  "viewbox": [
+    0,
+    0,
+    1136,
+    1500
+  ],
+  "closeup_coordinates": [
+    550,
+    145,
+    1005,
+    389
+  ],
+  "verified_captures": [
+    {
+      "key": "manuscript",
+      "screenshot_sha256": "c86f5b2940fea4dcd4a944269f7f069f3e121da60c2b583322bd1020a743fc64",
+      "screenshot_crop": [
+        20,
+        549,
+        1072,
+        1938
+      ],
+      "displayed_words": 418,
+      "bundle_sha256": "e66f291195747fb431629838764a4a48bf3f1f733fa34e2f93fd32e4b4e21ddd"
+    },
+    {
+      "key": "gart_one_word_per_box",
+      "screenshot_sha256": "c47449f1fc66d936ee82ebd0272d726d80962dd1afa524b7ff0aba39d8b3e8f3",
+      "screenshot_crop": [
+        20,
+        549,
+        1072,
+        1938
+      ],
+      "displayed_words": 418,
+      "bundle_sha256": "8a40fe6983dd8e4b6d0ed0026a00dc7da7f50e14b9e70bc664ff7c528823bdca"
+    },
+    {
+      "key": "gart_character_budget",
+      "screenshot_sha256": "043902b338739a12bcdc87e2f36fa314b8d7b3b11dea7997fdf7f861bf2f76d5",
+      "screenshot_crop": [
+        20,
+        549,
+        1072,
+        1938
+      ],
+      "displayed_words": 419,
+      "bundle_sha256": "736314b117f06d8fadb60bbcfa48446ca190acc9e077d2a58579fe7a3929e3bf"
+    },
+    {
+      "key": "gart_own_lines",
+      "screenshot_sha256": "45c66ae428b0ffe2daa875abc22c8634f05f5617caf45a7a32a573a0af755819",
+      "screenshot_crop": [
+        20,
+        549,
+        1072,
+        1938
+      ],
+      "displayed_words": 248,
+      "bundle_sha256": "783c4401b89b457502ffb99195711d837a11e81f64a99190c0cb3e2ec67679f9"
+    },
+    {
+      "key": "bigram_whole",
+      "screenshot_sha256": "59f1690ab1faf91754f5131c5f28373663f7ee3c4742438bb676b8da77b9840d",
+      "screenshot_crop": [
+        20,
+        549,
+        1072,
+        1938
+      ],
+      "displayed_words": 418,
+      "bundle_sha256": "e3e8f7c8947bdd4178ed3063d56bfe3e3e82e03bb100de3f45b72fc80328a38a"
+    }
+  ],
+  "note": "Screenshot crops and labels only; words and geometry are unchanged from the frozen study inputs."
+}

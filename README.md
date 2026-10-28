@@ -133,6 +133,14 @@ the saved generator streams and the positional data from `reproduce/`, the compa
 figures they wrote, and the write-up `RESULTS.md`. Its `README.md` gives the run order and the numbers to
 check first. It reads the app's data and heatmap scripts and changes nothing in the app.
 
+The `alignment_rerun_20261028/` subfolder rechecks the spatial-diversity/repetition result against the reviewed
+word assignments, with paired paragraph/page shuffle controls and held-out prediction. Historical scripts
+explicitly retain the 27 October geometry; this rerun compares it with the corrected and strict geometry.
+Its results, input hashes and runnable checks are included. Manuscript images are not required.
+The rerun defaults to its preserved `inputs/words_review_v1.json.gz` snapshot; use `--input` to choose
+a newer app bundle explicitly. Later compound and boundary repairs therefore cannot silently replace
+the input behind the saved results.
+
 ## Versions and caching
 
 Each release has a version, `YYYY.MM.DD` (then `.2`, `.3` … for later releases the same day), shown in the menu and

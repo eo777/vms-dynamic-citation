@@ -22,6 +22,7 @@ HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
 import data as D
 import component_check as CC
+from geometry_inputs import validate_variant
 from timing import shuffled_within
 
 OUT = HERE / 'heatmap_variants'
@@ -94,7 +95,7 @@ def analyse(inp, label_like, sec_of=None, grp_of=None):
 def main():
     from native_layout import label_like_slot
     ms = D.manuscript()
-    app = json.load(gzip.open(CC.APP, 'rt', encoding='utf8'))
+    app = CC.load_study_app('legacy')
     frames = CC.line_frames(app, ms)
     label_like = {(L['folio'], L['locus']) for L in ms['lines'] if label_like_slot(L)}
     sec_of = {p['folio']: f"{p['section']}/{p['currier']}" for p in ms['pages']}
@@ -102,6 +103,7 @@ def main():
     texts = []
     for key in VARIANTS:
         b = json.load(gzip.open(OUT / key / 'data/mattr_heatmap/words.json.gz', 'rt', encoding='utf8'))
+        validate_variant(b, app)
         texts.append((key, dict(words=b['words'], lines=b['lines'], geometry=b['geometry'], components=b['components'])))
     tok = D.tokenize(ms)
     par_id = np.cumsum(tok['since_par'] == 0)

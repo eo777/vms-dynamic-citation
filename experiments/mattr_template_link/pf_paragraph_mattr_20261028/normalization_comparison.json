@@ -1,0 +1,101 @@
+{
+  "k": {
+    "groups": {
+      "3c": {
+        "original_mattr": 0.8441077402237859,
+        "normalized_mattr": 0.8374068520013842,
+        "loss": 0.006700888222401669,
+        "previously_unique_pf_retained": 0.9072497233848078,
+        "pf_unique_in_window_before": 0.9609078862214552,
+        "pf_unique_in_window_after": 0.8717834139726957
+      },
+      "4c": {
+        "original_mattr": 0.7707876154263987,
+        "normalized_mattr": 0.7696279196089082,
+        "loss": 0.0011596958174905359,
+        "previously_unique_pf_retained": 0.9723880597014926,
+        "pf_unique_in_window_before": 0.9738372093023255,
+        "pf_unique_in_window_after": 0.9469476744186046
+      },
+      "4a": {
+        "original_mattr": 0.7157842991211083,
+        "normalized_mattr": 0.7144421272158499,
+        "loss": 0.0013421719052584269,
+        "previously_unique_pf_retained": 0.9512702487386032,
+        "pf_unique_in_window_before": 0.9560765064319566,
+        "pf_unique_in_window_after": 0.9094871360866622
+      }
+    },
+    "stars_to_bio_gap": {
+      "before": 0.12832344110267757,
+      "after": 0.12296472478553433,
+      "fraction_retained": 0.9582405500421745
+    }
+  },
+  "ke": {
+    "groups": {
+      "3c": {
+        "original_mattr": 0.8441077402237859,
+        "normalized_mattr": 0.8433083400622909,
+        "loss": 0.0007994001614949342,
+        "previously_unique_pf_retained": 0.9850547617902214,
+        "pf_unique_in_window_before": 0.9609078862214552,
+        "pf_unique_in_window_after": 0.9465468889642208
+      },
+      "4c": {
+        "original_mattr": 0.7707876154263987,
+        "normalized_mattr": 0.7705893536121673,
+        "loss": 0.0001982618142314374,
+        "previously_unique_pf_retained": 0.9950474898236092,
+        "pf_unique_in_window_before": 0.9738372093023255,
+        "pf_unique_in_window_after": 0.9690142706131079
+      },
+      "4a": {
+        "original_mattr": 0.7157842991211083,
+        "normalized_mattr": 0.715145240577983,
+        "loss": 0.0006390585431252926,
+        "previously_unique_pf_retained": 0.9721607506417633,
+        "pf_unique_in_window_before": 0.9560765064319566,
+        "pf_unique_in_window_after": 0.9294600541638456
+      }
+    },
+    "stars_to_bio_gap": {
+      "before": 0.12832344110267757,
+      "after": 0.12816309948430793,
+      "fraction_retained": 0.9987504884766818
+    }
+  },
+  "t": {
+    "groups": {
+      "3c": {
+        "original_mattr": 0.8441077402237859,
+        "normalized_mattr": 0.8397923635944169,
+        "loss": 0.004315376629368983,
+        "previously_unique_pf_retained": 0.9390484437388753,
+        "pf_unique_in_window_before": 0.9609078862214552,
+        "pf_unique_in_window_after": 0.9023390551326698
+      },
+      "4c": {
+        "original_mattr": 0.7707876154263987,
+        "normalized_mattr": 0.7697745790331342,
+        "loss": 0.0010130363932645547,
+        "previously_unique_pf_retained": 0.9746947082767978,
+        "pf_unique_in_window_before": 0.9738372093023255,
+        "pf_unique_in_window_after": 0.9491939746300211
+      },
+      "4a": {
+        "original_mattr": 0.7157842991211083,
+        "normalized_mattr": 0.7141739907641889,
+        "loss": 0.0016103083569194432,
+        "previously_unique_pf_retained": 0.9433035319111268,
+        "pf_unique_in_window_before": 0.9560765064319566,
+        "pf_unique_in_window_after": 0.9018703452945159
+      }
+    },
+    "stars_to_bio_gap": {
+      "before": 0.12832344110267757,
+      "after": 0.12561837283022803,
+      "fraction_retained": 0.9789199210276391
+    }
+  }
+}

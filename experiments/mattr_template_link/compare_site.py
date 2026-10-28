@@ -17,6 +17,7 @@ HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
 import data as D
 import component_check as CC
+from geometry_inputs import validate_variant
 
 OUT = HERE / 'heatmap_variants'
 APP = D.src('apps/selfcitation_governor')
@@ -54,7 +55,7 @@ def domain(values):
 def main():
     ms = D.manuscript()
     frames = page_frames()
-    app = json.load(gzip.open(APP / 'data/mattr_heatmap/words.json.gz', 'rt', encoding='utf8'))
+    app = CC.load_study_app('legacy')
     pages = {p['folio']: dict(frames.get(p['folio'], dict(ratio=0.75, viewBox='0 0 1100 1500')), bifolium=p['node'], group=p['group'], section=p['section']) for p in ms['pages']}
     bifolia = [dict(id=n['id'], group=n['group'], section=D.GROUP_SECTION.get(n['group'], ''), pages=n['pages']) for n in ms['nodes']]
     data = dict(pages=pages, bifolia=bifolia, palette=app['palette'], measures=dict(
@@ -63,6 +64,7 @@ def main():
     pooled = {u: {m: [] for m in MEASURES} for u in ('v', 'l')}
     for key, label, unit in VARIANTS:
         b = json.load(gzip.open(OUT / key / 'data/mattr_heatmap/words.json.gz', 'rt', encoding='utf8'))
+        validate_variant(b, app)
         inp = dict(words=b['words'], lines=b['lines'], geometry=b['geometry'], components=b['components'])
         meas = CC.measure(inp)
         mattr = D.trailing_distinct(inp['words'], 100)

@@ -20,5 +20,6 @@
 .recon-inspector .parents{display:flex;flex-direction:column;gap:6px}.recon-inspector button{text-align:left;font-size:12px;white-space:normal}.recon-chip{display:inline-block;font-size:11px;padding:3px 5px;border:1px solid var(--line2);border-radius:3px;margin:3px 3px 3px 0}
 .recon-note{font-size:13px;line-height:1.5;background:var(--bg);padding:10px;border-left:3px solid var(--gov)}.recon-sources{max-height:220px;overflow:auto}.recon-method{margin:20px 0;padding:18px}.recon-method summary{cursor:pointer;font-weight:600}.recon-method p{max-width:1100px}
 #reconMissing{font-size:12px;color:var(--ink2);margin-top:10px}#reconMissing button{margin:3px;font-size:12px}
+.recon-word.shared-box rect{stroke:#80648c;stroke-width:1;stroke-dasharray:3 2}.recon-word.alignment-flag:not(.selected):not(.parent):not(.source) rect{stroke:#a88246;stroke-width:.6}
 @media(max-width:1100px){.recon-layout{grid-template-columns:minmax(0,1fr) 300px}#reconPages{grid-template-columns:1fr}.recon-inspector{top:170px}}
 @media(max-width:750px){.reconstruction{padding:0 12px}.recon-controls{position:static}.recon-layout{grid-template-columns:1fr}.recon-inspector{position:static;max-height:none}.recon-controls select{max-width:180px}}

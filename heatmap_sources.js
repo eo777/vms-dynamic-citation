@@ -8,7 +8,7 @@ const SG_SOURCES=(()=>{
   let d=0;for(let i=0;i<a.length;i++){const p=a[i]/sa,q=b[i]/sb,m=(p+q)/2;if(p)d+=p*Math.log2(p/m)/2;if(q)d+=q*Math.log2(q/m)/2;}
   return Math.sqrt(Math.max(0,d));
  }
- function prepare(data){
+ function prepare(data,options={}){
   const pages=new Map(),lineOf=new Uint16Array(data.words.length),unitIds=new Map(),pairIds=new Map(),pairLeft=[],unitNames=[],pairNames=[];
   data.lines.forEach((line,k)=>{
    lineOf.fill(k,line.start,line.end);
@@ -17,8 +17,11 @@ const SG_SOURCES=(()=>{
   });
   // Same page-relative filter as page_geometry.oversized_flags in the research.
   // Keep canonical words and raw data intact; invalid rectangles are not sources.
-  const excluded=new Set(),geometry=data.geometry.slice();
-  for(const page of pages.values()){
+  const reviewed=!!data.spatialReview&&options.policy!=='legacy';
+  const excluded=new Set(),geometry=(options.policy==='legacy'&&data.legacyGeometry?data.legacyGeometry:options.policy==='sensitivity'&&reviewed?data.spatialReview.sensitivityGeometry:data.geometry).slice();
+  if(reviewed){
+   data.spatialReview.tokens.forEach((t,i)=>{if(!geometry[i])excluded.add(i);});
+  }else for(const page of pages.values()){
    const boxes=page.indices.map(i=>geometry[i]).filter(Boolean),w=median(boxes.map(b=>b[2]-b[0])),h=median(boxes.map(b=>b[3]-b[1]));
    for(const i of page.indices){const b=geometry[i];if(b&&(b[2]-b[0]>6*w||b[3]-b[1]>2.5*h)){excluded.add(i);geometry[i]=null;}}
   }

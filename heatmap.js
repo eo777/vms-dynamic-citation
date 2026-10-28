@@ -15,6 +15,37 @@
  let width=100,mode='backward',colorMode='mattr',computedWidth=0,computedMode='';
  let sourceCtx=null,sourceStats=null,sourceKey='',colorDomains={},sourceOptions={left:3,depth:8,angle:45,weight:'distance'};
  let copyCtx=null,editRadius=1,countUnit='Types';
+ let expandedPage=null,overviewScroll=0;
+ const pageDisplay=SG_HEATMAP_PAGE.create({atlas,onChange:()=>{
+  if(selected>=0&&rolling&&!atlas.hasAttribute('aria-busy'))select(origin,selected,false);
+  if(data)saveHash();
+ }});
+ const pageFigures=new Map();
+ for(const figure of atlas.querySelectorAll('figure')){
+  if(!figure.querySelector('svg'))continue;
+  const caption=figure.querySelector('figcaption'),page=caption.textContent.trim(),button=document.createElement('button');
+  figure.dataset.page=page;pageFigures.set(page,figure);button.type='button';button.className='expand-page';button.textContent='⤢';
+  button.setAttribute('aria-label','Expand '+page);button.setAttribute('aria-expanded','false');button.title='Expand '+page;
+  button.addEventListener('click',()=>{expandPage(expandedPage===figure?null:figure);saveHash();});caption.append(button);
+ }
+ function expandPage(figure,scroll=true){
+  if(figure===expandedPage)return;
+  if(figure&&selected>=0&&!figure.contains(origin))restore();
+  if(expandedPage){
+   expandedPage.classList.remove('expanded-page');expandedPage.closest('.bifolio').classList.remove('expanded-row');
+   const button=expandedPage.querySelector('.expand-page');button.textContent='⤢';button.setAttribute('aria-label','Expand '+expandedPage.dataset.page);button.title='Expand '+expandedPage.dataset.page;button.setAttribute('aria-expanded','false');
+  }else if(figure)overviewScroll=window.scrollY;
+  const previous=expandedPage;expandedPage=figure;atlas.classList.toggle('page-expanded',!!figure);
+  if(figure){
+   figure.classList.add('expanded-page');figure.closest('.bifolio').classList.add('expanded-row');
+   const button=figure.querySelector('.expand-page');button.textContent='⤡ Back to bifolia';button.setAttribute('aria-label','Collapse '+figure.dataset.page);button.title='Return to bifolia';button.setAttribute('aria-expanded','true');
+  }
+  visibility();pageDisplay.expand(figure);
+  if(scroll)requestAnimationFrame(()=>{
+   if(figure){const top=figure.getBoundingClientRect().top+window.scrollY-atlas.querySelector('.controls').getBoundingClientRect().height-12;window.scrollTo({top,behavior:'instant'});}
+   else{window.scrollTo({top:overviewScroll,behavior:'instant'});previous?.querySelector('.expand-page').focus({preventScroll:true});}
+  });
+ }
  const copyView=()=>['minedit','candidates'].includes(colorMode);
  const spatial=()=>mode==='spatial',components=()=>['components','h1','h2','js'].includes(colorMode),advanced=()=>spatial()||components();
  for(const box of atlas.querySelectorAll('rect[data-token-indices]')){
@@ -29,7 +60,7 @@
  }
  function visibility(context=new Set()){
   for(const row of rows){
-   const extra=!inScope(row)&&context.has(row.querySelector('h2').textContent);
+   const extra=!inScope(row)&&(context.has(row.querySelector('h2').textContent)||row===expandedPage?.closest('.bifolio'));
    row.hidden=!(inScope(row)||extra);row.classList.toggle('window-context',extra);
   }
  }
@@ -76,7 +107,7 @@
     const value=values.length?values.reduce((a,b)=>a+b,0)/values.length:NaN;
     fill=!Number.isFinite(value)?'var(--line2)':value>1e-12?'var(--heat-single)':value<-1e-12?'var(--heat-repeat)':'var(--heat-neutral)';
    }else fill=paintColor(boxScore(entry.indices));
-   entry.box.setAttribute('fill',fill);
+   entry.box.setAttribute('fill',fill);entry.box.style.setProperty('--box-color',fill);
   }
   if(advanced())for(const row of rows){
    const range=data.ranges.get(row.querySelector('h2').textContent),values=sourceStats.slice(range.start,range.end).map(s=>s[metric().key]).filter(Number.isFinite);
@@ -87,15 +118,15 @@
   }
  }
  function metric(){return ({minedit:{key:'minedit',label:'minimum glyph edits'},candidates:{key:'candidate'+countUnit+editRadius,label:'candidate '+(countUnit==='Types'?'spellings':'occurrences')+' ≤'+editRadius+' edits'},components:{key:'components',label:'effective pairs'},h1:{key:'h1',label:'glyph H1 · bits'},h2:{key:'h2',label:'glyph H2 · bits'},js:{key:'js',label:'JS distance'}})[colorMode]||{key:'worddiv',label:'source diversity'};}
- function metricScale(value){return copyView()?Math.min(1,value/(colorMode==='minedit'?5:10)):components()?SG_SOURCES.colorFraction(value,colorDomains[colorMode]||{low:0,high:1}):Math.max(0,Math.min(1,value));}
+ function metricScale(value){return copyView()?Math.min(1,colorMode==='minedit'?value/5:Math.log2(1+Math.max(0,value))/Math.log2(18)):components()?SG_SOURCES.colorFraction(value,colorDomains[colorMode]||{low:0,high:1}):Math.max(0,Math.min(1,value));}
  function metricTicks(){
-  if(copyView())return colorMode==='minedit'?['0 · copy','1','2','3','4','5+']:['0','2','5','8','10+'];
+  if(copyView())return colorMode==='minedit'?['0 · copy','1','2','3','4','5+']:SG_COPY.candidateBands.map(b=>b.label);
   if(!components())return ['0','.25','.50','.75','1'];
   const d=colorDomains[colorMode],digits=colorMode==='components'?1:2;if(!d?.count)return ['No scored words'];
   if(d.constant)return [d.low.toFixed(digits)+' · no variation'];
   return Array.from({length:5},(_,i)=>(i===0?'≤':i===4?'≥':'')+(d.low+(d.high-d.low)*i/4).toFixed(digits));
  }
- function advancedColor(value){if(colorMode==='minedit')return SG_COPY.distanceColor(value);return Number.isFinite(value)?paintColor(.5+.5*(colorMode==='js'?1-metricScale(value):metricScale(value))):'var(--line2)';}
+ function advancedColor(value){if(colorMode==='minedit')return SG_COPY.distanceColor(value);if(colorMode==='candidates')return SG_COPY.candidateColor(value);return Number.isFinite(value)?paintColor(.5+.5*(colorMode==='js'?1-metricScale(value):metricScale(value))):'var(--line2)';}
  function sourceText(s){
   if(!s)return 'Calculating…';
   if(copyView())return !s.n?'No eligible earlier source with usable geometry':s.minedit+' minimum glyph edits · '+s.nearestTypes+' nearest spelling'+(s.nearestTypes===1?'':'s')+' ('+s.nearestOccurrences+' occurrences) · '+s['candidateTypes'+editRadius]+' spellings / '+s['candidateOccurrences'+editRadius]+' occurrences within '+editRadius+' edits · '+s.n+' words in cone';
@@ -103,6 +134,7 @@
   return score+' · '+s.n+(spatial()?' source words':' words')+' · '+s.ess.toFixed(1)+' effective sources';
  }
  function setLegend(ticks,reverse=false){
+  document.getElementById('heatmapLegend').classList.remove('candidate-legend');
   document.querySelector('#heatmapLegend .ticks').replaceChildren(...ticks.map(text=>{const s=document.createElement('span');s.textContent=text;return s;}));
   document.querySelector('#heatmapLegend .spectrum').style.background=reverse?'linear-gradient(90deg,#185965,#4e9c92,#a1c5ad,#ead6a1,#e9aa6c,#d56b43,#a83c35)':'';
  }
@@ -118,13 +150,20 @@
  }
  function clearMarks(){if(rolling)for(const box of marked)restoreEntry(box);marked=[];for(const g of atlas.querySelectorAll('.source-guide'))g.remove();}
  function normalTitle(entry){
-  if(advanced())return entry.indices.map(i=>data.words[i]+' · '+sourceText(sourceStats?.[i])).join(' / ')+(entry.indices.length>1?' · shared box: mean of valid word scores':'');
-  if(attribution())return entry.indices.map(i=>data.words[i]+' · '+(colorMode==='impact'?impactText(i):changeText(i))).join(' / ')+
+  const identity=boxIdentity(entry);
+  if(spatial()&&entry.indices.every(i=>!sourceCtx.centers[i]))return identity+' · Unresolved word positions; excluded from spatial scores.';
+  if(advanced())return identity+' · '+entry.indices.map(i=>data.words[i]+' · '+sourceText(sourceStats?.[i])).join(' / ')+(entry.indices.length>1?' · shared box: mean of valid word scores':'');
+  if(attribution())return identity+' · '+entry.indices.map(i=>data.words[i]+' · '+(colorMode==='impact'?impactText(i):changeText(i))).join(' / ')+
    (entry.indices.length>1?' · shared box: color averages its word values':'');
   const value=boxScore(entry.indices);
-  return entry.indices.map(i=>data.words[i]).join(' / ')+' · D'+width+': '+(Number.isFinite(value)?value.toFixed(3):'incomplete window')+
+  return identity+' · D'+width+': '+(Number.isFinite(value)?value.toFixed(3):'incomplete window')+
    (entry.indices.length>1?' · shared rectangle: mean of available full windows':'');
  }
+ function boxIdentity(entry){
+  const label=SG_REVIEW.boxLabel(data,entry.indices);
+  return label+(entry.indices.length>1?' · shared physical box; individual word positions unresolved':'')+(label.includes(',')?' · comma = uncertain space':'');
+ }
+ function inspectionLabel(box,pos){const entry=byBox.get(box);return SG_REVIEW.boxLabel(data,entry.indices)+(entry.indices.length>1?' · selected token '+data.words[pos]:'');}
  function instructions(){
   document.getElementById('copySettings').hidden=!copyView();
   document.getElementById('sourceSettings').hidden=!spatial();document.getElementById('sizeLabel').textContent=spatial()?'Source cap':'Window';
@@ -142,8 +181,13 @@
    document.getElementById('legendLabel').textContent=metric().label+(components()?' · linear · full-path '+(colorDomains[colorMode]?.trimmed?'5–95%':'range'):'')+(colorMode==='js'?' · warm = further':' · warm = lower');
    if(copyView()){
     caption.textContent='Raw Zattera glyph-unit distance to earlier words in the cleaned source cone; initial gallows are preserved. The target is excluded. '+(colorMode==='minedit'?'Color shows the smallest whole-word distance.':'Color counts '+(countUnit==='Types'?'distinct source spellings':'source occurrences')+' within '+editRadius+' edits.')+' Gray means no usable source pool. Click a target to show source spellings inside its cone and their distances. These are generic edits, not native morpher operations or evidence of copying.';
-    document.getElementById('legendLabel').textContent=metric().label+(colorMode==='minedit'?' · warm = more edits':' · warm = fewer candidates');
+    document.getElementById('legendLabel').textContent=metric().label+(colorMode==='minedit'?' · warm = more edits':' · nonlinear count bands · red = zero');
     if(colorMode==='minedit')document.querySelector('#heatmapLegend .spectrum').style.background='linear-gradient(90deg,'+[0,1,2,3,4,5].map(SG_COPY.distanceColor).join(',')+')';
+    else{
+     const bands=SG_COPY.candidateBands;document.getElementById('heatmapLegend').classList.add('candidate-legend');
+     document.querySelector('#heatmapLegend .spectrum').style.background='linear-gradient(90deg,'+bands.map((b,i)=>b.color+' '+(i*100/bands.length)+'%,'+b.color+' '+((i+1)*100/bands.length)+'%').join(',')+')';
+     caption.textContent+=' Fixed nonlinear color bands separate 0, 1 and 2 candidates, then 3–4, 5–8, 9–16 and 17+. The same bands apply on every page.';
+    }
    }
    atlas.dataset.colors=colorMode;document.querySelector('.window-status').classList.toggle('idle',selected<0);return;
   }
@@ -174,16 +218,23 @@
   const box=origin;
   anchored(box,()=>{
    clearMarks();selected=-1;atlas.classList.remove('window-mode');restoreButton.hidden=true;shared.hidden=true;contribList.hidden=true;contribWord=null;
+   document.getElementById('alignmentNote').hidden=true;
    visibility();instructions();summary.textContent='Click any word to highlight its calculation window on the pages.';
+   pageDisplay.labels();
   });
   if(focus&&box&&!box.closest('.bifolio').hidden)box.focus({preventScroll:true});
  }
  function location(i){const line=data.lines[data.lineOf[i]];return line.page+' · line '+line.locus;}
+ function alignmentNote(pos){
+  const note=document.getElementById('alignmentNote'),t=data.spatialReview?.tokens[pos];
+  note.hidden=!t;if(t)note.innerHTML=SG.esc(SG_REVIEW.note(data,pos))+' <a href="alignment.html#page='+encodeURIComponent(t.page)+'&token='+encodeURIComponent(t.id)+'">Inspect original boxes and transcription</a>';
+ }
  function select(box,pos,toggle=true){
   if(!data||!rolling||atlas.hasAttribute('aria-busy'))return;
   if(advanced()){selectAdvanced(box,pos,toggle);return;}
   const indices=byBox.get(box).indices;
   if(toggle&&indices.includes(selected)){restore();return;}
+  alignmentNote(pos);
   const svg=box.closest('svg');svg.querySelector('[tabindex="0"]')?.setAttribute('tabindex','-1');box.setAttribute('tabindex','0');
   const w=SG_HEATMAP.windowAt(data.words,pos,width,colorMode==='change'?'backward':mode),context=new Set(),active=new Map();
   const area=colorMode==='impact'?SG_HEATMAP.impactBounds(pos,width,data.words.length):colorMode==='change'?{start:Math.max(0,pos-width),end:pos+1}:w;
@@ -197,9 +248,9 @@
    clearMarks();selected=pos;origin=box;atlas.classList.add('window-mode');visibility(context);
    restoreButton.hidden=false;shared.hidden=indices.length<2;
    choose.replaceChildren(...indices.map(i=>new Option(data.words[i]+' · word '+(i+1),i,false,i===pos)));
-   summary.textContent=data.words[pos]+' · '+w.unique+' distinct / '+w.size+' words'+(w.score===null?' · incomplete window; no score':' = '+w.score.toFixed(3));
-   if(colorMode==='impact')summary.textContent=data.words[pos]+' · '+impactText(pos);
-   if(colorMode==='change')summary.textContent=data.words[pos]+' · '+changeText(pos);
+   summary.textContent=inspectionLabel(box,pos)+' · '+w.unique+' distinct / '+w.size+' words'+(w.score===null?' · incomplete window; no score':' = '+w.score.toFixed(3));
+   if(colorMode==='impact')summary.textContent=inspectionLabel(box,pos)+' · '+impactText(pos);
+   if(colorMode==='change')summary.textContent=inspectionLabel(box,pos)+' · '+changeText(pos);
    instructions();
    caption.textContent=location(area.start)+' → '+location(area.end-1)+'. '+caption.textContent+
     (mapped<area.end-area.start?' '+(area.end-area.start-mapped)+' context tokens lack drawable coordinates; they still count in the score.':'')+
@@ -211,19 +262,21 @@
     const isSelected=ids.includes(pos);b.classList.toggle('window-selected',isSelected);
     if(isSelected)b.setAttribute('aria-pressed','true');
     b.classList.toggle('window-related',colorMode==='impact'?ids.some(i=>i!==pos&&data.words[i]===data.words[pos]):colorMode==='change'&&ids.includes(pos-width));
-    byBox.get(b).title.textContent=attribution()?normalTitle(byBox.get(b)):ids.map(i=>{const c=w.counts.get(data.words[i]);return data.words[i]+': '+c+' in this window · adds 1/'+c+' of a distinct form'+(c>1?' · its '+c+' copies cost '+pp(-(c-1)/width):'');}).join(' / ')+
+    byBox.get(b).title.textContent=attribution()?normalTitle(byBox.get(b)):boxIdentity(byBox.get(b))+' · '+ids.map(i=>{const c=w.counts.get(data.words[i]);return data.words[i]+': '+c+' in this window · adds 1/'+c+' of a distinct form'+(c>1?' · its '+c+' copies cost '+pp(-(c-1)/width):'');}).join(' / ')+
      (ids.length<byBox.get(b).indices.length?' · box also contains text outside this window':'');
    }
+   pageDisplay.labels();
   });
  }
  function drawSourceGuide(box,pos){
-  const point=sourceCtx.centers[pos];if(!point)return;
-  const page=sourceCtx.pages.get(data.lines[sourceCtx.lineOf[pos]].page),depth=sourceOptions.depth*page.pitch,spread=depth*Math.tan(sourceOptions.angle*Math.PI/180);
+  const raw=sourceCtx.centers[pos];if(!raw)return;
+  const point=pageDisplay.guide(box,raw);if(!point)return;
+  const page=sourceCtx.pages.get(data.lines[sourceCtx.lineOf[pos]].page),depth=sourceOptions.depth*page.pitch*point.scale,spread=depth*Math.tan(sourceOptions.angle*Math.PI/180);
   const ns='http://www.w3.org/2000/svg',g=document.createElementNS(ns,'g'),cone=document.createElementNS(ns,'path'),left=document.createElementNS(ns,'path');
   g.setAttribute('class','source-guide');g.setAttribute('aria-hidden','true');
   cone.setAttribute('d',`M ${point.x} ${point.y} L ${point.x-spread} ${point.y-depth} L ${point.x+spread} ${point.y-depth} Z`);
-  left.setAttribute('d',`M ${point.x} ${point.y} L ${point.x-sourceOptions.left*page.wordWidth} ${point.y}`);
-  g.append(cone,left);box.closest('svg').prepend(g);
+  left.setAttribute('d',`M ${point.x} ${point.y} L ${point.x-sourceOptions.left*page.wordWidth*point.scale} ${point.y}`);
+  g.append(cone,left);box.closest('svg').append(g);
  }
  function drawSourceWords(active,pos,distances){
   const ns='http://www.w3.org/2000/svg',groups=new Map();
@@ -231,13 +284,14 @@
    if(ids.every(i=>!sourceCtx.centers[i]))continue;
    const svg=box.closest('svg');if(!groups.has(svg)){const g=document.createElementNS(ns,'g');g.setAttribute('class','source-guide source-words');svg.append(g);groups.set(svg,g);}
    const text=document.createElementNS(ns,'text'),x=Number(box.getAttribute('x')),y=Number(box.getAttribute('y')),w=Number(box.getAttribute('width')),h=Number(box.getAttribute('height'));
-   text.textContent=ids.map(i=>data.words[i]).join('/');text.setAttribute('x',x+2);text.setAttribute('y',y+h*.72);text.setAttribute('font-size',Math.min(18,h*.65));text.setAttribute('textLength',Math.max(2,w-4));text.setAttribute('lengthAdjust','spacingAndGlyphs');
+   text.textContent=SG_REVIEW.boxLabel(data,byBox.get(box).indices);text.setAttribute('x',x+2);text.setAttribute('y',y+h*.72);text.setAttribute('font-size',Math.min(18,h*.65));text.setAttribute('textLength',Math.max(2,w-4));text.setAttribute('lengthAdjust','spacingAndGlyphs');
    groups.get(svg).append(text);
   }
  }
  function selectAdvanced(box,pos,toggle){
   if(atlas.hasAttribute('aria-busy')||!sourceStats)return;
   const indices=byBox.get(box).indices;if(toggle&&indices.includes(selected)){restore();return;}
+  alignmentNote(pos);
   const pool=spatial()?SG_SOURCES.sourcePool(sourceCtx,pos,width,sourceOptions):SG_SOURCES.windowPool(sourceCtx,pos,width,mode);
   const stat=copyView()?SG_COPY.measure(copyCtx,pos,pool,true):SG_SOURCES.measure(sourceCtx,pool,true),active=new Map(),context=new Set(),raw=new Map(pool.indices.map((i,k)=>[i,pool.weights[k]]));
   const distances=new Map(copyView()?stat.items.map(x=>[x.position,x.distance]):[]);
@@ -251,7 +305,7 @@
    clearMarks();selected=pos;origin=box;atlas.classList.add('window-mode');visibility(context);marked=[...active.keys()];
    restoreButton.hidden=false;shared.hidden=indices.length<2;
    choose.replaceChildren(...indices.map(i=>new Option(data.words[i]+' · word '+(i+1),i,false,i===pos)));
-   summary.textContent=data.words[pos]+' · '+(pool.missingTarget?'No recorded coordinates for this target':sourceText(stat))+(spatial()&&pool.available>stat.n?' · capped from '+pool.available+' eligible words':'');
+   summary.textContent=inspectionLabel(box,pos)+' · '+(pool.missingTarget?'No resolved word-level location for this target':sourceText(stat))+(spatial()&&pool.available>stat.n?' · capped from '+pool.available+' eligible words':'');
    instructions();
    if(spatial()&&!copyView()){
     caption.textContent+=' Highlighted sources vary in brightness with their relative draw weight; hover for probabilities. Settings define a geometric proxy, not Timm’s exact probability law.';
@@ -265,8 +319,9 @@
     b.classList.add('window-member');const isSelected=ids.includes(pos);b.classList.toggle('window-selected',isSelected);
     if(isSelected)b.setAttribute('aria-pressed','true');
     if(spatial()&&!isSelected){b.style.fill=copyView()?SG_COPY.distanceColor(Math.min(...ids.map(i=>distances.get(i)??Infinity))):'var(--heat-single)';b.style.opacity=copyView()?'1':String(.25+.75*Math.max(...ids.map(i=>raw.get(i)||0))/maxWeight);}
-    byBox.get(b).title.textContent=ids.map(i=>data.words[i]+(spatial()?(i===pos?' · target; excluded from source pool':(copyView()?' · '+distances.get(i)+' glyph edits':'')+' · '+(100*(raw.get(i)||0)/mass).toFixed(2)+'% geometry weight'):' · '+sourceText(sourceStats[i]))).join(' / ');
+    byBox.get(b).title.textContent=boxIdentity(byBox.get(b))+' · '+ids.map(i=>data.words[i]+(spatial()?(i===pos?' · target; excluded from source pool':(copyView()?' · '+distances.get(i)+' glyph edits':'')+' · '+(100*(raw.get(i)||0)/mass).toFixed(2)+'% geometry weight'):' · '+sourceText(sourceStats[i]))).join(' / ');
    }
+   pageDisplay.labels();
    if(copyView()){
     const near=stat.sources.filter(s=>s.distance<=editRadius),shown=(near.length?near:stat.sources.filter(s=>s.distance===stat.minedit)).slice(0,20);
     contribList.innerHTML='<span class="contrib-head">'+(near.length?'Candidates within '+editRadius+' edits':'No candidate within '+editRadius+' edits; nearest sources')+':</span>'+shown.map(s=>'<button type="button" data-copyword="'+SG.esc(s.word)+'" aria-pressed="false"><b>'+SG.esc(s.word)+'</b> · d='+s.distance+' · ×'+s.positions.length+'</button>').join('')+(near.length>20?'<span class="more">+'+(near.length-20)+' spellings</span>':'');
@@ -302,7 +357,7 @@
    for(const x of contribList.querySelectorAll('button[data-word]'))x.setAttribute('aria-pressed',String(x.dataset.word===contribWord));outline();});
   queueMicrotask(outline);
  }
- function saveHash(){SG.setHash({...SG.hash(),scope:selector.value,window:width,direction:mode,colors:colorMode,left:sourceOptions.left,depth:sourceOptions.depth,angle:sourceOptions.angle,weight:sourceOptions.weight,edits:editRadius,count:countUnit});}
+ function saveHash(){SG.setHash({...SG.hash(),...pageDisplay.hash(),scope:selector.value,window:width,direction:mode,colors:colorMode,left:sourceOptions.left,depth:sourceOptions.depth,angle:sourceOptions.angle,weight:sourceOptions.weight,edits:editRadius,count:countUnit,expanded:expandedPage?.dataset.page});}
  function readControls(){
   const raw=Number(size.value);
   width=Number.isFinite(raw)?Math.max(2,Math.min(1000,Math.round(raw))):100;
@@ -377,15 +432,18 @@
   colors.value=['mattr','repeat','overlay','impact','change','components','h1','h2','js','minedit','candidates'].includes(h.colors)?h.colors:'mattr';
   editLimit.value=['0','1','2','3'].includes(h.edits)?h.edits:'1';candidateUnit.value=h.count==='Occurrences'?'Occurrences':'Types';
   leftReach.value=h.left??3;aboveDepth.value=h.depth??8;coneAngle.value=h.angle??45;sourceWeight.value=h.weight==='uniform'?'uniform':'distance';
+  pageDisplay.readHash(h);
+  const figure=pageFigures.get(h.expanded)||null;if(figure===expandedPage)pageDisplay.expand(figure);else expandPage(figure,false);
  }
- atlas.addEventListener('click',e=>{const box=e.target.closest('rect[data-token-indices]');if(box)select(box,byBox.get(box).indices[0]);});
+ atlas.addEventListener('click',e=>{const box=e.target.closest('rect[data-token-indices]');if(box)select(box,byBox.get(box).indices[0]);else if(selected>=0&&e.target.closest('svg'))restore();});
  atlas.addEventListener('pointerover',e=>{const entry=byBox.get(e.target);if(data&&rolling&&entry&&!entry.box.classList.contains('window-member'))entry.title.textContent=normalTitle(entry);});
  atlas.addEventListener('focusin',e=>{const entry=byBox.get(e.target);if(data&&rolling&&entry&&!entry.box.classList.contains('window-member'))entry.title.textContent=normalTitle(entry);});
  atlas.addEventListener('keydown',e=>{
   const box=e.target.closest('rect[data-token-indices]');if(!box)return;
   if(e.key==='Enter'||e.key===' '){e.preventDefault();select(box,byBox.get(box).indices[0]);}
   else if(['ArrowLeft','ArrowRight','Home','End'].includes(e.key)){
-   e.preventDefault();const siblings=[...box.closest('svg').querySelectorAll('rect[data-token-indices]:not(.invalid-geometry)')],i=siblings.indexOf(box);
+   e.preventDefault();const siblings=[...box.closest('svg').querySelectorAll('rect[data-token-indices]:not(.invalid-geometry):not(.no-native-box)')],i=siblings.indexOf(box);
+   if(!siblings.length)return;
    const j=e.key==='Home'?0:e.key==='End'?siblings.length-1:Math.max(0,Math.min(siblings.length-1,i+(e.key==='ArrowRight'?1:-1)));
    box.setAttribute('tabindex','-1');siblings[j].setAttribute('tabindex','0');siblings[j].focus({preventScroll:true});
    if(selected>=0)select(siblings[j],byBox.get(siblings[j]).indices[0],false);
@@ -393,17 +451,17 @@
  });
  choose.addEventListener('change',()=>select(origin,Number(choose.value),false));
  restoreButton.addEventListener('click',()=>restore(true));
- document.addEventListener('keydown',e=>{if(e.key==='Escape'&&selected>=0){e.preventDefault();restore(true);}});
+ document.addEventListener('keydown',e=>{if(e.key==='Escape'){if(selected>=0){e.preventDefault();restore(true);}else if(expandedPage){e.preventDefault();expandPage(null);saveHash();}}});
  for(const control of [size,direction,colors,leftReach,aboveDepth,coneAngle,sourceWeight,editLimit,candidateUnit])control.addEventListener('change',update);
  size.addEventListener('input',()=>{
   clearTimeout(sizeTimer);
   if(size.value!==''&&size.validity.valid)sizeTimer=setTimeout(update,180);
  });
  size.addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();update();}});
- selector.addEventListener('change',()=>{restore();saveHash();});
+ selector.addEventListener('change',()=>{expandPage(null);restore();saveHash();});
  window.addEventListener('hashchange',()=>{fromHash();if(data){restore();update();}else visibility();});
  fromHash();visibility();summary.textContent='Loading manuscript windows…';setBusy('Loading manuscript');
- SG.load('data/mattr_heatmap/words.json.gz?v=270f5d56c6').then(d=>{
+ SG.load('data/mattr_heatmap/words.json.gz?v=2d8f0c10c5').then(d=>{
   const lineOf=new Uint16Array(d.words.length),ranges=new Map();
   d.lines.forEach((line,i)=>{
    lineOf.fill(i,line.start,line.end);
@@ -411,7 +469,12 @@
    else ranges.get(line.bifolium).end=line.end;
   });
   data={...d,lineOf,ranges};sourceCtx=SG_SOURCES.prepare(data);copyCtx=SG_COPY.prepare(data);
-  for(const entry of entries)if(entry.indices.every(i=>sourceCtx.excluded.has(i))){entry.box.classList.add('invalid-geometry');entry.box.setAttribute('tabindex','-1');}
-  update();
+  for(const entry of entries){
+   const g=d.spatialReview?.groups[d.spatialReview.tokens[entry.indices[0]].group];
+   entry.box.setAttribute('aria-label','Inspect '+SG_REVIEW.boxLabel(data,entry.indices));
+   if(g&&!g.safe){entry.box.classList.add('invalid-geometry');entry.box.setAttribute('tabindex','-1');}
+   else if(entry.indices.some(i=>sourceCtx.excluded.has(i)))entry.box.classList.add('alignment-ambiguous');
+  }
+  pageDisplay.setData(data);update();
  }).catch(()=>{setBusy(null);summary.textContent='Could not load the manuscript windows. Reload the page to retry.';document.querySelector('.window-status').classList.remove('idle');});
 })();

@@ -185,7 +185,7 @@ def spatial(ms, line_words, geometry, comp_fn):
 
 def main():
     ms = D.manuscript()
-    app = json.load(gzip.open(CC.APP, 'rt', encoding='utf8'))
+    app = CC.load_study_app('legacy')
     ms_lines = [L['words'] for L in ms['lines']]
     frames = CC.line_frames(app, ms)
     flags = CC.oversized_flags(app, ms)

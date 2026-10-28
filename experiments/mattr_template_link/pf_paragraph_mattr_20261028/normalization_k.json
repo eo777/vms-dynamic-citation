@@ -1,0 +1,1955 @@
+{
+  "mapping": {
+    "p": "k",
+    "f": "k"
+  },
+  "window": 100,
+  "method": "Literal replacement everywhere in every word. No token deletion, reordering, or window changes. Original and normalized distinct counts scored in every original 100-word window within each group.",
+  "uniqueness": "A P/F-bearing token is unique in a window if its spelling occurs once there; retained uniqueness conditions on it being unique before normalization. Counts are over all token-window exposures, not globally unique word types.",
+  "inputs_sha256": {
+    "tokens": "557e9fc6dedd3678633fec9ab50359a181c14fe6a0ba3d1917aece31cdc04afe",
+    "path_asset": "977c5676670d79ffa8fac2f0b5a354278877a45513ba35da489b801158cbfffc"
+  },
+  "groups": {
+    "3c": {
+      "tokens": 8768,
+      "pf_tokens": 657,
+      "pf_types": 441,
+      "original_mattr": 0.8441077402237859,
+      "normalized_mattr": 0.8374068520013842,
+      "loss": 0.006700888222401669,
+      "relative_mattr_retained": 0.9920615723525705,
+      "pf_unique_in_window_before": 0.9609078862214552,
+      "pf_unique_in_window_after": 0.8717834139726957,
+      "previously_unique_pf_retained": 0.9072497233848078,
+      "windows_changed_fraction": 0.4831007036567078,
+      "loss_pf_to_nonpf": 0.00649786595916484,
+      "loss_pf_to_pf": 0.00020302226323682085,
+      "pf_types_matching_existing_nonpf": 140,
+      "pf_tokens_matching_existing_nonpf": 326,
+      "counts": {
+        "pf_token_window_exposures": 64898,
+        "pf_unique_before": 62361,
+        "pf_unique_after": 56577,
+        "original_distinct": 731757,
+        "normalized_distinct": 725948,
+        "windows": 8669,
+        "windows_changed": 4188,
+        "lost_types_pf_to_nonpf": 5633,
+        "lost_types_pf_to_pf": 176
+      },
+      "collisions": [
+        {
+          "normalized": "qokchedy",
+          "source_counts": {
+            "qopchedy": 19,
+            "qokchedy": 29,
+            "qofchedy": 4
+          },
+          "original_windows_with_collision": 520,
+          "mattr_loss": 0.0005998385050178798
+        },
+        {
+          "normalized": "qokaiin",
+          "source_counts": {
+            "qokaiin": 110,
+            "qopaiin": 6
+          },
+          "original_windows_with_collision": 516,
+          "mattr_loss": 0.0005952243626715884
+        },
+        {
+          "normalized": "okchedy",
+          "source_counts": {
+            "okchedy": 15,
+            "opchedy": 21,
+            "ofchedy": 3
+          },
+          "original_windows_with_collision": 370,
+          "mattr_loss": 0.0004268081670319529
+        },
+        {
+          "normalized": "qokchdy",
+          "source_counts": {
+            "qokchdy": 21,
+            "qofchdy": 2,
+            "qopchdy": 10
+          },
+          "original_windows_with_collision": 321,
+          "mattr_loss": 0.00042219402468566153
+        },
+        {
+          "normalized": "lkchedy",
+          "source_counts": {
+            "lkchedy": 13,
+            "lpchedy": 4,
+            "lfchedy": 1
+          },
+          "original_windows_with_collision": 348,
+          "mattr_loss": 0.00040143038412735035
+        },
+        {
+          "normalized": "okaiin",
+          "source_counts": {
+            "okaiin": 80,
+            "opaiin": 5
+          },
+          "original_windows_with_collision": 319,
+          "mattr_loss": 0.0003679778521167378
+        },
+        {
+          "normalized": "kchedy",
+          "source_counts": {
+            "kchedy": 15,
+            "pchedy": 8,
+            "fchedy": 3
+          },
+          "original_windows_with_collision": 255,
+          "mattr_loss": 0.00035298188949129083
+        },
+        {
+          "normalized": "okal",
+          "source_counts": {
+            "okal": 38,
+            "opal": 4
+          },
+          "original_windows_with_collision": 305,
+          "mattr_loss": 0.00035182835390471797
+        },
+        {
+          "normalized": "qokar",
+          "source_counts": {
+            "qopar": 5,
+            "qokar": 50
+          },
+          "original_windows_with_collision": 304,
+          "mattr_loss": 0.0003506748183181451
+        },
+        {
+          "normalized": "okair",
+          "source_counts": {
+            "opair": 4,
+            "okair": 8
+          },
+          "original_windows_with_collision": 210,
+          "mattr_loss": 0.0002422424731802976
+        },
+        {
+          "normalized": "ksheody",
+          "source_counts": {
+            "ksheody": 2,
+            "psheody": 3
+          },
+          "original_windows_with_collision": 155,
+          "mattr_loss": 0.00017879801591879108
+        },
+        {
+          "normalized": "kal",
+          "source_counts": {
+            "kal": 9,
+            "pal": 2
+          },
+          "original_windows_with_collision": 144,
+          "mattr_loss": 0.0001661091244664898
+        },
+        {
+          "normalized": "kaiin",
+          "source_counts": {
+            "kaiin": 40,
+            "paiin": 3
+          },
+          "original_windows_with_collision": 139,
+          "mattr_loss": 0.00016034144653362557
+        },
+        {
+          "normalized": "okchey",
+          "source_counts": {
+            "opchey": 12,
+            "okchey": 10,
+            "ofchey": 1
+          },
+          "original_windows_with_collision": 132,
+          "mattr_loss": 0.00015226669742761565
+        },
+        {
+          "normalized": "okar",
+          "source_counts": {
+            "ofar": 2,
+            "okar": 42
+          },
+          "original_windows_with_collision": 123,
+          "mattr_loss": 0.00014188487714846004
+        },
+        {
+          "normalized": "qokchy",
+          "source_counts": {
+            "qopchy": 6,
+            "qokchy": 15
+          },
+          "original_windows_with_collision": 121,
+          "mattr_loss": 0.00013957780597531434
+        },
+        {
+          "normalized": "okchdy",
+          "source_counts": {
+            "okchdy": 6,
+            "opchdy": 11
+          },
+          "original_windows_with_collision": 113,
+          "mattr_loss": 0.00013034952128273156
+        },
+        {
+          "normalized": "olkaiin",
+          "source_counts": {
+            "olkaiin": 15,
+            "olfaiin": 1
+          },
+          "original_windows_with_collision": 99,
+          "mattr_loss": 0.00011420002307071173
+        },
+        {
+          "normalized": "chkaiin",
+          "source_counts": {
+            "chkaiin": 5,
+            "chpaiin": 1
+          },
+          "original_windows_with_collision": 99,
+          "mattr_loss": 0.00011420002307071173
+        },
+        {
+          "normalized": "olkar",
+          "source_counts": {
+            "olfar": 1,
+            "olkar": 10
+          },
+          "original_windows_with_collision": 92,
+          "mattr_loss": 0.00010612527396470181
+        },
+        {
+          "normalized": "qoky",
+          "source_counts": {
+            "qopy": 1,
+            "qoky": 21
+          },
+          "original_windows_with_collision": 91,
+          "mattr_loss": 0.00010497173837812897
+        },
+        {
+          "normalized": "qokal",
+          "source_counts": {
+            "qokal": 27,
+            "qopal": 1
+          },
+          "original_windows_with_collision": 87,
+          "mattr_loss": 0.00010035759603183759
+        },
+        {
+          "normalized": "lkaiin",
+          "source_counts": {
+            "lkaiin": 38,
+            "lpaiin": 1
+          },
+          "original_windows_with_collision": 80,
+          "mattr_loss": 9.228284692582767e-05
+        },
+        {
+          "normalized": "ykair",
+          "source_counts": {
+            "ykair": 2,
+            "ypair": 1
+          },
+          "original_windows_with_collision": 78,
+          "mattr_loss": 8.997577575268197e-05
+        },
+        {
+          "normalized": "oky",
+          "source_counts": {
+            "ofy": 1,
+            "oky": 12,
+            "opy": 3
+          },
+          "original_windows_with_collision": 77,
+          "mattr_loss": 8.882224016610912e-05
+        },
+        {
+          "normalized": "kcheodaiin",
+          "source_counts": {
+            "kcheodaiin": 1,
+            "pcheodaiin": 1
+          },
+          "original_windows_with_collision": 71,
+          "mattr_loss": 8.190102664667205e-05
+        },
+        {
+          "normalized": "okchedaiin",
+          "source_counts": {
+            "opchedaiin": 3,
+            "okchedaiin": 1,
+            "ofchedaiin": 1
+          },
+          "original_windows_with_collision": 63,
+          "mattr_loss": 7.267274195408928e-05
+        },
+        {
+          "normalized": "checkhey",
+          "source_counts": {
+            "checphey": 2,
+            "checkhey": 2
+          },
+          "original_windows_with_collision": 62,
+          "mattr_loss": 7.151920636751644e-05
+        },
+        {
+          "normalized": "chkal",
+          "source_counts": {
+            "chkal": 5,
+            "chpal": 1
+          },
+          "original_windows_with_collision": 54,
+          "mattr_loss": 6.229092167493367e-05
+        },
+        {
+          "normalized": "kair",
+          "source_counts": {
+            "kair": 7,
+            "pair": 3
+          },
+          "original_windows_with_collision": 51,
+          "mattr_loss": 5.883031491521513e-05
+        },
+        {
+          "normalized": "qokam",
+          "source_counts": {
+            "qokam": 9,
+            "qopam": 1
+          },
+          "original_windows_with_collision": 49,
+          "mattr_loss": 5.652324374206944e-05
+        },
+        {
+          "normalized": "ockhedy",
+          "source_counts": {
+            "ockhedy": 3,
+            "ocphedy": 1
+          },
+          "original_windows_with_collision": 41,
+          "mattr_loss": 4.7294959049486675e-05
+        },
+        {
+          "normalized": "qokcheedy",
+          "source_counts": {
+            "qopcheedy": 2,
+            "qokcheedy": 2
+          },
+          "original_windows_with_collision": 39,
+          "mattr_loss": 4.4987887876340986e-05
+        },
+        {
+          "normalized": "okary",
+          "source_counts": {
+            "okary": 3,
+            "opary": 2
+          },
+          "original_windows_with_collision": 37,
+          "mattr_loss": 4.268081670319529e-05
+        },
+        {
+          "normalized": "chckhy",
+          "source_counts": {
+            "chckhy": 13,
+            "chcfhy": 2,
+            "chcphy": 4
+          },
+          "original_windows_with_collision": 30,
+          "mattr_loss": 3.460606759718537e-05
+        },
+        {
+          "normalized": "okam",
+          "source_counts": {
+            "okam": 6,
+            "opam": 2
+          },
+          "original_windows_with_collision": 29,
+          "mattr_loss": 3.345253201061253e-05
+        },
+        {
+          "normalized": "ky",
+          "source_counts": {
+            "ky": 4,
+            "py": 1
+          },
+          "original_windows_with_collision": 28,
+          "mattr_loss": 3.229899642403968e-05
+        },
+        {
+          "normalized": "kchdy",
+          "source_counts": {
+            "kchdy": 3,
+            "fchdy": 2,
+            "pchdy": 3
+          },
+          "original_windows_with_collision": 26,
+          "mattr_loss": 2.999192525089399e-05
+        },
+        {
+          "normalized": "kcheody",
+          "source_counts": {
+            "kcheody": 4,
+            "pcheody": 3
+          },
+          "original_windows_with_collision": 22,
+          "mattr_loss": 2.5377782904602606e-05
+        },
+        {
+          "normalized": "ykar",
+          "source_counts": {
+            "ypar": 3,
+            "ykar": 10
+          },
+          "original_windows_with_collision": 12,
+          "mattr_loss": 1.3842427038874149e-05
+        },
+        {
+          "normalized": "qokol",
+          "source_counts": {
+            "qofol": 1,
+            "qopol": 3,
+            "qokol": 15
+          },
+          "original_windows_with_collision": 1,
+          "mattr_loss": 1.1535355865728458e-06
+        },
+        {
+          "normalized": "chckhdy",
+          "source_counts": {
+            "chckhdy": 4,
+            "chcphdy": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "okcheey",
+          "source_counts": {
+            "opcheey": 1,
+            "okcheey": 3
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "chekchy",
+          "source_counts": {
+            "chekchy": 1,
+            "chefchy": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "okchy",
+          "source_counts": {
+            "okchy": 4,
+            "opchy": 3
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "kchey",
+          "source_counts": {
+            "pchey": 2,
+            "kchey": 3,
+            "fchey": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "kchdar",
+          "source_counts": {
+            "kchdar": 2,
+            "pchdar": 2
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "ykchdy",
+          "source_counts": {
+            "ypchdy": 2,
+            "yfchdy": 1,
+            "ykchdy": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "chokchdy",
+          "source_counts": {
+            "chofchdy": 1,
+            "chopchdy": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "kar",
+          "source_counts": {
+            "kar": 21,
+            "par": 3
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "olky",
+          "source_counts": {
+            "olky": 3,
+            "olfy": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "kolky",
+          "source_counts": {
+            "polky": 1,
+            "kolky": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "ckhedy",
+          "source_counts": {
+            "cphedy": 5,
+            "ckhedy": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "sh{ckhh}y",
+          "source_counts": {
+            "sh{cphh}y": 1,
+            "sh{ckhh}y": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "kcheo",
+          "source_counts": {
+            "pcheo": 3,
+            "kcheo": 2
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "kshedy",
+          "source_counts": {
+            "kshedy": 2,
+            "pshedy": 1,
+            "fshedy": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "kchdaiin",
+          "source_counts": {
+            "pchdaiin": 2,
+            "kchdaiin": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "ykchedy",
+          "source_counts": {
+            "ykchedy": 4,
+            "ypchedy": 4
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "kchedar",
+          "source_counts": {
+            "kchedar": 1,
+            "pchedar": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "qokor",
+          "source_counts": {
+            "qokor": 12,
+            "qopor": 2
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "olkchdy",
+          "source_counts": {
+            "olpchdy": 1,
+            "olkchdy": 2
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "kcheey",
+          "source_counts": {
+            "fcheey": 2,
+            "pcheey": 1,
+            "kcheey": 2
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "chckhey",
+          "source_counts": {
+            "chckhey": 8,
+            "chcphey": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "qokshedy",
+          "source_counts": {
+            "qokshedy": 2,
+            "qopshedy": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "okol",
+          "source_counts": {
+            "okol": 10,
+            "opol": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "kcheodar",
+          "source_counts": {
+            "pcheodar": 2,
+            "kcheodar": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "qokchd",
+          "source_counts": {
+            "qopchd": 1,
+            "qokchd": 4
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "cholkchy",
+          "source_counts": {
+            "cholfchy": 1,
+            "cholkchy": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "sho{ikh}y",
+          "source_counts": {
+            "sho{ifh}y": 1,
+            "sho{ikh}y": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "olkchey",
+          "source_counts": {
+            "olkchey": 3,
+            "olpchey": 1,
+            "olfchey": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "lkar",
+          "source_counts": {
+            "lkar": 19,
+            "lfar": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "kol",
+          "source_counts": {
+            "pol": 5,
+            "kol": 3,
+            "fol": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "ockhey",
+          "source_counts": {
+            "ocphey": 1,
+            "ockhey": 2
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "okchor",
+          "source_counts": {
+            "opchor": 2,
+            "okchor": 2
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "qokod",
+          "source_counts": {
+            "qofod": 1,
+            "qokod": 2
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "qokchey",
+          "source_counts": {
+            "qopchey": 3,
+            "qokchey": 15
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "cheky",
+          "source_counts": {
+            "chepy": 2,
+            "cheky": 8
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "lkchy",
+          "source_counts": {
+            "lfchy": 1,
+            "lkchy": 2
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "qokchol",
+          "source_counts": {
+            "qopchol": 4,
+            "qokchol": 1,
+            "qofchol": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "cheoky",
+          "source_counts": {
+            "cheoky": 1,
+            "cheopy": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "qokcheey",
+          "source_counts": {
+            "qopcheey": 4,
+            "qokcheey": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "okor",
+          "source_counts": {
+            "opor": 2,
+            "okor": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "chokar",
+          "source_counts": {
+            "chokar": 5,
+            "chopar": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "kchody",
+          "source_counts": {
+            "kchody": 1,
+            "pchody": 2
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "kchor",
+          "source_counts": {
+            "pchor": 3,
+            "fchor": 1,
+            "kchor": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "kchol",
+          "source_counts": {
+            "kchol": 2,
+            "pchol": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "ckhy",
+          "source_counts": {
+            "cfhy": 1,
+            "ckhy": 1,
+            "cphy": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "shockhy",
+          "source_counts": {
+            "shocfhy": 2,
+            "shockhy": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "ykchey",
+          "source_counts": {
+            "ypchey": 2,
+            "ykchey": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "kcheor",
+          "source_counts": {
+            "pcheor": 2,
+            "kcheor": 2
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "kor",
+          "source_counts": {
+            "kor": 1,
+            "por": 2
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "olkchedy",
+          "source_counts": {
+            "olpchedy": 2,
+            "olkchedy": 4
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "kcheeody",
+          "source_counts": {
+            "fcheeody": 1,
+            "pcheeody": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "lkcheedy",
+          "source_counts": {
+            "lfcheedy": 1,
+            "lpcheedy": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "okcheeo",
+          "source_counts": {
+            "okcheeo": 1,
+            "opcheeo": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "kcheos",
+          "source_counts": {
+            "pcheos": 2,
+            "kcheos": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "qok",
+          "source_counts": {
+            "qop": 1,
+            "qok": 2
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "ockhy",
+          "source_counts": {
+            "ocphy": 1,
+            "ockhy": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "chekar",
+          "source_counts": {
+            "chekar": 1,
+            "chepar": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "ckhor",
+          "source_counts": {
+            "ckhor": 1,
+            "cphor": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "chckhedy",
+          "source_counts": {
+            "chcphedy": 2,
+            "chckhedy": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "kchdal",
+          "source_counts": {
+            "pchdal": 1,
+            "kchdal": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "kchee",
+          "source_counts": {
+            "kchee": 1,
+            "fchee": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "ockheody",
+          "source_counts": {
+            "ocpheody": 1,
+            "ockheody": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "okaim",
+          "source_counts": {
+            "okaim": 1,
+            "opaim": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "qokoeey",
+          "source_counts": {
+            "qokoeey": 1,
+            "qopoeey": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "okchar",
+          "source_counts": {
+            "opchar": 1,
+            "okchar": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "qokchar",
+          "source_counts": {
+            "qopchar": 1,
+            "qokchar": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "alkchdy",
+          "source_counts": {
+            "alkchdy": 1,
+            "alpchdy": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "ckheo",
+          "source_counts": {
+            "cpheo": 1,
+            "cfheo": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "kolchedy",
+          "source_counts": {
+            "polchedy": 2,
+            "kolchedy": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "okchdar",
+          "source_counts": {
+            "okchdar": 2,
+            "opchdar": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "lkcheo",
+          "source_counts": {
+            "lkcheo": 1,
+            "lpcheo": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "lkchey",
+          "source_counts": {
+            "lkchey": 7,
+            "lpchey": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "chkchol",
+          "source_counts": {
+            "chkchol": 1,
+            "chfchol": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "lkchdy",
+          "source_counts": {
+            "lpchdy": 1,
+            "lkchdy": 4
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "kolchey",
+          "source_counts": {
+            "kolchey": 1,
+            "folchey": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "kcheol",
+          "source_counts": {
+            "pcheol": 3,
+            "fcheol": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "sheckhy",
+          "source_counts": {
+            "shecphy": 1,
+            "sheckhy": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "qokcheody",
+          "source_counts": {
+            "qopcheody": 1,
+            "qokcheody": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "chokchy",
+          "source_counts": {
+            "chopchy": 2,
+            "chokchy": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "okcheody",
+          "source_counts": {
+            "okcheody": 1,
+            "opcheody": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "okshedy",
+          "source_counts": {
+            "okshedy": 1,
+            "opshedy": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "okaral",
+          "source_counts": {
+            "ofaral": 1,
+            "okaral": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "k",
+          "source_counts": {
+            "p": 1,
+            "f": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "a{ikh}y",
+          "source_counts": {
+            "a{iph}y": 1,
+            "a{ikh}y": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        }
+      ]
+    },
+    "4c": {
+      "tokens": 3781,
+      "pf_tokens": 159,
+      "pf_types": 125,
+      "original_mattr": 0.7707876154263987,
+      "normalized_mattr": 0.7696279196089082,
+      "loss": 0.0011596958174905359,
+      "relative_mattr_retained": 0.9984954405152852,
+      "pf_unique_in_window_before": 0.9738372093023255,
+      "pf_unique_in_window_after": 0.9469476744186046,
+      "previously_unique_pf_retained": 0.9723880597014926,
+      "windows_changed_fraction": 0.11596958174904944,
+      "loss_pf_to_nonpf": 0.0011596958174904942,
+      "loss_pf_to_pf": 0.0,
+      "pf_types_matching_existing_nonpf": 23,
+      "pf_tokens_matching_existing_nonpf": 41,
+      "counts": {
+        "pf_token_window_exposures": 15136,
+        "pf_unique_before": 14740,
+        "pf_unique_after": 14333,
+        "original_distinct": 283804,
+        "normalized_distinct": 283377,
+        "windows": 3682,
+        "windows_changed": 427,
+        "lost_types_pf_to_nonpf": 427
+      },
+      "collisions": [
+        {
+          "normalized": "okchedy",
+          "source_counts": {
+            "okchedy": 3,
+            "opchedy": 8
+          },
+          "original_windows_with_collision": 158,
+          "mattr_loss": 0.0004291146116241173
+        },
+        {
+          "normalized": "okain",
+          "source_counts": {
+            "okain": 36,
+            "opain": 1
+          },
+          "original_windows_with_collision": 100,
+          "mattr_loss": 0.00027159152634437803
+        },
+        {
+          "normalized": "okal",
+          "source_counts": {
+            "okal": 9,
+            "ofal": 1
+          },
+          "original_windows_with_collision": 93,
+          "mattr_loss": 0.0002525801195002716
+        },
+        {
+          "normalized": "chckhy",
+          "source_counts": {
+            "chckhy": 27,
+            "chcphy": 1
+          },
+          "original_windows_with_collision": 70,
+          "mattr_loss": 0.00019011406844106463
+        },
+        {
+          "normalized": "okar",
+          "source_counts": {
+            "opar": 2,
+            "okar": 11,
+            "ofar": 1
+          },
+          "original_windows_with_collision": 6,
+          "mattr_loss": 1.6295491580662683e-05
+        },
+        {
+          "normalized": "lkair",
+          "source_counts": {
+            "lpair": 1,
+            "lkair": 2
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "okchdy",
+          "source_counts": {
+            "ofchdy": 1,
+            "opchdy": 2
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "shky",
+          "source_counts": {
+            "shky": 3,
+            "shfy": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "kchedy",
+          "source_counts": {
+            "pchedy": 7,
+            "fchedy": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "qokchey",
+          "source_counts": {
+            "qokchey": 1,
+            "qopchey": 3
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "okchey",
+          "source_counts": {
+            "okchey": 2,
+            "opchey": 3
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "qokchedy",
+          "source_counts": {
+            "qokchedy": 1,
+            "qopchedy": 4,
+            "qofchedy": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "kolaiin",
+          "source_counts": {
+            "folaiin": 1,
+            "polaiin": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "qokchdy",
+          "source_counts": {
+            "qofchdy": 1,
+            "qopchdy": 2,
+            "qokchdy": 2
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "okam",
+          "source_counts": {
+            "okam": 5,
+            "opam": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "cheeky",
+          "source_counts": {
+            "cheeky": 1,
+            "cheefy": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "lkar",
+          "source_counts": {
+            "lkar": 7,
+            "lpar": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "okalam",
+          "source_counts": {
+            "okalam": 1,
+            "opalam": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "kar",
+          "source_counts": {
+            "kar": 3,
+            "far": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "chckhey",
+          "source_counts": {
+            "chckhey": 7,
+            "chcfhey": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "okeeo",
+          "source_counts": {
+            "okeeo": 6,
+            "ofeeo": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "kchedey",
+          "source_counts": {
+            "pchedey": 1,
+            "fchedey": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "cheky",
+          "source_counts": {
+            "cheky": 2,
+            "chepy": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "okchy",
+          "source_counts": {
+            "okchy": 1,
+            "opchy": 3
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        }
+      ]
+    },
+    "4a": {
+      "tokens": 6812,
+      "pf_tokens": 242,
+      "pf_types": 165,
+      "original_mattr": 0.7157842991211083,
+      "normalized_mattr": 0.7144421272158499,
+      "loss": 0.0013421719052584269,
+      "relative_mattr_retained": 0.9981248933416025,
+      "pf_unique_in_window_before": 0.9560765064319566,
+      "pf_unique_in_window_after": 0.9094871360866622,
+      "previously_unique_pf_retained": 0.9512702487386032,
+      "windows_changed_fraction": 0.11470281543274244,
+      "loss_pf_to_nonpf": 0.0010442425145240578,
+      "loss_pf_to_pf": 0.00029792939073439596,
+      "pf_types_matching_existing_nonpf": 53,
+      "pf_tokens_matching_existing_nonpf": 115,
+      "counts": {
+        "pf_token_window_exposures": 23632,
+        "pf_unique_before": 22594,
+        "pf_unique_after": 21493,
+        "original_distinct": 480506,
+        "normalized_distinct": 479605,
+        "windows": 6713,
+        "windows_changed": 770,
+        "lost_types_pf_to_nonpf": 701,
+        "lost_types_pf_to_pf": 200
+      },
+      "collisions": [
+        {
+          "normalized": "okar",
+          "source_counts": {
+            "okar": 22,
+            "opar": 2
+          },
+          "original_windows_with_collision": 200,
+          "mattr_loss": 0.00029792939073439596
+        },
+        {
+          "normalized": "qokchedy",
+          "source_counts": {
+            "qopchedy": 8,
+            "qokchedy": 6,
+            "qofchedy": 2
+          },
+          "original_windows_with_collision": 114,
+          "mattr_loss": 0.0001698197527186057
+        },
+        {
+          "normalized": "okchedy",
+          "source_counts": {
+            "opchedy": 14,
+            "ofchedy": 3,
+            "okchedy": 2
+          },
+          "original_windows_with_collision": 104,
+          "mattr_loss": 0.00015492328318188588
+        },
+        {
+          "normalized": "chckhdy",
+          "source_counts": {
+            "chckhdy": 5,
+            "chcfhdy": 1,
+            "chcphdy": 1
+          },
+          "original_windows_with_collision": 96,
+          "mattr_loss": 0.00014300610755251005
+        },
+        {
+          "normalized": "sheckhy",
+          "source_counts": {
+            "sheckhy": 20,
+            "shecphy": 2
+          },
+          "original_windows_with_collision": 94,
+          "mattr_loss": 0.0001400268136451661
+        },
+        {
+          "normalized": "qoky",
+          "source_counts": {
+            "qoky": 62,
+            "qopy": 1
+          },
+          "original_windows_with_collision": 89,
+          "mattr_loss": 0.0001325785788768062
+        },
+        {
+          "normalized": "kar",
+          "source_counts": {
+            "kar": 8,
+            "par": 2
+          },
+          "original_windows_with_collision": 52,
+          "mattr_loss": 7.746164159094294e-05
+        },
+        {
+          "normalized": "kaiin",
+          "source_counts": {
+            "paiin": 1,
+            "kaiin": 7
+          },
+          "original_windows_with_collision": 42,
+          "mattr_loss": 6.256517205422314e-05
+        },
+        {
+          "normalized": "chckhey",
+          "source_counts": {
+            "chckhey": 8,
+            "chcphey": 2
+          },
+          "original_windows_with_collision": 36,
+          "mattr_loss": 5.362729033219127e-05
+        },
+        {
+          "normalized": "okchey",
+          "source_counts": {
+            "okchey": 4,
+            "opchey": 4
+          },
+          "original_windows_with_collision": 36,
+          "mattr_loss": 5.362729033219127e-05
+        },
+        {
+          "normalized": "okaly",
+          "source_counts": {
+            "okaly": 3,
+            "opaly": 1
+          },
+          "original_windows_with_collision": 30,
+          "mattr_loss": 4.468940861015939e-05
+        },
+        {
+          "normalized": "kchedy",
+          "source_counts": {
+            "kchedy": 2,
+            "pchedy": 17,
+            "fchedy": 2
+          },
+          "original_windows_with_collision": 4,
+          "mattr_loss": 5.958587814687919e-06
+        },
+        {
+          "normalized": "chckhy",
+          "source_counts": {
+            "chckhy": 42,
+            "chcphy": 1
+          },
+          "original_windows_with_collision": 4,
+          "mattr_loss": 5.958587814687919e-06
+        },
+        {
+          "normalized": "kchor",
+          "source_counts": {
+            "pchor": 2,
+            "fchor": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "qokol",
+          "source_counts": {
+            "qokol": 22,
+            "qopol": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "ykchedy",
+          "source_counts": {
+            "ykchedy": 1,
+            "yfchedy": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "qokshedy",
+          "source_counts": {
+            "qokshedy": 8,
+            "qopshedy": 3
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "okol",
+          "source_counts": {
+            "okol": 7,
+            "opol": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "kshedy",
+          "source_counts": {
+            "kshedy": 1,
+            "fshedy": 1,
+            "pshedy": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "kol",
+          "source_counts": {
+            "pol": 8,
+            "kol": 3
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "okshey",
+          "source_counts": {
+            "okshey": 2,
+            "opshey": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "qokchey",
+          "source_counts": {
+            "qofchey": 1,
+            "qokchey": 4,
+            "qopchey": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "qokchdy",
+          "source_counts": {
+            "qokchdy": 11,
+            "qopchdy": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "oky",
+          "source_counts": {
+            "oky": 14,
+            "opy": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "lkchedy",
+          "source_counts": {
+            "lkchedy": 2,
+            "lpchedy": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "kshdy",
+          "source_counts": {
+            "pshdy": 1,
+            "kshdy": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "okchdy",
+          "source_counts": {
+            "ofchdy": 1,
+            "okchdy": 5,
+            "opchdy": 2
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "kchey",
+          "source_counts": {
+            "pchey": 3,
+            "kchey": 3
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "kor",
+          "source_counts": {
+            "por": 2,
+            "kor": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "qokcheol",
+          "source_counts": {
+            "qopcheol": 1,
+            "qofcheol": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "cheky",
+          "source_counts": {
+            "cheky": 10,
+            "chepy": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "okor",
+          "source_counts": {
+            "opor": 1,
+            "okor": 3
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "kolkedy",
+          "source_counts": {
+            "polkedy": 1,
+            "kolkedy": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "lkol",
+          "source_counts": {
+            "lkol": 1,
+            "lfol": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "chek",
+          "source_counts": {
+            "chek": 1,
+            "chep": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "chkaiin",
+          "source_counts": {
+            "chkaiin": 1,
+            "chfaiin": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "chckhedy",
+          "source_counts": {
+            "chckhedy": 5,
+            "chcphedy": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "ckhey",
+          "source_counts": {
+            "cphey": 2,
+            "ckhey": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "qokshdy",
+          "source_counts": {
+            "qopshdy": 1,
+            "qokshdy": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "okshedy",
+          "source_counts": {
+            "opshedy": 1,
+            "okshedy": 2
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "okshdy",
+          "source_counts": {
+            "opshdy": 1,
+            "ofshdy": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "kchol",
+          "source_counts": {
+            "kchol": 1,
+            "pchol": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "qokor",
+          "source_counts": {
+            "qokor": 4,
+            "qopor": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "olkchedy",
+          "source_counts": {
+            "olfchedy": 2,
+            "olpchedy": 2
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "qokdy",
+          "source_counts": {
+            "qokdy": 1,
+            "qopdy": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "ok",
+          "source_counts": {
+            "op": 1,
+            "ok": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "kolchdy",
+          "source_counts": {
+            "polchdy": 1,
+            "kolchdy": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "ckhedy",
+          "source_counts": {
+            "cphedy": 1,
+            "ckhedy": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "qok",
+          "source_counts": {
+            "qop": 1,
+            "qok": 2
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "kchdy",
+          "source_counts": {
+            "pchdy": 2,
+            "kchdy": 3
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        },
+        {
+          "normalized": "okoly",
+          "source_counts": {
+            "opoly": 1,
+            "ofoly": 1
+          },
+          "original_windows_with_collision": 0,
+          "mattr_loss": 0.0
+        }
+      ]
+    }
+  },
+  "stars_to_bio_gap": {
+    "before": 0.12832344110267757,
+    "after": 0.12296472478553433,
+    "fraction_retained": 0.9582405500421745
+  },
+  "checks": {
+    "token_counts_unchanged": true,
+    "windows_unchanged": true,
+    "original_mattr_reproduced": true,
+    "normalized_mattr_verified": true,
+    "collision_losses_sum": true
+  }
+}

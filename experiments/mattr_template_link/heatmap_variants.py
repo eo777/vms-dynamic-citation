@@ -31,7 +31,7 @@ from timing import laid_in
 
 APP = D.src('apps/selfcitation_governor')
 OUT = HERE / 'heatmap_variants'
-SHELL = ['common.js', 'heatmap.js', 'heatmap_math.js', 'heatmap_sources.js', 'heatmap.css', 'style.css']
+SHELL = ['common.js', 'heatmap.js', 'heatmap_math.js', 'heatmap_sources.js', 'copy_math.js', 'spatial_review.js', 'heatmap_page.js', 'heatmap.css', 'style.css']
 PAGE = 'f78r'
 
 
@@ -78,6 +78,7 @@ def rounded(geometry):
 
 
 def page_html(template, key, label, inp, keys):
+    template = re.sub(r'((?:src|href)="[^"?]+)\?v=[^" ]+(?=")', r'\1', template)
     words = inp['words']
     geometry = inp['geometry']
     by_page = {}
@@ -103,7 +104,7 @@ def page_html(template, key, label, inp, keys):
     html = html.replace('<link rel="stylesheet" href="style.css">', '<link rel="stylesheet" href="../shell/style.css">')
     html = html.replace('<link rel="stylesheet" href="heatmap.css">', '<link rel="stylesheet" href="../shell/heatmap.css">')
     html = html.replace('<script src="site_nav.js" defer></script>', '')
-    for f in ('common.js', 'heatmap_math.js', 'heatmap_sources.js', 'heatmap.js'):
+    for f in ('common.js', 'heatmap_math.js', 'heatmap_sources.js', 'copy_math.js', 'spatial_review.js', 'heatmap_page.js', 'heatmap.js'):
         html = html.replace(f'<script src="{f}"></script>', f'<script src="../shell/{f}"></script>')
     html = html.replace('<title>Governed self-citation · MATTR heatmap</title>', f'<title>Layout variant · {escape(label)}</title>')
     links = ' · '.join(f'<a href="../{k}/heatmap.html">{escape(k)}</a>' for k in keys)
@@ -126,7 +127,7 @@ def token_csv(path, inp, meas, out, lines_meta):
 
 def main():
     ms = D.manuscript()
-    app = json.load(gzip.open(APP / 'data/mattr_heatmap/words.json.gz', 'rt', encoding='utf8'))
+    app = CC.load_study_app('legacy')
     template = (APP / 'heatmap.html').read_text(encoding='utf8')
     OUT.mkdir(exist_ok=True)
     (OUT / 'shell').mkdir(exist_ok=True)
@@ -143,7 +144,7 @@ def main():
         out = CC.outcomes(inp['words'], bstart, bend)
         folder = OUT / key
         (folder / 'data/mattr_heatmap').mkdir(parents=True, exist_ok=True)
-        bundle = dict(schema=2, window=100, words=inp['words'], lines=inp['lines'], geometry=inp['geometry'], components=inp['components'],
+        bundle = dict(schema=2, window=100, input_geometry_provenance=app['geometry_provenance'], words=inp['words'], lines=inp['lines'], geometry=inp['geometry'], components=inp['components'],
                       component_mode=mode, palette=app['palette'])
         (folder / 'data/mattr_heatmap/words.json.gz').write_bytes(gzip.compress(json.dumps(bundle, separators=(',', ':')).encode('utf8'), mtime=0))
         (folder / 'heatmap.html').write_text(page_html(template, key, label, inp, keys), encoding='utf8')

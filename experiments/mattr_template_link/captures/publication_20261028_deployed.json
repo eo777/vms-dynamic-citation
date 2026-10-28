@@ -1,0 +1,9 @@
+{
+  "commit": "ee809d901e12495e080d2d6bbdf3985d4cb7d2da",
+  "deployment": "https://github.com/eo777/vms-dynamic-citation/actions/runs/40756544116",
+  "status": "success",
+  "live_url": "https://eo777.github.io/vms-dynamic-citation/analysis/spatial-diversity.html",
+  "http_status": 200,
+  "sha256": "ff60834f880bed1ef36f87f4885b7ad8333d52d8b02d84b92cabe2d15a6b090f",
+  "matches_preview": true
+}

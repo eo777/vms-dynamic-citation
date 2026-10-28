@@ -1,0 +1,38 @@
+{
+  "analysis/spatial-diversity.html": {
+    "sha256": "ff60834f880bed1ef36f87f4885b7ad8333d52d8b02d84b92cabe2d15a6b090f",
+    "bytes": 13805077
+  },
+  "experiments/mattr_template_link/RESULTS.md": {
+    "sha256": "fc610594b595cc4ff904162ab62175346b324a2a92a3f6a9907973026bbe1e74",
+    "bytes": 137287
+  },
+  "experiments/mattr_template_link/summary_figures/build_bifolium_mattr.py": {
+    "sha256": "7fa94260bbf40206df72c65d4cd2447e4af770e8b96d79c0e4d6b454b47d0f98",
+    "bytes": 9564
+  },
+  "experiments/mattr_template_link/summary_figures/build_illustration_contrasts.py": {
+    "sha256": "5eb7e99c6aa4991feec8180a327f010b9f3dc93804775c4d9ebd97e40e8baa5f",
+    "bytes": 13523
+  },
+  "experiments/mattr_template_link/summary_figures/build_mattr_swings.py": {
+    "sha256": "8cd9d30d9994aafa3fbfeafeac13cacee90eeea4f17752617ab7cf9dcd6731f4",
+    "bytes": 12198
+  },
+  "experiments/mattr_template_link/summary_figures/contrast_by_illustration_components_h2.png": {
+    "sha256": "6eba92feb52a0c7b192962501bf5fffd91e99bd32e5e26736bde9d0613354673",
+    "bytes": 367218
+  },
+  "experiments/mattr_template_link/summary_figures/contrast_by_illustration_components_h2.svg": {
+    "sha256": "aa06ab34a78bd1013fcc49b2e150c12718aea14d298ea7a7aedc217af4df0a7c",
+    "bytes": 132306
+  },
+  "experiments/mattr_template_link/summary_figures/illustration_contrasts.json": {
+    "sha256": "5ca874e944b4e7da3cb81a65c1da0e78d44f08da2f4ce182125fb4cbd9df7ed5",
+    "bytes": 133547
+  },
+  "experiments/mattr_template_link/summary_figures/mattr_bifolia.json": {
+    "sha256": "67717953632e2ed641330cd1499ecb456e9444e6c88357907e6f5ee32e35e542",
+    "bytes": 103736
+  }
+}

@@ -35,6 +35,7 @@ import numpy as np
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
 import data as D
+from geometry_inputs import load_app as load_study_app
 from decompose import REFS, ref_words
 from timing import laid_in
 
@@ -335,7 +336,7 @@ def check_against_other(meas, out, inp):
 
 def main():
     ms = D.manuscript()
-    app = json.load(gzip.open(APP, 'rt', encoding='utf8'))
+    app = load_study_app('legacy')
     ms_lines = [L['words'] for L in ms['lines']]
     assert app['words'] == [w for ws in ms_lines for w in ws]
     for w, parts in app['components'].items():

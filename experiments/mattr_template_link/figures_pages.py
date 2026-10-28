@@ -32,7 +32,7 @@ CMAP = LinearSegmentedColormap.from_list('blue_seq', RAMP)
 
 def main():
     ms = D.manuscript()
-    app = json.load(gzip.open(CC.APP, 'rt', encoding='utf8'))
+    app = CC.load_study_app('legacy')
     frames = CC.line_frames(app, ms)
     flags = CC.oversized_flags(app, ms)
     clean = [None if flags[i] else g for i, g in enumerate(app['geometry'])]

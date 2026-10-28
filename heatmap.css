@@ -17,6 +17,7 @@
 .heatmap-atlas .ticks{display:flex;justify-content:space-between;font-size:12px;color:var(--ink2)}
 .heatmap-atlas .ticks span::before{display:none}
 .heatmap-atlas .legend small{display:block;font-size:10px;line-height:1.3;color:var(--ink2)}
+.heatmap-atlas .candidate-legend .ticks{display:grid;grid-template-columns:repeat(7,1fr);text-align:center;font-size:11px}
 .heatmap-atlas .impact-spectrum{height:12px;border-radius:3px;background:linear-gradient(90deg,#5eaa98,#ead6a1,#d56b43,#a83c35)}
 .heatmap-atlas .caption{font-size:13px;color:var(--ink2)}
 .heatmap-atlas .bifolio{display:flex;gap:24px;padding:30px 0;border-bottom:1px solid var(--line);align-items:center}
@@ -31,7 +32,14 @@
 .heatmap-atlas .bifolio small{color:var(--ink2)}
 .heatmap-atlas .pages{display:flex;align-items:flex-start;gap:12px;flex:1;min-width:0;overflow-x:auto;padding-bottom:5px}
 .heatmap-atlas figure{margin:0;flex:var(--ratio) 1 0;min-width:105px;max-width:320px}
-.heatmap-atlas figcaption{font-size:12px;color:var(--ink2);padding-bottom:7px}
+.heatmap-atlas figcaption{font-size:12px;color:var(--ink2);padding-bottom:7px;display:flex;align-items:center;justify-content:space-between;gap:8px}
+.heatmap-atlas .expand-page{font:16px var(--sans);line-height:1;padding:4px 8px;border:1px solid var(--line2);border-radius:4px;background:var(--surface);color:var(--ink);cursor:pointer}
+.heatmap-atlas .expand-page:hover{border-color:var(--ink)}
+.heatmap-atlas.page-expanded .bifolio:not(.expanded-row),.heatmap-atlas.page-expanded .expanded-row>header,.heatmap-atlas.page-expanded figure:not(.expanded-page){display:none}
+.heatmap-atlas.page-expanded .expanded-row{display:block;padding-top:18px}
+.heatmap-atlas.page-expanded .pages{display:block;overflow:visible}
+.heatmap-atlas.page-expanded figure.expanded-page{width:100%;max-width:1100px;margin:auto;min-width:0}
+.heatmap-atlas.page-expanded figcaption{font-size:16px}
 /* Page surfaces follow the app theme; data colors keep their fixed scale. */
 .heatmap-atlas svg{display:block;width:100%;background:var(--surface);border:1px solid var(--line2)}
 .heatmap-atlas rect[data-token-indices]{cursor:pointer}
@@ -72,7 +80,7 @@
 .heatmap-atlas .source-words text{fill:var(--ink);font-family:var(--mono);paint-order:stroke;stroke:var(--surface);stroke-width:.6px}
 .heatmap-atlas rect.invalid-geometry{display:none}
 .heatmap-atlas .copy-settings{display:flex;gap:8px 14px;flex-wrap:wrap}
-.heatmap-atlas .source-guide path{fill:color-mix(in srgb,var(--heat-single) 8%,transparent);stroke:var(--heat-single);stroke-width:1;vector-effect:non-scaling-stroke;opacity:.65}
+.heatmap-atlas .source-guide path{fill:none;stroke:var(--heat-single);stroke-width:1.8;vector-effect:non-scaling-stroke;opacity:.9}
 .heatmap-atlas[aria-busy="true"] .pages{opacity:.55}
 /* the selected window's breakdown: repeated spellings ranked by the diversity they cost; copies colored grey (once), then
    yellow → orange → red (lightness falls step by step) */
@@ -93,3 +101,25 @@
  .heatmap-atlas figure{min-width:135px}.heatmap-atlas .legend{min-width:180px}
  .heatmap-atlas .controls{gap:8px 14px;font-size:12px}.heatmap-atlas .window-status{font-size:12px}
 }
+.heatmap-atlas .alignment-note{flex-basis:100%;font-size:12px;line-height:1.5;margin:4px 0;padding:8px;border-left:3px solid #a88246}.heatmap-atlas rect.alignment-ambiguous:not(.window-selected){stroke:#a88246;stroke-width:.8;stroke-dasharray:2 2}
+.heatmap-atlas .page-display-controls{order:1;flex-basis:100%;display:flex;align-items:center;flex-wrap:wrap;gap:10px 22px;border-top:1px solid var(--line2);padding-top:8px}
+.heatmap-atlas .page-display-controls>span{font-weight:650}
+.heatmap-atlas .page-display-controls input{accent-color:var(--heat-single)}
+.heatmap-atlas .page-image-status{order:1;flex-basis:100%;font-size:11px;color:var(--ink2);margin:0;line-height:1.4}
+.heatmap-atlas .manuscript-image{pointer-events:none}
+.heatmap-atlas .image-backed svg{background:#eadbb9}
+.heatmap-atlas .image-backed rect[data-token-indices]{fill-opacity:.48}
+.heatmap-atlas .image-backed rect.no-native-box{display:none}
+.heatmap-atlas rect.alignment-ambiguous:not(.window-selected){fill:#a8824626!important;stroke:#a88246;vector-effect:non-scaling-stroke}
+.heatmap-atlas figure[data-box-style="outline"] rect{fill:transparent!important;stroke:var(--box-color,var(--ink2));stroke-width:1;vector-effect:non-scaling-stroke}
+.heatmap-atlas figure[data-box-style="outline"] rect.alignment-ambiguous{fill:transparent!important;stroke:#a88246;stroke-dasharray:2 2}
+.heatmap-atlas.window-mode figure[data-box-style="outline"] rect.window-member{stroke:var(--heat-single);stroke-width:1.5}
+.heatmap-atlas figure[data-box-style="outline"] rect.window-related{stroke:var(--heat-mixed);stroke-width:2}
+.heatmap-atlas figure[data-box-style="outline"] rect.window-selected{stroke:var(--ink);stroke-width:2}
+.heatmap-atlas figure[data-box-style="hidden"] rect{fill:transparent!important;stroke:transparent!important}
+.heatmap-atlas figure[data-box-style="hidden"] rect.alignment-ambiguous{fill:transparent!important;stroke:transparent!important}
+.heatmap-atlas figure[data-box-style="outline"] rect,.heatmap-atlas figure[data-box-style="hidden"] rect{pointer-events:all}
+.heatmap-atlas .page-word-labels{pointer-events:none}
+.heatmap-atlas .page-word-labels text{fill:var(--ink);font-family:var(--mono);paint-order:stroke;stroke:var(--surface);stroke-width:1.6;stroke-linejoin:round}
+.heatmap-atlas.window-mode .page-word-labels text:not(.label-member){opacity:.28}
+.heatmap-atlas .expanded-page .source-words{display:none}
