@@ -470,6 +470,22 @@ The gap (bag100 minus MATTR100, repeats beyond the bag) by group: manuscript 0.0
 
 (`contrast_by_group.png` carries all three scores.)
 
+**By manuscript / illustration section (28 October).** `summary_figures/build_illustration_contrasts.py` regroups the same target-level measurements by each page's `section` label in `physical_map.csv`, combining Currier labels within sections. It retains the original chart's text samples, legacy geometry, full-window cohort, within-bifolium quintiles and three pool-size bands. This is not an average of Golf-group estimates. The script checks the existing Golf and section/Currier estimates before saving the new grouping.
+
+| Illustration section | Scored manuscript words | Component contrast | H2 contrast |
+|---|---:|---:|---:|
+| Herbal (all Currier labels) | 4,203 | +0.037 | +0.018 |
+| Pharma | 1,186 | +0.027 | +0.036 |
+| Stars (all Currier labels) | 9,854 | +0.079 | +0.062 |
+| Bio | 4,917 | +0.052 | +0.066 |
+| Text-only pages (all Currier labels) | 1,803 | +0.129 | +0.113 |
+| Cosmological | 172 | +0.202 | -0.059 |
+| Astrological | 75 | unavailable | unavailable |
+
+The Cosmological estimate has only one contributing bifolium in each band. Astrological pages cannot supply the minimum 25 eligible targets per bifolium in every band, so no combined estimate is plotted. The compact [metrics](summary_figures/illustration_contrasts.json) preserve page assignments, counts, band support, input hashes and reproduction checks for every control. No text generation was rerun; temporary per-token measurements were discarded.
+
+![Component and H2 repeat contrasts by manuscript illustration section](summary_figures/contrast_by_illustration_components_h2.png)
+
 **Reading of the group split.** Only three groups are large enough to read against their own shuffled controls: 3c (7,253 scored manuscript words), 4a (5,353) and 4c (3,263). There the manuscript shows the association on both scores (components / H2: 3c +0.097 / +0.059, 4c +0.068 / +0.081, 4a +0.047 / +0.056), the paragraph shuffle brings it to about +0.02 (3c +0.018 / +0.016, 4a +0.026 / −0.010; 4c keeps +0.045 on H2), and both copiers stand above the manuscript (components: 3c +0.112 and +0.118, 4c +0.124 and +0.064, 4a +0.142 and +0.093). In the six groups with 680 to 1,460 scored words the shuffled controls themselves move by up to 0.07 (1a shuffled inside pages +0.070 on components, 1.5a shuffled inside paragraphs +0.070 on H2), so values below that are noise there; within that noise the manuscript is at the copiers' level in 1a (+0.093 / +0.079 against +0.073 and +0.100), near zero in 1b, 2a and 3a (3a −0.030 / −0.020 where the copiers give +0.141 to +0.156), and the Markov chains move by up to ±0.09. Along the route, then, the statement of the whole-manuscript chart holds where it can be tested, in the three late groups: a within-paragraph association at half to two thirds of the page copiers' on component diversity, removed by the paragraph shuffle.
 
 ![Does MATTR track the diversity of the words in view?](coupling.png)

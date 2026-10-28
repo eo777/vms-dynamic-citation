@@ -1,0 +1,4416 @@
+{
+  "grouping": "physical_map.csv section; all Currier labels combined; target page determines section",
+  "geometry_policy": "legacy, matching the existing Golf chart",
+  "statistic": "lowest-minus-highest source-diversity quintile repeat-score contrast within bifolium; pooled target sums within each source-pool-size band; equal mean of three bands",
+  "minimum_targets_per_bifolium_per_band": 25,
+  "physical_map_sha256": "2d5e3ba18fc16f1c1cad6a7904d7edfdc0dd6b282f9b746da032c61a84a4fd96",
+  "comparison_json_sha256": "98cff037da32b13cfeda1a1d0cd95f9bd28031910de451aed55d59105192df36",
+  "source_math_sha256": "5316eb36e13274bbed239dbb37636210da2b7ae776fcd72acf538b764cf9b658",
+  "sections": [
+    {
+      "code": "H",
+      "name": "Herbal",
+      "pages": [
+        "f27r",
+        "f27v",
+        "f30r",
+        "f30v",
+        "f1v",
+        "f8r",
+        "f8v",
+        "f42r",
+        "f42v",
+        "f47r",
+        "f47v",
+        "f49r",
+        "f49v",
+        "f56r",
+        "f56v",
+        "f2r",
+        "f2v",
+        "f7r",
+        "f7v",
+        "f25r",
+        "f25v",
+        "f32r",
+        "f32v",
+        "f20r",
+        "f20v",
+        "f21r",
+        "f21v",
+        "f35r",
+        "f35v",
+        "f38r",
+        "f38v",
+        "f4r",
+        "f4v",
+        "f5r",
+        "f5v",
+        "f28r",
+        "f28v",
+        "f29r",
+        "f29v",
+        "f10r",
+        "f10v",
+        "f15r",
+        "f15v",
+        "f36r",
+        "f36v",
+        "f37r",
+        "f37v",
+        "f9r",
+        "f9v",
+        "f16r",
+        "f16v",
+        "f19r",
+        "f19v",
+        "f22r",
+        "f22v",
+        "f11r",
+        "f11v",
+        "f14r",
+        "f14v",
+        "f13r",
+        "f13v",
+        "f18r",
+        "f18v",
+        "f23r",
+        "f23v",
+        "f44r",
+        "f44v",
+        "f45r",
+        "f45v",
+        "f3r",
+        "f3v",
+        "f6r",
+        "f6v",
+        "f17r",
+        "f17v",
+        "f24r",
+        "f24v",
+        "f52r",
+        "f52v",
+        "f53r",
+        "f53v",
+        "f51r",
+        "f51v",
+        "f54r",
+        "f54v",
+        "f93r",
+        "f93v",
+        "f96r",
+        "f96v",
+        "f87r",
+        "f87v",
+        "f90r1",
+        "f90r2",
+        "f90v2",
+        "f90v1",
+        "f65v",
+        "f57r",
+        "f66v",
+        "f26r",
+        "f26v",
+        "f31r",
+        "f31v",
+        "f43r",
+        "f43v",
+        "f46r",
+        "f46v",
+        "f41r",
+        "f41v",
+        "f48r",
+        "f48v",
+        "f34r",
+        "f34v",
+        "f39r",
+        "f39v",
+        "f33r",
+        "f33v",
+        "f40r",
+        "f40v",
+        "f50r",
+        "f50v",
+        "f55r",
+        "f55v",
+        "f94r",
+        "f94v",
+        "f95r1",
+        "f95r2",
+        "f95v2",
+        "f95v1"
+      ],
+      "manuscript_tokens": 11538
+    },
+    {
+      "code": "P",
+      "name": "Pharma",
+      "pages": [
+        "f100r",
+        "f100v",
+        "f101r",
+        "f101v",
+        "f99r",
+        "f99v",
+        "f102r1",
+        "f102r2",
+        "f102v2",
+        "f102v1",
+        "f88r",
+        "f88v",
+        "f89r1",
+        "f89r2",
+        "f89v2",
+        "f89v1"
+      ],
+      "manuscript_tokens": 2318
+    },
+    {
+      "code": "S",
+      "name": "Stars",
+      "pages": [
+        "f58r",
+        "f58v",
+        "f105r",
+        "f105v",
+        "f114r",
+        "f114v",
+        "f104r",
+        "f104v",
+        "f115r",
+        "f115v",
+        "f106r",
+        "f106v",
+        "f113r",
+        "f113v",
+        "f107r",
+        "f107v",
+        "f112r",
+        "f112v",
+        "f108r",
+        "f108v",
+        "f111r",
+        "f111v",
+        "f103r",
+        "f103v",
+        "f116r"
+      ],
+      "manuscript_tokens": 11603
+    },
+    {
+      "code": "B",
+      "name": "Bio",
+      "pages": [
+        "f79r",
+        "f79v",
+        "f80r",
+        "f80v",
+        "f76v",
+        "f83r",
+        "f83v",
+        "f78r",
+        "f78v",
+        "f81r",
+        "f81v",
+        "f75r",
+        "f75v",
+        "f84r",
+        "f84v",
+        "f77r",
+        "f77v",
+        "f82r",
+        "f82v"
+      ],
+      "manuscript_tokens": 6251
+    },
+    {
+      "code": "T",
+      "name": "Text-only pages",
+      "pages": [
+        "f1r",
+        "f66r",
+        "f85r1",
+        "f86v6",
+        "f86v5",
+        "f76r"
+      ],
+      "manuscript_tokens": 2291
+    },
+    {
+      "code": "C",
+      "name": "Cosmological",
+      "pages": [
+        "f67v2",
+        "f68v3",
+        "f69r",
+        "f70r2",
+        "f85r2",
+        "fRos",
+        "f86v4",
+        "f86v3"
+      ],
+      "manuscript_tokens": 697
+    },
+    {
+      "code": "A",
+      "name": "Astrological",
+      "pages": [
+        "f67r1",
+        "f67r2",
+        "f68r1",
+        "f68r2",
+        "f68v2"
+      ],
+      "manuscript_tokens": 279
+    }
+  ],
+  "texts": {
+    "manuscript": {
+      "input": {
+        "policy": "legacy",
+        "words_sha256": "b1e1e3cb9c17b9b3f436c8459c0514344f99ba435ad9c144a5062157d9ca02f4",
+        "geometry_sha256": "61522be8f565c4c610beb138238cfeb892678a2c7be153e026ed7331ff65c6ef",
+        "review_version": "2026-10-28.1",
+        "bundle_sha256": "e66f291195747fb431629838764a4a48bf3f1f733fa34e2f93fd32e4b4e21ddd"
+      },
+      "sections": {
+        "H": {
+          "n": 4203,
+          "pool_size_cutoffs": [
+            14.0,
+            26.0
+          ],
+          "components": {
+            "contrast": 0.03719224275777083,
+            "bands": [
+              {
+                "contrast": 0.07462365591397851,
+                "bifolia": 25
+              },
+              {
+                "contrast": 0.02924413104222129,
+                "bifolia": 28
+              },
+              {
+                "contrast": 0.007708941317112694,
+                "bifolia": 19
+              }
+            ]
+          },
+          "h2": {
+            "contrast": 0.01847991996387573,
+            "bands": [
+              {
+                "contrast": 0.03784946236559139,
+                "bifolia": 25
+              },
+              {
+                "contrast": 0.023970874861572566,
+                "bifolia": 28
+              },
+              {
+                "contrast": -0.006380577335536763,
+                "bifolia": 19
+              }
+            ]
+          }
+        },
+        "P": {
+          "n": 1186,
+          "pool_size_cutoffs": [
+            9.0,
+            19.0
+          ],
+          "components": {
+            "contrast": 0.02699145299145293,
+            "bands": [
+              {
+                "contrast": 0.011999999999999955,
+                "bifolia": 3
+              },
+              {
+                "contrast": 0.05666666666666653,
+                "bifolia": 3
+              },
+              {
+                "contrast": 0.012307692307692297,
+                "bifolia": 3
+              }
+            ]
+          },
+          "h2": {
+            "contrast": 0.03616390245556909,
+            "bands": [
+              {
+                "contrast": -0.0026712962962963105,
+                "bifolia": 3
+              },
+              {
+                "contrast": 0.023214285714285632,
+                "bifolia": 3
+              },
+              {
+                "contrast": 0.08794871794871795,
+                "bifolia": 3
+              }
+            ]
+          }
+        },
+        "S": {
+          "n": 9854,
+          "pool_size_cutoffs": [
+            27.0,
+            34.0
+          ],
+          "components": {
+            "contrast": 0.07870276470547256,
+            "bands": [
+              {
+                "contrast": 0.09823013793634894,
+                "bifolia": 7
+              },
+              {
+                "contrast": 0.04956302357476461,
+                "bifolia": 7
+              },
+              {
+                "contrast": 0.08831513260530416,
+                "bifolia": 7
+              }
+            ]
+          },
+          "h2": {
+            "contrast": 0.061860798666523616,
+            "bands": [
+              {
+                "contrast": 0.09442575753683871,
+                "bifolia": 7
+              },
+              {
+                "contrast": 0.03232668526460425,
+                "bifolia": 7
+              },
+              {
+                "contrast": 0.05882995319812789,
+                "bifolia": 7
+              }
+            ]
+          }
+        },
+        "B": {
+          "n": 4917,
+          "pool_size_cutoffs": [
+            23.0,
+            32.0
+          ],
+          "components": {
+            "contrast": 0.052113604637823385,
+            "bands": [
+              {
+                "contrast": 0.07205882352941184,
+                "bifolia": 5
+              },
+              {
+                "contrast": 0.03491803278688521,
+                "bifolia": 5
+              },
+              {
+                "contrast": 0.0493639575971731,
+                "bifolia": 5
+              }
+            ]
+          },
+          "h2": {
+            "contrast": 0.06565372226155765,
+            "bands": [
+              {
+                "contrast": 0.011882352941176455,
+                "bifolia": 5
+              },
+              {
+                "contrast": 0.04598360655737699,
+                "bifolia": 5
+              },
+              {
+                "contrast": 0.13909520728611952,
+                "bifolia": 5
+              }
+            ]
+          }
+        },
+        "T": {
+          "n": 1803,
+          "pool_size_cutoffs": [
+            27.0,
+            34.0
+          ],
+          "components": {
+            "contrast": 0.12941556230438286,
+            "bands": [
+              {
+                "contrast": 0.16341085271317826,
+                "bifolia": 4
+              },
+              {
+                "contrast": 0.15559055118110238,
+                "bifolia": 4
+              },
+              {
+                "contrast": 0.06924528301886795,
+                "bifolia": 3
+              }
+            ]
+          },
+          "h2": {
+            "contrast": 0.11296172746945465,
+            "bands": [
+              {
+                "contrast": 0.07744186046511625,
+                "bifolia": 4
+              },
+              {
+                "contrast": 0.14795275590551182,
+                "bifolia": 4
+              },
+              {
+                "contrast": 0.11349056603773588,
+                "bifolia": 3
+              }
+            ]
+          }
+        },
+        "C": {
+          "n": 172,
+          "pool_size_cutoffs": [
+            9.0,
+            15.0
+          ],
+          "components": {
+            "contrast": 0.20245765345765346,
+            "bands": [
+              {
+                "contrast": 0.22128205128205133,
+                "bifolia": 1
+              },
+              {
+                "contrast": 0.3926363636363636,
+                "bifolia": 1
+              },
+              {
+                "contrast": -0.006545454545454521,
+                "bifolia": 1
+              }
+            ]
+          },
+          "h2": {
+            "contrast": -0.05874786324786319,
+            "bands": [
+              {
+                "contrast": 0.11775641025641032,
+                "bifolia": 1
+              },
+              {
+                "contrast": -0.155,
+                "bifolia": 1
+              },
+              {
+                "contrast": -0.1389999999999999,
+                "bifolia": 1
+              }
+            ]
+          }
+        },
+        "A": {
+          "n": 75,
+          "pool_size_cutoffs": [
+            9.0,
+            14.0
+          ],
+          "components": {
+            "contrast": null,
+            "bands": [
+              {
+                "contrast": 0.47833333333333333,
+                "bifolia": 1
+              },
+              {
+                "contrast": null,
+                "bifolia": 0
+              },
+              {
+                "contrast": null,
+                "bifolia": 0
+              }
+            ]
+          },
+          "h2": {
+            "contrast": null,
+            "bands": [
+              {
+                "contrast": 0.21833333333333338,
+                "bifolia": 1
+              },
+              {
+                "contrast": null,
+                "bifolia": 0
+              },
+              {
+                "contrast": null,
+                "bifolia": 0
+              }
+            ]
+          }
+        }
+      }
+    },
+    "manuscript_shuffled_paragraphs": {
+      "input": {
+        "policy": "legacy",
+        "words_sha256": "b1e1e3cb9c17b9b3f436c8459c0514344f99ba435ad9c144a5062157d9ca02f4",
+        "geometry_sha256": "61522be8f565c4c610beb138238cfeb892678a2c7be153e026ed7331ff65c6ef",
+        "review_version": "2026-10-28.1"
+      },
+      "sections": {
+        "H": {
+          "n": 4192,
+          "pool_size_cutoffs": [
+            14.0,
+            26.0
+          ],
+          "components": {
+            "contrast": 0.01252468939967962,
+            "bands": [
+              {
+                "contrast": 0.059649017649017755,
+                "bifolia": 24
+              },
+              {
+                "contrast": 0.05307350993377469,
+                "bifolia": 28
+              },
+              {
+                "contrast": -0.07514845938375359,
+                "bifolia": 19
+              }
+            ]
+          },
+          "h2": {
+            "contrast": -0.00779979495872372,
+            "bands": [
+              {
+                "contrast": 0.01995609685140365,
+                "bifolia": 24
+              },
+              {
+                "contrast": 0.02164451827242514,
+                "bifolia": 28
+              },
+              {
+                "contrast": -0.06499999999999995,
+                "bifolia": 19
+              }
+            ]
+          }
+        },
+        "P": {
+          "n": 1187,
+          "pool_size_cutoffs": [
+            9.0,
+            19.0
+          ],
+          "components": {
+            "contrast": -0.027126547073804474,
+            "bands": [
+              {
+                "contrast": -0.09278481012658227,
+                "bifolia": 3
+              },
+              {
+                "contrast": 0.054880952380952364,
+                "bifolia": 3
+              },
+              {
+                "contrast": -0.043475783475783514,
+                "bifolia": 3
+              }
+            ]
+          },
+          "h2": {
+            "contrast": -0.0004961501640578144,
+            "bands": [
+              {
+                "contrast": 0.001139240506329131,
+                "bifolia": 3
+              },
+              {
+                "contrast": 0.029378151260504193,
+                "bifolia": 3
+              },
+              {
+                "contrast": -0.03200584225900677,
+                "bifolia": 3
+              }
+            ]
+          }
+        },
+        "S": {
+          "n": 9855,
+          "pool_size_cutoffs": [
+            27.0,
+            34.0
+          ],
+          "components": {
+            "contrast": 0.013811544417275242,
+            "bands": [
+              {
+                "contrast": 0.004649122807017569,
+                "bifolia": 7
+              },
+              {
+                "contrast": -0.014634146341463372,
+                "bifolia": 7
+              },
+              {
+                "contrast": 0.05141965678627153,
+                "bifolia": 7
+              }
+            ]
+          },
+          "h2": {
+            "contrast": 0.011814449761181197,
+            "bands": [
+              {
+                "contrast": 0.0016608400563452586,
+                "bifolia": 7
+              },
+              {
+                "contrast": 0.007027439024390181,
+                "bifolia": 7
+              },
+              {
+                "contrast": 0.02675507020280815,
+                "bifolia": 7
+              }
+            ]
+          }
+        },
+        "B": {
+          "n": 4916,
+          "pool_size_cutoffs": [
+            23.0,
+            32.0
+          ],
+          "components": {
+            "contrast": 0.03476215220688952,
+            "bands": [
+              {
+                "contrast": 0.028357771260997033,
+                "bifolia": 5
+              },
+              {
+                "contrast": 0.00970027247956401,
+                "bifolia": 5
+              },
+              {
+                "contrast": 0.0662284128801075,
+                "bifolia": 5
+              }
+            ]
+          },
+          "h2": {
+            "contrast": -0.006250256817898221,
+            "bands": [
+              {
+                "contrast": -0.0402639296187684,
+                "bifolia": 5
+              },
+              {
+                "contrast": 0.007732240437158533,
+                "bifolia": 5
+              },
+              {
+                "contrast": 0.013780918727915203,
+                "bifolia": 5
+              }
+            ]
+          }
+        },
+        "T": {
+          "n": 1803,
+          "pool_size_cutoffs": [
+            27.0,
+            34.0
+          ],
+          "components": {
+            "contrast": 0.016074948452856248,
+            "bands": [
+              {
+                "contrast": -0.02015503875968999,
+                "bifolia": 4
+              },
+              {
+                "contrast": 0.039606299212598395,
+                "bifolia": 4
+              },
+              {
+                "contrast": 0.028773584905660343,
+                "bifolia": 3
+              }
+            ]
+          },
+          "h2": {
+            "contrast": 0.03357671915626607,
+            "bands": [
+              {
+                "contrast": -0.0013178294573643057,
+                "bifolia": 4
+              },
+              {
+                "contrast": 0.06251968503937005,
+                "bifolia": 4
+              },
+              {
+                "contrast": 0.03952830188679246,
+                "bifolia": 3
+              }
+            ]
+          }
+        },
+        "C": {
+          "n": 174,
+          "pool_size_cutoffs": [
+            9.0,
+            15.0
+          ],
+          "components": {
+            "contrast": 0.07283333333333336,
+            "bands": [
+              {
+                "contrast": 0.3125,
+                "bifolia": 1
+              },
+              {
+                "contrast": -0.36,
+                "bifolia": 1
+              },
+              {
+                "contrast": 0.26600000000000007,
+                "bifolia": 1
+              }
+            ]
+          },
+          "h2": {
+            "contrast": 0.11124592074592075,
+            "bands": [
+              {
+                "contrast": 0.3451923076923077,
+                "bifolia": 1
+              },
+              {
+                "contrast": -0.25100000000000006,
+                "bifolia": 1
+              },
+              {
+                "contrast": 0.23954545454545462,
+                "bifolia": 1
+              }
+            ]
+          }
+        },
+        "A": {
+          "n": 75,
+          "pool_size_cutoffs": [
+            9.0,
+            14.0
+          ],
+          "components": {
+            "contrast": null,
+            "bands": [
+              {
+                "contrast": 0.16666666666666666,
+                "bifolia": 1
+              },
+              {
+                "contrast": null,
+                "bifolia": 0
+              },
+              {
+                "contrast": null,
+                "bifolia": 0
+              }
+            ]
+          },
+          "h2": {
+            "contrast": null,
+            "bands": [
+              {
+                "contrast": -0.08,
+                "bifolia": 1
+              },
+              {
+                "contrast": null,
+                "bifolia": 0
+              },
+              {
+                "contrast": null,
+                "bifolia": 0
+              }
+            ]
+          }
+        }
+      }
+    },
+    "manuscript_shuffled_pages": {
+      "input": {
+        "policy": "legacy",
+        "words_sha256": "b1e1e3cb9c17b9b3f436c8459c0514344f99ba435ad9c144a5062157d9ca02f4",
+        "geometry_sha256": "61522be8f565c4c610beb138238cfeb892678a2c7be153e026ed7331ff65c6ef",
+        "review_version": "2026-10-28.1"
+      },
+      "sections": {
+        "H": {
+          "n": 4213,
+          "pool_size_cutoffs": [
+            14.0,
+            26.0
+          ],
+          "components": {
+            "contrast": 0.04192029999531525,
+            "bands": [
+              {
+                "contrast": 0.09662058371735799,
+                "bifolia": 25
+              },
+              {
+                "contrast": 0.049028508771929824,
+                "bifolia": 28
+              },
+              {
+                "contrast": -0.01988819250334206,
+                "bifolia": 19
+              }
+            ]
+          },
+          "h2": {
+            "contrast": 0.019065660760428167,
+            "bands": [
+              {
+                "contrast": 0.03621428571428564,
+                "bifolia": 25
+              },
+              {
+                "contrast": 0.027066029900332134,
+                "bifolia": 28
+              },
+              {
+                "contrast": -0.006083333333333274,
+                "bifolia": 19
+              }
+            ]
+          }
+        },
+        "P": {
+          "n": 1192,
+          "pool_size_cutoffs": [
+            9.0,
+            19.0
+          ],
+          "components": {
+            "contrast": 0.0415743281168118,
+            "bands": [
+              {
+                "contrast": 0.11876543209876544,
+                "bifolia": 3
+              },
+              {
+                "contrast": -0.014683473389355717,
+                "bifolia": 3
+              },
+              {
+                "contrast": 0.020641025641025657,
+                "bifolia": 3
+              }
+            ]
+          },
+          "h2": {
+            "contrast": 0.07614095780762449,
+            "bands": [
+              {
+                "contrast": 0.06814814814814818,
+                "bifolia": 3
+              },
+              {
+                "contrast": 0.023095238095238113,
+                "bifolia": 3
+              },
+              {
+                "contrast": 0.1371794871794872,
+                "bifolia": 3
+              }
+            ]
+          }
+        },
+        "S": {
+          "n": 9848,
+          "pool_size_cutoffs": [
+            27.0,
+            34.0
+          ],
+          "components": {
+            "contrast": 0.0050275666863057455,
+            "bands": [
+              {
+                "contrast": 0.013181818181818183,
+                "bifolia": 7
+              },
+              {
+                "contrast": -0.04416151575899324,
+                "bifolia": 7
+              },
+              {
+                "contrast": 0.046062397636092295,
+                "bifolia": 7
+              }
+            ]
+          },
+          "h2": {
+            "contrast": 0.004788851131637665,
+            "bands": [
+              {
+                "contrast": -0.0016942890387843246,
+                "bifolia": 7
+              },
+              {
+                "contrast": -0.015000000000000013,
+                "bifolia": 7
+              },
+              {
+                "contrast": 0.031060842433697333,
+                "bifolia": 7
+              }
+            ]
+          }
+        },
+        "B": {
+          "n": 4911,
+          "pool_size_cutoffs": [
+            23.0,
+            32.0
+          ],
+          "components": {
+            "contrast": -0.03196355961255776,
+            "bands": [
+              {
+                "contrast": 0.007769967224426466,
+                "bifolia": 5
+              },
+              {
+                "contrast": -0.03196453298789487,
+                "bifolia": 5
+              },
+              {
+                "contrast": -0.07169611307420487,
+                "bifolia": 5
+              }
+            ]
+          },
+          "h2": {
+            "contrast": -0.04035627199961839,
+            "bands": [
+              {
+                "contrast": -0.023558823529411743,
+                "bifolia": 5
+              },
+              {
+                "contrast": -0.03680327868852468,
+                "bifolia": 5
+              },
+              {
+                "contrast": -0.06070671378091874,
+                "bifolia": 5
+              }
+            ]
+          }
+        },
+        "T": {
+          "n": 1800,
+          "pool_size_cutoffs": [
+            27.0,
+            34.0
+          ],
+          "components": {
+            "contrast": 0.00289018337385318,
+            "bands": [
+              {
+                "contrast": -0.001240310077519402,
+                "bifolia": 4
+              },
+              {
+                "contrast": 0.04330708661417326,
+                "bifolia": 4
+              },
+              {
+                "contrast": -0.03339622641509432,
+                "bifolia": 3
+              }
+            ]
+          },
+          "h2": {
+            "contrast": 0.02388190588725775,
+            "bands": [
+              {
+                "contrast": 0.004883720930232649,
+                "bifolia": 4
+              },
+              {
+                "contrast": 0.0506299212598425,
+                "bifolia": 4
+              },
+              {
+                "contrast": 0.016132075471698093,
+                "bifolia": 3
+              }
+            ]
+          }
+        },
+        "C": {
+          "n": 175,
+          "pool_size_cutoffs": [
+            9.0,
+            15.0
+          ],
+          "components": {
+            "contrast": -0.0021666666666666965,
+            "bands": [
+              {
+                "contrast": -0.11750000000000005,
+                "bifolia": 1
+              },
+              {
+                "contrast": 0.156,
+                "bifolia": 1
+              },
+              {
+                "contrast": -0.04500000000000004,
+                "bifolia": 1
+              }
+            ]
+          },
+          "h2": {
+            "contrast": 0.020222222222222235,
+            "bands": [
+              {
+                "contrast": -0.44833333333333325,
+                "bifolia": 1
+              },
+              {
+                "contrast": 0.179,
+                "bifolia": 1
+              },
+              {
+                "contrast": 0.32999999999999996,
+                "bifolia": 1
+              }
+            ]
+          }
+        },
+        "A": {
+          "n": 75,
+          "pool_size_cutoffs": [
+            9.0,
+            14.0
+          ],
+          "components": {
+            "contrast": null,
+            "bands": [
+              {
+                "contrast": 0.0,
+                "bifolia": 1
+              },
+              {
+                "contrast": null,
+                "bifolia": 0
+              },
+              {
+                "contrast": null,
+                "bifolia": 0
+              }
+            ]
+          },
+          "h2": {
+            "contrast": null,
+            "bands": [
+              {
+                "contrast": 0.0,
+                "bifolia": 1
+              },
+              {
+                "contrast": null,
+                "bifolia": 0
+              },
+              {
+                "contrast": null,
+                "bifolia": 0
+              }
+            ]
+          }
+        }
+      }
+    },
+    "timm": {
+      "input": {
+        "policy": "legacy",
+        "words_sha256": "b1e1e3cb9c17b9b3f436c8459c0514344f99ba435ad9c144a5062157d9ca02f4",
+        "geometry_sha256": "61522be8f565c4c610beb138238cfeb892678a2c7be153e026ed7331ff65c6ef",
+        "review_version": "2026-10-28.1",
+        "bundle_sha256": "e52147b333d22d9cd05d7f09f2f3cc9c7f843c2c16021c140367204eb57cbbda"
+      },
+      "sections": {
+        "H": {
+          "n": 4660,
+          "pool_size_cutoffs": [
+            15.0,
+            26.0
+          ],
+          "components": {
+            "contrast": 0.06534949392712557,
+            "bands": [
+              {
+                "contrast": 0.035641025641025614,
+                "bifolia": 25
+              },
+              {
+                "contrast": 0.044440789473684406,
+                "bifolia": 28
+              },
+              {
+                "contrast": 0.11596666666666666,
+                "bifolia": 24
+              }
+            ]
+          },
+          "h2": {
+            "contrast": 0.07135745614035077,
+            "bands": [
+              {
+                "contrast": -0.015833333333333477,
+                "bifolia": 25
+              },
+              {
+                "contrast": 0.11707236842105251,
+                "bifolia": 28
+              },
+              {
+                "contrast": 0.11283333333333329,
+                "bifolia": 24
+              }
+            ]
+          }
+        },
+        "P": {
+          "n": 1342,
+          "pool_size_cutoffs": [
+            10.0,
+            21.0
+          ],
+          "components": {
+            "contrast": -0.015216433179034336,
+            "bands": [
+              {
+                "contrast": 0.0049473684210527,
+                "bifolia": 3
+              },
+              {
+                "contrast": -0.11404494382022473,
+                "bifolia": 3
+              },
+              {
+                "contrast": 0.06344827586206903,
+                "bifolia": 3
+              }
+            ]
+          },
+          "h2": {
+            "contrast": -0.07535420560959415,
+            "bands": [
+              {
+                "contrast": -0.07568421052631585,
+                "bifolia": 3
+              },
+              {
+                "contrast": -0.09853932584269653,
+                "bifolia": 3
+              },
+              {
+                "contrast": -0.05183908045977004,
+                "bifolia": 3
+              }
+            ]
+          }
+        },
+        "S": {
+          "n": 11150,
+          "pool_size_cutoffs": [
+            29.0,
+            37.0
+          ],
+          "components": {
+            "contrast": 0.12014776316354259,
+            "bands": [
+              {
+                "contrast": 0.14058746736292427,
+                "bifolia": 7
+              },
+              {
+                "contrast": 0.11395663956639568,
+                "bifolia": 7
+              },
+              {
+                "contrast": 0.10589918256130781,
+                "bifolia": 7
+              }
+            ]
+          },
+          "h2": {
+            "contrast": 0.09533193402380308,
+            "bands": [
+              {
+                "contrast": 0.11129242819843344,
+                "bifolia": 7
+              },
+              {
+                "contrast": 0.08443089430894302,
+                "bifolia": 7
+              },
+              {
+                "contrast": 0.09027247956403278,
+                "bifolia": 7
+              }
+            ]
+          }
+        },
+        "B": {
+          "n": 5475,
+          "pool_size_cutoffs": [
+            24.0,
+            34.0
+          ],
+          "components": {
+            "contrast": 0.13965530396268913,
+            "bands": [
+              {
+                "contrast": 0.1464021164021163,
+                "bifolia": 5
+              },
+              {
+                "contrast": 0.13792307692307693,
+                "bifolia": 5
+              },
+              {
+                "contrast": 0.13464071856287418,
+                "bifolia": 5
+              }
+            ]
+          },
+          "h2": {
+            "contrast": 0.0775220734761653,
+            "bands": [
+              {
+                "contrast": 0.1365608465608466,
+                "bifolia": 5
+              },
+              {
+                "contrast": 0.05471794871794877,
+                "bifolia": 5
+              },
+              {
+                "contrast": 0.04128742514970052,
+                "bifolia": 5
+              }
+            ]
+          }
+        },
+        "T": {
+          "n": 1964,
+          "pool_size_cutoffs": [
+            28.0,
+            35.0
+          ],
+          "components": {
+            "contrast": 0.11300020292207787,
+            "bands": [
+              {
+                "contrast": 0.1709090909090909,
+                "bifolia": 4
+              },
+              {
+                "contrast": 0.14523437499999997,
+                "bifolia": 4
+              },
+              {
+                "contrast": 0.022857142857142743,
+                "bifolia": 4
+              }
+            ]
+          },
+          "h2": {
+            "contrast": 0.08296381858881859,
+            "bands": [
+              {
+                "contrast": 0.11608391608391605,
+                "bifolia": 4
+              },
+              {
+                "contrast": 0.13812500000000005,
+                "bifolia": 4
+              },
+              {
+                "contrast": -0.005317460317460332,
+                "bifolia": 4
+              }
+            ]
+          }
+        },
+        "C": {
+          "n": 219,
+          "pool_size_cutoffs": [
+            9.0,
+            18.060000000000002
+          ],
+          "components": {
+            "contrast": 0.09050549450549451,
+            "bands": [
+              {
+                "contrast": 0.028000000000000025,
+                "bifolia": 1
+              },
+              {
+                "contrast": 0.1392307692307692,
+                "bifolia": 1
+              },
+              {
+                "contrast": 0.10428571428571431,
+                "bifolia": 1
+              }
+            ]
+          },
+          "h2": {
+            "contrast": -0.08669597069597068,
+            "bands": [
+              {
+                "contrast": -0.21800000000000003,
+                "bifolia": 1
+              },
+              {
+                "contrast": 0.09076923076923088,
+                "bifolia": 1
+              },
+              {
+                "contrast": -0.1328571428571429,
+                "bifolia": 1
+              }
+            ]
+          }
+        },
+        "A": {
+          "n": 100,
+          "pool_size_cutoffs": [
+            11.0,
+            21.0
+          ],
+          "components": {
+            "contrast": 0.18476190476190477,
+            "bands": [
+              {
+                "contrast": 0.09285714285714289,
+                "bifolia": 1
+              },
+              {
+                "contrast": 0.3571428571428572,
+                "bifolia": 1
+              },
+              {
+                "contrast": 0.1042857142857142,
+                "bifolia": 1
+              }
+            ]
+          },
+          "h2": {
+            "contrast": 0.10809523809523812,
+            "bands": [
+              {
+                "contrast": 0.16000000000000003,
+                "bifolia": 1
+              },
+              {
+                "contrast": 0.1571428571428572,
+                "bifolia": 1
+              },
+              {
+                "contrast": 0.0071428571428571175,
+                "bifolia": 1
+              }
+            ]
+          }
+        }
+      }
+    },
+    "noinnov_far0": {
+      "input": {
+        "policy": "legacy",
+        "words_sha256": "b1e1e3cb9c17b9b3f436c8459c0514344f99ba435ad9c144a5062157d9ca02f4",
+        "geometry_sha256": "61522be8f565c4c610beb138238cfeb892678a2c7be153e026ed7331ff65c6ef",
+        "review_version": "2026-10-28.1",
+        "bundle_sha256": "75502aaea304bdaf12d17fa14021863f30bc71e94fb848c69d8534c42bca722b"
+      },
+      "sections": {
+        "H": {
+          "n": 5575,
+          "pool_size_cutoffs": [
+            16.0,
+            30.0
+          ],
+          "components": {
+            "contrast": 0.093198662931175,
+            "bands": [
+              {
+                "contrast": 0.0800502512562814,
+                "bifolia": 29
+              },
+              {
+                "contrast": 0.08786432160804003,
+                "bifolia": 29
+              },
+              {
+                "contrast": 0.11168141592920355,
+                "bifolia": 25
+              }
+            ]
+          },
+          "h2": {
+            "contrast": 0.05610631821842741,
+            "bands": [
+              {
+                "contrast": 0.025929648241206027,
+                "bifolia": 29
+              },
+              {
+                "contrast": 0.040678391959799054,
+                "bifolia": 29
+              },
+              {
+                "contrast": 0.10171091445427716,
+                "bifolia": 25
+              }
+            ]
+          }
+        },
+        "P": {
+          "n": 1456,
+          "pool_size_cutoffs": [
+            11.0,
+            22.0
+          ],
+          "components": {
+            "contrast": 0.11297039684136456,
+            "bands": [
+              {
+                "contrast": 0.05945945945945946,
+                "bifolia": 3
+              },
+              {
+                "contrast": 0.1545054945054945,
+                "bifolia": 3
+              },
+              {
+                "contrast": 0.12494623655913972,
+                "bifolia": 3
+              }
+            ]
+          },
+          "h2": {
+            "contrast": 0.04427044910915884,
+            "bands": [
+              {
+                "contrast": 0.03009009009009017,
+                "bifolia": 3
+              },
+              {
+                "contrast": 0.06153846153846165,
+                "bifolia": 3
+              },
+              {
+                "contrast": 0.04118279569892469,
+                "bifolia": 3
+              }
+            ]
+          }
+        },
+        "S": {
+          "n": 11271,
+          "pool_size_cutoffs": [
+            29.0,
+            37.0
+          ],
+          "components": {
+            "contrast": 0.13825808130284248,
+            "bands": [
+              {
+                "contrast": 0.1722965879265092,
+                "bifolia": 7
+              },
+              {
+                "contrast": 0.1513129973474801,
+                "bifolia": 7
+              },
+              {
+                "contrast": 0.0911646586345381,
+                "bifolia": 7
+              }
+            ]
+          },
+          "h2": {
+            "contrast": 0.10410972573013079,
+            "bands": [
+              {
+                "contrast": 0.11817585301837275,
+                "bifolia": 7
+              },
+              {
+                "contrast": 0.12820954907161802,
+                "bifolia": 7
+              },
+              {
+                "contrast": 0.06594377510040161,
+                "bifolia": 7
+              }
+            ]
+          }
+        },
+        "B": {
+          "n": 5494,
+          "pool_size_cutoffs": [
+            24.0,
+            34.0
+          ],
+          "components": {
+            "contrast": 0.0886172811611296,
+            "bands": [
+              {
+                "contrast": 0.08007894736842097,
+                "bifolia": 5
+              },
+              {
+                "contrast": 0.09809782608695661,
+                "bifolia": 5
+              },
+              {
+                "contrast": 0.08767507002801123,
+                "bifolia": 5
+              }
+            ]
+          },
+          "h2": {
+            "contrast": 0.03634556633484828,
+            "bands": [
+              {
+                "contrast": 0.04023684210526324,
+                "bifolia": 5
+              },
+              {
+                "contrast": 0.0462228260869566,
+                "bifolia": 5
+              },
+              {
+                "contrast": 0.022577030812324983,
+                "bifolia": 5
+              }
+            ]
+          }
+        },
+        "T": {
+          "n": 2017,
+          "pool_size_cutoffs": [
+            28.0,
+            37.0
+          ],
+          "components": {
+            "contrast": 0.11157261617633644,
+            "bands": [
+              {
+                "contrast": 0.137007299270073,
+                "bifolia": 4
+              },
+              {
+                "contrast": 0.09554838709677421,
+                "bifolia": 4
+              },
+              {
+                "contrast": 0.10216216216216212,
+                "bifolia": 3
+              }
+            ]
+          },
+          "h2": {
+            "contrast": 0.0719766307395222,
+            "bands": [
+              {
+                "contrast": 0.08554744525547447,
+                "bifolia": 4
+              },
+              {
+                "contrast": 0.10858064516129023,
+                "bifolia": 4
+              },
+              {
+                "contrast": 0.021801801801801857,
+                "bifolia": 3
+              }
+            ]
+          }
+        },
+        "C": {
+          "n": 260,
+          "pool_size_cutoffs": [
+            12.0,
+            22.0
+          ],
+          "components": {
+            "contrast": 0.04134722222222222,
+            "bands": [
+              {
+                "contrast": 0.17499999999999993,
+                "bifolia": 1
+              },
+              {
+                "contrast": -0.07533333333333325,
+                "bifolia": 1
+              },
+              {
+                "contrast": 0.02437499999999998,
+                "bifolia": 1
+              }
+            ]
+          },
+          "h2": {
+            "contrast": -0.04905092592592599,
+            "bands": [
+              {
+                "contrast": 0.12722222222222213,
+                "bifolia": 1
+              },
+              {
+                "contrast": -0.22000000000000014,
+                "bifolia": 1
+              },
+              {
+                "contrast": -0.05437499999999995,
+                "bifolia": 1
+              }
+            ]
+          }
+        },
+        "A": {
+          "n": 109,
+          "pool_size_cutoffs": [
+            9.0,
+            19.0
+          ],
+          "components": {
+            "contrast": 0.046130952380952384,
+            "bands": [
+              {
+                "contrast": 0.03500000000000003,
+                "bifolia": 1
+              },
+              {
+                "contrast": 0.16625,
+                "bifolia": 1
+              },
+              {
+                "contrast": -0.06285714285714289,
+                "bifolia": 1
+              }
+            ]
+          },
+          "h2": {
+            "contrast": -0.10410714285714288,
+            "bands": [
+              {
+                "contrast": -0.27875000000000005,
+                "bifolia": 1
+              },
+              {
+                "contrast": -0.09499999999999997,
+                "bifolia": 1
+              },
+              {
+                "contrast": 0.06142857142857136,
+                "bifolia": 1
+              }
+            ]
+          }
+        }
+      }
+    },
+    "timm_spatial": {
+      "input": {
+        "policy": "legacy",
+        "words_sha256": "b1e1e3cb9c17b9b3f436c8459c0514344f99ba435ad9c144a5062157d9ca02f4",
+        "geometry_sha256": "61522be8f565c4c610beb138238cfeb892678a2c7be153e026ed7331ff65c6ef",
+        "review_version": "2026-10-28.1",
+        "bundle_sha256": "9e587fe26de66e4b9c90d792d100d40b5845fe032d3b35e67fc6bb5b62f8ea35"
+      },
+      "sections": {
+        "H": {
+          "n": 4853,
+          "pool_size_cutoffs": [
+            15.0,
+            27.0
+          ],
+          "components": {
+            "contrast": 0.10535747833755073,
+            "bands": [
+              {
+                "contrast": 0.15752976190476176,
+                "bifolia": 28
+              },
+              {
+                "contrast": 0.008913043478260774,
+                "bifolia": 27
+              },
+              {
+                "contrast": 0.14962962962962967,
+                "bifolia": 22
+              }
+            ]
+          },
+          "h2": {
+            "contrast": 0.027054294672048267,
+            "bands": [
+              {
+                "contrast": 0.04229166666666656,
+                "bifolia": 28
+              },
+              {
+                "contrast": -0.060590062111801124,
+                "bifolia": 27
+              },
+              {
+                "contrast": 0.09946127946127936,
+                "bifolia": 22
+              }
+            ]
+          }
+        },
+        "P": {
+          "n": 1388,
+          "pool_size_cutoffs": [
+            10.0,
+            21.0
+          ],
+          "components": {
+            "contrast": 0.09361603973294248,
+            "bands": [
+              {
+                "contrast": 0.10129999999999989,
+                "bifolia": 3
+              },
+              {
+                "contrast": 0.12673913043478263,
+                "bifolia": 3
+              },
+              {
+                "contrast": 0.05280898876404494,
+                "bifolia": 3
+              }
+            ]
+          },
+          "h2": {
+            "contrast": 0.07582691744015636,
+            "bands": [
+              {
+                "contrast": 0.13230000000000008,
+                "bifolia": 3
+              },
+              {
+                "contrast": 0.026304347826086927,
+                "bifolia": 3
+              },
+              {
+                "contrast": 0.06887640449438209,
+                "bifolia": 3
+              }
+            ]
+          }
+        },
+        "S": {
+          "n": 11180,
+          "pool_size_cutoffs": [
+            29.0,
+            38.0
+          ],
+          "components": {
+            "contrast": 0.12712792163091372,
+            "bands": [
+              {
+                "contrast": 0.17313829787234042,
+                "bifolia": 7
+              },
+              {
+                "contrast": 0.11578823529411764,
+                "bifolia": 7
+              },
+              {
+                "contrast": 0.09245723172628306,
+                "bifolia": 7
+              }
+            ]
+          },
+          "h2": {
+            "contrast": 0.09234515586486736,
+            "bands": [
+              {
+                "contrast": 0.13477393617021277,
+                "bifolia": 7
+              },
+              {
+                "contrast": 0.06621176470588236,
+                "bifolia": 7
+              },
+              {
+                "contrast": 0.07604976671850694,
+                "bifolia": 7
+              }
+            ]
+          }
+        },
+        "B": {
+          "n": 5327,
+          "pool_size_cutoffs": [
+            24.0,
+            34.0
+          ],
+          "components": {
+            "contrast": 0.08756283021762723,
+            "bands": [
+              {
+                "contrast": 0.09550135501355023,
+                "bifolia": 5
+              },
+              {
+                "contrast": 0.1045967741935484,
+                "bifolia": 5
+              },
+              {
+                "contrast": 0.06259036144578306,
+                "bifolia": 5
+              }
+            ]
+          },
+          "h2": {
+            "contrast": 0.02353384953398698,
+            "bands": [
+              {
+                "contrast": 0.01113821138211385,
+                "bifolia": 5
+              },
+              {
+                "contrast": 0.059704301075268806,
+                "bifolia": 5
+              },
+              {
+                "contrast": -0.0002409638554217164,
+                "bifolia": 5
+              }
+            ]
+          }
+        },
+        "T": {
+          "n": 1957,
+          "pool_size_cutoffs": [
+            28.0,
+            36.0
+          ],
+          "components": {
+            "contrast": 0.13394945545128029,
+            "bands": [
+              {
+                "contrast": 0.2022857142857143,
+                "bifolia": 4
+              },
+              {
+                "contrast": 0.11014598540145987,
+                "bifolia": 4
+              },
+              {
+                "contrast": 0.0894166666666667,
+                "bifolia": 4
+              }
+            ]
+          },
+          "h2": {
+            "contrast": 0.10604370872436565,
+            "bands": [
+              {
+                "contrast": 0.15642857142857147,
+                "bifolia": 4
+              },
+              {
+                "contrast": 0.11445255474452554,
+                "bifolia": 4
+              },
+              {
+                "contrast": 0.04724999999999996,
+                "bifolia": 4
+              }
+            ]
+          }
+        },
+        "C": {
+          "n": 241,
+          "pool_size_cutoffs": [
+            11.0,
+            19.0
+          ],
+          "components": {
+            "contrast": 0.16688888888888884,
+            "bands": [
+              {
+                "contrast": 0.5479999999999999,
+                "bifolia": 1
+              },
+              {
+                "contrast": -0.23533333333333334,
+                "bifolia": 1
+              },
+              {
+                "contrast": 0.1879999999999999,
+                "bifolia": 1
+              }
+            ]
+          },
+          "h2": {
+            "contrast": 0.06888888888888899,
+            "bands": [
+              {
+                "contrast": 0.3300000000000002,
+                "bifolia": 1
+              },
+              {
+                "contrast": -0.15933333333333333,
+                "bifolia": 1
+              },
+              {
+                "contrast": 0.03600000000000009,
+                "bifolia": 1
+              }
+            ]
+          }
+        },
+        "A": {
+          "n": 97,
+          "pool_size_cutoffs": [
+            11.0,
+            21.320000000000007
+          ],
+          "components": {
+            "contrast": -0.10809523809523815,
+            "bands": [
+              {
+                "contrast": -0.372857142857143,
+                "bifolia": 1
+              },
+              {
+                "contrast": 0.0,
+                "bifolia": 1
+              },
+              {
+                "contrast": 0.04857142857142854,
+                "bifolia": 1
+              }
+            ]
+          },
+          "h2": {
+            "contrast": 0.12142857142857144,
+            "bands": [
+              {
+                "contrast": -0.03285714285714281,
+                "bifolia": 1
+              },
+              {
+                "contrast": -0.001428571428571418,
+                "bifolia": 1
+              },
+              {
+                "contrast": 0.3985714285714286,
+                "bifolia": 1
+              }
+            ]
+          }
+        }
+      }
+    },
+    "noinnov_spatial": {
+      "input": {
+        "policy": "legacy",
+        "words_sha256": "b1e1e3cb9c17b9b3f436c8459c0514344f99ba435ad9c144a5062157d9ca02f4",
+        "geometry_sha256": "61522be8f565c4c610beb138238cfeb892678a2c7be153e026ed7331ff65c6ef",
+        "review_version": "2026-10-28.1",
+        "bundle_sha256": "196d425971adf7b2ff6b3a973d3d38b826bfa2f3d93c54b19cac7cd60d829fb1"
+      },
+      "sections": {
+        "H": {
+          "n": 5594,
+          "pool_size_cutoffs": [
+            16.0,
+            29.0
+          ],
+          "components": {
+            "contrast": 0.15787020910093805,
+            "bands": [
+              {
+                "contrast": 0.10465994962216635,
+                "bifolia": 29
+              },
+              {
+                "contrast": 0.21859459459459457,
+                "bifolia": 28
+              },
+              {
+                "contrast": 0.1503560830860532,
+                "bifolia": 21
+              }
+            ]
+          },
+          "h2": {
+            "contrast": 0.10697038176087276,
+            "bands": [
+              {
+                "contrast": 0.06627204030226719,
+                "bifolia": 29
+              },
+              {
+                "contrast": 0.10959459459459453,
+                "bifolia": 28
+              },
+              {
+                "contrast": 0.14504451038575655,
+                "bifolia": 21
+              }
+            ]
+          }
+        },
+        "P": {
+          "n": 1508,
+          "pool_size_cutoffs": [
+            11.0,
+            22.0
+          ],
+          "components": {
+            "contrast": 0.13955749754856894,
+            "bands": [
+              {
+                "contrast": 0.18108108108108112,
+                "bifolia": 3
+              },
+              {
+                "contrast": 0.1606122448979591,
+                "bifolia": 3
+              },
+              {
+                "contrast": 0.0769791666666666,
+                "bifolia": 3
+              }
+            ]
+          },
+          "h2": {
+            "contrast": 0.10057612459398173,
+            "bands": [
+              {
+                "contrast": 0.05405405405405406,
+                "bifolia": 3
+              },
+              {
+                "contrast": 0.19663265306122446,
+                "bifolia": 3
+              },
+              {
+                "contrast": 0.05104166666666665,
+                "bifolia": 3
+              }
+            ]
+          }
+        },
+        "S": {
+          "n": 11645,
+          "pool_size_cutoffs": [
+            30.0,
+            39.0
+          ],
+          "components": {
+            "contrast": 0.1574055542864816,
+            "bands": [
+              {
+                "contrast": 0.2001743462017435,
+                "bifolia": 7
+              },
+              {
+                "contrast": 0.0953263403263403,
+                "bifolia": 7
+              },
+              {
+                "contrast": 0.17671597633136094,
+                "bifolia": 7
+              }
+            ]
+          },
+          "h2": {
+            "contrast": 0.09868242078726809,
+            "bands": [
+              {
+                "contrast": 0.1495890410958905,
+                "bifolia": 7
+              },
+              {
+                "contrast": 0.05425407925407927,
+                "bifolia": 7
+              },
+              {
+                "contrast": 0.09220414201183452,
+                "bifolia": 7
+              }
+            ]
+          }
+        },
+        "B": {
+          "n": 5842,
+          "pool_size_cutoffs": [
+            26.0,
+            37.0
+          ],
+          "components": {
+            "contrast": 0.10851746650730375,
+            "bands": [
+              {
+                "contrast": 0.13823244552058117,
+                "bifolia": 5
+              },
+              {
+                "contrast": 0.04507211538461542,
+                "bifolia": 5
+              },
+              {
+                "contrast": 0.14224783861671464,
+                "bifolia": 5
+              }
+            ]
+          },
+          "h2": {
+            "contrast": 0.11273372497977768,
+            "bands": [
+              {
+                "contrast": 0.09835351089588373,
+                "bifolia": 5
+              },
+              {
+                "contrast": 0.10641826923076919,
+                "bifolia": 5
+              },
+              {
+                "contrast": 0.13342939481268012,
+                "bifolia": 5
+              }
+            ]
+          }
+        },
+        "T": {
+          "n": 2092,
+          "pool_size_cutoffs": [
+            30.0,
+            39.0
+          ],
+          "components": {
+            "contrast": 0.1122989383415809,
+            "bands": [
+              {
+                "contrast": 0.17476821192052988,
+                "bifolia": 4
+              },
+              {
+                "contrast": 0.050909090909090904,
+                "bifolia": 4
+              },
+              {
+                "contrast": 0.11121951219512194,
+                "bifolia": 3
+              }
+            ]
+          },
+          "h2": {
+            "contrast": 0.12522311443648868,
+            "bands": [
+              {
+                "contrast": 0.18476821192052972,
+                "bifolia": 4
+              },
+              {
+                "contrast": 0.06195804195804189,
+                "bifolia": 4
+              },
+              {
+                "contrast": 0.1289430894308944,
+                "bifolia": 3
+              }
+            ]
+          }
+        },
+        "C": {
+          "n": 300,
+          "pool_size_cutoffs": [
+            11.0,
+            22.0
+          ],
+          "components": {
+            "contrast": 0.16907407407407413,
+            "bands": [
+              {
+                "contrast": 0.4378947368421052,
+                "bifolia": 1
+              },
+              {
+                "contrast": 0.07210526315789473,
+                "bifolia": 1
+              },
+              {
+                "contrast": -0.002777777777777657,
+                "bifolia": 1
+              }
+            ]
+          },
+          "h2": {
+            "contrast": 0.18261208576998064,
+            "bands": [
+              {
+                "contrast": 0.20157894736842114,
+                "bifolia": 1
+              },
+              {
+                "contrast": 0.3073684210526316,
+                "bifolia": 1
+              },
+              {
+                "contrast": 0.038888888888889084,
+                "bifolia": 1
+              }
+            ]
+          }
+        },
+        "A": {
+          "n": 114,
+          "pool_size_cutoffs": [
+            12.29,
+            22.0
+          ],
+          "components": {
+            "contrast": 0.06166666666666668,
+            "bands": [
+              {
+                "contrast": 0.10375000000000001,
+                "bifolia": 1
+              },
+              {
+                "contrast": 0.053749999999999964,
+                "bifolia": 1
+              },
+              {
+                "contrast": 0.02750000000000008,
+                "bifolia": 1
+              }
+            ]
+          },
+          "h2": {
+            "contrast": 0.08041666666666664,
+            "bands": [
+              {
+                "contrast": 0.03374999999999995,
+                "bifolia": 1
+              },
+              {
+                "contrast": -0.13874999999999998,
+                "bifolia": 1
+              },
+              {
+                "contrast": 0.34624999999999995,
+                "bifolia": 1
+              }
+            ]
+          }
+        }
+      }
+    },
+    "far0_spatial": {
+      "input": {
+        "policy": "legacy",
+        "words_sha256": "b1e1e3cb9c17b9b3f436c8459c0514344f99ba435ad9c144a5062157d9ca02f4",
+        "geometry_sha256": "61522be8f565c4c610beb138238cfeb892678a2c7be153e026ed7331ff65c6ef",
+        "review_version": "2026-10-28.1",
+        "bundle_sha256": "09de207ec2ca5493f9bde5604ee9eaeeda444cfbbc58d2660ffa042ec2b1386b"
+      },
+      "sections": {
+        "H": {
+          "n": 4693,
+          "pool_size_cutoffs": [
+            15.0,
+            28.0
+          ],
+          "components": {
+            "contrast": 0.12991246892234384,
+            "bands": [
+              {
+                "contrast": 0.19258064516129036,
+                "bifolia": 26
+              },
+              {
+                "contrast": 0.10300291545189494,
+                "bifolia": 28
+              },
+              {
+                "contrast": 0.09415384615384625,
+                "bifolia": 19
+              }
+            ]
+          },
+          "h2": {
+            "contrast": 0.06148409643900097,
+            "bands": [
+              {
+                "contrast": 0.1325483870967742,
+                "bifolia": 26
+              },
+              {
+                "contrast": 0.019096209912536355,
+                "bifolia": 28
+              },
+              {
+                "contrast": 0.03280769230769237,
+                "bifolia": 19
+              }
+            ]
+          }
+        },
+        "P": {
+          "n": 1313,
+          "pool_size_cutoffs": [
+            10.0,
+            22.0
+          ],
+          "components": {
+            "contrast": 0.19386261277479036,
+            "bands": [
+              {
+                "contrast": 0.1761702127659575,
+                "bifolia": 3
+              },
+              {
+                "contrast": 0.19505617977528095,
+                "bifolia": 3
+              },
+              {
+                "contrast": 0.2103614457831326,
+                "bifolia": 3
+              }
+            ]
+          },
+          "h2": {
+            "contrast": 0.08867632615088615,
+            "bands": [
+              {
+                "contrast": 0.14138297872340433,
+                "bifolia": 3
+              },
+              {
+                "contrast": 0.01573033707865168,
+                "bifolia": 3
+              },
+              {
+                "contrast": 0.10891566265060243,
+                "bifolia": 3
+              }
+            ]
+          }
+        },
+        "S": {
+          "n": 10846,
+          "pool_size_cutoffs": [
+            29.0,
+            37.0
+          ],
+          "components": {
+            "contrast": 0.13698595266749933,
+            "bands": [
+              {
+                "contrast": 0.12598191214470283,
+                "bifolia": 7
+              },
+              {
+                "contrast": 0.08958904109589044,
+                "bifolia": 7
+              },
+              {
+                "contrast": 0.19538690476190473,
+                "bifolia": 7
+              }
+            ]
+          },
+          "h2": {
+            "contrast": 0.1149197119655267,
+            "bands": [
+              {
+                "contrast": 0.08691214470284225,
+                "bifolia": 7
+              },
+              {
+                "contrast": 0.09494520547945207,
+                "bifolia": 7
+              },
+              {
+                "contrast": 0.16290178571428576,
+                "bifolia": 7
+              }
+            ]
+          }
+        },
+        "B": {
+          "n": 5484,
+          "pool_size_cutoffs": [
+            25.0,
+            35.0
+          ],
+          "components": {
+            "contrast": 0.12795626639649865,
+            "bands": [
+              {
+                "contrast": 0.10624671916010497,
+                "bifolia": 5
+              },
+              {
+                "contrast": 0.12604904632152575,
+                "bifolia": 5
+              },
+              {
+                "contrast": 0.15157303370786523,
+                "bifolia": 5
+              }
+            ]
+          },
+          "h2": {
+            "contrast": 0.08136823241100315,
+            "bands": [
+              {
+                "contrast": 0.02364829396325463,
+                "bifolia": 5
+              },
+              {
+                "contrast": 0.057956403269754764,
+                "bifolia": 5
+              },
+              {
+                "contrast": 0.16250000000000003,
+                "bifolia": 5
+              }
+            ]
+          }
+        },
+        "T": {
+          "n": 1938,
+          "pool_size_cutoffs": [
+            27.0,
+            35.0
+          ],
+          "components": {
+            "contrast": 0.14589095164571234,
+            "bands": [
+              {
+                "contrast": 0.111044776119403,
+                "bifolia": 4
+              },
+              {
+                "contrast": 0.06671428571428573,
+                "bifolia": 4
+              },
+              {
+                "contrast": 0.2599137931034483,
+                "bifolia": 3
+              }
+            ]
+          },
+          "h2": {
+            "contrast": 0.10231381270984975,
+            "bands": [
+              {
+                "contrast": 0.1188059701492537,
+                "bifolia": 4
+              },
+              {
+                "contrast": 0.02442857142857141,
+                "bifolia": 4
+              },
+              {
+                "contrast": 0.16370689655172416,
+                "bifolia": 3
+              }
+            ]
+          }
+        },
+        "C": {
+          "n": 257,
+          "pool_size_cutoffs": [
+            14.0,
+            24.0
+          ],
+          "components": {
+            "contrast": 0.13192401960784317,
+            "bands": [
+              {
+                "contrast": 0.241875,
+                "bifolia": 1
+              },
+              {
+                "contrast": 0.11625000000000008,
+                "bifolia": 1
+              },
+              {
+                "contrast": 0.03764705882352942,
+                "bifolia": 1
+              }
+            ]
+          },
+          "h2": {
+            "contrast": -0.0014093137254902282,
+            "bands": [
+              {
+                "contrast": -0.29500000000000004,
+                "bifolia": 1
+              },
+              {
+                "contrast": 0.2231249999999999,
+                "bifolia": 1
+              },
+              {
+                "contrast": 0.06764705882352945,
+                "bifolia": 1
+              }
+            ]
+          }
+        },
+        "A": {
+          "n": 101,
+          "pool_size_cutoffs": [
+            11.0,
+            17.0
+          ],
+          "components": {
+            "contrast": 0.2552380952380952,
+            "bands": [
+              {
+                "contrast": 0.38,
+                "bifolia": 1
+              },
+              {
+                "contrast": 0.01285714285714279,
+                "bifolia": 1
+              },
+              {
+                "contrast": 0.3728571428571429,
+                "bifolia": 1
+              }
+            ]
+          },
+          "h2": {
+            "contrast": 0.09273809523809529,
+            "bands": [
+              {
+                "contrast": 0.3025000000000001,
+                "bifolia": 1
+              },
+              {
+                "contrast": -0.2471428571428571,
+                "bifolia": 1
+              },
+              {
+                "contrast": 0.2228571428571429,
+                "bifolia": 1
+              }
+            ]
+          }
+        }
+      }
+    },
+    "bigram_whole": {
+      "input": {
+        "policy": "legacy",
+        "words_sha256": "b1e1e3cb9c17b9b3f436c8459c0514344f99ba435ad9c144a5062157d9ca02f4",
+        "geometry_sha256": "61522be8f565c4c610beb138238cfeb892678a2c7be153e026ed7331ff65c6ef",
+        "review_version": "2026-10-28.1",
+        "bundle_sha256": "e3e8f7c8947bdd4178ed3063d56bfe3e3e82e03bb100de3f45b72fc80328a38a"
+      },
+      "sections": {
+        "H": {
+          "n": 4206,
+          "pool_size_cutoffs": [
+            14.0,
+            25.0
+          ],
+          "components": {
+            "contrast": 0.0035150369774031485,
+            "bands": [
+              {
+                "contrast": 0.010673758865248212,
+                "bifolia": 25
+              },
+              {
+                "contrast": -0.006453660653400306,
+                "bifolia": 28
+              },
+              {
+                "contrast": 0.006325012720361539,
+                "bifolia": 20
+              }
+            ]
+          },
+          "h2": {
+            "contrast": -0.02530776751124537,
+            "bands": [
+              {
+                "contrast": -0.003855850437310515,
+                "bifolia": 25
+              },
+              {
+                "contrast": -0.01722249085611552,
+                "bifolia": 28
+              },
+              {
+                "contrast": -0.054844961240310075,
+                "bifolia": 20
+              }
+            ]
+          }
+        },
+        "P": {
+          "n": 1188,
+          "pool_size_cutoffs": [
+            9.0,
+            19.0
+          ],
+          "components": {
+            "contrast": 0.0028890620882212705,
+            "bands": [
+              {
+                "contrast": 0.0757181571815718,
+                "bifolia": 3
+              },
+              {
+                "contrast": -0.11757045143638853,
+                "bifolia": 3
+              },
+              {
+                "contrast": 0.05051948051948055,
+                "bifolia": 3
+              }
+            ]
+          },
+          "h2": {
+            "contrast": 0.0018931842788051934,
+            "bands": [
+              {
+                "contrast": 0.062469135802469156,
+                "bifolia": 3
+              },
+              {
+                "contrast": -0.04764705882352943,
+                "bifolia": 3
+              },
+              {
+                "contrast": -0.009142524142524144,
+                "bifolia": 3
+              }
+            ]
+          }
+        },
+        "S": {
+          "n": 9854,
+          "pool_size_cutoffs": [
+            27.0,
+            34.0
+          ],
+          "components": {
+            "contrast": 0.03419105471118764,
+            "bands": [
+              {
+                "contrast": 0.04926900584795327,
+                "bifolia": 7
+              },
+              {
+                "contrast": 0.03207170898763778,
+                "bifolia": 7
+              },
+              {
+                "contrast": 0.021232449297971884,
+                "bifolia": 7
+              }
+            ]
+          },
+          "h2": {
+            "contrast": 0.022152737622971458,
+            "bands": [
+              {
+                "contrast": 0.042383850783421134,
+                "bifolia": 7
+              },
+              {
+                "contrast": 0.0004268292682927388,
+                "bifolia": 7
+              },
+              {
+                "contrast": 0.0236475328172005,
+                "bifolia": 7
+              }
+            ]
+          }
+        },
+        "B": {
+          "n": 4897,
+          "pool_size_cutoffs": [
+            23.0,
+            32.0
+          ],
+          "components": {
+            "contrast": 0.007909560217350129,
+            "bands": [
+              {
+                "contrast": -0.009229481173000209,
+                "bifolia": 5
+              },
+              {
+                "contrast": -0.0008241758241758212,
+                "bifolia": 5
+              },
+              {
+                "contrast": 0.03378233764922642,
+                "bifolia": 5
+              }
+            ]
+          },
+          "h2": {
+            "contrast": 0.01978273951559943,
+            "bands": [
+              {
+                "contrast": -0.0008849557522124241,
+                "bifolia": 5
+              },
+              {
+                "contrast": 0.004752747252747325,
+                "bifolia": 5
+              },
+              {
+                "contrast": 0.05548042704626338,
+                "bifolia": 5
+              }
+            ]
+          }
+        },
+        "T": {
+          "n": 1802,
+          "pool_size_cutoffs": [
+            27.0,
+            34.0
+          ],
+          "components": {
+            "contrast": 0.01579259914633671,
+            "bands": [
+              {
+                "contrast": 0.05702290076335875,
+                "bifolia": 4
+              },
+              {
+                "contrast": 0.01428571428571429,
+                "bifolia": 4
+              },
+              {
+                "contrast": -0.02393081761006291,
+                "bifolia": 3
+              }
+            ]
+          },
+          "h2": {
+            "contrast": -0.034036067692556245,
+            "bands": [
+              {
+                "contrast": 0.03152671755725189,
+                "bifolia": 4
+              },
+              {
+                "contrast": -0.022301587301587295,
+                "bifolia": 4
+              },
+              {
+                "contrast": -0.11133333333333334,
+                "bifolia": 3
+              }
+            ]
+          }
+        },
+        "C": {
+          "n": 149,
+          "pool_size_cutoffs": [
+            8.0,
+            15.0
+          ],
+          "components": {
+            "contrast": 0.26775,
+            "bands": [
+              {
+                "contrast": 0.323,
+                "bifolia": 1
+              },
+              {
+                "contrast": 0.051250000000000004,
+                "bifolia": 1
+              },
+              {
+                "contrast": 0.42900000000000005,
+                "bifolia": 1
+              }
+            ]
+          },
+          "h2": {
+            "contrast": 0.25274242424242427,
+            "bands": [
+              {
+                "contrast": 0.23299999999999998,
+                "bifolia": 1
+              },
+              {
+                "contrast": 0.2575,
+                "bifolia": 1
+              },
+              {
+                "contrast": 0.2677272727272728,
+                "bifolia": 1
+              }
+            ]
+          }
+        },
+        "A": {
+          "n": 71,
+          "pool_size_cutoffs": [
+            7.100000000000001,
+            14.900000000000006
+          ],
+          "components": {
+            "contrast": null,
+            "bands": [
+              {
+                "contrast": null,
+                "bifolia": 0
+              },
+              {
+                "contrast": null,
+                "bifolia": 0
+              },
+              {
+                "contrast": null,
+                "bifolia": 0
+              }
+            ]
+          },
+          "h2": {
+            "contrast": null,
+            "bands": [
+              {
+                "contrast": null,
+                "bifolia": 0
+              },
+              {
+                "contrast": null,
+                "bifolia": 0
+              },
+              {
+                "contrast": null,
+                "bifolia": 0
+              }
+            ]
+          }
+        }
+      }
+    },
+    "bigram_currier": {
+      "input": {
+        "policy": "legacy",
+        "words_sha256": "b1e1e3cb9c17b9b3f436c8459c0514344f99ba435ad9c144a5062157d9ca02f4",
+        "geometry_sha256": "61522be8f565c4c610beb138238cfeb892678a2c7be153e026ed7331ff65c6ef",
+        "review_version": "2026-10-28.1",
+        "bundle_sha256": "576952db608d8800f76f50f9d0e8af03f6544ce8eba64f551a116333db01fa58"
+      },
+      "sections": {
+        "H": {
+          "n": 4189,
+          "pool_size_cutoffs": [
+            14.0,
+            25.0
+          ],
+          "components": {
+            "contrast": -0.017884694925110984,
+            "bands": [
+              {
+                "contrast": 0.008648703609557717,
+                "bifolia": 25
+              },
+              {
+                "contrast": -0.04276610884821114,
+                "bifolia": 28
+              },
+              {
+                "contrast": -0.019536679536679535,
+                "bifolia": 20
+              }
+            ]
+          },
+          "h2": {
+            "contrast": -0.012790825524430727,
+            "bands": [
+              {
+                "contrast": -0.0024804964539006935,
+                "bifolia": 25
+              },
+              {
+                "contrast": -0.009944454776517286,
+                "bifolia": 28
+              },
+              {
+                "contrast": -0.0259475253428742,
+                "bifolia": 20
+              }
+            ]
+          }
+        },
+        "P": {
+          "n": 1173,
+          "pool_size_cutoffs": [
+            10.0,
+            19.0
+          ],
+          "components": {
+            "contrast": -0.02172927072927071,
+            "bands": [
+              {
+                "contrast": -0.0745934065934066,
+                "bifolia": 3
+              },
+              {
+                "contrast": -0.009999999999999953,
+                "bifolia": 3
+              },
+              {
+                "contrast": 0.019405594405594417,
+                "bifolia": 3
+              }
+            ]
+          },
+          "h2": {
+            "contrast": -0.021626382876382893,
+            "bands": [
+              {
+                "contrast": -0.08555555555555555,
+                "bifolia": 3
+              },
+              {
+                "contrast": 0.030416666666666647,
+                "bifolia": 3
+              },
+              {
+                "contrast": -0.009740259740259771,
+                "bifolia": 3
+              }
+            ]
+          }
+        },
+        "S": {
+          "n": 9840,
+          "pool_size_cutoffs": [
+            27.0,
+            34.0
+          ],
+          "components": {
+            "contrast": 0.03214058512274578,
+            "bands": [
+              {
+                "contrast": 0.01216494845360827,
+                "bifolia": 7
+              },
+              {
+                "contrast": 0.021189024390243894,
+                "bifolia": 7
+              },
+              {
+                "contrast": 0.06306778252438516,
+                "bifolia": 7
+              }
+            ]
+          },
+          "h2": {
+            "contrast": 0.0571749096330588,
+            "bands": [
+              {
+                "contrast": 0.038474616650784,
+                "bifolia": 7
+              },
+              {
+                "contrast": 0.08365853658536593,
+                "bifolia": 7
+              },
+              {
+                "contrast": 0.04939157566302649,
+                "bifolia": 7
+              }
+            ]
+          }
+        },
+        "B": {
+          "n": 4898,
+          "pool_size_cutoffs": [
+            23.0,
+            32.0
+          ],
+          "components": {
+            "contrast": -0.030709221924560232,
+            "bands": [
+              {
+                "contrast": 0.00626470588235295,
+                "bifolia": 5
+              },
+              {
+                "contrast": -0.05198667770585577,
+                "bifolia": 5
+              },
+              {
+                "contrast": -0.04640569395017788,
+                "bifolia": 5
+              }
+            ]
+          },
+          "h2": {
+            "contrast": -0.014372122678800522,
+            "bands": [
+              {
+                "contrast": 0.0031176470588235583,
+                "bifolia": 5
+              },
+              {
+                "contrast": -0.010219780219780261,
+                "bifolia": 5
+              },
+              {
+                "contrast": -0.03601423487544486,
+                "bifolia": 5
+              }
+            ]
+          }
+        },
+        "T": {
+          "n": 1803,
+          "pool_size_cutoffs": [
+            27.0,
+            34.0
+          ],
+          "components": {
+            "contrast": 0.04223971081222988,
+            "bands": [
+              {
+                "contrast": 0.045877862595419816,
+                "bifolia": 4
+              },
+              {
+                "contrast": 0.03722222222222221,
+                "bifolia": 4
+              },
+              {
+                "contrast": 0.04361904761904761,
+                "bifolia": 3
+              }
+            ]
+          },
+          "h2": {
+            "contrast": 0.028451474027809887,
+            "bands": [
+              {
+                "contrast": 0.022132199861207513,
+                "bifolia": 4
+              },
+              {
+                "contrast": 0.07817460317460315,
+                "bifolia": 4
+              },
+              {
+                "contrast": -0.014952380952380995,
+                "bifolia": 3
+              }
+            ]
+          }
+        },
+        "C": {
+          "n": 144,
+          "pool_size_cutoffs": [
+            8.0,
+            15.810000000000002
+          ],
+          "components": {
+            "contrast": 0.025650793650793646,
+            "bands": [
+              {
+                "contrast": 0.07100000000000001,
+                "bifolia": 1
+              },
+              {
+                "contrast": -0.055714285714285716,
+                "bifolia": 1
+              },
+              {
+                "contrast": 0.06166666666666665,
+                "bifolia": 1
+              }
+            ]
+          },
+          "h2": {
+            "contrast": 0.1177142857142857,
+            "bands": [
+              {
+                "contrast": 0.061,
+                "bifolia": 1
+              },
+              {
+                "contrast": 0.2671428571428571,
+                "bifolia": 1
+              },
+              {
+                "contrast": 0.02499999999999994,
+                "bifolia": 1
+              }
+            ]
+          }
+        },
+        "A": {
+          "n": 72,
+          "pool_size_cutoffs": [
+            7.43,
+            14.57
+          ],
+          "components": {
+            "contrast": null,
+            "bands": [
+              {
+                "contrast": null,
+                "bifolia": 0
+              },
+              {
+                "contrast": null,
+                "bifolia": 0
+              },
+              {
+                "contrast": null,
+                "bifolia": 0
+              }
+            ]
+          },
+          "h2": {
+            "contrast": null,
+            "bands": [
+              {
+                "contrast": null,
+                "bifolia": 0
+              },
+              {
+                "contrast": null,
+                "bifolia": 0
+              },
+              {
+                "contrast": null,
+                "bifolia": 0
+              }
+            ]
+          }
+        }
+      }
+    },
+    "bigram_section": {
+      "input": {
+        "policy": "legacy",
+        "words_sha256": "b1e1e3cb9c17b9b3f436c8459c0514344f99ba435ad9c144a5062157d9ca02f4",
+        "geometry_sha256": "61522be8f565c4c610beb138238cfeb892678a2c7be153e026ed7331ff65c6ef",
+        "review_version": "2026-10-28.1",
+        "bundle_sha256": "d03a9615c84152ae2c0040cc81c2fd7497c2270f14eb115f8c49ce80c3598369"
+      },
+      "sections": {
+        "H": {
+          "n": 4200,
+          "pool_size_cutoffs": [
+            14.0,
+            25.0
+          ],
+          "components": {
+            "contrast": 0.015574856164343906,
+            "bands": [
+              {
+                "contrast": 0.018781879585419742,
+                "bifolia": 24
+              },
+              {
+                "contrast": 0.02384897725576074,
+                "bifolia": 28
+              },
+              {
+                "contrast": 0.0040937116518512395,
+                "bifolia": 20
+              }
+            ]
+          },
+          "h2": {
+            "contrast": -0.015285757828564672,
+            "bands": [
+              {
+                "contrast": 0.01263148326104463,
+                "bifolia": 24
+              },
+              {
+                "contrast": -0.015349221863017792,
+                "bifolia": 28
+              },
+              {
+                "contrast": -0.043139534883720854,
+                "bifolia": 20
+              }
+            ]
+          }
+        },
+        "P": {
+          "n": 1189,
+          "pool_size_cutoffs": [
+            9.0,
+            19.0
+          ],
+          "components": {
+            "contrast": -0.02382595799262464,
+            "bands": [
+              {
+                "contrast": 0.05407407407407411,
+                "bifolia": 3
+              },
+              {
+                "contrast": -0.08607142857142852,
+                "bifolia": 3
+              },
+              {
+                "contrast": -0.039480519480519505,
+                "bifolia": 3
+              }
+            ]
+          },
+          "h2": {
+            "contrast": -0.04828916015230376,
+            "bands": [
+              {
+                "contrast": -0.004293887383318318,
+                "bifolia": 3
+              },
+              {
+                "contrast": -0.08797619047619043,
+                "bifolia": 3
+              },
+              {
+                "contrast": -0.05259740259740253,
+                "bifolia": 3
+              }
+            ]
+          }
+        },
+        "S": {
+          "n": 9851,
+          "pool_size_cutoffs": [
+            27.0,
+            34.0
+          ],
+          "components": {
+            "contrast": 0.0008683917259272497,
+            "bands": [
+              {
+                "contrast": 0.010895741556534527,
+                "bifolia": 7
+              },
+              {
+                "contrast": 0.004283536585365816,
+                "bifolia": 7
+              },
+              {
+                "contrast": -0.012574102964118594,
+                "bifolia": 7
+              }
+            ]
+          },
+          "h2": {
+            "contrast": 0.007108815909854654,
+            "bands": [
+              {
+                "contrast": 0.010525964490722212,
+                "bifolia": 7
+              },
+              {
+                "contrast": 0.015792682926829282,
+                "bifolia": 7
+              },
+              {
+                "contrast": -0.004992199687987531,
+                "bifolia": 7
+              }
+            ]
+          }
+        },
+        "B": {
+          "n": 4911,
+          "pool_size_cutoffs": [
+            23.0,
+            32.0
+          ],
+          "components": {
+            "contrast": -0.03431444344887121,
+            "bands": [
+              {
+                "contrast": -0.021524926686217083,
+                "bifolia": 5
+              },
+              {
+                "contrast": -0.09857142857142859,
+                "bifolia": 5
+              },
+              {
+                "contrast": 0.017153024911032044,
+                "bifolia": 5
+              }
+            ]
+          },
+          "h2": {
+            "contrast": -0.01933784025485774,
+            "bands": [
+              {
+                "contrast": -0.02067165714873692,
+                "bifolia": 5
+              },
+              {
+                "contrast": -0.06734186361583622,
+                "bifolia": 5
+              },
+              {
+                "contrast": 0.029999999999999916,
+                "bifolia": 5
+              }
+            ]
+          }
+        },
+        "T": {
+          "n": 1803,
+          "pool_size_cutoffs": [
+            27.0,
+            34.0
+          ],
+          "components": {
+            "contrast": 0.004871797268112747,
+            "bands": [
+              {
+                "contrast": 0.030615891741846035,
+                "bifolia": 4
+              },
+              {
+                "contrast": -0.044571928508936376,
+                "bifolia": 4
+              },
+              {
+                "contrast": 0.02857142857142858,
+                "bifolia": 3
+              }
+            ]
+          },
+          "h2": {
+            "contrast": 0.01073783270729837,
+            "bands": [
+              {
+                "contrast": 0.015419847328244307,
+                "bifolia": 4
+              },
+              {
+                "contrast": 0.029841269841269835,
+                "bifolia": 4
+              },
+              {
+                "contrast": -0.01304761904761903,
+                "bifolia": 3
+              }
+            ]
+          }
+        },
+        "C": {
+          "n": 147,
+          "pool_size_cutoffs": [
+            8.0,
+            15.0
+          ],
+          "components": {
+            "contrast": -0.033619047619047625,
+            "bands": [
+              {
+                "contrast": 0.202,
+                "bifolia": 1
+              },
+              {
+                "contrast": -0.16285714285714287,
+                "bifolia": 1
+              },
+              {
+                "contrast": -0.14,
+                "bifolia": 1
+              }
+            ]
+          },
+          "h2": {
+            "contrast": -0.03190476190476189,
+            "bands": [
+              {
+                "contrast": -0.226,
+                "bifolia": 1
+              },
+              {
+                "contrast": 0.04428571428571426,
+                "bifolia": 1
+              },
+              {
+                "contrast": 0.08600000000000008,
+                "bifolia": 1
+              }
+            ]
+          }
+        },
+        "A": {
+          "n": 71,
+          "pool_size_cutoffs": [
+            8.100000000000001,
+            14.900000000000006
+          ],
+          "components": {
+            "contrast": null,
+            "bands": [
+              {
+                "contrast": null,
+                "bifolia": 0
+              },
+              {
+                "contrast": null,
+                "bifolia": 0
+              },
+              {
+                "contrast": null,
+                "bifolia": 0
+              }
+            ]
+          },
+          "h2": {
+            "contrast": null,
+            "bands": [
+              {
+                "contrast": null,
+                "bifolia": 0
+              },
+              {
+                "contrast": null,
+                "bifolia": 0
+              },
+              {
+                "contrast": null,
+                "bifolia": 0
+              }
+            ]
+          }
+        }
+      }
+    },
+    "gart_own_lines": {
+      "input": {
+        "policy": "legacy",
+        "words_sha256": "b1e1e3cb9c17b9b3f436c8459c0514344f99ba435ad9c144a5062157d9ca02f4",
+        "geometry_sha256": "61522be8f565c4c610beb138238cfeb892678a2c7be153e026ed7331ff65c6ef",
+        "review_version": "2026-10-28.1",
+        "bundle_sha256": "783c4401b89b457502ffb99195711d837a11e81f64a99190c0cb3e2ec67679f9"
+      },
+      "sections": {
+        "H": {
+          "n": 1051,
+          "pool_size_cutoffs": [
+            13.0,
+            22.0
+          ],
+          "components": {
+            "contrast": -0.10342499999999999,
+            "bands": [
+              {
+                "contrast": -0.22074999999999995,
+                "bifolia": 6
+              },
+              {
+                "contrast": -0.05640000000000003,
+                "bifolia": 7
+              },
+              {
+                "contrast": -0.03312499999999996,
+                "bifolia": 4
+              }
+            ]
+          },
+          "h2": {
+            "contrast": -0.01857916666666663,
+            "bands": [
+              {
+                "contrast": -0.016499999999999987,
+                "bifolia": 6
+              },
+              {
+                "contrast": -0.05579999999999999,
+                "bifolia": 7
+              },
+              {
+                "contrast": 0.01656250000000009,
+                "bifolia": 4
+              }
+            ]
+          }
+        },
+        "P": {
+          "n": 362,
+          "pool_size_cutoffs": [
+            9.0,
+            18.0
+          ],
+          "components": {
+            "contrast": 0.023668831168831173,
+            "bands": [
+              {
+                "contrast": -0.17535714285714282,
+                "bifolia": 2
+              },
+              {
+                "contrast": 0.25045454545454543,
+                "bifolia": 2
+              },
+              {
+                "contrast": -0.0040909090909090895,
+                "bifolia": 2
+              }
+            ]
+          },
+          "h2": {
+            "contrast": 0.053409090909090885,
+            "bands": [
+              {
+                "contrast": -0.04750000000000004,
+                "bifolia": 2
+              },
+              {
+                "contrast": 0.07499999999999998,
+                "bifolia": 2
+              },
+              {
+                "contrast": 0.13272727272727272,
+                "bifolia": 2
+              }
+            ]
+          }
+        },
+        "S": {
+          "n": 4170,
+          "pool_size_cutoffs": [
+            23.0,
+            29.0
+          ],
+          "components": {
+            "contrast": 0.015462992166823009,
+            "bands": [
+              {
+                "contrast": 0.0033542319749216287,
+                "bifolia": 7
+              },
+              {
+                "contrast": 0.020479999999999998,
+                "bifolia": 7
+              },
+              {
+                "contrast": 0.0225547445255474,
+                "bifolia": 7
+              }
+            ]
+          },
+          "h2": {
+            "contrast": 0.04977958736623723,
+            "bands": [
+              {
+                "contrast": 0.008056426332288313,
+                "bifolia": 7
+              },
+              {
+                "contrast": 0.05964,
+                "bifolia": 7
+              },
+              {
+                "contrast": 0.08164233576642338,
+                "bifolia": 7
+              }
+            ]
+          }
+        },
+        "B": {
+          "n": 2505,
+          "pool_size_cutoffs": [
+            20.0,
+            28.0
+          ],
+          "components": {
+            "contrast": -0.027263293727755933,
+            "bands": [
+              {
+                "contrast": -0.031704545454545485,
+                "bifolia": 5
+              },
+              {
+                "contrast": 0.03114754098360656,
+                "bifolia": 5
+              },
+              {
+                "contrast": -0.08123287671232887,
+                "bifolia": 5
+              }
+            ]
+          },
+          "h2": {
+            "contrast": -0.03826570783060788,
+            "bands": [
+              {
+                "contrast": -0.047954545454545416,
+                "bifolia": 5
+              },
+              {
+                "contrast": -0.022459016393442555,
+                "bifolia": 5
+              },
+              {
+                "contrast": -0.04438356164383567,
+                "bifolia": 5
+              }
+            ]
+          }
+        },
+        "T": {
+          "n": 670,
+          "pool_size_cutoffs": [
+            21.0,
+            28.0
+          ],
+          "components": {
+            "contrast": -0.017590329459894694,
+            "bands": [
+              {
+                "contrast": 0.005777777777777771,
+                "bifolia": 3
+              },
+              {
+                "contrast": 0.008478260869565157,
+                "bifolia": 2
+              },
+              {
+                "contrast": -0.06702702702702701,
+                "bifolia": 2
+              }
+            ]
+          },
+          "h2": {
+            "contrast": -0.03900957479218345,
+            "bands": [
+              {
+                "contrast": -0.020888888888888846,
+                "bifolia": 3
+              },
+              {
+                "contrast": -0.06586956521739129,
+                "bifolia": 2
+              },
+              {
+                "contrast": -0.03027027027027021,
+                "bifolia": 2
+              }
+            ]
+          }
+        },
+        "C": {
+          "n": 95,
+          "pool_size_cutoffs": [
+            9.0,
+            17.0
+          ],
+          "components": {
+            "contrast": null,
+            "bands": [
+              {
+                "contrast": -0.1471428571428572,
+                "bifolia": 1
+              },
+              {
+                "contrast": null,
+                "bifolia": 0
+              },
+              {
+                "contrast": -0.2816666666666666,
+                "bifolia": 1
+              }
+            ]
+          },
+          "h2": {
+            "contrast": null,
+            "bands": [
+              {
+                "contrast": -0.27142857142857146,
+                "bifolia": 1
+              },
+              {
+                "contrast": null,
+                "bifolia": 0
+              },
+              {
+                "contrast": -0.21166666666666673,
+                "bifolia": 1
+              }
+            ]
+          }
+        },
+        "A": {
+          "n": 0,
+          "pool_size_cutoffs": [],
+          "components": {
+            "contrast": null,
+            "bands": []
+          },
+          "h2": {
+            "contrast": null,
+            "bands": []
+          }
+        }
+      }
+    },
+    "gart_character_budget": {
+      "input": {
+        "policy": "legacy",
+        "words_sha256": "b1e1e3cb9c17b9b3f436c8459c0514344f99ba435ad9c144a5062157d9ca02f4",
+        "geometry_sha256": "61522be8f565c4c610beb138238cfeb892678a2c7be153e026ed7331ff65c6ef",
+        "review_version": "2026-10-28.1",
+        "bundle_sha256": "736314b117f06d8fadb60bbcfa48446ca190acc9e077d2a58579fe7a3929e3bf"
+      },
+      "sections": {
+        "H": {
+          "n": 4090,
+          "pool_size_cutoffs": [
+            14.0,
+            26.0
+          ],
+          "components": {
+            "contrast": -0.010236313915266951,
+            "bands": [
+              {
+                "contrast": -0.02609489051094893,
+                "bifolia": 25
+              },
+              {
+                "contrast": 0.040792452830188786,
+                "bifolia": 24
+              },
+              {
+                "contrast": -0.04540650406504071,
+                "bifolia": 21
+              }
+            ]
+          },
+          "h2": {
+            "contrast": -0.005527343803943467,
+            "bands": [
+              {
+                "contrast": 0.02784671532846722,
+                "bifolia": 25
+              },
+              {
+                "contrast": -0.037396226415094325,
+                "bifolia": 24
+              },
+              {
+                "contrast": -0.007032520325203295,
+                "bifolia": 21
+              }
+            ]
+          }
+        },
+        "P": {
+          "n": 1248,
+          "pool_size_cutoffs": [
+            10.0,
+            19.0
+          ],
+          "components": {
+            "contrast": -0.03484162527302188,
+            "bands": [
+              {
+                "contrast": -0.06239583333333329,
+                "bifolia": 3
+              },
+              {
+                "contrast": -0.013815789473684226,
+                "bifolia": 3
+              },
+              {
+                "contrast": -0.028313253012048123,
+                "bifolia": 3
+              }
+            ]
+          },
+          "h2": {
+            "contrast": -0.006768609525822551,
+            "bands": [
+              {
+                "contrast": -0.01645833333333324,
+                "bifolia": 3
+              },
+              {
+                "contrast": 0.02723684210526317,
+                "bifolia": 3
+              },
+              {
+                "contrast": -0.031084337349397584,
+                "bifolia": 3
+              }
+            ]
+          }
+        },
+        "S": {
+          "n": 10927,
+          "pool_size_cutoffs": [
+            29.0,
+            38.0
+          ],
+          "components": {
+            "contrast": 0.004376087766590542,
+            "bands": [
+              {
+                "contrast": 0.03953103448275863,
+                "bifolia": 7
+              },
+              {
+                "contrast": -0.004513715710723232,
+                "bifolia": 7
+              },
+              {
+                "contrast": -0.021889055472263774,
+                "bifolia": 7
+              }
+            ]
+          },
+          "h2": {
+            "contrast": 0.0207409793856189,
+            "bands": [
+              {
+                "contrast": 0.03452413793103448,
+                "bifolia": 7
+              },
+              {
+                "contrast": 0.004925187032418954,
+                "bifolia": 7
+              },
+              {
+                "contrast": 0.022773613193403264,
+                "bifolia": 7
+              }
+            ]
+          }
+        },
+        "B": {
+          "n": 5112,
+          "pool_size_cutoffs": [
+            24.0,
+            34.0
+          ],
+          "components": {
+            "contrast": 0.015578172974252402,
+            "bands": [
+              {
+                "contrast": 0.037543352601156044,
+                "bifolia": 5
+              },
+              {
+                "contrast": 0.029222222222222205,
+                "bifolia": 5
+              },
+              {
+                "contrast": -0.020031055900621042,
+                "bifolia": 5
+              }
+            ]
+          },
+          "h2": {
+            "contrast": 0.048148477921787815,
+            "bands": [
+              {
+                "contrast": 0.0684682080924856,
+                "bifolia": 5
+              },
+              {
+                "contrast": 0.05566666666666664,
+                "bifolia": 5
+              },
+              {
+                "contrast": 0.020310559006211204,
+                "bifolia": 5
+              }
+            ]
+          }
+        },
+        "T": {
+          "n": 1925,
+          "pool_size_cutoffs": [
+            28.0,
+            37.0
+          ],
+          "components": {
+            "contrast": -0.004281425101464731,
+            "bands": [
+              {
+                "contrast": 0.035942028985507246,
+                "bifolia": 4
+              },
+              {
+                "contrast": 0.020287769784172682,
+                "bifolia": 4
+              },
+              {
+                "contrast": -0.06907407407407412,
+                "bifolia": 3
+              }
+            ]
+          },
+          "h2": {
+            "contrast": 0.004289544210042573,
+            "bands": [
+              {
+                "contrast": 0.03253623188405791,
+                "bifolia": 4
+              },
+              {
+                "contrast": -0.023093525179856134,
+                "bifolia": 4
+              },
+              {
+                "contrast": 0.0034259259259259434,
+                "bifolia": 3
+              }
+            ]
+          }
+        },
+        "C": {
+          "n": 182,
+          "pool_size_cutoffs": [
+            10.0,
+            18.0
+          ],
+          "components": {
+            "contrast": -0.046769230769230764,
+            "bands": [
+              {
+                "contrast": -0.10230769230769232,
+                "bifolia": 1
+              },
+              {
+                "contrast": -0.04299999999999998,
+                "bifolia": 1
+              },
+              {
+                "contrast": 0.0050000000000000044,
+                "bifolia": 1
+              }
+            ]
+          },
+          "h2": {
+            "contrast": -0.0636880341880342,
+            "bands": [
+              {
+                "contrast": -0.08923076923076925,
+                "bifolia": 1
+              },
+              {
+                "contrast": -0.21599999999999997,
+                "bifolia": 1
+              },
+              {
+                "contrast": 0.11416666666666658,
+                "bifolia": 1
+              }
+            ]
+          }
+        },
+        "A": {
+          "n": 79,
+          "pool_size_cutoffs": [
+            9.0,
+            16.0
+          ],
+          "components": {
+            "contrast": null,
+            "bands": [
+              {
+                "contrast": -0.0642857142857143,
+                "bifolia": 1
+              },
+              {
+                "contrast": null,
+                "bifolia": 0
+              },
+              {
+                "contrast": null,
+                "bifolia": 0
+              }
+            ]
+          },
+          "h2": {
+            "contrast": null,
+            "bands": [
+              {
+                "contrast": -0.048571428571428626,
+                "bifolia": 1
+              },
+              {
+                "contrast": null,
+                "bifolia": 0
+              },
+              {
+                "contrast": null,
+                "bifolia": 0
+              }
+            ]
+          }
+        }
+      }
+    },
+    "gart_one_word_per_box": {
+      "input": {
+        "policy": "legacy",
+        "words_sha256": "b1e1e3cb9c17b9b3f436c8459c0514344f99ba435ad9c144a5062157d9ca02f4",
+        "geometry_sha256": "61522be8f565c4c610beb138238cfeb892678a2c7be153e026ed7331ff65c6ef",
+        "review_version": "2026-10-28.1",
+        "bundle_sha256": "8a40fe6983dd8e4b6d0ed0026a00dc7da7f50e14b9e70bc664ff7c528823bdca"
+      },
+      "sections": {
+        "H": {
+          "n": 4226,
+          "pool_size_cutoffs": [
+            14.0,
+            25.0
+          ],
+          "components": {
+            "contrast": -0.06387900657220728,
+            "bands": [
+              {
+                "contrast": -0.059039145907473334,
+                "bifolia": 24
+              },
+              {
+                "contrast": -0.03809187279151954,
+                "bifolia": 28
+              },
+              {
+                "contrast": -0.09450600101762896,
+                "bifolia": 20
+              }
+            ]
+          },
+          "h2": {
+            "contrast": -0.022751652384883265,
+            "bands": [
+              {
+                "contrast": -0.02875946067866275,
+                "bifolia": 24
+              },
+              {
+                "contrast": -0.0410231175036081,
+                "bifolia": 28
+              },
+              {
+                "contrast": 0.0015276210276210511,
+                "bifolia": 20
+              }
+            ]
+          }
+        },
+        "P": {
+          "n": 1206,
+          "pool_size_cutoffs": [
+            9.0,
+            19.0
+          ],
+          "components": {
+            "contrast": -0.07151209574738986,
+            "bands": [
+              {
+                "contrast": -0.011428571428571399,
+                "bifolia": 3
+              },
+              {
+                "contrast": -0.17258823529411763,
+                "bifolia": 3
+              },
+              {
+                "contrast": -0.030519480519480557,
+                "bifolia": 3
+              }
+            ]
+          },
+          "h2": {
+            "contrast": 0.000925474813983714,
+            "bands": [
+              {
+                "contrast": 0.05273809523809525,
+                "bifolia": 3
+              },
+              {
+                "contrast": -0.02379616963064296,
+                "bifolia": 3
+              },
+              {
+                "contrast": -0.026165501165501148,
+                "bifolia": 3
+              }
+            ]
+          }
+        },
+        "S": {
+          "n": 9856,
+          "pool_size_cutoffs": [
+            27.0,
+            34.0
+          ],
+          "components": {
+            "contrast": -0.06506826142775522,
+            "bands": [
+              {
+                "contrast": -0.04269005847953217,
+                "bifolia": 7
+              },
+              {
+                "contrast": -0.06816358540297729,
+                "bifolia": 7
+              },
+              {
+                "contrast": -0.0843511404007562,
+                "bifolia": 7
+              }
+            ]
+          },
+          "h2": {
+            "contrast": -0.02508226143480204,
+            "bands": [
+              {
+                "contrast": -0.018830409356725197,
+                "bifolia": 7
+              },
+              {
+                "contrast": -0.01314024390243912,
+                "bifolia": 7
+              },
+              {
+                "contrast": -0.043276131045241806,
+                "bifolia": 7
+              }
+            ]
+          }
+        },
+        "B": {
+          "n": 4915,
+          "pool_size_cutoffs": [
+            23.0,
+            32.0
+          ],
+          "components": {
+            "contrast": -0.07218451808262637,
+            "bands": [
+              {
+                "contrast": -0.047836257309941566,
+                "bifolia": 5
+              },
+              {
+                "contrast": -0.09494505494505498,
+                "bifolia": 5
+              },
+              {
+                "contrast": -0.07377224199288254,
+                "bifolia": 5
+              }
+            ]
+          },
+          "h2": {
+            "contrast": -0.03461094850915042,
+            "bands": [
+              {
+                "contrast": -0.03649122807017546,
+                "bifolia": 5
+              },
+              {
+                "contrast": -0.010686813186813193,
+                "bifolia": 5
+              },
+              {
+                "contrast": -0.0566548042704626,
+                "bifolia": 5
+              }
+            ]
+          }
+        },
+        "T": {
+          "n": 1801,
+          "pool_size_cutoffs": [
+            27.0,
+            34.0
+          ],
+          "components": {
+            "contrast": -0.06542564870809144,
+            "bands": [
+              {
+                "contrast": -0.05524520009252831,
+                "bifolia": 4
+              },
+              {
+                "contrast": -0.12150793650793651,
+                "bifolia": 4
+              },
+              {
+                "contrast": -0.0195238095238095,
+                "bifolia": 3
+              }
+            ]
+          },
+          "h2": {
+            "contrast": -0.0293114826931621,
+            "bands": [
+              {
+                "contrast": 0.012748091603053513,
+                "bifolia": 4
+              },
+              {
+                "contrast": -0.09801587301587311,
+                "bifolia": 4
+              },
+              {
+                "contrast": -0.002666666666666706,
+                "bifolia": 3
+              }
+            ]
+          }
+        },
+        "C": {
+          "n": 143,
+          "pool_size_cutoffs": [
+            8.0,
+            16.0
+          ],
+          "components": {
+            "contrast": -0.04392592592592596,
+            "bands": [
+              {
+                "contrast": -0.20800000000000002,
+                "bifolia": 1
+              },
+              {
+                "contrast": 0.024444444444444435,
+                "bifolia": 1
+              },
+              {
+                "contrast": 0.0517777777777777,
+                "bifolia": 1
+              }
+            ]
+          },
+          "h2": {
+            "contrast": -0.08425589225589225,
+            "bands": [
+              {
+                "contrast": -0.09854545454545455,
+                "bifolia": 1
+              },
+              {
+                "contrast": -0.11888888888888888,
+                "bifolia": 1
+              },
+              {
+                "contrast": -0.03533333333333333,
+                "bifolia": 1
+              }
+            ]
+          }
+        },
+        "A": {
+          "n": 73,
+          "pool_size_cutoffs": [
+            7.0,
+            14.240000000000002
+          ],
+          "components": {
+            "contrast": null,
+            "bands": [
+              {
+                "contrast": 0.20600000000000002,
+                "bifolia": 1
+              },
+              {
+                "contrast": null,
+                "bifolia": 0
+              },
+              {
+                "contrast": null,
+                "bifolia": 0
+              }
+            ]
+          },
+          "h2": {
+            "contrast": null,
+            "bands": [
+              {
+                "contrast": 0.020000000000000018,
+                "bifolia": 1
+              },
+              {
+                "contrast": null,
+                "bifolia": 0
+              },
+              {
+                "contrast": null,
+                "bifolia": 0
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "verification": {
+    "compared_estimates": 414,
+    "maximum_absolute_difference": 0.0,
+    "matching_unavailable_estimates": 6,
+    "counts_match": true
+  }
+}
