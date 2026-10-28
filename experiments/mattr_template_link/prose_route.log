@@ -1,0 +1,17 @@
+| Text | Reflow | 3b->3a | 3a->3c (into Stars) | 3c->4c | 4c->4a | 3c->4a (into Bio) | mean |step| over the route | Spearman with the manuscript (9 groups) |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| Manuscript | | -0.045 | +0.049 | -0.073 | -0.055 | -0.128 | 0.043 | 1 |
+| Galen, De simplicium | one word per manuscript box | +0.020 | +0.005 | -0.008 | +0.023 | +0.015 | 0.028 | +0.00 |
+| Galen, De simplicium | each line filled to its character budget | +0.036 | -0.054 | -0.006 | -0.001 | -0.007 | 0.018 | +0.48 |
+| Dioscorides (Longobard) | one word per manuscript box | +0.025 | -0.035 | -0.008 | +0.018 | +0.010 | 0.021 | +0.00 |
+| Dioscorides (Longobard) | each line filled to its character budget | +0.187 | -0.046 | -0.002 | +0.029 | +0.027 | 0.068 | -0.08 |
+| Rhazes, Almansor | one word per manuscript box | -0.062 | +0.037 | +0.046 | -0.010 | +0.036 | 0.032 | -0.33 |
+| Rhazes, Almansor | each line filled to its character budget | -0.034 | +0.021 | +0.015 | +0.016 | +0.031 | 0.023 | +0.00 |
+| Hildegard, Physica | one word per manuscript box | -0.002 | +0.007 | +0.001 | +0.000 | +0.001 | 0.006 | +0.10 |
+| Hildegard, Physica | each line filled to its character budget | -0.016 | -0.016 | +0.025 | -0.014 | +0.012 | 0.018 | -0.02 |
+| Gart der Gesundheit 1487 | one word per manuscript box | +0.003 | +0.015 | -0.006 | -0.004 | -0.010 | 0.011 | -0.10 |
+| Gart der Gesundheit 1487 | each line filled to its character budget | -0.021 | +0.010 | +0.008 | -0.011 | -0.003 | 0.015 | +0.17 |
+
+Of 10 historical series, 6 rise into Stars (3a->3c; mean step -0.006 against the manuscript's +0.049) and 3 fall into Bio (3c->4a; mean +0.011 against -0.128); 2 do both.
+Prose steps between consecutive groups: mean |step| 0.024 (manuscript 0.043); 2 of 80 are as large as the manuscript's fall into Bio, 8 as large as its rise into Stars.
+Agreement of the two reflows of one text (r over the 9 groups): Galen, De simplicium -0.05, Dioscorides (Longobard) +0.02, Rhazes, Almansor +0.85, Hildegard, Physica +0.05, Gart der Gesundheit 1487 -0.37; between different texts mean r +0.03 (range -0.65 to +0.86); with the manuscript mean Spearman +0.02.

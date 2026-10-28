@@ -1,0 +1,81 @@
+
+== novelty by tokens since page start, section B: previous page's last 50 | first word | 1-9 | 10-29 | 30-59 | 60-99 | 100+
+  manuscript                  0.587  0.947  0.696  0.616  0.577  0.550  0.575
+  timm                        0.554  0.982  0.624  0.574  0.489  0.489  0.541
+  far0                        0.541  0.982  0.797  0.614  0.502  0.493  0.531
+  noinnov_far0                0.513  1.000  0.749  0.585  0.499  0.475  0.505
+  timm_spatial                0.618  0.965  0.686  0.629  0.571  0.557  0.612
+  noinnov_spatial             0.538  0.947  0.776  0.604  0.565  0.514  0.516
+  far0_spatial                0.529  0.982  0.828  0.680  0.599  0.548  0.525
+  buffer                      0.616  0.982  0.801  0.575  0.561  0.633  0.620
+  pool                        0.726  0.982  0.813  0.665  0.661  0.703  0.718
+  ref_la_galen_simplicium     0.609  0.526  0.655  0.613  0.633  0.570  0.622
+  ref_la_dioscorides_longob   0.744  0.842  0.696  0.726  0.705  0.728  0.726
+  ref_la_rhazes_almansor      0.666  0.526  0.667  0.705  0.726  0.666  0.673
+  ref_la_hildegard_physica    0.609  0.789  0.608  0.571  0.614  0.616  0.606
+  ref_de_gart_augsburg1487    0.751  0.789  0.743  0.732  0.712  0.721  0.728
+
+== novelty by tokens since page start, section H: previous page's last 50 | first word | 1-9 | 10-29 | 30-59 | 60-99 | 100+
+  manuscript                  0.681  0.992  0.768  0.689  0.693  0.678  0.676
+  timm                        0.527  0.969  0.662  0.572  0.538  0.519  0.509
+  far0                        0.553  0.974  0.739  0.609  0.563  0.544  0.532
+  noinnov_far0                0.489  0.948  0.665  0.535  0.496  0.479  0.478
+  timm_spatial                0.583  0.979  0.738  0.613  0.588  0.574  0.581
+  noinnov_spatial             0.492  0.940  0.635  0.554  0.488  0.482  0.478
+  far0_spatial                0.586  0.974  0.789  0.654  0.602  0.575  0.550
+  buffer                      0.650  0.961  0.763  0.646  0.647  0.643  0.660
+  pool                        0.709  0.971  0.811  0.710  0.710  0.709  0.697
+  ref_la_galen_simplicium     0.607  0.578  0.604  0.584  0.605  0.604  0.614
+  ref_la_dioscorides_longob   0.735  0.719  0.758  0.730  0.739  0.736  0.767
+  ref_la_rhazes_almansor      0.630  0.633  0.620  0.645  0.630  0.636  0.648
+  ref_la_hildegard_physica    0.604  0.633  0.607  0.608  0.602  0.596  0.602
+  ref_de_gart_augsburg1487    0.709  0.641  0.707  0.709  0.730  0.717  0.687
+
+== novelty by tokens since page start, section S: previous page's last 50 | first word | 1-9 | 10-29 | 30-59 | 60-99 | 100+
+  manuscript                  0.683  1.000  0.844  0.716  0.725  0.722  0.714
+  timm                        0.619  0.907  0.680  0.589  0.557  0.563  0.610
+  far0                        0.685  0.973  0.776  0.617  0.553  0.596  0.658
+  noinnov_far0                0.652  0.920  0.719  0.582  0.547  0.535  0.617
+  timm_spatial                0.668  0.933  0.764  0.651  0.636  0.629  0.649
+  noinnov_spatial             0.611  0.960  0.769  0.630  0.579  0.549  0.569
+  far0_spatial                0.666  0.947  0.821  0.711  0.647  0.630  0.627
+  buffer                      0.718  0.960  0.788  0.672  0.684  0.700  0.710
+  pool                        0.823  1.000  0.858  0.751  0.724  0.755  0.802
+  ref_la_galen_simplicium     0.590  0.560  0.604  0.634  0.599  0.592  0.591
+  ref_la_dioscorides_longob   0.713  0.640  0.689  0.710  0.719  0.704  0.721
+  ref_la_rhazes_almansor      0.659  0.760  0.747  0.658  0.649  0.669  0.668
+  ref_la_hildegard_physica    0.603  0.600  0.600  0.608  0.609  0.594  0.606
+  ref_de_gart_augsburg1487    0.732  0.800  0.711  0.750  0.708  0.725  0.725
+
+== page-boundary penalty against within-page pairs that also cross a paragraph boundary (lags 1-50)
+  text                             H       B       S   other
+  manuscript                    0.88    0.71    1.08    0.90
+  timm                          0.58    0.87    0.94    0.63
+  far0                          0.59    0.32    0.61    0.48
+  noinnov_far0                  0.64    0.47    0.63    0.75
+  timm_spatial                  0.50    0.67    0.69    0.68
+  noinnov_spatial               0.56    0.20    0.20    0.49
+  far0_spatial                  0.40    0.16    0.24    0.40
+  buffer                        0.73    0.81    1.06    0.76
+  pool                          0.63    0.97    0.76    0.56
+  ref_la_galen_simplicium       0.91    0.90    0.94    0.94
+  ref_la_dioscorides_longob     1.09    0.74    0.99    0.86
+  ref_la_rhazes_almansor        0.96    1.11    0.82    0.75
+  ref_la_hildegard_physica      1.03    0.93    1.13    1.00
+  ref_de_gart_augsburg1487      0.95    1.18    0.97    1.02
+
+== cosine: first half of a page with the previous page's second half / with its own second half (ratio; n transitions)
+  manuscript                 H: 0.28/0.26 = 1.10 (n 4)  B: 0.50/0.58 = 0.87 (n 17)  S: 0.45/0.46 = 0.97 (n 23)  other: 0.34/0.36 = 0.96 (n 11)
+  timm                       H: 0.24/0.48 = 0.50 (n 10)  B: 0.39/0.65 = 0.59 (n 17)  S: 0.49/0.65 = 0.76 (n 23)  other: 0.29/0.49 = 0.59 (n 14)
+  far0                       H: 0.23/0.39 = 0.58 (n 10)  B: 0.25/0.46 = 0.54 (n 17)  S: 0.36/0.48 = 0.75 (n 23)  other: 0.22/0.34 = 0.65 (n 15)
+  noinnov_far0               H: 0.35/0.40 = 0.89 (n 15)  B: 0.29/0.52 = 0.56 (n 17)  S: 0.42/0.52 = 0.80 (n 23)  other: 0.26/0.39 = 0.67 (n 15)
+  timm_spatial               H: 0.24/0.36 = 0.68 (n 8)  B: 0.33/0.42 = 0.78 (n 17)  S: 0.46/0.52 = 0.88 (n 23)  other: 0.23/0.34 = 0.68 (n 14)
+  noinnov_spatial            H: 0.36/0.46 = 0.80 (n 15)  B: 0.27/0.39 = 0.70 (n 17)  S: 0.41/0.48 = 0.86 (n 23)  other: 0.32/0.38 = 0.84 (n 16)
+  far0_spatial               H: 0.18/0.31 = 0.59 (n 10)  B: 0.19/0.33 = 0.57 (n 17)  S: 0.30/0.34 = 0.89 (n 23)  other: 0.18/0.27 = 0.66 (n 14)
+  buffer                     H: 0.25/0.28 = 0.90 (n 7)  B: 0.52/0.56 = 0.93 (n 17)  S: 0.46/0.49 = 0.93 (n 23)  other: 0.26/0.32 = 0.82 (n 13)
+  pool                       H: 0.16/0.24 = 0.66 (n 8)  B: 0.44/0.47 = 0.94 (n 17)  S: 0.39/0.43 = 0.91 (n 23)  other: 0.21/0.29 = 0.73 (n 13)
+  ref_la_galen_simplicium    H: 0.47/0.46 = 1.01 (n 4)  B: 0.59/0.61 = 0.98 (n 17)  S: 0.65/0.65 = 0.99 (n 23)  other: 0.51/0.50 = 1.01 (n 11)
+  ref_la_dioscorides_longob  H: 0.31/0.29 = 1.08 (n 4)  B: 0.54/0.56 = 0.96 (n 17)  S: 0.56/0.58 = 0.96 (n 23)  other: 0.37/0.36 = 1.04 (n 11)
+  ref_la_rhazes_almansor     H: 0.45/0.37 = 1.22 (n 4)  B: 0.51/0.51 = 1.00 (n 17)  S: 0.57/0.56 = 1.02 (n 23)  other: 0.37/0.40 = 0.95 (n 11)
+  ref_la_hildegard_physica   H: 0.59/0.63 = 0.93 (n 4)  B: 0.73/0.73 = 1.01 (n 17)  S: 0.74/0.76 = 0.97 (n 23)  other: 0.49/0.53 = 0.93 (n 11)
+  ref_de_gart_augsburg1487   H: 0.31/0.28 = 1.12 (n 4)  B: 0.42/0.42 = 1.01 (n 17)  S: 0.51/0.51 = 1.01 (n 23)  other: 0.35/0.30 = 1.18 (n 11)

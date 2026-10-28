@@ -1,0 +1,2 @@
+# Store every file exactly as published, so the hashes in version.json match what is served.
+* -text

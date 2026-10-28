@@ -1,0 +1,24 @@
+.reconstruction{max-width:1800px;margin:auto;padding:0 24px}
+.recon-controls,.recon-replay{display:flex;align-items:center;gap:10px 16px;flex-wrap:wrap;padding:12px 0;background:var(--bg);border-bottom:1px solid var(--line2);font-size:13px}
+.recon-controls{position:sticky;top:0;z-index:5}.recon-controls label,.recon-replay label{display:flex;align-items:center;gap:7px}
+.recon-controls select,.recon-controls input{max-width:220px;padding:7px;background:var(--surface);color:var(--ink);border:1px solid var(--line2);border-radius:4px}
+#reconStep{flex:1;min-width:150px}#reconProgress{font-variant-numeric:tabular-nums;min-width:160px}
+.recon-layout{display:grid;grid-template-columns:minmax(0,1fr) 355px;gap:16px;align-items:start}
+.recon-manuscript{min-width:0;overflow:auto;padding:16px}.recon-inspector{position:sticky;top:130px;max-height:calc(100vh - 145px);overflow:auto;padding:16px}
+#reconPages{display:grid;grid-template-columns:repeat(2,minmax(240px,1fr));gap:20px}#reconPages.single{grid-template-columns:minmax(320px,1fr);max-width:800px;margin:auto}
+#reconPages figure{margin:0;min-width:0}#reconPages figcaption{font-size:13px;padding:0 0 8px;color:var(--ink2)}#reconPages svg{width:100%;display:block;background:var(--surface);border:1px solid var(--line2)}
+.recon-word{cursor:pointer;outline:none}.recon-word rect{stroke:var(--line2);stroke-width:.4}.recon-word text{font-family:var(--mono);fill:var(--ink);pointer-events:none;paint-order:stroke;stroke:var(--surface);stroke-width:.5}
+.recon-word.filtered{opacity:.16}.recon-word.future{opacity:.07}.recon-word.source rect{stroke:#58928d;stroke-width:1.5;vector-effect:non-scaling-stroke}
+.recon-word.parent{opacity:1}.recon-word.parent rect{stroke:#b23d8a;stroke-width:2.5;vector-effect:non-scaling-stroke}
+.recon-word.selected{opacity:1}.recon-word.selected rect,.recon-word:focus-visible rect{stroke:var(--ink);stroke-width:3;vector-effect:non-scaling-stroke}
+.recon-focus .recon-word:not(.source):not(.selected){opacity:.12;filter:grayscale(1)}
+.recon-focus .recon-word.source{opacity:1}
+.recon-cone-fill{pointer-events:none;fill:color-mix(in srgb,var(--gov) 10%,transparent);stroke:none}
+.recon-cone{pointer-events:none;fill:none;stroke:var(--gov);stroke-width:1.8;vector-effect:non-scaling-stroke}
+.recon-legend{display:flex;gap:6px 12px;flex-wrap:wrap;font-size:12px;margin:10px 0 16px}.recon-key{display:inline-flex;gap:5px;align-items:center}.recon-key i{display:inline-block;width:14px;height:12px;border:1px solid var(--line2);border-radius:2px}
+.recon-inspector h2{font-size:23px;margin:0 0 6px}.recon-inspector h3{font-size:14px;margin:18px 0 8px}.recon-inspector table{font-size:12px;width:100%}.recon-inspector td,.recon-inspector th{padding:6px 3px;vertical-align:top;text-align:left;border-bottom:1px solid var(--line2)}
+.recon-inspector .parents{display:flex;flex-direction:column;gap:6px}.recon-inspector button{text-align:left;font-size:12px;white-space:normal}.recon-chip{display:inline-block;font-size:11px;padding:3px 5px;border:1px solid var(--line2);border-radius:3px;margin:3px 3px 3px 0}
+.recon-note{font-size:13px;line-height:1.5;background:var(--bg);padding:10px;border-left:3px solid var(--gov)}.recon-sources{max-height:220px;overflow:auto}.recon-method{margin:20px 0;padding:18px}.recon-method summary{cursor:pointer;font-weight:600}.recon-method p{max-width:1100px}
+#reconMissing{font-size:12px;color:var(--ink2);margin-top:10px}#reconMissing button{margin:3px;font-size:12px}
+@media(max-width:1100px){.recon-layout{grid-template-columns:minmax(0,1fr) 300px}#reconPages{grid-template-columns:1fr}.recon-inspector{top:170px}}
+@media(max-width:750px){.reconstruction{padding:0 12px}.recon-controls{position:static}.recon-layout{grid-template-columns:1fr}.recon-inspector{position:static;max-height:none}.recon-controls select{max-width:180px}}

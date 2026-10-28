@@ -1,0 +1,74 @@
+== Herbal: 128 pages in 33 bifolia; groups {'1a': 39, '1b': 30, '1.5a': 20, '2a': 6, '6': 1, '3b': 14, '3a': 18}
+   Herbal->Herbal transitions 124: {'same bifolium': 95, 'same group, d 1': 24, 'adjacent groups': 5}
+
+== page-boundary penalty (cross/within, lags 1-50) by relation of the two pages
+  text                                                all                same bifolium   other bifolium, same group  other bifolium, other group
+  manuscript                                         0.86                         0.86                         0.85                         0.69
+  timm                                               0.50                         0.48                         0.57                         0.46
+  far0                                               0.43                         0.44                         0.39                         0.36
+  noinnov_far0                                       0.47                         0.47                         0.47                         0.50
+  timm_spatial                                       0.38                         0.37                         0.40                         0.54
+  noinnov_spatial                                    0.44                         0.45                         0.39                         0.38
+  far0_spatial                                       0.30                         0.31                         0.32                         0.17
+  buffer                                             0.64                         0.62                         0.72                         0.60
+  pool                                               0.50                         0.50                         0.51                         0.54
+  ref_la_galen_simplicium                            0.95                         0.94                         1.05                         0.69
+  ref_la_dioscorides_longob                          0.97                         0.97                         0.94                         0.99
+  ref_la_rhazes_almansor                             0.94                         0.96                         0.73                         1.55
+  ref_la_hildegard_physica                           1.00                         1.03                         0.96                         0.72
+  ref_de_gart_augsburg1487                           0.91                         0.90                         0.91                         1.18
+  manuscript cross repeats per 1,000 pairs: all 6.8, same bifolium 7.0, other bifolium, same group 6.8, other bifolium, other group 3.5
+
+== page-bag cosine by relation, Herbal pages of 60+ tokens (n pairs from the manuscript)
+  text                                  same bifolium          same group, d 1        same group, d 2-4         same group, d 5+          adjacent groups two or more groups apart               across A/B
+  (pairs)                                         167                      336                      584                      250                     1778                      951                     2720
+  manuscript                                    0.345                    0.340                    0.339                    0.322                    0.282                    0.218                    0.157
+  timm                                          0.239                    0.230                    0.223                    0.228                    0.221                    0.217                    0.229
+  far0                                          0.234                    0.243                    0.261                    0.283                    0.245                    0.243                    0.198
+  noinnov_far0                                  0.297                    0.316                    0.338                    0.342                    0.311                    0.315                    0.265
+  timm_spatial                                  0.229                    0.234                    0.230                    0.219                    0.222                    0.215                    0.237
+  noinnov_spatial                               0.401                    0.411                    0.429                    0.447                    0.413                    0.437                    0.381
+  far0_spatial                                  0.213                    0.229                    0.241                    0.251                    0.219                    0.217                    0.205
+  buffer                                        0.288                    0.286                    0.292                    0.295                    0.258                    0.232                    0.191
+  pool                                          0.223                    0.245                    0.249                    0.256                    0.223                    0.196                    0.159
+  ref_la_galen_simplicium                       0.484                    0.446                    0.426                    0.408                    0.397                    0.419                    0.428
+  ref_la_dioscorides_longob                     0.374                    0.365                    0.347                    0.312                    0.347                    0.328                    0.303
+  ref_la_rhazes_almansor                        0.382                    0.338                    0.303                    0.270                    0.265                    0.258                    0.263
+  ref_la_hildegard_physica                      0.592                    0.580                    0.568                    0.509                    0.550                    0.560                    0.584
+  ref_de_gart_augsburg1487                      0.290                    0.282                    0.268                    0.253                    0.254                    0.255                    0.271
+
+== Herbal A, cross-bifolium cosine by bifolium rank distance: observed page bags, and the fitted gradient (word_gradual columns, bifolium level)
+  text                              1      2-3      4-7     8-15    16-99   spearman(d, cos)
+  manuscript                    0.337    0.325    0.301    0.270    0.218   -0.33  (pairs 3455)
+  timm                          0.225    0.215    0.219    0.217    0.221   -0.01  (pairs 3733)
+  far0                          0.262    0.266    0.264    0.248    0.241   -0.05  (pairs 3705)
+  noinnov_far0                  0.328    0.332    0.320    0.314    0.341   -0.01  (pairs 3790)
+  timm_spatial                  0.221    0.220    0.216    0.217    0.217   -0.00  (pairs 3593)
+  noinnov_spatial               0.425    0.434    0.422    0.426    0.447   +0.02  (pairs 3906)
+  far0_spatial                  0.224    0.235    0.233    0.223    0.209   -0.04  (pairs 3565)
+  buffer                        0.285    0.283    0.274    0.254    0.231   -0.14  (pairs 3455)
+  pool                          0.243    0.244    0.231    0.216    0.201   -0.13  (pairs 3296)
+  ref_la_galen_simplicium       0.431    0.408    0.393    0.392    0.437   +0.03  (pairs 3455)
+  ref_la_dioscorides_longob     0.383    0.352    0.353    0.340    0.318   -0.12  (pairs 3455)
+  ref_la_rhazes_almansor        0.331    0.297    0.262    0.260    0.274   -0.13  (pairs 3455)
+  ref_la_hildegard_physica      0.560    0.547    0.535    0.538    0.574   +0.05  (pairs 3455)
+  ref_de_gart_augsburg1487      0.269    0.263    0.244    0.248    0.256   -0.04  (pairs 3455)
+  fitted gradient               0.993    0.974    0.916    0.840    0.828   (bifolium pairs 23, 43, 74, 100, 36)
+  fitted movement per step inside Herbal A: 24 within-group steps mean 0.0365 max 0.1309; group-change steps 0.0713, 0.1968, 0.1291; into B 0.2626
+
+== forms carried across Herbal boundaries (lags 1-50): share of cross-boundary repeats made by the group's 50 most frequent Herbal forms, and the same share for within-page repeats
+  manuscript                 cross 1073 repeats, share 0.95; within 3328, share 0.93
+  timm                       cross 1186 repeats, share 0.90; within 6718, share 0.77
+  far0                       cross 1493 repeats, share 0.94; within 10106, share 0.87
+  noinnov_far0               cross 1944 repeats, share 0.94; within 12943, share 0.89
+  timm_spatial               cross 849 repeats, share 0.94; within 6082, share 0.78
+  noinnov_spatial            cross 1910 repeats, share 0.98; within 14287, share 0.92
+  far0_spatial               cross 863 repeats, share 0.97; within 8060, share 0.83
+  buffer                     cross 927 repeats, share 0.89; within 3906, share 0.84
+  pool                       cross 741 repeats, share 0.95; within 3870, share 0.85
+  ref_la_galen_simplicium    cross 2014 repeats, share 0.94; within 5547, share 0.92
+  ref_la_dioscorides_longob  cross 1464 repeats, share 0.93; within 3932, share 0.89
+  ref_la_rhazes_almansor     cross 1869 repeats, share 0.90; within 5198, share 0.90
+  ref_la_hildegard_physica   cross 2901 repeats, share 0.94; within 7538, share 0.93
+  ref_de_gart_augsburg1487   cross 893 repeats, share 0.90; within 2593, share 0.89
+  manuscript, most carried forms: [('daiin', 364), ('chol', 88), ('s', 55), ('chor', 40), ('dy', 38), ('aiin', 27), ('cthy', 25), ('chy', 21), ('or', 21), ('chdy', 17), ('okaiin', 16), ('shol', 15)]

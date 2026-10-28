@@ -1,0 +1,215 @@
+{
+  "repository": "https://github.com/TorstenTimm/SelfCitationTextgenerator",
+  "commit": "a6ede2202dd7ad6285ce2c007bf22c2a0e7709b7",
+  "files": [
+    {
+      "path": "LICENSE",
+      "sha256": "3621db279bfbb241057694d91c22895b4c5210e3c161ecef89c8402d091eb029",
+      "bytes": 1069
+    },
+    {
+      "path": "PROPERTIES.md",
+      "sha256": "488d873c2ad6c77d4adfedd2ee1268b93c51b930ca9be5c8abcae1ccad91e1e6",
+      "bytes": 5844
+    },
+    {
+      "path": "README.md",
+      "sha256": "50bf716aa88d69810f65a0c10080e57ac47aaa82409eea0ff75c1d1a82f220a0",
+      "bytes": 96987
+    },
+    {
+      "path": "executable/conf.properties",
+      "sha256": "308af498cd5da6957e7f9d06e01efff0273856d7f59d5e15205edae86f9061ee",
+      "bytes": 5512
+    },
+    {
+      "path": "source/pom.xml",
+      "sha256": "7bd371e133fa88cd6e3638d7e53afbff9bfea55f373537a84d4eba783e295516",
+      "bytes": 4092
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/Constants.java",
+      "sha256": "bda4ef3df6e5be3ea40ceeca66de001e30f873632380d940ce6e792bf3807248",
+      "bytes": 2215
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/Glyph.java",
+      "sha256": "130222af0e736a79dbfa507b24d0a2d182169ece6899ea64ac9147fc11c5169e",
+      "bytes": 26311
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/GlyphGroup.java",
+      "sha256": "397f764b6b9c792d6bd8f98430363554890474a5c34a204e3e10033b57b1b37b",
+      "bytes": 5703
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/SelfCitationTextGenerator.java",
+      "sha256": "7afa236373a997d2e2ccef9a8e7ee799c5766b63ddf161bab8b72ce0f3bbf1e9",
+      "bytes": 14824
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/StatisticHelper.java",
+      "sha256": "e40bffd4518c3555771fb3d502908d1ff7af5e516648d080111c384512cc9918",
+      "bytes": 14988
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/Substitution.java",
+      "sha256": "a5ed5263b28c7289dd6922109b59bb3e26d175e257004e2b82d2397b79e736b5",
+      "bytes": 1288
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/canfollow/CurveLineCanFollow.java",
+      "sha256": "62e3051c61c8126ad80ea24c4e17488f0093f247e62bc638493574d55015a0a2",
+      "bytes": 14827
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/canfollow/DummyCanFollow.java",
+      "sha256": "e77f4bfb08c354f9b77901c068d3fdf67f3f073ffee523a3f46f8f6eafaaab88",
+      "bytes": 1653
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/canfollow/I_CanFollow.java",
+      "sha256": "0a559ecf0c9839469034a878b34f0085da85a1491b36171d75d126c1a883ef7c",
+      "bytes": 1163
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/canfollow/StatisticCanFollow.java",
+      "sha256": "51f87de0a79a9d6f79b4c9daafbc474f86a19b25385691c4303cc3746bf35848",
+      "bytes": 3963
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/canfollow/VoynichCanFollow.java",
+      "sha256": "5d9f34e70bf1d71a4274280fec70518fc441a91ff1349fc16288d244e5eaa4d5",
+      "bytes": 3192
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/canfollow/vms/CalcGephiElements.java",
+      "sha256": "28c37a018847ffe4507f6b7d2f851ba3373d98b8808aa0f48066301a2235a60f",
+      "bytes": 1616
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/canfollow/vms/FollowMatrix.java",
+      "sha256": "90050119690b51502d23e11848370af97454f9c2d5a451889bea0cf53e0d6527",
+      "bytes": 3789
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/canfollow/vms/VoynichGroups.java",
+      "sha256": "56d11c54a7247f48a789590dc4d3dd376e35cc74006d528091217150a4a91562",
+      "bytes": 92663
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/canfollow/vms/VoynichGroupsThree.java",
+      "sha256": "64171ebcf37bcf6f88f626796ca682c7403ccd11806ada46ec645fb94c3aeac3",
+      "bytes": 91541
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/canfollow/vms/VoynichGroupsTwo.java",
+      "sha256": "c2094fce408c48949732f506bbe660252728a21152b04249455728ae81d38f91",
+      "bytes": 53415
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/morph/AbstractBaseGroupMorpher.java",
+      "sha256": "fd3466fe5879d8e25c7892ef6e08b34f02706c2f3c2c09dddd31cb802e8ba0f1",
+      "bytes": 22901
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/morph/I_GroupMorpher.java",
+      "sha256": "ecb24cb45de8d3cc9312cd010c310ae1e54b83afcd5db30bd2dad3e8da6a2ad4",
+      "bytes": 771
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/morph/MorphTester.java",
+      "sha256": "a49bf4ad27648391c6214ce958a71c07281dc3e11c10c693d88a0724a75b94f2",
+      "bytes": 14597
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/morph/SlimGroupMorpher.java",
+      "sha256": "a35454d7e6adbda8a86471433e58849c2fe5674f625a09cb68facf4e61eec614",
+      "bytes": 32733
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/sourcechooser/ChooserHelper.java",
+      "sha256": "b6c1dd6533d142624cfd3c9ed59fc5eb9df5c20024ad54e9ff73571e1da3c6ba",
+      "bytes": 2283
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/sourcechooser/I_SourceGroupChooser.java",
+      "sha256": "e1c20387877f6ef59c0074cdba0f91aab8b5e0aaed8bb3d762501335d6bb5d99",
+      "bytes": 1481
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/sourcechooser/PageSourceGroupChooser.java",
+      "sha256": "9b919d7b58a5c2b533131d946d1ac28b4b6f4b356a37d5f2ef0d26346e50c360",
+      "bytes": 6243
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/sourcechooser/PositionSourceGroupChooser.java",
+      "sha256": "e2208e05496acbe30abc79998084332c988cb32327d064a55647b97d11085611",
+      "bytes": 14220
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/sourcechooser/RandomSourceGroupChooser.java",
+      "sha256": "43b43041872e454696b6b72875fedf41f75ada04cba8a29cd049e4f13dab2d5d",
+      "bytes": 1209
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/util/Config.java",
+      "sha256": "529012afa15945b21e20fc481d9ca0bf656300c2d08f0fb23e1f6a66a9b25d4f",
+      "bytes": 22856
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/util/Converter.java",
+      "sha256": "28fda083bee68928873b2df349474b45b7511211465646bba5db73f1e5c6f869",
+      "bytes": 2608
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/util/FileTools.java",
+      "sha256": "57cd83e27b6441e8b33890bf1fa0e48e164435d92d308e7447268c04cbeee2d9",
+      "bytes": 2039
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/util/GephiNode.java",
+      "sha256": "a04e22ce9b3f84bfade9448f718767816e02ebe617e1cd064fc44f21ed04fb8b",
+      "bytes": 4279
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/util/Levenshtein.java",
+      "sha256": "31de446321bf1fc9283cde3a8f9d03b94f64515f81e78c3583c8d75a63ab0303",
+      "bytes": 4285
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/util/PropertiesLoader.java",
+      "sha256": "bed2a5f67bb08362909b275bc4a3342d95ae57cc0540dee46262552a2263b6bb",
+      "bytes": 2292
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/util/StringUtil.java",
+      "sha256": "334a4f3d820b5625841b639eebb9cfb10667884c9594c2bb60dcf8e9cf383a25",
+      "bytes": 6041
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/util/random/I_RandomNumberGenerator.java",
+      "sha256": "d38a6670a90a850f73abfc63e70c7b96c188209a3b64d5836f88253ecebd0c81",
+      "bytes": 260
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/util/random/PseudoRandomNumberGenerator.java",
+      "sha256": "62c756d5f8490d7ee70d6ac508ca765f6dc023cfb604d40f5632e7eabd8857e9",
+      "bytes": 871
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/util/random/RealRandomNumberGenerator.java",
+      "sha256": "419c1e639924ed179c980c04c853f6e9f1a7db2e301963c59681c7dd3edc178f",
+      "bytes": 509
+    },
+    {
+      "path": "source/src/main/resources/conf.properties",
+      "sha256": "308af498cd5da6957e7f9d06e01efff0273856d7f59d5e15205edae86f9061ee",
+      "bytes": 5512
+    }
+  ],
+  "compiler": {
+    "url": "https://repo.maven.apache.org/maven2/org/eclipse/jdt/ecj/3.26.0/ecj-3.26.0.jar",
+    "sha256": "ac0ba5876eaf7ebb47749a0d1be179c51f194b9dd0b875d1c09e1b530f5a2db5"
+  }
+}

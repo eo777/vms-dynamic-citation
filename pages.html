@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Governed self-citation · Pages</title>
+<link rel="stylesheet" href="style.css?v=c5d23a58e5">
+<script src="release.js?v=602db778c3"></script>
+<script src="site_nav.js?v=6157a44ebb" defer></script>
+</head><body class="browser">
+<nav class="site-nav"></nav>
+<h1 class="sr-only">Page browser</h1>
+<main>
+<div class="deck" id="deck">
+ <div class="deck-row">
+  <div class="seg runseg" id="runSeg" role="radiogroup" aria-label="Run shown"></div>
+  <div class="pager">
+   <button type="button" id="prevPage" title="Previous page ([)" aria-label="Previous page">◀</button>
+   <select id="pageSel" aria-label="Page (folio)" title="Page, by the folio it stands for"></select>
+   <button type="button" id="nextPage" title="Next page (])" aria-label="Next page">▶</button>
+  </div>
+  <label class="ctl bifsel">Bifolium <select id="nodeSel" aria-label="Bifolium" title="Go to a bifolium's first page"></select></label>
+  <div class="pageinfo" id="pageTitle"></div>
+  <button type="button" class="widebtn" id="wideBtn" aria-pressed="false" title="Use the full window width" aria-label="Use the full window width">↔</button>
+ </div>
+ <div class="scrub" id="timeline" tabindex="0" role="slider" aria-label="Page, along the text" aria-valuemin="1"><p class="loading">Loading…</p></div>
+</div>
+<section class="pagegrid" id="pagegrid">
+ <div class="panel" id="pagePanel">
+  <div class="playbar">
+   <div class="seg icons">
+    <button type="button" id="rpStart" title="Start of page" aria-label="Start of page">⏮</button>
+    <button type="button" id="rpBack" title="Previous step (←)" aria-label="Previous step">◁</button>
+    <button type="button" id="rpPlay" class="play" title="Play / pause (space)">▶ Play</button>
+    <button type="button" id="rpFwd" title="Next step (→)" aria-label="Next step">▷</button>
+    <button type="button" id="rpEnd" title="Whole page" aria-label="Whole page">⏭</button>
+   </div>
+   <label class="ctl small" title="Replay speed"><select id="rpSpeed" aria-label="Replay speed"><option value="1400">slow</option><option value="700" selected>normal</option><option value="300">fast</option><option value="80">fastest</option></select></label>
+   <input type="range" id="rpSlider" min="0" max="0" value="0" aria-label="Replay position">
+   <span class="ctl small num" id="rpPos"></span>
+  </div>
+  <div class="hlrow">
+   <details class="marks" id="marksMenu"><summary title="Choose what the page text marks">Highlights <span class="count" id="marksCount"></span></summary><div class="marks-menu" id="overlays"></div></details>
+   <div class="hlkey" id="hlKey"></div>
+  </div>
+  <div class="text" id="text"><p class="loading">Loading…</p></div>
+  <div class="keyrow" id="keyrow"></div>
+ </div>
+ <aside class="side">
+  <div class="panel detail">
+   <div class="tabs" id="detailTabs" role="tablist" aria-label="Details">
+    <button type="button" role="tab" data-tab="step" class="on" aria-selected="true">Step</button>
+    <button type="button" role="tab" data-tab="source" aria-selected="false">Source</button>
+    <button type="button" role="tab" data-tab="pressures" aria-selected="false">Pressures</button>
+    <button type="button" role="tab" data-tab="bifolium" aria-selected="false">Bifolium</button>
+    <button type="button" class="coltoggle" id="presToggle" aria-pressed="false" title="Open the pressures in a column to the right" aria-label="Open the pressures in a column to the right">⇥</button>
+   </div>
+   <div class="tabbody" data-body="step" role="tabpanel"><div id="stepBody" class="small muted">Click a word, or play the page.</div></div>
+   <div class="tabbody" data-body="source" role="tabpanel" hidden><div id="poolBody" class="small muted">—</div></div>
+   <div class="tabbody" data-body="pressures" role="tabpanel" hidden><div id="pressureBody"><span class="muted">—</span></div></div>
+   <div class="tabbody" data-body="bifolium" role="tabpanel" hidden><div class="bifhead"><h2 id="nodeTitle">Bifolium</h2><div class="row" id="nodePick"></div></div><div id="nodeResults"></div></div>
+  </div>
+ </aside>
+ <aside class="pres" id="presCol" hidden aria-label="Pressures">
+  <div class="panel colpanel">
+   <div class="colhead"><h3>Pressures</h3><button type="button" class="close" id="presClose" title="Put the pressures back in the tabs" aria-label="Put the pressures back in the tabs">⇤</button></div>
+   <div class="tabbody" id="presColBody"></div>
+  </div>
+ </aside>
+</section>
+<details class="method panel"><summary>How to read this page</summary>
+<p><b>Pages.</b> The generator writes 29 lines per page. A page is placed on the bifolium whose token range it falls in: the first 34,977 tokens are aligned with the 50 bifolia of Path 1 by cumulative token count, the rest lie beyond the manuscript's length and keep the last bifolium's targets.</p>
+<p><b>Source.</b> Timm draws a source word from the lines already on the page (the last lines-on-page minus two, at least one), with a bonus for the word at the writing position. The governed run reweights that draw by exp(pressure value) and takes half its draws from a far supply instead: the buffer of the hundred most recently used word forms (the pool run: the last 2,000 words). The shading on the window lines shows the selection probability of each word, exact for the chosen word and the eight most likely, otherwise recomputed from the line-start pressures.</p>
+<p><b>Proposal.</b> The source is morphed (replace, add, delete, combine with its neighbour, split). The governor accepts the proposal with probability min(1, e^Δ), where Δ is the pressure value of the proposal minus the source; a rejected proposal asks for another source up to four times, then the unchanged copy is kept. Timm's own checks (admissible start, repeats, fit in the line) follow; a proposal he refuses leaves no word.</p>
+<p><b>Innovator.</b> At a slot that is short of first appearances, the governor replaces a proposal the text already contains by an edit, extension or join of it, sampled by pressure gain among candidates that are new, rare in the manuscript and legal under the model's transitions.</p>
+<p><b>Step.</b> One row per event in the making of the word: draws, proposals with the governor's decision, the innovator, the written word. Hover a value or badge for its detail; click a row to replay from it.</p>
+<p><b>Pressures.</b> For each of the 1,324 constructions, log of the fitted target share at this bifolium over the moving-average share of the emitted text, clipped at ±3. Shown at the start of each line (0.025 steps). A word's value is the sum over its constructions.</p>
+</details>
+</main>
+<footer><p>Governed self-citation study, 24 October 2026. Generator: Torsten Timm's SelfCitationTextgenerator with three hooks. Model: positional-composition-544-v1.</p></footer>
+<script src="common.js?v=7ac91728ee"></script><script src="steplog.js?v=3df7a7d545"></script><script src="pages.js?v=c164b3dd14"></script>
+</body></html>

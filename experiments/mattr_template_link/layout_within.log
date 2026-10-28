@@ -1,0 +1,177 @@
+== shift-share of the flowing novelty rate (fresh at lag 100): total = layout part + rate part
+
+1b->1.5a
+  manuscript                   F 0.657 -> 0.748  total +0.091 = layout -0.007 + rate +0.099
+  timm                         F 0.569 -> 0.544  total -0.025 = layout -0.026 + rate +0.001
+  far0                         F 0.591 -> 0.616  total +0.025 = layout -0.025 + rate +0.050
+  noinnov_far0                 F 0.530 -> 0.498  total -0.033 = layout -0.033 + rate +0.000
+  timm_spatial                 F 0.607 -> 0.604  total -0.003 = layout -0.027 + rate +0.024
+  noinnov_spatial              F 0.528 -> 0.513  total -0.015 = layout -0.035 + rate +0.020
+  far0_spatial                 F 0.636 -> 0.639  total +0.003 = layout -0.034 + rate +0.037
+  buffer                       F 0.668 -> 0.685  total +0.018 = layout -0.001 + rate +0.019
+  pool                         F 0.736 -> 0.728  total -0.008 = layout -0.018 + rate +0.010
+  ref_la_galen_simplicium      F 0.560 -> 0.618  total +0.058 = layout -0.002 + rate +0.060
+  ref_la_dioscorides_longob    F 0.708 -> 0.727  total +0.019 = layout -0.013 + rate +0.032
+  ref_la_rhazes_almansor       F 0.599 -> 0.651  total +0.052 = layout +0.006 + rate +0.046
+  ref_la_hildegard_physica     F 0.603 -> 0.618  total +0.016 = layout +0.015 + rate +0.000
+  ref_de_gart_augsburg1487     F 0.716 -> 0.699  total -0.017 = layout -0.007 + rate -0.010
+
+3b->3a
+  manuscript                   F 0.752 -> 0.677  total -0.076 = layout -0.000 + rate -0.076
+  timm                         F 0.566 -> 0.543  total -0.023 = layout +0.003 + rate -0.026
+  far0                         F 0.612 -> 0.590  total -0.022 = layout +0.001 + rate -0.023
+  noinnov_far0                 F 0.552 -> 0.563  total +0.011 = layout +0.002 + rate +0.010
+  timm_spatial                 F 0.610 -> 0.606  total -0.004 = layout +0.002 + rate -0.006
+  noinnov_spatial              F 0.552 -> 0.537  total -0.015 = layout +0.000 + rate -0.015
+  far0_spatial                 F 0.630 -> 0.622  total -0.008 = layout +0.003 + rate -0.011
+  buffer                       F 0.673 -> 0.671  total -0.002 = layout -0.002 + rate +0.000
+  pool                         F 0.742 -> 0.739  total -0.003 = layout -0.001 + rate -0.002
+  ref_la_galen_simplicium      F 0.542 -> 0.593  total +0.051 = layout -0.001 + rate +0.052
+  ref_la_dioscorides_longob    F 0.723 -> 0.762  total +0.039 = layout -0.000 + rate +0.040
+  ref_la_rhazes_almansor       F 0.668 -> 0.629  total -0.039 = layout +0.000 + rate -0.039
+  ref_la_hildegard_physica     F 0.606 -> 0.605  total -0.001 = layout -0.001 + rate -0.001
+  ref_de_gart_augsburg1487     F 0.717 -> 0.709  total -0.008 = layout -0.001 + rate -0.007
+
+3c->4c
+  manuscript                   F 0.746 -> 0.645  total -0.101 = layout -0.010 + rate -0.091
+  timm                         F 0.605 -> 0.597  total -0.008 = layout -0.015 + rate +0.007
+  far0                         F 0.668 -> 0.611  total -0.057 = layout -0.012 + rate -0.044
+  noinnov_far0                 F 0.619 -> 0.586  total -0.033 = layout -0.016 + rate -0.017
+  timm_spatial                 F 0.650 -> 0.641  total -0.009 = layout -0.019 + rate +0.010
+  noinnov_spatial              F 0.584 -> 0.555  total -0.028 = layout -0.021 + rate -0.007
+  far0_spatial                 F 0.658 -> 0.588  total -0.070 = layout -0.027 + rate -0.043
+  buffer                       F 0.729 -> 0.670  total -0.059 = layout -0.015 + rate -0.044
+  pool                         F 0.802 -> 0.767  total -0.035 = layout -0.005 + rate -0.030
+  ref_la_galen_simplicium      F 0.594 -> 0.591  total -0.003 = layout -0.016 + rate +0.013
+  ref_la_dioscorides_longob    F 0.723 -> 0.720  total -0.003 = layout -0.002 + rate -0.001
+  ref_la_rhazes_almansor       F 0.651 -> 0.697  total +0.046 = layout +0.001 + rate +0.046
+  ref_la_hildegard_physica     F 0.600 -> 0.611  total +0.011 = layout -0.003 + rate +0.014
+  ref_de_gart_augsburg1487     F 0.730 -> 0.729  total -0.001 = layout +0.004 + rate -0.005
+
+4c->4a
+  manuscript                   F 0.645 -> 0.579  total -0.066 = layout -0.001 + rate -0.065
+  timm                         F 0.597 -> 0.547  total -0.049 = layout -0.012 + rate -0.038
+  far0                         F 0.611 -> 0.533  total -0.078 = layout -0.017 + rate -0.061
+  noinnov_far0                 F 0.586 -> 0.512  total -0.073 = layout -0.017 + rate -0.056
+  timm_spatial                 F 0.641 -> 0.605  total -0.036 = layout -0.012 + rate -0.024
+  noinnov_spatial              F 0.555 -> 0.530  total -0.026 = layout -0.013 + rate -0.013
+  far0_spatial                 F 0.588 -> 0.550  total -0.038 = layout -0.016 + rate -0.021
+  buffer                       F 0.670 -> 0.621  total -0.049 = layout -0.013 + rate -0.036
+  pool                         F 0.767 -> 0.711  total -0.056 = layout -0.010 + rate -0.046
+  ref_la_galen_simplicium      F 0.591 -> 0.613  total +0.022 = layout -0.001 + rate +0.024
+  ref_la_dioscorides_longob    F 0.720 -> 0.725  total +0.005 = layout +0.001 + rate +0.004
+  ref_la_rhazes_almansor       F 0.697 -> 0.675  total -0.023 = layout +0.003 + rate -0.025
+  ref_la_hildegard_physica     F 0.611 -> 0.611  total -0.001 = layout -0.000 + rate -0.000
+  ref_de_gart_augsburg1487     F 0.729 -> 0.725  total -0.004 = layout +0.003 + rate -0.007
+
+3c->4a
+  manuscript                   F 0.746 -> 0.579  total -0.167 = layout -0.019 + rate -0.148
+  timm                         F 0.605 -> 0.547  total -0.058 = layout -0.029 + rate -0.028
+  far0                         F 0.668 -> 0.533  total -0.135 = layout -0.036 + rate -0.099
+  noinnov_far0                 F 0.619 -> 0.512  total -0.106 = layout -0.044 + rate -0.062
+  timm_spatial                 F 0.650 -> 0.605  total -0.045 = layout -0.030 + rate -0.015
+  noinnov_spatial              F 0.584 -> 0.530  total -0.054 = layout -0.036 + rate -0.017
+  far0_spatial                 F 0.658 -> 0.550  total -0.108 = layout -0.037 + rate -0.071
+  buffer                       F 0.729 -> 0.621  total -0.108 = layout -0.028 + rate -0.080
+  pool                         F 0.802 -> 0.711  total -0.091 = layout -0.018 + rate -0.073
+  ref_la_galen_simplicium      F 0.594 -> 0.613  total +0.019 = layout -0.017 + rate +0.036
+  ref_la_dioscorides_longob    F 0.723 -> 0.725  total +0.002 = layout +0.003 + rate -0.001
+  ref_la_rhazes_almansor       F 0.651 -> 0.675  total +0.024 = layout -0.008 + rate +0.031
+  ref_la_hildegard_physica     F 0.600 -> 0.611  total +0.010 = layout +0.002 + rate +0.008
+  ref_de_gart_augsburg1487     F 0.730 -> 0.725  total -0.005 = layout +0.005 + rate -0.010
+
+== page novelty against layout, all_within_group (57 pages), partial r controlling page size, demeaned by group
+text                          fresh~par_tokens  fresh~line_chars
+manuscript                               -0.31             +0.03
+timm                                     -0.34             +0.25
+far0                                     -0.31             +0.30
+noinnov_far0                             -0.32             +0.17
+timm_spatial                             -0.47             +0.11
+noinnov_spatial                          -0.27             +0.17
+far0_spatial                             -0.33             +0.32
+buffer                                   -0.29             +0.08
+pool                                     -0.24             +0.37
+ref_la_galen_simplicium                  -0.38             -0.24
+ref_la_dioscorides_longob                +0.15             +0.07
+ref_la_rhazes_almansor                   -0.09             +0.34
+ref_la_hildegard_physica                 +0.23             -0.36
+ref_de_gart_augsburg1487                 +0.01             +0.31
+
+== page novelty against layout, bio (20 pages), partial r controlling page size, demeaned by group
+text                          fresh~par_tokens  fresh~line_chars
+manuscript                               -0.44             +0.18
+timm                                     -0.32             +0.21
+far0                                     -0.49             +0.20
+noinnov_far0                             -0.54             +0.13
+timm_spatial                             -0.47             -0.01
+noinnov_spatial                          -0.48             +0.26
+far0_spatial                             -0.42             +0.15
+buffer                                   -0.36             -0.08
+pool                                     -0.53             +0.18
+ref_la_galen_simplicium                  -0.41             -0.19
+ref_la_dioscorides_longob                +0.06             -0.21
+ref_la_rhazes_almansor                   -0.06             +0.32
+ref_la_hildegard_physica                 +0.72             -0.02
+ref_de_gart_augsburg1487                 -0.23             +0.48
+
+== page-bag cosine by Path 1 distance, bio: cross-bifolium d=1, d>=5, slope; same-bifolium by relation and distance
+manuscript                   cross d1 0.530 d5+ 0.600 slope +0.0049 | 1:0.530 2:0.570 3:0.594 4:0.601 5:0.580 6:0.602 7:0.603 8:0.603
+                             same bifolium: diagonal d2:0.680 same face d1:0.689 same face d3:0.640 same leaf d1:0.682 same leaf d3:0.654
+timm                         cross d1 0.484 d5+ 0.414 slope -0.0061 | 1:0.484 2:0.447 3:0.419 4:0.422 5:0.429 6:0.434 7:0.424 8:0.406
+                             same bifolium: diagonal d2:0.426 same face d1:0.443 same face d3:0.444 same leaf d1:0.452 same leaf d3:0.530
+far0                         cross d1 0.302 d5+ 0.417 slope +0.0075 | 1:0.302 2:0.395 3:0.400 4:0.405 5:0.416 6:0.369 7:0.422 8:0.425
+                             same bifolium: diagonal d2:0.405 same face d1:0.397 same face d3:0.376 same leaf d1:0.343 same leaf d3:0.547
+noinnov_far0                 cross d1 0.379 d5+ 0.400 slope +0.0007 | 1:0.379 2:0.358 3:0.419 4:0.433 5:0.406 6:0.406 7:0.328 8:0.410
+                             same bifolium: diagonal d2:0.376 same face d1:0.341 same face d3:0.374 same leaf d1:0.406 same leaf d3:0.524
+timm_spatial                 cross d1 0.426 d5+ 0.449 slope +0.0044 | 1:0.426 2:0.411 3:0.430 4:0.450 5:0.451 6:0.423 7:0.430 8:0.456
+                             same bifolium: diagonal d2:0.450 same face d1:0.479 same face d3:0.442 same leaf d1:0.436 same leaf d3:0.564
+noinnov_spatial              cross d1 0.389 d5+ 0.466 slope +0.0039 | 1:0.389 2:0.507 3:0.447 4:0.482 5:0.447 6:0.431 7:0.417 8:0.484
+                             same bifolium: diagonal d2:0.466 same face d1:0.506 same face d3:0.430 same leaf d1:0.406 same leaf d3:0.656
+far0_spatial                 cross d1 0.254 d5+ 0.383 slope +0.0053 | 1:0.254 2:0.387 3:0.371 4:0.391 5:0.368 6:0.369 7:0.372 8:0.390
+                             same bifolium: diagonal d2:0.350 same face d1:0.365 same face d3:0.389 same leaf d1:0.325 same leaf d3:0.320
+buffer                       cross d1 0.715 d5+ 0.665 slope -0.0029 | 1:0.715 2:0.680 3:0.666 4:0.676 5:0.668 6:0.665 7:0.672 8:0.664
+                             same bifolium: diagonal d2:0.667 same face d1:0.665 same face d3:0.672 same leaf d1:0.670 same leaf d3:0.726
+pool                         cross d1 0.640 d5+ 0.642 slope -0.0004 | 1:0.640 2:0.649 3:0.637 4:0.648 5:0.643 6:0.643 7:0.642 8:0.642
+                             same bifolium: diagonal d2:0.651 same face d1:0.613 same face d3:0.665 same leaf d1:0.622 same leaf d3:0.756
+ref_la_galen_simplicium      cross d1 0.772 d5+ 0.684 slope -0.0083 | 1:0.772 2:0.728 3:0.706 4:0.710 5:0.694 6:0.701 7:0.694 8:0.678
+                             same bifolium: diagonal d2:0.707 same face d1:0.717 same face d3:0.722 same leaf d1:0.707 same leaf d3:0.784
+ref_la_dioscorides_longob    cross d1 0.704 d5+ 0.593 slope -0.0130 | 1:0.704 2:0.659 3:0.632 4:0.641 5:0.621 6:0.603 7:0.605 8:0.583
+                             same bifolium: diagonal d2:0.695 same face d1:0.701 same face d3:0.691 same leaf d1:0.698 same leaf d3:0.727
+ref_la_rhazes_almansor       cross d1 0.626 d5+ 0.579 slope -0.0017 | 1:0.626 2:0.601 3:0.583 4:0.563 5:0.562 6:0.587 7:0.607 8:0.575
+                             same bifolium: diagonal d2:0.591 same face d1:0.661 same face d3:0.545 same leaf d1:0.632 same leaf d3:0.674
+ref_la_hildegard_physica     cross d1 0.864 d5+ 0.809 slope -0.0067 | 1:0.864 2:0.849 3:0.828 4:0.821 5:0.823 6:0.824 7:0.822 8:0.801
+                             same bifolium: diagonal d2:0.820 same face d1:0.817 same face d3:0.810 same leaf d1:0.830 same leaf d3:0.854
+ref_de_gart_augsburg1487     cross d1 0.613 d5+ 0.564 slope -0.0031 | 1:0.613 2:0.575 3:0.565 4:0.571 5:0.588 6:0.543 7:0.571 8:0.562
+                             same bifolium: diagonal d2:0.581 same face d1:0.541 same face d3:0.589 same leaf d1:0.575 same leaf d3:0.664
+   same-bifolium pair counts: {'diagonal d2': 10, 'same face d1': 6, 'same face d3': 4, 'same leaf d1': 9, 'same leaf d3': 1}
+
+== page-bag cosine by Path 1 distance, all_within_group: cross-bifolium d=1, d>=5, slope; same-bifolium by relation and distance
+manuscript                   cross d1 0.520 d5+ 0.538 slope -0.0018 | 1:0.520 2:0.555 3:0.574 4:0.556 5:0.522 6:0.530 7:0.544 8:0.541
+                             same bifolium: diagonal d2:0.590 same face d1:0.632 same face d3:0.553 same face d4:0.453 same face d5:0.523 same face d6:0.433 same leaf d1:0.621 same leaf d2:0.533 same leaf d3:0.654
+timm                         cross d1 0.543 d5+ 0.479 slope -0.0065 | 1:0.543 2:0.511 3:0.501 4:0.499 5:0.489 6:0.492 7:0.480 8:0.475
+                             same bifolium: diagonal d2:0.501 diagonal d3:0.355 diagonal d4:0.329 same face d1:0.488 same face d2:0.421 same face d3:0.515 same face d4:0.421 same face d5:0.547 same face d6:0.547 same leaf d1:0.494 same leaf d2:0.429 same leaf d3:0.497
+far0                         cross d1 0.403 d5+ 0.438 slope -0.0016 | 1:0.403 2:0.440 3:0.451 4:0.471 5:0.462 6:0.412 7:0.431 8:0.439
+                             same bifolium: diagonal d2:0.445 diagonal d3:0.304 same face d1:0.427 same face d2:0.294 same face d3:0.439 same face d4:0.439 same face d5:0.473 same face d6:0.486 same leaf d1:0.398 same leaf d2:0.331 same leaf d3:0.547
+noinnov_far0                 cross d1 0.462 d5+ 0.449 slope -0.0074 | 1:0.462 2:0.464 3:0.479 4:0.510 5:0.475 6:0.468 7:0.427 8:0.444
+                             same bifolium: diagonal d2:0.483 diagonal d3:0.404 diagonal d4:0.297 same face d1:0.433 same face d2:0.323 same face d3:0.463 same face d4:0.365 same face d5:0.504 same face d6:0.541 same leaf d1:0.457 same leaf d2:0.387 same leaf d3:0.558
+timm_spatial                 cross d1 0.494 d5+ 0.498 slope -0.0008 | 1:0.494 2:0.485 3:0.505 4:0.526 5:0.511 6:0.489 7:0.483 8:0.501
+                             same bifolium: diagonal d2:0.516 diagonal d3:0.430 diagonal d4:0.345 same face d1:0.518 same face d2:0.312 same face d3:0.538 same face d4:0.371 same face d5:0.477 same face d6:0.396 same leaf d1:0.498 same leaf d2:0.373 same leaf d3:0.564
+noinnov_spatial              cross d1 0.550 d5+ 0.548 slope -0.0039 | 1:0.550 2:0.593 3:0.560 4:0.574 5:0.565 6:0.530 7:0.524 8:0.552
+                             same bifolium: diagonal d2:0.555 diagonal d3:0.530 diagonal d4:0.446 same face d1:0.558 same face d2:0.521 same face d3:0.562 same face d4:0.524 same face d5:0.522 same face d6:0.609 same leaf d1:0.526 same leaf d2:0.500 same leaf d3:0.638
+far0_spatial                 cross d1 0.353 d5+ 0.424 slope -0.0020 | 1:0.353 2:0.444 3:0.450 4:0.450 5:0.438 6:0.423 7:0.421 8:0.423
+                             same bifolium: diagonal d2:0.438 diagonal d3:0.321 same face d1:0.437 same face d2:0.324 same face d3:0.470 same face d4:0.371 same face d5:0.482 same face d6:0.437 same leaf d1:0.410 same leaf d2:0.418 same leaf d3:0.320
+buffer                       cross d1 0.618 d5+ 0.574 slope -0.0072 | 1:0.618 2:0.601 3:0.601 4:0.617 5:0.592 6:0.578 7:0.582 8:0.569
+                             same bifolium: diagonal d2:0.606 diagonal d3:0.348 same face d1:0.617 same face d2:0.387 same face d3:0.621 same face d4:0.495 same face d5:0.494 same face d6:0.452 same leaf d1:0.575 same leaf d2:0.519 same leaf d3:0.726
+pool                         cross d1 0.566 d5+ 0.567 slope -0.0042 | 1:0.566 2:0.580 3:0.595 4:0.604 5:0.574 6:0.575 7:0.568 8:0.565
+                             same bifolium: diagonal d2:0.609 same face d1:0.570 same face d3:0.625 same face d4:0.514 same face d5:0.558 same face d6:0.469 same leaf d1:0.554 same leaf d2:0.463 same leaf d3:0.756
+ref_la_galen_simplicium      cross d1 0.732 d5+ 0.700 slope -0.0061 | 1:0.732 2:0.717 3:0.726 4:0.734 5:0.716 6:0.712 7:0.708 8:0.694
+                             same bifolium: diagonal d2:0.723 same face d1:0.740 same face d3:0.739 same face d4:0.732 same face d5:0.752 same face d6:0.634 same leaf d1:0.726 same leaf d2:0.655 same leaf d3:0.784
+ref_la_dioscorides_longob    cross d1 0.585 d5+ 0.525 slope -0.0008 | 1:0.585 2:0.567 3:0.535 4:0.510 5:0.501 6:0.496 7:0.500 8:0.539
+                             same bifolium: diagonal d2:0.623 same face d1:0.658 same face d3:0.592 same face d4:0.714 same face d5:0.661 same face d6:0.657 same leaf d1:0.687 same leaf d2:0.750 same leaf d3:0.727
+ref_la_rhazes_almansor       cross d1 0.626 d5+ 0.542 slope -0.0056 | 1:0.626 2:0.566 3:0.568 4:0.543 5:0.545 6:0.543 7:0.557 8:0.539
+                             same bifolium: diagonal d2:0.551 same face d1:0.660 same face d3:0.424 same face d4:0.564 same face d5:0.749 same face d6:0.748 same leaf d1:0.619 same leaf d2:0.722 same leaf d3:0.674
+ref_la_hildegard_physica     cross d1 0.828 d5+ 0.811 slope -0.0027 | 1:0.828 2:0.825 3:0.830 4:0.822 5:0.809 6:0.809 7:0.813 8:0.811
+                             same bifolium: diagonal d2:0.824 same face d1:0.826 same face d3:0.824 same face d4:0.689 same face d5:0.868 same face d6:0.832 same leaf d1:0.813 same leaf d2:0.817 same leaf d3:0.854
+ref_de_gart_augsburg1487     cross d1 0.620 d5+ 0.579 slope -0.0044 | 1:0.620 2:0.600 3:0.601 4:0.605 5:0.586 6:0.560 7:0.594 8:0.579
+                             same bifolium: diagonal d2:0.594 same face d1:0.588 same face d3:0.619 same face d4:0.450 same face d5:0.616 same face d6:0.563 same leaf d1:0.604 same leaf d2:0.666 same leaf d3:0.664
+   same-bifolium pair counts: {'diagonal d2': 23, 'same face d1': 13, 'same face d3': 9, 'same face d4': 2, 'same face d5': 1, 'same face d6': 1, 'same leaf d1': 26, 'same leaf d2': 1, 'same leaf d3': 1}

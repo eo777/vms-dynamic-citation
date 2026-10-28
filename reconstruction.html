@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Governed self-citation · Reconstruction</title>
+<link rel="stylesheet" href="style.css?v=c5d23a58e5"><link rel="stylesheet" href="reconstruction.css?v=7c2728d186">
+<script src="release.js?v=602db778c3"></script>
+<script src="site_nav.js?v=6157a44ebb" defer></script></head><body>
+<nav class="site-nav"></nav>
+<header class="masthead"><div class="eyebrow">GOVERNED SELF-CITATION · MANUSCRIPT</div><h1>Reconstructed copying</h1>
+<p class="sub">Inspect a possible copy-and-edit sequence across five bifolia. Every parent is earlier in the assumed writing order. The target words are known: these are hindsight constructions, not predictions or identified historical sources.</p></header>
+<main class="reconstruction" aria-busy="true">
+<section class="recon-controls" aria-label="Reconstruction controls">
+<label>Bifolium <select id="reconSheet" aria-label="Bifolium"></select></label>
+<label>View <select id="reconView"><option value="bifolium">Whole bifolium</option><option value="page">One page</option></select></label>
+<label>Page <select id="reconPage" aria-label="Page"></select></label>
+<label>Sequence <select id="reconMode"><option value="primed">With startup priming</option><option value="primary">Seed line only</option></select></label>
+<label>Color <select id="reconColor"><option value="route">Proposed operation</option><option value="distance">Minimum cone edit distance</option><option value="page">Minimum page edit distance</option><option value="grammar">Strict grammar</option></select></label>
+<label>Highlight <select id="reconFilter"><option value="all">All words</option><option value="unresolved">Unexplained introductions</option><option value="pageclose">No page source within 1 edit</option><option value="pageexact">No exact earlier page source</option><option value="cone">No construction in the local cone</option><option value="unique">One nearest source spelling</option><option value="pf">p/f words</option><option value="rare">Rare glyphs</option><option value="strict">Strict grammar rejects</option></select></label>
+<label>Find <input type="search" id="reconSearch" placeholder="Spelling on this sheet"></label>
+<button id="reconFind" type="button">Next match</button>
+</section>
+<section class="recon-replay" aria-label="Writing sequence">
+<button type="button" id="reconPrev">← Previous</button><button type="button" id="reconPlay" aria-pressed="false">Play</button><button type="button" id="reconNext">Next →</button>
+<input type="range" id="reconStep" min="0" max="1" value="0" aria-label="Word in writing sequence">
+<span id="reconProgress" role="status" aria-live="polite">Loading verified sequences…</span>
+<label><input type="checkbox" id="reconWritten"> Show written prefix only</label>
+<label><input type="checkbox" id="reconFocus"> Dim outside source window</label>
+</section>
+<p id="reconSummary" class="chart-note"></p><div id="reconLegend" class="recon-legend"></div>
+<div class="recon-layout"><section class="panel recon-manuscript"><div id="reconPages"></div><div id="reconMissing"></div></section>
+<aside class="panel recon-inspector" aria-label="Selected word"><div id="reconDetails">Select a word to inspect its proposed parents and source alternatives.</div></aside></div>
+<details class="panel recon-method"><summary>Reading the reconstruction</summary>
+<p>Pages follow singulion order: first leaf recto and verso, then the second leaf recto and verso. Only the 20 studied pages have reconstructed sequences. The first line of each bifolium is supplied as a seed. The main source window is an eight-line spatial cone plus the last 50 words of the preceding page on the sheet. Startup priming additionally supplies 50 words from the preceding sheet to the first page.</p>
+<p>Route priority is exact copy, one glyph edit, aligned block replacement, prefix/suffix splice, aligned-part assembly, two glyph edits, then an explicit unexplained introduction. A long block replacement can involve several glyph changes. Distances use raw Zattera units and preserve initial gallows; they are not counts of native morpher operations.</p>
+<p>“No exact earlier page source” means the spelling has not occurred earlier on this page. It can still have an edit or component route. “No page source within 1 edit” checks every earlier word on the page, including words outside the cone. An unexplained introduction has no route under this study’s bounded operation menu and selected source policy. Missing geometry is shown separately.</p>
+<p>Solid outlines identify the selected word and its chosen parents. Click a word to dim everything outside its local source window, keeping that word and eligible sources bright. The cone outline is drawn above the word boxes. Click the selected word again, click empty page space, or press Escape to clear the selection. Uncheck “Dim outside source window” to restore the full-page colors while keeping the word selected. Earlier-page parents are linked separately. The strict grammar is the 3,110-string Figure-4 SLOT_MACHINE, distinct from the broad twelve-slot parser. No word was excluded for failing either grammar.</p>
+<p>Aggregate construction coverage does not measure the cone’s order-dependent association with repetition. Within-paragraph shuffling substantially reduces that association, especially in Stars. These paths address how forms can be built; a predictive mechanism must also reproduce when repetition occurs.</p>
+</details></main>
+<footer><p>Verified bifolium reconstruction study, 28 October 2026. Coordinates: © 2014 The Voynichese Project, Apache-2.0. <a href="data/mattr_heatmap/NOTICE.txt">Coordinate attribution</a> · <a href="heatmap.html#direction=spatial&colors=minedit">Explore source distances across the manuscript</a>.</p></footer>
+<script src="common.js?v=7ac91728ee"></script><script src="heatmap_sources.js?v=cacc5a9e4d"></script><script src="copy_math.js?v=57b1cd8324"></script><script src="reconstruction.js?v=dc1772c056"></script>
+</body></html>

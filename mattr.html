@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Governed self-citation · MATTR replay</title>
+<link rel="stylesheet" href="style.css?v=c5d23a58e5"><link rel="stylesheet" href="mattr.css?v=bb43a92a15"><script src="release.js?v=602db778c3"></script>
+<script src="site_nav.js?v=6157a44ebb" defer></script>
+</head><body class="mattr-replay"><nav class="site-nav"></nav>
+<main id="replayMain" aria-busy="true">
+<div id="replayError" role="alert" hidden></div>
+<section class="mr-deck panel" aria-label="Replay controls">
+ <div class="mr-controls">
+ <div class="mr-baseline"><span>Replay · seed 1</span><strong>Original Timm</strong></div>
+ <label>Region<select id="replayScope" disabled aria-label="Replay region"></select></label>
+ <label>Window<select id="replayWidth" aria-label="Measurement window"><option value="50">50 words</option><option value="100" selected>100 words</option><option value="200">200 words</option></select></label>
+ <div class="mr-transport"><button id="wordBack" aria-label="Previous word">←</button><button id="wordPlay" class="mr-primary" disabled aria-label="Play replay">▶ Play</button><button id="wordNext" aria-label="Next word">→</button>
+ <select id="replaySpeed" aria-label="Playback speed"><option value="1000">1 word/s</option><option value="200" selected>5 words/s</option><option value="67">15 words/s</option><option value="25">40 words/s</option></select><button id="readMethod">How to read</button></div></div>
+ <div class="mr-scrub"><span id="replayPosition">Loading saved replay…</span><input id="wordScrub" type="range" min="0" max="1" value="0" disabled aria-label="Word position in region"><span id="replayExtent"></span></div>
+</section>
+<div class="mr-workspace">
+<section class="panel mr-reader" aria-label="Continuous text replay">
+ <div class="mr-reader-head"><div><div class="eyebrow" id="folioGroup">CONTINUOUS TEXT</div><h1 id="folioTitle">MATTR replay</h1></div><select id="textView" aria-label="Text to display"><option value="model">Model text</option><option value="observed">Manuscript text</option></select><button id="followWord" aria-pressed="true">Following word</button></div>
+ <div class="mr-reader-tools"><select id="folioSelect" aria-label="Physical page"></select><div class="mr-text-key"><span class="key-repeat">Repeated in window</span><span class="key-single">Single occurrence</span><span class="key-future">Upcoming</span></div></div>
+ <div id="textViewport" tabindex="0" aria-label="Continuous manuscript-layout text; click a word to seek"><div id="pageText"></div></div>
+ <div class="mr-word-step" id="wordStep" aria-live="polite"></div>
+ <section class="mr-bars" aria-label="Vocabulary and repeated slots">
+ <div class="mr-bar-title"><h2>Vocabulary in view</h2><span><i></i>Distinct forms <i class="repeat"></i>Repeated slots</span></div>
+ <div class="mr-bar-row"><span id="windowLabel">Model · last 100 words</span><b id="windowCount"></b><div class="mr-bar-track" id="windowBar" role="img"></div><span class="mr-bar-share" id="windowShare"></span></div>
+ <div class="mr-bar-row"><span>Local source window <small id="localGate"></small></span><b id="localCount"></b><div class="mr-bar-track local" id="localBar" role="img"></div><span class="mr-bar-share" id="localShare"></span></div>
+ <div class="mr-bar-row"><span>Paragraph archive <small id="archiveGate"></small></span><b id="archiveCount"></b><div class="mr-bar-track archive" id="archiveBar" role="img"></div><span class="mr-bar-share" id="archiveShare"></span></div>
+ <p id="poolNote">Pool bars use different word counts; these shares are not MATTR comparisons.</p>
+ </section>
+</section>
+<section class="panel mr-comparison" aria-label="Model and manuscript diversity">
+ <div class="mr-graph-heading"><div><div class="eyebrow">MANUSCRIPT &amp; MODEL</div><h2 id="regionTitle">Diversity through the text</h2></div><div class="mr-graph-toggles"><button id="meanBars" aria-pressed="true">Means</button><button id="detailCurve" aria-pressed="true">Fine detail</button></div></div>
+ <p id="curveDefinition">MATTR · 100-word windows · mean of the latest 200 windows</p>
+ <div class="mr-readouts"><div class="observed"><span>Actual manuscript</span><strong id="observedValue">—</strong></div><div class="model"><span id="modelLabel">Original Timm</span><strong id="modelValue">—</strong></div><div class="difference"><span>Model − manuscript</span><strong id="differenceValue">—</strong></div></div>
+ <div class="mr-legend"><span class="observed">MS MATTR / mean</span><span class="model">Timm MATTR / mean</span><span class="band" id="bandLegend">Timm seeds 1–10 range</span><span class="drop">Sharp declines</span></div>
+ <div class="mr-chart-wrap"><canvas id="replayChart" role="img" aria-label="Aligned plots: actual manuscript above Original Timm; each shows MATTR, its single window scores and both bifolium means. Click to seek."></canvas></div>
+ <div id="bifolioReadout" class="mr-bifolio-readout"></div>
+ <div class="mr-jumps"><button id="jumpModelDrop">Next model decline</button><button id="jumpObservedDrop">Next MS decline</button><button id="jumpPage">Page reset</button><button id="jumpLow">Lowest window</button></div>
+ <p id="chartReadout" class="mr-chart-note"></p><p class="mr-alignment">X: manuscript words within this region. Model aligned by physical line and progress within it.</p>
+</section>
+</div></main>
+<dialog id="methodDialog"><div class="mr-dialog-head"><h2>Reading the replay</h2><button id="closeMethod" aria-label="Close explanation">Close</button></div>
+<p><b>The curves.</b> The scoring window holds the last 50, 100 or 200 tokens. Its distinct-spelling count divided by its size is a single window's diversity. Each bold MATTR curve averages the latest 200 complete window scores. The thin line beneath each curve is the individual window scores; “Fine detail” hides or shows it. The pale band behind each Original Timm mean is that bifolium’s range over ten seeds of Timm’s program under the same geometry (seed 1 is the replay); “Means” hides the means and the bands. History continues across page and bifolium boundaries.</p>
+<p><b>Actual manuscript.</b> Observed words come from the same paragraph-text transcription and physical page order as the geometry audit. Model and observed token counts differ: the graph aligns physical lines and fractional progress within a line. This is a layout comparison, not a word correspondence. The horizontal axis counts manuscript tokens; the replay slider counts generated tokens.</p>
+<p><b>Aligned plots.</b> The manuscript is above Original Timm. Both panels share the same horizontal alignment and MATTR scale on the left. Each panel shows its own text's curve.</p>
+<p><b>Bifolium means.</b> Both plots contain the same horizontal blue and ink bands: the exact MATTR of each bifolium, averaging only complete scoring windows wholly inside it. Each has a solid center line and end caps: blue for Timm, ink for the manuscript. The current bifolium's values appear below the graph.</p>
+<p><b>Sharp declines.</b> Amber marks below each plot indicate a loss of at least 0.05 over 100 of that text's own tokens in its MATTR curve. Overlapping intervals are merged. The rule is identical for both texts. This is a descriptive threshold, not a significance test or causal attribution. Jump buttons move to the start of the next interval and wrap at the end.</p>
+<p><b>The bars.</b> Each splits tokens into distinct forms and repeated slots (tokens minus forms). The first is the model's scoring window. Source bars use full eligible pools with different sizes; their shares are not length-controlled MATTR. Counts beside each bar show the denominator. Source forms use Timm's initial-gallows normalization; emitted text is scored by spelling.</p>
+<p><b>Source history.</b> Counts are saved availability at the start of the current model line, excluding unfinished text. The archive stores previous paragraph-opening lines except the seed; it stays stored while closed on body lines. The gold graph strip shows local source tokens. Native access resets before the last line of each page.</p>
+<p><b>Continuous reading.</b> The reader follows the word across pages. Scroll to browse; “Follow word” returns to playback. “Manuscript text” shows the aligned observed window. Source bars and the source-pair explanation still describe the model. Arrow keys step; Space plays or pauses. Only nearby text is rendered, and source words are not rebuilt during playback.</p>
+</dialog>
+<script src="common.js?v=7ac91728ee"></script><script src="mattr_math.js?v=7afbc4d60b"></script><script src="mattr_runtime.js?v=3c6a4ff036"></script><script src="mattr.js?v=706fa71bc1"></script>
+</body></html>

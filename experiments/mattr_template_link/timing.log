@@ -1,0 +1,197 @@
+
+== anchors_bio: 20 pages, 14 with a manuscript fall <= -0.10 (mean -0.148); manuscript page floor 0.50
+stream                      at MS anchors  page floor  other fam.  siblings  MS at stream anchors  mean d at MS anchors
+timm                                 0.59        0.49        0.73      0.85                  0.67                -0.031
+far0                                 0.64        0.47        0.81      0.83                  0.74                -0.062
+noinnov_far0                         0.67        0.49        0.78      0.88                  0.69                -0.042
+timm_spatial                         0.64        0.50        0.67      0.86                  0.60                -0.052
+noinnov_spatial                      0.60        0.50        0.65      0.62                  0.52                -0.013
+far0_spatial                         0.62        0.50        0.62      0.70                  0.57                -0.002
+buffer                               0.60        0.52        0.78      0.76                  0.43                -0.022
+pool                                 0.74        0.51        0.73      0.92                  0.67                -0.034
+ref_la_galen_simplicium              0.79        0.49        0.43         -                  0.57                -0.026
+ref_la_dioscorides_longob            0.50        0.52        0.64         -                  0.43                -0.023
+ref_la_rhazes_almansor               0.50        0.49        0.37         -                  0.43                -0.007
+ref_la_hildegard_physica             0.43        0.51        0.36         -                  0.36                +0.029
+ref_de_gart_augsburg1487             0.79        0.52        0.62         -                  0.79                -0.025
+ms_shuffled_in_paragraph             0.86        0.46        0.48      0.90                  0.93                -0.068
+ms_shuffled_in_page                  0.62        0.50        0.57      0.55                  0.55                -0.019
+
+== anchors_all: 206 pages, 54 with a manuscript fall <= -0.10 (mean -0.136); manuscript page floor 0.63
+stream                      at MS anchors  page floor  other fam.  siblings  MS at stream anchors  mean d at MS anchors
+timm                                 0.51        0.50        0.68      0.71                  0.65                -0.012
+far0                                 0.57        0.49        0.69      0.69                  0.71                -0.023
+noinnov_far0                         0.54        0.49        0.66      0.74                  0.65                -0.006
+timm_spatial                         0.51        0.47        0.61      0.65                  0.62                -0.011
+noinnov_spatial                      0.47        0.50        0.63      0.59                  0.57                -0.001
+far0_spatial                         0.51        0.49        0.58      0.63                  0.62                +0.001
+buffer                               0.56        0.52        0.65      0.66                  0.60                -0.014
+pool                                 0.59        0.49        0.68      0.75                  0.60                -0.011
+ref_la_galen_simplicium              0.56        0.49        0.42         -                  0.63                -0.008
+ref_la_dioscorides_longob            0.50        0.49        0.56         -                  0.54                -0.005
+ref_la_rhazes_almansor               0.35        0.46        0.42         -                  0.50                +0.010
+ref_la_hildegard_physica             0.48        0.49        0.44         -                  0.52                +0.014
+ref_de_gart_augsburg1487             0.50        0.50        0.52         -                  0.63                -0.001
+ms_shuffled_in_paragraph             0.96        0.60        0.57      0.95                  0.96                -0.087
+ms_shuffled_in_page                  0.73        0.57        0.57      0.75                  0.77                -0.042
+
+== Bio anchors of the 'opening in prior block, body only in next' type; base rate of such lines 0.10
+  manuscript                 0.15
+  timm                       0.02
+  far0                       0.15
+  noinnov_far0               0.20
+  timm_spatial               0.17
+  noinnov_spatial            0.23
+  far0_spatial               0.07
+  buffer                     0.08
+  pool                       0.03
+  ref_la_galen_simplicium    0.20
+  ref_la_dioscorides_longob  0.05
+  ref_la_rhazes_almansor     0.05
+  ref_la_hildegard_physica   0.15
+  ref_de_gart_augsburg1487   0.15
+  ms_shuffled_in_paragraph   0.10
+  ms_shuffled_in_page        0.13
+  mean fall by line class (Bio, eligible lines); class shares {'opening in prior, body next': 0.1, 'opening in next block': 0.88, 'no opening in either': 0.02}
+  manuscript                 opening in prior, body next: -0.050  opening in next block: +0.006  no opening in either: -0.037
+  timm                       opening in prior, body next: -0.017  opening in next block: -0.004  no opening in either: +0.025
+  far0                       opening in prior, body next: -0.053  opening in next block: +0.000  no opening in either: +0.052
+  noinnov_far0               opening in prior, body next: -0.040  opening in next block: +0.002  no opening in either: +0.040
+  timm_spatial               opening in prior, body next: -0.014  opening in next block: -0.003  no opening in either: +0.041
+  noinnov_spatial            opening in prior, body next: -0.041  opening in next block: +0.007  no opening in either: +0.009
+  far0_spatial               opening in prior, body next: -0.014  opening in next block: +0.005  no opening in either: +0.039
+  buffer                     opening in prior, body next: -0.011  opening in next block: -0.002  no opening in either: +0.014
+  pool                       opening in prior, body next: +0.011  opening in next block: -0.005  no opening in either: +0.015
+  ref_la_galen_simplicium    opening in prior, body next: -0.003  opening in next block: -0.002  no opening in either: -0.004
+  ref_la_dioscorides_longob  opening in prior, body next: -0.019  opening in next block: -0.000  no opening in either: +0.011
+  ref_la_rhazes_almansor     opening in prior, body next: +0.025  opening in next block: -0.004  no opening in either: -0.057
+  ref_la_hildegard_physica   opening in prior, body next: -0.008  opening in next block: -0.001  no opening in either: +0.028
+  ref_de_gart_augsburg1487   opening in prior, body next: -0.010  opening in next block: +0.002  no opening in either: -0.013
+  ms_shuffled_in_paragraph   opening in prior, body next: -0.006  opening in next block: +0.002  no opening in either: +0.010
+  ms_shuffled_in_page        opening in prior, body next: -0.012  opening in next block: +0.001  no opening in either: -0.011
+
+== correlation_bio: 781 lines; layout R^2 of the fall series: manuscript 0.11, timm 0.33, far0 0.26, noinnov_far0 0.16, timm_spatial 0.15, noinnov_spatial 0.10, far0_spatial 0.10, buffer 0.14, pool 0.39, ref_la_galen_simplicium 0.03, ref_la_dioscorides_longob 0.05, ref_la_rhazes_almansor 0.05, ref_la_hildegard_physica 0.05, ref_de_gart_augsburg1487 0.06
+  manuscript~timm                          raw +0.037  residual -0.029
+  manuscript~far0                          raw +0.208  residual +0.124
+  manuscript~noinnov_far0                  raw +0.186  residual +0.106
+  manuscript~timm_spatial                  raw +0.156  residual +0.127
+  manuscript~noinnov_spatial               raw +0.096  residual +0.012
+  manuscript~far0_spatial                  raw +0.050  residual +0.005
+  manuscript~buffer                        raw +0.023  residual -0.037
+  manuscript~pool                          raw +0.067  residual +0.051
+  manuscript~ref_la_galen_simplicium       raw +0.072  residual +0.063
+  manuscript~ref_la_dioscorides_longob     raw +0.067  residual +0.022
+  manuscript~ref_la_rhazes_almansor        raw -0.060  residual -0.042
+  manuscript~ref_la_hildegard_physica      raw -0.212  residual -0.220
+  manuscript~ref_de_gart_augsburg1487      raw +0.260  residual +0.222
+  manuscript~ms_shuffled_in_paragraph      raw +0.579  residual +0.602
+  manuscript~ms_shuffled_in_page           raw +0.049  residual +0.014
+  timm~timm (seeds)                        raw +0.386  residual +0.200
+  far0~far0 (seeds)                        raw +0.395  residual +0.242
+  noinnov_far0~noinnov_far0 (seeds)        raw +0.336  residual +0.202
+  timm_spatial~timm_spatial (seeds)        raw +0.342  residual +0.219
+  noinnov_spatial~noinnov_spatial (seeds)  raw +0.255  residual +0.208
+  far0_spatial~far0_spatial (seeds)        raw +0.211  residual +0.161
+  buffer~buffer (seeds)                    raw +0.293  residual +0.214
+  pool~pool (seeds)                        raw +0.482  residual +0.280
+  timm~far0                                raw +0.359  residual +0.242
+  timm~buffer                              raw +0.355  residual +0.236
+  far0~buffer                              raw +0.320  residual +0.218
+  timm~pool                                raw +0.450  residual +0.264
+  timm~timm_spatial                        raw +0.351  residual +0.193
+  noinnov_far0~noinnov_spatial             raw +0.250  residual +0.176
+  far0~far0_spatial                        raw +0.078  residual +0.012
+
+== correlation_all: 4103 lines; layout R^2 of the fall series: manuscript 0.02, timm 0.08, far0 0.07, noinnov_far0 0.07, timm_spatial 0.04, noinnov_spatial 0.03, far0_spatial 0.03, buffer 0.04, pool 0.06, ref_la_galen_simplicium 0.01, ref_la_dioscorides_longob 0.01, ref_la_rhazes_almansor 0.00, ref_la_hildegard_physica 0.01, ref_de_gart_augsburg1487 0.01
+  manuscript~timm                          raw +0.016  residual +0.011
+  manuscript~far0                          raw +0.050  residual +0.044
+  manuscript~noinnov_far0                  raw +0.023  residual +0.014
+  manuscript~timm_spatial                  raw +0.015  residual +0.009
+  manuscript~noinnov_spatial               raw +0.014  residual +0.002
+  manuscript~far0_spatial                  raw +0.030  residual +0.024
+  manuscript~buffer                        raw +0.036  residual +0.032
+  manuscript~pool                          raw +0.028  residual +0.030
+  manuscript~ref_la_galen_simplicium       raw +0.022  residual +0.021
+  manuscript~ref_la_dioscorides_longob     raw +0.022  residual +0.017
+  manuscript~ref_la_rhazes_almansor        raw -0.036  residual -0.032
+  manuscript~ref_la_hildegard_physica      raw -0.099  residual -0.100
+  manuscript~ref_de_gart_augsburg1487      raw +0.009  residual +0.009
+  manuscript~ms_shuffled_in_paragraph      raw +0.733  residual +0.739
+  manuscript~ms_shuffled_in_page           raw +0.314  residual +0.317
+  timm~timm (seeds)                        raw +0.243  residual +0.199
+  far0~far0 (seeds)                        raw +0.254  residual +0.213
+  noinnov_far0~noinnov_far0 (seeds)        raw +0.216  residual +0.171
+  timm_spatial~timm_spatial (seeds)        raw +0.192  residual +0.167
+  noinnov_spatial~noinnov_spatial (seeds)  raw +0.158  residual +0.130
+  far0_spatial~far0_spatial (seeds)        raw +0.114  residual +0.089
+  buffer~buffer (seeds)                    raw +0.198  residual +0.181
+  pool~pool (seeds)                        raw +0.259  residual +0.217
+  timm~far0                                raw +0.230  residual +0.192
+  timm~buffer                              raw +0.185  residual +0.153
+  far0~buffer                              raw +0.211  residual +0.184
+  timm~pool                                raw +0.231  residual +0.189
+  timm~timm_spatial                        raw +0.211  residual +0.176
+  noinnov_far0~noinnov_spatial             raw +0.177  residual +0.143
+  far0~far0_spatial                        raw +0.129  residual +0.102
+
+== shared vs local concentration (pages >= 150 tokens): coverage of a page by the GROUP's top-50 forms vs by its OWN top-50; top-20 Jaccard and cosine between pages
+manuscript
+  3c  pages  20 group-top50 0.318 own-top50 0.422 shared 0.76 jaccard 0.23 cosine 0.50
+  4c  pages   7 group-top50 0.449 own-top50 0.508 shared 0.88 jaccard 0.34 cosine 0.63
+  4a  pages  20 group-top50 0.490 own-top50 0.597 shared 0.82 jaccard 0.30 cosine 0.61
+timm
+  3c  pages  20 group-top50 0.426 own-top50 0.553 shared 0.77 jaccard 0.29 cosine 0.57
+  4c  pages   7 group-top50 0.431 own-top50 0.539 shared 0.80 jaccard 0.32 cosine 0.59
+  4a  pages  20 group-top50 0.426 own-top50 0.630 shared 0.68 jaccard 0.19 cosine 0.42
+far0
+  3c  pages  20 group-top50 0.355 own-top50 0.480 shared 0.74 jaccard 0.25 cosine 0.48
+  4c  pages   7 group-top50 0.429 own-top50 0.523 shared 0.82 jaccard 0.27 cosine 0.55
+  4a  pages  20 group-top50 0.444 own-top50 0.626 shared 0.71 jaccard 0.19 cosine 0.41
+noinnov_far0
+  3c  pages  20 group-top50 0.398 own-top50 0.516 shared 0.77 jaccard 0.29 cosine 0.53
+  4c  pages   7 group-top50 0.447 own-top50 0.538 shared 0.83 jaccard 0.28 cosine 0.58
+  4a  pages  20 group-top50 0.468 own-top50 0.645 shared 0.73 jaccard 0.19 cosine 0.40
+timm_spatial
+  3c  pages  20 group-top50 0.368 own-top50 0.474 shared 0.78 jaccard 0.30 cosine 0.58
+  4c  pages   7 group-top50 0.379 own-top50 0.463 shared 0.82 jaccard 0.33 cosine 0.59
+  4a  pages  20 group-top50 0.372 own-top50 0.550 shared 0.68 jaccard 0.21 cosine 0.45
+noinnov_spatial
+  3c  pages  20 group-top50 0.421 own-top50 0.530 shared 0.79 jaccard 0.35 cosine 0.64
+  4c  pages   7 group-top50 0.426 own-top50 0.526 shared 0.81 jaccard 0.30 cosine 0.59
+  4a  pages  20 group-top50 0.431 own-top50 0.596 shared 0.72 jaccard 0.23 cosine 0.46
+far0_spatial
+  3c  pages  20 group-top50 0.339 own-top50 0.456 shared 0.74 jaccard 0.27 cosine 0.49
+  4c  pages   7 group-top50 0.393 own-top50 0.480 shared 0.82 jaccard 0.30 cosine 0.54
+  4a  pages  20 group-top50 0.387 own-top50 0.580 shared 0.67 jaccard 0.18 cosine 0.38
+buffer
+  3c  pages  20 group-top50 0.330 own-top50 0.426 shared 0.77 jaccard 0.26 cosine 0.53
+  4c  pages   7 group-top50 0.415 own-top50 0.472 shared 0.88 jaccard 0.36 cosine 0.68
+  4a  pages  20 group-top50 0.459 own-top50 0.558 shared 0.82 jaccard 0.36 cosine 0.67
+pool
+  3c  pages  20 group-top50 0.302 own-top50 0.377 shared 0.80 jaccard 0.27 cosine 0.53
+  4c  pages   7 group-top50 0.369 own-top50 0.408 shared 0.91 jaccard 0.37 cosine 0.70
+  4a  pages  20 group-top50 0.404 own-top50 0.489 shared 0.83 jaccard 0.34 cosine 0.64
+ref_la_galen_simplicium
+  3c  pages  20 group-top50 0.435 own-top50 0.543 shared 0.80 jaccard 0.32 cosine 0.73
+  4c  pages   7 group-top50 0.453 own-top50 0.527 shared 0.86 jaccard 0.35 cosine 0.79
+  4a  pages  20 group-top50 0.411 own-top50 0.550 shared 0.75 jaccard 0.25 cosine 0.70
+ref_la_dioscorides_longob
+  3c  pages  20 group-top50 0.279 own-top50 0.424 shared 0.66 jaccard 0.17 cosine 0.47
+  4c  pages   7 group-top50 0.337 own-top50 0.423 shared 0.80 jaccard 0.25 cosine 0.67
+  4a  pages  20 group-top50 0.319 own-top50 0.455 shared 0.70 jaccard 0.19 cosine 0.62
+ref_la_rhazes_almansor
+  3c  pages  20 group-top50 0.318 own-top50 0.488 shared 0.65 jaccard 0.16 cosine 0.52
+  4c  pages   7 group-top50 0.361 own-top50 0.434 shared 0.83 jaccard 0.33 cosine 0.65
+  4a  pages  20 group-top50 0.358 own-top50 0.487 shared 0.73 jaccard 0.24 cosine 0.58
+ref_la_hildegard_physica
+  3c  pages  20 group-top50 0.430 own-top50 0.536 shared 0.80 jaccard 0.28 cosine 0.82
+  4c  pages   7 group-top50 0.440 own-top50 0.511 shared 0.86 jaccard 0.32 cosine 0.88
+  4a  pages  20 group-top50 0.436 own-top50 0.561 shared 0.78 jaccard 0.25 cosine 0.82
+ref_de_gart_augsburg1487
+  3c  pages  20 group-top50 0.336 own-top50 0.426 shared 0.79 jaccard 0.33 cosine 0.62
+  4c  pages   7 group-top50 0.335 own-top50 0.405 shared 0.83 jaccard 0.37 cosine 0.65
+  4a  pages  20 group-top50 0.349 own-top50 0.450 shared 0.78 jaccard 0.30 cosine 0.57
+
+== natural texts with their own paragraphs: fresh rate by tokens since paragraph start
+  la_hildegard_physica     paragraphs 291 median 89 words: 0-1:0.990 1-5:0.547 5-10:0.606 10-20:0.619 20-40:0.613 40-80:0.608 80-10000:0.595
+  de_gart_augsburg1487     paragraphs 99 median 734 words: 0-1:0.792 1-5:0.948 5-10:0.892 10-20:0.767 20-40:0.740 40-80:0.723 80-10000:0.718

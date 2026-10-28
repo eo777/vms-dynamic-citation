@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Governed self-citation</title>
+<link rel="stylesheet" href="style.css?v=c5d23a58e5">
+<script src="release.js?v=602db778c3"></script>
+<script src="site_nav.js?v=6157a44ebb" defer></script>
+<style>.ov p,.ov li{font-size:14.5px;line-height:1.55}.ov ul{margin:0;padding-left:20px}.ov li{margin:0 0 6px}.ov li ul{margin-top:6px}.runs-table td,.runs-table th{vertical-align:top}.runs-table .runcell{white-space:nowrap;line-height:1.35}.runs-table td:nth-child(2){min-width:280px}</style>
+</head><body>
+<nav class="site-nav"></nav>
+<header class="masthead"><div class="eyebrow">GOVERNED SELF-CITATION</div><h1>Overview</h1>
+<p class="sub">Timm's self-citation generator guided by preferences for component patterns. Compare the generated texts against the manuscript, with page replay for the original featured runs.</p></header>
+<main class="ov">
+<section class="panel"><h2>What this is</h2>
+<ul>
+<li><b>The generator.</b> Torsten Timm's program writes Voynich-like text by copying a word from the lines above and changing it slightly: replace a glyph, add or drop a prefix, join two words, split one.</li>
+<li><b>The model.</b> A fitted positional model gives, for each of 50 bifolia in the proposed order, the expected share of 1,324 spelling constructions (prefixes, suffixes, interior spans, patterns).</li>
+<li><b>The governor.</b> Three hooks let the model steer two of Timm's draws: which word is copied, and whether a change is kept. The steering signal is the gap between the model's target and the text written so far.</li>
+<li><b>The innovator.</b> Where the text runs short of new spellings, the governor replaces a repeated proposal by an edit or a join of it, chosen by the same signal.</li>
+</ul>
+<p style="margin:12px 0 6px"><b>The original runs.</b> The table below describes the original featured configurations. The <a href="comparison.html">Comparison tab</a> adds the full-length page-access, morpher-pressure, bounded-editor and motif experiments, with rankings, entropy, diversity checks and short text examples. The Runs menu makes all methods selectable in Charts and Innovation; the original three page replays are retained.</p>
+<div class="table-wrap"><table class="runs-table"><thead><tr><th>Run</th><th>Where the copied words come from</th><th>Innovator</th><th class="num">Seeds</th><th>Shown as</th></tr></thead><tbody>
+<tr><td class="runcell"><span class="rn" style="--c:var(--run-timm)"><b>Original Timm</b></span></td><td>The page window, by Timm's own draw; no steering.</td><td>—</td><td class="num">1</td><td>page replay</td></tr>
+<tr><td class="runcell"><span class="rn" style="--c:var(--run-governed)"><b>Governed + innovator</b></span></td><td>50% of the copies are taken from the page window, 50% from the 100 most recently used words (a running memory).</td><td>yes</td><td class="num">3</td><td>page replay</td></tr>
+<tr><td class="runcell"><span class="rn" style="--c:var(--run-far0)"><b>Governed + innovator</b></span>,<br>far 0</td><td>Only the page window.</td><td>yes</td><td class="num">3</td><td>page replay</td></tr>
+<tr><td class="runcell"><span class="rn" style="--c:var(--run-pool)"><b>Governed + innovator</b></span>,<br>token pool of 2,000</td><td>50% of the copies are taken from the page window, 50% from the last 2,000 words written.</td><td>yes</td><td class="num">3</td><td>statistics</td></tr>
+<tr><td class="runcell"><span class="rn" style="--c:#3a8f4d"><b>Governed, no innovator</b></span>,<br>far 0</td><td>Only the page window.</td><td>no</td><td class="num">3</td><td>statistics</td></tr>
+<tr><td class="runcell"><span class="rn" style="--c:var(--run-list70)"><b>Governed + innovator</b></span>,<br>sheet of 70 words, rewritten twice</td><td>50% of the copies are taken from the page window, 50% from a sheet of 70 words kept beside the page. The sheet holds the first 70 different words of the text; it is rewritten with the 70 most recently used words where Herbal A ends and Herbal B begins, and again where the Bio pages begin.</td><td>yes</td><td class="num">1</td><td>statistics</td></tr>
+<tr><td class="runcell"><span class="rn" style="--c:var(--run-list70p)"><b>Governed + innovator</b></span>,<br>sheet of 70 words, remade per section</td><td>50% of the copies are taken from the page window, 50% from a sheet of 70 words kept beside the page. The sheet is rewritten at the start of every section with the 70 words that best fit what the model expects there.</td><td>yes</td><td class="num">1</td><td>statistics</td></tr>
+</tbody></table></div>
+</section>
+<section class="panel" style="margin-top:14px"><h2>Headline results</h2><div id="headline"><p class="loading">Loading…</p></div>
+<p class="chart-note">Scored on the first 34,977 tokens, aligned with the bifolia by cumulative count. Word distance: total variation between the run's and the manuscript's bag of words per bifolium, token-weighted. Construction error: mean absolute share error over the <span id="commonCount">common</span> constructions with at least 100 tokens.</p></section>
+<section class="panel" style="margin-top:14px"><h2>Pages</h2>
+<div class="table-wrap"><table><tbody>
+<tr><td><a href="reconstruction.html">Reconstruction</a></td><td>Follow possible manuscript copying paths in singulion order. Inspect earlier parents, edit distances, alternative sources and words that remain unexplained.</td></tr>
+<tr><td><a href="comparison.html">Comparison</a></td><td>Rank all full-length methods across six metric families. Inspect all 19 diagnostics, bifolium profiles, highlighted text, diversity failures, and governor / innovation switches. Share links preserve the selected state.</td></tr>
+<tr><td><a href="pages.html">Pages</a></td><td>Browse every generated page of each run. Click a bifolium on the timeline for its results. Overlays mark new forms, innovator words, operations, hapaxes. Play a page to watch each word being sourced, changed and accepted.</td></tr>
+<tr><td><a href="innovation.html">Innovation</a></td><td>First appearances along the path and by slot, the shape of new forms, the innovator's firings and the governor's accept/reject counts.</td></tr>
+<tr><td><a href="charts.html">Charts</a></td><td>Word distance, construction error and vocabulary richness (moving-average type-token ratio) per bifolium, construction shares against the fitted target, word counts, rank–frequency, vocabulary growth, glyph and word bigrams.</td></tr>
+<tr><td><a href="validation.html">Validation</a></td><td>Held-out bifolia and pages: scores, per-bifolium comparisons where the targets never saw the bifolium, key constructions under held targets, and the pressure-scaling series.</td></tr>
+<tr><td><a href="modifications.html">Modifications</a></td><td>Every change to Timm's code as a diff, the two added files, the runtime switches and the governor's rules.</td></tr>
+</tbody></table></div></section>
+<section class="panel" style="margin-top:14px"><h2>Caveats</h2><ul>
+<li>Everything is conditional on the proposed order of the bifolia and on the fitted model; neither is tested here.</li>
+<li>The model supplies expected component shares. The comparison uses manuscript text in Path 1 order for sequential statistics; generated text is evaluated in matching token-budget intervals. The comparison labels do not change the generator's component-based preference trajectory.</li>
+<li>Generated pages follow the manuscript's page and line geometry along the route (characters per line, paragraph ends, page ends); the words are the generator's, the layout is the manuscript's.</li>
+<li>The governed run is one realisation of a stochastic process; the seed ranges show how much the summary statistics move.</li>
+</ul></section>
+</main>
+<footer><p id="foot">Governed self-citation study, 24 October 2026. Model positional-composition-544-v1. Generator: SelfCitationTextgenerator by Torsten Timm.</p></footer>
+<script src="common.js?v=7ac91728ee"></script><script src="comparison_data.js?v=bb31331f9f"></script>
+<script>
+(async()=>{const {$,esc,fmt,int,pct,mean,sum,load,error}=SG;
+try{const S=await SC.statistics(),Mf=await load('data/manifest.json');const N=S.N,wmean=v=>sum(v.map((x,i)=>x*N[i]))/sum(N);
+ $('commonCount').textContent=int(S.effects.names.length);
+ const runs=SG.visibleRuns(S.runs);const seeds=id=>runs.find(r=>r.id===id).seeds;const rng=(id,get)=>{const v=seeds(id).map(get);const m=mean(v);return v.length>1&&Math.min(...v)!==Math.max(...v)?[m,Math.min(...v),Math.max(...v)]:[m];};
+ const cell=(a,d,s='')=>a.length>1?`${fmt(a[0],d)}${s} <span class="muted small" title="half the spread of the seeds: ${fmt(a[1],d)}–${fmt(a[2],d)}">±${fmt((a[2]-a[1])/2,d)}</span>`:fmt(a[0],d)+s;
+ const rows=[['Word distance to the manuscript (TV)',()=>0,id=>rng(id,s=>wmean(S.tv_by_node[s])),3,'',fmt(wmean(S.tv_by_node['fitted i.i.d. sample']),3)],
+  ['Construction share error, pp',()=>0,id=>rng(id,s=>wmean(S.mae_by_node[s])),2,'',fmt(wmean(S.mae_by_node['fitted i.i.d. sample']),2)],
+  ['Distinct forms',()=>S.streams.observed.profile.types,id=>rng(id,s=>S.streams[s].profile.types),0,'','—'],
+  ['First appearances per 1,000, early / late',()=>null,null,0,'','—'],
+  ['Manuscript hapaxes reproduced',()=>S.streams.observed.profile.hapax_reproduced,id=>rng(id,s=>S.streams[s].profile.hapax_reproduced),0,'','—'],
+  ['Words in degenerate stretches (rolling diversity below 0.5)',()=>100*(S.streams.observed.profile.degenerate_share||0),id=>rng(id,s=>100*(S.streams[s].profile.degenerate_share||0)),2,'%','—']];
+ const early=id=>rng(id,s=>S.streams[s].profile.new_per_1000_first10k),late=id=>rng(id,s=>S.streams[s].profile.new_per_1000_last10k);
+ const o=S.streams.observed.profile;
+ $('headline').innerHTML=`<div class="table-wrap"><table><thead><tr><th></th><th class="num">Observed</th>${runs.map(r=>`<th class="num">${SG.runName(r,r.short)}</th>`).join('')}<th class="num">Fitted model, i.i.d. sample</th></tr></thead><tbody>${rows.map(([l,ob,get,d,s,floor])=>`<tr><td>${esc(l)}</td><td class="num">${l.startsWith('First')?`${fmt(o.new_per_1000_first10k,0)} / ${fmt(o.new_per_1000_last10k,0)}`:fmt(ob(),d)+s}</td>${runs.map(r=>`<td class="num">${l.startsWith('First')?`${cell(early(r.id),0)} / ${cell(late(r.id),0)}`:cell(get(r.id),d,s)}</td>`).join('')}<td class="num">${floor}</td></tr>`).join('')}</tbody></table></div>`;
+ $('foot').textContent+=` Runs: ${Mf.seed_runs.map(r=>r.seed_run).join(', ')}.`;
+}catch(e){error($('headline'),e);}})();
+</script>
+</body></html>

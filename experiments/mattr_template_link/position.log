@@ -1,0 +1,20 @@
+manuscript    pairs/seed 6925: mean offset observed 0.265 vs null 0.272 ratio 0.975; within 0.1: 0.240 vs 0.230 ratio 1.05 | up1:1.00 up2:0.93 up3:0.98 up4:0.99 up5:0.97
+timm          pairs/seed 11633: mean offset observed 0.274 vs null 0.279 ratio 0.984; within 0.1: 0.239 vs 0.225 ratio 1.06 | up1:0.96 up2:0.99 up3:0.99 up4:0.99 up5:0.99
+far0          pairs/seed 12741: mean offset observed 0.274 vs null 0.277 ratio 0.988; within 0.1: 0.236 vs 0.226 ratio 1.05 | up1:0.98 up2:1.00 up3:1.00 up4:1.00 up5:0.97
+noinnov_far0  pairs/seed 15623: mean offset observed 0.282 vs null 0.283 ratio 0.998; within 0.1: 0.230 vs 0.222 ratio 1.03 | up1:1.00 up2:0.99 up3:1.00 up4:1.00 up5:1.00
+timm_spatial  pairs/seed 9996: mean offset observed 0.258 vs null 0.279 ratio 0.925; within 0.1: 0.273 vs 0.226 ratio 1.21 | up1:0.82 up2:0.90 up3:0.96 up4:0.99 up5:1.03
+noinnov_spatial pairs/seed 18218: mean offset observed 0.271 vs null 0.288 ratio 0.940; within 0.1: 0.261 vs 0.220 ratio 1.18 | up1:0.85 up2:0.92 up3:0.97 up4:1.00 up5:1.02
+far0_spatial  pairs/seed 12597: mean offset observed 0.253 vs null 0.278 ratio 0.910; within 0.1: 0.280 vs 0.227 ratio 1.23 | up1:0.81 up2:0.88 up3:0.94 up4:0.99 up5:1.00
+buffer        pairs/seed 5962: mean offset observed 0.266 vs null 0.272 ratio 0.979; within 0.1: 0.244 vs 0.231 ratio 1.06 | up1:0.98 up2:0.99 up3:0.99 up4:0.96 up5:0.98
+pool          pairs/seed 4736: mean offset observed 0.261 vs null 0.270 ratio 0.967; within 0.1: 0.253 vs 0.231 ratio 1.10 | up1:0.94 up2:0.98 up3:0.97 up4:0.99 up5:0.97
+
+by group (ratio of mean offsets):
+manuscript    1a:0.99 1b:0.98 1.5a:1.00 2a:1.03 5a:1.00 6:0.97 3b:0.97 3a:1.05 3c:0.96 4c:0.92 4a:0.99
+timm          1a:0.97 1b:0.98 1.5a:0.98 2a:0.96 5a:0.96 6:0.98 3b:0.97 3a:0.97 3c:0.99 4c:0.99 4a:0.99
+far0          1a:1.00 1b:1.00 1.5a:0.99 2a:1.00 5a:0.91 6:0.95 3b:0.94 3a:1.01 3c:0.98 4c:0.98 4a:0.99
+noinnov_far0  1a:1.00 1b:0.99 1.5a:1.02 2a:1.02 5a:1.08 6:1.00 3b:1.00 3a:1.00 3c:0.97 4c:0.98 4a:1.01
+timm_spatial  1a:0.95 1b:0.96 1.5a:0.97 2a:0.86 5a:0.96 6:0.92 3b:0.87 3a:0.90 3c:0.96 4c:0.92 4a:0.91
+noinnov_spatial 1a:0.98 1b:1.01 1.5a:1.00 2a:0.91 5a:1.00 6:0.89 3b:0.91 3a:0.94 3c:0.95 4c:0.93 4a:0.91
+far0_spatial  1a:0.97 1b:0.95 1.5a:0.98 2a:0.87 5a:0.92 6:0.84 3b:0.88 3a:0.88 3c:0.91 4c:0.89 4a:0.91
+buffer        1a:0.96 1b:1.01 1.5a:0.98 2a:0.96 5a:1.08 6:0.99 3b:1.01 3a:0.96 3c:0.99 4c:0.97 4a:0.97
+pool          1a:0.99 1b:0.97 1.5a:0.97 2a:0.95 5a:0.98 6:1.01 3b:0.96 3a:0.98 3c:0.97 4c:0.97 4a:0.95

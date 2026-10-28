@@ -1,0 +1,370 @@
+{
+ "manuscript, recorded boxes": {
+  "worddiv": 0.020369789332138177,
+  "components": 0.03366266604478968,
+  "pool_size": -0.04381411907386373,
+  "worddiv_by_pool_size": [
+   0.04377650793305521,
+   0.07523540663113015,
+   0.11140028538910285
+  ],
+  "components_by_pool_size": [
+   0.06671696460657467,
+   0.05446058016097133,
+   0.06301800373955702
+  ],
+  "bio_worddiv_by_pool_size": [
+   -0.0021629213483147502,
+   0.03129888473845571,
+   0.0948048048048048
+  ],
+  "worddiv_by_pool_size_mean": 0.07680406665109607,
+  "components_by_pool_size_mean": 0.061398516169034335,
+  "bio_worddiv_by_pool_size_mean": 0.041313589398315254
+ },
+ "manuscript shuffled within paragraphs": {
+  "worddiv": -0.00730329723573403,
+  "components": 0.007709524900910036,
+  "pool_size": -0.0011866574426911414,
+  "worddiv_by_pool_size": [
+   0.009010929564811532,
+   0.0020366162377191688,
+   0.021907738682127587
+  ],
+  "components_by_pool_size": [
+   0.02618087545536013,
+   -0.0003750018848862613,
+   0.036251798561151016
+  ],
+  "bio_worddiv_by_pool_size": [
+   0.05084033613445377,
+   0.05062176165803106,
+   0.019459459459459427
+  ],
+  "worddiv_by_pool_size_mean": 0.01098509482821943,
+  "components_by_pool_size_mean": 0.020685890710541627,
+  "bio_worddiv_by_pool_size_mean": 0.04030718575064809
+ },
+ "manuscript shuffled within pages": {
+  "worddiv": -0.010681056129565991,
+  "components": -0.0062843374801099805,
+  "pool_size": -0.012538725810460838,
+  "worddiv_by_pool_size": [
+   0.0013242480883340346,
+   -0.007584243138083924,
+   -0.010795308461654052
+  ],
+  "components_by_pool_size": [
+   0.02318419956843043,
+   -0.017226950354609916,
+   -0.0008705035971223185
+  ],
+  "bio_worddiv_by_pool_size": [
+   -0.036264044943820295,
+   -0.02051813471502595,
+   -0.05205112297926667
+  ],
+  "worddiv_by_pool_size_mean": -0.005685101170467981,
+  "components_by_pool_size_mean": 0.001695581872232732,
+  "bio_worddiv_by_pool_size_mean": -0.03627776754603764
+ },
+ "timm (synthetic boxes)": {
+  "worddiv": 0.13447068240944554,
+  "components": 0.11917350410246164,
+  "pool_size": 0.05254480210257029,
+  "worddiv_by_pool_size": [
+   0.09482022471910112,
+   0.15465129682997125,
+   0.15014482758620695
+  ],
+  "components_by_pool_size": [
+   0.10684831460674171,
+   0.1078328530259367,
+   0.09650344827586216
+  ],
+  "bio_worddiv_by_pool_size": [
+   0.15909090909090917,
+   0.19507246376811604,
+   0.1908115183246072
+  ],
+  "worddiv_by_pool_size_mean": 0.13320544971175977,
+  "components_by_pool_size_mean": 0.10372820530284686,
+  "bio_worddiv_by_pool_size_mean": 0.1816582970612108
+ },
+ "noinnov_far0 (synthetic boxes)": {
+  "worddiv": 0.08728310502283093,
+  "components": 0.11442922374429221,
+  "pool_size": 0.014310184956682459,
+  "worddiv_by_pool_size": [
+   0.10184025903939559,
+   0.07894164759725425,
+   0.1100859950859952
+  ],
+  "components_by_pool_size": [
+   0.12649757150566643,
+   0.11211098398169339,
+   0.09935503685503688
+  ],
+  "bio_worddiv_by_pool_size": [
+   0.10002475247524756,
+   0.10944954128440354,
+   0.11067226890756299
+  ],
+  "worddiv_by_pool_size_mean": 0.09695596724088168,
+  "components_by_pool_size_mean": 0.1126545307807989,
+  "bio_worddiv_by_pool_size_mean": 0.10671552088907137
+ },
+ "timm_spatial (synthetic boxes)": {
+  "worddiv": 0.11865778484788231,
+  "components": 0.1140584609266257,
+  "pool_size": 0.018620728328006764,
+  "worddiv_by_pool_size": [
+   0.12035734226688993,
+   0.14491228070175444,
+   0.138165443629086
+  ],
+  "components_by_pool_size": [
+   0.13350642099385818,
+   0.12470760233918127,
+   0.10303535690460319
+  ],
+  "bio_worddiv_by_pool_size": [
+   0.08414758269720107,
+   0.12671679197994995,
+   0.1603532608695652
+  ],
+  "worddiv_by_pool_size_mean": 0.13447835553257678,
+  "components_by_pool_size_mean": 0.12041646007921421,
+  "bio_worddiv_by_pool_size_mean": 0.1237392118489054
+ },
+ "noinnov_spatial (synthetic boxes)": {
+  "worddiv": 0.078289812431041,
+  "components": 0.10369805075395361,
+  "pool_size": -0.04123684318701565,
+  "worddiv_by_pool_size": [
+   0.0963076126359399,
+   0.1201411631846413,
+   0.17062608695652187
+  ],
+  "components_by_pool_size": [
+   0.16535991714137782,
+   0.09706945228684355,
+   0.14732173913043473
+  ],
+  "bio_worddiv_by_pool_size": [
+   0.06103448275862067,
+   0.09963963963963968,
+   0.2003482587064676
+  ],
+  "worddiv_by_pool_size_mean": 0.12902495425903435,
+  "components_by_pool_size_mean": 0.13658370285288537,
+  "bio_worddiv_by_pool_size_mean": 0.12034079370157598
+ },
+ "far0_spatial (synthetic boxes)": {
+  "worddiv": 0.06151680842446333,
+  "components": 0.10731470230862689,
+  "pool_size": -0.05066435592485152,
+  "worddiv_by_pool_size": [
+   0.07762916188289304,
+   0.07398715703444259,
+   0.14425429553264602
+  ],
+  "components_by_pool_size": [
+   0.11986796785304238,
+   0.09036777583187378,
+   0.16355326460481096
+  ],
+  "bio_worddiv_by_pool_size": [
+   0.06532019704433506,
+   0.06721461187214617,
+   0.21877840909090912
+  ],
+  "worddiv_by_pool_size_mean": 0.09862353814999388,
+  "components_by_pool_size_mean": 0.12459633609657571,
+  "bio_worddiv_by_pool_size_mean": 0.11710440600246345
+ },
+ "far0 (synthetic boxes)": {
+  "worddiv": 0.10042574862497461,
+  "components": 0.13702790792422082,
+  "pool_size": 0.027018326339196708,
+  "worddiv_by_pool_size": [
+   0.11054213317619327,
+   0.10561329305135952,
+   0.09499999999999997
+  ],
+  "components_by_pool_size": [
+   0.14265173836181483,
+   0.1262598187311177,
+   0.09715223097112857
+  ],
+  "bio_worddiv_by_pool_size": [
+   0.016004962779156418,
+   0.07017811704834614,
+   0.03724137931034477
+  ],
+  "worddiv_by_pool_size_mean": 0.10371847540918426,
+  "components_by_pool_size_mean": 0.12202126268802037,
+  "bio_worddiv_by_pool_size_mean": 0.041141486379282444
+ },
+ "buffer (synthetic boxes)": {
+  "worddiv": 0.060642002176278575,
+  "components": 0.054511425462459184,
+  "pool_size": 0.03427962864728734,
+  "worddiv_by_pool_size": [
+   0.08286229705351777,
+   0.052829331602855245,
+   0.05484210526315797
+  ],
+  "components_by_pool_size": [
+   0.092928442573662,
+   0.04138870863075933,
+   0.02047368421052631
+  ],
+  "bio_worddiv_by_pool_size": [
+   0.11442934782608694,
+   0.08598382749326139,
+   0.05784660766961647
+  ],
+  "worddiv_by_pool_size_mean": 0.06351124463984366,
+  "components_by_pool_size_mean": 0.051596945138315885,
+  "bio_worddiv_by_pool_size_mean": 0.08608659432965493
+ },
+ "pool (synthetic boxes)": {
+  "worddiv": 0.08976807025444719,
+  "components": 0.09275163251519927,
+  "pool_size": 0.0641635294772967,
+  "worddiv_by_pool_size": [
+   0.07797368421052636,
+   0.06262939958592137,
+   0.047568710359408045
+  ],
+  "components_by_pool_size": [
+   0.11728947368421055,
+   0.037805383022774336,
+   0.04487667371388304
+  ],
+  "bio_worddiv_by_pool_size": [
+   0.04858666666666667,
+   0.024930747922437657,
+   0.06511326860841427
+  ],
+  "worddiv_by_pool_size_mean": 0.06272393138528526,
+  "components_by_pool_size_mean": 0.06665717680695597,
+  "bio_worddiv_by_pool_size_mean": 0.046210227732506194
+ },
+ "bigram whole (recorded boxes)": {
+  "worddiv": -0.0005417421149961632,
+  "components": 0.0181117243911591,
+  "pool_size": 9.292412200917477e-05,
+  "worddiv_by_pool_size": [
+   -0.010249842889143268,
+   0.009888412538224034,
+   -0.024571676181377206
+  ],
+  "components_by_pool_size": [
+   0.011139795120110985,
+   0.023560747356253797,
+   0.0238468886292022
+  ],
+  "bio_worddiv_by_pool_size": [
+   -0.02086260346835364,
+   0.00831168831168827,
+   -0.0004833836858005869
+  ],
+  "worddiv_by_pool_size_mean": -0.00831103551076548,
+  "components_by_pool_size_mean": 0.01951581036852233,
+  "bio_worddiv_by_pool_size_mean": -0.004344766280821986
+ },
+ "bigram by Currier language (recorded boxes)": {
+  "worddiv": 0.003983355825461055,
+  "components": 0.017692005740423955,
+  "pool_size": 0.010439155714259019,
+  "worddiv_by_pool_size": [
+   4.033595325619865e-05,
+   0.019291412788624285,
+   -0.028468135055612298
+  ],
+  "components_by_pool_size": [
+   0.028745161416094733,
+   0.02375569875925751,
+   0.019106133010579895
+  ],
+  "bio_worddiv_by_pool_size": [
+   0.007932960893854812,
+   0.006389610389610445,
+   -0.010161795217122266
+  ],
+  "worddiv_by_pool_size_mean": -0.0030454621045772714,
+  "components_by_pool_size_mean": 0.023868997728644047,
+  "bio_worddiv_by_pool_size_mean": 0.001386925355447664
+ },
+ "bigram by section (recorded boxes)": {
+  "worddiv": -0.008868268192556206,
+  "components": 0.014119071741738765,
+  "pool_size": -0.0019406783692497709,
+  "worddiv_by_pool_size": [
+   -0.0035038221273999692,
+   0.0015001353776024073,
+   0.025508188824662714
+  ],
+  "components_by_pool_size": [
+   0.020986883198001294,
+   0.012510668563300131,
+   0.01173365597207976
+  ],
+  "bio_worddiv_by_pool_size": [
+   -0.03289135118497999,
+   -0.0014025974025972943,
+   0.036980671932442644
+  ],
+  "worddiv_by_pool_size_mean": 0.00783483402495505,
+  "components_by_pool_size_mean": 0.015077069244460395,
+  "bio_worddiv_by_pool_size_mean": 0.0008955744482884535
+ },
+ "Galen, box reflow, recorded boxes": {
+  "worddiv": 0.007094962825435258,
+  "components": -0.039241699132204544,
+  "pool_size": -0.015437376076893827,
+  "worddiv_by_pool_size": [
+   -0.01571940671829275,
+   0.02593424761543195,
+   0.051546558704453405
+  ],
+  "components_by_pool_size": [
+   -0.08999739174830551,
+   -0.02203333253512213,
+   -0.03467361738925362
+  ],
+  "bio_worddiv_by_pool_size": [
+   -0.02721922348484851,
+   0.05167718873418076,
+   0.035836065573770504
+  ],
+  "worddiv_by_pool_size_mean": 0.020587133200530867,
+  "components_by_pool_size_mean": -0.04890144722422709,
+  "bio_worddiv_by_pool_size_mean": 0.020098010274367584
+ },
+ "Galen, box reflow, synthetic boxes": {
+  "worddiv": 0.10136669658886893,
+  "components": 0.01720152603231595,
+  "pool_size": 0.004650141335521052,
+  "worddiv_by_pool_size": [
+   0.07698681732580026,
+   0.15705533596837956,
+   0.16608097784568365
+  ],
+  "components_by_pool_size": [
+   -0.0012994350282485856,
+   0.01029644268774721,
+   0.028418640183346167
+  ],
+  "bio_worddiv_by_pool_size": [
+   0.12197802197802199,
+   0.08223118279569891,
+   0.1677370030581039
+  ],
+  "worddiv_by_pool_size_mean": 0.13337437704662117,
+  "components_by_pool_size_mean": 0.012471882614281596,
+  "bio_worddiv_by_pool_size_mean": 0.12398206927727494
+ }
+}

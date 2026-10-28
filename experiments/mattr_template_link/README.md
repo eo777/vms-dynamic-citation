@@ -1,0 +1,126 @@
+# Template availability test: reproduction kit
+
+Are the manuscript's MATTR drops the collapses that copying from the page produces in the self-citation
+generators? This folder holds everything needed to rerun that study and check its numbers: the scripts, the
+inputs they read (or pointers to the copies elsewhere in this repository), and the outputs they wrote (logs, JSON,
+figures) so a rerun can be compared line by line. The write-up with every table is `RESULTS.md`; its final
+section lists the same run order as below.
+
+Nothing here changes the app at the repository root; the study only reads the app's data and, for its
+verification pages, copies the app's heatmap scripts.
+
+## Requirements
+
+- Python 3.9 or newer with `numpy`, `matplotlib` and `pillow`.
+- Node.js on the PATH (`node`). The spatial pool scores are computed by `component_measure.js`, which calls
+  `component_source_math.js`, a verbatim copy of the selector used by the component-impact study and by the
+  app's heatmap.
+- About 300 MB of free disk for the verification pages (`heatmap_variants/`, regenerable, not committed).
+- On Windows, clone into a short folder (the repository's longest path is 167 characters) or set
+  `git config --global core.longpaths true` first.
+
+Run every command from the repository root. The scripts find their inputs through `data.src()`, which looks in
+`data/` beside the scripts, then in `reproduce/` (the governor's own reproduction kit) and at the repository root
+(the app's files). The frame and placement rules of every synthetic layout (recorded text segments, drawing gaps,
+vertical gaps shared by neighbouring lines, letter size, carry-over) are one implementation shared with the generator's
+spatial source mode: `reproduce/research/dynamic_selfcitation_20261024/governed/page_geometry.py`, imported by
+`component_check.py`.
+
+## Inputs
+
+| Input | Role | Where it is |
+|---|---|---|
+| `data/solve/.../tokens.json` | the manuscript's 34,977 paragraph-text tokens in 4,130 lines, Path 1 order | this folder |
+| `data/solve/.../physical_map.csv` | bifolium, leaf, face and section of every page (team Golf) | this folder |
+| `reproduce/packages/voynich_gradients/.../positional_path1.json.gz` | the positional model and the Path 1 order of the 50 bifolia (the positional data) | governor kit |
+| `data/mattr_heatmap/words.json.gz` | the recorded word rectangles of every page, the app's own data | repository root |
+| `reproduce/research/.../governed/runs/*/generated_text.txt` | the saved generator streams: `m_timm` (Original Timm), `n_noinnov_far0*` (page window, no innovator), `p_timm_spatial*`, `p_noinnov_spatial*` and `p_far0_spatial*` (the same two copiers and the far-0 configuration with the innovator, each with its page draws taken from the words in view on the recorded page geometry, `governor.py --spatial`, added 27 October), and the innovator-on runs `m_far0*`, `n_final*`, `m_final*`, which the study keeps in its tables marked † and leaves out of its figures and reading | governor kit |
+| `data/research/timm_geometry_audit_20261026/history_prediction/records/model{2..5}_source.json.gz` | four further native Timm seeds from the layout audit | this folder |
+| `data/research/timm_geometry_audit_20261026/component_impact_20261027/derived.json.gz` | the component-impact study's per-token results, used to check that this study reproduces its selector exactly | this folder |
+| `data/research/reference_corpus/...` (10 text files) | the natural-language comparison texts: five Latin herbals and medical texts, a German printed herbal of 1487 (Gart der Gesundheit, Augsburg), Hildegard's Physica, and three training-split controls | this folder |
+| `reproduce/packages/voynich_gradients/src/voynich_gradients/{glyph_units,eva}.py` | the Zattera glyph-unit segmentation used for component diversity and H2 | governor kit |
+| `captures/*.png` | three captures of the app used by `method_infographic.py` | this folder |
+
+## Run order
+
+```
+python experiments/mattr_template_link/decompose.py
+python experiments/mattr_template_link/scales.py
+python experiments/mattr_template_link/visibility.py
+python experiments/mattr_template_link/profile.py
+python experiments/mattr_template_link/position.py
+python experiments/mattr_template_link/extras.py
+python experiments/mattr_template_link/timing.py
+python experiments/mattr_template_link/shuffle_check.py
+python experiments/mattr_template_link/layout_within.py
+python experiments/mattr_template_link/continuity.py
+python experiments/mattr_template_link/pagestart.py
+python experiments/mattr_template_link/bio_visibility.py
+python experiments/mattr_template_link/herbal_boundary.py
+python experiments/mattr_template_link/component_check.py     # node; reproduces the component-impact selector to 1e-13, then calibrates it on every stream
+python experiments/mattr_template_link/layout_controls.py     # node; MATTR by group for every text laid into the manuscript's lines, Markov chains, prose reflows
+python experiments/mattr_template_link/component_strata.py    # node
+python experiments/mattr_template_link/native_layout.py       # node
+python experiments/mattr_template_link/figures_layout.py
+python experiments/mattr_template_link/figures_pages.py       # node
+python experiments/mattr_template_link/heatmap_variants.py    # node; writes heatmap_variants/ (the verification pages)
+python experiments/mattr_template_link/mechanism_check.py     # node; the pool-size-stratified contrast, by length class, section and Golf group
+python experiments/mattr_template_link/mattr_vs_components.py # node; MATTR coupling
+python experiments/mattr_template_link/figures_small.py
+python experiments/mattr_template_link/prose_route.py           # each historical text's own MATTR route (route_mattr_prose.png)
+python experiments/mattr_template_link/figures_f29r.py          # the f29r layout check (vertical gap), before and after
+python experiments/mattr_template_link/method_infographic.py
+python experiments/mattr_template_link/compare_site.py        # node; writes heatmap_variants/compare.html
+python experiments/mattr_template_link/figures_pages2.py
+python experiments/mattr_template_link/figures.py
+```
+
+Each script prints its tables to standard output; the committed `*.log` files are those outputs as they were
+when `RESULTS.md` was written (redirect a rerun to a file and `diff` it), and the `*.json` files hold the same
+numbers for the figures. The whole chain takes about 25 minutes on one core; the two slowest steps are
+`component_check.py` and `layout_controls.py`.
+
+`heatmap_variants.py` writes the laid-out texts (`heatmap_variants/<text>/data/mattr_heatmap/words.json.gz`) that
+`mechanism_check.py`, `mattr_vs_components.py`, `compare_site.py` and `figures_pages2.py` read, so it must run before
+them. To check the pool-diversity result alone (is the next word more often a repeat when the words in view are less
+diverse?), run `component_check.py`, `heatmap_variants.py` and `mechanism_check.py` in that order, about seven minutes.
+
+To look at the verification pages, serve the folder they were written to:
+
+```
+cd experiments/mattr_template_link/heatmap_variants
+python -m http.server 8766
+```
+
+and open <http://127.0.0.1:8766/> (one app-format heatmap page per text version, with a per-token CSV for
+page f78r) or <http://127.0.0.1:8766/compare.html> (any bifolium, every text version side by side).
+
+## What to check first
+
+| Number | Where | Value |
+|---|---|---|
+| agreement with the component-impact study (max abs difference, components and H2) | `component_check.log`, line 1 | 1.3e-13 and 7.5e-15 |
+| manuscript within-bifolium quintile contrast, components, all bifolia | `component_check.log`, region all | +0.034 (+0.014 to +0.054) |
+| the same for Original Timm and the no-innovator far 0 run | same table | +0.115 and +0.118 |
+| the same for the three copiers whose sources come from the words in view (Timm, no-innovator far 0, far 0 with innovator) | same table | +0.111, +0.097, +0.091 |
+| f29r: synthetic words inside the plant's stem column (lines 3 to 8), before / with the vertical-gap rule | `figures_f29r.py` output | 7 / 0 |
+| historical texts rising into Stars / falling into Bio, of 10 series | `prose_route.log` | 6 / 3 (manuscript +0.049 / −0.128) |
+| pool-size-stratified contrast, word diversity, manuscript / shuffled in paragraphs / shuffled in pages | `mechanism_check.log` | +0.077 / +0.011 / −0.006 |
+| MATTR100 fall 3c → 4a, manuscript = bag + clustering | `layout_controls.log` | −0.128 = −0.118 − 0.011 |
+| the same for Original Timm and the no-innovator far 0 run | `layout_controls.log` | −0.069 = −0.015 − 0.054; −0.099 = −0.050 − 0.049 |
+| coupling of the MATTR colour with component diversity, manuscript, token level / page means | `mattr_vs_components.log` | +0.26 / +0.48 |
+
+The random elements (bootstrap draws, shuffles, Markov samples, Gart layout starts) are seeded in the scripts,
+so a rerun on the same inputs reproduces the logs; a fresh clone on the authors' machine reproduced
+`component_check.log` with three values moved by 0.001 (floating-point summation order at 1e-13 breaks a few
+quintile ties), and a different numpy version can move bootstrap intervals in the last digit.
+
+## Notes
+
+- `RESULTS.md` records the study's revisions as they happened, including the corrections made on
+  27 October 2026: the innovator-on streams set aside, the overflow-placement defect in the synthetic layouts,
+  and the restatement of the opening inference. The tables carry the final numbers.
+- The Markov chains and the prose reflows are generated inside `layout_controls.py` from the inputs above; no
+  external generator is needed.
+- `figures_explained.py` and the composite figures it drew are superseded by `figures_small.py` and are not
+  part of this kit.

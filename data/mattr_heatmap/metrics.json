@@ -1,0 +1,1559 @@
+{
+  "window": 100,
+  "canonical_tokens": 34977,
+  "pages": 207,
+  "bifolia": 50,
+  "matched_lines": 4119,
+  "mapped_tokens": 34934,
+  "rendered_tokens": 34912,
+  "degenerate_boxes_omitted": [
+    {
+      "page": "f1r",
+      "index": 152,
+      "x": 252,
+      "y": 890,
+      "w": 0,
+      "h": 22,
+      "value": 0.84,
+      "words": [
+        "chey"
+      ],
+      "alignment": [
+        "exact"
+      ],
+      "canonical_indices": [
+        471
+      ]
+    },
+    {
+      "page": "f1r",
+      "index": 160,
+      "x": 359,
+      "y": 1000,
+      "w": 0,
+      "h": 27,
+      "value": 0.84,
+      "words": [
+        "chol"
+      ],
+      "alignment": [
+        "exact"
+      ],
+      "canonical_indices": [
+        479
+      ]
+    },
+    {
+      "page": "f1v",
+      "index": 70,
+      "x": 841,
+      "y": 1036,
+      "w": 0,
+      "h": 22,
+      "value": 0.78,
+      "words": [
+        "chol"
+      ],
+      "alignment": [
+        "exact"
+      ],
+      "canonical_indices": [
+        598
+      ]
+    },
+    {
+      "page": "f8r",
+      "index": 1,
+      "x": 182,
+      "y": 474,
+      "w": 0,
+      "h": 27,
+      "value": 0.77,
+      "words": [
+        "chor"
+      ],
+      "alignment": [
+        "exact"
+      ],
+      "canonical_indices": [
+        620
+      ]
+    },
+    {
+      "page": "f8r",
+      "index": 32,
+      "x": 721,
+      "y": 644,
+      "w": 0,
+      "h": 20,
+      "value": 0.76,
+      "words": [
+        "dam"
+      ],
+      "alignment": [
+        "exact"
+      ],
+      "canonical_indices": [
+        652
+      ]
+    },
+    {
+      "page": "f2r",
+      "index": 29,
+      "x": 505,
+      "y": 318,
+      "w": 0,
+      "h": 14,
+      "value": 0.76,
+      "words": [
+        "chol"
+      ],
+      "alignment": [
+        "exact"
+      ],
+      "canonical_indices": [
+        1786
+      ]
+    },
+    {
+      "page": "f15r",
+      "index": 5,
+      "x": 571,
+      "y": 217,
+      "w": 0,
+      "h": 44,
+      "value": 0.67,
+      "words": [
+        "shey"
+      ],
+      "alignment": [
+        "exact"
+      ],
+      "canonical_indices": [
+        3668
+      ]
+    },
+    {
+      "page": "f15v",
+      "index": 54,
+      "x": 580,
+      "y": 528,
+      "w": 0,
+      "h": 17,
+      "value": 0.77,
+      "words": [
+        "chol"
+      ],
+      "alignment": [
+        "exact"
+      ],
+      "canonical_indices": [
+        3809
+      ]
+    },
+    {
+      "page": "f14v",
+      "index": 53,
+      "x": 558,
+      "y": 414,
+      "w": 0,
+      "h": 23,
+      "value": 0.75,
+      "words": [
+        "odyd"
+      ],
+      "alignment": [
+        "exact"
+      ],
+      "canonical_indices": [
+        5051
+      ]
+    },
+    {
+      "page": "f18v",
+      "index": 70,
+      "x": 878,
+      "y": 471,
+      "w": 0,
+      "h": 35,
+      "value": 0.81,
+      "words": [
+        "dom"
+      ],
+      "alignment": [
+        "exact"
+      ],
+      "canonical_indices": [
+        5364
+      ]
+    },
+    {
+      "page": "f3r",
+      "index": 2,
+      "x": 294,
+      "y": 223,
+      "w": 0,
+      "h": 18,
+      "value": 0.87,
+      "words": [
+        "chol"
+      ],
+      "alignment": [
+        "exact"
+      ],
+      "canonical_indices": [
+        5917
+      ]
+    },
+    {
+      "page": "f17v",
+      "index": 129,
+      "x": 758,
+      "y": 930,
+      "w": 0,
+      "h": 36,
+      "value": 0.83,
+      "words": [
+        "cthy"
+      ],
+      "alignment": [
+        "exact"
+      ],
+      "canonical_indices": [
+        6524
+      ]
+    },
+    {
+      "page": "f100r",
+      "index": 7,
+      "x": 89,
+      "y": 300,
+      "w": 0,
+      "h": 23,
+      "value": null,
+      "words": [],
+      "alignment": [],
+      "canonical_indices": []
+    },
+    {
+      "page": "f99v",
+      "index": 88,
+      "x": 582,
+      "y": 667,
+      "w": 0,
+      "h": 34,
+      "value": null,
+      "words": [],
+      "alignment": [],
+      "canonical_indices": []
+    },
+    {
+      "page": "f89r2",
+      "index": 72,
+      "x": 1204,
+      "y": 656,
+      "w": 0,
+      "h": 25,
+      "value": 0.85,
+      "words": [
+        "oeeor"
+      ],
+      "alignment": [
+        "exact"
+      ],
+      "canonical_indices": [
+        10086
+      ]
+    },
+    {
+      "page": "f89v2",
+      "index": 22,
+      "x": 260,
+      "y": 470,
+      "w": 0,
+      "h": 20,
+      "value": 0.7,
+      "words": [
+        "dain"
+      ],
+      "alignment": [
+        "variant"
+      ],
+      "canonical_indices": [
+        10255
+      ]
+    },
+    {
+      "page": "f58v",
+      "index": 311,
+      "x": 348,
+      "y": 952,
+      "w": 0,
+      "h": 22,
+      "value": 0.8,
+      "words": [
+        "qoair"
+      ],
+      "alignment": [
+        "variant"
+      ],
+      "canonical_indices": [
+        11748
+      ]
+    },
+    {
+      "page": "f40r",
+      "index": 58,
+      "x": 656,
+      "y": 461,
+      "w": 0,
+      "h": 37,
+      "value": 0.69,
+      "words": [
+        "chdy"
+      ],
+      "alignment": [
+        "exact"
+      ],
+      "canonical_indices": [
+        14515
+      ]
+    },
+    {
+      "page": "f85r1",
+      "index": 23,
+      "x": 184,
+      "y": 236,
+      "w": 0,
+      "h": 34,
+      "value": 0.88,
+      "words": [
+        "otedy"
+      ],
+      "alignment": [
+        "exact"
+      ],
+      "canonical_indices": [
+        15640
+      ]
+    },
+    {
+      "page": "f85r2",
+      "index": 116,
+      "x": 794,
+      "y": 1047,
+      "w": 0,
+      "h": 24,
+      "value": 0.84,
+      "words": [
+        "otchs"
+      ],
+      "alignment": [
+        "exact"
+      ],
+      "canonical_indices": [
+        16009
+      ]
+    },
+    {
+      "page": "f113r",
+      "index": 152,
+      "x": 535,
+      "y": 405,
+      "w": 0,
+      "h": 18,
+      "value": 0.86,
+      "words": [
+        "lcheo"
+      ],
+      "alignment": [
+        "exact"
+      ],
+      "canonical_indices": [
+        21743
+      ]
+    },
+    {
+      "page": "f111r",
+      "index": 218,
+      "x": 319,
+      "y": 469,
+      "w": 0,
+      "h": 25,
+      "value": 0.73,
+      "words": [
+        "lchey"
+      ],
+      "alignment": [
+        "exact"
+      ],
+      "canonical_indices": [
+        25671
+      ]
+    },
+    {
+      "page": "f103v",
+      "index": 156,
+      "x": 454,
+      "y": 411,
+      "w": 0,
+      "h": 20,
+      "value": 0.8,
+      "words": [
+        "daiin"
+      ],
+      "alignment": [
+        "variant"
+      ],
+      "canonical_indices": [
+        27324
+      ]
+    },
+    {
+      "page": "f77r",
+      "index": 65,
+      "x": 406,
+      "y": 362,
+      "w": 0,
+      "h": 28,
+      "value": 0.78,
+      "words": [
+        "shedy"
+      ],
+      "alignment": [
+        "exact"
+      ],
+      "canonical_indices": [
+        33808
+      ]
+    }
+  ],
+  "unmatched_tokens": [
+    {
+      "page": "f1r",
+      "word": "dar",
+      "locus": "22",
+      "reason": "unmatched canonical token"
+    },
+    {
+      "page": "f67r1",
+      "word": "iim",
+      "locus": "3",
+      "reason": "unmatched canonical token"
+    },
+    {
+      "page": "f70r2",
+      "word": "otchey",
+      "locus": "1",
+      "reason": "unmatched canonical token"
+    },
+    {
+      "page": "f70r2",
+      "word": "ald",
+      "locus": "3",
+      "reason": "unmatched canonical token"
+    },
+    {
+      "page": "f70r2",
+      "word": "{ckhh}ey",
+      "locus": "4",
+      "reason": "unmatched canonical token"
+    },
+    {
+      "page": "fRos",
+      "word": "kechy",
+      "reason": "no XML"
+    },
+    {
+      "page": "fRos",
+      "word": "qolchedar",
+      "reason": "no XML"
+    },
+    {
+      "page": "fRos",
+      "word": "ar",
+      "reason": "no XML"
+    },
+    {
+      "page": "fRos",
+      "word": "otedy",
+      "reason": "no XML"
+    },
+    {
+      "page": "fRos",
+      "word": "chdaiin",
+      "reason": "no XML"
+    },
+    {
+      "page": "fRos",
+      "word": "oty",
+      "reason": "no XML"
+    },
+    {
+      "page": "fRos",
+      "word": "otam",
+      "reason": "no XML"
+    },
+    {
+      "page": "fRos",
+      "word": "opchody",
+      "reason": "no XML"
+    },
+    {
+      "page": "fRos",
+      "word": "oteey",
+      "reason": "no XML"
+    },
+    {
+      "page": "fRos",
+      "word": "chepchey",
+      "reason": "no XML"
+    },
+    {
+      "page": "fRos",
+      "word": "oteedy",
+      "reason": "no XML"
+    },
+    {
+      "page": "fRos",
+      "word": "olaiin",
+      "reason": "no XML"
+    },
+    {
+      "page": "fRos",
+      "word": "osshy",
+      "reason": "no XML"
+    },
+    {
+      "page": "fRos",
+      "word": "tol",
+      "reason": "no XML"
+    },
+    {
+      "page": "fRos",
+      "word": "ofar",
+      "reason": "no XML"
+    },
+    {
+      "page": "fRos",
+      "word": "chefaiin",
+      "reason": "no XML"
+    },
+    {
+      "page": "fRos",
+      "word": "ol",
+      "reason": "no XML"
+    },
+    {
+      "page": "fRos",
+      "word": "okchy",
+      "reason": "no XML"
+    },
+    {
+      "page": "fRos",
+      "word": "qokedy",
+      "reason": "no XML"
+    },
+    {
+      "page": "fRos",
+      "word": "qokedy",
+      "reason": "no XML"
+    },
+    {
+      "page": "fRos",
+      "word": "tol",
+      "reason": "no XML"
+    },
+    {
+      "page": "fRos",
+      "word": "teoor",
+      "reason": "no XML"
+    },
+    {
+      "page": "fRos",
+      "word": "o",
+      "reason": "no XML"
+    },
+    {
+      "page": "fRos",
+      "word": "l",
+      "reason": "no XML"
+    },
+    {
+      "page": "fRos",
+      "word": "chekor",
+      "reason": "no XML"
+    },
+    {
+      "page": "fRos",
+      "word": "okar",
+      "reason": "no XML"
+    },
+    {
+      "page": "fRos",
+      "word": "olchety",
+      "reason": "no XML"
+    },
+    {
+      "page": "fRos",
+      "word": "daiin",
+      "reason": "no XML"
+    },
+    {
+      "page": "fRos",
+      "word": "qokcho",
+      "reason": "no XML"
+    },
+    {
+      "page": "fRos",
+      "word": "chfady",
+      "reason": "no XML"
+    },
+    {
+      "page": "fRos",
+      "word": "oro",
+      "reason": "no XML"
+    },
+    {
+      "page": "fRos",
+      "word": "okeechy",
+      "reason": "no XML"
+    },
+    {
+      "page": "fRos",
+      "word": "okol",
+      "reason": "no XML"
+    },
+    {
+      "page": "fRos",
+      "word": "sheeo",
+      "reason": "no XML"
+    },
+    {
+      "page": "fRos",
+      "word": "tolfchd",
+      "reason": "no XML"
+    },
+    {
+      "page": "fRos",
+      "word": "saiir",
+      "reason": "no XML"
+    },
+    {
+      "page": "fRos",
+      "word": "shodaiin",
+      "reason": "no XML"
+    },
+    {
+      "page": "f106r",
+      "word": "okain",
+      "locus": "29",
+      "reason": "unmatched canonical token"
+    }
+  ],
+  "alignment_status": {
+    "exact": 29813,
+    "substitution": 449,
+    "xml_merged": 2488,
+    "xml_split": 621,
+    "variant": 1563,
+    "canonical_unmatched": 6
+  },
+  "xml_boxes": 35837,
+  "gray_boxes": 1611,
+  "input_sha256": {
+    "solve\\botanical_enrichment\\echo7\\preservation_model_20261014\\data\\tokens.json": "557e9fc6dedd3678633fec9ab50359a181c14fe6a0ba3d1917aece31cdc04afe",
+    "packages\\voynich_gradients\\src\\voynich_gradients\\assets\\positional_path1.json.gz": "977c5676670d79ffa8fac2f0b5a354278877a45513ba35da489b801158cbfffc",
+    "solve\\spatial_alignment\\coordinate_tokens_aligned.csv": "cc16b550059bb99c915fbc755ca90fbf741ffaf22a9fae4b4332163485dc50f3",
+    "positional-data\\f27r.xml": "1bd5670cb8f66779c3d1ca0c7d795aeb1d9105f98b26864b58dd6d8086991f2d",
+    "positional-data\\f27v.xml": "b22952e3e757fe270fa88be74a75e3c91f8f9e0815d397ce8b30a5095d5b001c",
+    "positional-data\\f30r.xml": "116c2c7158e44312b6ac205e160fb2f0ee35bd96554832173d4039b500ab3d56",
+    "positional-data\\f30v.xml": "b6d0b1ccd4b54253eacaf3f41461f7c92f85fa19a3cb4764f163a75fbc717351",
+    "positional-data\\f1r.xml": "3369f6d956d221bcab5a17ddd0fe9ee413483b799ae104ae38117268c2cbdf77",
+    "positional-data\\f1v.xml": "8d734f257fc916941cd50ab0dccc08cff3a5aac66b75503ba766c0b7a444e8a1",
+    "positional-data\\f8r.xml": "68c0630c1bc3b08bb4a7d8a7267b27e97fd661df9d14bdb75e05dddbf2d61b35",
+    "positional-data\\f8v.xml": "9dfd55f137de1b33f6ea643852c35bf5394cbef7b72e05add4f26ab3a4ef8584",
+    "positional-data\\f42r.xml": "8e9365b2f8fbe991988ea4d260836174d5990176b50819d74633c649fe6207b7",
+    "positional-data\\f42v.xml": "60c315c836a688f17b45db19f535e3a48e94875039943733bd67ad167e8de8a0",
+    "positional-data\\f47r.xml": "850f147be3aca744bccbf06bd04ea9a706c6b2e94e59011dcddc45f06acb0e35",
+    "positional-data\\f47v.xml": "1b8dc06c833e9db184151342d63188df9240fb69a103f51d5263a8867f3be58d",
+    "positional-data\\f49r.xml": "9f0bf6cc0377906eb20a7a51c3ea9c913fc607fe28aefb7214be2bdcbe058578",
+    "positional-data\\f49v.xml": "58ce46e9b939d063495957518af89256aa025c3eced8be528aa787ad38c5b996",
+    "positional-data\\f56r.xml": "9e98b8049d19d9bedb702c8f5f4973cf32fad2695d035741744844f8718832c1",
+    "positional-data\\f56v.xml": "5a72c367f5ed7ed5d936220f7e4273de618f870c9292d6613a9279c8bcef8cab",
+    "positional-data\\f2r.xml": "f3dbae24ffc162eb64cb612e525c81d2a6c35703905837141f8cf5b8230562ce",
+    "positional-data\\f2v.xml": "473767eaf210dfb215a66c453db63cb3dc71fe3f0b98904da9239c1d38ec2ebf",
+    "positional-data\\f7r.xml": "290ce2c9950636cdf30044cc2ca22233468de95b10cc4fda9b89407efb65c17f",
+    "positional-data\\f7v.xml": "2a217efc99198dff5a90eba7b9bb7027540b0c86957d14f0b54c13e17f969ef8",
+    "positional-data\\f25r.xml": "9c97e37b67f112aee1ba8ebe688c2126b28d1da420858de69d9d554e4e6a2f30",
+    "positional-data\\f25v.xml": "33d430d9a2fe2aa9f6e8bfab761915878bd1f939afbfca294ed5f0fbd9ae92b2",
+    "positional-data\\f32r.xml": "740bba332de958e1badf629cb1dcb4d1eb8900a2ab4d162dd8afb4291d1edd43",
+    "positional-data\\f32v.xml": "62e8e2887c92932ebd198bd9d70bd43bc252138e0bf2bc81c4b82d7de70f5f28",
+    "positional-data\\f20r.xml": "d1030e3f3dfefabf63c0d2d8bdb73c384ad30b01f9d7ddf951858f3f19b537ad",
+    "positional-data\\f20v.xml": "8c1a24da7f40558703712412ec14f927608c4c0d325cba22a3c8865449458856",
+    "positional-data\\f21r.xml": "e2a0ee58aee04eb0e714f392a0f21c875105428f94eb6497c2292be146c34292",
+    "positional-data\\f21v.xml": "1d872914af9d86c575a8b1fa805afe1a2b845920bf8d8bd4a8b92ceeab65d251",
+    "positional-data\\f35r.xml": "1fe3b56f23cdcdc5c61d6c7e4401a11b32643762a9199aa22e4340f27003045a",
+    "positional-data\\f35v.xml": "50d358625730f86be24070106cf784d252a084325cc9ac1183b55dea1cca83c5",
+    "positional-data\\f38r.xml": "e663bb960e29048f2d1e290b7dc27a1862d20cc2aad4a55b15beba24ae669304",
+    "positional-data\\f38v.xml": "90cf899716e369e49088cda751dd52e534ee30c61e235853b64c0ea25b0f095f",
+    "positional-data\\f4r.xml": "5fe3c6c8a1a0ad80bcdb95ed5d920a0dfba21961859d86566086d9c82a545c6b",
+    "positional-data\\f4v.xml": "9139ff6a208fdb8b371891d398671c0cca05815902b828c984fce88a67c06211",
+    "positional-data\\f5r.xml": "34772b668e3acf4e432e763aafb9eda84262cd7150af80b6efb05a6d223e4581",
+    "positional-data\\f5v.xml": "c3c2f4d6c976aa4b8a43e07090ea366d5126ce2e6dbfb3237317631eae298c68",
+    "positional-data\\f28r.xml": "41726caca5a3ee8edd5ddd189a3ca17ac21fe99964c2834e69b9ab32003a4c7a",
+    "positional-data\\f28v.xml": "f06ac92c772315c70461ed7cfc17e66dea08b39680d8ed81bcd1d882fb1c86fa",
+    "positional-data\\f29r.xml": "1aabbdd9ac4ce51b54f518ae144638e943ba2715620048294386110f7fc8be24",
+    "positional-data\\f29v.xml": "97229b529106c1b3cf107cef4dfce4abb2611cae8adab5ce0f871af06a9ff2a0",
+    "positional-data\\f10r.xml": "e467be85c717e53be11bf52b89c1b2ed541cfc7bf2bd84ea6bc5cc12e8858f38",
+    "positional-data\\f10v.xml": "65352675644bcac31eeb773a52b8edc58a3dc54f96a4794e977e6d3f7029ce52",
+    "positional-data\\f15r.xml": "c470b9854745c5fb2140eabf55e6bf6ac8435789d89bc78057256fa7b317848c",
+    "positional-data\\f15v.xml": "7a4e4beeea7a4ae9deec28aeda95759b0c6239c25735e8260c831608b1cb0bc4",
+    "positional-data\\f36r.xml": "17aac9433207dd56d853fae33f513ed5a689fdce795f8e6a9306d9a971aa2434",
+    "positional-data\\f36v.xml": "9827aa5cc9c7dcb81aacf40a7613b716874bc455798019dc2e3edfa4710348a7",
+    "positional-data\\f37r.xml": "6490713522da8432f8d22949933061ad7f7b6799c3e36d412d8041687b9773b8",
+    "positional-data\\f37v.xml": "9fe3a91191a002168810f4c71c15cf12c68036b0ec2b7e073f32dc2bd1f6a641",
+    "positional-data\\f9r.xml": "1bf4f2e138ef9ad40875d9a99c222169beb933e04ae69f6ad3b758059106a10e",
+    "positional-data\\f9v.xml": "baa60b73b15b7fe6df9f2bcb1d673d984ab6974df31ef97202daff45151a86a4",
+    "positional-data\\f16r.xml": "b19ec74b5f8c36c50de0e6927a6f8a40764d6d6b436c1a9208ae27132f1284d1",
+    "positional-data\\f16v.xml": "ec643f73986a735be62d35dfdb835fefe5485c75bb088ac459ff76fbd3d003ef",
+    "positional-data\\f19r.xml": "b1afef1a3caddd673e30243e412cf4ba33e1b0acfa4775cd68da514b7baa1a17",
+    "positional-data\\f19v.xml": "7f6a7d0b40a2184aaaa7f746f6f7fe06c85148da13d130469534fda12b0b7e93",
+    "positional-data\\f22r.xml": "d995cc7f3b08a0cabcfa3d5b2dbe30ab792ddb78653e1bbc2da4b0666c0374ef",
+    "positional-data\\f22v.xml": "ebda95a328c247c01446c1071f1ccae7f914fcece7ea66547dda98994596d61b",
+    "positional-data\\f11r.xml": "4b61638ea30d0006d0920335946c6bb94aa57822493cb6a864e7b674914c8195",
+    "positional-data\\f11v.xml": "785050cb023805db51e29d3a92b0a13926482fab55a907bebf2b81bce31828eb",
+    "positional-data\\f14r.xml": "6ed4d3df2bd1fecc8dc235e97feb2d5987e3ae89cb0ff7380a6438c0326608df",
+    "positional-data\\f14v.xml": "bf74b82d7446fe1ce4e3ad77d62e59f41e75d4f34ed0684bf9906c160045c980",
+    "positional-data\\f13r.xml": "d8256cae64de504051e0c4494ab24d40f4fc6cd7a8d765bd1d1172d6d18520f2",
+    "positional-data\\f13v.xml": "2d90b98dbea36997937b400785aa21461a67fe11ea59eee720e6be8c34c8bfaa",
+    "positional-data\\f18r.xml": "280cb0bf507a48dda8a6f2a80de02d0d30993181c0b82f03069114a6c7ebc44d",
+    "positional-data\\f18v.xml": "a47d89c0e2029c0b2581e7f236866bd5193393291456668ef90b1effc175fd7f",
+    "positional-data\\f23r.xml": "346a2e1c5aae76100c1f239f27d4e8f5d9f69b2321e884e05bac29f752834a55",
+    "positional-data\\f23v.xml": "a123f4117177bbd8d4af7f09a7ff3edd0afc1a1a084a554621c19a7baacd285c",
+    "positional-data\\f44r.xml": "9dc39a00f492e9705924bd63085923fbb755a0780bd60249b51d6782fba39699",
+    "positional-data\\f44v.xml": "266e1ce1890438bc2cc110d9bf665113d9f613f931d57cfe89c88bb7ff187e45",
+    "positional-data\\f45r.xml": "00375c1923d59451e62a1bfcdea6c4401eff2ad06b7e5ce50e01743c2fd7c36b",
+    "positional-data\\f45v.xml": "3c8917664a3784b2955ba57535a1224dfe5cc898c01f86d04d07773ecb6e3ce0",
+    "positional-data\\f3r.xml": "0531142bcd147d93940ef947fa6fd1ee77d6ae8be7bbf5fe190ce396f67481ad",
+    "positional-data\\f3v.xml": "9b5f2ff271cf0a38eb069d227c0375978e45e837b9485db5f2003985f2ba358a",
+    "positional-data\\f6r.xml": "26f636836c6594b8b36b67482fe1fc203cef623821f63670bb36c617f6838f48",
+    "positional-data\\f6v.xml": "0524b0ebd3b1e46a4a0caac9cc8a1365c189f6bd9e26543c0d4fa6e9c26fd857",
+    "positional-data\\f17r.xml": "3d0fdfbf249bffdcf731d6ff4b6e4b05738fe4e499c35763f25abc82012b0edc",
+    "positional-data\\f17v.xml": "2ed6f2d0d657fc72e42c0d4768b0e94186d1772e93f32bb04d380193832d1172",
+    "positional-data\\f24r.xml": "f90d86a340f04d0a6f060a1df38f19cf105a89987a875c55efac8be1ed90c47b",
+    "positional-data\\f24v.xml": "2cf55c90092e0ffa64a3eaa57f5fd99cb74b89922011c724aaeb8b4611334f3e",
+    "positional-data\\f52r.xml": "9b2eadd2c0e5b565577269329d6c512c2fc14452b318da4db17bca2617d7907b",
+    "positional-data\\f52v.xml": "a5386a0b7cd7ffa50f1e3185af88735341abcd6ce0b94a0ea54b45c521d99d7e",
+    "positional-data\\f53r.xml": "c200bf30362f6c5065f12274b83807f2449e57c9e5323cd6564544b8adf78fa9",
+    "positional-data\\f53v.xml": "9921c929fbe1b7971757c89eb0a3217c1d566089d738a4100287b8804b6b6e36",
+    "positional-data\\f51r.xml": "a3723522d588ab2a3765a4ddae139f9b4e1e58e1606bbc255dead8b12990470b",
+    "positional-data\\f51v.xml": "a6e6d2027593c7ed0b130c114c343a15007a6fbc04d5d554c2846d47d352663e",
+    "positional-data\\f54r.xml": "e598fe6f934e5fd92bb4b268379d2d3c4e1f46d9f929f1a443a841e7ded4638f",
+    "positional-data\\f54v.xml": "fa08fab9f480df296efe7c13a7c1c92b838b2fb598be4f1223676dd320a1225b",
+    "positional-data\\f93r.xml": "40af9821b9b80bf512756072dbdde33d8e89551329c4b26dc4c7c1ed29c76aee",
+    "positional-data\\f93v.xml": "1fb4434e89a113040360bd828682509ec0584f833f64dd76a0fd471dfd237361",
+    "positional-data\\f96r.xml": "71effded7b50d0aee7c74321dcc32b3439c68f55343b385bfa80aa7e67b2aa45",
+    "positional-data\\f96v.xml": "a882e9cb2f82dbb56c3a5566f00cf58f439104312fe1b1dd59db51ef525c19a4",
+    "positional-data\\f87r.xml": "6caecf15d8e10826a84f55a0f94ff2b35cc4a7e63c264daaef160e94ee52c65a",
+    "positional-data\\f87v.xml": "a8fd5c3c102d6e772f21f105228c68c628846f6306b2202fb6d6c04fdfe67d8e",
+    "positional-data\\f90r1.xml": "be36e82f8f72d5caf896abf230a320c2bb821a83298787be19fb4e699fd1dfab",
+    "positional-data\\f90r2.xml": "98fbd776ab4d1b943f520fda71c8edc122fa4a395a1c268ca9e0149c7ab129de",
+    "positional-data\\f90v2.xml": "228ff66df27c68875ce896d029e12891e818cf84eb67c239e79640a678a9e5a1",
+    "positional-data\\f90v1.xml": "85fb4de7275da2ae5844482f7a356beff464c91f6ccae952d9ad6486259f6fb4",
+    "positional-data\\f100r.xml": "1c6200a116b957ce1b2786cfac934d839b8a30abc8b018012d1502701b2b4bd5",
+    "positional-data\\f100v.xml": "16e4f3827e107a40292771a45df6ab6dcd412f5e9269dfe1a2dc5557d3e72b8d",
+    "positional-data\\f101r1.xml": "f566d13a19b2735c178f796257ba98b4d306a3d3d18485bb38cfd356864bb94d",
+    "positional-data\\f101v2.xml": "71aeab6b4912abdb373ed3bb600f1d506cab487deffe1016be41528eb671a8a4",
+    "positional-data\\f99r.xml": "d7c67d6cf712a7935707e29c3fb807c684191b0e19d09e69859ce35087132d7f",
+    "positional-data\\f99v.xml": "cdb0759532b6e42b6e991d45fd1bda1dfac78d8c6fed9eb4a7cb07fb5b3e968b",
+    "positional-data\\f102r1.xml": "083604aff30e03f2540171f65a3f52bf2472998bda2455c3c31b858e937d1776",
+    "positional-data\\f102r2.xml": "98b9408dbb71a9a9057dea9b0d3876d61ef95783e8e4a97e76d5e0bff095f99a",
+    "positional-data\\f102v2.xml": "226a2d03c680bd25754194ca8d22c000413290f50ffa5726cfe1f3bd02809c6c",
+    "positional-data\\f102v1.xml": "a6ac3bdb3e78c2bef0bd0bbc6a5463f62f92d498fef5c2f4f98997266824b949",
+    "positional-data\\f88r.xml": "915e68274c651e0057beb1b5ea48c314322b85ed83f1006c78ed5beaf0820f51",
+    "positional-data\\f88v.xml": "52a0576b6c5e4a8bca70d02a87d379828392bc984df3bd95e439e4a600256e71",
+    "positional-data\\f89r1.xml": "5be2e6a0435a3df56fbed0f47a082eaafb23020a8cd9bca4aadf8ef7ccdef135",
+    "positional-data\\f89r2.xml": "3e32653247ffe27db3ce7636fe96e3869fc6d825cd24fcd81a35eb6b47120dba",
+    "positional-data\\f89v2.xml": "59e828e995a36bb8a784fbb4c06ba4ada1642129f7bcc5641316690d28b05526",
+    "positional-data\\f89v1.xml": "fc0b6e2630e90f63607f66a3ee5c5617a10efe95fe00ba8de5159ca34664b728",
+    "positional-data\\f67r1.xml": "2f1a58c427188fe97e858cc4bae1fd0d098a58d90035bebb9138d27974c44341",
+    "positional-data\\f67r2.xml": "738d238f53ae44376056d817a9d9330dd054394f8d752cc88de48ebfa64c507b",
+    "positional-data\\f67v2.xml": "9000dc81bc929d339590c5df57ff75bda1f624fd3f57e27de21c6b7aa18a02af",
+    "positional-data\\f68r1.xml": "c679b094ae45ca77d7cae3ff4ebccc461005f4aa198583369f48c051d765b38b",
+    "positional-data\\f68r2.xml": "9bdf73eb67897a5b91b171510d964fc9a8ef2aee1bfd49340fa6089432ec756f",
+    "positional-data\\f68v3.xml": "c53ee1095643d9fd2e04b1a7b4bd9711f43d3b0106daf8e083bad39d1e911efb",
+    "positional-data\\f68v2.xml": "e3c76bbcf12ce5fbfa230d6a963838a1f35bc246c368eda795325ae091da6aec",
+    "positional-data\\f69r.xml": "6591658be22732219371d5296acb88248a240d020b06180f282a4760fd45938b",
+    "positional-data\\f70r2.xml": "0e7559f7dbb3caf208dd74c4c5a72bd649402219f608b3ea3585fade0a21c178",
+    "positional-data\\f58r.xml": "d82294ab77b134437854ce09d204b5ad4cff606965763b7e64bb95856899b352",
+    "positional-data\\f58v.xml": "2bd8d62463549447efa8b39b9dcc2e7e217bfae6ee838988a09b2f2d6efcad29",
+    "positional-data\\f65v.xml": "a07221feb9f2cc8a6f0f2e602fbb421a89ef838d80dd7c035e09bb4a4b475bcc",
+    "positional-data\\f57r.xml": "0f560591af4a6763b765f85bf879c7921b4e0a7058350ed2e0e1ba5715485f1f",
+    "positional-data\\f66v.xml": "ee7630b0ecfdf3cb982bb3eaadbc46c04f8a4dc68cd5d8213dda38470b1b8025",
+    "positional-data\\f66r.xml": "84f00795f1f2859fa22b6401594cca55c569344bdaf449fd35fa20b3e235531a",
+    "positional-data\\f26r.xml": "e3128a17d96b8b2421b240756906d24d643a59fbc6e440c4d7885785e6faac0b",
+    "positional-data\\f26v.xml": "dcb50a966ae303303cf1c6ad10b5fcdfd5745d49e751229ac95fccbf4b7e801a",
+    "positional-data\\f31r.xml": "ed90dab2e25491cbfff3461f64eb0c16fc2de02f201833e03678cc009d9ba626",
+    "positional-data\\f31v.xml": "316688841f50700e2fc93ee6e3618a66135d51b1bda6d8166111307faf365fe7",
+    "positional-data\\f43r.xml": "53eb8f4ec7da7ef3da752254d0e8fd152a4297e82c0967ed7d5f7e9ac7e0d816",
+    "positional-data\\f43v.xml": "2619307428e0afe48f25577916c81840fc4b23a08bcabe0d86d3b7860edc0f03",
+    "positional-data\\f46r.xml": "eec80503ef3b0aebe16a870a0c989dd943f92640ded358a353a2237e3f8b4773",
+    "positional-data\\f46v.xml": "021ad76a0ecdfce19373600b5bd6e349d9a4ab9b8c37e139b752239f064535e9",
+    "positional-data\\f41r.xml": "429d089d73622060f292af6c6d53d5f50d172bac666dd12c6a33043f43a39a6c",
+    "positional-data\\f41v.xml": "8e98facde07421921b515af4fe1ced16bab058f004de5d9ffd83d35bde1f5441",
+    "positional-data\\f48r.xml": "0806be6f769433a14b9770c519245a15a45d8755736ab110bc803d6a066b8f27",
+    "positional-data\\f48v.xml": "4d3989a0d051e37dc76fb9bef2afd790b30c0e4060a5263026e3c09dbb9b18c9",
+    "positional-data\\f34r.xml": "12b9a1e4a2649fe222d550a1c522c1285419d51c652172906a1d1b4cad6b6096",
+    "positional-data\\f34v.xml": "76df0f63108b0357bfe1bc51e209c10ded3846c6ff394d3f1726f25d77048ff9",
+    "positional-data\\f39r.xml": "48c4385e3b3960d32d6c5adc7b86a1fa6ff3878168381b4575fc48705988ec17",
+    "positional-data\\f39v.xml": "f798d0c09ec29bb6e5e1babc78cbdb53b9fa3f300e9aea2e6d584c1f0763b092",
+    "positional-data\\f33r.xml": "c3c01d33762cd5efd1c812903f9f7f18b8f2b7697ea0d2d8de9b33ad3632a61f",
+    "positional-data\\f33v.xml": "758f06b8a6df2e24edeafab920fde4c526a225d6cd6aaf59e99364caa08b3474",
+    "positional-data\\f40r.xml": "43b37384d3671e7df32d3ad5ba33225148fc3514a12b4987a46ea0e074253163",
+    "positional-data\\f40v.xml": "533b4de77529100e2e0c7c0f1bae16561747a4742429910a5fa3dcbd84c01e18",
+    "positional-data\\f50r.xml": "b326638dcf45541dd9e411ccbfabf6391750dbf237e4c38970b0301ea26349ff",
+    "positional-data\\f50v.xml": "9d353a3e5f475aba372db2780ea9ff66c68ae882c4ffe6c8dd3df4357d732848",
+    "positional-data\\f55r.xml": "3d2afc4e766fdac488067e920bbb63448c4dc630197a3f992650900703297eea",
+    "positional-data\\f55v.xml": "10fedd5277e50022b4b4203b7b9d4bb4c09ecc423e5caf5988967d6a8dd26331",
+    "positional-data\\f94r.xml": "20aa1f04724acf4daa60ef7f3815281a9117ed0f08b0af3b1b433ba78f569fe1",
+    "positional-data\\f94v.xml": "07ffd61ee9a0118fe2cec0f3fbfab133ec85c0785afc53c90e40ea0dadef3656",
+    "positional-data\\f95r1.xml": "ad805f491cf409d57bf6f23a0d1b581c8434615400a2fd66b4be66d4b9dc9ad0",
+    "positional-data\\f95r2.xml": "0cd0b8e2533089545b029707e452240849b35832de402ac2f0d2eebea008dd2c",
+    "positional-data\\f95v2.xml": "b25490cbd5c028e7ad87be1bfa8b504e8c6dda40aee9020a13b55c2a54db1c94",
+    "positional-data\\f95v1.xml": "2fc3fd5b59ae5adeae477017ac9ffa4415405bd5fa8222b96b5705f750e63dfe",
+    "positional-data\\f85r1.xml": "0f6d3be1f2a6714a90c68743695b3c5801dd29711aaa64b5619322a386a0b0b4",
+    "positional-data\\f85r2.xml": "3b8312675851f301095d2b446159a586aafee532a2e0d950b0518951b6c649b2",
+    "positional-data\\f86v4.xml": "0e164b45fcdd4b1bcddbadaf957434f8bf4425a8578fabf065572186b9b99352",
+    "positional-data\\f86v6.xml": "d283e665b83b83d0d22329867f56b87c45e407830727af18efe5bbf7261589cc",
+    "positional-data\\f86v5.xml": "92d2b666d0009fa4efd637894003c5ec2eb2894c62bfff22082f814ac75bf7d5",
+    "positional-data\\f86v3.xml": "b9dea2f8d788d1f368e94d161d7a17fbf6d580b1cf72abd20a7608da0a60151d",
+    "positional-data\\f105r.xml": "f242270bed6b05b11298cf3fecbabb145877798df4c3d2938b7d77f98c58c1b7",
+    "positional-data\\f105v.xml": "f05e8550f565cab666da491d9d42c2c02139c0aec3c883b0c484c3299a845c00",
+    "positional-data\\f114r.xml": "7d56da314fe8b1467f52cf9a05e2137ddecb5d9752c34001934a451d84545a8a",
+    "positional-data\\f114v.xml": "df04a3771dca2b13d38119669c7476bb210abab3784e10033713d3187ffeb025",
+    "positional-data\\f104r.xml": "ebc3744bc6a739699c6fd0da6c59c05979cc10faf9ef2c89a9142ae4e98cbab3",
+    "positional-data\\f104v.xml": "56f1269a4b1a67b23469237bab7531b28f93e631b95825a96d47a8784592c6a5",
+    "positional-data\\f115r.xml": "6495fb303caad2d03a5899383a32bcacc386576c20db6934a89026305b7bf327",
+    "positional-data\\f115v.xml": "e48c1a685913b7300fc91ea1427d7eb827d277c0dfa9f74934bde38250bb9f4a",
+    "positional-data\\f106r.xml": "fc717b4efb1f03298c87dbf4b57c36be610258ded87e7cab2e469d065671074b",
+    "positional-data\\f106v.xml": "5d943d51db6619526577516381317def6a88e0a0e38b24dad803300eb25944d5",
+    "positional-data\\f113r.xml": "e884c1d367f5133d868ae66636d918ae8709cadbfb6270520ab8a0a5a1ce9ead",
+    "positional-data\\f113v.xml": "d8bf9fab6d8754337f3b8c23bd5cd53d787b0695964d97218d22707a2473a08e",
+    "positional-data\\f107r.xml": "d18737cab63d30619ca40f5dcfe8b3b6d74b877aeb9f8310c5d61521041f374e",
+    "positional-data\\f107v.xml": "f8c9c3501d8137096a1df968a005ab3d379dec30ae0a2f769775889dc79cc5a0",
+    "positional-data\\f112r.xml": "01ffec5aafb07de7adeedfe1e8aa8da4587f6635ecc6f56573b30dddd89dbe61",
+    "positional-data\\f112v.xml": "b205e89d72ed50fb75e170f92a5630ec9e8792eabba6be8b0fd307f4a0f917f6",
+    "positional-data\\f108r.xml": "91b58c225a0d3539daf106ef921494bd41b082c61257c6e548e287d90ac4e401",
+    "positional-data\\f108v.xml": "5d75374d2094c16daeb9ecb9dafd8286b1b42b3de4bef3394ee4ebc448034014",
+    "positional-data\\f111r.xml": "1ccbdd86fcbffb533d032b16a6054ae67327b665f53d5457abe21076466f99df",
+    "positional-data\\f111v.xml": "6a54e6e3f42e15ef061578681fac349d75ede1a43b4163199a6dde89f53ca569",
+    "positional-data\\f103r.xml": "53d81742f0ec6882b6b1fbd64b25178ca492796221a92eee2ac3f849d13273e8",
+    "positional-data\\f103v.xml": "389f370b8fa9d17cf25459fae65931f0d680ddab00b0624e705a169deb7977c9",
+    "positional-data\\f116r.xml": "329483117513d6e4af5f64299f6243dda7c23d439fc1803ed083d36cfb01acc6",
+    "positional-data\\f79r.xml": "e19418df27e27c9ff3da036fb98ec6ce26ab9605e3734f4b4cc47b0228c53104",
+    "positional-data\\f79v.xml": "6abd7dc7b3af13335ecefffbf9bb485ca76bd7667af15ae4584c1852fb5fba8e",
+    "positional-data\\f80r.xml": "ac4b1535a1c8c7f84909231248d1e3e11f2f45da17992f22ecf7b5322b94a2bb",
+    "positional-data\\f80v.xml": "7fb19b68de32d94f384871f74363f137f690cfec61aed8ed8ffdc2143db9f6a9",
+    "positional-data\\f76v.xml": "b0fdcb4a9c637a4f84a02d2c9dda1c09faaf72bfcb8c89628c71dff0718d45b7",
+    "positional-data\\f83r.xml": "ed7be7479a79e82b5fee746d18de321b6574d52c986b8495fe847a2e828a6dfa",
+    "positional-data\\f83v.xml": "41ce0ccdd292a13a636ecb6faedc0f64264112f211e2412d072b1a25d72281b0",
+    "positional-data\\f76r.xml": "d5085307dbec1a3df015e87f8dbaa8403d31a8c8d7de2669714e4c1921732138",
+    "positional-data\\f78r.xml": "d371cd2475c21684cc2d24e7977506f0111a9a707c204c480a8ac3b5004a1d3c",
+    "positional-data\\f78v.xml": "dc65ef273e586c47c562498906f5fd4e507b1c75089c78840a41c6821b66abde",
+    "positional-data\\f81r.xml": "b2c54f454a332798d9816569047397c083651d77302457832394b6562bfe9c85",
+    "positional-data\\f81v.xml": "336f80c4cd954bb9a2daf1b83a4979554daf0c41bca561abcfba93de3874bac2",
+    "positional-data\\f75r.xml": "10ad81bb942ba1ca393f98af0c92be277a44f721ddfc4788237713b3f433a502",
+    "positional-data\\f75v.xml": "f349a51f89de6e014a987a79f0d4dfead5704a9eb72869c0b7b187d5446e308f",
+    "positional-data\\f84r.xml": "42018ffb27dd2cbd4d895ff00306a7ca614767ffe36bd839a2e78b6c92f9070a",
+    "positional-data\\f84v.xml": "eda45d2ffb73b1021646bf19b6ca1e6351930e92f56a5d3add662096bbdf4542",
+    "positional-data\\f77r.xml": "8b2b59cffb86778ca3a8aac23d0b0fbbc79e01ae796b7867dcb2b3947f48208c",
+    "positional-data\\f77v.xml": "029a6630c4015391822e4cd683432cc1729904c79ecfd47518d6e98e9bd886f9",
+    "positional-data\\f82r.xml": "2b9078d103ea7dfed762549073708fae8ff0f38d49c60249ab0d644fa928b793",
+    "positional-data\\f82v.xml": "629c760c8c4b3f4b36ef9ca81e0bd4c8e881df9ebf2cc25ac71a720ea13881ba"
+  },
+  "verification": {
+    "all_rolling_scores_bruteforce": true,
+    "all_bifolio_means_bruteforce": true,
+    "late20_means_match_previous_report": true,
+    "xml_hashes_match_alignment_manifest": true
+  },
+  "definition": "Each word is colored by distinct raw spellings in the last 100 study tokens, including itself. Windows follow Path 1 across pages and bifolia. Bifolium MATTR is the mean of windows wholly within that bifolium.",
+  "geometry": "Original XML word rectangles; no scan images, inferred positions, or subdivisions. Merged canonical tokens share the mean score on the original XML box; a split canonical token colors each original XML box.",
+  "order": "Study Path 1 bifolium and page order, not an established writing chronology.",
+  "nodes": [
+    {
+      "id": "D:27-30",
+      "group": "1a",
+      "pages": [
+        "f27r",
+        "f27v",
+        "f30r",
+        "f30v"
+      ],
+      "N": 317,
+      "mattr100": 0.8264220183486239,
+      "mean_map_d100": 0.8264220183486239
+    },
+    {
+      "id": "A:1-8",
+      "group": "1a",
+      "pages": [
+        "f1r",
+        "f1v",
+        "f8r",
+        "f8v"
+      ],
+      "N": 571,
+      "mattr100": 0.8083262711864406,
+      "mean_map_d100": 0.8141330998248687
+    },
+    {
+      "id": "F:42-47",
+      "group": "1a",
+      "pages": [
+        "f42r",
+        "f42v",
+        "f47r",
+        "f47v"
+      ],
+      "N": 418,
+      "mattr100": 0.7812225705329153,
+      "mean_map_d100": 0.7851435406698565
+    },
+    {
+      "id": "G:49-56",
+      "group": "1a",
+      "pages": [
+        "f49r",
+        "f49v",
+        "f56r",
+        "f56v"
+      ],
+      "N": 451,
+      "mattr100": 0.7722443181818183,
+      "mean_map_d100": 0.7721951219512195
+    },
+    {
+      "id": "A:2-7",
+      "group": "1a",
+      "pages": [
+        "f2r",
+        "f2v",
+        "f7r",
+        "f7v"
+      ],
+      "N": 306,
+      "mattr100": 0.791304347826087,
+      "mean_map_d100": 0.7810130718954249
+    },
+    {
+      "id": "D:25-32",
+      "group": "1a",
+      "pages": [
+        "f25r",
+        "f25v",
+        "f32r",
+        "f32v"
+      ],
+      "N": 272,
+      "mattr100": 0.7615606936416185,
+      "mean_map_d100": 0.7663970588235294
+    },
+    {
+      "id": "C:20-21",
+      "group": "1a",
+      "pages": [
+        "f20r",
+        "f20v",
+        "f21r",
+        "f21v"
+      ],
+      "N": 337,
+      "mattr100": 0.8013025210084034,
+      "mean_map_d100": 0.8027299703264095
+    },
+    {
+      "id": "E:35-38",
+      "group": "1a",
+      "pages": [
+        "f35r",
+        "f35v",
+        "f38r",
+        "f38v"
+      ],
+      "N": 297,
+      "mattr100": 0.7556060606060607,
+      "mean_map_d100": 0.7506397306397307
+    },
+    {
+      "id": "A:4-5",
+      "group": "1a",
+      "pages": [
+        "f4r",
+        "f4v",
+        "f5r",
+        "f5v"
+      ],
+      "N": 250,
+      "mattr100": 0.7905960264900662,
+      "mean_map_d100": 0.7590000000000001
+    },
+    {
+      "id": "D:28-29",
+      "group": "1a",
+      "pages": [
+        "f28r",
+        "f28v",
+        "f29r",
+        "f29v"
+      ],
+      "N": 295,
+      "mattr100": 0.7622448979591836,
+      "mean_map_d100": 0.7616949152542374
+    },
+    {
+      "id": "B:10-15",
+      "group": "1b",
+      "pages": [
+        "f10r",
+        "f10v",
+        "f15r",
+        "f15v"
+      ],
+      "N": 313,
+      "mattr100": 0.7249999999999999,
+      "mean_map_d100": 0.7556230031948882
+    },
+    {
+      "id": "E:36-37",
+      "group": "1b",
+      "pages": [
+        "f36r",
+        "f36v",
+        "f37r",
+        "f37v"
+      ],
+      "N": 306,
+      "mattr100": 0.7494685990338167,
+      "mean_map_d100": 0.7477777777777778
+    },
+    {
+      "id": "B:9-16",
+      "group": "1b",
+      "pages": [
+        "f9r",
+        "f9v",
+        "f16r",
+        "f16v"
+      ],
+      "N": 331,
+      "mattr100": 0.8260775862068965,
+      "mean_map_d100": 0.8189425981873113
+    },
+    {
+      "id": "C:19-22",
+      "group": "1b",
+      "pages": [
+        "f19r",
+        "f19v",
+        "f22r",
+        "f22v"
+      ],
+      "N": 344,
+      "mattr100": 0.7397959183673469,
+      "mean_map_d100": 0.7275581395348837
+    },
+    {
+      "id": "B:11-14",
+      "group": "1b",
+      "pages": [
+        "f11r",
+        "f11v",
+        "f14r",
+        "f14v"
+      ],
+      "N": 259,
+      "mattr100": 0.7905,
+      "mean_map_d100": 0.7690347490347491
+    },
+    {
+      "id": "B:12-13",
+      "group": "1b",
+      "pages": [
+        "f13r",
+        "f13v"
+      ],
+      "N": 145,
+      "mattr100": 0.7906521739130438,
+      "mean_map_d100": 0.783448275862069
+    },
+    {
+      "id": "C:18-23",
+      "group": "1b",
+      "pages": [
+        "f18r",
+        "f18v",
+        "f23r",
+        "f23v"
+      ],
+      "N": 356,
+      "mattr100": 0.7771984435797665,
+      "mean_map_d100": 0.7765168539325843
+    },
+    {
+      "id": "F:44-45",
+      "group": "1b",
+      "pages": [
+        "f44r",
+        "f44v",
+        "f45r",
+        "f45v"
+      ],
+      "N": 347,
+      "mattr100": 0.8104435483870968,
+      "mean_map_d100": 0.8206628242074927
+    },
+    {
+      "id": "A:3-6",
+      "group": "1.5a",
+      "pages": [
+        "f3r",
+        "f3v",
+        "f6r",
+        "f6v"
+      ],
+      "N": 401,
+      "mattr100": 0.8235099337748345,
+      "mean_map_d100": 0.8263840399002493
+    },
+    {
+      "id": "C:17-24",
+      "group": "1.5a",
+      "pages": [
+        "f17r",
+        "f17v",
+        "f24r",
+        "f24v"
+      ],
+      "N": 407,
+      "mattr100": 0.8433441558441559,
+      "mean_map_d100": 0.8457493857493859
+    },
+    {
+      "id": "G:52-53",
+      "group": "1.5a",
+      "pages": [
+        "f52r",
+        "f52v",
+        "f53r",
+        "f53v"
+      ],
+      "N": 281,
+      "mattr100": 0.8835714285714286,
+      "mean_map_d100": 0.8763345195729537
+    },
+    {
+      "id": "G:51-54",
+      "group": "1.5a",
+      "pages": [
+        "f51r",
+        "f51v",
+        "f54r",
+        "f54v"
+      ],
+      "N": 374,
+      "mattr100": 0.7861454545454546,
+      "mean_map_d100": 0.8179946524064171
+    },
+    {
+      "id": "Q:93-96",
+      "group": "1.5a",
+      "pages": [
+        "f93r",
+        "f93v",
+        "f96r",
+        "f96v"
+      ],
+      "N": 379,
+      "mattr100": 0.8453928571428572,
+      "mean_map_d100": 0.8350131926121372
+    },
+    {
+      "id": "O:87-90",
+      "group": "2a",
+      "pages": [
+        "f87r",
+        "f87v",
+        "f90r1",
+        "f90r2",
+        "f90v2",
+        "f90v1"
+      ],
+      "N": 473,
+      "mattr100": 0.8766310160427808,
+      "mean_map_d100": 0.8918604651162791
+    },
+    {
+      "id": "S:100-101",
+      "group": "2a",
+      "pages": [
+        "f100r",
+        "f100v",
+        "f101r",
+        "f101v"
+      ],
+      "N": 579,
+      "mattr100": 0.7797499999999999,
+      "mean_map_d100": 0.793678756476684
+    },
+    {
+      "id": "S:99-102",
+      "group": "2a",
+      "pages": [
+        "f99r",
+        "f99v",
+        "f102r1",
+        "f102r2",
+        "f102v2",
+        "f102v1"
+      ],
+      "N": 828,
+      "mattr100": 0.8077914951989026,
+      "mean_map_d100": 0.8081038647342995
+    },
+    {
+      "id": "O:88-89",
+      "group": "2a",
+      "pages": [
+        "f88r",
+        "f88v",
+        "f89r1",
+        "f89r2",
+        "f89v2",
+        "f89v1"
+      ],
+      "N": 911,
+      "mattr100": 0.7811206896551726,
+      "mean_map_d100": 0.7868605927552141
+    },
+    {
+      "id": "I:67-68",
+      "group": "2a",
+      "pages": [
+        "f67r1",
+        "f67r2",
+        "f67v2",
+        "f68r1",
+        "f68r2",
+        "f68v3",
+        "f68v2"
+      ],
+      "N": 367,
+      "mattr100": 0.8966044776119404,
+      "mean_map_d100": 0.8755040871934605
+    },
+    {
+      "id": "J:69-70",
+      "group": "5a",
+      "pages": [
+        "f69r",
+        "f70r2"
+      ],
+      "N": 137,
+      "mattr100": 0.7781578947368419,
+      "mean_map_d100": 0.847080291970803
+    },
+    {
+      "id": "H:58-65",
+      "group": "6",
+      "pages": [
+        "f58r",
+        "f58v",
+        "f65v"
+      ],
+      "N": 797,
+      "mattr100": 0.8453868194842408,
+      "mean_map_d100": 0.8390464240903388
+    },
+    {
+      "id": "H:57-66",
+      "group": "3b",
+      "pages": [
+        "f57r",
+        "f66v",
+        "f66r"
+      ],
+      "N": 495,
+      "mattr100": 0.8537121212121211,
+      "mean_map_d100": 0.8598181818181818
+    },
+    {
+      "id": "D:26-31",
+      "group": "3b",
+      "pages": [
+        "f26r",
+        "f26v",
+        "f31r",
+        "f31v"
+      ],
+      "N": 395,
+      "mattr100": 0.7955067567567569,
+      "mean_map_d100": 0.8032151898734178
+    },
+    {
+      "id": "F:43-46",
+      "group": "3b",
+      "pages": [
+        "f43r",
+        "f43v",
+        "f46r",
+        "f46v"
+      ],
+      "N": 577,
+      "mattr100": 0.8422594142259414,
+      "mean_map_d100": 0.844471403812825
+    },
+    {
+      "id": "F:41-48",
+      "group": "3b",
+      "pages": [
+        "f41r",
+        "f41v",
+        "f48r",
+        "f48v"
+      ],
+      "N": 379,
+      "mattr100": 0.8773928571428571,
+      "mean_map_d100": 0.8615831134564644
+    },
+    {
+      "id": "E:34-39",
+      "group": "3a",
+      "pages": [
+        "f34r",
+        "f34v",
+        "f39r",
+        "f39v"
+      ],
+      "N": 569,
+      "mattr100": 0.7998723404255319,
+      "mean_map_d100": 0.812390158172232
+    },
+    {
+      "id": "E:33-40",
+      "group": "3a",
+      "pages": [
+        "f33r",
+        "f33v",
+        "f40r",
+        "f40v"
+      ],
+      "N": 396,
+      "mattr100": 0.7262962962962963,
+      "mean_map_d100": 0.7442929292929293
+    },
+    {
+      "id": "G:50-55",
+      "group": "3a",
+      "pages": [
+        "f50r",
+        "f50v",
+        "f55r",
+        "f55v"
+      ],
+      "N": 422,
+      "mattr100": 0.8101238390092877,
+      "mean_map_d100": 0.8091469194312796
+    },
+    {
+      "id": "Q:94-95",
+      "group": "3a",
+      "pages": [
+        "f94r",
+        "f94v",
+        "f95r1",
+        "f95r2",
+        "f95v2",
+        "f95v1"
+      ],
+      "N": 534,
+      "mattr100": 0.8262298850574714,
+      "mean_map_d100": 0.819063670411985
+    },
+    {
+      "id": "N:85-86",
+      "group": "3c",
+      "pages": [
+        "f85r1",
+        "f85r2",
+        "fRos",
+        "f86v4",
+        "f86v6",
+        "f86v5",
+        "f86v3"
+      ],
+      "N": 1698,
+      "mattr100": 0.8134771732332708,
+      "mean_map_d100": 0.816919905771496
+    },
+    {
+      "id": "T:105-114",
+      "group": "3c",
+      "pages": [
+        "f105r",
+        "f105v",
+        "f114r",
+        "f114v"
+      ],
+      "N": 1607,
+      "mattr100": 0.871372679045093,
+      "mean_map_d100": 0.8688425637834474
+    },
+    {
+      "id": "T:104-115",
+      "group": "3c",
+      "pages": [
+        "f104r",
+        "f104v",
+        "f115r",
+        "f115v"
+      ],
+      "N": 1792,
+      "mattr100": 0.8701358535144713,
+      "mean_map_d100": 0.86640625
+    },
+    {
+      "id": "T:106-113",
+      "group": "3c",
+      "pages": [
+        "f106r",
+        "f106v",
+        "f113r",
+        "f113v"
+      ],
+      "N": 1905,
+      "mattr100": 0.8595127353266888,
+      "mean_map_d100": 0.861753280839895
+    },
+    {
+      "id": "T:107-112",
+      "group": "3c",
+      "pages": [
+        "f107r",
+        "f107v",
+        "f112r",
+        "f112v"
+      ],
+      "N": 1766,
+      "mattr100": 0.8047870425914817,
+      "mean_map_d100": 0.8076727066817666
+    },
+    {
+      "id": "T:108-111",
+      "group": "4c",
+      "pages": [
+        "f108r",
+        "f108v",
+        "f111r",
+        "f111v"
+      ],
+      "N": 2260,
+      "mattr100": 0.77329477093938,
+      "mean_map_d100": 0.7793716814159292
+    },
+    {
+      "id": "T:103-116",
+      "group": "4c",
+      "pages": [
+        "f103r",
+        "f103v",
+        "f116r"
+      ],
+      "N": 1521,
+      "mattr100": 0.7639240506329114,
+      "mean_map_d100": 0.7672255095332019
+    },
+    {
+      "id": "M:79-80",
+      "group": "4a",
+      "pages": [
+        "f79r",
+        "f79v",
+        "f80r",
+        "f80v"
+      ],
+      "N": 1548,
+      "mattr100": 0.7428640441683919,
+      "mean_map_d100": 0.7454263565891474
+    },
+    {
+      "id": "M:76-83",
+      "group": "4a",
+      "pages": [
+        "f76v",
+        "f83r",
+        "f83v",
+        "f76r"
+      ],
+      "N": 1555,
+      "mattr100": 0.7231181318681318,
+      "mean_map_d100": 0.7285466237942121
+    },
+    {
+      "id": "M:78-81",
+      "group": "4a",
+      "pages": [
+        "f78r",
+        "f78v",
+        "f81r",
+        "f81v"
+      ],
+      "N": 1047,
+      "mattr100": 0.7159810126582279,
+      "mean_map_d100": 0.7138681948424069
+    },
+    {
+      "id": "M:75-84",
+      "group": "4a",
+      "pages": [
+        "f75r",
+        "f75v",
+        "f84r",
+        "f84v"
+      ],
+      "N": 1436,
+      "mattr100": 0.680149588631264,
+      "mean_map_d100": 0.6868871866295264
+    },
+    {
+      "id": "M:77-82",
+      "group": "4a",
+      "pages": [
+        "f77r",
+        "f77v",
+        "f82r",
+        "f82v"
+      ],
+      "N": 1226,
+      "mattr100": 0.697834960070985,
+      "mean_map_d100": 0.7030750407830343
+    }
+  ],
+  "pharma_bifolia": [
+    "S:100-101",
+    "S:99-102",
+    "O:88-89"
+  ],
+  "artifacts": {
+    "atlas.html": 4060015,
+    "bio_heatmap.png": 262399,
+    "bio_heatmap.svg": 1200597,
+    "decline_heatmap.png": 512766,
+    "decline_heatmap.svg": 3395252,
+    "early_heatmap.png": 267543,
+    "early_heatmap.svg": 707200,
+    "pharma_heatmap.png": 180887,
+    "pharma_heatmap.svg": 478927
+  }
+}

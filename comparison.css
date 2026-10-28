@@ -1,0 +1,70 @@
+/* Uses the app's existing colours, typography, chart primitives, and text tokens. */
+.comparison-jumps{display:flex;flex-wrap:wrap;gap:8px 20px;font-size:12px;margin:14px 0 8px}
+.comparison .section-head{display:flex;align-items:baseline;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:8px}
+.comparison .section-head h2{margin:0}
+.comparison section{scroll-margin-top:12px}
+.comparison .context{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 14px}
+.comparison .context span{border:1px solid var(--line);border-radius:6px;padding:5px 10px;font-size:12px;color:var(--ink2)}
+.comparison .toolbar{display:flex;align-items:center;flex-wrap:wrap;gap:10px 20px;margin-bottom:12px}
+.comparison .weights{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px 20px;margin:10px 0}
+.comparison .weights label{display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:12px}
+.comparison .weights select{width:65px}
+.comparison .rank-wrap{max-height:770px;overflow:auto}
+.comparison .rank-table{width:max-content;min-width:100%;font-size:12px}
+.comparison .rank-table thead{position:sticky;top:0;z-index:3;background:var(--surface)}
+.comparison .rank-table .method-cell{position:sticky;left:0;z-index:2;background:var(--surface);min-width:220px;max-width:245px;border-right:1px solid var(--line)}
+.comparison .rank-table thead .method-cell{z-index:4}
+.comparison .rank-table .rn{white-space:normal}
+.comparison .rank-table th.metric-col{width:43px;min-width:43px;max-width:48px;text-align:center;vertical-align:bottom;padding:8px 3px}
+.comparison .rank-table th.family-col{text-align:center;max-width:172px;border-left:1px solid var(--line);font-size:10px}
+.comparison .rank-table th button{border:0;background:none;font-size:11px;padding:0;color:var(--ink2)}
+.comparison .rank-table td{vertical-align:middle}
+.comparison .rank-cell{padding:3px;text-align:center}
+.comparison .rank-cell button{display:block;width:100%;height:31px;border:0;border-radius:3px;font:600 12px var(--sans);background:color-mix(in srgb,var(--dv-red) var(--strength),var(--surface));color:var(--ink)}
+.comparison .rank-cell button:focus-visible{outline-offset:-2px}
+.comparison .rank-cell.diagnostic{border-left:1px dashed var(--line2)}
+.comparison .rank-table tr.selected .method-cell{box-shadow:inset 3px 0 var(--accent)}
+.comparison .rank-number{font-size:16px;font-weight:700;min-width:27px;display:inline-block}
+.comparison .rank-method{border:0;background:none;text-align:left;padding:0;color:var(--ink);font-size:12px}
+.comparison .rank-sub{font-size:10px;color:var(--ink2);margin-left:30px}
+.comparison .rank-score{width:72px;min-width:72px;font-size:12px}
+.comparison .score-track{height:4px;background:var(--line);margin-top:5px}
+.comparison .score-track i{display:block;height:100%;background:var(--ink2)}
+.comparison .scale-note{display:flex;gap:8px;align-items:center;font-size:12px;color:var(--ink2);margin:8px 0}
+.comparison .error-scale{width:100px;height:9px;background:linear-gradient(90deg,var(--surface),color-mix(in srgb,var(--dv-red) 64%,var(--surface)));border:1px solid var(--line)}
+.comparison .plot-options{display:flex;flex-wrap:wrap;gap:7px 16px;margin:10px 0 14px;max-height:230px;overflow:auto}
+.comparison .plot-options label{font-size:12px;display:flex;align-items:center;gap:6px}
+.comparison .plot-options .rn{white-space:normal}
+.comparison .profile-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:14px}
+.comparison .profile-card{border:1px solid var(--line);border-radius:8px;padding:12px;min-width:0}
+.comparison .profile-card h3{font-size:13px;display:flex;justify-content:space-between;gap:6px;flex-wrap:wrap}
+.comparison .profile-card .card-tools{display:flex;gap:8px;font-size:11px;align-items:center}
+.comparison .profile-card button{font-size:11px;padding:2px 6px}
+.comparison .metric-description{font-size:12px;color:var(--ink2);max-width:1000px;margin:8px 0}
+.comparison .text-pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:12px 0}
+.comparison .excerpt{border:1px solid var(--line);border-radius:8px;padding:12px;min-width:0}
+.comparison .excerpt h3 .rn{white-space:normal}
+.comparison .excerpt .text{padding-top:10px;font-size:12.5px;line-height:1.85}
+.comparison .excerpt .line{padding:1px 0;gap:5px}
+.comparison .excerpt .ln{flex-basis:27px;padding-right:3px}
+.comparison .excerpt .words{gap:1px 0}
+.comparison .excerpt .tok{padding:0 3px;cursor:help}
+.comparison .excerpt .tok.recent{box-shadow:inset 0 -2px color-mix(in srgb,var(--hapax) 65%,transparent)}
+.comparison .excerpt .tok.short{background:color-mix(in srgb,var(--dv-red) 25%,transparent)}
+.comparison .excerpt .glyph{border-radius:2px;background:var(--glyph-bg,transparent)}
+.comparison .excerpt .glyph.space{display:inline-block;min-width:.35em}
+.comparison .sample-note{font-size:11px;color:var(--muted);margin:0}
+.comparison .overlay-key{font-size:12px;color:var(--ink2);padding:8px 10px;background:var(--bg);border-radius:6px}
+.comparison .metric-readout button{padding:0;border:0;background:transparent;color:var(--accent);font-size:12px;text-align:left}
+.comparison .metric-readout td{font-size:12px}
+.comparison .metric-readout td.num{min-width:85px}
+.comparison .failure-table .rn{white-space:normal}
+.comparison .failure-table td{vertical-align:middle}
+.comparison .failure-table .stalled{color:var(--neg);font-size:11px}
+.comparison .mechanism-change{padding:10px 12px;border-left:3px solid var(--line2);background:var(--bg);font-size:12px;margin:10px 0}
+.comparison .mechanism-change ul{margin:6px 0;padding-left:20px}
+.comparison .mechanism-matrix td{min-width:110px}
+.comparison .mechanism-matrix .rn{white-space:normal}
+.comparison .rank-feedback{min-height:24px;font-size:12px;color:var(--ink2);margin:8px 0}
+@media(max-width:800px){.comparison .profile-grid,.comparison .text-pair{grid-template-columns:1fr}.comparison .weights{grid-template-columns:1fr 1fr}.comparison .rank-table .method-cell{min-width:190px;max-width:215px}.comparison select{max-width:100%}.comparison .ctl{flex-wrap:wrap}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
