@@ -13,6 +13,9 @@ intervals (the difference above minus below is paired). Copier rows: mean over s
   Original Timm, words in view          21917    28/28         +0.114 [+0.108,+0.117]      +0.072 [+0.069,+0.074]      +0.042 [+0.039,+0.045]      +0.094     +0.039          +0.136         +0.078
   no-innovator far 0, words in view     24205    30/30         +0.099 [+0.092,+0.108]      +0.088 [+0.080,+0.097]      +0.010 [-0.001,+0.020]      +0.075     +0.062          +0.087         +0.079
   far 0 + innovator, words in view      21975    29/28         +0.094 [+0.086,+0.107]      +0.067 [+0.053,+0.077]      +0.027 [+0.009,+0.036]      +0.073     +0.046          +0.073         +0.060
+  manuscript, lines shuffled in paragraphs  19725    27/26         +0.046 [+0.024,+0.066]      +0.068 [+0.046,+0.086]      -0.022 [-0.041,-0.001]      +0.039     +0.052          +0.060         +0.078
+  manuscript, lines shuffled in pages   19596    26/26         +0.065 [+0.046,+0.082]      +0.054 [+0.032,+0.074]      +0.012 [-0.008,+0.032]      +0.040     +0.042          +0.070         +0.059
+  manuscript, words shuffled in lines   19563    27/26         +0.029 [+0.006,+0.054]      +0.022 [+0.003,+0.038]      +0.007 [-0.023,+0.041]      +0.022     +0.012          +0.027         +0.021
 
 == region Herbal A
   text                                      n  pool up/dn            components above            components below           above minus below    H2 above   H2 below  word div above word div below
@@ -24,6 +27,9 @@ intervals (the difference above minus below is paired). Copier rows: mean over s
   Original Timm, words in view           3238    19/20         +0.131 [+0.112,+0.162]      +0.047 [+0.032,+0.060]      +0.084 [+0.058,+0.130]      +0.091     +0.029          +0.129         +0.025
   no-innovator far 0, words in view      3951    22/22         +0.088 [+0.064,+0.109]      +0.084 [+0.059,+0.098]      +0.004 [-0.007,+0.014]      +0.073     +0.050          +0.082         +0.105
   far 0 + innovator, words in view       3284    20/20         +0.082 [+0.072,+0.096]      +0.084 [+0.070,+0.106]      -0.002 [-0.034,+0.021]      +0.064     +0.051          +0.055         +0.065
+  manuscript, lines shuffled in paragraphs   2860    19/19         +0.010 [-0.035,+0.052]      +0.083 [+0.038,+0.124]      -0.073 [-0.126,-0.010]      +0.004     +0.044          +0.054         +0.096
+  manuscript, lines shuffled in pages    2868    19/20         +0.042 [-0.008,+0.085]      +0.024 [-0.019,+0.067]      +0.017 [-0.041,+0.065]      +0.030     +0.042          +0.086         +0.027
+  manuscript, words shuffled in lines    2807    18/19         +0.007 [-0.049,+0.061]      +0.043 [+0.016,+0.068]      -0.036 [-0.096,+0.018]      -0.003     +0.031          +0.050         +0.046
 
 == region Herbal B
   text                                      n  pool up/dn            components above            components below           above minus below    H2 above   H2 below  word div above word div below
@@ -35,6 +41,9 @@ intervals (the difference above minus below is paired). Copier rows: mean over s
   Original Timm, words in view           1508    22/22         +0.150 [+0.115,+0.181]      +0.075 [+0.070,+0.077]      +0.075 [+0.045,+0.104]      +0.130     +0.033          +0.192         +0.062
   no-innovator far 0, words in view      1741    23/24         +0.139 [+0.090,+0.182]      +0.081 [+0.071,+0.090]      +0.058 [-0.000,+0.098]      +0.086     +0.070          +0.089         +0.082
   far 0 + innovator, words in view       1541    22/23         +0.093 [+0.085,+0.106]      +0.113 [+0.096,+0.135]      -0.020 [-0.029,-0.006]      +0.068     +0.067          +0.059         +0.093
+  manuscript, lines shuffled in paragraphs   1358    20/21         +0.093 [+0.054,+0.141]      +0.012 [-0.064,+0.067]      +0.081 [-0.006,+0.194]      +0.065     +0.014          +0.107         +0.003
+  manuscript, lines shuffled in pages    1357    21/21         +0.033 [-0.010,+0.079]      +0.038 [-0.080,+0.112]      -0.006 [-0.102,+0.127]      +0.010     +0.033          +0.053         +0.092
+  manuscript, words shuffled in lines    1327    20/20         +0.034 [-0.052,+0.108]      -0.025 [-0.087,+0.025]      +0.059 [-0.070,+0.187]      +0.044     -0.034          +0.060         +0.008
 
 == region Stars
   text                                      n  pool up/dn            components above            components below           above minus below    H2 above   H2 below  word div above word div below
@@ -46,6 +55,9 @@ intervals (the difference above minus below is paired). Copier rows: mean over s
   Original Timm, words in view          11270    32/31         +0.104 [+0.084,+0.120]      +0.080 [+0.072,+0.085]      +0.024 [+0.012,+0.037]      +0.096     +0.048          +0.133         +0.096
   no-innovator far 0, words in view     12024    34/33         +0.101 [+0.077,+0.125]      +0.085 [+0.064,+0.115]      +0.016 [+0.010,+0.027]      +0.077     +0.059          +0.094         +0.075
   far 0 + innovator, words in view      11110    32/31         +0.100 [+0.093,+0.114]      +0.050 [+0.038,+0.056]      +0.051 [+0.039,+0.059]      +0.085     +0.030          +0.092         +0.041
+  manuscript, lines shuffled in paragraphs  10051    29/29         +0.047 [+0.027,+0.068]      +0.076 [+0.050,+0.100]      -0.029 [-0.052,-0.002]      +0.038     +0.052          +0.053         +0.085
+  manuscript, lines shuffled in pages    9972    29/29         +0.086 [+0.069,+0.108]      +0.078 [+0.060,+0.098]      +0.008 [-0.016,+0.033]      +0.043     +0.042          +0.076         +0.082
+  manuscript, words shuffled in lines    9971    29/29         +0.023 [-0.012,+0.058]      +0.031 [+0.010,+0.052]      -0.009 [-0.050,+0.043]      +0.009     +0.020          +0.009         +0.015
 
 == region Bio
   text                                      n  pool up/dn            components above            components below           above minus below    H2 above   H2 below  word div above word div below
@@ -57,6 +69,9 @@ intervals (the difference above minus below is paired). Copier rows: mean over s
   Original Timm, words in view           5300    28/28         +0.110 [+0.100,+0.116]      +0.067 [+0.048,+0.090]      +0.043 [+0.026,+0.065]      +0.079     +0.031          +0.126         +0.070
   no-innovator far 0, words in view      5802    31/30         +0.078 [+0.055,+0.104]      +0.092 [+0.080,+0.102]      -0.014 [-0.026,+0.003]      +0.064     +0.069          +0.069         +0.066
   far 0 + innovator, words in view       5432    29/29         +0.085 [+0.067,+0.105]      +0.068 [+0.050,+0.080]      +0.017 [-0.006,+0.033]      +0.053     +0.058          +0.048         +0.076
+  manuscript, lines shuffled in paragraphs   4898    27/26         +0.043 [-0.024,+0.097]      +0.052 [-0.007,+0.098]      -0.010 [-0.023,+0.002]      +0.043     +0.062          +0.056         +0.062
+  manuscript, lines shuffled in pages    4840    26/26         +0.046 [+0.003,+0.086]      +0.014 [-0.010,+0.037]      +0.031 [-0.002,+0.068]      +0.037     +0.031          +0.047         +0.018
+  manuscript, words shuffled in lines    4903    27/27         +0.055 [+0.017,+0.095]      -0.002 [-0.052,+0.028]      +0.056 [+0.026,+0.101]      +0.052     +0.004          +0.042         +0.024
 
 == region all, controls (mean over seeds): pool-size-stratified contrasts (tertiles of each cone's own size); line-position controls
   text                                    comp. pool-strat up/dn   word div pool-strat up/dn    comp. interior targets up/dn    comp. in line thirds up/dn   word div in line thirds up/dn
@@ -68,5 +83,8 @@ intervals (the difference above minus below is paired). Copier rows: mean over s
   Original Timm, words in view               +0.116 /     +0.090        +0.157 /      +0.137          +0.126 /        +0.077         +0.112 /       +0.072          +0.141 /        +0.086
   no-innovator far 0, words in view          +0.127 /     +0.116        +0.140 /      +0.141          +0.119 /        +0.108         +0.101 /       +0.084          +0.095 /        +0.078
   far 0 + innovator, words in view           +0.119 /     +0.093        +0.113 /      +0.115          +0.110 /        +0.084         +0.090 /       +0.067          +0.078 /        +0.064
+  manuscript, lines shuffled in paragraphs       +0.055 /     +0.078        +0.085 /      +0.101          +0.050 /        +0.075         +0.043 /       +0.066          +0.063 /        +0.073 [+0.029,+0.072] / [+0.052,+0.094]
+  manuscript, lines shuffled in pages        +0.065 /     +0.066        +0.097 /      +0.095          +0.074 /        +0.062         +0.068 /       +0.043          +0.074 /        +0.055 [+0.050,+0.093] / [+0.037,+0.083]
+  manuscript, words shuffled in lines        +0.032 /     +0.040        +0.033 /      +0.017          +0.032 /        +0.027         +0.029 /       +0.024          +0.033 /        +0.024 [+0.005,+0.060] / [-0.000,+0.050]
 
-cohorts (region all): manuscript (recorded boxes) 19573 of 19573 with the cone above valid; manuscript (synthetic boxes) 19605 of 19605 with the cone above valid; manuscript shuffled in paragraphs 19567 of 19567 with the cone above valid; Original Timm, page draw 22454 of 22454 with the cone above valid; no-innovator far 0, page draw 22888 of 22888 with the cone above valid; Original Timm, words in view 21917 of 21917 with the cone above valid; no-innovator far 0, words in view 24205 of 24205 with the cone above valid; far 0 + innovator, words in view 21975 of 21975 with the cone above valid
+cohorts (region all): manuscript (recorded boxes) 19573 of 19573 with the cone above valid; manuscript (synthetic boxes) 19605 of 19605 with the cone above valid; manuscript shuffled in paragraphs 19567 of 19567 with the cone above valid; Original Timm, page draw 22454 of 22454 with the cone above valid; no-innovator far 0, page draw 22888 of 22888 with the cone above valid; Original Timm, words in view 21917 of 21917 with the cone above valid; no-innovator far 0, words in view 24205 of 24205 with the cone above valid; far 0 + innovator, words in view 21975 of 21975 with the cone above valid; manuscript, lines shuffled in paragraphs 19725 of 19725 with the cone above valid; manuscript, lines shuffled in pages 19596 of 19596 with the cone above valid; manuscript, words shuffled in lines 19563 of 19563 with the cone above valid

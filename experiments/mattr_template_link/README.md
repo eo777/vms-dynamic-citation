@@ -142,6 +142,7 @@ page f78r) or <http://127.0.0.1:8766/compare.html> (any bifolium, every text ver
 | pool-size-stratified contrast, word diversity, manuscript / shuffled in paragraphs / shuffled in pages | `mechanism_check.log` | +0.077 / +0.011 / −0.006 |
 | mirror-cone test, components, manuscript: cone above / cone below / paired difference | `direction_check.log`, region all | +0.036 / +0.032 / +0.004 (−0.019 to +0.026) |
 | the same for Original Timm (page draw) and for the no-innovator copier of the words in view | same table | +0.121 / +0.052 / +0.068; +0.099 / +0.088 / +0.010 |
+| the same with the manuscript's lines shuffled inside paragraphs / words shuffled inside lines / words shuffled inside paragraphs (cone above) | same table | +0.046 / +0.029 / +0.009 |
 | MATTR100 fall 3c → 4a, manuscript = bag + clustering | `layout_controls.log` | −0.128 = −0.118 − 0.011 |
 | the same for Original Timm and the no-innovator far 0 run | `layout_controls.log` | −0.069 = −0.015 − 0.054; −0.099 = −0.050 − 0.049 |
 | coupling of the MATTR colour with component diversity, manuscript, token level / page means | `mattr_vs_components.log` | +0.26 / +0.48 |

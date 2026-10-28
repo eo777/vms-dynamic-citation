@@ -18,7 +18,11 @@ the line, quintiles formed inside each third.
 Texts: the manuscript (recorded rectangles; synthetic rectangles; shuffled inside its paragraphs on the recorded
 rectangles) and the copiers, each seed with synthetic rectangles: Original Timm and the no-innovator far 0 run with
 Timm's page draw, the same two with their draws from the words in view (spatial), and the far 0 configuration with the
-innovator in its spatial form. Run from anywhere: python direction_check.py > direction_check.log
+innovator in its spatial form. Added at the user's request: the manuscript with whole lines permuted inside their paragraphs
+and inside their pages (each line's words stay together and in order; synthetic rectangles, since the moved lines no longer
+fit their slots), which keeps the within-line part of the association and randomizes the vertical neighbourhood, and the
+manuscript with the words permuted inside each line (recorded rectangles), which does the opposite.
+Run from anywhere: python direction_check.py > direction_check.log
 """
 import json
 import subprocess
@@ -107,6 +111,22 @@ def tertile_edges(size, mask):
     return ((-1, q[0]), (q[0], q[1]), (q[1], 1e9))
 
 
+def shuffled_lines(ms, unit, srng):
+    """Whole lines permuted among the line slots of each unit (paragraph or page); a line's words stay together and in order."""
+    lines = [list(L['words']) for L in ms['lines']]
+    out = [None] * len(lines)
+    for u in np.unique(unit):
+        idx = np.where(unit == u)[0]
+        for a, b in zip(idx, srng.permutation(idx)):
+            out[a] = lines[b]
+    return out
+
+
+def shuffled_words_in_lines(ms, srng):
+    """The words of every line permuted inside that line; line lengths, paragraphs and pages kept."""
+    return [[L['words'][k] for k in srng.permutation(len(L['words']))] for L in ms['lines']]
+
+
 def analyse(ms, line_words, geometry):
     inp = CC.make_input(ms, line_words, geometry, CC.zattera)
     M = measure(inp)
@@ -173,11 +193,22 @@ def main():
             for s in D.STREAMS[key][1][:3]:
                 lines = D.read_stream(s)
                 run(key, lines, CC.synthetic_geometry(lines, frames, ms))
+        # line-level shuffles (user's request, 28 October): own generator so the draws above are unchanged
+        srng = np.random.default_rng(1028)
+        par_of_line = np.cumsum([bool(L['first']) for L in ms['lines']])
+        page_of_line = np.array([L['page'] for L in ms['lines']])
+        for name, unit in (('manuscript_lines_shuffled_paragraphs', par_of_line), ('manuscript_lines_shuffled_pages', page_of_line)):
+            lines = shuffled_lines(ms, unit, srng)
+            run(name, lines, CC.synthetic_geometry(lines, frames, ms))
+        run('manuscript_words_shuffled_lines', shuffled_words_in_lines(ms, srng), app['geometry'])
         (HERE / 'direction_check.json').write_text(json.dumps(results, indent=1, default=float), encoding='utf-8')
 
     names = list(results)
     labels = {'manuscript': 'manuscript (recorded boxes)', 'manuscript_synthetic': 'manuscript (synthetic boxes)',
-              'manuscript_shuffled_paragraphs': 'manuscript shuffled in paragraphs', 'timm': 'Original Timm, page draw',
+              'manuscript_shuffled_paragraphs': 'manuscript shuffled in paragraphs',
+              'manuscript_lines_shuffled_paragraphs': 'manuscript, lines shuffled in paragraphs',
+              'manuscript_lines_shuffled_pages': 'manuscript, lines shuffled in pages',
+              'manuscript_words_shuffled_lines': 'manuscript, words shuffled in lines', 'timm': 'Original Timm, page draw',
               'noinnov_far0': 'no-innovator far 0, page draw', 'timm_spatial': 'Original Timm, words in view',
               'noinnov_spatial': 'no-innovator far 0, words in view', 'far0_spatial': 'far 0 + innovator, words in view'}
 
