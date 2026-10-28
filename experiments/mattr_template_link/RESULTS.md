@@ -470,11 +470,12 @@ The gap (bag100 minus MATTR100, repeats beyond the bag) by group: manuscript 0.0
 
 (`contrast_by_group.png` carries all three scores.)
 
-**By manuscript / illustration section (28 October).** `summary_figures/build_illustration_contrasts.py` regroups the same target-level measurements by each page's `section` label in `physical_map.csv`, combining Currier labels within sections. It retains the original chart's text samples, legacy geometry, full-window cohort, within-bifolium quintiles and three pool-size bands. This is not an average of Golf-group estimates. The script checks the existing Golf and section/Currier estimates before saving the new grouping.
+**By manuscript / illustration section (28 October).** `summary_figures/build_illustration_contrasts.py` regroups the same target-level measurements by each page's `section` label in `physical_map.csv`, splitting Herbal into Currier A and B and combining Currier labels in the other sections. It retains the original chart's text samples, legacy geometry, full-window cohort, within-bifolium quintiles and three pool-size bands. This is not an average of Golf-group estimates. The script checks the existing Golf and section/Currier estimates before saving the new grouping, and confirms that all non-Herbal section results are unchanged.
 
 | Illustration section | Scored manuscript words | Component contrast | H2 contrast |
 |---|---:|---:|---:|
-| Herbal (all Currier labels) | 4,203 | +0.037 | +0.018 |
+| Herbal A | 2,633 | +0.063 | +0.040 |
+| Herbal B | 1,570 | -0.003 | +0.009 |
 | Pharma | 1,186 | +0.027 | +0.036 |
 | Stars (all Currier labels) | 9,854 | +0.079 | +0.062 |
 | Bio | 4,917 | +0.052 | +0.066 |
@@ -482,7 +483,7 @@ The gap (bag100 minus MATTR100, repeats beyond the bag) by group: manuscript 0.0
 | Cosmological | 172 | +0.202 | -0.059 |
 | Astrological | 75 | unavailable | unavailable |
 
-The Cosmological estimate has only one contributing bifolium in each band. Astrological pages cannot supply the minimum 25 eligible targets per bifolium in every band, so no combined estimate is plotted. The compact [metrics](summary_figures/illustration_contrasts.json) preserve page assignments, counts, band support, input hashes and reproduction checks for every control. No text generation was rerun; temporary per-token measurements were discarded.
+The Cosmological estimate has only one contributing bifolium in each band. Astrological pages cannot supply the minimum 25 eligible targets per bifolium in every band, so no combined estimate is plotted. The one Herbal page without a Currier assignment, f65v, has no eligible manuscript targets and is retained separately in the data. The compact [metrics](summary_figures/illustration_contrasts.json) preserve page assignments, counts, band support, input hashes and reproduction checks for every control. No text generation was rerun; temporary per-token measurements were discarded.
 
 ![Component and H2 repeat contrasts by manuscript illustration section](summary_figures/contrast_by_illustration_components_h2.png)
 

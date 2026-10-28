@@ -2,7 +2,7 @@
 
 Default: redraw from the compact saved JSON. --recompute: rescore the same
 legacy-geometry inputs as the Golf chart, verify its published point estimates,
-and regroup targets by the physical map's section field (without Currier splits).
+and regroup targets by the physical map's section field, splitting Herbal by Currier A/B.
 No text is generated. Temporary per-token measurements are discarded by measure().
 """
 import argparse
@@ -24,9 +24,9 @@ sys.path.insert(0, str(STUDY))
 import figures_small as F
 
 OUTPUT = HERE / 'illustration_contrasts.json'
-SECTIONS = [('H', 'Herbal'), ('P', 'Pharma'), ('S', 'Stars'),
+SECTIONS = [('H/A', 'Herbal A'), ('H/B', 'Herbal B'), ('P', 'Pharma'), ('S', 'Stars'),
             ('B', 'Bio'), ('T', 'Text-only pages'), ('C', 'Cosmological'),
-            ('A', 'Astrological')]
+            ('A', 'Astrological'), ('H/?', 'Herbal, Currier unassigned')]
 MEASURES = [('components', 'component diversity'), ('h2', 'glyph H2')]
 
 
@@ -78,6 +78,8 @@ def recompute():
     manuscript = D.manuscript()
     page_sections = {p['folio']: p['section'] for p in manuscript['pages']}
     page_currier = {p['folio']: p['currier'] for p in manuscript['pages']}
+    page_panels = {page: ('H/' + (page_currier[page] or '?') if section == 'H' else section)
+                   for page, section in page_sections.items()}
     groups = {line['node']: line['group'] for line in manuscript['lines']}
     legacy_sections = [('Herbal A', 'H/A'), ('Herbal B', 'H/B'), ('Pharma', 'P/A'),
                        ('Stars', 'S/B'), ('Bio', 'B/B'), ('Text-only pages', 'T/B')]
@@ -96,7 +98,7 @@ def recompute():
         'manuscript_shuffled_pages': shuffled_within(manuscript, tok, tok['page']),
     }
     result = {
-        'grouping': 'physical_map.csv section; all Currier labels combined; target page determines section',
+        'grouping': 'physical_map.csv section; Herbal split by Currier A/B; target page determines section',
         'geometry_policy': 'legacy, matching the existing Golf chart',
         'statistic': 'lowest-minus-highest source-diversity quintile repeat-score contrast within bifolium; '
                      'pooled target sums within each source-pool-size band; equal mean of three bands',
@@ -105,9 +107,9 @@ def recompute():
         'comparison_json_sha256': digest(STUDY / 'mechanism_check.json'),
         'source_math_sha256': digest(STUDY / 'component_source_math.js'),
         'sections': [{'code': code, 'name': name,
-                      'pages': [p['folio'] for p in manuscript['pages'] if p['section'] == code],
+                      'pages': [p['folio'] for p in manuscript['pages'] if page_panels[p['folio']] == code],
                       'manuscript_tokens': sum(len(l['words']) for l in manuscript['lines']
-                                               if page_sections[l['folio']] == code)}
+                                               if page_panels[l['folio']] == code)}
                      for code, name in SECTIONS],
         'texts': {},
     }
@@ -131,7 +133,7 @@ def recompute():
         for line in inp['lines']:
             ix = slice(line['start'], line['end'])
             node[ix] = line['bifolium']
-            section[ix] = page_sections[line['page']]
+            section[ix] = page_panels[line['page']]
             old_section[ix] = page_sections[line['page']] + '/' + page_currier[line['page']]
             group[ix] = groups[line['bifolium']]
         starts, ends = np.zeros(count, int), np.zeros(count, int)
@@ -164,16 +166,25 @@ def recompute():
         print(f'{key}: matched saved Golf/section estimates; illustration sections calculated', flush=True)
     result['verification'] = {'compared_estimates': len(errors), 'maximum_absolute_difference': max(errors),
                               'matching_unavailable_estimates': missing_matches, 'counts_match': True}
+    if OUTPUT.exists():
+        previous = json.loads(OUTPUT.read_text(encoding='utf-8'))
+        for key, text in result['texts'].items():
+            for code, _ in SECTIONS:
+                if code.startswith('H/'):
+                    continue
+                assert text['sections'][code] == previous['texts'][key]['sections'][code], (key, code)
+        result['verification']['non_herbal_sections_unchanged'] = True
     OUTPUT.write_text(json.dumps(result, indent=2, allow_nan=False) + '\n', encoding='utf-8')
     return result
 
 
 def plot(result):
     # Astrological pages cannot support every pool-size band in the manuscript.
-    panels = [(code, name) for code, name in SECTIONS if code != 'A']
+    panels = [(code, name) for code, name in SECTIONS if code not in ('A', 'H/?')]
     assert all(result['texts']['manuscript']['sections']['A'][m]['contrast'] is None for m, _ in MEASURES)
+    assert result['texts']['manuscript']['sections']['H/?']['n'] == 0
     plt.rcParams.update({'font.size': 10, 'svg.fonttype': 'none'})
-    fig, axes = plt.subplots(2, 3, figsize=(16, 11.6), sharey=True)
+    fig, axes = plt.subplots(2, 4, figsize=(19, 11.6), sharey=True)
     ys = np.arange(len(F.ROWS))[::-1]
     values = [item['contrast'] for text in result['texts'].values()
               for code, _ in panels for metric, _ in MEASURES
@@ -199,23 +210,27 @@ def plot(result):
         ax.set_ylim(-.65, len(F.ROWS) - .4)
         ax.set_yticks(ys)
         ax.set_yticklabels([row[1] for row in F.ROWS], fontsize=9)
-        if index % 3 == 0:
+        if index % 4 == 0:
             F.style_headers(ax)
         n = result['texts']['manuscript']['sections'][code]['n']
         ax.set_title(f'{title}\n{n:,} manuscript words scored', loc='left', fontsize=11, pad=11)
         ax.tick_params(axis='x', labelsize=9)
-        if index >= 3:
+        if index >= 4:
             ax.set_xlabel('repeat rate after the least diverse pool\nminus after the most diverse pool', fontsize=9)
     fig.suptitle('Are words with a less diverse pool in view more often repeats?', x=.02, y=.99,
                  ha='left', fontsize=15, color=F.INK)
-    fig.text(.02, .955, 'By manuscript / illustration section. Each page uses its own section label; all Herbal pages are combined.\n'
+    fig.text(.02, .955, 'By manuscript / illustration section. Herbal A and Herbal B use the page’s Currier classification.\n'
              'Same controls and calculation as the Golf chart: compare the lowest and highest fifths within bifolia, then average the three pool-size bands.',
              fontsize=9.5, color=F.SEC, va='top')
-    fig.legend(handles=[Line2D([], [], marker=F.MARK[m], color=F.SEC, linestyle='none', markersize=6, label=label)
-                        for m, label in MEASURES], loc='lower center', bbox_to_anchor=(.65, .044), frameon=False, ncol=2, fontsize=10)
-    fig.text(.02, .025, 'Cosmological: 172 scored manuscript words. Astrological: 75; too few qualifying targets for all three pool-size bands, so no panel.',
+    key = axes.flat[-1]
+    key.set_axis_off()
+    key.legend(handles=[Line2D([], [], marker=F.MARK[m], color=F.SEC, linestyle='none', markersize=7, label=label)
+                        for m, label in MEASURES], loc='upper left', bbox_to_anchor=(0, .92), frameon=False, fontsize=11)
+    key.text(.04, .67, 'To the right of zero:\nmore repetition after\na less diverse source pool.',
+             transform=key.transAxes, fontsize=11, color=F.SEC, va='top', linespacing=1.6)
+    fig.text(.02, .035, 'Cosmological: 172 scored manuscript words. Astrological: 75; too few qualifying targets for all three pool-size bands, so no panel.',
              fontsize=9, color=F.SEC)
-    fig.subplots_adjust(left=.285, right=.99, top=.865, bottom=.12, wspace=.13, hspace=.30)
+    fig.subplots_adjust(left=.24, right=.99, top=.865, bottom=.12, wspace=.16, hspace=.30)
     for extension in ['png', 'svg']:
         path = HERE / f'contrast_by_illustration_components_h2.{extension}'
         fig.savefig(path, dpi=160, bbox_inches='tight')

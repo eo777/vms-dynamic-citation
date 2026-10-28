@@ -19,7 +19,8 @@ import numpy as np
 HERE = Path(__file__).resolve().parent
 STUDY = HERE.parent
 GROUPS = ['1a', '1b', '1.5a', '2a', '3b', '3a', '3c', '4c', '4a']
-LABELS = ['1a', '1b', '1.5a', '2a', '3b', '3a', '3c\nStars', '4c\nStars', '4a\nBio']
+LABELS = ['Herbal A\n1a', 'Herbal A\n1b', 'Herbal A\n1.5a', 'Pharma /\nAstro · 2a',
+          'Herbal B\n3b', 'Herbal B\n3a', 'Stars\n3c', 'Stars\n4c', 'Bio\n4a']
 TEXTS = [('la_galen_simplicium', 'Galen · De simplicium'),
          ('la_dioscorides_longob', 'Dioscorides · Longobard version'),
          ('la_rhazes_almansor', 'Rhazes · Almansor'),
@@ -55,13 +56,18 @@ def verify_streams(data):
         for seed_index, source in enumerate(sources):
             lines = [row['words'] for row in ms['lines']] if source is None else D.read_stream(source)
             assert len(lines) == len(ms['lines']) == 4130
-            by_group = {}
+            by_group, by_node = {}, {}
             for row, words in zip(ms['lines'], lines):
                 by_group.setdefault(row['group'], []).extend(words)
+                by_node.setdefault(row['node'], []).extend(words)
             errors = [abs(D.mattr(words)-data[key][seed_index]['route']['groups'][g]['mattr100'])
                       for g, words in by_group.items()]
+            node_errors = [abs(D.mattr(words)-data[key][seed_index]['route']['nodes'][node]['mattr100'])
+                           for node, words in by_node.items()]
             assert max(errors) < 1e-12, (key, seed_index, max(errors))
+            assert max(node_errors) < 1e-12, (key, seed_index, max(node_errors))
             checked.append(dict(series=key, seed_index=seed_index, max_absolute_error=max(errors),
+                                bifolia_checked=len(node_errors), max_bifolium_absolute_error=max(node_errors),
                                 input_sha256=digest(source) if source else digest(D.TOKENS)))
     for key in ['timm', 'timm_spatial']:
         path = D.STREAMS[key][1][0].parent / 'run.json'
@@ -79,15 +85,15 @@ def setup(ax, ylim=(.63, .92), small=False):
     ax.axvspan(5.5, 8.45, color='#edf0e9', zorder=0)
     ax.set_xlim(-.25, 8.25)
     ax.set_ylim(*ylim)
-    ax.set_xticks(np.arange(9), LABELS if not small else GROUPS)
-    ax.tick_params(axis='both', length=0, labelsize=9.5 if not small else 9, pad=7)
+    ax.set_xticks(np.arange(9), LABELS)
+    ax.tick_params(axis='both', length=0, labelsize=8.5, pad=7)
     ax.grid(axis='y', color=GRID, linewidth=.7)
     ax.set_axisbelow(True)
     for side in ['top', 'right']:
         ax.spines[side].set_visible(False)
     for side in ['left', 'bottom']:
         ax.spines[side].set_color(GRID)
-    ax.set_xlabel('Golf group in Path 1 order', fontsize=10, labelpad=10)
+    ax.set_xlabel('Section names and Golf groups · Path 1 order', fontsize=9, labelpad=10)
 
 
 def line(ax, route, key, label, color, style='-', width=2, range_=False):
@@ -130,8 +136,8 @@ def model_chart(route):
 
 
 def prose_chart(route):
-    fig, axes = plt.subplots(2, 3, figsize=(12.6, 7.6), sharex=True, sharey=True)
-    fig.subplots_adjust(left=.065, right=.98, bottom=.085, top=.84, wspace=.16, hspace=.48)
+    fig, axes = plt.subplots(3, 2, figsize=(12.6, 10.6), sharex=True, sharey=True)
+    fig.subplots_adjust(left=.065, right=.98, bottom=.085, top=.86, wspace=.16, hspace=.54)
     colors = ['#1f5fb8', '#c27430', '#7650aa', '#177b79', '#a52f64']
     for ax, (key, name), color in zip(axes.ravel(), TEXTS, colors):
         setup(ax, (.63, .94), small=True)
@@ -146,7 +152,8 @@ def prose_chart(route):
         ax.text(.02, .04, f'Stars → Bio: {a:+.3f} / {b:+.3f}', transform=ax.transAxes, fontsize=9, color=color)
     axes[0, 0].set_ylabel('MATTR100')
     axes[1, 0].set_ylabel('MATTR100')
-    key = axes[1, 2]
+    axes[2, 0].set_ylabel('MATTR100')
+    key = axes[2, 1]
     key.axis('off')
     key.legend(handles=[Line2D([], [], color=INK, lw=2, label='Manuscript'),
                         Line2D([], [], color=MUTED, lw=2, label='One word per manuscript box'),
