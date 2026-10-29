@@ -1,0 +1,26 @@
+manuscript: lines-above-only and study-selector pools under the joint control (inside exact length x pool-size tertile), interior words,
+two interior definitions, against 30 size-matched paragraph shuffles re-typeset into the frames.
+
+== cohort A: study pool >= 15
+  -- study selector: left 3 + 8 lines above
+     components recorded boxes   n= 14743 observed +0.009 [-0.015,+0.036]  shuffles mean +0.018, range -0.000..+0.040, above 4/30 (p = 0.871)
+     components synthetic boxes  n= 14849 observed +0.039 [+0.012,+0.069]  shuffles mean +0.018, range -0.000..+0.040, above 29/30 (p = 0.065)
+     h2         recorded boxes   n= 14743 observed +0.034 [+0.013,+0.054]  shuffles mean +0.014, range -0.007..+0.042, above 28/30 (p = 0.097)
+     h2         synthetic boxes  n= 14849 observed +0.041 [+0.013,+0.070]  shuffles mean +0.014, range -0.007..+0.042, above 29/30 (p = 0.065)
+  -- lines above only (8)
+     components recorded boxes   n= 14745 observed +0.025 [-0.003,+0.056]  shuffles mean +0.019, range -0.003..+0.036, above 22/30 (p = 0.290)
+     components synthetic boxes  n= 14849 observed +0.040 [+0.013,+0.065]  shuffles mean +0.019, range -0.003..+0.036, above 30/30 (p = 0.032)
+     h2         recorded boxes   n= 14745 observed +0.022 [-0.001,+0.043]  shuffles mean +0.015, range -0.002..+0.039, above 24/30 (p = 0.226)
+     h2         synthetic boxes  n= 14849 observed +0.037 [+0.011,+0.064]  shuffles mean +0.015, range -0.002..+0.039, above 29/30 (p = 0.065)
+
+== cohort B: above pool >= 15
+  -- study selector: left 3 + 8 lines above
+     components recorded boxes   n= 14385 observed +0.012 [-0.012,+0.035]  shuffles mean +0.016, range -0.000..+0.037, above 11/30 (p = 0.645)
+     components synthetic boxes  n= 14439 observed +0.027 [-0.003,+0.059]  shuffles mean +0.016, range -0.000..+0.037, above 25/30 (p = 0.194)
+     h2         recorded boxes   n= 14385 observed +0.033 [+0.008,+0.060]  shuffles mean +0.012, range -0.009..+0.040, above 29/30 (p = 0.065)
+     h2         synthetic boxes  n= 14439 observed +0.033 [+0.007,+0.063]  shuffles mean +0.012, range -0.009..+0.040, above 28/30 (p = 0.097)
+  -- lines above only (8)
+     components recorded boxes   n= 14385 observed +0.029 [-0.005,+0.056]  shuffles mean +0.019, range -0.004..+0.037, above 25/30 (p = 0.194)
+     components synthetic boxes  n= 14443 observed +0.033 [+0.010,+0.057]  shuffles mean +0.019, range -0.004..+0.037, above 29/30 (p = 0.065)
+     h2         recorded boxes   n= 14385 observed +0.024 [+0.000,+0.044]  shuffles mean +0.014, range -0.001..+0.032, above 25/30 (p = 0.194)
+     h2         synthetic boxes  n= 14443 observed +0.031 [+0.010,+0.054]  shuffles mean +0.014, range -0.001..+0.032, above 29/30 (p = 0.065)

@@ -1,0 +1,5 @@
+30 size-matched paragraph shuffles, interior words, lines above only, joint control (inside exact length x pool-size tertile):
+  la_rhazes_almansor       components observed +0.012 [-0.020,+0.054]  shuffles mean +0.013, range -0.007..+0.034, observed above 14/30 (one-sided p = 0.548)
+  la_rhazes_almansor       h2         observed +0.019 [-0.015,+0.055]  shuffles mean +0.017, range +0.001..+0.039, observed above 18/30 (one-sided p = 0.419)
+  la_galen_simplicium      components observed +0.010 [-0.003,+0.025]  shuffles mean +0.010, range -0.008..+0.033, observed above 16/30 (one-sided p = 0.484)
+  la_galen_simplicium      h2         observed +0.007 [-0.008,+0.027]  shuffles mean +0.008, range -0.009..+0.030, observed above 16/30 (one-sided p = 0.484)

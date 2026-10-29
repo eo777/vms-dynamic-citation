@@ -1,0 +1,3654 @@
+{
+ "observed": {
+  "recorded boxes": {
+   "A: study pool >= 15": {
+    "study selector: left 3 + 8 lines above": {
+     "n": 14743,
+     "components": {
+      "diff": 0.009259342264628989,
+      "ci": [
+       -0.014821431695265272,
+       0.03576580360292386
+      ],
+      "covered": 11217
+     },
+     "h2": {
+      "diff": 0.03366108931616241,
+      "ci": [
+       0.012646538263989449,
+       0.05432042219109584
+      ],
+      "covered": 11217
+     },
+     "worddiv": {
+      "diff": 0.016307560166051727,
+      "ci": [
+       -0.01265279112506507,
+       0.04073561507798337
+      ],
+      "covered": 11217
+     }
+    },
+    "lines above only (8)": {
+     "n": 14745,
+     "components": {
+      "diff": 0.02534407811976802,
+      "ci": [
+       -0.0033165603692432207,
+       0.05612941035976733
+      ],
+      "covered": 11332
+     },
+     "h2": {
+      "diff": 0.021863388683140028,
+      "ci": [
+       -0.001362621251125817,
+       0.043372040802097514
+      ],
+      "covered": 11332
+     },
+     "worddiv": {
+      "diff": 0.003639127957971333,
+      "ci": [
+       -0.02017203613919173,
+       0.02594867228499651
+      ],
+      "covered": 11332
+     }
+    }
+   },
+   "B: above pool >= 15": {
+    "study selector: left 3 + 8 lines above": {
+     "n": 14385,
+     "components": {
+      "diff": 0.01177173609533333,
+      "ci": [
+       -0.012437483675458586,
+       0.03499422587644396
+      ],
+      "covered": 10957
+     },
+     "h2": {
+      "diff": 0.03290413916527585,
+      "ci": [
+       0.007569355749424119,
+       0.05962460854214251
+      ],
+      "covered": 10957
+     },
+     "worddiv": {
+      "diff": 0.013939393939393918,
+      "ci": [
+       -0.01429881938455624,
+       0.036367007442388556
+      ],
+      "covered": 10957
+     }
+    },
+    "lines above only (8)": {
+     "n": 14385,
+     "components": {
+      "diff": 0.028564103402531682,
+      "ci": [
+       -0.004979942202660641,
+       0.0560736803818725
+      ],
+      "covered": 11050
+     },
+     "h2": {
+      "diff": 0.02368436344727587,
+      "ci": [
+       0.0002310503325781649,
+       0.04358000521545165
+      ],
+      "covered": 11050
+     },
+     "worddiv": {
+      "diff": 0.0064265739589798865,
+      "ci": [
+       -0.015237877881389056,
+       0.030018365691558867
+      ],
+      "covered": 11050
+     }
+    }
+   }
+  },
+  "synthetic boxes": {
+   "A: study pool >= 15": {
+    "study selector: left 3 + 8 lines above": {
+     "n": 14849,
+     "components": {
+      "diff": 0.039149849720910124,
+      "ci": [
+       0.011714808520479953,
+       0.0690588751784726
+      ],
+      "covered": 11267
+     },
+     "h2": {
+      "diff": 0.04143409188492919,
+      "ci": [
+       0.012704473925794215,
+       0.07044348950039207
+      ],
+      "covered": 11267
+     },
+     "worddiv": {
+      "diff": 0.018419922713611092,
+      "ci": [
+       0.001766179650374442,
+       0.03380465771560866
+      ],
+      "covered": 11267
+     }
+    },
+    "lines above only (8)": {
+     "n": 14849,
+     "components": {
+      "diff": 0.040144804088586006,
+      "ci": [
+       0.01272377010710057,
+       0.06486936917691163
+      ],
+      "covered": 11324
+     },
+     "h2": {
+      "diff": 0.03693781942078367,
+      "ci": [
+       0.01081011067058761,
+       0.06356665813992592
+      ],
+      "covered": 11324
+     },
+     "worddiv": {
+      "diff": 0.03665672913117546,
+      "ci": [
+       0.013429330524037207,
+       0.061609109866235474
+      ],
+      "covered": 11324
+     }
+    }
+   },
+   "B: above pool >= 15": {
+    "study selector: left 3 + 8 lines above": {
+     "n": 14439,
+     "components": {
+      "diff": 0.027259911894273015,
+      "ci": [
+       -0.0028132154238885887,
+       0.05922330377659679
+      ],
+      "covered": 10969
+     },
+     "h2": {
+      "diff": 0.032700440528634245,
+      "ci": [
+       0.006707976885730803,
+       0.06331326639693015
+      ],
+      "covered": 10969
+     },
+     "worddiv": {
+      "diff": 0.008590308370044097,
+      "ci": [
+       -0.005892856615358174,
+       0.024847028947179446
+      ],
+      "covered": 10969
+     }
+    },
+    "lines above only (8)": {
+     "n": 14443,
+     "components": {
+      "diff": 0.033007452871547605,
+      "ci": [
+       0.00997709761549637,
+       0.05725251565921473
+      ],
+      "covered": 11000
+     },
+     "h2": {
+      "diff": 0.03132398071021486,
+      "ci": [
+       0.01020495409650477,
+       0.05358742316934595
+      ],
+      "covered": 11000
+     },
+     "worddiv": {
+      "diff": 0.027224901359052922,
+      "ci": [
+       0.0012053572860855487,
+       0.05374849285273013
+      ],
+      "covered": 11000
+     }
+    }
+   }
+  }
+ },
+ "shuffles": [
+  {
+   "A: study pool >= 15": {
+    "study selector: left 3 + 8 lines above": {
+     "n": 14849,
+     "components": {
+      "diff": 0.02651781880635462,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11267
+     },
+     "h2": {
+      "diff": 0.01691713181623017,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11267
+     },
+     "worddiv": {
+      "diff": 0.015311292400171761,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11267
+     }
+    },
+    "lines above only (8)": {
+     "n": 14848,
+     "components": {
+      "diff": 0.023036626916524694,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11323
+     },
+     "h2": {
+      "diff": -0.0023764906303237465,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11323
+     },
+     "worddiv": {
+      "diff": 0.019339863713798977,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11323
+     }
+    }
+   },
+   "B: above pool >= 15": {
+    "study selector: left 3 + 8 lines above": {
+     "n": 14439,
+     "components": {
+      "diff": 0.028480176211453823,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 10969
+     },
+     "h2": {
+      "diff": 0.012881057268722462,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 10969
+     },
+     "worddiv": {
+      "diff": 0.010828193832599087,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 10969
+     }
+    },
+    "lines above only (8)": {
+     "n": 14443,
+     "components": {
+      "diff": 0.03225339763261725,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11000
+     },
+     "h2": {
+      "diff": 0.005949145111793119,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11000
+     },
+     "worddiv": {
+      "diff": 0.016764576939938658,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11000
+     }
+    }
+   }
+  },
+  {
+   "A: study pool >= 15": {
+    "study selector: left 3 + 8 lines above": {
+     "n": 14849,
+     "components": {
+      "diff": 0.021404036066981602,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11267
+     },
+     "h2": {
+      "diff": 0.023288965221125058,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11267
+     },
+     "worddiv": {
+      "diff": 0.008862172606268759,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11267
+     }
+    },
+    "lines above only (8)": {
+     "n": 14848,
+     "components": {
+      "diff": 0.013143100511073369,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11323
+     },
+     "h2": {
+      "diff": 0.01688245315161835,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11323
+     },
+     "worddiv": {
+      "diff": 0.030357751277683143,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11323
+     }
+    }
+   },
+   "B: above pool >= 15": {
+    "study selector: left 3 + 8 lines above": {
+     "n": 14439,
+     "components": {
+      "diff": 0.016449339207048552,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 10969
+     },
+     "h2": {
+      "diff": 0.017982378854625503,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 10969
+     },
+     "worddiv": {
+      "diff": 0.008356828193832488,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 10969
+     }
+    },
+    "lines above only (8)": {
+     "n": 14443,
+     "components": {
+      "diff": 0.010390179745725536,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11000
+     },
+     "h2": {
+      "diff": 0.010951337132836414,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11000
+     },
+     "worddiv": {
+      "diff": 0.02799649276633054,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11000
+     }
+    }
+   }
+  },
+  {
+   "A: study pool >= 15": {
+    "study selector: left 3 + 8 lines above": {
+     "n": 14849,
+     "components": {
+      "diff": 0.02847574066122799,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11267
+     },
+     "h2": {
+      "diff": 0.015264061829111275,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11267
+     },
+     "worddiv": {
+      "diff": -0.0017174753112925711,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11267
+     }
+    },
+    "lines above only (8)": {
+     "n": 14849,
+     "components": {
+      "diff": 0.029770017035775087,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11324
+     },
+     "h2": {
+      "diff": 0.016899488926746142,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11324
+     },
+     "worddiv": {
+      "diff": 0.02024701873935264,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11324
+     }
+    }
+   },
+   "B: above pool >= 15": {
+    "study selector: left 3 + 8 lines above": {
+     "n": 14439,
+     "components": {
+      "diff": 0.017246696035242204,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 10969
+     },
+     "h2": {
+      "diff": 0.008061674008810582,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 10969
+     },
+     "worddiv": {
+      "diff": -0.011903083700440631,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 10969
+     }
+    },
+    "lines above only (8)": {
+     "n": 14443,
+     "components": {
+      "diff": 0.023301183691363414,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11000
+     },
+     "h2": {
+      "diff": 0.008833844804910063,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11000
+     },
+     "worddiv": {
+      "diff": 0.014445418676019284,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11000
+     }
+    }
+   }
+  },
+  {
+   "A: study pool >= 15": {
+    "study selector: left 3 + 8 lines above": {
+     "n": 14849,
+     "components": {
+      "diff": 0.01833834263632461,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11267
+     },
+     "h2": {
+      "diff": 0.003954486904250765,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11267
+     },
+     "worddiv": {
+      "diff": 0.0034607127522541803,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11267
+     }
+    },
+    "lines above only (8)": {
+     "n": 14849,
+     "components": {
+      "diff": 0.01536626916524697,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11324
+     },
+     "h2": {
+      "diff": 0.01801959114139684,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11324
+     },
+     "worddiv": {
+      "diff": 0.009761499148211117,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11324
+     }
+    }
+   },
+   "B: above pool >= 15": {
+    "study selector: left 3 + 8 lines above": {
+     "n": 14439,
+     "components": {
+      "diff": 0.019572687224669538,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 10969
+     },
+     "h2": {
+      "diff": 0.010462555066079182,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 10969
+     },
+     "worddiv": {
+      "diff": 0.007105726872246643,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 10969
+     }
+    },
+    "lines above only (8)": {
+     "n": 14443,
+     "components": {
+      "diff": 0.00911442349846553,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11000
+     },
+     "h2": {
+      "diff": 0.018868917141604657,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11000
+     },
+     "worddiv": {
+      "diff": 0.012639193336256016,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11000
+     }
+    }
+   }
+  },
+  {
+   "A: study pool >= 15": {
+    "study selector: left 3 + 8 lines above": {
+     "n": 14849,
+     "components": {
+      "diff": 0.022735079433233163,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11267
+     },
+     "h2": {
+      "diff": -0.00027050236152853513,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11267
+     },
+     "worddiv": {
+      "diff": -0.0008372692142550875,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11267
+     }
+    },
+    "lines above only (8)": {
+     "n": 14849,
+     "components": {
+      "diff": 0.02339437819420781,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11324
+     },
+     "h2": {
+      "diff": 0.00046848381601360956,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11324
+     },
+     "worddiv": {
+      "diff": 0.006724872231686496,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11324
+     }
+    }
+   },
+   "B: above pool >= 15": {
+    "study selector: left 3 + 8 lines above": {
+     "n": 14439,
+     "components": {
+      "diff": 0.015383259911894265,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 10969
+     },
+     "h2": {
+      "diff": 3.964757709257194e-05,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 10969
+     },
+     "worddiv": {
+      "diff": 0.0004449339207048264,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 10969
+     }
+    },
+    "lines above only (8)": {
+     "n": 14443,
+     "components": {
+      "diff": 0.025098640946953132,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11000
+     },
+     "h2": {
+      "diff": 0.007014467338886499,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11000
+     },
+     "worddiv": {
+      "diff": -0.0013634370889960556,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11000
+     }
+    }
+   }
+  },
+  {
+   "A: study pool >= 15": {
+    "study selector: left 3 + 8 lines above": {
+     "n": 14849,
+     "components": {
+      "diff": 0.025324173465006428,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11267
+     },
+     "h2": {
+      "diff": 0.018415629025332725,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11267
+     },
+     "worddiv": {
+      "diff": -0.007054529841133583,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11267
+     }
+    },
+    "lines above only (8)": {
+     "n": 14849,
+     "components": {
+      "diff": 0.02745741056218054,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11324
+     },
+     "h2": {
+      "diff": 0.03327938671209524,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11324
+     },
+     "worddiv": {
+      "diff": 0.01719335604770017,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11324
+     }
+    }
+   },
+   "B: above pool >= 15": {
+    "study selector: left 3 + 8 lines above": {
+     "n": 14439,
+     "components": {
+      "diff": 0.018158590308370137,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 10969
+     },
+     "h2": {
+      "diff": 0.022334801762114553,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 10969
+     },
+     "worddiv": {
+      "diff": -0.012555066079295185,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 10969
+     }
+    },
+    "lines above only (8)": {
+     "n": 14443,
+     "components": {
+      "diff": 0.03175800087680836,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11000
+     },
+     "h2": {
+      "diff": 0.030789127575624853,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11000
+     },
+     "worddiv": {
+      "diff": 0.014226216571679162,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11000
+     }
+    }
+   }
+  },
+  {
+   "A: study pool >= 15": {
+    "study selector: left 3 + 8 lines above": {
+     "n": 14849,
+     "components": {
+      "diff": 0.016663804207814548,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11267
+     },
+     "h2": {
+      "diff": 0.022503220266208712,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11267
+     },
+     "worddiv": {
+      "diff": 0.019888364104766076,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11267
+     }
+    },
+    "lines above only (8)": {
+     "n": 14848,
+     "components": {
+      "diff": 0.024386712095400387,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11324
+     },
+     "h2": {
+      "diff": 0.015323679727427597,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11324
+     },
+     "worddiv": {
+      "diff": 0.030114991482112385,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11324
+     }
+    }
+   },
+   "B: above pool >= 15": {
+    "study selector: left 3 + 8 lines above": {
+     "n": 14439,
+     "components": {
+      "diff": 0.013656387665198222,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 10969
+     },
+     "h2": {
+      "diff": 0.023022026431718023,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 10969
+     },
+     "worddiv": {
+      "diff": 0.02222466960352426,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 10969
+     }
+    },
+    "lines above only (8)": {
+     "n": 14443,
+     "components": {
+      "diff": 0.03218325295922836,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11000
+     },
+     "h2": {
+      "diff": 0.02571679088119233,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11000
+     },
+     "worddiv": {
+      "diff": 0.03743095133713292,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11000
+     }
+    }
+   }
+  },
+  {
+   "A: study pool >= 15": {
+    "study selector: left 3 + 8 lines above": {
+     "n": 14849,
+     "components": {
+      "diff": -0.00041219407471027036,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11267
+     },
+     "h2": {
+      "diff": -0.0014813224559896976,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11267
+     },
+     "worddiv": {
+      "diff": 0.010841562902533242,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11267
+     }
+    },
+    "lines above only (8)": {
+     "n": 14849,
+     "components": {
+      "diff": 0.016724872231686505,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11324
+     },
+     "h2": {
+      "diff": -0.0008347529812606225,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11324
+     },
+     "worddiv": {
+      "diff": -0.012555366269165202,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11324
+     }
+    }
+   },
+   "B: above pool >= 15": {
+    "study selector: left 3 + 8 lines above": {
+     "n": 14439,
+     "components": {
+      "diff": 0.0006563876651983214,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 10969
+     },
+     "h2": {
+      "diff": 0.00033920704845813443,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 10969
+     },
+     "worddiv": {
+      "diff": 0.005735682819383248,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 10969
+     }
+    },
+    "lines above only (8)": {
+     "n": 14443,
+     "components": {
+      "diff": 0.018294607628233206,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11000
+     },
+     "h2": {
+      "diff": -0.0007102148180624379,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11000
+     },
+     "worddiv": {
+      "diff": -0.013822884699693117,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11000
+     }
+    }
+   }
+  },
+  {
+   "A: study pool >= 15": {
+    "study selector: left 3 + 8 lines above": {
+     "n": 14849,
+     "components": {
+      "diff": 0.00911550021468438,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11267
+     },
+     "h2": {
+      "diff": -0.004353799914126322,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11267
+     },
+     "worddiv": {
+      "diff": -0.035023615285530274,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11267
+     }
+    },
+    "lines above only (8)": {
+     "n": 14849,
+     "components": {
+      "diff": 0.02407580919931862,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11324
+     },
+     "h2": {
+      "diff": 0.021201022146507598,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11324
+     },
+     "worddiv": {
+      "diff": -0.0013074957410562638,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11324
+     }
+    }
+   },
+   "B: above pool >= 15": {
+    "study selector: left 3 + 8 lines above": {
+     "n": 14439,
+     "components": {
+      "diff": 0.0057092511013215885,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 10969
+     },
+     "h2": {
+      "diff": -0.003325991189427391,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 10969
+     },
+     "worddiv": {
+      "diff": -0.03560792951541858,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 10969
+     }
+    },
+    "lines above only (8)": {
+     "n": 14443,
+     "components": {
+      "diff": 0.019745725558965477,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11000
+     },
+     "h2": {
+      "diff": 0.023086365629109984,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11000
+     },
+     "worddiv": {
+      "diff": 8.32967996493017e-05,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11000
+     }
+    }
+   }
+  },
+  {
+   "A: study pool >= 15": {
+    "study selector: left 3 + 8 lines above": {
+     "n": 14849,
+     "components": {
+      "diff": 0.021657363675397112,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11267
+     },
+     "h2": {
+      "diff": 0.009480463718333998,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11267
+     },
+     "worddiv": {
+      "diff": -0.01224130528123668,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11267
+     }
+    },
+    "lines above only (8)": {
+     "n": 14849,
+     "components": {
+      "diff": 0.030285349233390102,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11324
+     },
+     "h2": {
+      "diff": 0.02068568994889275,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11324
+     },
+     "worddiv": {
+      "diff": 0.01700170357751285,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11324
+     }
+    }
+   },
+   "B: above pool >= 15": {
+    "study selector: left 3 + 8 lines above": {
+     "n": 14439,
+     "components": {
+      "diff": 0.02444933920704856,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 10969
+     },
+     "h2": {
+      "diff": -0.0004140969162996777,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 10969
+     },
+     "worddiv": {
+      "diff": -0.010528634361233469,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 10969
+     }
+    },
+    "lines above only (8)": {
+     "n": 14443,
+     "components": {
+      "diff": 0.03685225778167461,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11000
+     },
+     "h2": {
+      "diff": 0.01638316527838668,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11000
+     },
+     "worddiv": {
+      "diff": 0.00973257343270495,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11000
+     }
+    }
+   }
+  },
+  {
+   "A: study pool >= 15": {
+    "study selector: left 3 + 8 lines above": {
+     "n": 14848,
+     "components": {
+      "diff": 0.02315156719622158,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11267
+     },
+     "h2": {
+      "diff": 0.008209531987977692,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11267
+     },
+     "worddiv": {
+      "diff": 0.005165306998711761,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11267
+     }
+    },
+    "lines above only (8)": {
+     "n": 14849,
+     "components": {
+      "diff": 0.018517887563884228,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11324
+     },
+     "h2": {
+      "diff": 0.016431005110732477,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11324
+     },
+     "worddiv": {
+      "diff": 0.015992333901192424,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11324
+     }
+    }
+   },
+   "B: above pool >= 15": {
+    "study selector: left 3 + 8 lines above": {
+     "n": 14438,
+     "components": {
+      "diff": 0.027885462555066076,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 10969
+     },
+     "h2": {
+      "diff": 0.006872246696035256,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 10969
+     },
+     "worddiv": {
+      "diff": 0.003678414096916216,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 10969
+     }
+    },
+    "lines above only (8)": {
+     "n": 14443,
+     "components": {
+      "diff": 0.02024550635686101,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11000
+     },
+     "h2": {
+      "diff": 0.010990793511617802,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11000
+     },
+     "worddiv": {
+      "diff": 0.017238053485313487,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11000
+     }
+    }
+   }
+  },
+  {
+   "A: study pool >= 15": {
+    "study selector: left 3 + 8 lines above": {
+     "n": 14848,
+     "components": {
+      "diff": 0.009802490339201442,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11267
+     },
+     "h2": {
+      "diff": 0.004147702876771131,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11267
+     },
+     "worddiv": {
+      "diff": 0.0052855302705023255,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11267
+     }
+    },
+    "lines above only (8)": {
+     "n": 14848,
+     "components": {
+      "diff": 0.023458262350937065,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11324
+     },
+     "h2": {
+      "diff": 0.0197444633730835,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11324
+     },
+     "worddiv": {
+      "diff": 0.021946337308347552,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11324
+     }
+    }
+   },
+   "B: above pool >= 15": {
+    "study selector: left 3 + 8 lines above": {
+     "n": 14438,
+     "components": {
+      "diff": 0.010092511013215788,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 10969
+     },
+     "h2": {
+      "diff": 0.0022555066079295027,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 10969
+     },
+     "worddiv": {
+      "diff": -0.008185022026431732,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 10969
+     }
+    },
+    "lines above only (8)": {
+     "n": 14443,
+     "components": {
+      "diff": 0.025848312143796626,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11000
+     },
+     "h2": {
+      "diff": 0.021477422183252937,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11000
+     },
+     "worddiv": {
+      "diff": 0.020236738272687405,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11000
+     }
+    }
+   }
+  },
+  {
+   "A: study pool >= 15": {
+    "study selector: left 3 + 8 lines above": {
+     "n": 14849,
+     "components": {
+      "diff": 0.01641906397595544,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11267
+     },
+     "h2": {
+      "diff": 0.016135680549592135,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11267
+     },
+     "worddiv": {
+      "diff": 0.02899957063117209,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11267
+     }
+    },
+    "lines above only (8)": {
+     "n": 14849,
+     "components": {
+      "diff": 0.008066439522998292,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11324
+     },
+     "h2": {
+      "diff": 0.010136286201022193,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11324
+     },
+     "worddiv": {
+      "diff": 0.037900340715502634,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11324
+     }
+    }
+   },
+   "B: above pool >= 15": {
+    "study selector: left 3 + 8 lines above": {
+     "n": 14439,
+     "components": {
+      "diff": 0.006409691629955916,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 10969
+     },
+     "h2": {
+      "diff": 0.01131718061674003,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 10969
+     },
+     "worddiv": {
+      "diff": 0.023154185022026486,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 10969
+     }
+    },
+    "lines above only (8)": {
+     "n": 14443,
+     "components": {
+      "diff": 0.010477860587461696,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11000
+     },
+     "h2": {
+      "diff": 0.006948706707584462,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11000
+     },
+     "worddiv": {
+      "diff": 0.031104778605874572,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11000
+     }
+    }
+   }
+  },
+  {
+   "A: study pool >= 15": {
+    "study selector: left 3 + 8 lines above": {
+     "n": 14849,
+     "components": {
+      "diff": 0.0397896092743667,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11267
+     },
+     "h2": {
+      "diff": 0.042159725203950116,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11267
+     },
+     "worddiv": {
+      "diff": 0.008583082868183711,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11267
+     }
+    },
+    "lines above only (8)": {
+     "n": 14848,
+     "components": {
+      "diff": 0.03554088586030657,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11323
+     },
+     "h2": {
+      "diff": 0.03893526405451442,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11323
+     },
+     "worddiv": {
+      "diff": 0.014757240204429312,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11323
+     }
+    }
+   },
+   "B: above pool >= 15": {
+    "study selector: left 3 + 8 lines above": {
+     "n": 14439,
+     "components": {
+      "diff": 0.037378854625550684,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 10969
+     },
+     "h2": {
+      "diff": 0.039779735682819395,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 10969
+     },
+     "worddiv": {
+      "diff": 0.008299559471365514,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 10969
+     }
+    },
+    "lines above only (8)": {
+     "n": 14443,
+     "components": {
+      "diff": 0.02526961858833837,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11000
+     },
+     "h2": {
+      "diff": 0.03150811047786056,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11000
+     },
+     "worddiv": {
+      "diff": 0.003318719859710717,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11000
+     }
+    }
+   }
+  },
+  {
+   "A: study pool >= 15": {
+    "study selector: left 3 + 8 lines above": {
+     "n": 14849,
+     "components": {
+      "diff": 0.009583512237011538,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11267
+     },
+     "h2": {
+      "diff": 0.0006139974237870938,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11267
+     },
+     "worddiv": {
+      "diff": 0.010858737655646211,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11267
+     }
+    },
+    "lines above only (8)": {
+     "n": 14849,
+     "components": {
+      "diff": 0.0185689948892675,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11324
+     },
+     "h2": {
+      "diff": 0.010579216354344112,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11324
+     },
+     "worddiv": {
+      "diff": 0.012614991482112425,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11324
+     }
+    }
+   },
+   "B: above pool >= 15": {
+    "study selector: left 3 + 8 lines above": {
+     "n": 14439,
+     "components": {
+      "diff": 0.0017048458149779844,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 10969
+     },
+     "h2": {
+      "diff": -0.001004405286343657,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 10969
+     },
+     "worddiv": {
+      "diff": 0.0129911894273127,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 10969
+     }
+    },
+    "lines above only (8)": {
+     "n": 14443,
+     "components": {
+      "diff": 0.017755370451556285,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11000
+     },
+     "h2": {
+      "diff": 0.000640070144673377,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11000
+     },
+     "worddiv": {
+      "diff": 0.008014028934677675,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11000
+     }
+    }
+   }
+  },
+  {
+   "A: study pool >= 15": {
+    "study selector: left 3 + 8 lines above": {
+     "n": 14849,
+     "components": {
+      "diff": 0.010313439244310774,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11267
+     },
+     "h2": {
+      "diff": 0.012528982395878074,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11267
+     },
+     "worddiv": {
+      "diff": 0.010274796049806745,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11267
+     }
+    },
+    "lines above only (8)": {
+     "n": 14849,
+     "components": {
+      "diff": 0.012201873935264007,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11324
+     },
+     "h2": {
+      "diff": 0.004723168654173826,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11324
+     },
+     "worddiv": {
+      "diff": -0.004995741056218139,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11324
+     }
+    }
+   },
+   "B: above pool >= 15": {
+    "study selector: left 3 + 8 lines above": {
+     "n": 14439,
+     "components": {
+      "diff": 0.01792951541850224,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 10969
+     },
+     "h2": {
+      "diff": 0.003590308370044093,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 10969
+     },
+     "worddiv": {
+      "diff": 0.005136563876651956,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 10969
+     }
+    },
+    "lines above only (8)": {
+     "n": 14443,
+     "components": {
+      "diff": 0.015532661113546842,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11000
+     },
+     "h2": {
+      "diff": -0.001021481806225244,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11000
+     },
+     "worddiv": {
+      "diff": -0.009684348969750123,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11000
+     }
+    }
+   }
+  },
+  {
+   "A: study pool >= 15": {
+    "study selector: left 3 + 8 lines above": {
+     "n": 14849,
+     "components": {
+      "diff": 0.01939029626449107,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11267
+     },
+     "h2": {
+      "diff": 0.017887505367110368,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11267
+     },
+     "worddiv": {
+      "diff": -0.0038385573207385115,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11267
+     }
+    },
+    "lines above only (8)": {
+     "n": 14849,
+     "components": {
+      "diff": 0.027423339011925174,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11324
+     },
+     "h2": {
+      "diff": 0.025174616695059604,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11324
+     },
+     "worddiv": {
+      "diff": 0.00881175468483808,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11324
+     }
+    }
+   },
+   "B: above pool >= 15": {
+    "study selector: left 3 + 8 lines above": {
+     "n": 14439,
+     "components": {
+      "diff": 0.016770925110132284,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 10969
+     },
+     "h2": {
+      "diff": 0.016022026431718073,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 10969
+     },
+     "worddiv": {
+      "diff": -0.007189427312775276,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 10969
+     }
+    },
+    "lines above only (8)": {
+     "n": 14443,
+     "components": {
+      "diff": 0.022683033757124105,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11000
+     },
+     "h2": {
+      "diff": 0.02163524769837788,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11000
+     },
+     "worddiv": {
+      "diff": 0.00612012275317847,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11000
+     }
+    }
+   }
+  },
+  {
+   "A: study pool >= 15": {
+    "study selector: left 3 + 8 lines above": {
+     "n": 14849,
+     "components": {
+      "diff": 0.013301846285959595,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11267
+     },
+     "h2": {
+      "diff": 0.013692571919278584,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11267
+     },
+     "worddiv": {
+      "diff": 0.016955775010734198,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11267
+     }
+    },
+    "lines above only (8)": {
+     "n": 14848,
+     "components": {
+      "diff": -0.0030281090289607793,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11324
+     },
+     "h2": {
+      "diff": 0.006298977853492316,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11324
+     },
+     "worddiv": {
+      "diff": 0.0038713798977854097,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11324
+     }
+    }
+   },
+   "B: above pool >= 15": {
+    "study selector: left 3 + 8 lines above": {
+     "n": 14439,
+     "components": {
+      "diff": 0.010762114537444967,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 10969
+     },
+     "h2": {
+      "diff": 0.011022026431718013,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 10969
+     },
+     "worddiv": {
+      "diff": 0.016700440528634397,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 10969
+     }
+    },
+    "lines above only (8)": {
+     "n": 14443,
+     "components": {
+      "diff": -0.00377466023673817,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11000
+     },
+     "h2": {
+      "diff": 0.011025865848312166,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11000
+     },
+     "worddiv": {
+      "diff": 0.012349846558526834,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11000
+     }
+    }
+   }
+  },
+  {
+   "A: study pool >= 15": {
+    "study selector: left 3 + 8 lines above": {
+     "n": 14849,
+     "components": {
+      "diff": 0.007359381708887891,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11267
+     },
+     "h2": {
+      "diff": 0.0384070416487764,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11267
+     },
+     "worddiv": {
+      "diff": -0.0003563761270930499,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11267
+     }
+    },
+    "lines above only (8)": {
+     "n": 14849,
+     "components": {
+      "diff": 0.024501703577512857,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11324
+     },
+     "h2": {
+      "diff": 0.030434412265758104,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11324
+     },
+     "worddiv": {
+      "diff": 0.02980408858603062,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11324
+     }
+    }
+   },
+   "B: above pool >= 15": {
+    "study selector: left 3 + 8 lines above": {
+     "n": 14439,
+     "components": {
+      "diff": 0.011643171806167418,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 10969
+     },
+     "h2": {
+      "diff": 0.032797356828193736,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 10969
+     },
+     "worddiv": {
+      "diff": 0.00494273127753303,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 10969
+     }
+    },
+    "lines above only (8)": {
+     "n": 14443,
+     "components": {
+      "diff": 0.02396317404647086,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11000
+     },
+     "h2": {
+      "diff": 0.02831214379658048,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11000
+     },
+     "worddiv": {
+      "diff": 0.037812362998684734,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11000
+     }
+    }
+   }
+  },
+  {
+   "A: study pool >= 15": {
+    "study selector: left 3 + 8 lines above": {
+     "n": 14849,
+     "components": {
+      "diff": 0.027269214255045082,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11267
+     },
+     "h2": {
+      "diff": 0.03354229282954052,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11267
+     },
+     "worddiv": {
+      "diff": 0.0055302705023616006,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11267
+     }
+    },
+    "lines above only (8)": {
+     "n": 14849,
+     "components": {
+      "diff": 0.02773850085178886,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11324
+     },
+     "h2": {
+      "diff": 0.024548551959114095,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11324
+     },
+     "worddiv": {
+      "diff": 0.019058773424190822,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11324
+     }
+    }
+   },
+   "B: above pool >= 15": {
+    "study selector: left 3 + 8 lines above": {
+     "n": 14439,
+     "components": {
+      "diff": 0.028171806167400837,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 10969
+     },
+     "h2": {
+      "diff": 0.024004405286343622,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 10969
+     },
+     "worddiv": {
+      "diff": 0.009334801762114542,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 10969
+     }
+    },
+    "lines above only (8)": {
+     "n": 14443,
+     "components": {
+      "diff": 0.02434458570802278,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11000
+     },
+     "h2": {
+      "diff": 0.018540113985094198,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11000
+     },
+     "worddiv": {
+      "diff": 0.01285401139850939,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11000
+     }
+    }
+   }
+  },
+  {
+   "A: study pool >= 15": {
+    "study selector: left 3 + 8 lines above": {
+     "n": 14849,
+     "components": {
+      "diff": 0.013288965221124938,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11267
+     },
+     "h2": {
+      "diff": 0.008046371833404897,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11267
+     },
+     "worddiv": {
+      "diff": 0.0052769428939458685,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11267
+     }
+    },
+    "lines above only (8)": {
+     "n": 14849,
+     "components": {
+      "diff": 0.010830494037478655,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11324
+     },
+     "h2": {
+      "diff": 0.021929301533219703,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11324
+     },
+     "worddiv": {
+      "diff": 0.021307495741056115,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11324
+     }
+    }
+   },
+   "B: above pool >= 15": {
+    "study selector: left 3 + 8 lines above": {
+     "n": 14439,
+     "components": {
+      "diff": 0.006859030837004398,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 10969
+     },
+     "h2": {
+      "diff": 0.00022026431718064066,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 10969
+     },
+     "worddiv": {
+      "diff": -0.0008678414096915943,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 10969
+     }
+    },
+    "lines above only (8)": {
+     "n": 14443,
+     "components": {
+      "diff": 0.006023673827268816,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11000
+     },
+     "h2": {
+      "diff": 0.025352915387987784,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11000
+     },
+     "worddiv": {
+      "diff": 0.01693555458132384,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11000
+     }
+    }
+   }
+  },
+  {
+   "A: study pool >= 15": {
+    "study selector: left 3 + 8 lines above": {
+     "n": 14849,
+     "components": {
+      "diff": 0.02487333619579213,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11267
+     },
+     "h2": {
+      "diff": 0.017904680120223282,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11267
+     },
+     "worddiv": {
+      "diff": 0.006281665951051951,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11267
+     }
+    },
+    "lines above only (8)": {
+     "n": 14849,
+     "components": {
+      "diff": 0.027913117546848387,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11324
+     },
+     "h2": {
+      "diff": 0.020924190800681364,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11324
+     },
+     "worddiv": {
+      "diff": 0.023590289608177217,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11324
+     }
+    }
+   },
+   "B: above pool >= 15": {
+    "study selector: left 3 + 8 lines above": {
+     "n": 14439,
+     "components": {
+      "diff": 0.02121585903083706,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 10969
+     },
+     "h2": {
+      "diff": 0.012444933920704893,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 10969
+     },
+     "worddiv": {
+      "diff": -0.0011850220264317257,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 10969
+     }
+    },
+    "lines above only (8)": {
+     "n": 14443,
+     "components": {
+      "diff": 0.02960543621218764,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11000
+     },
+     "h2": {
+      "diff": 0.020565541429197698,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11000
+     },
+     "worddiv": {
+      "diff": 0.01906619903551071,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11000
+     }
+    }
+   }
+  },
+  {
+   "A: study pool >= 15": {
+    "study selector: left 3 + 8 lines above": {
+     "n": 14849,
+     "components": {
+      "diff": 0.012267067410905996,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11267
+     },
+     "h2": {
+      "diff": -0.0015328467153284953,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11267
+     },
+     "worddiv": {
+      "diff": -0.013722627737226267,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11267
+     }
+    },
+    "lines above only (8)": {
+     "n": 14849,
+     "components": {
+      "diff": 0.01327512776831341,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11324
+     },
+     "h2": {
+      "diff": 0.0027470187393526246,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11324
+     },
+     "worddiv": {
+      "diff": 0.0028705281090289914,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11324
+     }
+    }
+   },
+   "B: above pool >= 15": {
+    "study selector: left 3 + 8 lines above": {
+     "n": 14439,
+     "components": {
+      "diff": 0.013317180616740032,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 10969
+     },
+     "h2": {
+      "diff": 0.004048458149779721,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 10969
+     },
+     "worddiv": {
+      "diff": -0.010070484581497785,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 10969
+     }
+    },
+    "lines above only (8)": {
+     "n": 14443,
+     "components": {
+      "diff": 0.015466900482244694,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11000
+     },
+     "h2": {
+      "diff": 0.00831652783866721,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11000
+     },
+     "worddiv": {
+      "diff": -0.004940815431828116,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11000
+     }
+    }
+   }
+  },
+  {
+   "A: study pool >= 15": {
+    "study selector: left 3 + 8 lines above": {
+     "n": 14849,
+     "components": {
+      "diff": 0.02214684413911544,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11267
+     },
+     "h2": {
+      "diff": 0.025036496350365034,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11267
+     },
+     "worddiv": {
+      "diff": -0.0019278660369257405,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11267
+     }
+    },
+    "lines above only (8)": {
+     "n": 14849,
+     "components": {
+      "diff": 0.0015332197614991716,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11324
+     },
+     "h2": {
+      "diff": 0.01749999999999996,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11324
+     },
+     "worddiv": {
+      "diff": 0.006098807495741043,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11324
+     }
+    }
+   },
+   "B: above pool >= 15": {
+    "study selector: left 3 + 8 lines above": {
+     "n": 14439,
+     "components": {
+      "diff": 0.01899559471365636,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 10969
+     },
+     "h2": {
+      "diff": 0.021088105726872253,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 10969
+     },
+     "worddiv": {
+      "diff": 0.0005242290748898037,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 10969
+     }
+    },
+    "lines above only (8)": {
+     "n": 14443,
+     "components": {
+      "diff": -0.0023629986847873985,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11000
+     },
+     "h2": {
+      "diff": 0.0162604120999561,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11000
+     },
+     "worddiv": {
+      "diff": 0.0030863656291100217,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11000
+     }
+    }
+   }
+  },
+  {
+   "A: study pool >= 15": {
+    "study selector: left 3 + 8 lines above": {
+     "n": 14849,
+     "components": {
+      "diff": 0.029467582653499413,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11267
+     },
+     "h2": {
+      "diff": 0.020931730356376188,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11267
+     },
+     "worddiv": {
+      "diff": 0.015229712322885391,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11267
+     }
+    },
+    "lines above only (8)": {
+     "n": 14849,
+     "components": {
+      "diff": 0.019195059625213007,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11324
+     },
+     "h2": {
+      "diff": 0.02058347529812604,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11324
+     },
+     "worddiv": {
+      "diff": 0.009603918228279384,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11324
+     }
+    }
+   },
+   "B: above pool >= 15": {
+    "study selector: left 3 + 8 lines above": {
+     "n": 14439,
+     "components": {
+      "diff": 0.027898678414096933,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 10969
+     },
+     "h2": {
+      "diff": 0.0078017621145374805,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 10969
+     },
+     "worddiv": {
+      "diff": 0.007303964757709391,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 10969
+     }
+    },
+    "lines above only (8)": {
+     "n": 14443,
+     "components": {
+      "diff": 0.028412976764576936,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11000
+     },
+     "h2": {
+      "diff": 0.014208680403331897,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11000
+     },
+     "worddiv": {
+      "diff": 0.0071810609381849355,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11000
+     }
+    }
+   }
+  },
+  {
+   "A: study pool >= 15": {
+    "study selector: left 3 + 8 lines above": {
+     "n": 14849,
+     "components": {
+      "diff": 0.0012237011592958202,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11267
+     },
+     "h2": {
+      "diff": -0.007299270072992692,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11267
+     },
+     "worddiv": {
+      "diff": -0.023460712752254087,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11267
+     }
+    },
+    "lines above only (8)": {
+     "n": 14849,
+     "components": {
+      "diff": 0.00843270868824536,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11324
+     },
+     "h2": {
+      "diff": 0.0032027257240205276,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11324
+     },
+     "worddiv": {
+      "diff": -0.009867972742759856,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11324
+     }
+    }
+   },
+   "B: above pool >= 15": {
+    "study selector: left 3 + 8 lines above": {
+     "n": 14439,
+     "components": {
+      "diff": -0.0003480176211452801,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 10969
+     },
+     "h2": {
+      "diff": -0.008955947136563891,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 10969
+     },
+     "worddiv": {
+      "diff": -0.015387665198237921,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 10969
+     }
+    },
+    "lines above only (8)": {
+     "n": 14443,
+     "components": {
+      "diff": 0.008733011836913662,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11000
+     },
+     "h2": {
+      "diff": 0.009754493643139073,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11000
+     },
+     "worddiv": {
+      "diff": -0.010407715914072857,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11000
+     }
+    }
+   }
+  },
+  {
+   "A: study pool >= 15": {
+    "study selector: left 3 + 8 lines above": {
+     "n": 14849,
+     "components": {
+      "diff": 0.014783168741949293,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11267
+     },
+     "h2": {
+      "diff": 0.0187848862172606,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11267
+     },
+     "worddiv": {
+      "diff": 0.001863460712752174,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11267
+     }
+    },
+    "lines above only (8)": {
+     "n": 14849,
+     "components": {
+      "diff": 0.00893100511073247,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11324
+     },
+     "h2": {
+      "diff": 0.011827086882453153,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11324
+     },
+     "worddiv": {
+      "diff": 0.020247018739352585,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11324
+     }
+    }
+   },
+   "B: above pool >= 15": {
+    "study selector: left 3 + 8 lines above": {
+     "n": 14439,
+     "components": {
+      "diff": 0.009753303964757765,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 10969
+     },
+     "h2": {
+      "diff": 0.010136563876652016,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 10969
+     },
+     "worddiv": {
+      "diff": 0.004480176211453635,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 10969
+     }
+    },
+    "lines above only (8)": {
+     "n": 14443,
+     "components": {
+      "diff": 0.00758439281017087,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11000
+     },
+     "h2": {
+      "diff": 0.009101271372205122,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11000
+     },
+     "worddiv": {
+      "diff": 0.01080227970188502,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11000
+     }
+    }
+   }
+  },
+  {
+   "A: study pool >= 15": {
+    "study selector: left 3 + 8 lines above": {
+     "n": 14848,
+     "components": {
+      "diff": 0.023967367969085496,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11267
+     },
+     "h2": {
+      "diff": 0.025135251180764318,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11267
+     },
+     "worddiv": {
+      "diff": 0.010772863890081585,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11267
+     }
+    },
+    "lines above only (8)": {
+     "n": 14849,
+     "components": {
+      "diff": 0.02405451448040885,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11324
+     },
+     "h2": {
+      "diff": 0.01714224872231679,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11324
+     },
+     "worddiv": {
+      "diff": 0.00821976149914816,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11324
+     }
+    }
+   },
+   "B: above pool >= 15": {
+    "study selector: left 3 + 8 lines above": {
+     "n": 14438,
+     "components": {
+      "diff": 0.022797356828193782,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 10969
+     },
+     "h2": {
+      "diff": 0.024850220264317158,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 10969
+     },
+     "worddiv": {
+      "diff": 0.0075682819383259825,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 10969
+     }
+    },
+    "lines above only (8)": {
+     "n": 14443,
+     "components": {
+      "diff": 0.017430951337132794,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11000
+     },
+     "h2": {
+      "diff": 0.018395440596229717,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11000
+     },
+     "worddiv": {
+      "diff": 0.00028496273564226904,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11000
+     }
+    }
+   }
+  },
+  {
+   "A: study pool >= 15": {
+    "study selector: left 3 + 8 lines above": {
+     "n": 14849,
+     "components": {
+      "diff": 0.01802919708029188,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11267
+     },
+     "h2": {
+      "diff": 0.013409188492915336,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11267
+     },
+     "worddiv": {
+      "diff": 0.006930012881064873,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11267
+     }
+    },
+    "lines above only (8)": {
+     "n": 14849,
+     "components": {
+      "diff": 0.00017035775127766106,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11324
+     },
+     "h2": {
+      "diff": 0.0007623509369676373,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11324
+     },
+     "worddiv": {
+      "diff": 0.006166950596252108,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11324
+     }
+    }
+   },
+   "B: above pool >= 15": {
+    "study selector: left 3 + 8 lines above": {
+     "n": 14439,
+     "components": {
+      "diff": 0.010894273127753262,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 10969
+     },
+     "h2": {
+      "diff": 0.00979735682819377,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 10969
+     },
+     "worddiv": {
+      "diff": 0.002088105726872236,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 10969
+     }
+    },
+    "lines above only (8)": {
+     "n": 14443,
+     "components": {
+      "diff": 0.0006576063130205867,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11000
+     },
+     "h2": {
+      "diff": 0.00040771591407290364,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11000
+     },
+     "worddiv": {
+      "diff": -0.0016352476983779174,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11000
+     }
+    }
+   }
+  },
+  {
+   "A: study pool >= 15": {
+    "study selector: left 3 + 8 lines above": {
+     "n": 14849,
+     "components": {
+      "diff": 0.019832546157149022,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11267
+     },
+     "h2": {
+      "diff": 0.01928724774581353,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11267
+     },
+     "worddiv": {
+      "diff": -0.010339201373980256,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11267
+     }
+    },
+    "lines above only (8)": {
+     "n": 14849,
+     "components": {
+      "diff": 0.03279386712095406,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11324
+     },
+     "h2": {
+      "diff": 0.014757240204429312,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11324
+     },
+     "worddiv": {
+      "diff": 0.012942930153321985,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11324
+     }
+    }
+   },
+   "B: above pool >= 15": {
+    "study selector: left 3 + 8 lines above": {
+     "n": 14439,
+     "components": {
+      "diff": 0.01929515418502209,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 10969
+     },
+     "h2": {
+      "diff": 0.026810572687224754,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 10969
+     },
+     "worddiv": {
+      "diff": -0.0014889867841408888,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 10969
+     }
+    },
+    "lines above only (8)": {
+     "n": 14443,
+     "components": {
+      "diff": 0.027597544936431406,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11000
+     },
+     "h2": {
+      "diff": 0.014002630425252127,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11000
+     },
+     "worddiv": {
+      "diff": 0.009907935116177047,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "covered": 11000
+     }
+    }
+   }
+  }
+ ]
+}
