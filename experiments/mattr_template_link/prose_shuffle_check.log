@@ -1,0 +1,35 @@
+Prose texts re-typeset into the manuscript's frames against 9 size-matched paragraph shuffles of themselves, interior words only
+(not first or last in the line, study pool >= 15); within-bifolium quintile contrast of word impact, inside exact length x pool-size
+tertile (joint control), with the raw value for reference. rank = shuffles the observed text exceeds.
+
+== components
+  -- study selector: left 3 + 8 lines above
+     text                        observed raw     shuffles raw (mean, range)           observed joint   shuffles joint (mean, range)   rank
+     la_galen_simplicium               -0.000 +0.031 (+0.019..+0.042)     -0.049 [-0.067,-0.027]       -0.002 (-0.016..+0.013)    0/9
+     la_dioscorides_longob             +0.061 +0.070 (+0.060..+0.080)     -0.028 [-0.060,+0.017]       +0.003 (-0.010..+0.014)    0/9
+     la_rhazes_almansor                -0.013 +0.035 (+0.029..+0.039)     -0.055 [-0.073,-0.037]       -0.009 (-0.015..+0.001)    0/9
+     la_hildegard_physica              -0.051 -0.003 (-0.009..+0.010)     -0.080 [-0.106,-0.056]       -0.021 (-0.037..-0.014)    0/9
+     de_gart_augsburg1487              -0.002 +0.041 (+0.022..+0.051)     -0.032 [-0.056,-0.005]       +0.001 (-0.012..+0.008)    0/9
+  -- lines above only (8)
+     text                        observed raw     shuffles raw (mean, range)           observed joint   shuffles joint (mean, range)   rank
+     la_galen_simplicium               -0.006 -0.003 (-0.014..+0.009)     -0.007 [-0.028,+0.017]       +0.003 (-0.011..+0.016)    1/9
+     la_dioscorides_longob             +0.045 +0.028 (+0.016..+0.037)     +0.012 [-0.012,+0.034]       +0.008 (-0.007..+0.031)    7/9
+     la_rhazes_almansor                +0.030 +0.015 (+0.005..+0.021)     +0.033 [+0.007,+0.056]       +0.005 (-0.007..+0.015)    9/9
+     la_hildegard_physica              -0.012 -0.005 (-0.021..+0.008)     +0.000 [-0.027,+0.033]       -0.007 (-0.021..-0.001)    9/9
+     de_gart_augsburg1487              +0.010 +0.018 (+0.002..+0.032)     +0.019 [-0.003,+0.042]       +0.013 (+0.001..+0.023)    8/9
+
+== h2
+  -- study selector: left 3 + 8 lines above
+     text                        observed raw     shuffles raw (mean, range)           observed joint   shuffles joint (mean, range)   rank
+     la_galen_simplicium               -0.017 +0.034 (+0.024..+0.043)     -0.058 [-0.077,-0.039]       -0.005 (-0.018..+0.004)    0/9
+     la_dioscorides_longob             +0.088 +0.076 (+0.065..+0.091)     -0.011 [-0.044,+0.032]       -0.002 (-0.012..+0.006)    1/9
+     la_rhazes_almansor                +0.016 +0.047 (+0.039..+0.055)     -0.033 [-0.054,-0.011]       -0.002 (-0.025..+0.010)    0/9
+     la_hildegard_physica              -0.006 +0.025 (+0.011..+0.032)     -0.037 [-0.060,-0.007]       -0.014 (-0.041..-0.003)    1/9
+     de_gart_augsburg1487              +0.030 +0.039 (+0.028..+0.052)     -0.005 [-0.027,+0.017]       +0.006 (-0.006..+0.020)    1/9
+  -- lines above only (8)
+     text                        observed raw     shuffles raw (mean, range)           observed joint   shuffles joint (mean, range)   rank
+     la_galen_simplicium               -0.007 +0.002 (-0.016..+0.015)     -0.011 [-0.024,+0.013]       +0.002 (-0.009..+0.011)    0/9
+     la_dioscorides_longob             +0.044 +0.030 (+0.016..+0.050)     +0.005 [-0.020,+0.027]       -0.006 (-0.021..+0.011)    7/9
+     la_rhazes_almansor                +0.030 +0.017 (+0.009..+0.025)     +0.032 [+0.010,+0.054]       +0.008 (-0.006..+0.025)    9/9
+     la_hildegard_physica              +0.007 +0.001 (-0.009..+0.012)     +0.009 [-0.017,+0.037]       -0.004 (-0.020..+0.014)    8/9
+     de_gart_augsburg1487              +0.008 +0.016 (-0.001..+0.032)     +0.016 [-0.008,+0.037]       +0.007 (-0.010..+0.018)    8/9

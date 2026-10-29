@@ -108,6 +108,7 @@ python experiments/mattr_template_link/shape_residual_check.py # node; pool shap
 python experiments/mattr_template_link/example_pools.py       # node; the summary page's two qokeedy examples, pools split into same-line and above-line parts
 python experiments/mattr_template_link/interior_check.py      # node; interior words only (line edges and truncated windows removed), four pool shapes, 19 shuffles (about 10 minutes)
 python experiments/mattr_template_link/prose_interior_check.py # node; the five prose texts on the same interior cohort
+python experiments/mattr_template_link/prose_shuffle_check.py  # node; each prose text against nine size-matched paragraph shuffles of itself (about 10 minutes)
 python experiments/mattr_template_link/mattr_vs_components.py # node; MATTR coupling
 python experiments/mattr_template_link/figures_small.py
 python experiments/mattr_template_link/prose_route.py           # each historical text's own MATTR route (route_mattr_prose.png)
@@ -168,6 +169,7 @@ page f78r) or <http://127.0.0.1:8766/compare.html> (any bifolium, every text ver
 | lines above only under the joint control, manuscript components / H2 (copiers) | `shape_residual_check.log` | −0.002 / +0.012 (+0.049 to +0.059 / +0.029 to +0.046) |
 | the same on interior words only (line edges and windows under 15 words removed), manuscript recorded / synthetic; copiers | `interior_check.log` | +0.025 / +0.040; +0.045 to +0.048 (H2 +0.022 / +0.037; +0.020 to +0.035) |
 | the same for five prose texts on the interior cohort, lines above only, re-typeset: components / H2 | `prose_interior_check.log` | −0.007 to +0.033 / −0.011 to +0.032 |
+| prose texts above their own nine shuffles on that cut (lines above only, joint control) | `prose_shuffle_check.log` | 1 of 5 clearly (Rhazes +0.033 against at most +0.015); manuscript +0.040 against at most +0.036 |
 | mirror-cone test, components, manuscript: cone above / cone below / paired difference | `direction_check.log`, region all | +0.036 / +0.032 / +0.004 (−0.019 to +0.026) |
 | the same for Original Timm (page draw) and for the no-innovator copier of the words in view | same table | +0.121 / +0.052 / +0.068; +0.099 / +0.088 / +0.010 |
 | the same with the manuscript's lines shuffled inside paragraphs / words shuffled inside lines / words shuffled inside paragraphs (cone above) | same table | +0.046 / +0.029 / +0.009 |
