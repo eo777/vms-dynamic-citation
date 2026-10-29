@@ -160,13 +160,15 @@ For manuscript words with the lowest component diversity in their source windows
 
 The component-diversity difference fell to **2.1 points after shuffling within paragraphs**, and **0.2 points after shuffling within pages**. The two original self-citation configurations produced larger differences, **10.5 and 11.4 points**. The tested Markov and German-text controls had smaller component and H2 differences than the manuscript.
 
+> **Correction (28 October, evening).** The shuffle figures above kept the recorded word boxes, so 42 percent of the shuffled words sat in a box more than 1.5 times too wide or too narrow; re-typeset into the line frames, the paragraph shuffle keeps the raw difference (+5.4 points against +3.8 for the manuscript in the same geometry). Most of the raw difference is an effect of the target's own length: with inverse-square distance weights a short target's left neighbour sits closer and dominates the window, and short words are the frequent ones; inside exact word-length classes the component difference is −0.9 points. Under joint control for exact length and source-pool size a smaller association remains, **+2.6 points for component diversity and +3.5 for H2**, above all 19 length-matched paragraph shuffles, about half the copying models' for components and of their size for H2. Its mechanism is unresolved. See RESULTS.md, section 7, item 9 and its review paragraph; scripts `residual_check.py`, `length_class_check.py`, `sweep_check.py`, `shuffle_layout_check.py`.
+
 The original comparison, before accounting for source-pool size, also found a positive association: **3.4 points**, with a **95% interval of 1.4–5.4 points**, excluding zero.
 
 ![Repeat-score contrasts for the manuscript, shuffled manuscript, self-citation generators, Markov chains, and German text](contrast_all.png)
 
 #### What these results suggest
 
-- **Word placement matters.** Keeping the words but shuffling where they occur largely removes the relationship between source diversity and repetition.
+- **Word placement matters, but less than first measured.** The shuffle that removed the relationship kept the recorded boxes; re-typeset and length-matched, 19 paragraph shuffles leave a residual that the manuscript still exceeds under joint length and pool-size control (correction above).
 - **The effect is smaller than current pure copying models predict.** The manuscript shows about half their effect after accounting for source-pool size, or roughly one-third in the original comparison.
 - **Local copying could contribute to the MATTR declines.** The observed relationship fits the prediction that a restricted supply of components makes existing spellings more likely to be reused, reducing word diversity.
 
@@ -218,9 +220,9 @@ This is complementary evidence at a broader scale. Paragraph shuffles preserve w
 
 Self-citation models predict some of the manuscript's broad MATTR swings with fixed copying rules, simply as the page layout changes. The historical controls do not show the same response to layout.
 
-The manuscript also shows the local relationship that could help explain those swings: **words with less diverse material in their copying window are more often repeats.** Shuffling words within pages nearly eliminates this effect. It is smaller than current pure copying models predict—roughly one-third in the original comparison, or about half after accounting for source-pool size—and it does not seem to be present in Herbal B.
+The manuscript also shows the local relationship that could help explain those swings: **words with less diverse material in their copying window are more often repeats.** Most of the raw effect is the target's own length seen through the distance weighting; under joint control for length and source-pool size a residual of +2.6 points (components) and +3.5 (H2) remains, above 19 length-matched shuffles, about half the copying models' for components and of their size for H2 (correction above), and it does not seem to be present in Herbal B.
 
-**My interpretation is that this is substantial evidence that at least some words are assembled, somehow, from the pieces of the words above them.** It does not establish that the current self-citation models describe how the manuscript was produced.
+**My interpretation, revised 28 October: the raw contrast is not diagnostic of copying; a residual local association survives the corrected controls, and whether it comes from the words above, from memory of what was just written, or from composition is not settled by these tests.** It does not establish that the current self-citation models describe how the manuscript was produced.
 
 <details>
 <summary>Numbers, definitions, and reproduction</summary>
