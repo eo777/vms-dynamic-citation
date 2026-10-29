@@ -1,0 +1,3543 @@
+{
+ "observed": {
+  "synthetic": {
+   "A": {
+    "study selector: left 3 + 8 lines above": {
+     "n": 17169,
+     "components": {
+      "diff": 0.04945480631276905,
+      "ci": [
+       0.025160905852542784,
+       0.0739137035838834
+      ],
+      "covered": 13491
+     },
+     "h2": {
+      "diff": 0.019096126255380153,
+      "ci": [
+       -0.010782603158430834,
+       0.04143883398855186
+      ],
+      "covered": 13491
+     },
+     "worddiv": {
+      "diff": 0.018002152080344336,
+      "ci": [
+       0.0001521190705270337,
+       0.03646607386580467
+      ],
+      "covered": 13491
+     }
+    },
+    "lines above only (8)": {
+     "n": 17209,
+     "components": {
+      "diff": 0.04458676207513401,
+      "ci": [
+       0.027128386144587426,
+       0.061326106335900236
+      ],
+      "covered": 13497
+     },
+     "h2": {
+      "diff": 0.020329159212880032,
+      "ci": [
+       -0.00602838724616413,
+       0.049864458018121054
+      ],
+      "covered": 13497
+     },
+     "worddiv": {
+      "diff": 0.014275491949910402,
+      "ci": [
+       -0.0029737597973282744,
+       0.03504130712623442
+      ],
+      "covered": 13497
+     }
+    }
+   },
+   "B": {
+    "study selector: left 3 + 8 lines above": {
+     "n": 16769,
+     "components": {
+      "diff": 0.04304157549234133,
+      "ci": [
+       0.019440122811376134,
+       0.0695047122931201
+      ],
+      "covered": 13245
+     },
+     "h2": {
+      "diff": 0.01831145149525898,
+      "ci": [
+       -0.012009750029641164,
+       0.0435176196498345
+      ],
+      "covered": 13245
+     },
+     "worddiv": {
+      "diff": 0.01489788475565279,
+      "ci": [
+       -0.004510092276166287,
+       0.037510195072198396
+      ],
+      "covered": 13245
+     }
+    },
+    "lines above only (8)": {
+     "n": 16805,
+     "components": {
+      "diff": 0.036646030589949086,
+      "ci": [
+       0.01838255465562081,
+       0.054902017461371966
+      ],
+      "covered": 13260
+     },
+     "h2": {
+      "diff": 0.02421704297159505,
+      "ci": [
+       -0.005557421273880453,
+       0.048722770320087046
+      ],
+      "covered": 13260
+     },
+     "worddiv": {
+      "diff": 0.011394756008740015,
+      "ci": [
+       -0.005087608098242755,
+       0.032654043573215795
+      ],
+      "covered": 13260
+     }
+    }
+   }
+  }
+ },
+ "shuffles": {
+  "recorded": [],
+  "synthetic": [
+   {
+    "A": {
+     "study selector: left 3 + 8 lines above": {
+      "n": 17169,
+      "components": {
+       "diff": 0.06116212338593974,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13491
+      },
+      "h2": {
+       "diff": 0.024867288378766117,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13491
+      },
+      "worddiv": {
+       "diff": 0.02174677187948343,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13491
+      }
+     },
+     "lines above only (8)": {
+      "n": 17209,
+      "components": {
+       "diff": 0.044987477638640416,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13497
+      },
+      "h2": {
+       "diff": 0.019345259391770953,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13497
+      },
+      "worddiv": {
+       "diff": 0.02277996422182471,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13497
+      }
+     }
+    },
+    "B": {
+     "study selector: left 3 + 8 lines above": {
+      "n": 16769,
+      "components": {
+       "diff": 0.05397520058351568,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13245
+      },
+      "h2": {
+       "diff": 0.024102844638949628,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13245
+      },
+      "worddiv": {
+       "diff": 0.01578409919766599,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13245
+      }
+     },
+     "lines above only (8)": {
+      "n": 16805,
+      "components": {
+       "diff": 0.045753823743627076,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13260
+      },
+      "h2": {
+       "diff": 0.01928623452294259,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13260
+      },
+      "worddiv": {
+       "diff": 0.024337217771303765,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13260
+      }
+     }
+    }
+   },
+   {
+    "A": {
+     "study selector: left 3 + 8 lines above": {
+      "n": 17169,
+      "components": {
+       "diff": 0.022908895265423168,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13491
+      },
+      "h2": {
+       "diff": 0.01454806312769008,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13491
+      },
+      "worddiv": {
+       "diff": -0.014415351506456286,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13491
+      }
+     },
+     "lines above only (8)": {
+      "n": 17209,
+      "components": {
+       "diff": 0.03325581395348837,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13497
+      },
+      "h2": {
+       "diff": 0.02223613595706614,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13497
+      },
+      "worddiv": {
+       "diff": 0.013545617173524205,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13497
+      }
+     }
+    },
+    "B": {
+     "study selector: left 3 + 8 lines above": {
+      "n": 16769,
+      "components": {
+       "diff": 0.017662290299051697,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13245
+      },
+      "h2": {
+       "diff": 0.011918307804522243,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13245
+      },
+      "worddiv": {
+       "diff": -0.016546316557257468,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13245
+      }
+     },
+     "lines above only (8)": {
+      "n": 16805,
+      "components": {
+       "diff": 0.033113619810633654,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13260
+      },
+      "h2": {
+       "diff": 0.01946103423160961,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13260
+      },
+      "worddiv": {
+       "diff": 0.01169701383831051,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13260
+      }
+     }
+    }
+   },
+   {
+    "A": {
+     "study selector: left 3 + 8 lines above": {
+      "n": 17169,
+      "components": {
+       "diff": 0.04601147776183634,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13491
+      },
+      "h2": {
+       "diff": 0.029849354375896864,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13491
+      },
+      "worddiv": {
+       "diff": 0.009849354375896624,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13491
+      }
+     },
+     "lines above only (8)": {
+      "n": 17209,
+      "components": {
+       "diff": 0.04276207513416813,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13497
+      },
+      "h2": {
+       "diff": 0.04270840787119862,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13497
+      },
+      "worddiv": {
+       "diff": 0.011692307692307613,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13497
+      }
+     }
+    },
+    "B": {
+     "study selector: left 3 + 8 lines above": {
+      "n": 16769,
+      "components": {
+       "diff": 0.04897155361050337,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13245
+      },
+      "h2": {
+       "diff": 0.032742523705324544,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13245
+      },
+      "worddiv": {
+       "diff": 0.008245805981035803,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13245
+      }
+     },
+     "lines above only (8)": {
+      "n": 16805,
+      "components": {
+       "diff": 0.04437727603787334,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13260
+      },
+      "h2": {
+       "diff": 0.04628914785142024,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13260
+      },
+      "worddiv": {
+       "diff": 0.007443554260742724,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13260
+      }
+     }
+    }
+   },
+   {
+    "A": {
+     "study selector: left 3 + 8 lines above": {
+      "n": 17169,
+      "components": {
+       "diff": 0.04032998565279777,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13491
+      },
+      "h2": {
+       "diff": 0.022030129124820663,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13491
+      },
+      "worddiv": {
+       "diff": 0.00769727403156395,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13491
+      }
+     },
+     "lines above only (8)": {
+      "n": 17209,
+      "components": {
+       "diff": 0.05675849731663696,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13497
+      },
+      "h2": {
+       "diff": 0.04857960644007153,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13497
+      },
+      "worddiv": {
+       "diff": 0.028332737030411392,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13497
+      }
+     }
+    },
+    "B": {
+     "study selector: left 3 + 8 lines above": {
+      "n": 16769,
+      "components": {
+       "diff": 0.03758570386579141,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13245
+      },
+      "h2": {
+       "diff": 0.026134208606856446,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13245
+      },
+      "worddiv": {
+       "diff": 0.010656455142232013,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13245
+      }
+     },
+     "lines above only (8)": {
+      "n": 16805,
+      "components": {
+       "diff": 0.060123816460305846,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13260
+      },
+      "h2": {
+       "diff": 0.0533576110706484,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13260
+      },
+      "worddiv": {
+       "diff": 0.032268754552075674,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13260
+      }
+     }
+    }
+   },
+   {
+    "A": {
+     "study selector: left 3 + 8 lines above": {
+      "n": 17169,
+      "components": {
+       "diff": 0.03333572453371586,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13491
+      },
+      "h2": {
+       "diff": 0.006879483500717376,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13491
+      },
+      "worddiv": {
+       "diff": 0.0008608321377331363,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13491
+      }
+     },
+     "lines above only (8)": {
+      "n": 17209,
+      "components": {
+       "diff": 0.02319141323792484,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13497
+      },
+      "h2": {
+       "diff": 0.01679427549194995,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13497
+      },
+      "worddiv": {
+       "diff": 0.01804651162790699,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13497
+      }
+     }
+    },
+    "B": {
+     "study selector: left 3 + 8 lines above": {
+      "n": 16769,
+      "components": {
+       "diff": 0.03060904449307078,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13245
+      },
+      "h2": {
+       "diff": 0.005922684172137094,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13245
+      },
+      "worddiv": {
+       "diff": -0.0030561633843910196,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13245
+      }
+     },
+     "lines above only (8)": {
+      "n": 16805,
+      "components": {
+       "diff": 0.026183539694100588,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13260
+      },
+      "h2": {
+       "diff": 0.016933721777130373,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13260
+      },
+      "worddiv": {
+       "diff": 0.016766205389657673,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13260
+      }
+     }
+    }
+   },
+   {
+    "A": {
+     "study selector: left 3 + 8 lines above": {
+      "n": 17169,
+      "components": {
+       "diff": 0.037837159253945596,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13491
+      },
+      "h2": {
+       "diff": 0.03393472022955529,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13491
+      },
+      "worddiv": {
+       "diff": 0.03778694404591104,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13491
+      }
+     },
+     "lines above only (8)": {
+      "n": 17209,
+      "components": {
+       "diff": 0.04755277280858672,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13497
+      },
+      "h2": {
+       "diff": 0.03998211091234338,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13497
+      },
+      "worddiv": {
+       "diff": 0.02281574239713774,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13497
+      }
+     }
+    },
+    "B": {
+     "study selector: left 3 + 8 lines above": {
+      "n": 16769,
+      "components": {
+       "diff": 0.03754194018964252,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13245
+      },
+      "h2": {
+       "diff": 0.03381473377097005,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13245
+      },
+      "worddiv": {
+       "diff": 0.03046681254558714,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13245
+      }
+     },
+     "lines above only (8)": {
+      "n": 16805,
+      "components": {
+       "diff": 0.045888565185724595,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13260
+      },
+      "h2": {
+       "diff": 0.03943918426802623,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13260
+      },
+      "worddiv": {
+       "diff": 0.018321194464675894,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13260
+      }
+     }
+    }
+   },
+   {
+    "A": {
+     "study selector: left 3 + 8 lines above": {
+      "n": 17169,
+      "components": {
+       "diff": 0.0276972740315638,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13491
+      },
+      "h2": {
+       "diff": 0.0040064562410330185,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13491
+      },
+      "worddiv": {
+       "diff": 0.01491032998565267,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13491
+      }
+     },
+     "lines above only (8)": {
+      "n": 17209,
+      "components": {
+       "diff": 0.017395348837209224,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13497
+      },
+      "h2": {
+       "diff": 0.009259391771019698,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13497
+      },
+      "worddiv": {
+       "diff": 0.00872987477638626,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13497
+      }
+     }
+    },
+    "B": {
+     "study selector: left 3 + 8 lines above": {
+      "n": 16769,
+      "components": {
+       "diff": 0.02715171407731576,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13245
+      },
+      "h2": {
+       "diff": 0.0009518599562363672,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13245
+      },
+      "worddiv": {
+       "diff": 0.011163384390955489,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13245
+      }
+     },
+     "lines above only (8)": {
+      "n": 16805,
+      "components": {
+       "diff": 0.01431900946831749,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13260
+      },
+      "h2": {
+       "diff": 0.013623452294246108,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13260
+      },
+      "worddiv": {
+       "diff": 0.0174253459577568,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13260
+      }
+     }
+    }
+   },
+   {
+    "A": {
+     "study selector: left 3 + 8 lines above": {
+      "n": 17169,
+      "components": {
+       "diff": 0.040642037302725975,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13491
+      },
+      "h2": {
+       "diff": 0.018084648493543687,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13491
+      },
+      "worddiv": {
+       "diff": 0.006258967001434745,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13491
+      }
+     },
+     "lines above only (8)": {
+      "n": 17209,
+      "components": {
+       "diff": 0.041205724508050046,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13497
+      },
+      "h2": {
+       "diff": 0.039921288014311385,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13497
+      },
+      "worddiv": {
+       "diff": 0.03261538461538466,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13497
+      }
+     }
+    },
+    "B": {
+     "study selector: left 3 + 8 lines above": {
+      "n": 16769,
+      "components": {
+       "diff": 0.04049598832968632,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13245
+      },
+      "h2": {
+       "diff": 0.014711889132020484,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13245
+      },
+      "worddiv": {
+       "diff": 0.010127644055434093,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13245
+      }
+     },
+     "lines above only (8)": {
+      "n": 16805,
+      "components": {
+       "diff": 0.04052439912600153,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13260
+      },
+      "h2": {
+       "diff": 0.030812090313182883,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13260
+      },
+      "worddiv": {
+       "diff": 0.032261471230881245,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13260
+      }
+     }
+    }
+   },
+   {
+    "A": {
+     "study selector: left 3 + 8 lines above": {
+      "n": 17169,
+      "components": {
+       "diff": 0.035911047345767555,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13491
+      },
+      "h2": {
+       "diff": 0.03934720229555222,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13491
+      },
+      "worddiv": {
+       "diff": 0.001172883787661394,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13491
+      }
+     },
+     "lines above only (8)": {
+      "n": 17209,
+      "components": {
+       "diff": 0.026694096601073303,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13497
+      },
+      "h2": {
+       "diff": 0.036937388193202136,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13497
+      },
+      "worddiv": {
+       "diff": 0.010547406082289712,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13497
+      }
+     }
+    },
+    "B": {
+     "study selector: left 3 + 8 lines above": {
+      "n": 16769,
+      "components": {
+       "diff": 0.034358132749817694,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13245
+      },
+      "h2": {
+       "diff": 0.03033552151714075,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13245
+      },
+      "worddiv": {
+       "diff": -0.0016557257476293996,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13245
+      }
+     },
+     "lines above only (8)": {
+      "n": 16805,
+      "components": {
+       "diff": 0.023423160961398404,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13260
+      },
+      "h2": {
+       "diff": 0.035943190094683275,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13260
+      },
+      "worddiv": {
+       "diff": 0.010182083029861622,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13260
+      }
+     }
+    }
+   },
+   {
+    "A": {
+     "study selector: left 3 + 8 lines above": {
+      "n": 17169,
+      "components": {
+       "diff": 0.043285509325681426,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13491
+      },
+      "h2": {
+       "diff": 0.02860832137733149,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13491
+      },
+      "worddiv": {
+       "diff": 0.011115494978479301,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13491
+      }
+     },
+     "lines above only (8)": {
+      "n": 17209,
+      "components": {
+       "diff": 0.04971377459749554,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13497
+      },
+      "h2": {
+       "diff": 0.027631484794275518,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13497
+      },
+      "worddiv": {
+       "diff": 0.009821109123434923,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13497
+      }
+     }
+    },
+    "B": {
+     "study selector: left 3 + 8 lines above": {
+      "n": 16769,
+      "components": {
+       "diff": 0.0439934354485777,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13245
+      },
+      "h2": {
+       "diff": 0.030401167031363918,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13245
+      },
+      "worddiv": {
+       "diff": 0.010970094821298404,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13245
+      }
+     },
+     "lines above only (8)": {
+      "n": 16805,
+      "components": {
+       "diff": 0.04754187909686808,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13260
+      },
+      "h2": {
+       "diff": 0.02491260014566654,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13260
+      },
+      "worddiv": {
+       "diff": 0.00391114348142757,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13260
+      }
+     }
+    }
+   },
+   {
+    "A": {
+     "study selector: left 3 + 8 lines above": {
+      "n": 17169,
+      "components": {
+       "diff": 0.03225609756097564,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13491
+      },
+      "h2": {
+       "diff": 0.018895265423242547,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13491
+      },
+      "worddiv": {
+       "diff": 0.01370875179340042,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13491
+      }
+     },
+     "lines above only (8)": {
+      "n": 17209,
+      "components": {
+       "diff": 0.034268336314847936,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13497
+      },
+      "h2": {
+       "diff": 0.024726296958855143,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13497
+      },
+      "worddiv": {
+       "diff": 0.005198568872987475,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13497
+      }
+     }
+    },
+    "B": {
+     "study selector: left 3 + 8 lines above": {
+      "n": 16769,
+      "components": {
+       "diff": 0.035036469730123976,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13245
+      },
+      "h2": {
+       "diff": 0.01769146608315092,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13245
+      },
+      "worddiv": {
+       "diff": 0.00931801604668131,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13245
+      }
+     },
+     "lines above only (8)": {
+      "n": 16805,
+      "components": {
+       "diff": 0.034435542607428815,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13260
+      },
+      "h2": {
+       "diff": 0.02498907501820835,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13260
+      },
+      "worddiv": {
+       "diff": 0.0059613983976694596,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13260
+      }
+     }
+    }
+   },
+   {
+    "A": {
+     "study selector: left 3 + 8 lines above": {
+      "n": 17169,
+      "components": {
+       "diff": 0.02982424677187956,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13491
+      },
+      "h2": {
+       "diff": 0.014874461979913767,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13491
+      },
+      "worddiv": {
+       "diff": -0.006258967001434634,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13491
+      }
+     },
+     "lines above only (8)": {
+      "n": 17209,
+      "components": {
+       "diff": 0.03624329159212869,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13497
+      },
+      "h2": {
+       "diff": 0.036744186046511584,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13497
+      },
+      "worddiv": {
+       "diff": 0.011924865831842546,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13497
+      }
+     }
+    },
+    "B": {
+     "study selector: left 3 + 8 lines above": {
+      "n": 16769,
+      "components": {
+       "diff": 0.031119620714806673,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13245
+      },
+      "h2": {
+       "diff": 0.013092633114514973,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13245
+      },
+      "worddiv": {
+       "diff": -0.007651349380014605,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13245
+      }
+     },
+     "lines above only (8)": {
+      "n": 16805,
+      "components": {
+       "diff": 0.03875455207574652,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13260
+      },
+      "h2": {
+       "diff": 0.03339402767662053,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13260
+      },
+      "worddiv": {
+       "diff": 0.005579024034959856,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13260
+      }
+     }
+    }
+   },
+   {
+    "A": {
+     "study selector: left 3 + 8 lines above": {
+      "n": 17169,
+      "components": {
+       "diff": 0.033328550932568146,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13491
+      },
+      "h2": {
+       "diff": 0.022058823529411742,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13491
+      },
+      "worddiv": {
+       "diff": 0.013884505021520721,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13491
+      }
+     },
+     "lines above only (8)": {
+      "n": 17209,
+      "components": {
+       "diff": 0.04401073345259382,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13497
+      },
+      "h2": {
+       "diff": 0.01601073345259396,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13497
+      },
+      "worddiv": {
+       "diff": 0.004847942754919621,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13497
+      }
+     }
+    },
+    "B": {
+     "study selector: left 3 + 8 lines above": {
+      "n": 16769,
+      "components": {
+       "diff": 0.03714077315827857,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13245
+      },
+      "h2": {
+       "diff": 0.019150255288110873,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13245
+      },
+      "worddiv": {
+       "diff": 0.00832239241429611,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13245
+      }
+     },
+     "lines above only (8)": {
+      "n": 16805,
+      "components": {
+       "diff": 0.039697742170429706,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13260
+      },
+      "h2": {
+       "diff": 0.014661325564457317,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13260
+      },
+      "worddiv": {
+       "diff": 0.0021085214857975987,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13260
+      }
+     }
+    }
+   },
+   {
+    "A": {
+     "study selector: left 3 + 8 lines above": {
+      "n": 17169,
+      "components": {
+       "diff": 0.018436154949784622,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13491
+      },
+      "h2": {
+       "diff": 0.01606169296987081,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13491
+      },
+      "worddiv": {
+       "diff": 0.010616929698708755,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13491
+      }
+     },
+     "lines above only (8)": {
+      "n": 17209,
+      "components": {
+       "diff": 0.026096601073345216,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13497
+      },
+      "h2": {
+       "diff": 0.02651520572450805,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13497
+      },
+      "worddiv": {
+       "diff": 0.012135957066189584,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13497
+      }
+     }
+    },
+    "B": {
+     "study selector: left 3 + 8 lines above": {
+      "n": 16769,
+      "components": {
+       "diff": 0.015681983953318657,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13245
+      },
+      "h2": {
+       "diff": 0.01960612691466085,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13245
+      },
+      "worddiv": {
+       "diff": 0.0017651349380014558,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13245
+      }
+     },
+     "lines above only (8)": {
+      "n": 16805,
+      "components": {
+       "diff": 0.023838310269482965,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13260
+      },
+      "h2": {
+       "diff": 0.021959213401310906,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13260
+      },
+      "worddiv": {
+       "diff": 0.010415149308084515,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13260
+      }
+     }
+    }
+   },
+   {
+    "A": {
+     "study selector: left 3 + 8 lines above": {
+      "n": 17169,
+      "components": {
+       "diff": 0.042055236728837875,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13491
+      },
+      "h2": {
+       "diff": 0.013271162123385916,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13491
+      },
+      "worddiv": {
+       "diff": -0.011649928263988363,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13491
+      }
+     },
+     "lines above only (8)": {
+      "n": 17209,
+      "components": {
+       "diff": 0.041030411449016035,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13497
+      },
+      "h2": {
+       "diff": 0.039828264758497434,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13497
+      },
+      "worddiv": {
+       "diff": 0.005209302325581255,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13497
+      }
+     }
+    },
+    "B": {
+     "study selector: left 3 + 8 lines above": {
+      "n": 16769,
+      "components": {
+       "diff": 0.03480306345733042,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13245
+      },
+      "h2": {
+       "diff": 0.009380014587892116,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13245
+      },
+      "worddiv": {
+       "diff": -0.01694748358862136,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13245
+      }
+     },
+     "lines above only (8)": {
+      "n": 16805,
+      "components": {
+       "diff": 0.03922796795338673,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13260
+      },
+      "h2": {
+       "diff": 0.03693008011653304,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13260
+      },
+      "worddiv": {
+       "diff": 0.008273852876911736,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13260
+      }
+     }
+    }
+   },
+   {
+    "A": {
+     "study selector: left 3 + 8 lines above": {
+      "n": 17169,
+      "components": {
+       "diff": 0.025340746054519303,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13491
+      },
+      "h2": {
+       "diff": 0.019598278335724473,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13491
+      },
+      "worddiv": {
+       "diff": 0.005078909612625582,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13491
+      }
+     },
+     "lines above only (8)": {
+      "n": 17209,
+      "components": {
+       "diff": 0.03034347048300534,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13497
+      },
+      "h2": {
+       "diff": 0.028926654740608293,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13497
+      },
+      "worddiv": {
+       "diff": 0.010200357781753044,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13497
+      }
+     }
+    },
+    "B": {
+     "study selector: left 3 + 8 lines above": {
+      "n": 16769,
+      "components": {
+       "diff": 0.029449307075127606,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13245
+      },
+      "h2": {
+       "diff": 0.02105032822757119,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13245
+      },
+      "worddiv": {
+       "diff": 0.0025164113785558495,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13245
+      }
+     },
+     "lines above only (8)": {
+      "n": 16805,
+      "components": {
+       "diff": 0.02795338674435538,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13260
+      },
+      "h2": {
+       "diff": 0.02856882738528771,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13260
+      },
+      "worddiv": {
+       "diff": 0.010134741442097472,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13260
+      }
+     }
+    }
+   },
+   {
+    "A": {
+     "study selector: left 3 + 8 lines above": {
+      "n": 17169,
+      "components": {
+       "diff": 0.04909971305595412,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13491
+      },
+      "h2": {
+       "diff": 0.03823529411764709,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13491
+      },
+      "worddiv": {
+       "diff": 0.0055595408895265375,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13491
+      }
+     },
+     "lines above only (8)": {
+      "n": 17209,
+      "components": {
+       "diff": 0.047148479427549184,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13497
+      },
+      "h2": {
+       "diff": 0.04478354203935603,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13497
+      },
+      "worddiv": {
+       "diff": 0.003813953488371935,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13497
+      }
+     }
+    },
+    "B": {
+     "study selector: left 3 + 8 lines above": {
+      "n": 16769,
+      "components": {
+       "diff": 0.045951859956236296,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13245
+      },
+      "h2": {
+       "diff": 0.02859226841721363,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13245
+      },
+      "worddiv": {
+       "diff": 0.0011196207148065906,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13245
+      }
+     },
+     "lines above only (8)": {
+      "n": 16805,
+      "components": {
+       "diff": 0.043812818645302176,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13260
+      },
+      "h2": {
+       "diff": 0.03777858703568815,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13260
+      },
+      "worddiv": {
+       "diff": -0.0034195193008013103,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13260
+      }
+     }
+    }
+   },
+   {
+    "A": {
+     "study selector: left 3 + 8 lines above": {
+      "n": 17169,
+      "components": {
+       "diff": 0.03612984218077486,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13491
+      },
+      "h2": {
+       "diff": 0.016811334289813518,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13491
+      },
+      "worddiv": {
+       "diff": -0.004705882352941171,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13491
+      }
+     },
+     "lines above only (8)": {
+      "n": 17209,
+      "components": {
+       "diff": 0.02646153846153848,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13497
+      },
+      "h2": {
+       "diff": 0.0211556350626117,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13497
+      },
+      "worddiv": {
+       "diff": -0.00017531305903401018,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13497
+      }
+     }
+    },
+    "B": {
+     "study selector: left 3 + 8 lines above": {
+      "n": 16769,
+      "components": {
+       "diff": 0.050218818380743935,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13245
+      },
+      "h2": {
+       "diff": 0.016199854121079438,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13245
+      },
+      "worddiv": {
+       "diff": -0.002169948942377764,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13245
+      }
+     },
+     "lines above only (8)": {
+      "n": 16805,
+      "components": {
+       "diff": 0.02635833940276755,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13260
+      },
+      "h2": {
+       "diff": 0.0218608885651857,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13260
+      },
+      "worddiv": {
+       "diff": -0.00041150764748720814,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13260
+      }
+     }
+    }
+   },
+   {
+    "A": {
+     "study selector: left 3 + 8 lines above": {
+      "n": 17169,
+      "components": {
+       "diff": 0.027209469153515187,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13491
+      },
+      "h2": {
+       "diff": 0.027998565279770515,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13491
+      },
+      "worddiv": {
+       "diff": 0.007740315638450623,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13491
+      }
+     },
+     "lines above only (8)": {
+      "n": 17209,
+      "components": {
+       "diff": 0.04902325581395367,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13497
+      },
+      "h2": {
+       "diff": 0.019810375670840763,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13497
+      },
+      "worddiv": {
+       "diff": 0.032071556350626196,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13497
+      }
+     }
+    },
+    "B": {
+     "study selector: left 3 + 8 lines above": {
+      "n": 16769,
+      "components": {
+       "diff": 0.02398614150255296,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13245
+      },
+      "h2": {
+       "diff": 0.03351568198395338,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13245
+      },
+      "worddiv": {
+       "diff": 0.0043471918307804724,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13245
+      }
+     },
+     "lines above only (8)": {
+      "n": 16805,
+      "components": {
+       "diff": 0.052407137654770675,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13260
+      },
+      "h2": {
+       "diff": 0.0285287691187181,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13260
+      },
+      "worddiv": {
+       "diff": 0.03330298616168975,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13260
+      }
+     }
+    }
+   },
+   {
+    "A": {
+     "study selector: left 3 + 8 lines above": {
+      "n": 17169,
+      "components": {
+       "diff": 0.044192969870875176,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13491
+      },
+      "h2": {
+       "diff": 0.03271879483500706,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13491
+      },
+      "worddiv": {
+       "diff": 0.0049139167862265465,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13491
+      }
+     },
+     "lines above only (8)": {
+      "n": 17209,
+      "components": {
+       "diff": 0.04550626118067985,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13497
+      },
+      "h2": {
+       "diff": 0.06029695885509856,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13497
+      },
+      "worddiv": {
+       "diff": 0.018060822898032125,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13497
+      }
+     }
+    },
+    "B": {
+     "study selector: left 3 + 8 lines above": {
+      "n": 16769,
+      "components": {
+       "diff": 0.03927425237053256,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13245
+      },
+      "h2": {
+       "diff": 0.03286287381473385,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13245
+      },
+      "worddiv": {
+       "diff": 0.010229759299781316,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13245
+      }
+     },
+     "lines above only (8)": {
+      "n": 16805,
+      "components": {
+       "diff": 0.044970866715222046,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13260
+      },
+      "h2": {
+       "diff": 0.059176984705025415,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13260
+      },
+      "worddiv": {
+       "diff": 0.018532410779315334,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13260
+      }
+     }
+    }
+   },
+   {
+    "A": {
+     "study selector: left 3 + 8 lines above": {
+      "n": 17169,
+      "components": {
+       "diff": 0.03827116212338599,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13491
+      },
+      "h2": {
+       "diff": 0.006348637015781866,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13491
+      },
+      "worddiv": {
+       "diff": 0.008432568149210784,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13491
+      }
+     },
+     "lines above only (8)": {
+      "n": 17209,
+      "components": {
+       "diff": 0.0342397137745975,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13497
+      },
+      "h2": {
+       "diff": 0.02915205724508041,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13497
+      },
+      "worddiv": {
+       "diff": 0.01573166368515211,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13497
+      }
+     }
+    },
+    "B": {
+     "study selector: left 3 + 8 lines above": {
+      "n": 16769,
+      "components": {
+       "diff": 0.0275492341356674,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13245
+      },
+      "h2": {
+       "diff": 0.006692195477753571,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13245
+      },
+      "worddiv": {
+       "diff": 0.0046754194018963635,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13245
+      }
+     },
+     "lines above only (8)": {
+      "n": 16805,
+      "components": {
+       "diff": 0.03305899490167524,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13260
+      },
+      "h2": {
+       "diff": 0.025593590677348843,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13260
+      },
+      "worddiv": {
+       "diff": 0.01862709395484341,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13260
+      }
+     }
+    }
+   },
+   {
+    "A": {
+     "study selector: left 3 + 8 lines above": {
+      "n": 17169,
+      "components": {
+       "diff": 0.03102941176470586,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13491
+      },
+      "h2": {
+       "diff": 0.02389526542324255,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13491
+      },
+      "worddiv": {
+       "diff": 0.002532281205165021,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13491
+      }
+     },
+     "lines above only (8)": {
+      "n": 17209,
+      "components": {
+       "diff": 0.03591413237924873,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13497
+      },
+      "h2": {
+       "diff": 0.03040429338103756,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13497
+      },
+      "worddiv": {
+       "diff": 0.013992844364937473,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13497
+      }
+     }
+    },
+    "B": {
+     "study selector: left 3 + 8 lines above": {
+      "n": 16769,
+      "components": {
+       "diff": 0.028581327498176434,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13245
+      },
+      "h2": {
+       "diff": 0.02344638949671779,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13245
+      },
+      "worddiv": {
+       "diff": -0.0006455142231946431,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13245
+      }
+     },
+     "lines above only (8)": {
+      "n": 16805,
+      "components": {
+       "diff": 0.04127458120903127,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13260
+      },
+      "h2": {
+       "diff": 0.03133648943918438,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13260
+      },
+      "worddiv": {
+       "diff": 0.013587035688274018,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13260
+      }
+     }
+    }
+   },
+   {
+    "A": {
+     "study selector: left 3 + 8 lines above": {
+      "n": 17169,
+      "components": {
+       "diff": 0.04113701578192247,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13491
+      },
+      "h2": {
+       "diff": 0.03804878048780497,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13491
+      },
+      "worddiv": {
+       "diff": 0.004677187948350037,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13491
+      }
+     },
+     "lines above only (8)": {
+      "n": 17209,
+      "components": {
+       "diff": 0.05015742397137751,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13497
+      },
+      "h2": {
+       "diff": 0.04666547406082289,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13497
+      },
+      "worddiv": {
+       "diff": 0.014926654740608336,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13497
+      }
+     }
+    },
+    "B": {
+     "study selector: left 3 + 8 lines above": {
+      "n": 16769,
+      "components": {
+       "diff": 0.03939824945295417,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13245
+      },
+      "h2": {
+       "diff": 0.03966083150984667,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13245
+      },
+      "worddiv": {
+       "diff": -0.005776805251641093,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13245
+      }
+     },
+     "lines above only (8)": {
+      "n": 16805,
+      "components": {
+       "diff": 0.04395848506919148,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13260
+      },
+      "h2": {
+       "diff": 0.04245812090313189,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13260
+      },
+      "worddiv": {
+       "diff": 0.013758193736343793,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13260
+      }
+     }
+    }
+   },
+   {
+    "A": {
+     "study selector: left 3 + 8 lines above": {
+      "n": 17169,
+      "components": {
+       "diff": 0.04354375896700141,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13491
+      },
+      "h2": {
+       "diff": 0.03358321377331419,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13491
+      },
+      "worddiv": {
+       "diff": -0.001015064562410295,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13491
+      }
+     },
+     "lines above only (8)": {
+      "n": 17209,
+      "components": {
+       "diff": 0.04884794275491944,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13497
+      },
+      "h2": {
+       "diff": 0.04167084078711997,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13497
+      },
+      "worddiv": {
+       "diff": 0.002014311270125191,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13497
+      }
+     }
+    },
+    "B": {
+     "study selector: left 3 + 8 lines above": {
+      "n": 16769,
+      "components": {
+       "diff": 0.040452224653537594,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13245
+      },
+      "h2": {
+       "diff": 0.02761123267687815,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13245
+      },
+      "worddiv": {
+       "diff": -0.0008351568198394776,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13245
+      }
+     },
+     "lines above only (8)": {
+      "n": 16805,
+      "components": {
+       "diff": 0.04438820101966501,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13260
+      },
+      "h2": {
+       "diff": 0.03500000000000009,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13260
+      },
+      "worddiv": {
+       "diff": 0.006190823015294944,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13260
+      }
+     }
+    }
+   },
+   {
+    "A": {
+     "study selector: left 3 + 8 lines above": {
+      "n": 17169,
+      "components": {
+       "diff": 0.03229196556671454,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13491
+      },
+      "h2": {
+       "diff": 0.032564562410329956,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13491
+      },
+      "worddiv": {
+       "diff": 0.0027008608321378302,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13491
+      }
+     },
+     "lines above only (8)": {
+      "n": 17209,
+      "components": {
+       "diff": 0.028694096601073305,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13497
+      },
+      "h2": {
+       "diff": 0.028200357781753116,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13497
+      },
+      "worddiv": {
+       "diff": 0.009044722719141196,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13497
+      }
+     }
+    },
+    "B": {
+     "study selector: left 3 + 8 lines above": {
+      "n": 16769,
+      "components": {
+       "diff": 0.03208606856309276,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13245
+      },
+      "h2": {
+       "diff": 0.02814733770970096,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13245
+      },
+      "worddiv": {
+       "diff": 0.000893508388038089,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13245
+      }
+     },
+     "lines above only (8)": {
+      "n": 16805,
+      "components": {
+       "diff": 0.02675892206846342,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13260
+      },
+      "h2": {
+       "diff": 0.027246904588492327,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13260
+      },
+      "worddiv": {
+       "diff": 0.008805535324107772,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13260
+      }
+     }
+    }
+   },
+   {
+    "A": {
+     "study selector: left 3 + 8 lines above": {
+      "n": 17169,
+      "components": {
+       "diff": 0.03871233859397433,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13491
+      },
+      "h2": {
+       "diff": 0.028554519368723164,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13491
+      },
+      "worddiv": {
+       "diff": -0.00020444763271171285,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13491
+      }
+     },
+     "lines above only (8)": {
+      "n": 17209,
+      "components": {
+       "diff": 0.05048300536672634,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13497
+      },
+      "h2": {
+       "diff": 0.04320572450805016,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13497
+      },
+      "worddiv": {
+       "diff": 0.022647584973166435,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13497
+      }
+     }
+    },
+    "B": {
+     "study selector: left 3 + 8 lines above": {
+      "n": 16769,
+      "components": {
+       "diff": 0.03509846827133495,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13245
+      },
+      "h2": {
+       "diff": 0.02814369073668843,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13245
+      },
+      "worddiv": {
+       "diff": 0.002009482129832263,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13245
+      }
+     },
+     "lines above only (8)": {
+      "n": 16805,
+      "components": {
+       "diff": 0.047297887836853625,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13260
+      },
+      "h2": {
+       "diff": 0.04443918426802618,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13260
+      },
+      "worddiv": {
+       "diff": 0.022064821558630765,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13260
+      }
+     }
+    }
+   },
+   {
+    "A": {
+     "study selector: left 3 + 8 lines above": {
+      "n": 17169,
+      "components": {
+       "diff": 0.04571018651362985,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13491
+      },
+      "h2": {
+       "diff": 0.011660688665710295,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13491
+      },
+      "worddiv": {
+       "diff": 0.007826398852223915,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13491
+      }
+     },
+     "lines above only (8)": {
+      "n": 17209,
+      "components": {
+       "diff": 0.04801788908765636,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13497
+      },
+      "h2": {
+       "diff": 0.024593917710196866,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13497
+      },
+      "worddiv": {
+       "diff": 0.012264758497316619,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13497
+      }
+     }
+    },
+    "B": {
+     "study selector: left 3 + 8 lines above": {
+      "n": 16769,
+      "components": {
+       "diff": 0.04498176513493807,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13245
+      },
+      "h2": {
+       "diff": 0.013822027716994922,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13245
+      },
+      "worddiv": {
+       "diff": 0.01071115973741793,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13245
+      }
+     },
+     "lines above only (8)": {
+      "n": 16805,
+      "components": {
+       "diff": 0.045127458120903075,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13260
+      },
+      "h2": {
+       "diff": 0.026085214857975325,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13260
+      },
+      "worddiv": {
+       "diff": 0.012312454479242563,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13260
+      }
+     }
+    }
+   },
+   {
+    "A": {
+     "study selector: left 3 + 8 lines above": {
+      "n": 17169,
+      "components": {
+       "diff": 0.03394906743185072,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13491
+      },
+      "h2": {
+       "diff": 0.021050932568149328,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13491
+      },
+      "worddiv": {
+       "diff": -0.0021090387374463337,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13491
+      }
+     },
+     "lines above only (8)": {
+      "n": 17209,
+      "components": {
+       "diff": 0.03240787119856897,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13497
+      },
+      "h2": {
+       "diff": 0.035692307692307745,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13497
+      },
+      "worddiv": {
+       "diff": 0.02037567084078723,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13497
+      }
+     }
+    },
+    "B": {
+     "study selector: left 3 + 8 lines above": {
+      "n": 16769,
+      "components": {
+       "diff": 0.028840262582056853,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13245
+      },
+      "h2": {
+       "diff": 0.019901531728665267,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13245
+      },
+      "worddiv": {
+       "diff": -0.002512764405543433,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13245
+      }
+     },
+     "lines above only (8)": {
+      "n": 16805,
+      "components": {
+       "diff": 0.028353969410051028,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13260
+      },
+      "h2": {
+       "diff": 0.03455207574654051,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13260
+      },
+      "worddiv": {
+       "diff": 0.020990531682447133,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13260
+      }
+     }
+    }
+   },
+   {
+    "A": {
+     "study selector: left 3 + 8 lines above": {
+      "n": 17169,
+      "components": {
+       "diff": 0.03751076040172174,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13491
+      },
+      "h2": {
+       "diff": 0.021746771879483373,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13491
+      },
+      "worddiv": {
+       "diff": 0.006431133428981328,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13491
+      }
+     },
+     "lines above only (8)": {
+      "n": 17209,
+      "components": {
+       "diff": 0.026611806797853244,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13497
+      },
+      "h2": {
+       "diff": 0.0027191413237924733,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13497
+      },
+      "worddiv": {
+       "diff": 0.009602862254025013,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13497
+      }
+     }
+    },
+    "B": {
+     "study selector: left 3 + 8 lines above": {
+      "n": 16769,
+      "components": {
+       "diff": 0.03880743982494517,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13245
+      },
+      "h2": {
+       "diff": 0.02146608315098464,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13245
+      },
+      "worddiv": {
+       "diff": 0.0006455142231948097,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13245
+      }
+     },
+     "lines above only (8)": {
+      "n": 16805,
+      "components": {
+       "diff": 0.030823015294974443,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13260
+      },
+      "h2": {
+       "diff": 0.007279679533867378,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13260
+      },
+      "worddiv": {
+       "diff": 0.010873998543335817,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13260
+      }
+     }
+    }
+   },
+   {
+    "A": {
+     "study selector: left 3 + 8 lines above": {
+      "n": 17169,
+      "components": {
+       "diff": 0.03553443328550926,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13491
+      },
+      "h2": {
+       "diff": 0.020225968436154984,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13491
+      },
+      "worddiv": {
+       "diff": -0.00780129124820661,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13491
+      }
+     },
+     "lines above only (8)": {
+      "n": 17209,
+      "components": {
+       "diff": 0.030243291592128796,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13497
+      },
+      "h2": {
+       "diff": 0.017441860465116255,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13497
+      },
+      "worddiv": {
+       "diff": 0.004862254025044699,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13497
+      }
+     }
+    },
+    "B": {
+     "study selector: left 3 + 8 lines above": {
+      "n": 16769,
+      "components": {
+       "diff": 0.029730123997082414,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13245
+      },
+      "h2": {
+       "diff": 0.018530269876002925,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13245
+      },
+      "worddiv": {
+       "diff": 0.002746170678336879,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13245
+      }
+     },
+     "lines above only (8)": {
+      "n": 16805,
+      "components": {
+       "diff": 0.027174071376547648,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13260
+      },
+      "h2": {
+       "diff": 0.017341587764020394,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13260
+      },
+      "worddiv": {
+       "diff": 5.462490895852268e-05,
+       "ci": [
+        NaN,
+        NaN
+       ],
+       "covered": 13260
+      }
+     }
+    }
+   }
+  ]
+ }
+}

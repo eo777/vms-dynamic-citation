@@ -1,4 +1,7 @@
-"""T25. Thirty shuffles, two interior definitions (28 October). prose_shuffle_more.py showed that the Rhazes text's interior
+"""T25. Thirty shuffles, two interior definitions (28 October). SUPERSEDED by shuffle30b_check.py: this script compares the
+manuscript's recorded-box observed values with shuffles re-typeset into synthetic boxes, so its p-values for the recorded rows are
+cross-geometry comparisons, not permutation tests of the recorded statistic (found by an external review); its synthetic rows are
+internally consistent. Kept for the record. prose_shuffle_more.py showed that the Rhazes text's interior
 association moved from +0.033 to +0.012 when the interior cohort was defined by the lines-above pool (15 words or more) instead of
 the study selector's pool, and sat at the median of 30 shuffles. The manuscript's margin over its 19 shuffles was +0.004, so it
 needs the same check. For one text (argument: manuscript, la_rhazes_almansor or la_galen_simplicium) this script scores the

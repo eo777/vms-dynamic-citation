@@ -110,7 +110,8 @@ python experiments/mattr_template_link/interior_check.py      # node; interior w
 python experiments/mattr_template_link/prose_interior_check.py # node; the five prose texts on the same interior cohort
 python experiments/mattr_template_link/prose_shuffle_check.py  # node; each prose text against nine size-matched paragraph shuffles of itself (about 10 minutes)
 python experiments/mattr_template_link/prose_shuffle_more.py   # node; Rhazes and Galen against 30 shuffles
-python experiments/mattr_template_link/shuffle30_check.py manuscript        # node; 30 shuffles, two interior definitions (also la_rhazes_almansor, la_galen_simplicium)
+python experiments/mattr_template_link/shuffle30_check.py manuscript        # node; 30 shuffles, two interior definitions (superseded for its recorded rows)
+python experiments/mattr_template_link/shuffle30b_check.py manuscript       # node; 30 shuffles in the observation's own geometry; also timm, timm_spatial, noinnov_spatial, la_rhazes_almansor --start 566 / 16785
 python experiments/mattr_template_link/mattr_vs_components.py # node; MATTR coupling
 python experiments/mattr_template_link/figures_small.py
 python experiments/mattr_template_link/prose_route.py           # each historical text's own MATTR route (route_mattr_prose.png)
@@ -172,7 +173,9 @@ page f78r) or <http://127.0.0.1:8766/compare.html> (any bifolium, every text ver
 | the same on interior words only (line edges and windows under 15 words removed), manuscript recorded / synthetic; copiers | `interior_check.log` | +0.025 / +0.040; +0.045 to +0.048 (H2 +0.022 / +0.037; +0.020 to +0.035) |
 | the same for five prose texts on the interior cohort, lines above only, re-typeset: components / H2 | `prose_interior_check.log` | −0.007 to +0.033 / −0.011 to +0.032 |
 | prose texts above their own nine shuffles on that cut (lines above only, joint control) | `prose_shuffle_check.log` | 1 of 5 clearly (Rhazes +0.033 against at most +0.015); manuscript +0.040 against at most +0.036 |
-| 30 shuffles, lines above only, joint control, interior A: manuscript synthetic / recorded (shuffles above, p); Rhazes | `shuffle30_manuscript.log`, `shuffle30_la_rhazes_almansor.log` | +0.040 (30/30, 0.03) / +0.025 (22/30, 0.29); +0.014 (22/30, 0.29) |
+| 30 shuffles, lines above only, joint control, interior A: manuscript synthetic / recorded (shuffles above, p); Rhazes | `shuffle30_manuscript.log`, `shuffle30_la_rhazes_almansor.log` | +0.040 (30/30, 0.03) / +0.025 (22/30, 0.29); +0.014 (22/30, 0.29) (recorded rows superseded) |
+| geometry-matched: manuscript excess over its own shuffles, full-selector H2 recorded / lines above only recorded / synthetic; copiers' own excess, lines above only | `shuffle30b_*.log` | +0.021 (29/30) / +0.008 to +0.011 / +0.017 to +0.024; Timm page draw −0.010 to +0.006, governed copier +0.008 to +0.017 |
+| Rhazes original passage (start 566), lines above only, excess over its own 30 shuffles, recorded / synthetic | `shuffle30b_la_rhazes_almansor_start566.log` | +0.024 (30/30) / +0.024 (30/30); later passage (start 16785) none |
 | mirror-cone test, components, manuscript: cone above / cone below / paired difference | `direction_check.log`, region all | +0.036 / +0.032 / +0.004 (−0.019 to +0.026) |
 | the same for Original Timm (page draw) and for the no-innovator copier of the words in view | same table | +0.121 / +0.052 / +0.068; +0.099 / +0.088 / +0.010 |
 | the same with the manuscript's lines shuffled inside paragraphs / words shuffled inside lines / words shuffled inside paragraphs (cone above) | same table | +0.046 / +0.029 / +0.009 |
