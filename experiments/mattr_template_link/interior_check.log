@@ -1,0 +1,249 @@
+Interior words only. interior-1 = not first or last in the line and study pool >= 15 words; interior-2 = interior-1 and not in the
+first two lines of the page. Manuscript cohorts (study selector): all 22210, interior-1 14743, interior-2 14743 targets.
+Within-bifolium quintile contrast of word impact: raw, inside exact length, inside exact length x pool-size tertile.
+
+== components
+  -- study selector: left 3 + 8 lines above
+     text                                         cohort      n                      raw            inside length       inside length x pool
+     manuscript (recorded boxes)                     all  22210   +0.034 [+0.015,+0.055]   -0.009 [-0.028,+0.010]     +0.026 [+0.008,+0.044]
+     manuscript (recorded boxes)              interior-1  14743   +0.075 [+0.050,+0.099]   +0.023 [+0.002,+0.039]     +0.009 [-0.017,+0.035]
+     manuscript (recorded boxes)              interior-2  14743   +0.075 [+0.051,+0.100]   +0.023 [+0.004,+0.040]     +0.009 [-0.016,+0.036]
+     manuscript (synthetic boxes)                    all  22198   +0.038 [+0.016,+0.060]   -0.008 [-0.027,+0.016]     +0.031 [+0.017,+0.048]
+     manuscript (synthetic boxes)             interior-1  14849   +0.073 [+0.039,+0.103]   +0.029 [+0.002,+0.056]     +0.039 [+0.011,+0.065]
+     manuscript (synthetic boxes)             interior-2  14849   +0.073 [+0.040,+0.104]   +0.029 [+0.005,+0.054]     +0.039 [+0.014,+0.071]
+     Original Timm, page draw (seed 1)               all  24893   +0.119 [+0.097,+0.145]   +0.073 [+0.052,+0.099]     +0.053 [+0.032,+0.073]
+     Original Timm, page draw (seed 1)        interior-1  17169   +0.097 [+0.075,+0.120]   +0.049 [+0.027,+0.071]     +0.049 [+0.025,+0.072]
+     Original Timm, page draw (seed 1)        interior-2  17169   +0.097 [+0.076,+0.120]   +0.049 [+0.029,+0.071]     +0.049 [+0.029,+0.070]
+     Original Timm, words in view (seed 1)           all  25042   +0.114 [+0.096,+0.131]   +0.071 [+0.052,+0.092]     +0.055 [+0.033,+0.073]
+     Original Timm, words in view (seed 1)    interior-1  17268   +0.110 [+0.086,+0.129]   +0.055 [+0.035,+0.080]     +0.050 [+0.027,+0.071]
+     Original Timm, words in view (seed 1)    interior-2  17268   +0.110 [+0.085,+0.131]   +0.055 [+0.038,+0.077]     +0.050 [+0.028,+0.066]
+     no-innovator, words in view (seed 1)            all  27090   +0.104 [+0.087,+0.121]   +0.040 [+0.025,+0.058]     +0.056 [+0.040,+0.072]
+     no-innovator, words in view (seed 1)     interior-1  18984   +0.129 [+0.110,+0.148]   +0.048 [+0.028,+0.072]     +0.049 [+0.029,+0.073]
+     no-innovator, words in view (seed 1)     interior-2  18984   +0.129 [+0.111,+0.149]   +0.048 [+0.030,+0.069]     +0.049 [+0.029,+0.071]
+     shuffles (19)                                   all        +0.055 (+0.045..+0.063) rank 0/19 | +0.007 (-0.005..+0.024) rank 0/19 | +0.014 (+0.000..+0.027) rank 19/19
+     shuffles (19)                            interior-1        +0.066 (+0.049..+0.082) rank 17/19 | +0.012 (-0.001..+0.020) rank 19/19 | +0.014 (-0.005..+0.031) rank 19/19
+     shuffles (19)                            interior-2        +0.066 (+0.049..+0.082) rank 17/19 | +0.012 (-0.001..+0.020) rank 19/19 | +0.014 (-0.005..+0.031) rank 19/19
+  -- lines above only (8)
+     text                                         cohort      n                      raw            inside length       inside length x pool
+     manuscript (recorded boxes)                     all  21178   -0.023 [-0.042,-0.008]   -0.024 [-0.043,-0.007]     -0.002 [-0.022,+0.015]
+     manuscript (recorded boxes)              interior-1  14745   +0.028 [+0.002,+0.052]   +0.021 [-0.002,+0.042]     +0.025 [-0.005,+0.056]
+     manuscript (recorded boxes)              interior-2  14745   +0.028 [+0.000,+0.053]   +0.021 [-0.001,+0.042]     +0.025 [-0.006,+0.056]
+     manuscript (synthetic boxes)                    all  21223   -0.014 [-0.030,+0.005]   -0.026 [-0.049,-0.009]     +0.014 [-0.005,+0.030]
+     manuscript (synthetic boxes)             interior-1  14849   +0.035 [+0.012,+0.057]   +0.025 [+0.001,+0.048]     +0.040 [+0.017,+0.067]
+     manuscript (synthetic boxes)             interior-2  14849   +0.035 [+0.008,+0.055]   +0.025 [+0.001,+0.047]     +0.040 [+0.014,+0.068]
+     Original Timm, page draw (seed 1)               all  24025   +0.080 [+0.060,+0.102]   +0.075 [+0.053,+0.100]     +0.052 [+0.031,+0.073]
+     Original Timm, page draw (seed 1)        interior-1  17209   +0.067 [+0.043,+0.090]   +0.045 [+0.019,+0.071]     +0.045 [+0.026,+0.062]
+     Original Timm, page draw (seed 1)        interior-2  17209   +0.067 [+0.044,+0.092]   +0.045 [+0.024,+0.068]     +0.045 [+0.028,+0.061]
+     Original Timm, words in view (seed 1)           all  24161   +0.081 [+0.059,+0.105]   +0.066 [+0.049,+0.086]     +0.059 [+0.040,+0.080]
+     Original Timm, words in view (seed 1)    interior-1  17305   +0.085 [+0.056,+0.109]   +0.068 [+0.047,+0.092]     +0.048 [+0.022,+0.075]
+     Original Timm, words in view (seed 1)    interior-2  17305   +0.085 [+0.060,+0.108]   +0.068 [+0.050,+0.091]     +0.048 [+0.021,+0.075]
+     no-innovator, words in view (seed 1)            all  26147   +0.068 [+0.045,+0.092]   +0.027 [+0.002,+0.050]     +0.049 [+0.027,+0.078]
+     no-innovator, words in view (seed 1)     interior-1  19012   +0.089 [+0.056,+0.117]   +0.046 [+0.019,+0.077]     +0.045 [+0.015,+0.080]
+     no-innovator, words in view (seed 1)     interior-2  19012   +0.089 [+0.054,+0.117]   +0.046 [+0.019,+0.071]     +0.045 [+0.010,+0.079]
+     shuffles (19)                                   all        +0.017 (+0.008..+0.027) rank 0/19 | +0.007 (-0.003..+0.020) rank 0/19 | +0.013 (+0.002..+0.024) rank 10/19
+     shuffles (19)                            interior-1        +0.024 (+0.007..+0.041) rank 16/19 | +0.015 (-0.000..+0.029) rank 17/19 | +0.017 (-0.006..+0.036) rank 19/19
+     shuffles (19)                            interior-2        +0.024 (+0.007..+0.041) rank 16/19 | +0.015 (-0.000..+0.029) rank 17/19 | +0.017 (-0.006..+0.036) rank 19/19
+  -- lines below only (8)
+     text                                         cohort      n                      raw            inside length       inside length x pool
+     manuscript (recorded boxes)                     all  21282   -0.013 [-0.033,+0.007]   -0.025 [-0.044,-0.007]     +0.021 [+0.009,+0.034]
+     manuscript (recorded boxes)              interior-1  12726   +0.039 [+0.009,+0.064]   +0.031 [+0.008,+0.051]     +0.035 [+0.017,+0.053]
+     manuscript (recorded boxes)              interior-2  12726   +0.039 [+0.010,+0.065]   +0.031 [+0.010,+0.049]     +0.035 [+0.017,+0.053]
+     manuscript (synthetic boxes)                    all  21324   -0.013 [-0.028,+0.004]   -0.026 [-0.042,-0.012]     +0.009 [-0.009,+0.026]
+     manuscript (synthetic boxes)             interior-1  12779   +0.032 [+0.002,+0.056]   +0.020 [-0.006,+0.043]     +0.027 [+0.009,+0.043]
+     manuscript (synthetic boxes)             interior-2  12779   +0.032 [+0.006,+0.055]   +0.020 [-0.003,+0.044]     +0.027 [+0.008,+0.045]
+     Original Timm, page draw (seed 1)               all  24132   +0.017 [-0.008,+0.036]   +0.005 [-0.021,+0.028]     +0.039 [+0.018,+0.064]
+     Original Timm, page draw (seed 1)        interior-1  14790   +0.041 [+0.022,+0.064]   +0.021 [-0.002,+0.045]     +0.021 [-0.006,+0.050]
+     Original Timm, page draw (seed 1)        interior-2  14790   +0.041 [+0.017,+0.063]   +0.021 [-0.001,+0.042]     +0.021 [-0.006,+0.046]
+     Original Timm, words in view (seed 1)           all  24243   +0.044 [+0.019,+0.069]   +0.030 [+0.006,+0.054]     +0.047 [+0.024,+0.068]
+     Original Timm, words in view (seed 1)    interior-1  14859   +0.045 [+0.020,+0.070]   +0.031 [+0.005,+0.058]     +0.037 [+0.010,+0.065]
+     Original Timm, words in view (seed 1)    interior-2  14859   +0.045 [+0.016,+0.071]   +0.031 [+0.004,+0.054]     +0.037 [+0.007,+0.064]
+     no-innovator, words in view (seed 1)            all  26268   +0.028 [-0.003,+0.054]   +0.004 [-0.020,+0.025]     +0.019 [-0.002,+0.044]
+     no-innovator, words in view (seed 1)     interior-1  16322   +0.047 [+0.011,+0.073]   +0.029 [-0.001,+0.060]     +0.031 [+0.000,+0.058]
+     no-innovator, words in view (seed 1)     interior-2  16322   +0.047 [+0.014,+0.078]   +0.029 [-0.002,+0.056]     +0.031 [+0.001,+0.060]
+     shuffles (19)                                   all        +0.019 (+0.006..+0.033) rank 0/19 | +0.007 (-0.007..+0.020) rank 0/19 | +0.016 (-0.005..+0.033) rank 3/19
+     shuffles (19)                            interior-1        +0.031 (+0.013..+0.052) rank 8/19 | +0.023 (-0.002..+0.042) rank 7/19 | +0.022 (-0.010..+0.041) rank 10/19
+     shuffles (19)                            interior-2        +0.031 (+0.013..+0.052) rank 8/19 | +0.023 (-0.002..+0.042) rank 7/19 | +0.022 (-0.010..+0.041) rank 10/19
+  -- mirror: right 3 + 8 lines below
+     text                                         cohort      n                      raw            inside length       inside length x pool
+     manuscript (recorded boxes)                     all  22234   +0.043 [+0.025,+0.063]   -0.011 [-0.027,+0.004]     +0.017 [-0.003,+0.037]
+     manuscript (recorded boxes)              interior-1  13293   +0.059 [+0.028,+0.093]   +0.010 [-0.018,+0.036]     +0.028 [-0.002,+0.059]
+     manuscript (recorded boxes)              interior-2  13293   +0.059 [+0.029,+0.087]   +0.010 [-0.020,+0.037]     +0.028 [-0.005,+0.061]
+     manuscript (synthetic boxes)                    all  22276   +0.046 [+0.027,+0.068]   -0.012 [-0.031,+0.003]     +0.010 [-0.012,+0.032]
+     manuscript (synthetic boxes)             interior-1  13365   +0.064 [+0.029,+0.095]   +0.013 [-0.015,+0.042]     +0.023 [-0.007,+0.054]
+     manuscript (synthetic boxes)             interior-2  13365   +0.064 [+0.031,+0.092]   +0.013 [-0.014,+0.041]     +0.023 [-0.008,+0.053]
+     Original Timm, page draw (seed 1)               all  25051   +0.054 [+0.035,+0.070]   +0.011 [-0.008,+0.030]     +0.041 [+0.019,+0.066]
+     Original Timm, page draw (seed 1)        interior-1  15360   +0.058 [+0.035,+0.075]   +0.009 [-0.012,+0.026]     +0.036 [+0.020,+0.052]
+     Original Timm, page draw (seed 1)        interior-2  15360   +0.058 [+0.037,+0.076]   +0.009 [-0.012,+0.029]     +0.036 [+0.020,+0.052]
+     Original Timm, words in view (seed 1)           all  25178   +0.081 [+0.057,+0.109]   +0.038 [+0.016,+0.060]     +0.053 [+0.035,+0.074]
+     Original Timm, words in view (seed 1)    interior-1  15445   +0.074 [+0.055,+0.096]   +0.024 [+0.002,+0.042]     +0.044 [+0.023,+0.061]
+     Original Timm, words in view (seed 1)    interior-2  15445   +0.074 [+0.053,+0.094]   +0.024 [+0.007,+0.041]     +0.044 [+0.025,+0.062]
+     no-innovator, words in view (seed 1)            all  27161   +0.089 [+0.065,+0.117]   +0.024 [-0.002,+0.049]     +0.037 [+0.014,+0.058]
+     no-innovator, words in view (seed 1)     interior-1  16884   +0.095 [+0.065,+0.123]   +0.029 [+0.001,+0.067]     +0.034 [+0.007,+0.063]
+     no-innovator, words in view (seed 1)     interior-2  16884   +0.095 [+0.064,+0.122]   +0.029 [-0.000,+0.058]     +0.034 [+0.007,+0.064]
+     shuffles (19)                                   all        +0.057 (+0.032..+0.073) rank 2/19 | +0.007 (-0.019..+0.018) rank 1/19 | +0.015 (-0.008..+0.032) rank 6/19
+     shuffles (19)                            interior-1        +0.067 (+0.040..+0.091) rank 8/19 | +0.016 (-0.017..+0.035) rank 6/19 | +0.018 (-0.016..+0.041) rank 12/19
+     shuffles (19)                            interior-2        +0.067 (+0.040..+0.091) rank 8/19 | +0.016 (-0.017..+0.035) rank 6/19 | +0.018 (-0.016..+0.041) rank 12/19
+
+== h2
+  -- study selector: left 3 + 8 lines above
+     text                                         cohort      n                      raw            inside length       inside length x pool
+     manuscript (recorded boxes)                     all  22210   +0.027 [+0.006,+0.048]   +0.001 [-0.020,+0.022]     +0.035 [+0.022,+0.047]
+     manuscript (recorded boxes)              interior-1  14743   +0.065 [+0.038,+0.093]   +0.031 [+0.010,+0.053]     +0.034 [+0.012,+0.055]
+     manuscript (recorded boxes)              interior-2  14743   +0.065 [+0.039,+0.096]   +0.031 [+0.010,+0.054]     +0.034 [+0.011,+0.055]
+     manuscript (synthetic boxes)                    all  22198   +0.025 [+0.008,+0.042]   +0.005 [-0.012,+0.022]     +0.026 [+0.008,+0.045]
+     manuscript (synthetic boxes)             interior-1  14849   +0.067 [+0.037,+0.101]   +0.039 [+0.010,+0.070]     +0.041 [+0.015,+0.068]
+     manuscript (synthetic boxes)             interior-2  14849   +0.067 [+0.036,+0.101]   +0.039 [+0.009,+0.067]     +0.041 [+0.015,+0.075]
+     Original Timm, page draw (seed 1)               all  24893   +0.098 [+0.075,+0.120]   +0.059 [+0.036,+0.081]     +0.022 [-0.002,+0.040]
+     Original Timm, page draw (seed 1)        interior-1  17169   +0.074 [+0.051,+0.095]   +0.026 [+0.001,+0.048]     +0.019 [-0.006,+0.042]
+     Original Timm, page draw (seed 1)        interior-2  17169   +0.074 [+0.049,+0.094]   +0.026 [+0.002,+0.050]     +0.019 [-0.013,+0.042]
+     Original Timm, words in view (seed 1)           all  25042   +0.084 [+0.063,+0.106]   +0.044 [+0.029,+0.061]     +0.019 [+0.001,+0.035]
+     Original Timm, words in view (seed 1)    interior-1  17268   +0.075 [+0.056,+0.093]   +0.027 [+0.009,+0.045]     +0.013 [-0.007,+0.030]
+     Original Timm, words in view (seed 1)    interior-2  17268   +0.075 [+0.050,+0.094]   +0.027 [+0.009,+0.045]     +0.013 [-0.006,+0.030]
+     no-innovator, words in view (seed 1)            all  27090   +0.083 [+0.066,+0.098]   +0.045 [+0.026,+0.062]     +0.060 [+0.044,+0.078]
+     no-innovator, words in view (seed 1)     interior-1  18984   +0.096 [+0.080,+0.117]   +0.046 [+0.026,+0.064]     +0.051 [+0.032,+0.072]
+     no-innovator, words in view (seed 1)     interior-2  18984   +0.096 [+0.079,+0.113]   +0.046 [+0.029,+0.064]     +0.051 [+0.030,+0.075]
+     shuffles (19)                                   all        +0.037 (+0.020..+0.053) rank 2/19 | +0.005 (-0.006..+0.021) rank 8/19 | +0.009 (-0.011..+0.023) rank 19/19
+     shuffles (19)                            interior-1        +0.044 (+0.024..+0.062) rank 19/19 | +0.008 (-0.012..+0.022) rank 19/19 | +0.010 (-0.009..+0.025) rank 19/19
+     shuffles (19)                            interior-2        +0.044 (+0.024..+0.062) rank 19/19 | +0.008 (-0.012..+0.022) rank 19/19 | +0.010 (-0.009..+0.025) rank 19/19
+  -- lines above only (8)
+     text                                         cohort      n                      raw            inside length       inside length x pool
+     manuscript (recorded boxes)                     all  21178   -0.019 [-0.036,-0.004]   -0.019 [-0.036,-0.002]     +0.012 [-0.005,+0.027]
+     manuscript (recorded boxes)              interior-1  14745   +0.019 [-0.006,+0.043]   +0.023 [-0.005,+0.045]     +0.022 [-0.003,+0.042]
+     manuscript (recorded boxes)              interior-2  14745   +0.019 [-0.005,+0.044]   +0.023 [-0.004,+0.044]     +0.022 [-0.002,+0.044]
+     manuscript (synthetic boxes)                    all  21223   -0.009 [-0.028,+0.015]   -0.008 [-0.031,+0.014]     +0.023 [+0.006,+0.040]
+     manuscript (synthetic boxes)             interior-1  14849   +0.032 [+0.006,+0.061]   +0.027 [+0.003,+0.054]     +0.037 [+0.011,+0.063]
+     manuscript (synthetic boxes)             interior-2  14849   +0.032 [+0.005,+0.060]   +0.027 [-0.001,+0.057]     +0.037 [+0.011,+0.060]
+     Original Timm, page draw (seed 1)               all  24025   +0.066 [+0.040,+0.088]   +0.058 [+0.034,+0.078]     +0.043 [+0.023,+0.059]
+     Original Timm, page draw (seed 1)        interior-1  17209   +0.049 [+0.022,+0.074]   +0.032 [+0.006,+0.057]     +0.020 [-0.016,+0.047]
+     Original Timm, page draw (seed 1)        interior-2  17209   +0.049 [+0.018,+0.078]   +0.032 [+0.002,+0.059]     +0.020 [-0.009,+0.045]
+     Original Timm, words in view (seed 1)           all  24161   +0.052 [+0.032,+0.072]   +0.046 [+0.025,+0.065]     +0.029 [+0.010,+0.049]
+     Original Timm, words in view (seed 1)    interior-1  17305   +0.052 [+0.026,+0.077]   +0.035 [+0.014,+0.056]     +0.028 [+0.006,+0.049]
+     Original Timm, words in view (seed 1)    interior-2  17305   +0.052 [+0.026,+0.078]   +0.035 [+0.012,+0.058]     +0.028 [+0.004,+0.049]
+     no-innovator, words in view (seed 1)            all  26147   +0.052 [+0.034,+0.067]   +0.030 [+0.012,+0.048]     +0.046 [+0.022,+0.072]
+     no-innovator, words in view (seed 1)     interior-1  19012   +0.061 [+0.039,+0.084]   +0.036 [+0.013,+0.061]     +0.035 [+0.002,+0.065]
+     no-innovator, words in view (seed 1)     interior-2  19012   +0.061 [+0.042,+0.081]   +0.036 [+0.013,+0.062]     +0.035 [+0.004,+0.066]
+     shuffles (19)                                   all        +0.011 (-0.003..+0.026) rank 0/19 | +0.006 (-0.005..+0.018) rank 0/19 | +0.007 (-0.013..+0.025) rank 18/19
+     shuffles (19)                            interior-1        +0.016 (-0.001..+0.029) rank 19/19 | +0.009 (-0.007..+0.024) rank 19/19 | +0.010 (-0.014..+0.029) rank 19/19
+     shuffles (19)                            interior-2        +0.016 (-0.001..+0.029) rank 19/19 | +0.009 (-0.007..+0.024) rank 19/19 | +0.010 (-0.014..+0.029) rank 19/19
+  -- lines below only (8)
+     text                                         cohort      n                      raw            inside length       inside length x pool
+     manuscript (recorded boxes)                     all  21282   -0.014 [-0.035,+0.006]   -0.021 [-0.042,-0.001]     +0.017 [-0.000,+0.036]
+     manuscript (recorded boxes)              interior-1  12726   +0.026 [+0.006,+0.043]   +0.019 [-0.000,+0.038]     +0.031 [+0.010,+0.055]
+     manuscript (recorded boxes)              interior-2  12726   +0.026 [+0.007,+0.044]   +0.019 [-0.001,+0.037]     +0.031 [+0.010,+0.052]
+     manuscript (synthetic boxes)                    all  21324   -0.010 [-0.027,+0.009]   -0.018 [-0.036,+0.001]     +0.025 [+0.006,+0.044]
+     manuscript (synthetic boxes)             interior-1  12779   +0.023 [+0.002,+0.041]   +0.022 [-0.001,+0.043]     +0.036 [+0.013,+0.060]
+     manuscript (synthetic boxes)             interior-2  12779   +0.023 [-0.000,+0.041]   +0.022 [-0.002,+0.043]     +0.036 [+0.012,+0.062]
+     Original Timm, page draw (seed 1)               all  24132   +0.007 [-0.022,+0.028]   -0.004 [-0.024,+0.019]     +0.013 [-0.011,+0.036]
+     Original Timm, page draw (seed 1)        interior-1  14790   +0.036 [+0.009,+0.060]   +0.006 [-0.022,+0.030]     +0.013 [-0.020,+0.043]
+     Original Timm, page draw (seed 1)        interior-2  14790   +0.036 [+0.009,+0.059]   +0.006 [-0.020,+0.026]     +0.013 [-0.016,+0.046]
+     Original Timm, words in view (seed 1)           all  24243   +0.001 [-0.026,+0.029]   +0.008 [-0.018,+0.039]     +0.016 [-0.009,+0.039]
+     Original Timm, words in view (seed 1)    interior-1  14859   +0.017 [-0.011,+0.046]   +0.005 [-0.020,+0.033]     +0.016 [-0.007,+0.045]
+     Original Timm, words in view (seed 1)    interior-2  14859   +0.017 [-0.014,+0.048]   +0.005 [-0.022,+0.031]     +0.016 [-0.007,+0.047]
+     no-innovator, words in view (seed 1)            all  26268   +0.025 [-0.003,+0.055]   +0.017 [-0.009,+0.038]     +0.032 [+0.005,+0.057]
+     no-innovator, words in view (seed 1)     interior-1  16322   +0.030 [-0.007,+0.060]   +0.034 [+0.003,+0.069]     +0.032 [-0.006,+0.070]
+     no-innovator, words in view (seed 1)     interior-2  16322   +0.030 [-0.003,+0.060]   +0.034 [+0.004,+0.066]     +0.032 [+0.003,+0.066]
+     shuffles (19)                                   all        +0.009 (-0.006..+0.027) rank 0/19 | +0.004 (-0.017..+0.027) rank 0/19 | +0.014 (-0.010..+0.029) rank 17/19
+     shuffles (19)                            interior-1        +0.018 (-0.010..+0.040) rank 12/19 | +0.014 (-0.020..+0.033) rank 15/19 | +0.013 (-0.019..+0.045) rank 17/19
+     shuffles (19)                            interior-2        +0.018 (-0.010..+0.040) rank 12/19 | +0.014 (-0.020..+0.033) rank 15/19 | +0.013 (-0.019..+0.045) rank 17/19
+  -- mirror: right 3 + 8 lines below
+     text                                         cohort      n                      raw            inside length       inside length x pool
+     manuscript (recorded boxes)                     all  22234   +0.028 [+0.009,+0.044]   -0.006 [-0.024,+0.011]     +0.013 [-0.012,+0.035]
+     manuscript (recorded boxes)              interior-1  13293   +0.050 [+0.027,+0.070]   +0.017 [-0.003,+0.035]     +0.008 [-0.022,+0.037]
+     manuscript (recorded boxes)              interior-2  13293   +0.050 [+0.026,+0.070]   +0.017 [-0.002,+0.036]     +0.008 [-0.023,+0.038]
+     manuscript (synthetic boxes)                    all  22276   +0.034 [+0.018,+0.049]   -0.012 [-0.030,+0.005]     +0.013 [-0.010,+0.032]
+     manuscript (synthetic boxes)             interior-1  13365   +0.045 [+0.020,+0.062]   +0.014 [-0.015,+0.038]     +0.022 [-0.009,+0.051]
+     manuscript (synthetic boxes)             interior-2  13365   +0.045 [+0.021,+0.063]   +0.014 [-0.014,+0.039]     +0.022 [-0.008,+0.049]
+     Original Timm, page draw (seed 1)               all  25051   +0.031 [+0.012,+0.050]   -0.009 [-0.029,+0.008]     +0.015 [-0.006,+0.036]
+     Original Timm, page draw (seed 1)        interior-1  15360   +0.048 [+0.018,+0.073]   -0.007 [-0.034,+0.014]     +0.017 [-0.006,+0.037]
+     Original Timm, page draw (seed 1)        interior-2  15360   +0.048 [+0.023,+0.074]   -0.007 [-0.033,+0.016]     +0.017 [-0.004,+0.039]
+     Original Timm, words in view (seed 1)           all  25178   +0.031 [+0.008,+0.054]   +0.001 [-0.019,+0.023]     +0.019 [-0.000,+0.039]
+     Original Timm, words in view (seed 1)    interior-1  15445   +0.037 [+0.005,+0.066]   -0.006 [-0.026,+0.018]     +0.021 [+0.002,+0.040]
+     Original Timm, words in view (seed 1)    interior-2  15445   +0.037 [+0.003,+0.063]   -0.006 [-0.027,+0.021]     +0.021 [-0.001,+0.038]
+     no-innovator, words in view (seed 1)            all  27161   +0.061 [+0.039,+0.088]   +0.031 [+0.006,+0.055]     +0.059 [+0.028,+0.086]
+     no-innovator, words in view (seed 1)     interior-1  16884   +0.077 [+0.046,+0.107]   +0.046 [+0.017,+0.074]     +0.059 [+0.023,+0.090]
+     no-innovator, words in view (seed 1)     interior-2  16884   +0.077 [+0.048,+0.107]   +0.046 [+0.020,+0.071]     +0.059 [+0.025,+0.090]
+     shuffles (19)                                   all        +0.037 (+0.010..+0.051) rank 8/19 | +0.001 (-0.021..+0.022) rank 1/19 | +0.011 (-0.017..+0.027) rank 11/19
+     shuffles (19)                            interior-1        +0.044 (+0.005..+0.066) rank 8/19 | +0.011 (-0.021..+0.033) rank 13/19 | +0.007 (-0.026..+0.030) rank 18/19
+     shuffles (19)                            interior-2        +0.044 (+0.005..+0.066) rank 8/19 | +0.011 (-0.021..+0.033) rank 13/19 | +0.007 (-0.026..+0.030) rank 18/19
+
+== worddiv
+  -- study selector: left 3 + 8 lines above
+     text                                         cohort      n                      raw            inside length       inside length x pool
+     manuscript (recorded boxes)                     all  22210   +0.020 [+0.002,+0.044]   -0.029 [-0.047,-0.009]     +0.013 [-0.003,+0.030]
+     manuscript (recorded boxes)              interior-1  14743   +0.098 [+0.073,+0.125]   +0.016 [-0.004,+0.036]     +0.016 [-0.013,+0.040]
+     manuscript (recorded boxes)              interior-2  14743   +0.098 [+0.073,+0.124]   +0.016 [-0.004,+0.038]     +0.016 [-0.012,+0.040]
+     manuscript (synthetic boxes)                    all  22198   +0.044 [+0.022,+0.066]   -0.025 [-0.043,-0.006]     +0.018 [+0.004,+0.031]
+     manuscript (synthetic boxes)             interior-1  14849   +0.101 [+0.075,+0.130]   +0.018 [-0.006,+0.042]     +0.018 [-0.000,+0.035]
+     manuscript (synthetic boxes)             interior-2  14849   +0.101 [+0.073,+0.128]   +0.018 [-0.005,+0.042]     +0.018 [+0.001,+0.034]
+     Original Timm, page draw (seed 1)               all  24893   +0.134 [+0.113,+0.156]   +0.055 [+0.037,+0.074]     +0.028 [+0.015,+0.047]
+     Original Timm, page draw (seed 1)        interior-1  17169   +0.132 [+0.107,+0.164]   +0.008 [-0.011,+0.031]     +0.018 [-0.001,+0.036]
+     Original Timm, page draw (seed 1)        interior-2  17169   +0.132 [+0.104,+0.159]   +0.008 [-0.010,+0.030]     +0.018 [-0.003,+0.036]
+     Original Timm, words in view (seed 1)           all  25042   +0.119 [+0.095,+0.139]   +0.042 [+0.024,+0.063]     +0.025 [+0.004,+0.050]
+     Original Timm, words in view (seed 1)    interior-1  17268   +0.133 [+0.112,+0.154]   +0.023 [+0.002,+0.052]     +0.010 [-0.015,+0.043]
+     Original Timm, words in view (seed 1)    interior-2  17268   +0.133 [+0.108,+0.151]   +0.023 [-0.003,+0.052]     +0.010 [-0.012,+0.043]
+     no-innovator, words in view (seed 1)            all  27090   +0.078 [+0.066,+0.092]   +0.016 [+0.003,+0.034]     +0.029 [+0.010,+0.049]
+     no-innovator, words in view (seed 1)     interior-1  18984   +0.120 [+0.102,+0.140]   +0.019 [-0.003,+0.041]     +0.037 [+0.017,+0.059]
+     no-innovator, words in view (seed 1)     interior-2  18984   +0.120 [+0.104,+0.140]   +0.019 [-0.004,+0.040]     +0.037 [+0.013,+0.058]
+     shuffles (19)                                   all        +0.073 (+0.063..+0.090) rank 0/19 | +0.004 (-0.008..+0.026) rank 0/19 | +0.004 (-0.013..+0.021) rank 18/19
+     shuffles (19)                            interior-1        +0.093 (+0.074..+0.108) rank 15/19 | +0.001 (-0.012..+0.021) rank 18/19 | +0.001 (-0.020..+0.026) rank 17/19
+     shuffles (19)                            interior-2        +0.093 (+0.074..+0.108) rank 15/19 | +0.001 (-0.012..+0.021) rank 18/19 | +0.001 (-0.020..+0.026) rank 17/19
+  -- lines above only (8)
+     text                                         cohort      n                      raw            inside length       inside length x pool
+     manuscript (recorded boxes)                     all  21178   -0.049 [-0.065,-0.032]   -0.052 [-0.071,-0.032]     -0.015 [-0.031,-0.001]
+     manuscript (recorded boxes)              interior-1  14745   +0.010 [-0.014,+0.029]   +0.002 [-0.023,+0.022]     +0.004 [-0.020,+0.025]
+     manuscript (recorded boxes)              interior-2  14745   +0.010 [-0.014,+0.030]   +0.002 [-0.025,+0.024]     +0.004 [-0.022,+0.028]
+     manuscript (synthetic boxes)                    all  21223   -0.020 [-0.040,-0.001]   -0.028 [-0.051,-0.006]     +0.001 [-0.020,+0.018]
+     manuscript (synthetic boxes)             interior-1  14849   +0.028 [+0.009,+0.044]   +0.024 [+0.006,+0.039]     +0.037 [+0.014,+0.060]
+     manuscript (synthetic boxes)             interior-2  14849   +0.028 [+0.008,+0.043]   +0.024 [+0.005,+0.039]     +0.037 [+0.013,+0.063]
+     Original Timm, page draw (seed 1)               all  24025   +0.056 [+0.041,+0.074]   +0.056 [+0.042,+0.073]     +0.032 [+0.020,+0.048]
+     Original Timm, page draw (seed 1)        interior-1  17209   +0.031 [+0.011,+0.054]   +0.013 [-0.004,+0.035]     +0.014 [-0.003,+0.034]
+     Original Timm, page draw (seed 1)        interior-2  17209   +0.031 [+0.011,+0.053]   +0.013 [-0.005,+0.034]     +0.014 [-0.005,+0.035]
+     Original Timm, words in view (seed 1)           all  24161   +0.039 [+0.018,+0.062]   +0.048 [+0.028,+0.068]     +0.045 [+0.024,+0.069]
+     Original Timm, words in view (seed 1)    interior-1  17305   +0.029 [+0.008,+0.049]   +0.040 [+0.019,+0.070]     +0.032 [+0.005,+0.059]
+     Original Timm, words in view (seed 1)    interior-2  17305   +0.029 [+0.005,+0.054]   +0.040 [+0.019,+0.063]     +0.032 [+0.006,+0.059]
+     no-innovator, words in view (seed 1)            all  26147   +0.030 [+0.017,+0.042]   +0.026 [+0.013,+0.042]     +0.045 [+0.032,+0.061]
+     no-innovator, words in view (seed 1)     interior-1  19012   +0.060 [+0.045,+0.075]   +0.041 [+0.029,+0.057]     +0.051 [+0.034,+0.070]
+     no-innovator, words in view (seed 1)     interior-2  19012   +0.060 [+0.046,+0.078]   +0.041 [+0.029,+0.057]     +0.051 [+0.035,+0.068]
+     shuffles (19)                                   all        +0.008 (-0.001..+0.023) rank 0/19 | +0.006 (-0.003..+0.022) rank 0/19 | +0.013 (-0.001..+0.033) rank 1/19
+     shuffles (19)                            interior-1        +0.022 (+0.004..+0.043) rank 15/19 | +0.015 (+0.003..+0.034) rank 17/19 | +0.014 (-0.002..+0.038) rank 18/19
+     shuffles (19)                            interior-2        +0.022 (+0.004..+0.043) rank 15/19 | +0.015 (+0.003..+0.034) rank 17/19 | +0.014 (-0.002..+0.038) rank 18/19
+  -- lines below only (8)
+     text                                         cohort      n                      raw            inside length       inside length x pool
+     manuscript (recorded boxes)                     all  21282   -0.025 [-0.043,-0.007]   -0.034 [-0.052,-0.015]     +0.002 [-0.017,+0.021]
+     manuscript (recorded boxes)              interior-1  12726   +0.028 [+0.005,+0.056]   +0.026 [+0.005,+0.048]     +0.023 [+0.006,+0.039]
+     manuscript (recorded boxes)              interior-2  12726   +0.028 [+0.003,+0.055]   +0.026 [+0.005,+0.048]     +0.023 [+0.005,+0.042]
+     manuscript (synthetic boxes)                    all  21324   -0.035 [-0.052,-0.016]   -0.045 [-0.063,-0.026]     +0.001 [-0.018,+0.020]
+     manuscript (synthetic boxes)             interior-1  12779   +0.006 [-0.016,+0.027]   +0.007 [-0.017,+0.026]     +0.028 [+0.010,+0.050]
+     manuscript (synthetic boxes)             interior-2  12779   +0.006 [-0.020,+0.026]   +0.007 [-0.017,+0.025]     +0.028 [+0.006,+0.051]
+     Original Timm, page draw (seed 1)               all  24132   -0.006 [-0.023,+0.012]   -0.015 [-0.035,+0.005]     +0.011 [-0.007,+0.028]
+     Original Timm, page draw (seed 1)        interior-1  14790   +0.008 [-0.016,+0.031]   -0.011 [-0.031,+0.007]     +0.016 [-0.008,+0.043]
+     Original Timm, page draw (seed 1)        interior-2  14790   +0.008 [-0.015,+0.032]   -0.011 [-0.032,+0.007]     +0.016 [-0.010,+0.039]
+     Original Timm, words in view (seed 1)           all  24243   -0.017 [-0.041,+0.008]   -0.008 [-0.028,+0.012]     +0.022 [+0.004,+0.044]
+     Original Timm, words in view (seed 1)    interior-1  14859   -0.001 [-0.028,+0.021]   -0.010 [-0.036,+0.024]     +0.007 [-0.016,+0.041]
+     Original Timm, words in view (seed 1)    interior-2  14859   -0.001 [-0.025,+0.024]   -0.010 [-0.039,+0.022]     +0.007 [-0.018,+0.036]
+     no-innovator, words in view (seed 1)            all  26268   -0.020 [-0.039,+0.002]   -0.017 [-0.039,+0.008]     +0.009 [-0.015,+0.036]
+     no-innovator, words in view (seed 1)     interior-1  16322   -0.001 [-0.026,+0.025]   +0.006 [-0.024,+0.035]     +0.021 [-0.005,+0.046]
+     no-innovator, words in view (seed 1)     interior-2  16322   -0.001 [-0.027,+0.025]   +0.006 [-0.020,+0.036]     +0.021 [-0.006,+0.043]
+     shuffles (19)                                   all        +0.005 (-0.010..+0.020) rank 0/19 | +0.000 (-0.022..+0.012) rank 0/19 | +0.006 (-0.016..+0.020) rank 6/19
+     shuffles (19)                            interior-1        +0.020 (+0.003..+0.042) rank 2/19 | +0.013 (-0.001..+0.033) rank 6/19 | +0.008 (-0.017..+0.025) rank 19/19
+     shuffles (19)                            interior-2        +0.020 (+0.003..+0.042) rank 2/19 | +0.013 (-0.001..+0.033) rank 6/19 | +0.008 (-0.017..+0.025) rank 19/19
+  -- mirror: right 3 + 8 lines below
+     text                                         cohort      n                      raw            inside length       inside length x pool
+     manuscript (recorded boxes)                     all  22234   +0.051 [+0.033,+0.072]   -0.019 [-0.036,-0.002]     +0.020 [+0.007,+0.035]
+     manuscript (recorded boxes)              interior-1  13293   +0.083 [+0.059,+0.112]   +0.013 [-0.010,+0.035]     +0.009 [-0.016,+0.033]
+     manuscript (recorded boxes)              interior-2  13293   +0.083 [+0.057,+0.116]   +0.013 [-0.010,+0.034]     +0.009 [-0.017,+0.036]
+     manuscript (synthetic boxes)                    all  22276   +0.044 [+0.022,+0.067]   -0.039 [-0.056,-0.017]     -0.005 [-0.022,+0.014]
+     manuscript (synthetic boxes)             interior-1  13365   +0.070 [+0.036,+0.107]   -0.014 [-0.045,+0.016]     +0.001 [-0.029,+0.030]
+     manuscript (synthetic boxes)             interior-2  13365   +0.070 [+0.037,+0.106]   -0.014 [-0.041,+0.018]     +0.001 [-0.028,+0.028]
+     Original Timm, page draw (seed 1)               all  25051   +0.080 [+0.056,+0.105]   -0.016 [-0.032,+0.004]     +0.018 [+0.002,+0.036]
+     Original Timm, page draw (seed 1)        interior-1  15360   +0.103 [+0.078,+0.127]   -0.014 [-0.038,+0.009]     +0.014 [-0.007,+0.037]
+     Original Timm, page draw (seed 1)        interior-2  15360   +0.103 [+0.074,+0.126]   -0.014 [-0.034,+0.008]     +0.014 [-0.007,+0.039]
+     Original Timm, words in view (seed 1)           all  25178   +0.074 [+0.045,+0.097]   +0.001 [-0.022,+0.023]     +0.025 [+0.003,+0.052]
+     Original Timm, words in view (seed 1)    interior-1  15445   +0.101 [+0.073,+0.127]   -0.005 [-0.033,+0.025]     +0.017 [-0.007,+0.049]
+     Original Timm, words in view (seed 1)    interior-2  15445   +0.101 [+0.076,+0.125]   -0.005 [-0.029,+0.029]     +0.017 [-0.006,+0.045]
+     no-innovator, words in view (seed 1)            all  27161   +0.077 [+0.058,+0.101]   +0.002 [-0.020,+0.026]     +0.030 [+0.011,+0.050]
+     no-innovator, words in view (seed 1)     interior-1  16884   +0.101 [+0.077,+0.124]   +0.010 [-0.015,+0.035]     +0.031 [+0.013,+0.052]
+     no-innovator, words in view (seed 1)     interior-2  16884   +0.101 [+0.078,+0.123]   +0.010 [-0.017,+0.040]     +0.031 [+0.012,+0.049]
+     shuffles (19)                                   all        +0.070 (+0.058..+0.087) rank 0/19 | -0.003 (-0.017..+0.010) rank 0/19 | +0.003 (-0.010..+0.016) rank 4/19
+     shuffles (19)                            interior-1        +0.082 (+0.064..+0.107) rank 3/19 | +0.003 (-0.017..+0.025) rank 1/19 | +0.003 (-0.013..+0.022) rank 10/19
+     shuffles (19)                            interior-2        +0.082 (+0.064..+0.107) rank 3/19 | +0.003 (-0.017..+0.025) rank 1/19 | +0.003 (-0.013..+0.022) rank 10/19
