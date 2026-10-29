@@ -1,0 +1,14 @@
+
+== example A: token 32564 'qokeedy', f75r line 28; page figure gives components 22.1
+   full pool              n=25  weight share 100.0%  components  22.5  H2  1.01  word diversity 0.90
+   same-line words only   n= 2  weight share 33.9%  components   n/a  H2   n/a  word diversity 0.46
+   lines above only       n=23  weight share 66.1%  components  24.8  H2  1.21  word diversity 0.90
+   pool words (weight, line offset):
+   sheedy (22%, same line), otody (16%, 1 up), l (12%, same line), ajy (8%, 2 up), dar (4%, 2 up), qokeedy (4%, 3 up), checthy (4%, 4 up), lchedy (3%, 3 up), qol (3%, 5 up), otar (3%, 1 up), sain (2%, 4 up), kar (2%, 6 up), shey (2%, 6 up), lor (2%, 4 up), sshey (2%, 5 up), chedyqokam (2%, 5 up), ol (2%, 7 up), ysheor (2%, 7 up), or (1%, 6 up), chedy (1%, 6 up), lor (1%, 7 up), ol (1%, 4 up), ram (1%, 3 up), am (1%, 7 up), sar (1%, 6 up)
+
+== example B: token 32673 'qokeedy', f75r line 41; page figure gives components 13.6
+   full pool              n=32  weight share 100.0%  components  13.8  H2  0.59  word diversity 0.83
+   same-line words only   n= 1  weight share 14.9%  components   n/a  H2   n/a  word diversity 0.00
+   lines above only       n=31  weight share 85.1%  components  13.8  H2  0.63  word diversity 0.80
+   pool words (weight, line offset):
+   qokain (25%, 1 up), sokeedy (15%, same line), qokeedy (10%, 2 up), qokeedy (7%, 3 up), sheety (5%, 4 up), qokeedy (3%, 5 up), dy (3%, 4 up), sheety (2%, 6 up), qokain (2%, 6 up), qokedy (2%, 4 up), keedy (2%, 5 up), qokey (2%, 5 up), okal (2%, 7 up), dar (2%, 7 up), qokeedy (2%, 2 up), qo (1%, 8 up), l (1%, 8 up), qokedy (1%, 3 up), oty (1%, 7 up), qokeedy (1%, 3 up), chedy (1%, 8 up), qokedy (1%, 4 up), dar (1%, 6 up), qokain (1%, 6 up), s (1%, 7 up), olkedy (1%, 7 up), shedy (1%, 1 up), sol (1%, 5 up), okar (1%, 5 up), okar (1%, 7 up), qokain (1%, 8 up), dar (1%, 6 up)
