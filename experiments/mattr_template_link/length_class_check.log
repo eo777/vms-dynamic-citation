@@ -1,0 +1,28 @@
+Study selector (left 3 + 8 lines above, 45 degrees, distance weights), component diversity -> word impact, lowest minus highest quintile:
+  text                                                      n  raw (within bifolium)   within bifolium x exact length
+  manuscript (recorded boxes)                           22210                 +0.034 -0.012 [-0.029,+0.008]  (37 bifolia)
+  manuscript (synthetic boxes)                          22198                 +0.038 -0.008 [-0.028,+0.017]  (38 bifolia)
+  words shuffled in whole manuscript (size-matched)     22208                 +0.066 +0.006 [-0.007,+0.022]  (38 bifolia)
+  Original Timm, page draw (seed 1)                     24893                 +0.119 +0.075 [+0.052,+0.103]  (42 bifolia)
+  Original Timm, words in view (seed 1)                 25042                 +0.114 +0.069 [+0.047,+0.089]  (42 bifolia)
+  no-innovator, words in view (seed 1)                  27090                 +0.104 +0.031 [+0.012,+0.052]  (46 bifolia)
+
+By exact length of N (manuscript, recorded boxes): contrast within bifolium, tokens, mean word impact, mean pool component diversity
+  length 2: -0.039  n= 1435  impact 0.614  pool diversity 17.58
+  length 3: -0.060  n= 1943  impact 0.330  pool diversity 17.93
+  length 4: +0.022  n= 3803  impact 0.392  pool diversity 18.89
+  length 5: -0.028  n= 5619  impact 0.387  pool diversity 19.48
+  length 6: +0.001  n= 4434  impact 0.299  pool diversity 20.18
+  length 7: -0.017  n= 2633  impact 0.229  pool diversity 20.88
+  length 8: +0.035  n= 1030  impact 0.062  pool diversity 21.19
+  length 9: +0.018  n=  422  impact 0.014  pool diversity 21.45
+
+By exact length of N (Original Timm, words in view): contrast within bifolium, tokens, mean word impact, mean pool component diversity
+  length 2: +0.027  n= 2820  impact 0.738  pool diversity 14.73
+  length 3: +0.104  n= 2795  impact 0.459  pool diversity 14.42
+  length 4: +0.089  n= 6645  impact 0.497  pool diversity 14.57
+  length 5: +0.067  n= 4950  impact 0.300  pool diversity 15.22
+  length 6: +0.061  n= 4334  impact 0.281  pool diversity 15.48
+  length 7: +0.035  n= 1739  impact 0.168  pool diversity 15.62
+  length 8: +0.040  n= 1155  impact 0.122  pool diversity 15.67
+  length 9: +nan  n=  144  impact 0.055  pool diversity 15.95

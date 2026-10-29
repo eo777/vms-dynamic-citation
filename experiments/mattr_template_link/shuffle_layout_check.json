@@ -1,0 +1,125 @@
+{
+ "rows": {
+  "manuscript (recorded boxes)": {
+   "carried": 0,
+   "no_box": 65,
+   "overlaps": 4282,
+   "moved": null,
+   "width_median_abslog": 0.07896109671795276,
+   "width_off_1p5": 0.07233298957259081
+  },
+  "OLD: words shuffled in paragraphs, recorded boxes kept": {
+   "carried": 0,
+   "no_box": 65,
+   "overlaps": 4282,
+   "moved": 0.9718672270349087,
+   "width_median_abslog": 0.32685747402095416,
+   "width_off_1p5": 0.41615102555288186
+  },
+  "manuscript (synthetic boxes)": {
+   "carried": 814,
+   "no_box": 41,
+   "overlaps": 1471,
+   "moved": null,
+   "width_median_abslog": 3.33066907387547e-16,
+   "width_off_1p5": 0.000658346691092283
+  },
+  "words shuffled in paragraphs (size-matched)": {
+   "carried": 814,
+   "no_box": 41,
+   "overlaps": 1471,
+   "moved": 0.7851731137604712,
+   "width_median_abslog": 3.33066907387547e-16,
+   "width_off_1p5": 0.000658346691092283
+  },
+  "words shuffled in pages (size-matched)": {
+   "carried": 814,
+   "no_box": 41,
+   "overlaps": 1471,
+   "moved": 0.8967607284787146,
+   "width_median_abslog": 3.33066907387547e-16,
+   "width_off_1p5": 0.000658346691092283
+  },
+  "words shuffled in bifolia (size-matched)": {
+   "carried": 814,
+   "no_box": 41,
+   "overlaps": 1471,
+   "moved": 0.9353861108728593,
+   "width_median_abslog": 3.33066907387547e-16,
+   "width_off_1p5": 0.000658346691092283
+  },
+  "words shuffled in whole manuscript (size-matched)": {
+   "carried": 814,
+   "no_box": 41,
+   "overlaps": 1471,
+   "moved": 0.9705520770792235,
+   "width_median_abslog": 3.33066907387547e-16,
+   "width_off_1p5": 0.000658346691092283
+  },
+  "words shuffled in paragraphs (any length, fitted letter size)": {
+   "carried": 0,
+   "no_box": 41,
+   "overlaps": 1242,
+   "moved": null,
+   "width_median_abslog": 0.09531017980432464,
+   "width_off_1p5": 0.013882528051293794
+  },
+  "words shuffled in lines": {
+   "carried": 943,
+   "no_box": 41,
+   "overlaps": 1350,
+   "moved": null,
+   "width_median_abslog": 3.33066907387547e-16,
+   "width_off_1p5": 0.0005152278452026563
+  },
+  "lines reversed": {
+   "carried": 904,
+   "no_box": 41,
+   "overlaps": 1372,
+   "moved": null,
+   "width_median_abslog": 3.33066907387547e-16,
+   "width_off_1p5": 0.000572475383558507
+  },
+  "lines rotated (diagonal)": {
+   "carried": 963,
+   "no_box": 41,
+   "overlaps": 1359,
+   "moved": null,
+   "width_median_abslog": 3.33066907387547e-16,
+   "width_off_1p5": 0.0005152278452026563
+  },
+  "lines shuffled in paragraphs (fitted letter size)": {
+   "carried": 0,
+   "no_box": 40,
+   "overlaps": 1252,
+   "moved": 0.714043583535109,
+   "width_median_abslog": 0.043172171865209,
+   "width_off_1p5": 0.01070498325557432
+  },
+  "lines shuffled in pages (fitted letter size)": {
+   "carried": 0,
+   "no_box": 40,
+   "overlaps": 1277,
+   "moved": 0.9043583535108959,
+   "width_median_abslog": 0.08552217343816172,
+   "width_off_1p5": 0.02155308126055471
+  }
+ },
+ "letter_size": {
+  "words shuffled in paragraphs (any length, fitted letter size)": [
+   0.10265415406008337,
+   0.02428363283147159,
+   0.003399708596406022
+  ],
+  "lines shuffled in paragraphs (fitted letter size)": [
+   0.04348511193973889,
+   0.01238465274405051,
+   0.0012141816415735794
+  ],
+  "lines shuffled in pages (fitted letter size)": [
+   0.09097177820572676,
+   0.02525497814473045,
+   0.005342399222923749
+  ]
+ }
+}

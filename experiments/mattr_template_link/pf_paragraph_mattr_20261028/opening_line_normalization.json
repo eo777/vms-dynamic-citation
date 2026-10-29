@@ -1,0 +1,3610 @@
+{
+  "window": 100,
+  "definitions": {
+    "substitution": "Literal p and f both become the stated replacement, everywhere in all words.",
+    "labels": "P/F membership and paragraph position are fixed from the original text, before substitution.",
+    "removal": "Same four-set Shapley removal attribution as run.py; gaps close after removing words.",
+    "fixed": "Original token positions and windows; every type has unit credit divided among its occurrences. Per-token means divide by token-window exposure.",
+    "comparison": "Compare non-P/F words after the first word of opening lines with non-P/F words on subsequent lines. All opening lines are included.",
+    "rolling": "End-of-line minus pre-line trailing diversity; arriving words receive new-type gain minus departing-type loss."
+  },
+  "inputs_sha256": {
+    "tokens": "557e9fc6dedd3678633fec9ab50359a181c14fe6a0ba3d1917aece31cdc04afe",
+    "path_asset": "977c5676670d79ffa8fac2f0b5a354278877a45513ba35da489b801158cbfffc",
+    "physical_map": "2d5e3ba18fc16f1c1cad6a7904d7edfdc0dd6b282f9b746da032c61a84a4fd96"
+  },
+  "variants": {
+    "original": {
+      "3c": {
+        "opening_lines": {
+          "lines": 244,
+          "tokens": 2525,
+          "counts": {
+            "pf_opener": 146,
+            "nonpf_opener": 98,
+            "pf_rest_of_line": 424,
+            "nonpf_rest_of_line": 1857
+          },
+          "original_mattr": 0.8441077402237859,
+          "after_removing_selected_lines": 0.8143815104166666,
+          "total_loss": 0.029726229807119253,
+          "allocation": {
+            "pf_opener": 0.0050850951673058285,
+            "nonpf_opener": 0.003259525796051275,
+            "pf_rest_of_line": 0.013778816350506734,
+            "nonpf_rest_of_line": 0.0076027924932554145
+          },
+          "pf_loss": 0.01886391151781256,
+          "nonpf_loss": 0.010862318289306689,
+          "opener_loss": 0.008344620963357103,
+          "rest_of_line_loss": 0.02138160884376215,
+          "pf_share_of_loss": 0.6345880940910565,
+          "opener_share_of_loss": 0.28071575230030066,
+          "removal_order_ranges": {
+            "pf_opener": [
+              0.004027956110210895,
+              0.0063132431604399075
+            ],
+            "nonpf_opener": [
+              0.0025886642699881612,
+              0.004062898426652861
+            ],
+            "pf_rest_of_line": [
+              0.01146735210977734,
+              0.016308197256902246
+            ],
+            "nonpf_rest_of_line": [
+              0.004796231122200401,
+              0.010645361224378203
+            ]
+          },
+          "ablations": {
+            "0": 0.8441077402237859,
+            "1": 0.840079784113575,
+            "2": 0.8415190759537977,
+            "3": 0.837393471810089,
+            "4": 0.8326403881140085,
+            "5": 0.8280763057167552,
+            "6": 0.829721369829385,
+            "7": 0.8250268716410448,
+            "8": 0.8393115091015855,
+            "9": 0.8341284128412841,
+            "10": 0.836057491808162,
+            "11": 0.8306897076735689,
+            "12": 0.8245068879148403,
+            "13": 0.8184444088433195,
+            "14": 0.8206947535771065,
+            "15": 0.8143815104166666
+          }
+        },
+        "pf_bearing_opening_lines": {
+          "lines": 215,
+          "tokens": 2254,
+          "counts": {
+            "pf_opener": 146,
+            "nonpf_opener": 69,
+            "pf_rest_of_line": 424,
+            "nonpf_rest_of_line": 1615
+          },
+          "original_mattr": 0.8441077402237859,
+          "after_removing_selected_lines": 0.8180389711613406,
+          "total_loss": 0.026068769062445263,
+          "allocation": {
+            "pf_opener": 0.004928984459860786,
+            "nonpf_opener": 0.002240734440108416,
+            "pf_rest_of_line": 0.0133443692398069,
+            "nonpf_rest_of_line": 0.00555468092266916
+          },
+          "pf_loss": 0.018273353699667684,
+          "nonpf_loss": 0.007795415362777576,
+          "opener_loss": 0.007169718899969202,
+          "rest_of_line_loss": 0.01889905016247606,
+          "pf_share_of_loss": 0.7009672630071485,
+          "opener_share_of_loss": 0.2750309722256091,
+          "removal_order_ranges": {
+            "pf_opener": [
+              0.004027956110210895,
+              0.00594975007017895
+            ],
+            "nonpf_opener": [
+              0.0017914611540184033,
+              0.0027691719601893316
+            ],
+            "pf_rest_of_line": [
+              0.01146735210977734,
+              0.01537234628273021
+            ],
+            "nonpf_rest_of_line": [
+              0.003359228740939302,
+              0.007909970308148773
+            ]
+          },
+          "ablations": {
+            "0": 0.8441077402237859,
+            "1": 0.840079784113575,
+            "2": 0.8423162790697675,
+            "3": 0.8382162290040218,
+            "4": 0.8326403881140085,
+            "5": 0.8280763057167552,
+            "6": 0.8306090998043053,
+            "7": 0.8259489414694894,
+            "8": 0.8407485114828466,
+            "9": 0.835759988419224,
+            "10": 0.8385225483178239,
+            "11": 0.8334113174440708,
+            "12": 0.8265987933634993,
+            "13": 0.8208081431215299,
+            "14": 0.8239887212315196,
+            "15": 0.8180389711613406
+          }
+        },
+        "fixed_windows": {
+          "pf_opener": {
+            "mattr_contribution": 0.016435575037489908,
+            "token_window_share": 0.016636290229553582,
+            "distinct_credit_per_token": 0.9879350991540702
+          },
+          "nonpf_opener": {
+            "mattr_contribution": 0.011026069904256548,
+            "token_window_share": 0.011206598223555197,
+            "distinct_credit_per_token": 0.9838908903757079
+          },
+          "pf_rest_of_line": {
+            "mattr_contribution": 0.04745472372822702,
+            "token_window_share": 0.048667666397508365,
+            "distinct_credit_per_token": 0.9750770324721498
+          },
+          "nonpf_rest_of_line": {
+            "mattr_contribution": 0.18215051716845587,
+            "token_window_share": 0.21161610335678857,
+            "distinct_credit_per_token": 0.8607592441173857
+          },
+          "pf_later_lines": {
+            "mattr_contribution": 0.009453800899757758,
+            "token_window_share": 0.0095581958703426,
+            "distinct_credit_per_token": 0.989077962828868
+          },
+          "nonpf_later_lines": {
+            "mattr_contribution": 0.5775870534856011,
+            "token_window_share": 0.7023151459222517,
+            "distinct_credit_per_token": 0.8224043819062699
+          }
+        },
+        "rolling_line_change": {
+          "paragraph_first": {
+            "lines": 241,
+            "bifolia": 5,
+            "means": {
+              "before": 0.8447302904564314,
+              "after": 0.8521576763485478,
+              "net_gain": 0.007427385892116183,
+              "pf_gain": 0.0056016597510373444,
+              "nonpf_gain": 0.0018257261410788382,
+              "opener_gain": 0.002406639004149378,
+              "pf_opener": 0.0014937759336099584,
+              "nonpf_opener": 0.0009128630705394191,
+              "pf_rest_of_line": 0.004107883817427387,
+              "nonpf_rest_of_line": 0.0009128630705394191,
+              "pf_later_lines": 0.0,
+              "nonpf_later_lines": 0.0
+            },
+            "ci95_bifolium_bootstrap": {
+              "net_gain": [
+                0.006509803921568628,
+                0.00877450980392157
+              ],
+              "pf_gain": [
+                0.004797047970479706,
+                0.0071938775510204086
+              ],
+              "nonpf_gain": [
+                0.0009900990099009901,
+                0.002720588235294117
+              ]
+            }
+          },
+          "paragraph_first_with_pf": {
+            "lines": 212,
+            "bifolia": 5,
+            "means": {
+              "before": 0.8455188679245284,
+              "after": 0.8530660377358489,
+              "net_gain": 0.007547169811320755,
+              "pf_gain": 0.006367924528301887,
+              "nonpf_gain": 0.001179245283018868,
+              "opener_gain": 0.0023584905660377358,
+              "pf_opener": 0.0016981132075471698,
+              "nonpf_opener": 0.0006603773584905661,
+              "pf_rest_of_line": 0.004669811320754718,
+              "nonpf_rest_of_line": 0.0005188679245283019,
+              "pf_later_lines": 0.0,
+              "nonpf_later_lines": 0.0
+            },
+            "ci95_bifolium_bootstrap": {
+              "net_gain": [
+                0.006315789473684211,
+                0.00949438202247191
+              ],
+              "pf_gain": [
+                0.005340909090909092,
+                0.008326086956521752
+              ],
+              "nonpf_gain": [
+                0.00010362694300518151,
+                0.0020779220779220775
+              ]
+            }
+          },
+          "paragraph_first_without_pf": {
+            "lines": 29,
+            "bifolia": 5,
+            "means": {
+              "before": 0.8389655172413792,
+              "after": 0.8455172413793105,
+              "net_gain": 0.006551724137931035,
+              "pf_gain": 0.0,
+              "nonpf_gain": 0.006551724137931035,
+              "opener_gain": 0.002758620689655172,
+              "pf_opener": 0.0,
+              "nonpf_opener": 0.002758620689655172,
+              "pf_rest_of_line": 0.0,
+              "nonpf_rest_of_line": 0.003793103448275862,
+              "pf_later_lines": 0.0,
+              "nonpf_later_lines": 0.0
+            },
+            "ci95_bifolium_bootstrap": {
+              "net_gain": [
+                0.003125,
+                0.008292682926829267
+              ],
+              "pf_gain": [
+                0.0,
+                0.0
+              ],
+              "nonpf_gain": [
+                0.003125,
+                0.008292682926829267
+              ]
+            }
+          },
+          "all_pf_lines": {
+            "lines": 275,
+            "bifolia": 5,
+            "means": {
+              "before": 0.8429090909090909,
+              "after": 0.8494181818181818,
+              "net_gain": 0.006509090909090909,
+              "pf_gain": 0.005709090909090909,
+              "nonpf_gain": 0.0008000000000000003,
+              "opener_gain": 0.0018181818181818182,
+              "pf_opener": 0.001309090909090909,
+              "nonpf_opener": 0.0005090909090909091,
+              "pf_rest_of_line": 0.0036,
+              "nonpf_rest_of_line": 0.00040000000000000013,
+              "pf_later_lines": 0.0008,
+              "nonpf_later_lines": -0.00010909090909090901
+            },
+            "ci95_bifolium_bootstrap": {
+              "net_gain": [
+                0.005019762845849803,
+                0.007803921568627452
+              ],
+              "pf_gain": [
+                0.004943535529911936,
+                0.006961657303370789
+              ],
+              "nonpf_gain": [
+                -0.00018726591760299618,
+                0.0018050541516245486
+              ]
+            }
+          }
+        },
+        "nonpf_after_opener_on_pf_bearing_lines": {
+          "distinct_credit_per_token": 0.8597832168352021,
+          "token_window_exposures": 159925,
+          "mattr_contribution": 0.1586121016868955,
+          "later_line_credit_per_token": 0.8224043819062699,
+          "difference": 0.037378834928932236
+        },
+        "nonpf_after_opener_vs_later_lines": {
+          "opening_line_credit_per_token": 0.8607592441173857,
+          "later_line_credit_per_token": 0.8224043819062699,
+          "difference": 0.03835486221111584
+        }
+      },
+      "4c": {
+        "opening_lines": {
+          "lines": 74,
+          "tokens": 800,
+          "counts": {
+            "pf_opener": 47,
+            "nonpf_opener": 27,
+            "pf_rest_of_line": 88,
+            "nonpf_rest_of_line": 638
+          },
+          "original_mattr": 0.7707876154263987,
+          "after_removing_selected_lines": 0.7533448993754337,
+          "total_loss": 0.017442716050965035,
+          "allocation": {
+            "pf_opener": 0.005254156549646384,
+            "nonpf_opener": 0.001306003014795748,
+            "pf_rest_of_line": 0.008721183366038637,
+            "nonpf_rest_of_line": 0.002161373120484265
+          },
+          "pf_loss": 0.01397533991568502,
+          "nonpf_loss": 0.003467376135280013,
+          "opener_loss": 0.006560159564442132,
+          "rest_of_line_loss": 0.010882556486522903,
+          "pf_share_of_loss": 0.801213519434195,
+          "opener_share_of_loss": 0.3760973661025219,
+          "removal_order_ranges": {
+            "pf_opener": [
+              0.004529018452533506,
+              0.006084940160243968
+            ],
+            "nonpf_opener": [
+              0.0011515005153179825,
+              0.001474626234741594
+            ],
+            "pf_rest_of_line": [
+              0.00767687530397243,
+              0.009867221836687534
+            ],
+            "nonpf_rest_of_line": [
+              0.000794185728632657,
+              0.0036266915336572447
+            ]
+          },
+          "ablations": {
+            "0": 0.7707876154263987,
+            "1": 0.7662585969738652,
+            "2": 0.7696361149110807,
+            "3": 0.765060975609756,
+            "4": 0.7631107401224263,
+            "5": 0.758274598252044,
+            "6": 0.7618783291281188,
+            "7": 0.7569715909090909,
+            "8": 0.7699934296977661,
+            "9": 0.7645779112445779,
+            "10": 0.7686874378521711,
+            "11": 0.7632121212121212,
+            "12": 0.7608186738836266,
+            "13": 0.7548195256101753,
+            "14": 0.7594298395356777,
+            "15": 0.7533448993754337
+          }
+        },
+        "pf_bearing_opening_lines": {
+          "lines": 62,
+          "tokens": 667,
+          "counts": {
+            "pf_opener": 47,
+            "nonpf_opener": 15,
+            "pf_rest_of_line": 88,
+            "nonpf_rest_of_line": 517
+          },
+          "original_mattr": 0.7707876154263987,
+          "after_removing_selected_lines": 0.7524709784411276,
+          "total_loss": 0.018316636985271084,
+          "allocation": {
+            "pf_opener": 0.005140284044167229,
+            "nonpf_opener": 0.0011473066154818004,
+            "pf_rest_of_line": 0.008564760631147,
+            "nonpf_rest_of_line": 0.0034642856944750535
+          },
+          "pf_loss": 0.01370504467531423,
+          "nonpf_loss": 0.004611592309956854,
+          "opener_loss": 0.006287590659649029,
+          "rest_of_line_loss": 0.012029046325622055,
+          "pf_share_of_loss": 0.7482293112177107,
+          "opener_share_of_loss": 0.3432721118349976,
+          "removal_order_ranges": {
+            "pf_opener": [
+              0.004529018452533506,
+              0.005820987594143401
+            ],
+            "nonpf_opener": [
+              0.0010548638583595116,
+              0.001251793836100079
+            ],
+            "pf_rest_of_line": [
+              0.00767687530397243,
+              0.009523865258517894
+            ],
+            "nonpf_rest_of_line": [
+              0.002342117796066967,
+              0.0046581268816356936
+            ]
+          },
+          "ablations": {
+            "0": 0.7707876154263987,
+            "1": 0.7662585969738652,
+            "2": 0.7697327515680392,
+            "3": 0.7651795580110498,
+            "4": 0.7631107401224263,
+            "5": 0.758274598252044,
+            "6": 0.7620033528918693,
+            "7": 0.7571291053227633,
+            "8": 0.7684454976303318,
+            "9": 0.7631686978832585,
+            "10": 0.7673111111111112,
+            "11": 0.7619948436996455,
+            "12": 0.7594995125121872,
+            "13": 0.7537227722772277,
+            "14": 0.758291966035271,
+            "15": 0.7524709784411276
+          }
+        },
+        "fixed_windows": {
+          "pf_opener": {
+            "mattr_contribution": 0.012619500271591526,
+            "token_window_share": 0.012696903856599674,
+            "distinct_credit_per_token": 0.993903743315508
+          },
+          "nonpf_opener": {
+            "mattr_contribution": 0.005816076493968921,
+            "token_window_share": 0.0067599130907115695,
+            "distinct_credit_per_token": 0.8603774066208746
+          },
+          "pf_rest_of_line": {
+            "mattr_contribution": 0.021842748506246606,
+            "token_window_share": 0.02227593699076589,
+            "distinct_credit_per_token": 0.9805535235308461
+          },
+          "nonpf_rest_of_line": {
+            "mattr_contribution": 0.13083205080271862,
+            "token_window_share": 0.16894350896252036,
+            "distinct_credit_per_token": 0.7744130070824049
+          },
+          "pf_later_lines": {
+            "mattr_contribution": 0.006108093427485062,
+            "token_window_share": 0.0061352525801195,
+            "distinct_credit_per_token": 0.9955732625055335
+          },
+          "nonpf_later_lines": {
+            "mattr_contribution": 0.5935691459243867,
+            "token_window_share": 0.783188484519283,
+            "distinct_credit_per_token": 0.7578879894904436
+          }
+        },
+        "rolling_line_change": {
+          "paragraph_first": {
+            "lines": 71,
+            "bifolia": 2,
+            "means": {
+              "before": 0.7671830985915494,
+              "after": 0.7770422535211268,
+              "net_gain": 0.009859154929577467,
+              "pf_gain": 0.004788732394366197,
+              "nonpf_gain": 0.005070422535211268,
+              "opener_gain": 0.0016901408450704224,
+              "pf_opener": 0.0015492957746478873,
+              "nonpf_opener": 0.00014084507042253522,
+              "pf_rest_of_line": 0.0032394366197183106,
+              "nonpf_rest_of_line": 0.004929577464788733,
+              "pf_later_lines": 0.0,
+              "nonpf_later_lines": 0.0
+            },
+            "ci95_bifolium_bootstrap": {
+              "net_gain": [
+                0.009230769230769232,
+                0.010625000000000002
+              ],
+              "pf_gain": [
+                0.004102564102564103,
+                0.0056250000000000015
+              ],
+              "nonpf_gain": [
+                0.005,
+                0.005128205128205128
+              ]
+            }
+          },
+          "paragraph_first_with_pf": {
+            "lines": 59,
+            "bifolia": 2,
+            "means": {
+              "before": 0.767457627118644,
+              "after": 0.7793220338983051,
+              "net_gain": 0.011864406779661016,
+              "pf_gain": 0.005762711864406779,
+              "nonpf_gain": 0.006101694915254237,
+              "opener_gain": 0.0025423728813559325,
+              "pf_opener": 0.0018644067796610168,
+              "nonpf_opener": 0.0006779661016949153,
+              "pf_rest_of_line": 0.0038983050847457633,
+              "nonpf_rest_of_line": 0.005423728813559322,
+              "pf_later_lines": 0.0,
+              "nonpf_later_lines": 0.0
+            },
+            "ci95_bifolium_bootstrap": {
+              "net_gain": [
+                0.010625,
+                0.013333333333333332
+              ],
+              "pf_gain": [
+                0.005000000000000001,
+                0.006666666666666669
+              ],
+              "nonpf_gain": [
+                0.005625000000000001,
+                0.006666666666666666
+              ]
+            }
+          },
+          "paragraph_first_without_pf": {
+            "lines": 12,
+            "bifolia": 2,
+            "means": {
+              "before": 0.7658333333333333,
+              "after": 0.7658333333333333,
+              "net_gain": 4.336808689942018e-19,
+              "pf_gain": 0.0,
+              "nonpf_gain": 4.336808689942018e-19,
+              "opener_gain": -0.0025,
+              "pf_opener": 0.0,
+              "nonpf_opener": -0.0025,
+              "pf_rest_of_line": 0.0,
+              "nonpf_rest_of_line": 0.0025000000000000005,
+              "pf_later_lines": 0.0,
+              "nonpf_later_lines": 0.0
+            },
+            "ci95_bifolium_bootstrap": {
+              "net_gain": [
+                -0.003999999999999998,
+                0.0028571428571428567
+              ],
+              "pf_gain": [
+                0.0,
+                0.0
+              ],
+              "nonpf_gain": [
+                -0.003999999999999998,
+                0.0028571428571428567
+              ]
+            }
+          },
+          "all_pf_lines": {
+            "lines": 76,
+            "bifolia": 2,
+            "means": {
+              "before": 0.7714473684210528,
+              "after": 0.780921052631579,
+              "net_gain": 0.009473684210526316,
+              "pf_gain": 0.005394736842105264,
+              "nonpf_gain": 0.004078947368421053,
+              "opener_gain": 0.0019736842105263163,
+              "pf_opener": 0.0014473684210526317,
+              "nonpf_opener": 0.0005263157894736842,
+              "pf_rest_of_line": 0.0030263157894736843,
+              "nonpf_rest_of_line": 0.004210526315789474,
+              "pf_later_lines": 0.0009210526315789475,
+              "nonpf_later_lines": -0.0006578947368421051
+            },
+            "ci95_bifolium_bootstrap": {
+              "net_gain": [
+                0.00926829268292683,
+                0.009714285714285717
+              ],
+              "pf_gain": [
+                0.004878048780487807,
+                0.006000000000000002
+              ],
+              "nonpf_gain": [
+                0.0037142857142857142,
+                0.004390243902439024
+              ]
+            }
+          }
+        },
+        "nonpf_after_opener_on_pf_bearing_lines": {
+          "distinct_credit_per_token": 0.7796155770185537,
+          "token_window_exposures": 50105,
+          "mattr_contribution": 0.10609081609591155,
+          "later_line_credit_per_token": 0.7578879894904436,
+          "difference": 0.021727587528110104
+        },
+        "nonpf_after_opener_vs_later_lines": {
+          "opening_line_credit_per_token": 0.7744130070824049,
+          "later_line_credit_per_token": 0.7578879894904436,
+          "difference": 0.016525017591961344
+        }
+      },
+      "4a": {
+        "opening_lines": {
+          "lines": 90,
+          "tokens": 786,
+          "counts": {
+            "pf_opener": 52,
+            "nonpf_opener": 38,
+            "pf_rest_of_line": 119,
+            "nonpf_rest_of_line": 577
+          },
+          "original_mattr": 0.7157842991211083,
+          "after_removing_selected_lines": 0.7023266407963557,
+          "total_loss": 0.013457658324752653,
+          "allocation": {
+            "pf_opener": 0.003312972550394218,
+            "nonpf_opener": 0.002178862713351622,
+            "pf_rest_of_line": 0.007069068223740352,
+            "nonpf_rest_of_line": 0.0008967548372664594
+          },
+          "pf_loss": 0.010382040774134571,
+          "nonpf_loss": 0.003075617550618081,
+          "opener_loss": 0.00549183526374584,
+          "rest_of_line_loss": 0.007965823061006813,
+          "pf_share_of_loss": 0.7714596792102306,
+          "opener_share_of_loss": 0.40808253049824533,
+          "removal_order_ranges": {
+            "pf_opener": [
+              0.0030174472970578847,
+              0.003619169539820999
+            ],
+            "nonpf_opener": [
+              0.002021003240958441,
+              0.0023389082396879646
+            ],
+            "pf_rest_of_line": [
+              0.006601708887562618,
+              0.007546002273442598
+            ],
+            "nonpf_rest_of_line": [
+              0.0003752378434029868,
+              0.001429509265144957
+            ]
+          },
+          "ablations": {
+            "0": 0.7157842991211083,
+            "1": 0.7127668518240504,
+            "2": 0.7137632958801499,
+            "3": 0.7107126679752378,
+            "4": 0.7091825902335457,
+            "5": 0.7058850504432895,
+            "6": 0.7070851128737035,
+            "7": 0.7037561500615006,
+            "8": 0.7154090612777053,
+            "9": 0.7121334648257726,
+            "10": 0.7131846507051492,
+            "11": 0.7098726430697982,
+            "12": 0.7082466345354828,
+            "13": 0.7046655490360436,
+            "14": 0.7059458103361766,
+            "15": 0.7023266407963557
+          }
+        },
+        "pf_bearing_opening_lines": {
+          "lines": 71,
+          "tokens": 646,
+          "counts": {
+            "pf_opener": 52,
+            "nonpf_opener": 19,
+            "pf_rest_of_line": 119,
+            "nonpf_rest_of_line": 456
+          },
+          "original_mattr": 0.7157842991211083,
+          "after_removing_selected_lines": 0.7031135651887259,
+          "total_loss": 0.012670733932382383,
+          "allocation": {
+            "pf_opener": 0.0032748843028081267,
+            "nonpf_opener": 0.0011978268116372148,
+            "pf_rest_of_line": 0.0069878015962380365,
+            "nonpf_rest_of_line": 0.0012102212216990038
+          },
+          "pf_loss": 0.010262685899046163,
+          "nonpf_loss": 0.0024080480333362186,
+          "opener_loss": 0.004472711114445341,
+          "rest_of_line_loss": 0.008198022817937042,
+          "pf_share_of_loss": 0.8099519691450539,
+          "opener_share_of_loss": 0.3529954253884621,
+          "removal_order_ranges": {
+            "pf_opener": [
+              0.0030174472970578847,
+              0.003539482694915219
+            ],
+            "nonpf_opener": [
+              0.0011293842719897196,
+              0.0012686234409158281
+            ],
+            "pf_rest_of_line": [
+              0.006601708887562618,
+              0.007382716738205897
+            ],
+            "nonpf_rest_of_line": [
+              0.0008474284162977019,
+              0.0015821269774553004
+            ]
+          },
+          "ablations": {
+            "0": 0.7157842991211083,
+            "1": 0.7127668518240504,
+            "2": 0.7146549148491186,
+            "3": 0.7116184884071063,
+            "4": 0.7091825902335457,
+            "5": 0.7058850504432895,
+            "6": 0.7080091254752852,
+            "7": 0.7046956921661812,
+            "8": 0.7149368707048106,
+            "9": 0.7117147461724416,
+            "10": 0.7137351715293363,
+            "11": 0.7104962819269318,
+            "12": 0.707901596611274,
+            "13": 0.7043821886296417,
+            "14": 0.7066530478836411,
+            "15": 0.7031135651887259
+          }
+        },
+        "fixed_windows": {
+          "pf_opener": {
+            "mattr_contribution": 0.007591985699389245,
+            "token_window_share": 0.00768955757485476,
+            "distinct_credit_per_token": 0.9873111197210384
+          },
+          "nonpf_opener": {
+            "mattr_contribution": 0.0052363573166493045,
+            "token_window_share": 0.005431252793088038,
+            "distinct_credit_per_token": 0.9641159261290945
+          },
+          "pf_rest_of_line": {
+            "mattr_contribution": 0.016609563533442576,
+            "token_window_share": 0.017138388201996126,
+            "distinct_credit_per_token": 0.9691438504997827
+          },
+          "nonpf_rest_of_line": {
+            "mattr_contribution": 0.06161308265281919,
+            "token_window_share": 0.08414419782511545,
+            "distinct_credit_per_token": 0.7322320997209489
+          },
+          "pf_later_lines": {
+            "mattr_contribution": 0.01022866080738865,
+            "token_window_share": 0.01037539103232534,
+            "distinct_credit_per_token": 0.9858578607322326
+          },
+          "nonpf_later_lines": {
+            "mattr_contribution": 0.614504649111425,
+            "token_window_share": 0.8752212125726203,
+            "distinct_credit_per_token": 0.7021135231687923
+          }
+        },
+        "rolling_line_change": {
+          "paragraph_first": {
+            "lines": 88,
+            "bifolia": 5,
+            "means": {
+              "before": 0.7217045454545455,
+              "after": 0.7309090909090908,
+              "net_gain": 0.009204545454545455,
+              "pf_gain": 0.006363636363636363,
+              "nonpf_gain": 0.0028409090909090914,
+              "opener_gain": 0.0036363636363636372,
+              "pf_opener": 0.002272727272727273,
+              "nonpf_opener": 0.0013636363636363635,
+              "pf_rest_of_line": 0.00409090909090909,
+              "nonpf_rest_of_line": 0.0014772727272727272,
+              "pf_later_lines": 0.0,
+              "nonpf_later_lines": 0.0
+            },
+            "ci95_bifolium_bootstrap": {
+              "net_gain": [
+                0.005151515151515151,
+                0.011734693877551022
+              ],
+              "pf_gain": [
+                0.004027777777777778,
+                0.008617021276595744
+              ],
+              "nonpf_gain": [
+                -0.0008974358974358973,
+                0.005816326530612244
+              ]
+            }
+          },
+          "paragraph_first_with_pf": {
+            "lines": 69,
+            "bifolia": 5,
+            "means": {
+              "before": 0.7278260869565218,
+              "after": 0.7414492753623189,
+              "net_gain": 0.013623188405797104,
+              "pf_gain": 0.008115942028985508,
+              "nonpf_gain": 0.0055072463768115944,
+              "opener_gain": 0.004202898550724638,
+              "pf_opener": 0.002898550724637681,
+              "nonpf_opener": 0.0013043478260869564,
+              "pf_rest_of_line": 0.0052173913043478265,
+              "nonpf_rest_of_line": 0.004202898550724638,
+              "pf_later_lines": 0.0,
+              "nonpf_later_lines": 0.0
+            },
+            "ci95_bifolium_bootstrap": {
+              "net_gain": [
+                0.008193726355611601,
+                0.018833333333333334
+              ],
+              "pf_gain": [
+                0.004754098360655737,
+                0.012425277217741957
+              ],
+              "nonpf_gain": [
+                0.0012000000000000003,
+                0.008585858585858586
+              ]
+            }
+          },
+          "paragraph_first_without_pf": {
+            "lines": 19,
+            "bifolia": 4,
+            "means": {
+              "before": 0.6994736842105264,
+              "after": 0.6926315789473685,
+              "net_gain": -0.006842105263157895,
+              "pf_gain": 0.0,
+              "nonpf_gain": -0.006842105263157895,
+              "opener_gain": 0.0015789473684210526,
+              "pf_opener": 0.0,
+              "nonpf_opener": 0.0015789473684210526,
+              "pf_rest_of_line": 0.0,
+              "nonpf_rest_of_line": -0.008421052631578945,
+              "pf_later_lines": 0.0,
+              "nonpf_later_lines": 0.0
+            },
+            "ci95_bifolium_bootstrap": {
+              "net_gain": [
+                -0.012857142857142859,
+                -0.0031249999999999993
+              ],
+              "pf_gain": [
+                0.0,
+                0.0
+              ],
+              "nonpf_gain": [
+                -0.012857142857142859,
+                -0.0031249999999999993
+              ]
+            }
+          },
+          "all_pf_lines": {
+            "lines": 130,
+            "bifolia": 5,
+            "means": {
+              "before": 0.7205384615384615,
+              "after": 0.7312307692307692,
+              "net_gain": 0.010692307692307692,
+              "pf_gain": 0.006692307692307692,
+              "nonpf_gain": 0.004,
+              "opener_gain": 0.002230769230769231,
+              "pf_opener": 0.0015384615384615385,
+              "nonpf_opener": 0.0006923076923076923,
+              "pf_rest_of_line": 0.002769230769230769,
+              "nonpf_rest_of_line": 0.0022307692307692306,
+              "pf_later_lines": 0.0023846153846153848,
+              "nonpf_later_lines": 0.001076923076923077
+            },
+            "ci95_bifolium_bootstrap": {
+              "net_gain": [
+                0.005892857142857142,
+                0.014924242424242421
+              ],
+              "pf_gain": [
+                0.004609375000000001,
+                0.009344262295081968
+              ],
+              "nonpf_gain": [
+                0.0005833333333333344,
+                0.006418918918918919
+              ]
+            }
+          }
+        },
+        "nonpf_after_opener_on_pf_bearing_lines": {
+          "distinct_credit_per_token": 0.7370966424603553,
+          "token_window_exposures": 44456,
+          "mattr_contribution": 0.04881330007033749,
+          "later_line_credit_per_token": 0.7021135231687923,
+          "difference": 0.03498311929156306
+        },
+        "nonpf_after_opener_vs_later_lines": {
+          "opening_line_credit_per_token": 0.7322320997209489,
+          "later_line_credit_per_token": 0.7021135231687923,
+          "difference": 0.030118576552156662
+        }
+      }
+    },
+    "k": {
+      "3c": {
+        "opening_lines": {
+          "lines": 244,
+          "tokens": 2525,
+          "counts": {
+            "pf_opener": 146,
+            "nonpf_opener": 98,
+            "pf_rest_of_line": 424,
+            "nonpf_rest_of_line": 1857
+          },
+          "original_mattr": 0.8374068520013842,
+          "after_removing_selected_lines": 0.8129622395833334,
+          "total_loss": 0.02444461241805085,
+          "allocation": {
+            "pf_opener": 0.00468145400901307,
+            "nonpf_opener": 0.003286248799857792,
+            "pf_rest_of_line": 0.008144019292486768,
+            "nonpf_rest_of_line": 0.008332890316693218
+          },
+          "pf_loss": 0.012825473301499838,
+          "nonpf_loss": 0.011619139116551009,
+          "opener_loss": 0.007967702808870861,
+          "rest_of_line_loss": 0.01647690960917999,
+          "pf_share_of_loss": 0.5246748478625504,
+          "opener_share_of_loss": 0.3259492387364342,
+          "removal_order_ranges": {
+            "pf_opener": [
+              0.0035783878455705187,
+              0.005924882833200806
+            ],
+            "nonpf_opener": [
+              0.002599944989366887,
+              0.004089987267035133
+            ],
+            "pf_rest_of_line": [
+              0.006548149757600097,
+              0.009912303656617882
+            ],
+            "nonpf_rest_of_line": [
+              0.005952066329041328,
+              0.010906026883358289
+            ]
+          },
+          "ablations": {
+            "0": 0.8374068520013842,
+            "1": 0.8338284641558137,
+            "2": 0.8348069070120173,
+            "3": 0.8311370919881306,
+            "4": 0.8308587022437841,
+            "5": 0.826937893567107,
+            "6": 0.8279108874432306,
+            "7": 0.8238682664666916,
+            "8": 0.8314547856723429,
+            "9": 0.8263696369636964,
+            "10": 0.8281411974977658,
+            "11": 0.8228745432399512,
+            "12": 0.8227348152786474,
+            "13": 0.8170522268503685,
+            "14": 0.8188871224165342,
+            "15": 0.8129622395833334
+          }
+        },
+        "pf_bearing_opening_lines": {
+          "lines": 215,
+          "tokens": 2254,
+          "counts": {
+            "pf_opener": 146,
+            "nonpf_opener": 69,
+            "pf_rest_of_line": 424,
+            "nonpf_rest_of_line": 1615
+          },
+          "original_mattr": 0.8374068520013842,
+          "after_removing_selected_lines": 0.8166796570537802,
+          "total_loss": 0.020727194947604,
+          "allocation": {
+            "pf_opener": 0.004548786126662985,
+            "nonpf_opener": 0.002298412770495195,
+            "pf_rest_of_line": 0.0077569065901847796,
+            "nonpf_rest_of_line": 0.00612308946026104
+          },
+          "pf_loss": 0.012305692716847765,
+          "nonpf_loss": 0.008421502230756234,
+          "opener_loss": 0.00684719889715818,
+          "rest_of_line_loss": 0.01387999605044582,
+          "pf_share_of_loss": 0.593697929119457,
+          "opener_share_of_loss": 0.3303485548559331,
+          "removal_order_ranges": {
+            "pf_opener": [
+              0.0035783878455705187,
+              0.005612676431968944
+            ],
+            "nonpf_opener": [
+              0.0018777822339423045,
+              0.002786721724751584
+            ],
+            "pf_rest_of_line": [
+              0.006548149757600097,
+              0.009077032520719008
+            ],
+            "nonpf_rest_of_line": [
+              0.004252613271585548,
+              0.00811610882417746
+            ]
+          },
+          "ablations": {
+            "0": 0.8374068520013842,
+            "1": 0.8338284641558137,
+            "2": 0.8355290697674419,
+            "3": 0.831883132245091,
+            "4": 0.8308587022437841,
+            "5": 0.826937893567107,
+            "6": 0.8288062622309198,
+            "7": 0.8247957658779577,
+            "8": 0.8331542387297987,
+            "9": 0.8282266936884771,
+            "10": 0.8308074445239799,
+            "11": 0.8257566895744992,
+            "12": 0.8249230769230769,
+            "13": 0.8194663787785318,
+            "14": 0.8222923334857491,
+            "15": 0.8166796570537802
+          }
+        },
+        "fixed_windows": {
+          "pf_opener": {
+            "mattr_contribution": 0.016112200561387315,
+            "token_window_share": 0.016636290229553582,
+            "distinct_credit_per_token": 0.9684972033467386
+          },
+          "nonpf_opener": {
+            "mattr_contribution": 0.010974737570654057,
+            "token_window_share": 0.011206598223555197,
+            "distinct_credit_per_token": 0.9793103448275864
+          },
+          "pf_rest_of_line": {
+            "mattr_contribution": 0.044527977357744275,
+            "token_window_share": 0.048667666397508365,
+            "distinct_credit_per_token": 0.9149396437883033
+          },
+          "nonpf_rest_of_line": {
+            "mattr_contribution": 0.1814309306834987,
+            "token_window_share": 0.21161610335678857,
+            "distinct_credit_per_token": 0.8573588106270102
+          },
+          "pf_later_lines": {
+            "mattr_contribution": 0.00889356711654555,
+            "token_window_share": 0.0095581958703426,
+            "distinct_credit_per_token": 0.9304650414353534
+          },
+          "nonpf_later_lines": {
+            "mattr_contribution": 0.575467438711562,
+            "token_window_share": 0.7023151459222517,
+            "distinct_credit_per_token": 0.81938634251705
+          }
+        },
+        "rolling_line_change": {
+          "paragraph_first": {
+            "lines": 241,
+            "bifolia": 5,
+            "means": {
+              "before": 0.838713692946058,
+              "after": 0.8447717842323652,
+              "net_gain": 0.006058091286307053,
+              "pf_gain": 0.0037759336099585064,
+              "nonpf_gain": 0.002282157676348548,
+              "opener_gain": 0.002199170124481328,
+              "pf_opener": 0.0013278008298755189,
+              "nonpf_opener": 0.0008713692946058092,
+              "pf_rest_of_line": 0.002448132780082988,
+              "nonpf_rest_of_line": 0.0014107883817427388,
+              "pf_later_lines": 0.0,
+              "nonpf_later_lines": 0.0
+            },
+            "ci95_bifolium_bootstrap": {
+              "net_gain": [
+                0.00545138888888889,
+                0.006975133689839575
+              ],
+              "pf_gain": [
+                0.002892857142857143,
+                0.0051595744680851055
+              ],
+              "nonpf_gain": [
+                0.0016336633663366334,
+                0.0029223744292237435
+              ]
+            }
+          },
+          "paragraph_first_with_pf": {
+            "lines": 212,
+            "bifolia": 5,
+            "means": {
+              "before": 0.8389622641509434,
+              "after": 0.8450471698113207,
+              "net_gain": 0.0060849056603773585,
+              "pf_gain": 0.0042924528301886795,
+              "nonpf_gain": 0.001792452830188679,
+              "opener_gain": 0.0021698113207547173,
+              "pf_opener": 0.0015094339622641509,
+              "nonpf_opener": 0.0006603773584905661,
+              "pf_rest_of_line": 0.0027830188679245286,
+              "nonpf_rest_of_line": 0.0011320754716981135,
+              "pf_later_lines": 0.0,
+              "nonpf_later_lines": 0.0
+            },
+            "ci95_bifolium_bootstrap": {
+              "net_gain": [
+                0.005213270142180095,
+                0.0074166724823783985
+              ],
+              "pf_gain": [
+                0.0032530120481927714,
+                0.006100628930817609
+              ],
+              "nonpf_gain": [
+                0.0008290155440414508,
+                0.002597402597402597
+              ]
+            }
+          },
+          "paragraph_first_without_pf": {
+            "lines": 29,
+            "bifolia": 5,
+            "means": {
+              "before": 0.8368965517241379,
+              "after": 0.8427586206896552,
+              "net_gain": 0.0058620689655172415,
+              "pf_gain": 0.0,
+              "nonpf_gain": 0.0058620689655172415,
+              "opener_gain": 0.002413793103448276,
+              "pf_opener": 0.0,
+              "nonpf_opener": 0.002413793103448276,
+              "pf_rest_of_line": 0.0,
+              "nonpf_rest_of_line": 0.003448275862068966,
+              "pf_later_lines": 0.0,
+              "nonpf_later_lines": 0.0
+            },
+            "ci95_bifolium_bootstrap": {
+              "net_gain": [
+                0.003076923076923077,
+                0.008148148148148147
+              ],
+              "pf_gain": [
+                0.0,
+                0.0
+              ],
+              "nonpf_gain": [
+                0.003076923076923077,
+                0.008148148148148147
+              ]
+            }
+          },
+          "all_pf_lines": {
+            "lines": 275,
+            "bifolia": 5,
+            "means": {
+              "before": 0.8358909090909091,
+              "after": 0.8410181818181818,
+              "net_gain": 0.005127272727272728,
+              "pf_gain": 0.0038545454545454547,
+              "nonpf_gain": 0.001272727272727273,
+              "opener_gain": 0.001672727272727273,
+              "pf_opener": 0.0011636363636363637,
+              "nonpf_opener": 0.0005090909090909091,
+              "pf_rest_of_line": 0.0021454545454545454,
+              "nonpf_rest_of_line": 0.0008727272727272728,
+              "pf_later_lines": 0.0005454545454545456,
+              "nonpf_later_lines": -0.00010909090909090901
+            },
+            "ci95_bifolium_bootstrap": {
+              "net_gain": [
+                0.0037500000000000003,
+                0.006352941176470589
+              ],
+              "pf_gain": [
+                0.00306930693069307,
+                0.005205992509363297
+              ],
+              "nonpf_gain": [
+                0.00018726591760299632,
+                0.0022968197879858657
+              ]
+            }
+          }
+        },
+        "nonpf_after_opener_on_pf_bearing_lines": {
+          "distinct_credit_per_token": 0.8559701199222067,
+          "token_window_exposures": 159925,
+          "mattr_contribution": 0.15790866470014872,
+          "later_line_credit_per_token": 0.81938634251705,
+          "difference": 0.036583777405156725
+        },
+        "nonpf_after_opener_vs_later_lines": {
+          "opening_line_credit_per_token": 0.8573588106270102,
+          "later_line_credit_per_token": 0.81938634251705,
+          "difference": 0.037972468109960245
+        }
+      },
+      "4c": {
+        "opening_lines": {
+          "lines": 74,
+          "tokens": 800,
+          "counts": {
+            "pf_opener": 47,
+            "nonpf_opener": 27,
+            "pf_rest_of_line": 88,
+            "nonpf_rest_of_line": 638
+          },
+          "original_mattr": 0.7696279196089082,
+          "after_removing_selected_lines": 0.752793199167245,
+          "total_loss": 0.01683472044166323,
+          "allocation": {
+            "pf_opener": 0.005284601750223596,
+            "nonpf_opener": 0.0013131681319851298,
+            "pf_rest_of_line": 0.008013181845692061,
+            "nonpf_rest_of_line": 0.0022237687137624433
+          },
+          "pf_loss": 0.013297783595915658,
+          "nonpf_loss": 0.003536936845747573,
+          "opener_loss": 0.006597769882208726,
+          "rest_of_line_loss": 0.010236950559454505,
+          "pf_share_of_loss": 0.7899022524309806,
+          "opener_share_of_loss": 0.39191443095664985,
+          "removal_order_ranges": {
+            "pf_opener": [
+              0.004568772428715673,
+              0.006104035383796336
+            ],
+            "nonpf_opener": [
+              0.001160067351726246,
+              0.0014797468623184429
+            ],
+            "pf_rest_of_line": [
+              0.007026361456431873,
+              0.009099056725010879
+            ],
+            "nonpf_rest_of_line": [
+              0.0008959879400514126,
+              0.003647141741845994
+            ]
+          },
+          "ablations": {
+            "0": 0.7696279196089082,
+            "1": 0.7650591471801925,
+            "2": 0.768467852257182,
+            "3": 0.7638525498891352,
+            "4": 0.7626015581524763,
+            "5": 0.7577473921623907,
+            "6": 0.7613652929632745,
+            "7": 0.756440340909091,
+            "8": 0.7687319316688568,
+            "9": 0.7632699366032699,
+            "10": 0.7674146503148823,
+            "11": 0.7618922558922558,
+            "12": 0.7602909336941813,
+            "13": 0.7542729460295634,
+            "14": 0.7588972345510413,
+            "15": 0.752793199167245
+          }
+        },
+        "pf_bearing_opening_lines": {
+          "lines": 62,
+          "tokens": 667,
+          "counts": {
+            "pf_opener": 47,
+            "nonpf_opener": 15,
+            "pf_rest_of_line": 88,
+            "nonpf_rest_of_line": 517
+          },
+          "original_mattr": 0.7696279196089082,
+          "after_removing_selected_lines": 0.7519436152570481,
+          "total_loss": 0.01768430435186008,
+          "allocation": {
+            "pf_opener": 0.005169869818735342,
+            "nonpf_opener": 0.0011511187064274508,
+            "pf_rest_of_line": 0.007872427460477846,
+            "nonpf_rest_of_line": 0.003490888366219441
+          },
+          "pf_loss": 0.013042297279213189,
+          "nonpf_loss": 0.004642007072646892,
+          "opener_loss": 0.006320988525162793,
+          "rest_of_line_loss": 0.011363315826697288,
+          "pf_share_of_loss": 0.7375069451256852,
+          "opener_share_of_loss": 0.357434954714401,
+          "removal_order_ranges": {
+            "pf_opener": [
+              0.004568772428715673,
+              0.005838879844192957
+            ],
+            "nonpf_opener": [
+              0.0010596076372691998,
+              0.0012544045449320862
+            ],
+            "pf_rest_of_line": [
+              0.007026361456431873,
+              0.008787934855745916
+            ],
+            "nonpf_rest_of_line": [
+              0.0023956921207565207,
+              0.004656044992102482
+            ]
+          },
+          "ablations": {
+            "0": 0.7696279196089082,
+            "1": 0.7650591471801925,
+            "2": 0.768568311971639,
+            "3": 0.7639751381215469,
+            "4": 0.7626015581524763,
+            "5": 0.7577473921623907,
+            "6": 0.7614920368818106,
+            "7": 0.7565996602491506,
+            "8": 0.7672322274881517,
+            "9": 0.7619114817190507,
+            "10": 0.7660920634920635,
+            "11": 0.760731550112794,
+            "12": 0.7589925251868703,
+            "13": 0.7531980198019802,
+            "14": 0.7577824951012411,
+            "15": 0.7519436152570481
+          }
+        },
+        "fixed_windows": {
+          "pf_opener": {
+            "mattr_contribution": 0.012619500271591526,
+            "token_window_share": 0.012696903856599674,
+            "distinct_credit_per_token": 0.993903743315508
+          },
+          "nonpf_opener": {
+            "mattr_contribution": 0.005816076493968921,
+            "token_window_share": 0.0067599130907115695,
+            "distinct_credit_per_token": 0.8603774066208746
+          },
+          "pf_rest_of_line": {
+            "mattr_contribution": 0.021460030780372945,
+            "token_window_share": 0.02227593699076589,
+            "distinct_credit_per_token": 0.9633727546126942
+          },
+          "nonpf_rest_of_line": {
+            "mattr_contribution": 0.13067633832761455,
+            "token_window_share": 0.16894350896252036,
+            "distinct_credit_per_token": 0.7734913234021008
+          },
+          "pf_later_lines": {
+            "mattr_contribution": 0.005882672460619232,
+            "token_window_share": 0.0061352525801195,
+            "distinct_credit_per_token": 0.9588313413014614
+          },
+          "nonpf_later_lines": {
+            "mattr_contribution": 0.5931733012747392,
+            "token_window_share": 0.783188484519283,
+            "distinct_credit_per_token": 0.7573825624349239
+          }
+        },
+        "rolling_line_change": {
+          "paragraph_first": {
+            "lines": 71,
+            "bifolia": 2,
+            "means": {
+              "before": 0.7660563380281691,
+              "after": 0.775492957746479,
+              "net_gain": 0.009436619718309862,
+              "pf_gain": 0.0046478873239436625,
+              "nonpf_gain": 0.004788732394366197,
+              "opener_gain": 0.0018309859154929577,
+              "pf_opener": 0.0016901408450704224,
+              "nonpf_opener": 0.00014084507042253522,
+              "pf_rest_of_line": 0.00295774647887324,
+              "nonpf_rest_of_line": 0.0046478873239436625,
+              "pf_later_lines": 0.0,
+              "nonpf_later_lines": 0.0
+            },
+            "ci95_bifolium_bootstrap": {
+              "net_gain": [
+                0.008974358974358975,
+                0.010000000000000004
+              ],
+              "pf_gain": [
+                0.003846153846153847,
+                0.0056250000000000015
+              ],
+              "nonpf_gain": [
+                0.004375,
+                0.005128205128205128
+              ]
+            }
+          },
+          "paragraph_first_with_pf": {
+            "lines": 59,
+            "bifolia": 2,
+            "means": {
+              "before": 0.7662711864406782,
+              "after": 0.777627118644068,
+              "net_gain": 0.011355932203389832,
+              "pf_gain": 0.00559322033898305,
+              "nonpf_gain": 0.005762711864406779,
+              "opener_gain": 0.002711864406779661,
+              "pf_opener": 0.002033898305084746,
+              "nonpf_opener": 0.0006779661016949153,
+              "pf_rest_of_line": 0.0035593220338983053,
+              "nonpf_rest_of_line": 0.005084745762711865,
+              "pf_later_lines": 0.0,
+              "nonpf_later_lines": 0.0
+            },
+            "ci95_bifolium_bootstrap": {
+              "net_gain": [
+                0.0103125,
+                0.012592592592592596
+              ],
+              "pf_gain": [
+                0.004687500000000001,
+                0.006666666666666669
+              ],
+              "nonpf_gain": [
+                0.005625000000000001,
+                0.005925925925925925
+              ]
+            }
+          },
+          "paragraph_first_without_pf": {
+            "lines": 12,
+            "bifolia": 2,
+            "means": {
+              "before": 0.765,
+              "after": 0.765,
+              "net_gain": 4.336808689942018e-19,
+              "pf_gain": 0.0,
+              "nonpf_gain": 4.336808689942018e-19,
+              "opener_gain": -0.0025,
+              "pf_opener": 0.0,
+              "nonpf_opener": -0.0025,
+              "pf_rest_of_line": 0.0,
+              "nonpf_rest_of_line": 0.0025000000000000005,
+              "pf_later_lines": 0.0,
+              "nonpf_later_lines": 0.0
+            },
+            "ci95_bifolium_bootstrap": {
+              "net_gain": [
+                -0.003999999999999998,
+                0.0028571428571428567
+              ],
+              "pf_gain": [
+                0.0,
+                0.0
+              ],
+              "nonpf_gain": [
+                -0.003999999999999998,
+                0.0028571428571428567
+              ]
+            }
+          },
+          "all_pf_lines": {
+            "lines": 76,
+            "bifolia": 2,
+            "means": {
+              "before": 0.7701315789473685,
+              "after": 0.7792105263157896,
+              "net_gain": 0.009078947368421053,
+              "pf_gain": 0.005,
+              "nonpf_gain": 0.004078947368421053,
+              "opener_gain": 0.002105263157894737,
+              "pf_opener": 0.0015789473684210528,
+              "nonpf_opener": 0.0005263157894736842,
+              "pf_rest_of_line": 0.0027631578947368424,
+              "nonpf_rest_of_line": 0.003947368421052632,
+              "pf_later_lines": 0.0006578947368421052,
+              "nonpf_later_lines": -0.000394736842105263
+            },
+            "ci95_bifolium_bootstrap": {
+              "net_gain": [
+                0.00878048780487805,
+                0.00942857142857143
+              ],
+              "pf_gain": [
+                0.004390243902439026,
+                0.005714285714285716
+              ],
+              "nonpf_gain": [
+                0.003714285714285714,
+                0.004390243902439024
+              ]
+            }
+          }
+        },
+        "nonpf_after_opener_on_pf_bearing_lines": {
+          "distinct_credit_per_token": 0.7784713133056833,
+          "token_window_exposures": 50105,
+          "mattr_contribution": 0.10593510362080734,
+          "later_line_credit_per_token": 0.7573825624349239,
+          "difference": 0.021088750870759454
+        },
+        "nonpf_after_opener_vs_later_lines": {
+          "opening_line_credit_per_token": 0.7734913234021008,
+          "later_line_credit_per_token": 0.7573825624349239,
+          "difference": 0.01610876096717695
+        }
+      },
+      "4a": {
+        "opening_lines": {
+          "lines": 90,
+          "tokens": 786,
+          "counts": {
+            "pf_opener": 52,
+            "nonpf_opener": 38,
+            "pf_rest_of_line": 119,
+            "nonpf_rest_of_line": 577
+          },
+          "original_mattr": 0.7144421272158499,
+          "after_removing_selected_lines": 0.7017985490129914,
+          "total_loss": 0.012643578202858441,
+          "allocation": {
+            "pf_opener": 0.0032356773781291124,
+            "nonpf_opener": 0.0021772620187464247,
+            "pf_rest_of_line": 0.006240264129413938,
+            "nonpf_rest_of_line": 0.000990374676568965
+          },
+          "pf_loss": 0.009475941507543051,
+          "nonpf_loss": 0.0031676366953153896,
+          "opener_loss": 0.005412939396875537,
+          "rest_of_line_loss": 0.007230638805982904,
+          "pf_share_of_loss": 0.7494667534385752,
+          "opener_share_of_loss": 0.42811768235449266,
+          "removal_order_ranges": {
+            "pf_opener": [
+              0.002954362615939954,
+              0.0035250837015092795
+            ],
+            "nonpf_opener": [
+              0.0020301421971232747,
+              0.002322155094301115
+            ],
+            "pf_rest_of_line": [
+              0.005820653148515986,
+              0.006664897894054556
+            ],
+            "nonpf_rest_of_line": [
+              0.0005161167856021498,
+              0.0014702086745854714
+            ]
+          },
+          "ablations": {
+            "0": 0.7144421272158499,
+            "1": 0.7114877645999099,
+            "2": 0.7124119850187266,
+            "3": 0.7094247319945644,
+            "4": 0.7086214740673339,
+            "5": 0.7054020177315805,
+            "6": 0.7065192190359976,
+            "7": 0.7032687576875769,
+            "8": 0.7139260104302477,
+            "9": 0.7107215647600263,
+            "10": 0.7117005575598557,
+            "11": 0.708463446907046,
+            "12": 0.7076117666611268,
+            "13": 0.7041207041072925,
+            "14": 0.7053236327145007,
+            "15": 0.7017985490129914
+          }
+        },
+        "pf_bearing_opening_lines": {
+          "lines": 71,
+          "tokens": 646,
+          "counts": {
+            "pf_opener": 52,
+            "nonpf_opener": 19,
+            "pf_rest_of_line": 119,
+            "nonpf_rest_of_line": 456
+          },
+          "original_mattr": 0.7144421272158499,
+          "after_removing_selected_lines": 0.7025729355529916,
+          "total_loss": 0.01186919166285827,
+          "allocation": {
+            "pf_opener": 0.0031973542787862752,
+            "nonpf_opener": 0.001202078232178975,
+            "pf_rest_of_line": 0.006167064698341995,
+            "nonpf_rest_of_line": 0.0013026944535510232
+          },
+          "pf_loss": 0.00936441897712827,
+          "nonpf_loss": 0.002504772685729998,
+          "opener_loss": 0.00439943251096525,
+          "rest_of_line_loss": 0.007469759151893019,
+          "pf_share_of_loss": 0.7889685534720892,
+          "opener_share_of_loss": 0.37065982553236526,
+          "removal_order_ranges": {
+            "pf_opener": [
+              0.002954362615939954,
+              0.0034460217929799253
+            ],
+            "nonpf_opener": [
+              0.0011346877177919046,
+              0.0012703112429334196
+            ],
+            "pf_rest_of_line": [
+              0.005820653148515986,
+              0.006520177929064674
+            ],
+            "nonpf_rest_of_line": [
+              0.0009756097154502985,
+              0.0016367839012472185
+            ]
+          },
+          "ablations": {
+            "0": 0.7144421272158499,
+            "1": 0.7114877645999099,
+            "2": 0.713307439498058,
+            "3": 0.7103342366757001,
+            "4": 0.7086214740673339,
+            "5": 0.7054020177315805,
+            "6": 0.7074448669201521,
+            "7": 0.7042097194542388,
+            "8": 0.7134665175003996,
+            "9": 0.7103190975020145,
+            "10": 0.7122571336966976,
+            "11": 0.7090931134820563,
+            "12": 0.7072710980775497,
+            "13": 0.703843246795925,
+            "14": 0.7060189573459715,
+            "15": 0.7025729355529916
+          }
+        },
+        "fixed_windows": {
+          "pf_opener": {
+            "mattr_contribution": 0.007553254878593773,
+            "token_window_share": 0.00768955757485476,
+            "distinct_credit_per_token": 0.9822743122820612
+          },
+          "nonpf_opener": {
+            "mattr_contribution": 0.0052363573166493045,
+            "token_window_share": 0.005431252793088038,
+            "distinct_credit_per_token": 0.9641159261290945
+          },
+          "pf_rest_of_line": {
+            "mattr_contribution": 0.016089279507423376,
+            "token_window_share": 0.017138388201996126,
+            "distinct_credit_per_token": 0.9387860350572196
+          },
+          "nonpf_rest_of_line": {
+            "mattr_contribution": 0.061543193383242795,
+            "token_window_share": 0.08414419782511545,
+            "distinct_credit_per_token": 0.7314015104303878
+          },
+          "pf_later_lines": {
+            "mattr_contribution": 0.009897090222950492,
+            "token_window_share": 0.01037539103232534,
+            "distinct_credit_per_token": 0.9539004546542232
+          },
+          "nonpf_later_lines": {
+            "mattr_contribution": 0.6141229519069958,
+            "token_window_share": 0.8752212125726203,
+            "distinct_credit_per_token": 0.7016774080484707
+          }
+        },
+        "rolling_line_change": {
+          "paragraph_first": {
+            "lines": 88,
+            "bifolia": 5,
+            "means": {
+              "before": 0.7203409090909091,
+              "after": 0.729090909090909,
+              "net_gain": 0.00875,
+              "pf_gain": 0.0057954545454545455,
+              "nonpf_gain": 0.0029545454545454554,
+              "opener_gain": 0.0036363636363636372,
+              "pf_opener": 0.002272727272727273,
+              "nonpf_opener": 0.0013636363636363635,
+              "pf_rest_of_line": 0.003522727272727273,
+              "nonpf_rest_of_line": 0.001590909090909091,
+              "pf_later_lines": 0.0,
+              "nonpf_later_lines": 0.0
+            },
+            "ci95_bifolium_bootstrap": {
+              "net_gain": [
+                0.004696969696969697,
+                0.011539062500000004
+              ],
+              "pf_gain": [
+                0.0036111111111111114,
+                0.007674418604651162
+              ],
+              "nonpf_gain": [
+                -0.000769230769230769,
+                0.005918367346938775
+              ]
+            }
+          },
+          "paragraph_first_with_pf": {
+            "lines": 69,
+            "bifolia": 5,
+            "means": {
+              "before": 0.7260869565217392,
+              "after": 0.7391304347826086,
+              "net_gain": 0.013043478260869568,
+              "pf_gain": 0.007391304347826087,
+              "nonpf_gain": 0.005652173913043478,
+              "opener_gain": 0.004202898550724638,
+              "pf_opener": 0.002898550724637681,
+              "nonpf_opener": 0.0013043478260869564,
+              "pf_rest_of_line": 0.004492753623188406,
+              "nonpf_rest_of_line": 0.004347826086956523,
+              "pf_later_lines": 0.0,
+              "nonpf_later_lines": 0.0
+            },
+            "ci95_bifolium_bootstrap": {
+              "net_gain": [
+                0.007499007936507937,
+                0.018000000000000002
+              ],
+              "pf_gain": [
+                0.004426229508196722,
+                0.011
+              ],
+              "nonpf_gain": [
+                0.0016000000000000003,
+                0.008591549295774648
+              ]
+            }
+          },
+          "paragraph_first_without_pf": {
+            "lines": 19,
+            "bifolia": 4,
+            "means": {
+              "before": 0.6994736842105264,
+              "after": 0.6926315789473685,
+              "net_gain": -0.006842105263157895,
+              "pf_gain": 0.0,
+              "nonpf_gain": -0.006842105263157895,
+              "opener_gain": 0.0015789473684210526,
+              "pf_opener": 0.0,
+              "nonpf_opener": 0.0015789473684210526,
+              "pf_rest_of_line": 0.0,
+              "nonpf_rest_of_line": -0.008421052631578945,
+              "pf_later_lines": 0.0,
+              "nonpf_later_lines": 0.0
+            },
+            "ci95_bifolium_bootstrap": {
+              "net_gain": [
+                -0.012857142857142859,
+                -0.0031249999999999993
+              ],
+              "pf_gain": [
+                0.0,
+                0.0
+              ],
+              "nonpf_gain": [
+                -0.012857142857142859,
+                -0.0031249999999999993
+              ]
+            }
+          },
+          "all_pf_lines": {
+            "lines": 130,
+            "bifolia": 5,
+            "means": {
+              "before": 0.7186153846153847,
+              "after": 0.7286923076923076,
+              "net_gain": 0.010076923076923077,
+              "pf_gain": 0.005923076923076923,
+              "nonpf_gain": 0.004153846153846154,
+              "opener_gain": 0.002230769230769231,
+              "pf_opener": 0.0015384615384615385,
+              "nonpf_opener": 0.0006923076923076923,
+              "pf_rest_of_line": 0.0023846153846153848,
+              "nonpf_rest_of_line": 0.0023076923076923075,
+              "pf_later_lines": 0.002,
+              "nonpf_later_lines": 0.0011538461538461533
+            },
+            "ci95_bifolium_bootstrap": {
+              "net_gain": [
+                0.005267857142857142,
+                0.014041014449127037
+              ],
+              "pf_gain": [
+                0.0038281250000000004,
+                0.00827912871888282
+              ],
+              "nonpf_gain": [
+                0.0008333333333333339,
+                0.006554054054054055
+              ]
+            }
+          }
+        },
+        "nonpf_after_opener_on_pf_bearing_lines": {
+          "distinct_credit_per_token": 0.7364293159652426,
+          "token_window_exposures": 44456,
+          "mattr_contribution": 0.04876910721071179,
+          "later_line_credit_per_token": 0.7016774080484707,
+          "difference": 0.03475190791677196
+        },
+        "nonpf_after_opener_vs_later_lines": {
+          "opening_line_credit_per_token": 0.7314015104303878,
+          "later_line_credit_per_token": 0.7016774080484707,
+          "difference": 0.02972410238191714
+        }
+      }
+    },
+    "ke": {
+      "3c": {
+        "opening_lines": {
+          "lines": 244,
+          "tokens": 2525,
+          "counts": {
+            "pf_opener": 146,
+            "nonpf_opener": 98,
+            "pf_rest_of_line": 424,
+            "nonpf_rest_of_line": 1857
+          },
+          "original_mattr": 0.8433083400622909,
+          "after_removing_selected_lines": 0.8141910807291667,
+          "total_loss": 0.029117259333124257,
+          "allocation": {
+            "pf_opener": 0.005106075585848441,
+            "nonpf_opener": 0.003270954855051976,
+            "pf_rest_of_line": 0.012971615632847681,
+            "nonpf_rest_of_line": 0.007768613259376158
+          },
+          "pf_loss": 0.018077691218696124,
+          "nonpf_loss": 0.011039568114428133,
+          "opener_loss": 0.008377030440900417,
+          "rest_of_line_loss": 0.02074022889222384,
+          "pf_share_of_loss": 0.6208582686946313,
+          "opener_share_of_loss": 0.2876998259025902,
+          "removal_order_ranges": {
+            "pf_opener": [
+              0.004056902774950855,
+              0.006319253134108305
+            ],
+            "nonpf_opener": [
+              0.0026036381605292203,
+              0.004067490241675964
+            ],
+            "pf_rest_of_line": [
+              0.010788024719659006,
+              0.01536281695658237
+            ],
+            "nonpf_rest_of_line": [
+              0.005053789269572229,
+              0.010709556691155808
+            ]
+          },
+          "ablations": {
+            "0": 0.8433083400622909,
+            "1": 0.8392514372873401,
+            "2": 0.8407047019017617,
+            "3": 0.8365495548961425,
+            "4": 0.8325203153426319,
+            "5": 0.8279528336831707,
+            "6": 0.8295986252608322,
+            "7": 0.8249006374203225,
+            "8": 0.8382545507927187,
+            "9": 0.833019801980198,
+            "10": 0.8349746797736074,
+            "11": 0.829553897685749,
+            "12": 0.8243268628678773,
+            "13": 0.8182585709708426,
+            "14": 0.820510333863275,
+            "15": 0.8141910807291667
+          }
+        },
+        "pf_bearing_opening_lines": {
+          "lines": 215,
+          "tokens": 2254,
+          "counts": {
+            "pf_opener": 146,
+            "nonpf_opener": 69,
+            "pf_rest_of_line": 424,
+            "nonpf_rest_of_line": 1615
+          },
+          "original_mattr": 0.8433083400622909,
+          "after_removing_selected_lines": 0.8178565861262665,
+          "total_loss": 0.02545175393602439,
+          "allocation": {
+            "pf_opener": 0.004949349150209827,
+            "nonpf_opener": 0.002249803743338931,
+            "pf_rest_of_line": 0.012554803604187545,
+            "nonpf_rest_of_line": 0.005697797438288086
+          },
+          "pf_loss": 0.017504152754397373,
+          "nonpf_loss": 0.007947601181627018,
+          "opener_loss": 0.007199152893548758,
+          "rest_of_line_loss": 0.018252601042475634,
+          "pf_share_of_loss": 0.6877385660098658,
+          "opener_share_of_loss": 0.2828548834647927,
+          "removal_order_ranges": {
+            "pf_opener": [
+              0.004056902774950855,
+              0.0059553327885329965
+            ],
+            "nonpf_opener": [
+              0.001803688899500222,
+              0.0027726550828636176
+            ],
+            "pf_rest_of_line": [
+              0.010788024719659006,
+              0.01446392856886436
+            ],
+            "nonpf_rest_of_line": [
+              0.0035805260560533014,
+              0.007966577011965126
+            ]
+          },
+          "ablations": {
+            "0": 0.8433083400622909,
+            "1": 0.8392514372873401,
+            "2": 0.8415046511627907,
+            "3": 0.8373752070026024,
+            "4": 0.8325203153426319,
+            "5": 0.8279528336831707,
+            "6": 0.8304867906066536,
+            "7": 0.8258231631382317,
+            "8": 0.8397278140062376,
+            "9": 0.8346902142443544,
+            "10": 0.8374817465998569,
+            "11": 0.8323205146951309,
+            "12": 0.8264253393665159,
+            "13": 0.8206292412091302,
+            "14": 0.8238119189147995,
+            "15": 0.8178565861262665
+          }
+        },
+        "fixed_windows": {
+          "pf_opener": {
+            "mattr_contribution": 0.016435575037489908,
+            "token_window_share": 0.016636290229553582,
+            "distinct_credit_per_token": 0.9879350991540702
+          },
+          "nonpf_opener": {
+            "mattr_contribution": 0.011026069904256548,
+            "token_window_share": 0.011206598223555197,
+            "distinct_credit_per_token": 0.9838908903757079
+          },
+          "pf_rest_of_line": {
+            "mattr_contribution": 0.047000807474910505,
+            "token_window_share": 0.048667666397508365,
+            "distinct_credit_per_token": 0.9657501777672415
+          },
+          "nonpf_rest_of_line": {
+            "mattr_contribution": 0.18206746260622253,
+            "token_window_share": 0.21161610335678857,
+            "distinct_credit_per_token": 0.8603667666030761
+          },
+          "pf_later_lines": {
+            "mattr_contribution": 0.009357480678278926,
+            "token_window_share": 0.0095581958703426,
+            "distinct_credit_per_token": 0.9790007241129616
+          },
+          "nonpf_later_lines": {
+            "mattr_contribution": 0.5774209443611347,
+            "token_window_share": 0.7023151459222517,
+            "distinct_credit_per_token": 0.8221678654002099
+          }
+        },
+        "rolling_line_change": {
+          "paragraph_first": {
+            "lines": 241,
+            "bifolia": 5,
+            "means": {
+              "before": 0.843941908713693,
+              "after": 0.8511618257261411,
+              "net_gain": 0.007219917012448133,
+              "pf_gain": 0.0053526970954356845,
+              "nonpf_gain": 0.0018672199170124484,
+              "opener_gain": 0.002448132780082988,
+              "pf_opener": 0.0014937759336099584,
+              "nonpf_opener": 0.000954356846473029,
+              "pf_rest_of_line": 0.0038589211618257264,
+              "nonpf_rest_of_line": 0.0009128630705394193,
+              "pf_later_lines": 0.0,
+              "nonpf_later_lines": 0.0
+            },
+            "ci95_bifolium_bootstrap": {
+              "net_gain": [
+                0.006346863468634687,
+                0.008432126696832585
+              ],
+              "pf_gain": [
+                0.004535714285714287,
+                0.006785714285714286
+              ],
+              "nonpf_gain": [
+                0.0010396039603960397,
+                0.002720588235294117
+              ]
+            }
+          },
+          "paragraph_first_with_pf": {
+            "lines": 212,
+            "bifolia": 5,
+            "means": {
+              "before": 0.844622641509434,
+              "after": 0.851933962264151,
+              "net_gain": 0.007311320754716981,
+              "pf_gain": 0.0060849056603773585,
+              "nonpf_gain": 0.0012264150943396227,
+              "opener_gain": 0.002405660377358491,
+              "pf_opener": 0.0016981132075471698,
+              "nonpf_opener": 0.0007075471698113207,
+              "pf_rest_of_line": 0.00438679245283019,
+              "nonpf_rest_of_line": 0.0005188679245283019,
+              "pf_later_lines": 0.0,
+              "nonpf_later_lines": 0.0
+            },
+            "ci95_bifolium_bootstrap": {
+              "net_gain": [
+                0.00618421052631579,
+                0.009101856375183199
+              ],
+              "pf_gain": [
+                0.0048863636363636375,
+                0.008136645962732919
+              ],
+              "nonpf_gain": [
+                0.0001036269430051814,
+                0.002164502164502164
+              ]
+            }
+          },
+          "paragraph_first_without_pf": {
+            "lines": 29,
+            "bifolia": 5,
+            "means": {
+              "before": 0.8389655172413792,
+              "after": 0.8455172413793105,
+              "net_gain": 0.006551724137931035,
+              "pf_gain": 0.0,
+              "nonpf_gain": 0.006551724137931035,
+              "opener_gain": 0.002758620689655172,
+              "pf_opener": 0.0,
+              "nonpf_opener": 0.002758620689655172,
+              "pf_rest_of_line": 0.0,
+              "nonpf_rest_of_line": 0.003793103448275862,
+              "pf_later_lines": 0.0,
+              "nonpf_later_lines": 0.0
+            },
+            "ci95_bifolium_bootstrap": {
+              "net_gain": [
+                0.003125,
+                0.008292682926829267
+              ],
+              "pf_gain": [
+                0.0,
+                0.0
+              ],
+              "nonpf_gain": [
+                0.003125,
+                0.008292682926829267
+              ]
+            }
+          },
+          "all_pf_lines": {
+            "lines": 275,
+            "bifolia": 5,
+            "means": {
+              "before": 0.8420000000000001,
+              "after": 0.8482545454545454,
+              "net_gain": 0.006254545454545455,
+              "pf_gain": 0.005418181818181819,
+              "nonpf_gain": 0.0008363636363636367,
+              "opener_gain": 0.0018545454545454546,
+              "pf_opener": 0.001309090909090909,
+              "nonpf_opener": 0.0005454545454545456,
+              "pf_rest_of_line": 0.003381818181818182,
+              "nonpf_rest_of_line": 0.00040000000000000013,
+              "pf_later_lines": 0.0007272727272727273,
+              "nonpf_later_lines": -0.00010909090909090901
+            },
+            "ci95_bifolium_bootstrap": {
+              "net_gain": [
+                0.004945454545454546,
+                0.007529411764705882
+              ],
+              "pf_gain": [
+                0.004580645161290324,
+                0.006641791044776121
+              ],
+              "nonpf_gain": [
+                -0.00014981273408239693,
+                0.001771889950760709
+              ]
+            }
+          }
+        },
+        "nonpf_after_opener_on_pf_bearing_lines": {
+          "distinct_credit_per_token": 0.8593330057987771,
+          "token_window_exposures": 159925,
+          "mattr_contribution": 0.15852904712466193,
+          "later_line_credit_per_token": 0.8221678654002099,
+          "difference": 0.03716514039856722
+        },
+        "nonpf_after_opener_vs_later_lines": {
+          "opening_line_credit_per_token": 0.8603667666030761,
+          "later_line_credit_per_token": 0.8221678654002099,
+          "difference": 0.038198901202866176
+        }
+      },
+      "4c": {
+        "opening_lines": {
+          "lines": 74,
+          "tokens": 800,
+          "counts": {
+            "pf_opener": 47,
+            "nonpf_opener": 27,
+            "pf_rest_of_line": 88,
+            "nonpf_rest_of_line": 638
+          },
+          "original_mattr": 0.7705893536121673,
+          "after_removing_selected_lines": 0.7533448993754337,
+          "total_loss": 0.017244454236733597,
+          "allocation": {
+            "pf_opener": 0.00525678570761239,
+            "nonpf_opener": 0.001307429583077363,
+            "pf_rest_of_line": 0.008492786708315186,
+            "nonpf_rest_of_line": 0.0021874522377286583
+          },
+          "pf_loss": 0.013749572415927575,
+          "nonpf_loss": 0.0034948818208060213,
+          "opener_loss": 0.006564215290689753,
+          "rest_of_line_loss": 0.010680238946043846,
+          "pf_share_of_loss": 0.7973329991875687,
+          "opener_share_of_loss": 0.38065659838087923,
+          "removal_order_ranges": {
+            "pf_opener": [
+              0.0045315819477931285,
+              0.006084940160243968
+            ],
+            "nonpf_opener": [
+              0.0011529651032753385,
+              0.001474626234741594
+            ],
+            "pf_rest_of_line": [
+              0.007478613489740993,
+              0.009604595574061237
+            ],
+            "nonpf_rest_of_line": [
+              0.0008423102481724953,
+              0.0036266915336572447
+            ]
+          },
+          "ablations": {
+            "0": 0.7705893536121673,
+            "1": 0.7660577716643742,
+            "2": 0.769436388508892,
+            "3": 0.7648586474501109,
+            "4": 0.7631107401224263,
+            "5": 0.758274598252044,
+            "6": 0.7618783291281188,
+            "7": 0.7569715909090909,
+            "8": 0.7697470433639948,
+            "9": 0.764320987654321,
+            "10": 0.768435531985416,
+            "11": 0.7629494949494949,
+            "12": 0.7608186738836266,
+            "13": 0.7548195256101753,
+            "14": 0.7594298395356777,
+            "15": 0.7533448993754337
+          }
+        },
+        "pf_bearing_opening_lines": {
+          "lines": 62,
+          "tokens": 667,
+          "counts": {
+            "pf_opener": 47,
+            "nonpf_opener": 15,
+            "pf_rest_of_line": 88,
+            "nonpf_rest_of_line": 517
+          },
+          "original_mattr": 0.7705893536121673,
+          "after_removing_selected_lines": 0.7524709784411276,
+          "total_loss": 0.018118375171039647,
+          "allocation": {
+            "pf_opener": 0.0051428141511888435,
+            "nonpf_opener": 0.0011483053342201768,
+            "pf_rest_of_line": 0.008341790648631728,
+            "nonpf_rest_of_line": 0.003485465036998897
+          },
+          "pf_loss": 0.013484604799820572,
+          "nonpf_loss": 0.0046337703712190734,
+          "opener_loss": 0.00629111948540902,
+          "rest_of_line_loss": 0.011827255685630627,
+          "pf_share_of_loss": 0.7442502251181067,
+          "opener_share_of_loss": 0.3472231602458881,
+          "removal_order_ranges": {
+            "pf_opener": [
+              0.0045315819477931285,
+              0.005820987594143401
+            ],
+            "nonpf_opener": [
+              0.0010556748556905804,
+              0.001251793836100079
+            ],
+            "pf_rest_of_line": [
+              0.007478613489740993,
+              0.00927249561623622
+            ],
+            "nonpf_rest_of_line": [
+              0.0023808228064801096,
+              0.0046581268816356936
+            ]
+          },
+          "ablations": {
+            "0": 0.7705893536121673,
+            "1": 0.7660577716643742,
+            "2": 0.7695336787564767,
+            "3": 0.7649779005524862,
+            "4": 0.7631107401224263,
+            "5": 0.758274598252044,
+            "6": 0.7620033528918693,
+            "7": 0.7571291053227633,
+            "8": 0.7682085308056872,
+            "9": 0.7629217447081462,
+            "10": 0.7670698412698412,
+            "11": 0.7617434740573639,
+            "12": 0.7594995125121872,
+            "13": 0.7537227722772277,
+            "14": 0.758291966035271,
+            "15": 0.7524709784411276
+          }
+        },
+        "fixed_windows": {
+          "pf_opener": {
+            "mattr_contribution": 0.012619500271591526,
+            "token_window_share": 0.012696903856599674,
+            "distinct_credit_per_token": 0.993903743315508
+          },
+          "nonpf_opener": {
+            "mattr_contribution": 0.005816076493968921,
+            "token_window_share": 0.0067599130907115695,
+            "distinct_credit_per_token": 0.8603774066208746
+          },
+          "pf_rest_of_line": {
+            "mattr_contribution": 0.021743617599130908,
+            "token_window_share": 0.02227593699076589,
+            "distinct_credit_per_token": 0.9761033894172153
+          },
+          "nonpf_rest_of_line": {
+            "mattr_contribution": 0.13083205080271862,
+            "token_window_share": 0.16894350896252036,
+            "distinct_credit_per_token": 0.7744130070824049
+          },
+          "pf_later_lines": {
+            "mattr_contribution": 0.006108093427485062,
+            "token_window_share": 0.0061352525801195,
+            "distinct_credit_per_token": 0.9955732625055335
+          },
+          "nonpf_later_lines": {
+            "mattr_contribution": 0.593470015017271,
+            "token_window_share": 0.783188484519283,
+            "distinct_credit_per_token": 0.7577614159911197
+          }
+        },
+        "rolling_line_change": {
+          "paragraph_first": {
+            "lines": 71,
+            "bifolia": 2,
+            "means": {
+              "before": 0.7670422535211268,
+              "after": 0.7769014084507043,
+              "net_gain": 0.009859154929577467,
+              "pf_gain": 0.004788732394366197,
+              "nonpf_gain": 0.005070422535211268,
+              "opener_gain": 0.0016901408450704224,
+              "pf_opener": 0.0015492957746478873,
+              "nonpf_opener": 0.00014084507042253522,
+              "pf_rest_of_line": 0.0032394366197183106,
+              "nonpf_rest_of_line": 0.004929577464788733,
+              "pf_later_lines": 0.0,
+              "nonpf_later_lines": 0.0
+            },
+            "ci95_bifolium_bootstrap": {
+              "net_gain": [
+                0.009230769230769232,
+                0.010625000000000002
+              ],
+              "pf_gain": [
+                0.004102564102564103,
+                0.0056250000000000015
+              ],
+              "nonpf_gain": [
+                0.005,
+                0.005128205128205128
+              ]
+            }
+          },
+          "paragraph_first_with_pf": {
+            "lines": 59,
+            "bifolia": 2,
+            "means": {
+              "before": 0.7672881355932203,
+              "after": 0.7791525423728813,
+              "net_gain": 0.011864406779661016,
+              "pf_gain": 0.005762711864406779,
+              "nonpf_gain": 0.006101694915254237,
+              "opener_gain": 0.0025423728813559325,
+              "pf_opener": 0.0018644067796610168,
+              "nonpf_opener": 0.0006779661016949153,
+              "pf_rest_of_line": 0.0038983050847457633,
+              "nonpf_rest_of_line": 0.005423728813559322,
+              "pf_later_lines": 0.0,
+              "nonpf_later_lines": 0.0
+            },
+            "ci95_bifolium_bootstrap": {
+              "net_gain": [
+                0.010625,
+                0.013333333333333332
+              ],
+              "pf_gain": [
+                0.005000000000000001,
+                0.006666666666666669
+              ],
+              "nonpf_gain": [
+                0.005625000000000001,
+                0.006666666666666666
+              ]
+            }
+          },
+          "paragraph_first_without_pf": {
+            "lines": 12,
+            "bifolia": 2,
+            "means": {
+              "before": 0.7658333333333333,
+              "after": 0.7658333333333333,
+              "net_gain": 4.336808689942018e-19,
+              "pf_gain": 0.0,
+              "nonpf_gain": 4.336808689942018e-19,
+              "opener_gain": -0.0025,
+              "pf_opener": 0.0,
+              "nonpf_opener": -0.0025,
+              "pf_rest_of_line": 0.0,
+              "nonpf_rest_of_line": 0.0025000000000000005,
+              "pf_later_lines": 0.0,
+              "nonpf_later_lines": 0.0
+            },
+            "ci95_bifolium_bootstrap": {
+              "net_gain": [
+                -0.003999999999999998,
+                0.0028571428571428567
+              ],
+              "pf_gain": [
+                0.0,
+                0.0
+              ],
+              "nonpf_gain": [
+                -0.003999999999999998,
+                0.0028571428571428567
+              ]
+            }
+          },
+          "all_pf_lines": {
+            "lines": 76,
+            "bifolia": 2,
+            "means": {
+              "before": 0.7713157894736843,
+              "after": 0.7807894736842106,
+              "net_gain": 0.009473684210526316,
+              "pf_gain": 0.005394736842105264,
+              "nonpf_gain": 0.004078947368421053,
+              "opener_gain": 0.0019736842105263163,
+              "pf_opener": 0.0014473684210526317,
+              "nonpf_opener": 0.0005263157894736842,
+              "pf_rest_of_line": 0.0030263157894736843,
+              "nonpf_rest_of_line": 0.004210526315789474,
+              "pf_later_lines": 0.0009210526315789475,
+              "nonpf_later_lines": -0.0006578947368421051
+            },
+            "ci95_bifolium_bootstrap": {
+              "net_gain": [
+                0.00926829268292683,
+                0.009714285714285717
+              ],
+              "pf_gain": [
+                0.004878048780487807,
+                0.006000000000000002
+              ],
+              "nonpf_gain": [
+                0.0037142857142857142,
+                0.004390243902439024
+              ]
+            }
+          }
+        },
+        "nonpf_after_opener_on_pf_bearing_lines": {
+          "distinct_credit_per_token": 0.7796155770185537,
+          "token_window_exposures": 50105,
+          "mattr_contribution": 0.10609081609591155,
+          "later_line_credit_per_token": 0.7577614159911197,
+          "difference": 0.021854161027433983
+        },
+        "nonpf_after_opener_vs_later_lines": {
+          "opening_line_credit_per_token": 0.7744130070824049,
+          "later_line_credit_per_token": 0.7577614159911197,
+          "difference": 0.016651591091285223
+        }
+      },
+      "4a": {
+        "opening_lines": {
+          "lines": 90,
+          "tokens": 786,
+          "counts": {
+            "pf_opener": 52,
+            "nonpf_opener": 38,
+            "pf_rest_of_line": 119,
+            "nonpf_rest_of_line": 577
+          },
+          "original_mattr": 0.715145240577983,
+          "after_removing_selected_lines": 0.702206850008436,
+          "total_loss": 0.012938390569547042,
+          "allocation": {
+            "pf_opener": 0.003318500243583017,
+            "nonpf_opener": 0.002182449601520059,
+            "pf_rest_of_line": 0.006501306441128368,
+            "nonpf_rest_of_line": 0.0009361342833155983
+          },
+          "pf_loss": 0.009819806684711385,
+          "nonpf_loss": 0.0031185838848356573,
+          "opener_loss": 0.005500949845103076,
+          "rest_of_line_loss": 0.007437440724443967,
+          "pf_share_of_loss": 0.758966629730916,
+          "opener_share_of_loss": 0.4251649241483408,
+          "removal_order_ranges": {
+            "pf_opener": [
+              0.0030254387464261345,
+              0.003621883893554334
+            ],
+            "nonpf_opener": [
+              0.0020276375817283032,
+              0.002339671366249685
+            ],
+            "pf_rest_of_line": [
+              0.0060657743966060496,
+              0.0069463091050274706
+            ],
+            "nonpf_rest_of_line": [
+              0.0004402210212685054,
+              0.001443211492179075
+            ]
+          },
+          "ablations": {
+            "0": 0.715145240577983,
+            "1": 0.7121198018315569,
+            "2": 0.7131176029962547,
+            "3": 0.7100588857013438,
+            "4": 0.709079466181377,
+            "5": 0.7057795781106695,
+            "6": 0.7069813910921293,
+            "7": 0.703650061500615,
+            "8": 0.7147050195567145,
+            "9": 0.7114201183431953,
+            "10": 0.7124745818301083,
+            "11": 0.7091531591134634,
+            "12": 0.7081302974904438,
+            "13": 0.7045465213746857,
+            "14": 0.7058287339019903,
+            "15": 0.702206850008436
+          }
+        },
+        "pf_bearing_opening_lines": {
+          "lines": 71,
+          "tokens": 646,
+          "counts": {
+            "pf_opener": 52,
+            "nonpf_opener": 19,
+            "pf_rest_of_line": 119,
+            "nonpf_rest_of_line": 456
+          },
+          "original_mattr": 0.715145240577983,
+          "after_removing_selected_lines": 0.7029965386517224,
+          "total_loss": 0.012148701926260608,
+          "allocation": {
+            "pf_opener": 0.0032803619111796225,
+            "nonpf_opener": 0.0011997404022578428,
+            "pf_rest_of_line": 0.006414054208967013,
+            "nonpf_rest_of_line": 0.0012545454038561292
+          },
+          "pf_loss": 0.009694416120146635,
+          "nonpf_loss": 0.002454285806113972,
+          "opener_loss": 0.004480102313437465,
+          "rest_of_line_loss": 0.007668599612823143,
+          "pf_share_of_loss": 0.7979795848963259,
+          "opener_share_of_loss": 0.3687720993263721,
+          "removal_order_ranges": {
+            "pf_opener": [
+              0.0030254387464261345,
+              0.0035421114545041155
+            ],
+            "nonpf_opener": [
+              0.001132692027041915,
+              0.0012689887883038375
+            ],
+            "pf_rest_of_line": [
+              0.0060657743966060496,
+              0.006770677643136991
+            ],
+            "nonpf_rest_of_line": [
+              0.0009243679553203599,
+              0.0015933739651716738
+            ]
+          },
+          "ablations": {
+            "0": 0.715145240577983,
+            "1": 0.7121198018315569,
+            "2": 0.7140125485509411,
+            "3": 0.7109680819030413,
+            "4": 0.709079466181377,
+            "5": 0.7057795781106695,
+            "6": 0.7079057034220533,
+            "7": 0.7045899126168941,
+            "8": 0.7142208726226627,
+            "9": 0.7109895245769541,
+            "10": 0.713015389547932,
+            "11": 0.7097672162948594,
+            "12": 0.7077875529488433,
+            "13": 0.7042655274400262,
+            "14": 0.7065386501062265,
+            "15": 0.7029965386517224
+          }
+        },
+        "fixed_windows": {
+          "pf_opener": {
+            "mattr_contribution": 0.007591985699389245,
+            "token_window_share": 0.00768955757485476,
+            "distinct_credit_per_token": 0.9873111197210384
+          },
+          "nonpf_opener": {
+            "mattr_contribution": 0.0052363573166493045,
+            "token_window_share": 0.005431252793088038,
+            "distinct_credit_per_token": 0.9641159261290945
+          },
+          "pf_rest_of_line": {
+            "mattr_contribution": 0.016218172983479127,
+            "token_window_share": 0.017138388201996126,
+            "distinct_credit_per_token": 0.9463067817305117
+          },
+          "nonpf_rest_of_line": {
+            "mattr_contribution": 0.06158755116806684,
+            "token_window_share": 0.08414419782511545,
+            "distinct_credit_per_token": 0.7319286743462676
+          },
+          "pf_later_lines": {
+            "mattr_contribution": 0.010102785639803366,
+            "token_window_share": 0.01037539103232534,
+            "distinct_credit_per_token": 0.9737257717157215
+          },
+          "nonpf_later_lines": {
+            "mattr_contribution": 0.6144083877706004,
+            "token_window_share": 0.8752212125726203,
+            "distinct_credit_per_token": 0.7020035380136775
+          }
+        },
+        "rolling_line_change": {
+          "paragraph_first": {
+            "lines": 88,
+            "bifolia": 5,
+            "means": {
+              "before": 0.7214772727272728,
+              "after": 0.7303409090909092,
+              "net_gain": 0.008863636363636363,
+              "pf_gain": 0.006022727272727273,
+              "nonpf_gain": 0.0028409090909090914,
+              "opener_gain": 0.0036363636363636372,
+              "pf_opener": 0.002272727272727273,
+              "nonpf_opener": 0.0013636363636363635,
+              "pf_rest_of_line": 0.0037500000000000003,
+              "nonpf_rest_of_line": 0.0014772727272727272,
+              "pf_later_lines": 0.0,
+              "nonpf_later_lines": 0.0
+            },
+            "ci95_bifolium_bootstrap": {
+              "net_gain": [
+                0.004696969696969697,
+                0.01153061224489796
+              ],
+              "pf_gain": [
+                0.0036111111111111114,
+                0.008191489361702126
+              ],
+              "nonpf_gain": [
+                -0.0008974358974358973,
+                0.005816326530612244
+              ]
+            }
+          },
+          "paragraph_first_with_pf": {
+            "lines": 69,
+            "bifolia": 5,
+            "means": {
+              "before": 0.727536231884058,
+              "after": 0.7407246376811593,
+              "net_gain": 0.013188405797101451,
+              "pf_gain": 0.007681159420289856,
+              "nonpf_gain": 0.0055072463768115944,
+              "opener_gain": 0.004202898550724638,
+              "pf_opener": 0.002898550724637681,
+              "nonpf_opener": 0.0013043478260869564,
+              "pf_rest_of_line": 0.004782608695652174,
+              "nonpf_rest_of_line": 0.004202898550724638,
+              "pf_later_lines": 0.0,
+              "nonpf_later_lines": 0.0
+            },
+            "ci95_bifolium_bootstrap": {
+              "net_gain": [
+                0.0074951923076923095,
+                0.018266666666666667
+              ],
+              "pf_gain": [
+                0.004426229508196722,
+                0.011727909482758635
+              ],
+              "nonpf_gain": [
+                0.0012000000000000003,
+                0.008585858585858586
+              ]
+            }
+          },
+          "paragraph_first_without_pf": {
+            "lines": 19,
+            "bifolia": 4,
+            "means": {
+              "before": 0.6994736842105264,
+              "after": 0.6926315789473685,
+              "net_gain": -0.006842105263157895,
+              "pf_gain": 0.0,
+              "nonpf_gain": -0.006842105263157895,
+              "opener_gain": 0.0015789473684210526,
+              "pf_opener": 0.0,
+              "nonpf_opener": 0.0015789473684210526,
+              "pf_rest_of_line": 0.0,
+              "nonpf_rest_of_line": -0.008421052631578945,
+              "pf_later_lines": 0.0,
+              "nonpf_later_lines": 0.0
+            },
+            "ci95_bifolium_bootstrap": {
+              "net_gain": [
+                -0.012857142857142859,
+                -0.0031249999999999993
+              ],
+              "pf_gain": [
+                0.0,
+                0.0
+              ],
+              "nonpf_gain": [
+                -0.012857142857142859,
+                -0.0031249999999999993
+              ]
+            }
+          },
+          "all_pf_lines": {
+            "lines": 130,
+            "bifolia": 5,
+            "means": {
+              "before": 0.7196923076923077,
+              "after": 0.7300000000000001,
+              "net_gain": 0.010307692307692306,
+              "pf_gain": 0.0062307692307692316,
+              "nonpf_gain": 0.004076923076923077,
+              "opener_gain": 0.002230769230769231,
+              "pf_opener": 0.0015384615384615385,
+              "nonpf_opener": 0.0006923076923076923,
+              "pf_rest_of_line": 0.0025384615384615385,
+              "nonpf_rest_of_line": 0.0022307692307692306,
+              "pf_later_lines": 0.002153846153846154,
+              "nonpf_later_lines": 0.0011538461538461537
+            },
+            "ci95_bifolium_bootstrap": {
+              "net_gain": [
+                0.005267857142857142,
+                0.014621212121212118
+              ],
+              "pf_gain": [
+                0.0040625,
+                0.008852459016393444
+              ],
+              "nonpf_gain": [
+                0.0005833333333333344,
+                0.006554054054054055
+              ]
+            }
+          }
+        },
+        "nonpf_after_opener_on_pf_bearing_lines": {
+          "distinct_credit_per_token": 0.7370147798160723,
+          "token_window_exposures": 44456,
+          "mattr_contribution": 0.04880787881945972,
+          "later_line_credit_per_token": 0.7020035380136775,
+          "difference": 0.03501124180239479
+        },
+        "nonpf_after_opener_vs_later_lines": {
+          "opening_line_credit_per_token": 0.7319286743462676,
+          "later_line_credit_per_token": 0.7020035380136775,
+          "difference": 0.029925136332590085
+        }
+      }
+    },
+    "t": {
+      "3c": {
+        "opening_lines": {
+          "lines": 244,
+          "tokens": 2525,
+          "counts": {
+            "pf_opener": 146,
+            "nonpf_opener": 98,
+            "pf_rest_of_line": 424,
+            "nonpf_rest_of_line": 1857
+          },
+          "original_mattr": 0.8397923635944169,
+          "after_removing_selected_lines": 0.8134212239583334,
+          "total_loss": 0.026371139636083507,
+          "allocation": {
+            "pf_opener": 0.005012205874099637,
+            "nonpf_opener": 0.0032718261307197456,
+            "pf_rest_of_line": 0.009880665543684775,
+            "nonpf_rest_of_line": 0.00820644208757935
+          },
+          "pf_loss": 0.014892871417784411,
+          "nonpf_loss": 0.011478268218299096,
+          "opener_loss": 0.008284032004819383,
+          "rest_of_line_loss": 0.018087107631264122,
+          "pf_share_of_loss": 0.5647412900353599,
+          "opener_share_of_loss": 0.3141324993586694,
+          "removal_order_ranges": {
+            "pf_opener": [
+              0.00405260060016599,
+              0.006141574133876504
+            ],
+            "nonpf_opener": [
+              0.0026088377514580374,
+              0.004084383218853405
+            ],
+            "pf_rest_of_line": [
+              0.008020380574404795,
+              0.011945706614139184
+            ],
+            "nonpf_rest_of_line": [
+              0.005818493952608361,
+              0.01082824485806455
+            ]
+          },
+          "ablations": {
+            "0": 0.8397923635944169,
+            "1": 0.8357397629942509,
+            "2": 0.8371835258429589,
+            "3": 0.833033827893175,
+            "4": 0.8317719830200121,
+            "5": 0.8273107791085319,
+            "6": 0.8288437461642323,
+            "7": 0.8242494688163979,
+            "8": 0.8339738696418085,
+            "9": 0.8288268826882689,
+            "10": 0.8307342865653857,
+            "11": 0.8253669305724726,
+            "12": 0.8233500313087038,
+            "13": 0.8175056071771868,
+            "14": 0.8195627980922099,
+            "15": 0.8134212239583334
+          }
+        },
+        "pf_bearing_opening_lines": {
+          "lines": 215,
+          "tokens": 2254,
+          "counts": {
+            "pf_opener": 146,
+            "nonpf_opener": 69,
+            "pf_rest_of_line": 424,
+            "nonpf_rest_of_line": 1615
+          },
+          "original_mattr": 0.8397923635944169,
+          "after_removing_selected_lines": 0.8171192517537023,
+          "total_loss": 0.022673111840714633,
+          "allocation": {
+            "pf_opener": 0.004844468197528226,
+            "nonpf_opener": 0.002286324070924939,
+            "pf_rest_of_line": 0.00945236004800748,
+            "nonpf_rest_of_line": 0.006089959524253988
+          },
+          "pf_loss": 0.014296828245535706,
+          "nonpf_loss": 0.008376283595178927,
+          "opener_loss": 0.007130792268453165,
+          "rest_of_line_loss": 0.015542319572261468,
+          "pf_share_of_loss": 0.630563124549254,
+          "opener_share_of_loss": 0.314504348523004,
+          "removal_order_ranges": {
+            "pf_opener": [
+              0.00405260060016599,
+              0.005737020156067585
+            ],
+            "nonpf_opener": [
+              0.0018598054548819576,
+              0.0027851282586357495
+            ],
+            "pf_rest_of_line": [
+              0.008020380574404795,
+              0.011010591790675539
+            ],
+            "nonpf_rest_of_line": [
+              0.0042607503253496715,
+              0.0080550944480412
+            ]
+          },
+          "ablations": {
+            "0": 0.8397923635944169,
+            "1": 0.8357397629942509,
+            "2": 0.8379325581395349,
+            "3": 0.8338064821386326,
+            "4": 0.8317719830200121,
+            "5": 0.8273107791085319,
+            "6": 0.8297309197651663,
+            "7": 0.8251743462017435,
+            "8": 0.8355316132690672,
+            "9": 0.8305732484076433,
+            "10": 0.8332125984251969,
+            "11": 0.8281298435443778,
+            "12": 0.8254841628959276,
+            "13": 0.819904380012338,
+            "14": 0.8228562719097698,
+            "15": 0.8171192517537023
+          }
+        },
+        "fixed_windows": {
+          "pf_opener": {
+            "mattr_contribution": 0.016384242703887414,
+            "token_window_share": 0.016636290229553582,
+            "distinct_credit_per_token": 0.984849535431979
+          },
+          "nonpf_opener": {
+            "mattr_contribution": 0.010990887068866077,
+            "token_window_share": 0.011206598223555197,
+            "distinct_credit_per_token": 0.9807514153371077
+          },
+          "pf_rest_of_line": {
+            "mattr_contribution": 0.04545785612664689,
+            "token_window_share": 0.048667666397508365,
+            "distinct_credit_per_token": 0.9340463492815878
+          },
+          "nonpf_rest_of_line": {
+            "mattr_contribution": 0.18172180704096338,
+            "token_window_share": 0.21161610335678857,
+            "distinct_credit_per_token": 0.8587333579929745
+          },
+          "pf_later_lines": {
+            "mattr_contribution": 0.009062560079978445,
+            "token_window_share": 0.0095581958703426,
+            "distinct_credit_per_token": 0.948145466248288
+          },
+          "nonpf_later_lines": {
+            "mattr_contribution": 0.5761750105740765,
+            "token_window_share": 0.7023151459222517,
+            "distinct_credit_per_token": 0.8203938273571858
+          }
+        },
+        "rolling_line_change": {
+          "paragraph_first": {
+            "lines": 241,
+            "bifolia": 5,
+            "means": {
+              "before": 0.8410788381742738,
+              "after": 0.8478838174273859,
+              "net_gain": 0.006804979253112033,
+              "pf_gain": 0.004522821576763486,
+              "nonpf_gain": 0.002282157676348548,
+              "opener_gain": 0.002406639004149378,
+              "pf_opener": 0.0014522821576763484,
+              "nonpf_opener": 0.0009543568464730291,
+              "pf_rest_of_line": 0.0030705394190871367,
+              "nonpf_rest_of_line": 0.0013278008298755186,
+              "pf_later_lines": 0.0,
+              "nonpf_later_lines": 0.0
+            },
+            "ci95_bifolium_bootstrap": {
+              "net_gain": [
+                0.006156862745098042,
+                0.007794117647058825
+              ],
+              "pf_gain": [
+                0.004007633587786261,
+                0.005663265306122449
+              ],
+              "nonpf_gain": [
+                0.0018316831683168316,
+                0.002785388127853881
+              ]
+            }
+          },
+          "paragraph_first_with_pf": {
+            "lines": 212,
+            "bifolia": 5,
+            "means": {
+              "before": 0.8415094339622641,
+              "after": 0.8483018867924529,
+              "net_gain": 0.006792452830188679,
+              "pf_gain": 0.005141509433962264,
+              "nonpf_gain": 0.0016509433962264152,
+              "opener_gain": 0.0023584905660377358,
+              "pf_opener": 0.001650943396226415,
+              "nonpf_opener": 0.0007075471698113207,
+              "pf_rest_of_line": 0.0034905660377358497,
+              "nonpf_rest_of_line": 0.0009433962264150947,
+              "pf_later_lines": 0.0,
+              "nonpf_later_lines": 0.0
+            },
+            "ci95_bifolium_bootstrap": {
+              "net_gain": [
+                0.005833333333333334,
+                0.008258426966292136
+              ],
+              "pf_gain": [
+                0.004398496240601505,
+                0.0066677018633540435
+              ],
+              "nonpf_gain": [
+                0.0008808290155440413,
+                0.0022943722943722937
+              ]
+            }
+          },
+          "paragraph_first_without_pf": {
+            "lines": 29,
+            "bifolia": 5,
+            "means": {
+              "before": 0.8379310344827586,
+              "after": 0.8448275862068966,
+              "net_gain": 0.006896551724137932,
+              "pf_gain": 0.0,
+              "nonpf_gain": 0.006896551724137932,
+              "opener_gain": 0.002758620689655172,
+              "pf_opener": 0.0,
+              "nonpf_opener": 0.002758620689655172,
+              "pf_rest_of_line": 0.0,
+              "nonpf_rest_of_line": 0.004137931034482759,
+              "pf_later_lines": 0.0,
+              "nonpf_later_lines": 0.0
+            },
+            "ci95_bifolium_bootstrap": {
+              "net_gain": [
+                0.004545454545454546,
+                0.008888888888888889
+              ],
+              "pf_gain": [
+                0.0,
+                0.0
+              ],
+              "nonpf_gain": [
+                0.004545454545454546,
+                0.008888888888888889
+              ]
+            }
+          },
+          "all_pf_lines": {
+            "lines": 275,
+            "bifolia": 5,
+            "means": {
+              "before": 0.8385090909090909,
+              "after": 0.8443999999999999,
+              "net_gain": 0.005890909090909091,
+              "pf_gain": 0.0046545454545454555,
+              "nonpf_gain": 0.0012363636363636366,
+              "opener_gain": 0.0018181818181818182,
+              "pf_opener": 0.0012727272727272726,
+              "nonpf_opener": 0.0005454545454545455,
+              "pf_rest_of_line": 0.002690909090909091,
+              "nonpf_rest_of_line": 0.0007272727272727276,
+              "pf_later_lines": 0.0006909090909090909,
+              "nonpf_later_lines": -3.6363636363636323e-05
+            },
+            "ci95_bifolium_bootstrap": {
+              "net_gain": [
+                0.0045620437956204385,
+                0.006980392156862747
+              ],
+              "pf_gain": [
+                0.003783783783783785,
+                0.005818794688457615
+              ],
+              "nonpf_gain": [
+                0.0004494382022471911,
+                0.001978798586572438
+              ]
+            }
+          }
+        },
+        "nonpf_after_opener_on_pf_bearing_lines": {
+          "distinct_credit_per_token": 0.8575686370842754,
+          "token_window_exposures": 159925,
+          "mattr_contribution": 0.15820355783331727,
+          "later_line_credit_per_token": 0.8203938273571858,
+          "difference": 0.03717480972708964
+        },
+        "nonpf_after_opener_vs_later_lines": {
+          "opening_line_credit_per_token": 0.8587333579929745,
+          "later_line_credit_per_token": 0.8203938273571858,
+          "difference": 0.038339530635788655
+        }
+      },
+      "4c": {
+        "opening_lines": {
+          "lines": 74,
+          "tokens": 800,
+          "counts": {
+            "pf_opener": 47,
+            "nonpf_opener": 27,
+            "pf_rest_of_line": 88,
+            "nonpf_rest_of_line": 638
+          },
+          "original_mattr": 0.7697745790331342,
+          "after_removing_selected_lines": 0.7531124219292158,
+          "total_loss": 0.016662157103918385,
+          "allocation": {
+            "pf_opener": 0.005272905163653853,
+            "nonpf_opener": 0.0013141904792040118,
+            "pf_rest_of_line": 0.007901535105131835,
+            "nonpf_rest_of_line": 0.0021735263559286844
+          },
+          "pf_loss": 0.013174440268785687,
+          "nonpf_loss": 0.003487716835132696,
+          "opener_loss": 0.006587095642857865,
+          "rest_of_line_loss": 0.01007506146106052,
+          "pf_share_of_loss": 0.7906803534872143,
+          "opener_share_of_loss": 0.3953327052299129,
+          "removal_order_ranges": {
+            "pf_opener": [
+              0.004553120986366621,
+              0.006092084728346547
+            ],
+            "nonpf_opener": [
+              0.0011617199360069996,
+              0.0014802215908942262
+            ],
+            "pf_rest_of_line": [
+              0.006961557330296131,
+              0.008934716117922292
+            ],
+            "nonpf_rest_of_line": [
+              0.0008816749595468298,
+              0.003555191707147798
+            ]
+          },
+          "ablations": {
+            "0": 0.7697745790331342,
+            "1": 0.7652214580467676,
+            "2": 0.7686128590971272,
+            "3": 0.7640133037694014,
+            "4": 0.762813021702838,
+            "5": 0.7579729348745419,
+            "6": 0.761578357162882,
+            "7": 0.7566676136363636,
+            "8": 0.7688929040735873,
+            "9": 0.7634300967634301,
+            "10": 0.7675704342061651,
+            "11": 0.7620471380471381,
+            "12": 0.760595399188092,
+            "13": 0.75459264352011,
+            "14": 0.7592045066575623,
+            "15": 0.7531124219292158
+          }
+        },
+        "pf_bearing_opening_lines": {
+          "lines": 62,
+          "tokens": 667,
+          "counts": {
+            "pf_opener": 47,
+            "nonpf_opener": 15,
+            "pf_rest_of_line": 88,
+            "nonpf_rest_of_line": 517
+          },
+          "original_mattr": 0.7697745790331342,
+          "after_removing_selected_lines": 0.752212271973466,
+          "total_loss": 0.017562307059668214,
+          "allocation": {
+            "pf_opener": 0.005160316005831343,
+            "nonpf_opener": 0.0011546508517836691,
+            "pf_rest_of_line": 0.007766357279881258,
+            "nonpf_rest_of_line": 0.003480982922171943
+          },
+          "pf_loss": 0.0129266732857126,
+          "nonpf_loss": 0.004635633773955612,
+          "opener_loss": 0.006314966857615012,
+          "rest_of_line_loss": 0.011247340202053202,
+          "pf_share_of_loss": 0.7360464227048318,
+          "opener_share_of_loss": 0.3595750168904241,
+          "removal_order_ranges": {
+            "pf_opener": [
+              0.004553120986366621,
+              0.005831490273431439
+            ],
+            "nonpf_opener": [
+              0.0010617347462511528,
+              0.0012596752212534756
+            ],
+            "pf_rest_of_line": [
+              0.006961557330296131,
+              0.008635294897304302
+            ],
+            "nonpf_rest_of_line": [
+              0.002412809680843453,
+              0.004613888841936031
+            ]
+          },
+          "ablations": {
+            "0": 0.7697745790331342,
+            "1": 0.7652214580467676,
+            "2": 0.768712844286883,
+            "3": 0.7641353591160222,
+            "4": 0.762813021702838,
+            "5": 0.7579729348745419,
+            "6": 0.7617043867001956,
+            "7": 0.756826160815402,
+            "8": 0.7673617693522907,
+            "9": 0.762036561898653,
+            "10": 0.7662126984126985,
+            "11": 0.7608475668707703,
+            "12": 0.7592557686057848,
+            "13": 0.7534719471947194,
+            "14": 0.7580437622468974,
+            "15": 0.752212271973466
+          }
+        },
+        "fixed_windows": {
+          "pf_opener": {
+            "mattr_contribution": 0.012619500271591526,
+            "token_window_share": 0.012696903856599674,
+            "distinct_credit_per_token": 0.993903743315508
+          },
+          "nonpf_opener": {
+            "mattr_contribution": 0.005816076493968921,
+            "token_window_share": 0.0067599130907115695,
+            "distinct_credit_per_token": 0.8603774066208746
+          },
+          "pf_rest_of_line": {
+            "mattr_contribution": 0.021452562013398485,
+            "token_window_share": 0.02227593699076589,
+            "distinct_credit_per_token": 0.9630374705356404
+          },
+          "nonpf_rest_of_line": {
+            "mattr_contribution": 0.13065777957331415,
+            "token_window_share": 0.16894350896252036,
+            "distinct_credit_per_token": 0.7733814715681099
+          },
+          "pf_later_lines": {
+            "mattr_contribution": 0.00596279196089082,
+            "token_window_share": 0.0061352525801195,
+            "distinct_credit_per_token": 0.9718902169101372
+          },
+          "nonpf_later_lines": {
+            "mattr_contribution": 0.5932658687199692,
+            "token_window_share": 0.783188484519283,
+            "distinct_credit_per_token": 0.757500755497079
+          }
+        },
+        "rolling_line_change": {
+          "paragraph_first": {
+            "lines": 71,
+            "bifolia": 2,
+            "means": {
+              "before": 0.7664788732394368,
+              "after": 0.7759154929577465,
+              "net_gain": 0.009436619718309862,
+              "pf_gain": 0.004507042253521128,
+              "nonpf_gain": 0.004929577464788733,
+              "opener_gain": 0.0016901408450704224,
+              "pf_opener": 0.0015492957746478873,
+              "nonpf_opener": 0.00014084507042253522,
+              "pf_rest_of_line": 0.00295774647887324,
+              "nonpf_rest_of_line": 0.004788732394366197,
+              "pf_later_lines": 0.0,
+              "nonpf_later_lines": 0.0
+            },
+            "ci95_bifolium_bootstrap": {
+              "net_gain": [
+                0.009230769230769232,
+                0.009687500000000002
+              ],
+              "pf_gain": [
+                0.004102564102564103,
+                0.005
+              ],
+              "nonpf_gain": [
+                0.0046875,
+                0.005128205128205128
+              ]
+            }
+          },
+          "paragraph_first_with_pf": {
+            "lines": 59,
+            "bifolia": 2,
+            "means": {
+              "before": 0.7666101694915254,
+              "after": 0.7779661016949152,
+              "net_gain": 0.011355932203389832,
+              "pf_gain": 0.005423728813559322,
+              "nonpf_gain": 0.005932203389830508,
+              "opener_gain": 0.0025423728813559325,
+              "pf_opener": 0.0018644067796610168,
+              "nonpf_opener": 0.0006779661016949153,
+              "pf_rest_of_line": 0.0035593220338983053,
+              "nonpf_rest_of_line": 0.005254237288135593,
+              "pf_later_lines": 0.0,
+              "nonpf_later_lines": 0.0
+            },
+            "ci95_bifolium_bootstrap": {
+              "net_gain": [
+                0.010625,
+                0.012222222222222225
+              ],
+              "pf_gain": [
+                0.005000000000000001,
+                0.005925925925925926
+              ],
+              "nonpf_gain": [
+                0.005625000000000001,
+                0.006296296296296295
+              ]
+            }
+          },
+          "paragraph_first_without_pf": {
+            "lines": 12,
+            "bifolia": 2,
+            "means": {
+              "before": 0.7658333333333333,
+              "after": 0.7658333333333333,
+              "net_gain": 4.336808689942018e-19,
+              "pf_gain": 0.0,
+              "nonpf_gain": 4.336808689942018e-19,
+              "opener_gain": -0.0025,
+              "pf_opener": 0.0,
+              "nonpf_opener": -0.0025,
+              "pf_rest_of_line": 0.0,
+              "nonpf_rest_of_line": 0.0025000000000000005,
+              "pf_later_lines": 0.0,
+              "nonpf_later_lines": 0.0
+            },
+            "ci95_bifolium_bootstrap": {
+              "net_gain": [
+                -0.003999999999999998,
+                0.0028571428571428567
+              ],
+              "pf_gain": [
+                0.0,
+                0.0
+              ],
+              "nonpf_gain": [
+                -0.003999999999999998,
+                0.0028571428571428567
+              ]
+            }
+          },
+          "all_pf_lines": {
+            "lines": 76,
+            "bifolia": 2,
+            "means": {
+              "before": 0.7703947368421055,
+              "after": 0.7792105263157895,
+              "net_gain": 0.008815789473684211,
+              "pf_gain": 0.004868421052631579,
+              "nonpf_gain": 0.003947368421052632,
+              "opener_gain": 0.0019736842105263163,
+              "pf_opener": 0.0014473684210526317,
+              "nonpf_opener": 0.0005263157894736842,
+              "pf_rest_of_line": 0.0027631578947368424,
+              "nonpf_rest_of_line": 0.004078947368421053,
+              "pf_later_lines": 0.0006578947368421052,
+              "nonpf_later_lines": -0.0006578947368421051
+            },
+            "ci95_bifolium_bootstrap": {
+              "net_gain": [
+                0.00878048780487805,
+                0.008857142857142859
+              ],
+              "pf_gain": [
+                0.004634146341463416,
+                0.0051428571428571435
+              ],
+              "nonpf_gain": [
+                0.0037142857142857142,
+                0.0041463414634146335
+              ]
+            }
+          }
+        },
+        "nonpf_after_opener_on_pf_bearing_lines": {
+          "distinct_credit_per_token": 0.778334933037582,
+          "token_window_exposures": 50105,
+          "mattr_contribution": 0.10591654486650746,
+          "later_line_credit_per_token": 0.757500755497079,
+          "difference": 0.020834177540503096
+        },
+        "nonpf_after_opener_vs_later_lines": {
+          "opening_line_credit_per_token": 0.7733814715681099,
+          "later_line_credit_per_token": 0.757500755497079,
+          "difference": 0.01588071607103092
+        }
+      },
+      "4a": {
+        "opening_lines": {
+          "lines": 90,
+          "tokens": 786,
+          "counts": {
+            "pf_opener": 52,
+            "nonpf_opener": 38,
+            "pf_rest_of_line": 119,
+            "nonpf_rest_of_line": 577
+          },
+          "original_mattr": 0.7141739907641889,
+          "after_removing_selected_lines": 0.7016416399527585,
+          "total_loss": 0.012532350811430337,
+          "allocation": {
+            "pf_opener": 0.0032479213855405027,
+            "nonpf_opener": 0.0021929420077851456,
+            "pf_rest_of_line": 0.0060596658076862335,
+            "nonpf_rest_of_line": 0.001031821610418454
+          },
+          "pf_loss": 0.009307587193226736,
+          "nonpf_loss": 0.0032247636182035997,
+          "opener_loss": 0.005440863393325649,
+          "rest_of_line_loss": 0.0070914874181046885,
+          "pf_share_of_loss": 0.7426848588325182,
+          "opener_share_of_loss": 0.4341454747949778,
+          "removal_order_ranges": {
+            "pf_opener": [
+              0.0029669647921125586,
+              0.003538155999741943
+            ],
+            "nonpf_opener": [
+              0.0020346649214921797,
+              0.002353330709437662
+            ],
+            "pf_rest_of_line": [
+              0.005702653184570972,
+              0.006424850288723416
+            ],
+            "nonpf_rest_of_line": [
+              0.0006032606468485691,
+              0.0014702911665526175
+            ]
+          },
+          "ablations": {
+            "0": 0.7141739907641889,
+            "1": 0.7112070259720763,
+            "2": 0.7121393258426967,
+            "3": 0.7091393628265137,
+            "4": 0.7084713375796179,
+            "5": 0.7052476306939773,
+            "6": 0.7063666870042709,
+            "7": 0.7031119311193111,
+            "8": 0.7135707301173403,
+            "9": 0.7103484549638396,
+            "10": 0.7113250245982289,
+            "11": 0.7080664902414819,
+            "12": 0.7074954296160878,
+            "13": 0.7039949706621962,
+            "14": 0.7051797959525005,
+            "15": 0.7016416399527585
+          }
+        },
+        "pf_bearing_opening_lines": {
+          "lines": 71,
+          "tokens": 646,
+          "counts": {
+            "pf_opener": 52,
+            "nonpf_opener": 19,
+            "pf_rest_of_line": 119,
+            "nonpf_rest_of_line": 456
+          },
+          "original_mattr": 0.7141739907641889,
+          "after_removing_selected_lines": 0.7024740398879182,
+          "total_loss": 0.011699950876270626,
+          "allocation": {
+            "pf_opener": 0.003209896381363523,
+            "nonpf_opener": 0.001205976236399268,
+            "pf_rest_of_line": 0.0059884854706935275,
+            "nonpf_rest_of_line": 0.0012955927878143072
+          },
+          "pf_loss": 0.00919838185205705,
+          "nonpf_loss": 0.002501569024213575,
+          "opener_loss": 0.004415872617762791,
+          "rest_of_line_loss": 0.007284078258507835,
+          "pf_share_of_loss": 0.7861897839855757,
+          "opener_share_of_loss": 0.3774265947320247,
+          "removal_order_ranges": {
+            "pf_opener": [
+              0.0029669647921125586,
+              0.0034599362519739385
+            ],
+            "nonpf_opener": [
+              0.001138436536522347,
+              0.001277192448591813
+            ],
+            "pf_rest_of_line": [
+              0.005702653184570972,
+              0.006284447017998351
+            ],
+            "nonpf_rest_of_line": [
+              0.001022320634733842,
+              0.0015793097978091808
+            ]
+          },
+          "ablations": {
+            "0": 0.7141739907641889,
+            "1": 0.7112070259720763,
+            "2": 0.7130355542276665,
+            "3": 0.7100496838301716,
+            "4": 0.7084713375796179,
+            "5": 0.7052476306939773,
+            "6": 0.7072927756653993,
+            "7": 0.7040533496857274,
+            "8": 0.713151670129455,
+            "9": 0.7099854955680902,
+            "10": 0.7119413273485091,
+            "11": 0.7087584869059166,
+            "12": 0.7071912675138482,
+            "13": 0.70375123233651,
+            "14": 0.7059339761398922,
+            "15": 0.7024740398879182
+          }
+        },
+        "fixed_windows": {
+          "pf_opener": {
+            "mattr_contribution": 0.007550275584686429,
+            "token_window_share": 0.00768955757485476,
+            "distinct_credit_per_token": 0.981886865555986
+          },
+          "nonpf_opener": {
+            "mattr_contribution": 0.0052363573166493045,
+            "token_window_share": 0.005431252793088038,
+            "distinct_credit_per_token": 0.9641159261290945
+          },
+          "pf_rest_of_line": {
+            "mattr_contribution": 0.016078504394458515,
+            "token_window_share": 0.017138388201996126,
+            "distinct_credit_per_token": 0.9381573229030856
+          },
+          "nonpf_rest_of_line": {
+            "mattr_contribution": 0.061562434656394355,
+            "token_window_share": 0.08414419782511545,
+            "distinct_credit_per_token": 0.7316301806613591
+          },
+          "pf_later_lines": {
+            "mattr_contribution": 0.009847311187248622,
+            "token_window_share": 0.01037539103232534,
+            "distinct_credit_per_token": 0.9491026561378321
+          },
+          "nonpf_later_lines": {
+            "mattr_contribution": 0.6138991076247574,
+            "token_window_share": 0.8752212125726203,
+            "distinct_credit_per_token": 0.7014216506707668
+          }
+        },
+        "rolling_line_change": {
+          "paragraph_first": {
+            "lines": 88,
+            "bifolia": 5,
+            "means": {
+              "before": 0.7202272727272727,
+              "after": 0.7284090909090909,
+              "net_gain": 0.00818181818181818,
+              "pf_gain": 0.005340909090909091,
+              "nonpf_gain": 0.0028409090909090914,
+              "opener_gain": 0.0036363636363636372,
+              "pf_opener": 0.002272727272727273,
+              "nonpf_opener": 0.0013636363636363635,
+              "pf_rest_of_line": 0.0030681818181818184,
+              "nonpf_rest_of_line": 0.0014772727272727272,
+              "pf_later_lines": 0.0,
+              "nonpf_later_lines": 0.0
+            },
+            "ci95_bifolium_bootstrap": {
+              "net_gain": [
+                0.004090909090909091,
+                0.011122448979591838
+              ],
+              "pf_gain": [
+                0.003472222222222222,
+                0.007209302325581395
+              ],
+              "nonpf_gain": [
+                -0.0008974358974358973,
+                0.005816326530612244
+              ]
+            }
+          },
+          "paragraph_first_with_pf": {
+            "lines": 69,
+            "bifolia": 5,
+            "means": {
+              "before": 0.7260869565217392,
+              "after": 0.7384057971014493,
+              "net_gain": 0.012318840579710146,
+              "pf_gain": 0.006811594202898551,
+              "nonpf_gain": 0.0055072463768115944,
+              "opener_gain": 0.004202898550724638,
+              "pf_opener": 0.002898550724637681,
+              "nonpf_opener": 0.0013043478260869564,
+              "pf_rest_of_line": 0.00391304347826087,
+              "nonpf_rest_of_line": 0.004202898550724638,
+              "pf_later_lines": 0.0,
+              "nonpf_later_lines": 0.0
+            },
+            "ci95_bifolium_bootstrap": {
+              "net_gain": [
+                0.0071946031746031765,
+                0.01746666666666667
+              ],
+              "pf_gain": [
+                0.004098360655737705,
+                0.010333333333333333
+              ],
+              "nonpf_gain": [
+                0.0012000000000000003,
+                0.008585858585858586
+              ]
+            }
+          },
+          "paragraph_first_without_pf": {
+            "lines": 19,
+            "bifolia": 4,
+            "means": {
+              "before": 0.6989473684210527,
+              "after": 0.6921052631578949,
+              "net_gain": -0.006842105263157895,
+              "pf_gain": 0.0,
+              "nonpf_gain": -0.006842105263157895,
+              "opener_gain": 0.0015789473684210526,
+              "pf_opener": 0.0,
+              "nonpf_opener": 0.0015789473684210526,
+              "pf_rest_of_line": 0.0,
+              "nonpf_rest_of_line": -0.008421052631578945,
+              "pf_later_lines": 0.0,
+              "nonpf_later_lines": 0.0
+            },
+            "ci95_bifolium_bootstrap": {
+              "net_gain": [
+                -0.012857142857142859,
+                -0.0031249999999999993
+              ],
+              "pf_gain": [
+                0.0,
+                0.0
+              ],
+              "nonpf_gain": [
+                -0.012857142857142859,
+                -0.0031249999999999993
+              ]
+            }
+          },
+          "all_pf_lines": {
+            "lines": 130,
+            "bifolia": 5,
+            "means": {
+              "before": 0.718923076923077,
+              "after": 0.7285384615384616,
+              "net_gain": 0.009615384615384616,
+              "pf_gain": 0.005538461538461539,
+              "nonpf_gain": 0.004076923076923077,
+              "opener_gain": 0.002230769230769231,
+              "pf_opener": 0.0015384615384615385,
+              "nonpf_opener": 0.0006923076923076923,
+              "pf_rest_of_line": 0.002076923076923077,
+              "nonpf_rest_of_line": 0.0022307692307692306,
+              "pf_later_lines": 0.0019230769230769232,
+              "nonpf_later_lines": 0.0011538461538461537
+            },
+            "ci95_bifolium_bootstrap": {
+              "net_gain": [
+                0.0053383458646616535,
+                0.013337121212121225
+              ],
+              "pf_gain": [
+                0.003828125,
+                0.007868852459016393
+              ],
+              "nonpf_gain": [
+                0.0005833333333333344,
+                0.006554054054054055
+              ]
+            }
+          }
+        },
+        "nonpf_after_opener_on_pf_bearing_lines": {
+          "distinct_credit_per_token": 0.7363318413086549,
+          "token_window_exposures": 44456,
+          "mattr_contribution": 0.04876265207391265,
+          "later_line_credit_per_token": 0.7014216506707668,
+          "difference": 0.03491019063788814
+        },
+        "nonpf_after_opener_vs_later_lines": {
+          "opening_line_credit_per_token": 0.7316301806613591,
+          "later_line_credit_per_token": 0.7014216506707668,
+          "difference": 0.030208529990592314
+        }
+      }
+    }
+  },
+  "checks": {
+    "original_results_reproduced": true,
+    "normalized_mattr_reproduced": true,
+    "original_class_membership_preserved": true,
+    "shapley_additivity": true,
+    "fixed_window_credit_additivity": true,
+    "rolling_changes_telescope": true
+  }
+}

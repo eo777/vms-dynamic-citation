@@ -98,6 +98,9 @@ python experiments/mattr_template_link/heatmap_variants.py    # node; writes hea
 python experiments/mattr_template_link/mechanism_check.py     # node; the pool-size-stratified contrast, by length class, section and Golf group
 python experiments/mattr_template_link/direction_check.py     # node; the mirror-cone direction test (the cone above N against the same cone below), every copier seed
 python experiments/mattr_template_link/overlap_check.py       # node; the cone without same-line reach, repeats counted outside the cone
+python experiments/mattr_template_link/shuffle_layout_check.py # typesetting of the re-typeset rearrangements; renders f75r and f33v
+python experiments/mattr_template_link/sweep_check.py         # node; 36 pool shapes on the manuscript, its rearrangements and three copiers (about 20 minutes)
+python experiments/mattr_template_link/length_class_check.py  # node; the study selector inside exact word-length classes
 python experiments/mattr_template_link/mattr_vs_components.py # node; MATTR coupling
 python experiments/mattr_template_link/figures_small.py
 python experiments/mattr_template_link/prose_route.py           # each historical text's own MATTR route (route_mattr_prose.png)
@@ -120,7 +123,10 @@ diverse?), run `component_check.py`, `heatmap_variants.py` and `mechanism_check.
 `direction_check.py` (about 2 minutes, independent of the others) asks whether that association has the direction copying
 from the page would give it: the cone above N against the same cone mirrored below N. `overlap_check.py` (about 2 minutes,
 independent) asks whether the lines above N carry the association at all: the cone without its same-line reach, and N counted
-as a repeat only against twins outside the cone.
+as a repeat only against twins outside the cone. `length_class_check.py` (about 2 minutes) scores the selector inside exact
+word-length classes, where the manuscript's association disappears and the copiers' remains (RESULTS section 7, item 9);
+`sweep_check.py` (about 20 minutes) maps 36 pool shapes on re-typeset rearrangements (`layout_shuffles.py`, checked by
+`shuffle_layout_check.py`, which renders f75r and f33v).
 
 To look at the verification pages, serve the folder they were written to:
 
@@ -142,7 +148,10 @@ page f78r) or <http://127.0.0.1:8766/compare.html> (any bifolium, every text ver
 | the same for the three copiers whose sources come from the words in view (Timm, no-innovator far 0, far 0 with innovator) | same table | +0.111, +0.097, +0.091 |
 | f29r: synthetic words inside the plant's stem column (lines 3 to 8), before / with the vertical-gap rule | `figures_f29r.py` output | 7 / 0 |
 | historical texts rising into Stars / falling into Bio, of 10 series | `prose_route.log` | 6 / 3 (manuscript +0.049 / −0.128) |
-| pool-size-stratified contrast, word diversity, manuscript / shuffled in paragraphs / shuffled in pages | `mechanism_check.log` | +0.077 / +0.011 / −0.006 |
+| pool-size-stratified contrast, word diversity, manuscript / shuffled in paragraphs / shuffled in pages (these shuffles kept the recorded rectangles; superseded, RESULTS section 7 item 9) | `mechanism_check.log` | +0.077 / +0.011 / −0.006 |
+| the study selector inside exact word-length classes: manuscript / whole-manuscript size-matched shuffle / Original Timm page draw | `length_class_check.log` | −0.012 (−0.029 to +0.008) / +0.006 / +0.075 |
+| study selector with uniform weights / other lines only, manuscript (the three copiers) | `sweep_check.log`, table A | +0.011 / −0.023 (+0.080 to +0.112 / +0.068 to +0.082) |
+| words of the old recorded-box shuffle in boxes off by more than 1.5 times / after re-typesetting | `shuffle_layout_check.log` | 41.6% / 0.1% |
 | mirror-cone test, components, manuscript: cone above / cone below / paired difference | `direction_check.log`, region all | +0.036 / +0.032 / +0.004 (−0.019 to +0.026) |
 | the same for Original Timm (page draw) and for the no-innovator copier of the words in view | same table | +0.121 / +0.052 / +0.068; +0.099 / +0.088 / +0.010 |
 | the same with the manuscript's lines shuffled inside paragraphs / words shuffled inside lines / words shuffled inside paragraphs (cone above) | same table | +0.046 / +0.029 / +0.009 |

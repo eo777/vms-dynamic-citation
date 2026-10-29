@@ -1,0 +1,25 @@
+34977 tokens, 4130 lines, 207 pages. Overlap = pairs of boxes on one page with intersection over the smaller box above 0.2.
+carried = words that did not fit their slot and continued on the next line (or below the page); for the fitted-letter-size variants
+nothing is carried, the slot's letter size is scaled to its new line instead (see the letter-size table). moved = share of words
+(word-level variants) or of lines (line-level variants) that changed place.
+variant                                               carried  no box  overlaps   moved     box width / word width: median |log|, share off by 1.5x
+manuscript (recorded boxes)                                 0      65      4282       -  0.079, 7.2% (of 34908 boxed words)
+OLD: words shuffled in paragraphs, recorded boxes kept        0      65      4282   97.2%  0.327, 41.6% (of 34908 boxed words)
+manuscript (synthetic boxes)                              814      41      1471       -  0.000, 0.1% (of 34936 boxed words)
+words shuffled in paragraphs (size-matched)               814      41      1471   78.5%  0.000, 0.1% (of 34936 boxed words)
+words shuffled in pages (size-matched)                    814      41      1471   89.7%  0.000, 0.1% (of 34936 boxed words)
+words shuffled in bifolia (size-matched)                  814      41      1471   93.5%  0.000, 0.1% (of 34936 boxed words)
+words shuffled in whole manuscript (size-matched)         814      41      1471   97.1%  0.000, 0.1% (of 34936 boxed words)
+words shuffled in paragraphs (any length, fitted letter size)        0      41      1242       -  0.095, 1.4% (of 34936 boxed words)
+words shuffled in lines                                   943      41      1350       -  0.000, 0.1% (of 34936 boxed words)
+lines reversed                                            904      41      1372       -  0.000, 0.1% (of 34936 boxed words)
+lines rotated (diagonal)                                  963      41      1359       -  0.000, 0.1% (of 34936 boxed words)
+lines shuffled in paragraphs (fitted letter size)           0      40      1252   71.4%  0.043, 1.1% (of 34937 boxed words)
+lines shuffled in pages (fitted letter size)                0      40      1277   90.4%  0.086, 2.2% (of 34937 boxed words)
+
+letter size of a slot over the manuscript's on that line (fitted variants): median |log|, share beyond 1.5x, beyond 2x
+  words shuffled in paragraphs (any length, fitted letter size) 0.103, 2.4%, 0.3%
+  lines shuffled in paragraphs (fitted letter size)    0.043, 1.2%, 0.1%
+  lines shuffled in pages (fitted letter size)         0.091, 2.5%, 0.5%
+wrote layout_check_f75r.png
+wrote layout_check_f33v.png
