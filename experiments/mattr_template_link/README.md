@@ -102,6 +102,7 @@ python experiments/mattr_template_link/shuffle_layout_check.py # typesetting of 
 python experiments/mattr_template_link/sweep_check.py         # node; 36 pool shapes on the manuscript, its rearrangements and three copiers (about 20 minutes)
 python experiments/mattr_template_link/length_class_check.py  # node; the study selector inside exact word-length classes
 python experiments/mattr_template_link/width_neutral_check.py # node; the selector with a width-neutral same-line distance (gap between boxes)
+python experiments/mattr_template_link/residual_check.py      # node; components, H2 and word diversity under length x pool-size strata, 19 length-matched shuffles (about 6 minutes)
 python experiments/mattr_template_link/mattr_vs_components.py # node; MATTR coupling
 python experiments/mattr_template_link/figures_small.py
 python experiments/mattr_template_link/prose_route.py           # each historical text's own MATTR route (route_mattr_prose.png)
@@ -127,7 +128,9 @@ independent) asks whether the lines above N carry the association at all: the co
 as a repeat only against twins outside the cone. `length_class_check.py` (about 2 minutes) scores the selector inside exact
 word-length classes, where the manuscript's association disappears and the copiers' remains (RESULTS section 7, item 9);
 `sweep_check.py` (about 20 minutes) maps 36 pool shapes on re-typeset rearrangements (`layout_shuffles.py`, checked by
-`shuffle_layout_check.py`, which renders f75r and f33v).
+`shuffle_layout_check.py`, which renders f75r and f33v). `residual_check.py` (about 6 minutes) is the check to read last: under
+joint control for exact length and pool size a residual association remains for every measure, above 19 length-matched shuffles
+(RESULTS section 7, item 9, review).
 
 To look at the verification pages, serve the folder they were written to:
 
@@ -154,6 +157,8 @@ page f78r) or <http://127.0.0.1:8766/compare.html> (any bifolium, every text ver
 | study selector with uniform weights / other lines only, manuscript (the three copiers) | `sweep_check.log`, table A | +0.011 / −0.023 (+0.080 to +0.112 / +0.068 to +0.082) |
 | words of the old recorded-box shuffle in boxes off by more than 1.5 times / after re-typesetting | `shuffle_layout_check.log` | 41.6% / 0.1% |
 | width-neutral selector (gap distance), raw / inside length classes: manuscript; Original Timm page draw | `width_neutral_check.log` | +0.012 / −0.013; +0.094 / +0.080 |
+| inside exact length x pool-size tertile, manuscript: components / H2 / word diversity; 19 length-matched shuffles exceeded (synthetic boxes) | `residual_check.log` | +0.026 / +0.035 / +0.013; 19, 19, 18 of 19 |
+| the same for the three copiers (seed 1), components / H2 | same log | +0.053 to +0.056 / +0.019 to +0.060 |
 | mirror-cone test, components, manuscript: cone above / cone below / paired difference | `direction_check.log`, region all | +0.036 / +0.032 / +0.004 (−0.019 to +0.026) |
 | the same for Original Timm (page draw) and for the no-innovator copier of the words in view | same table | +0.121 / +0.052 / +0.068; +0.099 / +0.088 / +0.010 |
 | the same with the manuscript's lines shuffled inside paragraphs / words shuffled inside lines / words shuffled inside paragraphs (cone above) | same table | +0.046 / +0.029 / +0.009 |

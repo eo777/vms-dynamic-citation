@@ -86,6 +86,7 @@ def measure(inp):
     res = {}
     for name, v in out.items():
         res[name] = dict(components=np.array([np.nan if x is None else x for x in v['components']], float),
+                         h2=np.array([np.nan if x is None else x for x in v.get('h2', [None] * len(v['n']))], float),
                          worddiv=np.array([np.nan if x is None else x for x in v['worddiv']], float),
                          n=np.array(v['n'], float), repeat_out=np.array(v['repeat_out'], float))
     return res

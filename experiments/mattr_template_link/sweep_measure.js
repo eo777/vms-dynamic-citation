@@ -71,12 +71,12 @@ function repeatOutside(i, indices) {
 const num = x => (Number.isFinite(x) ? x : null);
 const out = {};
 for (const cfg of d.configs) {
-  const comp = new Array(n).fill(null), wdiv = new Array(n).fill(null), size = new Array(n).fill(0), rep = new Array(n).fill(0);
+  const comp = new Array(n).fill(null), h2 = new Array(n).fill(null), wdiv = new Array(n).fill(null), size = new Array(n).fill(0), rep = new Array(n).fill(0);
   for (let i = 0; i < n; i++) {
     const p = pool(c, i, cfg), m = S.measure(c, p);
-    comp[i] = num(m.components); wdiv[i] = num(m.worddiv); size[i] = m.n; rep[i] = repeatOutside(i, p.indices);
+    comp[i] = num(m.components); h2[i] = num(m.h2); wdiv[i] = num(m.worddiv); size[i] = m.n; rep[i] = repeatOutside(i, p.indices);
   }
-  out[cfg.name] = { components: comp, worddiv: wdiv, n: size, repeat_out: rep };
+  out[cfg.name] = { components: comp, h2: h2, worddiv: wdiv, n: size, repeat_out: rep };
 }
 fs.writeFileSync(outPath, JSON.stringify(out));
 console.log(JSON.stringify({ tokens: n, configs: d.configs.length }));
