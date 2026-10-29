@@ -1,0 +1,180 @@
+{
+  "date": "2026-10-28",
+  "status": "Exploratory follow-up; choices frozen before these runs, after prior exploratory findings",
+  "questions": [
+    "Does the manuscript signal survive joint length/pool control?",
+    "Do named historical passages or copiers reproduce the same full-versus-above-only pattern?",
+    "Which geometry, cohort, section, direction, source definition and null restrictions constrain it?"
+  ],
+  "cases": [
+    {
+      "id": "manuscript",
+      "kind": "manuscript",
+      "geometries": [
+        "recorded",
+        "synthetic"
+      ],
+      "draws": 4999,
+      "cursor": true,
+      "line_null": true
+    },
+    {
+      "id": "la_galen_simplicium",
+      "kind": "prose",
+      "key": "la_galen_simplicium",
+      "start": 16785,
+      "tokens": 34977,
+      "token_sha256": "503a492135ad822e9e7ad26a3e93d7b793195f19d544f3126cc4ca71b0b94b5d",
+      "geometries": [
+        "recorded",
+        "synthetic"
+      ],
+      "draws": 999,
+      "cursor": false,
+      "line_null": false
+    },
+    {
+      "id": "la_dioscorides_longob",
+      "kind": "prose",
+      "key": "la_dioscorides_longob",
+      "start": 20143,
+      "tokens": 34977,
+      "token_sha256": "0d66b9e4e341c39927a6d6faff4c41c772fbd00bcee9739923f906e2f87083c0",
+      "geometries": [
+        "recorded",
+        "synthetic"
+      ],
+      "draws": 999,
+      "cursor": false,
+      "line_null": false
+    },
+    {
+      "id": "la_rhazes_almansor",
+      "kind": "prose",
+      "key": "la_rhazes_almansor",
+      "start": 566,
+      "tokens": 34977,
+      "token_sha256": "b3124836ca8be357ec6ebc29c8e1310d17847ec071a119951389ec1a6098842f",
+      "geometries": [
+        "recorded",
+        "synthetic"
+      ],
+      "draws": 4999,
+      "cursor": true,
+      "line_null": true
+    },
+    {
+      "id": "la_hildegard_physica",
+      "kind": "prose",
+      "key": "la_hildegard_physica",
+      "start": 1468,
+      "tokens": 34977,
+      "token_sha256": "a966e162d1ce810e1b629a003e056ade10933402ace25fb542e0b267e850a61c",
+      "geometries": [
+        "recorded",
+        "synthetic"
+      ],
+      "draws": 999,
+      "cursor": false,
+      "line_null": false
+    },
+    {
+      "id": "de_gart_augsburg1487",
+      "kind": "prose",
+      "key": "de_gart_augsburg1487",
+      "start": 11732,
+      "tokens": 34977,
+      "token_sha256": "cb44fb32cddcd86c31748841b9cd1b9400e0a285ab41fbc119afb58e94ea88b1",
+      "geometries": [
+        "recorded",
+        "synthetic"
+      ],
+      "draws": 999,
+      "cursor": false,
+      "line_null": false
+    },
+    {
+      "id": "rhazes_start16785",
+      "kind": "prose",
+      "key": "la_rhazes_almansor",
+      "start": 16785,
+      "tokens": 34977,
+      "token_sha256": "3bb2403186ff788a71a0156db7ad8fc34267a55ba9197080cd52e7d6cbd18ab2",
+      "geometries": [
+        "recorded",
+        "synthetic"
+      ],
+      "draws": 999,
+      "cursor": false,
+      "line_null": false
+    },
+    {
+      "id": "timm",
+      "kind": "copier",
+      "key": "timm",
+      "geometries": [
+        "synthetic"
+      ],
+      "draws": 999,
+      "cursor": false,
+      "line_null": false
+    },
+    {
+      "id": "timm_spatial",
+      "kind": "copier",
+      "key": "timm_spatial",
+      "geometries": [
+        "synthetic"
+      ],
+      "draws": 999,
+      "cursor": false,
+      "line_null": false
+    },
+    {
+      "id": "noinnov_spatial",
+      "kind": "copier",
+      "key": "noinnov_spatial",
+      "geometries": [
+        "synthetic"
+      ],
+      "draws": 999,
+      "cursor": false,
+      "line_null": false
+    }
+  ],
+  "primary_statistics": [
+    "components",
+    "h2"
+  ],
+  "secondary_statistic": "worddiv (weight-sensitive)",
+  "primary": "Full selector, all guaranteed-valid bifolium-interior targets; bifolium x exact transcription length 2..9 x pool-count tertiles; cells >=25; boundary values in lower band; cell-size weighted low-minus-high quintile contrast.",
+  "secondary": [
+    "Full selector on interior A and B",
+    "Above-only on interior A and B",
+    "Below-only on interior B",
+    "Full selector with five pool-count bands",
+    "Full selector exact pool-count within-cell residual correlation, cells >=2",
+    "Clipped-length/min20/pooled sensitivity statistic on full all, full A, above A and above B (fixed guaranteed-valid cohort)",
+    "Cursor-like target-left-edge sensitivity on a common full/cursor cohort",
+    "Within-line x length null (999 draws), manuscript and original Rhazes passage",
+    "Past/future repeat outcomes and bifolium/section contributions for primary full selector"
+  ],
+  "interior_A": "Not first/last on assigned line; full selector pool count >=15",
+  "interior_B": "Not first/last on assigned line; above-only pool count >=15",
+  "null": "Permute word identities within original paragraph x exact transcription length; retain every slot length, fixed boxes, memberships, weights, target cohort, pool cuts and cells. Use the same geometry for observation and null. For synthetic layouts validate fixed geometry against re-typesetting same-length substitutions.",
+  "validity": "Guarantee >=5 pair-bearing sources and pair ESS>=3 under every allowed paragraph permutation. Conservative minimum pair-bearing mass squared / all weight squares bound.",
+  "seeds": {
+    "paragraph": 642028,
+    "line": 742028
+  },
+  "direction": "One-sided positive excess; (1 + exceedances)/(B+1). Report MC tail intervals; no early stopping based on p.",
+  "multiplicity": "Holm for four primary manuscript tests (2 measures x 2 geometries); separate Holm families for full-selector historical contrasts and above-only historical contrasts. Secondary/specification checks are exploratory.",
+  "limits": [
+    "Same data are reused; no new independent manuscript replication",
+    "Absence of significance does not establish equivalence or absence",
+    "Finite historical controls cannot establish uniqueness among all languages or processes",
+    "Copying controls require their own null baseline",
+    "No claim to explain irregular wave geometry without a specific shape statistic"
+  ],
+  "numerical_policy": "Round all score values to 10 decimal places before ranking or residualization, for observations and every null draw. Preserve ties. Validate full aggregates independently with NumPy for observation and first/last permutation."
+}

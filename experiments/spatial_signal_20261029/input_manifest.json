@@ -1,0 +1,66 @@
+{
+  "inputs/packages/voynich_gradients/src/voynich_gradients/assets/positional_path1.json.gz": {
+    "sha256": "977c5676670d79ffa8fac2f0b5a354278877a45513ba35da489b801158cbfffc",
+    "bytes": 8616854
+  },
+  "inputs/solve/botanical_enrichment/echo7/preservation_model_20261014/data/tokens.json": {
+    "sha256": "557e9fc6dedd3678633fec9ab50359a181c14fe6a0ba3d1917aece31cdc04afe",
+    "bytes": 752572
+  },
+  "inputs/solve/botanical_enrichment/team_golf/data/physical_map.csv": {
+    "sha256": "2d5e3ba18fc16f1c1cad6a7904d7edfdc0dd6b282f9b746da032c61a84a4fd96",
+    "bytes": 12023
+  },
+  "inputs/apps/selfcitation_governor/data/mattr_heatmap/words.json.gz": {
+    "sha256": "2d8f0c10c57e55e64cc739ea5ececce9589808fedb09a833c90fc3082c829b47",
+    "bytes": 3281657
+  },
+  "inputs/research/dynamic_selfcitation_20261024/governed/page_geometry.py": {
+    "sha256": "2b2c9c1fc9d37d6eab11bf903470b4b3e7a6b77e75f8ea890719a8be23d60a5f",
+    "bytes": 22383
+  },
+  "inputs/packages/voynich_gradients/src/voynich_gradients/glyph_units.py": {
+    "sha256": "b823d660a9d2b2a00c127d9278c558f1d7b5bfb61d59fffa6473fe0b0753a57f",
+    "bytes": 3731
+  },
+  "inputs/research/dynamic_selfcitation_20261024/governed/runs/m_timm/generated_text.txt": {
+    "sha256": "f7f435dbbeefe67716e2464f7ede833e6420d74cefe2a4b8233ce70f3853d31b",
+    "bytes": 257346
+  },
+  "inputs/research/dynamic_selfcitation_20261024/governed/runs/p_timm_spatial/generated_text.txt": {
+    "sha256": "4d17f1e4e5aa84c1c628dfe48ccd2d03a270f9e3fc5f0b0ff9a08aab8e548ab2",
+    "bytes": 257295
+  },
+  "inputs/research/dynamic_selfcitation_20261024/governed/runs/p_noinnov_spatial/generated_text.txt": {
+    "sha256": "0d686bfeaf20cf3d7765783ebc67e5a3c4b50d511b68c3b03c4046890629a5c3",
+    "bytes": 258066
+  },
+  "inputs/research/reference_corpus/texts/la/foxtrot/foxtrot_galen_simplicium_wuerzburg_la.txt": {
+    "sha256": "aa9d583ac5d7dd3e415822bad26c28fd7cfbe7387c03457b3c556c24ce6f34d7",
+    "bytes": 610283
+  },
+  "inputs/research/reference_corpus/texts/la/foxtrot/foxtrot_dioscorides_longobardus_ocr_la.txt": {
+    "sha256": "91b22b430e219adad3ba417422e5636e0c3f746dd4df84b676f2554fbf22ea43",
+    "bytes": 1002845
+  },
+  "inputs/research/reference_corpus/texts/la/foxtrot/foxtrot_rhazes_almansor_wuerzburg_la.txt": {
+    "sha256": "764069de66301354ac619000bfbe9146fc6b097a1c85a3614bf91451b2a1877e",
+    "bytes": 992437
+  },
+  "inputs/research/reference_corpus/texts/la/hildegard_physica_plants_trees_la.txt": {
+    "sha256": "a13b99688afc3efc50a9afa8d9cfed11bb1c5bf18cd5c1dd37d8b0d7639719d8",
+    "bytes": 226421
+  },
+  "inputs/research/reference_corpus/texts/de/foxtrot/foxtrot_gart_augsburg1487_ocr_de.txt": {
+    "sha256": "8ea01d30e31872777153816335aeefa8ae70a812a949d75427e7fb8623e8c4df",
+    "bytes": 966644
+  },
+  "inputs/packages/voynich_gradients/src/voynich_gradients/eva.py": {
+    "sha256": "ef3af296ba70835bc97f60c40a4aaacc90f369f5ffc12b3969d14adbfece214f",
+    "bytes": 2441
+  },
+  "inputs/research/dynamic_selfcitation_20261024/governed/runs/p_noinnov_spatial_s2/generated_text.txt": {
+    "sha256": "3031568f9dcd119d804cd9a8bce120c4f19a6643d028143c6047ae97ea43015d",
+    "bytes": 257968
+  }
+}

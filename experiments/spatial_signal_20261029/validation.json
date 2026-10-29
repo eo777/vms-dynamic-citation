@@ -1,0 +1,27 @@
+{
+  "version": "2026-10-29.1",
+  "full_reference_runs": 21,
+  "full_reference_shuffled_evaluations": 36979,
+  "full_reference_summary_recomputed_and_matched": true,
+  "multiplicity_families_recomputed_and_matched": [
+    "primary4",
+    "manuscript_line4",
+    "historical_full24",
+    "historical_above48"
+  ],
+  "fresh_portable_runs": 21,
+  "fresh_portable_draws_per_run": 19,
+  "fresh_portable_observed_and_draw_1_19_checkpoints_matched": true,
+  "fresh_portable_independent_aggregate_max_error": 8.040703519673897e-14,
+  "fresh_portable_independent_outcome_max_error": 0.0,
+  "calibration_mirror_point_estimates_reproduced": true,
+  "shuffle_kernel_sha256": "bb6335b5ab7fe0de27514d847a3a4144b599ac79c927b21c6853a498537d9278",
+  "shuffle_kernel_identical_to_full_reference": true,
+  "scope": "Full numerical summaries replayed from all saved full-reference draws. Portability independently checked by rebuilding bundled inputs and rerunning the first 19 shuffles for every run. This is not a second complete 36,979-draw calculation.",
+  "runtime": {
+    "python": "3.9.2 (tags/v3.9.2:1a79785, Feb 19 2021, 13:44:55) [MSC v.1928 64 bit (AMD64)]",
+    "numpy": "2.0.2",
+    "scipy": "1.13.1",
+    "node": "v24.15.0"
+  }
+}

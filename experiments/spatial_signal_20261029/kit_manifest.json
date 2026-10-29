@@ -1,0 +1,177 @@
+{
+  "version": "2026-10-29.1",
+  "files": {
+    ".gitattributes": {
+      "sha256": "66c268b8794c7d95ff74f2b84a81fbbb671ec743163da52a4cd5e7cb42b800ce",
+      "bytes": 88
+    },
+    ".gitignore": {
+      "sha256": "20bfcfb2253bb61a8f8ed7f284c35de283dd9734a354761ec2108f4c5bc64f03",
+      "bytes": 37
+    },
+    "AGENT_FOLLOWUP.md": {
+      "sha256": "4143c7a72c8342c227b33ea300b08cf8b8bec98c8928d07f21c852570133766c",
+      "bytes": 13471
+    },
+    "expected_checkpoints.json": {
+      "sha256": "1a795360d6092c4ec7cc8983f8569a76a87f10a5f04bd05e7a1c3f9024b08876",
+      "bytes": 155258
+    },
+    "expected_mirror_calibration.json": {
+      "sha256": "8de232849a0194d6edbcf97db4ceb3b2600c9aac0a82d47624c2983bd3bf48aa",
+      "bytes": 844
+    },
+    "expected_results.json": {
+      "sha256": "49683421995fec9205b10ae23cab968763c98fb24889dd0734ccc3f04086a35e",
+      "bytes": 787118
+    },
+    "input_manifest.json": {
+      "sha256": "e48c21a55dc513b38315d980066db6792b2a67281f92c665f23c1d2bd0ab6d96",
+      "bytes": 3220
+    },
+    "inputs/apps/selfcitation_governor/data/mattr_heatmap/words.json.gz": {
+      "sha256": "2d8f0c10c57e55e64cc739ea5ececce9589808fedb09a833c90fc3082c829b47",
+      "bytes": 3281657
+    },
+    "inputs/packages/voynich_gradients/src/voynich_gradients/assets/positional_path1.json.gz": {
+      "sha256": "977c5676670d79ffa8fac2f0b5a354278877a45513ba35da489b801158cbfffc",
+      "bytes": 8616854
+    },
+    "inputs/packages/voynich_gradients/src/voynich_gradients/eva.py": {
+      "sha256": "ef3af296ba70835bc97f60c40a4aaacc90f369f5ffc12b3969d14adbfece214f",
+      "bytes": 2441
+    },
+    "inputs/packages/voynich_gradients/src/voynich_gradients/glyph_units.py": {
+      "sha256": "b823d660a9d2b2a00c127d9278c558f1d7b5bfb61d59fffa6473fe0b0753a57f",
+      "bytes": 3731
+    },
+    "inputs/research/dynamic_selfcitation_20261024/governed/page_geometry.py": {
+      "sha256": "2b2c9c1fc9d37d6eab11bf903470b4b3e7a6b77e75f8ea890719a8be23d60a5f",
+      "bytes": 22383
+    },
+    "inputs/research/dynamic_selfcitation_20261024/governed/runs/m_timm/generated_text.txt": {
+      "sha256": "f7f435dbbeefe67716e2464f7ede833e6420d74cefe2a4b8233ce70f3853d31b",
+      "bytes": 257346
+    },
+    "inputs/research/dynamic_selfcitation_20261024/governed/runs/p_noinnov_spatial/generated_text.txt": {
+      "sha256": "0d686bfeaf20cf3d7765783ebc67e5a3c4b50d511b68c3b03c4046890629a5c3",
+      "bytes": 258066
+    },
+    "inputs/research/dynamic_selfcitation_20261024/governed/runs/p_noinnov_spatial_s2/generated_text.txt": {
+      "sha256": "3031568f9dcd119d804cd9a8bce120c4f19a6643d028143c6047ae97ea43015d",
+      "bytes": 257968
+    },
+    "inputs/research/dynamic_selfcitation_20261024/governed/runs/p_timm_spatial/generated_text.txt": {
+      "sha256": "4d17f1e4e5aa84c1c628dfe48ccd2d03a270f9e3fc5f0b0ff9a08aab8e548ab2",
+      "bytes": 257295
+    },
+    "inputs/research/reference_corpus/texts/de/foxtrot/foxtrot_gart_augsburg1487_ocr_de.txt": {
+      "sha256": "8ea01d30e31872777153816335aeefa8ae70a812a949d75427e7fb8623e8c4df",
+      "bytes": 966644
+    },
+    "inputs/research/reference_corpus/texts/la/foxtrot/foxtrot_dioscorides_longobardus_ocr_la.txt": {
+      "sha256": "91b22b430e219adad3ba417422e5636e0c3f746dd4df84b676f2554fbf22ea43",
+      "bytes": 1002845
+    },
+    "inputs/research/reference_corpus/texts/la/foxtrot/foxtrot_galen_simplicium_wuerzburg_la.txt": {
+      "sha256": "aa9d583ac5d7dd3e415822bad26c28fd7cfbe7387c03457b3c556c24ce6f34d7",
+      "bytes": 610283
+    },
+    "inputs/research/reference_corpus/texts/la/foxtrot/foxtrot_rhazes_almansor_wuerzburg_la.txt": {
+      "sha256": "764069de66301354ac619000bfbe9146fc6b097a1c85a3614bf91451b2a1877e",
+      "bytes": 992437
+    },
+    "inputs/research/reference_corpus/texts/la/hildegard_physica_plants_trees_la.txt": {
+      "sha256": "a13b99688afc3efc50a9afa8d9cfed11bb1c5bf18cd5c1dd37d8b0d7639719d8",
+      "bytes": 226421
+    },
+    "inputs/solve/botanical_enrichment/echo7/preservation_model_20261014/data/tokens.json": {
+      "sha256": "557e9fc6dedd3678633fec9ab50359a181c14fe6a0ba3d1917aece31cdc04afe",
+      "bytes": 752572
+    },
+    "inputs/solve/botanical_enrichment/team_golf/data/physical_map.csv": {
+      "sha256": "2d5e3ba18fc16f1c1cad6a7904d7edfdc0dd6b282f9b746da032c61a84a4fd96",
+      "bytes": 12023
+    },
+    "mirror_calibration.py": {
+      "sha256": "9176b254559bea202e2aa0a4e5bab5e1be1664a1c0804ed0c00a258cbe15a8bb",
+      "bytes": 2524
+    },
+    "README.md": {
+      "sha256": "2b2ed402a9be53467500fed9a16e2603f7280ee96fefd3d6daea019170455d5b",
+      "bytes": 5481
+    },
+    "reproduce.py": {
+      "sha256": "4a5271dba0e72c7c310f1f8f8243d1d46e40d96cb4406e03600ca23617922344",
+      "bytes": 8010
+    },
+    "requirements.txt": {
+      "sha256": "2964fdf69d55113df79d4f4f89ea3ab2c887c6da03cac38ce6504f873fa7a13a",
+      "bytes": 29
+    },
+    "src/export.js": {
+      "sha256": "32c7b16d285ca27927fd0ee16aa2147267ef2f8ad831b878b7a3dad0c0159619",
+      "bytes": 2812
+    },
+    "src/plan.json": {
+      "sha256": "cce74b243aa971cc37c1014994a6bc1eaaa452c079b6530fe75e899e2592ca76",
+      "bytes": 6502
+    },
+    "src/prepare.py": {
+      "sha256": "fe096e569b2e2970d50b1e7b8b503707737dda6bd073b8e9f41273a78ded3552",
+      "bytes": 7466
+    },
+    "src/replay_ids.js": {
+      "sha256": "012395338e50ed50d7d9b40569f8f24df50d4149928c4b6845674749eaf2776d",
+      "bytes": 836
+    },
+    "src/run.js": {
+      "sha256": "bb6335b5ab7fe0de27514d847a3a4144b599ac79c927b21c6853a498537d9278",
+      "bytes": 9220
+    },
+    "src/source_snapshot/component_check.py": {
+      "sha256": "cdeede0335ed87c56a44a5aac25b67d2a4189d18f6cc25878061d08aaf0637e8",
+      "bytes": 21417
+    },
+    "src/source_snapshot/component_source_math.js": {
+      "sha256": "5316eb36e13274bbed239dbb37636210da2b7ae776fcd72acf538b764cf9b658",
+      "bytes": 7575
+    },
+    "src/source_snapshot/data.py": {
+      "sha256": "0862282dc4e1603eea09903a6b0a0f4924d7bbd534267f1f0e9ae742ef1aebdf",
+      "bytes": 11685
+    },
+    "src/source_snapshot/decompose.py": {
+      "sha256": "f3929cfb92dde0e284b06270fce8dbb5d717d23f1bac2a835f54af37aee2b265",
+      "bytes": 8433
+    },
+    "src/source_snapshot/direction_measure.js": {
+      "sha256": "8f87568158e902004a8c081ccac18d1619e3ee7c4ae04a4ecb03e42c57c9b3d7",
+      "bytes": 3182
+    },
+    "src/source_snapshot/geometry_inputs.py": {
+      "sha256": "96c0538918efbafe7f66fff078219df3ec0f133b12888494d1cb171ef6d66581",
+      "bytes": 3925
+    },
+    "src/source_snapshot/layout_shuffles.py": {
+      "sha256": "59a10ee69431fd3cd3ee60397b08578a7f8eda327eb394cecba421969cdb50b5",
+      "bytes": 8250
+    },
+    "src/source_snapshot/timing.py": {
+      "sha256": "cb5464d93b1fe002d9d802306a772ebae406af2a93626b3c5edc15383aabc232",
+      "bytes": 20325
+    },
+    "src/summary_math.py": {
+      "sha256": "e5e9ba06b2e1f004542a41bbea24399b153ca34b34e9439b09fc66ac59f5309a",
+      "bytes": 3308
+    },
+    "src/validate_aggregate.py": {
+      "sha256": "0d686a8678e3892c73aed1e37cdffac873f55aa53afd65f8feb3cc6f93bbee51",
+      "bytes": 2084
+    },
+    "validation.json": {
+      "sha256": "34fdcba772644dd2162102f11090a1ec2854fe2578cb9d94cf1ed612cb476f20",
+      "bytes": 1250
+    }
+  }
+}

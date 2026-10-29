@@ -49,6 +49,12 @@ full-stream history, and regional entropy summaries average matched bifolium est
 Everything is static, but the pages read their data with `fetch()`, so serve the folder (for example
 `python -m http.server`) rather than opening the files from disk. Only a served copy checks for newer releases.
 
+## Spatial diversity–repetition follow-up (29 October 2026)
+
+[Reproduction kit and instructions](experiments/spatial_signal_20261029/README.md) · [Agent handoff and findings](experiments/spatial_signal_20261029/AGENT_FOLLOWUP.md)
+
+The self-contained follow-up tests source diversity against target repetition with joint word-length/pool-size control and matched paragraph shuffles. It includes frozen inputs, the 36,979-draw reference results, deterministic verification checkpoints, historical controls including both Rhazes passages, and a separate mirror calibration. These measurements test the association and its constraints; they do not identify Timm's citation model as the manuscript's generator.
+
 ## Reproducing the runs
 
 `reproduce/` holds what the generated texts were made with, copied unchanged from the research workspace in its own
