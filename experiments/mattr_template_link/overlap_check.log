@@ -1,0 +1,63 @@
+Overlap test: the cone WITHOUT same-line reach (words on other lines only; depth 8, 45 degrees) above N and mirrored below N;
+within-bifolium quintile contrast (lowest minus highest component-diversity fifth) of three outcomes: the study word impact (twins
+anywhere in the 100-token windows), repeat outside cone (a twin within 99 tokens not in the cone), repeat outside cone and line (also
+not on N's line). Manuscript rows: 95% bifolium-resampling intervals; copier rows: mean over seeds [min, max].
+
+== region all
+  text                                    n  pool |     word impact, above                  below | repeat outside cone, above                  below      above minus below | outside cone+line, above                  below
+  manuscript (recorded boxes)         17867    26 | -0.017 [-0.035,-0.001] -0.016 [-0.034,+0.004] |     -0.015 [-0.034,+0.007] -0.021 [-0.039,-0.001] +0.005 [-0.020,+0.029] |   -0.017 [-0.038,+0.006] -0.020 [-0.039,+0.004]
+  manuscript shuffled in paragraphs   17840    26 | +0.024 [+0.006,+0.043] +0.005 [-0.013,+0.019] |     +0.035 [+0.012,+0.060] +0.014 [-0.004,+0.031] +0.021 [-0.005,+0.054] |   +0.036 [+0.012,+0.061] +0.014 [-0.005,+0.033]
+  Original Timm, page draw            20844    28 | +0.077 [+0.071,+0.084] +0.011 [+0.004,+0.016] |     +0.090 [+0.081,+0.097] +0.016 [+0.004,+0.031] +0.074 [+0.059,+0.093] |   +0.086 [+0.077,+0.094] +0.018 [+0.009,+0.033]
+  no-innovator far 0, page draw       21170    28 | +0.088 [+0.082,+0.092] +0.013 [+0.006,+0.021] |     +0.089 [+0.080,+0.096] +0.024 [+0.020,+0.029] +0.065 [+0.059,+0.069] |   +0.086 [+0.077,+0.095] +0.025 [+0.020,+0.030]
+  Original Timm, words in view        20305    27 | +0.069 [+0.062,+0.081] +0.034 [+0.031,+0.039] |     +0.084 [+0.073,+0.106] +0.046 [+0.038,+0.051] +0.038 [+0.023,+0.058] |   +0.079 [+0.065,+0.104] +0.045 [+0.036,+0.050]
+  no-innovator far 0, words in view   22593    29 | +0.055 [+0.039,+0.068] +0.038 [+0.030,+0.052] |     +0.066 [+0.053,+0.084] +0.049 [+0.040,+0.056] +0.017 [+0.005,+0.033] |   +0.063 [+0.049,+0.079] +0.049 [+0.041,+0.055]
+  far 0 + innovator, words in view    20385    28 | +0.045 [+0.030,+0.056] +0.018 [+0.003,+0.027] |     +0.048 [+0.035,+0.057] +0.029 [+0.018,+0.040] +0.019 [+0.007,+0.033] |   +0.042 [+0.032,+0.052] +0.030 [+0.018,+0.039]
+
+== region Herbal A
+  text                                    n  pool |     word impact, above                  below | repeat outside cone, above                  below      above minus below | outside cone+line, above                  below
+  manuscript (recorded boxes)          2142    18 | -0.035 [-0.097,+0.022] -0.021 [-0.084,+0.038] |     -0.007 [-0.075,+0.062] -0.005 [-0.059,+0.049] -0.002 [-0.080,+0.084] |   -0.005 [-0.073,+0.067] -0.009 [-0.063,+0.049]
+  manuscript shuffled in paragraphs    2112    18 | +0.087 [+0.036,+0.139] -0.017 [-0.076,+0.056] |     +0.103 [+0.043,+0.169] -0.004 [-0.076,+0.073] +0.106 [+0.018,+0.193] |   +0.107 [+0.050,+0.169] +0.001 [-0.071,+0.076]
+  Original Timm, page draw             2733    19 | +0.062 [+0.040,+0.091] -0.013 [-0.043,+0.031] |     +0.071 [+0.050,+0.101] +0.031 [+0.002,+0.085] +0.040 [+0.016,+0.055] |   +0.068 [+0.050,+0.090] +0.037 [+0.013,+0.085]
+  no-innovator far 0, page draw        3145    20 | +0.052 [+0.050,+0.057] -0.006 [-0.016,+0.012] |     +0.071 [+0.060,+0.091] +0.026 [+0.013,+0.038] +0.045 [+0.032,+0.053] |   +0.069 [+0.060,+0.076] +0.029 [+0.013,+0.040]
+  Original Timm, words in view         2647    19 | +0.082 [+0.070,+0.093] +0.016 [-0.015,+0.038] |     +0.103 [+0.071,+0.137] +0.049 [+0.018,+0.081] +0.054 [+0.022,+0.119] |   +0.093 [+0.053,+0.135] +0.035 [+0.014,+0.062]
+  no-innovator far 0, words in view    3329    21 | +0.055 [+0.054,+0.056] +0.039 [+0.011,+0.067] |     +0.076 [+0.069,+0.082] +0.062 [+0.032,+0.079] +0.014 [-0.002,+0.037] |   +0.072 [+0.067,+0.079] +0.062 [+0.030,+0.080]
+  far 0 + innovator, words in view     2700    19 | +0.048 [+0.041,+0.057] +0.023 [+0.015,+0.037] |     +0.046 [+0.038,+0.057] +0.041 [+0.014,+0.065] +0.005 [-0.027,+0.044] |   +0.044 [+0.026,+0.053] +0.049 [+0.021,+0.063]
+
+== region Herbal B
+  text                                    n  pool |     word impact, above                  below | repeat outside cone, above                  below      above minus below | outside cone+line, above                  below
+  manuscript (recorded boxes)           998    19 | -0.000 [-0.081,+0.067] +0.062 [-0.012,+0.150] |     +0.005 [-0.102,+0.108] +0.089 [+0.005,+0.192] -0.084 [-0.277,+0.087] |   -0.005 [-0.108,+0.097] +0.094 [+0.021,+0.194]
+  manuscript shuffled in paragraphs     985    19 | +0.006 [-0.060,+0.093] -0.091 [-0.147,-0.049] |     +0.020 [-0.052,+0.078] -0.031 [-0.085,+0.028] +0.051 [-0.058,+0.146] |   +0.020 [-0.061,+0.077] -0.026 [-0.082,+0.031]
+  Original Timm, page draw             1237    21 | +0.113 [+0.108,+0.115] +0.027 [-0.008,+0.072] |     +0.145 [+0.127,+0.163] +0.052 [+0.024,+0.083] +0.093 [+0.044,+0.120] |   +0.137 [+0.119,+0.147] +0.058 [+0.044,+0.075]
+  no-innovator far 0, page draw        1302    22 | +0.100 [+0.091,+0.106] -0.022 [-0.080,+0.021] |     +0.117 [+0.102,+0.135] +0.002 [-0.075,+0.068] +0.115 [+0.034,+0.188] |   +0.118 [+0.102,+0.135] -0.001 [-0.090,+0.064]
+  Original Timm, words in view         1221    21 | +0.097 [+0.037,+0.144] +0.005 [-0.009,+0.020] |     +0.105 [+0.041,+0.156] +0.020 [+0.004,+0.046] +0.085 [-0.004,+0.144] |   +0.098 [+0.025,+0.148] +0.033 [+0.012,+0.062]
+  no-innovator far 0, words in view    1422    23 | +0.088 [+0.053,+0.109] +0.018 [-0.011,+0.046] |     +0.097 [+0.095,+0.099] +0.027 [+0.010,+0.051] +0.070 [+0.048,+0.088] |   +0.100 [+0.084,+0.109] +0.026 [+0.010,+0.059]
+  far 0 + innovator, words in view     1248    22 | +0.020 [-0.017,+0.041] +0.022 [-0.035,+0.094] |     +0.048 [+0.016,+0.083] +0.058 [+0.020,+0.082] -0.010 [-0.066,+0.024] |   +0.037 [+0.020,+0.060] +0.072 [+0.032,+0.109]
+
+== region Stars
+  text                                    n  pool |     word impact, above                  below | repeat outside cone, above                  below      above minus below | outside cone+line, above                  below
+  manuscript (recorded boxes)          9615    28 | -0.014 [-0.042,+0.009] -0.015 [-0.035,+0.008] |     -0.023 [-0.052,+0.007] -0.026 [-0.045,-0.006] +0.003 [-0.020,+0.025] |   -0.027 [-0.055,+0.005] -0.024 [-0.046,-0.001]
+  manuscript shuffled in paragraphs    9617    28 | +0.010 [-0.013,+0.030] +0.010 [-0.003,+0.025] |     +0.018 [-0.020,+0.049] +0.021 [+0.008,+0.038] -0.003 [-0.042,+0.032] |   +0.017 [-0.018,+0.050] +0.023 [+0.007,+0.041]
+  Original Timm, page draw            11117    31 | +0.065 [+0.053,+0.080] +0.009 [+0.000,+0.024] |     +0.079 [+0.065,+0.096] +0.004 [-0.010,+0.026] +0.074 [+0.049,+0.098] |   +0.076 [+0.061,+0.095] +0.008 [-0.005,+0.026]
+  no-innovator far 0, page draw       10891    31 | +0.086 [+0.070,+0.104] +0.010 [+0.004,+0.015] |     +0.080 [+0.059,+0.101] +0.018 [+0.012,+0.023] +0.062 [+0.047,+0.078] |   +0.079 [+0.061,+0.099] +0.019 [+0.008,+0.025]
+  Original Timm, words in view        10892    30 | +0.059 [+0.051,+0.072] +0.043 [+0.034,+0.048] |     +0.076 [+0.067,+0.090] +0.057 [+0.041,+0.070] +0.019 [-0.004,+0.032] |   +0.070 [+0.059,+0.088] +0.058 [+0.039,+0.072]
+  no-innovator far 0, words in view   11664    32 | +0.064 [+0.035,+0.087] +0.030 [+0.000,+0.066] |     +0.069 [+0.047,+0.083] +0.040 [+0.012,+0.065] +0.030 [+0.018,+0.036] |   +0.066 [+0.045,+0.082] +0.041 [+0.014,+0.067]
+  far 0 + innovator, words in view    10723    30 | +0.049 [+0.039,+0.056] +0.002 [-0.012,+0.014] |     +0.049 [+0.042,+0.053] +0.011 [+0.001,+0.027] +0.038 [+0.015,+0.051] |   +0.043 [+0.039,+0.047] +0.008 [-0.001,+0.026]
+
+== region Bio
+  text                                    n  pool |     word impact, above                  below | repeat outside cone, above                  below      above minus below | outside cone+line, above                  below
+  manuscript (recorded boxes)          4570    26 | -0.027 [-0.057,-0.010] -0.036 [-0.074,+0.004] |     -0.011 [-0.029,+0.009] -0.045 [-0.078,-0.010] +0.034 [-0.012,+0.075] |   -0.009 [-0.027,+0.013] -0.043 [-0.088,+0.006]
+  manuscript shuffled in paragraphs    4583    26 | +0.019 [-0.020,+0.057] +0.022 [-0.009,+0.061] |     +0.032 [-0.003,+0.076] +0.023 [-0.012,+0.066] +0.009 [-0.013,+0.040] |   +0.033 [-0.001,+0.073] +0.018 [-0.020,+0.071]
+  Original Timm, page draw             5164    28 | +0.095 [+0.094,+0.096] +0.030 [+0.015,+0.040] |     +0.102 [+0.097,+0.113] +0.029 [+0.005,+0.061] +0.073 [+0.051,+0.092] |   +0.099 [+0.087,+0.110] +0.029 [+0.006,+0.059]
+  no-innovator far 0, page draw        5195    28 | +0.089 [+0.061,+0.112] +0.030 [+0.014,+0.057] |     +0.095 [+0.081,+0.119] +0.036 [+0.014,+0.076] +0.058 [+0.042,+0.067] |   +0.092 [+0.080,+0.109] +0.035 [+0.013,+0.071]
+  Original Timm, words in view         4964    27 | +0.073 [+0.062,+0.084] +0.032 [-0.007,+0.053] |     +0.080 [+0.075,+0.083] +0.031 [-0.002,+0.054] +0.049 [+0.021,+0.085] |   +0.077 [+0.071,+0.082] +0.029 [-0.004,+0.054]
+  no-innovator far 0, words in view    5511    30 | +0.020 [-0.006,+0.054] +0.052 [+0.036,+0.067] |     +0.033 [-0.010,+0.083] +0.062 [+0.049,+0.083] -0.029 [-0.059,+0.027] |   +0.032 [-0.008,+0.082] +0.061 [+0.041,+0.084]
+  far 0 + innovator, words in view     5123    28 | +0.038 [+0.012,+0.067] +0.043 [+0.028,+0.066] |     +0.044 [+0.013,+0.072] +0.046 [+0.017,+0.090] -0.001 [-0.018,+0.019] |   +0.041 [+0.009,+0.061] +0.048 [+0.019,+0.093]
+
+== region all: pool-size-stratified contrasts (tertiles of the cone's own size), above / below; word diversity -> repeat outside cone; mean outcomes
+  manuscript (recorded boxes)        word impact +0.019 / +0.020; repeat outside cone +0.014 / +0.022; outside cone+line +0.012 / +0.023; word div -> repeat outside cone -0.038 / -0.040; means: impact 0.336, repeat outside cone 0.415, outside cone+line 0.403
+  manuscript shuffled in paragraphs  word impact +0.029 / +0.016; repeat outside cone +0.020 / +0.019; outside cone+line +0.021 / +0.020; word div -> repeat outside cone +0.017 / +0.015; means: impact 0.327, repeat outside cone 0.413, outside cone+line 0.404
+  Original Timm, page draw           word impact +0.061 / +0.028; repeat outside cone +0.060 / +0.024; outside cone+line +0.055 / +0.026; word div -> repeat outside cone +0.066 / -0.003; means: impact 0.428, repeat outside cone 0.525, outside cone+line 0.513
+  no-innovator far 0, page draw      word impact +0.074 / +0.039; repeat outside cone +0.069 / +0.034; outside cone+line +0.069 / +0.034; word div -> repeat outside cone +0.060 / -0.008; means: impact 0.460, repeat outside cone 0.544, outside cone+line 0.533
+  Original Timm, words in view       word impact +0.066 / +0.048; repeat outside cone +0.072 / +0.047; outside cone+line +0.069 / +0.044; word div -> repeat outside cone +0.070 / +0.005; means: impact 0.402, repeat outside cone 0.465, outside cone+line 0.453
+  no-innovator far 0, words in view  word impact +0.081 / +0.061; repeat outside cone +0.081 / +0.059; outside cone+line +0.077 / +0.059; word div -> repeat outside cone +0.021 / +0.005; means: impact 0.482, repeat outside cone 0.529, outside cone+line 0.515
+  far 0 + innovator, words in view   word impact +0.065 / +0.042; repeat outside cone +0.061 / +0.036; outside cone+line +0.059 / +0.035; word div -> repeat outside cone +0.014 / +0.001; means: impact 0.444, repeat outside cone 0.484, outside cone+line 0.470

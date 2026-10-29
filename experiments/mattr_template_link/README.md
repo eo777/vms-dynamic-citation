@@ -97,6 +97,7 @@ python experiments/mattr_template_link/figures_pages.py       # node
 python experiments/mattr_template_link/heatmap_variants.py    # node; writes heatmap_variants/ (the verification pages)
 python experiments/mattr_template_link/mechanism_check.py     # node; the pool-size-stratified contrast, by length class, section and Golf group
 python experiments/mattr_template_link/direction_check.py     # node; the mirror-cone direction test (the cone above N against the same cone below), every copier seed
+python experiments/mattr_template_link/overlap_check.py       # node; the cone without same-line reach, repeats counted outside the cone
 python experiments/mattr_template_link/mattr_vs_components.py # node; MATTR coupling
 python experiments/mattr_template_link/figures_small.py
 python experiments/mattr_template_link/prose_route.py           # each historical text's own MATTR route (route_mattr_prose.png)
@@ -117,7 +118,9 @@ numbers for the figures. The whole chain takes about 25 minutes on one core; the
 them. To check the pool-diversity result alone (is the next word more often a repeat when the words in view are less
 diverse?), run `component_check.py`, `heatmap_variants.py` and `mechanism_check.py` in that order, about seven minutes.
 `direction_check.py` (about 2 minutes, independent of the others) asks whether that association has the direction copying
-from the page would give it: the cone above N against the same cone mirrored below N.
+from the page would give it: the cone above N against the same cone mirrored below N. `overlap_check.py` (about 2 minutes,
+independent) asks whether the lines above N carry the association at all: the cone without its same-line reach, and N counted
+as a repeat only against twins outside the cone.
 
 To look at the verification pages, serve the folder they were written to:
 
@@ -143,6 +146,8 @@ page f78r) or <http://127.0.0.1:8766/compare.html> (any bifolium, every text ver
 | mirror-cone test, components, manuscript: cone above / cone below / paired difference | `direction_check.log`, region all | +0.036 / +0.032 / +0.004 (−0.019 to +0.026) |
 | the same for Original Timm (page draw) and for the no-innovator copier of the words in view | same table | +0.121 / +0.052 / +0.068; +0.099 / +0.088 / +0.010 |
 | the same with the manuscript's lines shuffled inside paragraphs / words shuffled inside lines / words shuffled inside paragraphs (cone above) | same table | +0.046 / +0.029 / +0.009 |
+| overlap test, cone of other lines only, repeats outside the cone, manuscript above / below; at fixed pool size; paragraph shuffle at fixed pool size | `overlap_check.log`, region all | −0.015 / −0.021; +0.014 / +0.022; +0.020 / +0.019 |
+| the same for Original Timm (page draw) and the no-innovator copier of the words in view, above, unstratified | same table | +0.090; +0.066 |
 | MATTR100 fall 3c → 4a, manuscript = bag + clustering | `layout_controls.log` | −0.128 = −0.118 − 0.011 |
 | the same for Original Timm and the no-innovator far 0 run | `layout_controls.log` | −0.069 = −0.015 − 0.054; −0.099 = −0.050 − 0.049 |
 | coupling of the MATTR colour with component diversity, manuscript, token level / page means | `mattr_vs_components.log` | +0.26 / +0.48 |
