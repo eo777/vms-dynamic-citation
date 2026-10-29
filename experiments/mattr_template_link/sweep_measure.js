@@ -30,6 +30,13 @@ function pool(ctx, pos, cfg) {
       const dx = b.x - target.x;
       if (up) { if (!cfg.left || dx >= 0 || -dx > cfg.left * page.wordWidth) continue; distance = -dx / page.wordWidth; }
       else { if (!cfg.right || dx <= 0 || dx > cfg.right * page.wordWidth) continue; distance = dx / page.wordWidth; }
+      if (cfg.metric === 'edge') {
+        // width-neutral: the gap between the two boxes, in word widths, plus one; an adjacent word has distance 1 whatever
+        // the lengths of N and of the neighbour (centre to centre, a short N has its neighbour's centre closer)
+        const tb = ctx.data.geometry[pos], nb = ctx.data.geometry[i];
+        const gap = up ? tb[0] - nb[2] : nb[0] - tb[2];
+        distance = 1 + Math.max(0, gap) / page.wordWidth;
+      }
     } else {
       if (!cfg.depth) continue;
       const box = ctx.data.geometry[i];

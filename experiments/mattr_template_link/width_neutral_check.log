@@ -1,0 +1,37 @@
+Component diversity -> word impact, lowest minus highest quintile; "within length" = quintiles inside bifolium x exact word length.
+pool diversity for 2-letter / 8-letter targets shows how far the pool measure carries N's own length.
+
+manuscript (recorded boxes) (n = 22210)
+  selector                                            raw              within length  pool div. len 2 / len 8
+  study selector (centre distance)                 +0.034 -0.012 [-0.029,+0.008]       17.58 / 21.19
+  study selector, width-neutral (gap distance)     +0.012 -0.013 [-0.028,+0.004]       18.65 / 20.81
+  mirror (centre distance)                         +0.043 -0.012 [-0.028,+0.002]       17.51 / 21.46
+  mirror, width-neutral (gap distance)             +0.016 -0.023 [-0.038,-0.008]       18.69 / 21.06
+
+words shuffled in whole manuscript (size-matched) (n = 22208)
+  selector                                            raw              within length  pool div. len 2 / len 8
+  study selector (centre distance)                 +0.066 +0.006 [-0.008,+0.019]       20.02 / 24.77
+  study selector, width-neutral (gap distance)     +0.032 +0.008 [-0.006,+0.023]       21.70 / 24.15
+  mirror (centre distance)                         +0.059 +0.004 [-0.011,+0.019]       20.18 / 24.87
+  mirror, width-neutral (gap distance)             +0.029 +0.009 [-0.009,+0.025]       21.81 / 24.17
+
+Original Timm, page draw (seed 1) (n = 24893)
+  selector                                            raw              within length  pool div. len 2 / len 8
+  study selector (centre distance)                 +0.119 +0.075 [+0.051,+0.100]       16.44 / 17.46
+  study selector, width-neutral (gap distance)     +0.094 +0.080 [+0.056,+0.106]       17.14 / 17.08
+  mirror (centre distance)                         +0.054 +0.010 [-0.009,+0.030]       16.31 / 17.47
+  mirror, width-neutral (gap distance)             +0.019 +0.010 [-0.010,+0.031]       17.12 / 17.04
+
+Original Timm, words in view (seed 1) (n = 25042)
+  selector                                            raw              within length  pool div. len 2 / len 8
+  study selector (centre distance)                 +0.114 +0.069 [+0.048,+0.090]       14.73 / 15.67
+  study selector, width-neutral (gap distance)     +0.088 +0.076 [+0.055,+0.096]       15.32 / 15.37
+  mirror (centre distance)                         +0.081 +0.040 [+0.019,+0.063]       14.72 / 15.68
+  mirror, width-neutral (gap distance)             +0.048 +0.038 [+0.017,+0.064]       15.35 / 15.36
+
+no-innovator, words in view (seed 1) (n = 27090)
+  selector                                            raw              within length  pool div. len 2 / len 8
+  study selector (centre distance)                 +0.104 +0.031 [+0.013,+0.053]       15.25 / 17.01
+  study selector, width-neutral (gap distance)     +0.081 +0.041 [+0.023,+0.064]       15.92 / 16.67
+  mirror (centre distance)                         +0.089 +0.020 [-0.006,+0.048]       15.84 / 17.35
+  mirror, width-neutral (gap distance)             +0.044 +0.027 [-0.001,+0.056]       16.58 / 16.92

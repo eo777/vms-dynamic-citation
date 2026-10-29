@@ -101,6 +101,7 @@ python experiments/mattr_template_link/overlap_check.py       # node; the cone w
 python experiments/mattr_template_link/shuffle_layout_check.py # typesetting of the re-typeset rearrangements; renders f75r and f33v
 python experiments/mattr_template_link/sweep_check.py         # node; 36 pool shapes on the manuscript, its rearrangements and three copiers (about 20 minutes)
 python experiments/mattr_template_link/length_class_check.py  # node; the study selector inside exact word-length classes
+python experiments/mattr_template_link/width_neutral_check.py # node; the selector with a width-neutral same-line distance (gap between boxes)
 python experiments/mattr_template_link/mattr_vs_components.py # node; MATTR coupling
 python experiments/mattr_template_link/figures_small.py
 python experiments/mattr_template_link/prose_route.py           # each historical text's own MATTR route (route_mattr_prose.png)
@@ -152,6 +153,7 @@ page f78r) or <http://127.0.0.1:8766/compare.html> (any bifolium, every text ver
 | the study selector inside exact word-length classes: manuscript / whole-manuscript size-matched shuffle / Original Timm page draw | `length_class_check.log` | −0.012 (−0.029 to +0.008) / +0.006 / +0.075 |
 | study selector with uniform weights / other lines only, manuscript (the three copiers) | `sweep_check.log`, table A | +0.011 / −0.023 (+0.080 to +0.112 / +0.068 to +0.082) |
 | words of the old recorded-box shuffle in boxes off by more than 1.5 times / after re-typesetting | `shuffle_layout_check.log` | 41.6% / 0.1% |
+| width-neutral selector (gap distance), raw / inside length classes: manuscript; Original Timm page draw | `width_neutral_check.log` | +0.012 / −0.013; +0.094 / +0.080 |
 | mirror-cone test, components, manuscript: cone above / cone below / paired difference | `direction_check.log`, region all | +0.036 / +0.032 / +0.004 (−0.019 to +0.026) |
 | the same for Original Timm (page draw) and for the no-innovator copier of the words in view | same table | +0.121 / +0.052 / +0.068; +0.099 / +0.088 / +0.010 |
 | the same with the manuscript's lines shuffled inside paragraphs / words shuffled inside lines / words shuffled inside paragraphs (cone above) | same table | +0.046 / +0.029 / +0.009 |

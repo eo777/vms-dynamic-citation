@@ -39,8 +39,8 @@ PREDICTORS = ('components', 'worddiv')
 OUTCOMES = ('impact', 'repeat_out')
 
 
-def cfg(name, dir='up', left=0, right=0, depth=0, angle=45, offset=0, weight='distance'):
-    return dict(name=name, dir=dir, left=left, right=right, depth=depth, angle=angle, offset=offset, weight=weight)
+def cfg(name, dir='up', left=0, right=0, depth=0, angle=45, offset=0, weight='distance', metric='centre'):
+    return dict(name=name, dir=dir, left=left, right=right, depth=depth, angle=angle, offset=offset, weight=weight, metric=metric)
 
 
 CONFIGS = [
